@@ -1,3 +1,4 @@
+import { InstallTip } from './ui/InstallTip';
 import { useEffect } from 'react';
 import { useRoute, type Tab } from './lib/route';
 import { MasterTimeline } from './views/MasterTimeline';
@@ -45,6 +46,7 @@ export function App() {
         {r.tab === 'field' && <FieldView r={r} nav={nav} why={why} />}
         {r.tab === 'cycle' && <CycleView r={r} nav={nav} why={why} />}
       </main>
+      <InstallTip />
       <footer className="foot">
         <p>모든 문장은 출처와 검증 상태를 가집니다(독립 출처 2개 이상 / 1개 / 출처 필요). 인과·해석·시간적 선후를 구분해 표시합니다. 자료가 없는 기간은 채우지 않고 '자료 없음'으로 둡니다.</p>
         <p className="muted">빌드 {__BUILD_ID__} · 경제 지표: FRED(원자료 OECD·세계은행) — This product uses the FRED® API but is not endorsed or certified by the Federal Reserve Bank of St. Louis.</p>

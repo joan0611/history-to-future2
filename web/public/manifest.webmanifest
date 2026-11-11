@@ -1,0 +1,16 @@
+{
+  "name": "HISTORY TO FUTURE 2.0 — 대한민국 1960→현재",
+  "short_name": "히스토리 2.0",
+  "description": "대한민국 1960년부터 현재까지의 흐름, 분야별 장기 동향, 자동으로 찾은 반복 패턴, 원인과 결과를 탐색하는 앱",
+  "lang": "ko",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f2ed",
+  "theme_color": "#15171c",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

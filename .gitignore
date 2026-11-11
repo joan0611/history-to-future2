@@ -11,3 +11,4 @@ tests/shots/
 .vercel
 .netlify
 tests/shots/
+web/dist/

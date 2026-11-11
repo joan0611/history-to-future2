@@ -4,3 +4,8 @@ import { App } from './App';
 import './styles.css';
 
 createRoot(document.getElementById('root')!).render(<StrictMode><App /></StrictMode>);
+
+// 홈 화면 앱(PWA): 배포본에서만 서비스 워커 등록
+if (((location.protocol === "https:" && !/^(localhost|127\.)/.test(location.hostname)) || location.search.includes("sw=1")) && 'serviceWorker' in navigator) {
+  window.addEventListener('load', () => { navigator.serviceWorker.register('./sw.js').catch(() => undefined); });
+}
