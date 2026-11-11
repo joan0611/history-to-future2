@@ -1,0 +1,45 @@
+# HISTORY TO FUTURE 2.0 — 데이터 검증 → 사이클 엔진 검사 → 빌드 → 브라우저 시나리오 → GitHub Pages
+# 테스트가 하나라도 실패하면 배포하지 않는다.
+name: build-test-deploy
+on:
+  push: { branches: [main] }
+  pull_request:
+  workflow_dispatch:
+permissions: { contents: read, pages: write, id-token: write }
+concurrency: { group: pages, cancel-in-progress: false }
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - uses: actions/setup-node@v4
+        with: { node-version: '22', cache: npm, cache-dependency-path: web/package-lock.json }
+      - name: 데이터 재생성·검증(출처·참조 무결성, 사이클 엔진 재계산)
+        run: |
+          pip install numpy pytest playwright
+          python3 data/build/build_seed.py > /dev/null
+          git diff --exit-code data/seed.json || (echo "seed.json이 빌드 스크립트 결과와 다릅니다" && exit 1)
+      - name: 사이클 엔진 대조 검사(사인파·흰잡음·추세)
+        run: python3 -m pytest -q tests/test_cycles.py
+      - name: 빌드
+        working-directory: web
+        run: npm ci && npm run build
+      - name: 브라우저 시나리오(A~G·모바일)
+        env: { CHROME_PATH: /usr/bin/google-chrome }
+        run: |
+          mkdir -p /tmp/site/history-to-future2 && cp -r web/dist/* /tmp/site/history-to-future2/
+          (cd /tmp/site && python3 -m http.server 8766 &) && sleep 2
+          python3 tests/e2e.py http://localhost:8766/history-to-future2/
+      - uses: actions/upload-pages-artifact@v3
+        if: github.ref == 'refs/heads/main'
+        with: { path: web/dist }
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    environment: { name: github-pages, url: '${{ steps.d.outputs.page_url }}' }
+    steps:
+      - id: d
+        uses: actions/deploy-pages@v4
