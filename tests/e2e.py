@@ -118,6 +118,12 @@ with sync_playwright() as p:
     ok('가계 소비 구성: 항목 9개 범례', all(k in h for k in ['식료품', '주거', '음식점', '교육']))
     pg.goto(U + '#/field/economy?y=2008&ind=baserate-kr'); pg.wait_for_timeout(700)
     ok('기준금리 1999~', '기준금리' in pg.locator('.hero').inner_text())
+    # 문화: 콘텐츠 수출(여러 항목·로그), 앨범 판매량(2022 자료 없음 표시)
+    pg.goto(U + '#/field/culture?y=2020'); pg.wait_for_timeout(700)
+    h = pg.locator('.hero').inner_text()
+    ok('문화: 콘텐츠 수출액 기본 표시(게임·음악·방송)', '콘텐츠 수출액' in h and '게임' in h and '음악' in h)
+    pg.goto(U + '#/field/culture?y=2022&ind=album-kr'); pg.wait_for_timeout(700)
+    ok('문화: 앨범 판매량, 2022년은 자료 없음으로 밝힘', '2022' in pg.locator('.hero').inner_text() and '자료 없음' in pg.locator('.hero').inner_text())
     pg.screenshot(path=os.path.join(SHOTS, 'e2e-field.png'))
     # 모바일
     m = b.new_context(viewport={'width': 390, 'height': 844}, has_touch=True, is_mobile=True).new_page()

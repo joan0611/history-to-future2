@@ -17,13 +17,13 @@ const MISSING: Record<Cat, string[]> = {
   industry: ['1983년 이전 산업별 취업자 비중(제조업은 1989년 이전)', '직업구조(직업별 취업자) 통계', '1975년 이전 유선전화 연도별 값'],
   society: ['1992년 이전 임금', '자동차 보급률(1,000명당 보유 대수) — 신규 등록 대수(1993~2022)만 있음', '가계 소비 구성은 1970년부터(그 이전 자료 없음)', '1인 가구 2015년 이전 연속 자료'],
   politics: ['정치는 수치 지표 대신 시대별 흐름도로 표시합니다. 정권·제도를 숫자로 바꾼 지표는 만들지 않습니다.'],
-  culture: ['음악 차트·음반 판매·방송 통계 — 아직 수집하지 않음(지금은 기록으로 확인된 단계만)', '패션 자료 없음'],
+  culture: ['2005년 이전 콘텐츠 수출, 2019년 이전·2022년 앨범 판매량', '음원 이용량·공연 관객 장기 통계', '패션 시장 규모 연속 자료(보도된 값이 2000년 21조 원·2022년 47조 원 등 띄엄띄엄뿐)'],
   flow: ['재등장 사례가 아직 적어 반복 간격을 계산할 수 없습니다.'],
 };
 const NUMERIC: Record<Cat, string[]> = {
   economy: ['gdp-growth', 'gdppc-kr', 'cpi-kr', 'fx-kr', 'unemp-kr', 'emprate-kr', 'disc-kr', 'call-kr', 'baserate-kr', 'oil-dep-kr'],
   industry: ['exports-kr', 'exp-gdp-kr', 'va-agr-kr', 'va-mfg-kr', 'va-srv-kr', 'emp-ag-kr', 'emp-mfg-kr', 'emp-svc-kr', 'tel-kr', 'mobile-kr', 'internet-kr', 'pcbang-kr'],
-  society: ['tfr-kr', 'aged-kr', 'life-kr', 'urban-kr', 'house-kr', 'wage-kr', 'realwage-kr', 'carreg-kr', 'hhcons-kr', 'cons-mix-kr', 'engel-kr', 'cons-house-kr', 'hsupply-kr', 'one-person-kr', 'online-kr'], politics: [], culture: ['cons-culture-kr'], flow: [] };
+  society: ['tfr-kr', 'aged-kr', 'life-kr', 'urban-kr', 'house-kr', 'wage-kr', 'realwage-kr', 'carreg-kr', 'hhcons-kr', 'cons-mix-kr', 'engel-kr', 'cons-house-kr', 'hsupply-kr', 'one-person-kr', 'online-kr'], politics: [], culture: ['content-exp-mix-kr', 'music-exp-kr', 'album-kr', 'cons-culture-kr'], flow: [] };
 const SIGNALS: Record<Cat, string[]> = { economy: ['ch-sg-debt'], industry: ['ch-sg-chip', 'ch-sg-connect'], society: ['ch-sg-household'], politics: ['ch-sg-china'], culture: ['ch-sg-folk', 'ch-sg-kculture'], flow: [] };
 
 export function FieldView({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) => void; why: (id: string) => void }) {

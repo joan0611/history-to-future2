@@ -128,3 +128,7 @@ _W.add_real_wage(INDICATORS)
 import indicators_ecos as _E
 SOURCES += _E.SOURCES
 INDICATORS += _E.INDICATORS
+
+import indicators_culture as _C
+SOURCES += _C.SOURCES
+INDICATORS += _C.INDICATORS
