@@ -1463,6 +1463,7 @@
       "c80-518-legacy",
       "c80-629",
       "c80-labor",
+      "c80-labor-unions",
       "c80-labor-num",
       "c80-olympic"
      ]
@@ -1534,6 +1535,7 @@
      "claimIds": [
       "c80-629",
       "c80-labor",
+      "c80-labor-unions",
       "c80-labor-num"
      ],
      "priorityReason": "정치 제도와 임금 구조가 바뀌었다."
@@ -2719,6 +2721,7 @@
     {
      "heading": "빚으로 떠받친 소비",
      "claimIds": [
+      "c00-hyp-ad",
       "c00-card",
       "c00-card-why",
       "c00-syn-card"
@@ -3069,14 +3072,14 @@
      "id": "ad00-kr-card",
      "product": "신용카드",
      "country": "KR",
-     "year": "2000~2002",
+     "year": "2002",
      "documentIds": [],
      "appealedValues": [
       "부자 되기",
       "즉시 소비",
       "편리함"
      ],
-     "promisedLife": "카드 한 장으로 당장 누리는 풍요 (광고 원문 미확인)",
+     "promisedLife": "BC카드 '여러분, 부자 되세요'(2002) — 누구나 곧 부자가 될 수 있다는 기대",
      "realityCheck": "현금서비스·카드론이 4년 만에 6배로 늘었고, 2003년 말 금융채무 불이행자는 372만 명이 되었다.",
      "realityClaimIds": [
       "c00-card",
@@ -3323,6 +3326,7 @@
      "heading": "사람들이 살던 세계",
      "claimIds": [
       "c10-syn-mood",
+      "c10-hyp-ad",
       "c10-kakao",
       "c10-1person",
       "c10-tfr"
@@ -5357,9 +5361,10 @@
    "id": "c70-kr-hci",
    "text": "박정희 대통령은 1973년 1월 12일 연두 기자회견에서 중화학공업화를 선언했다.",
    "claimType": "fact",
-   "status": "sourced",
+   "status": "verified",
    "sourceIds": [
-    "kr-arch-hci"
+    "kr-arch-hci",
+    "kr-etnews-hci-1973"
    ],
    "domains": [
     "industry",
@@ -5441,9 +5446,10 @@
    "id": "c70-iea",
    "text": "1973~74년 위기에 대응해 1974년 11월 18일 국제에너지기구(IEA)가 설립되었다.",
    "claimType": "fact",
-   "status": "sourced",
+   "status": "verified",
    "sourceIds": [
-    "iea-history"
+    "iea-history",
+    "frus-iea-1974"
    ],
    "domains": [
     "energy",
@@ -5491,11 +5497,13 @@
   },
   {
    "id": "c70-4004",
-   "text": "인텔은 1971년 11월 최초의 상용 마이크로프로세서 4004를 출시했다.",
+   "text": "인텔은 1971년 11월 15일 최초의 상용 마이크로프로세서 4004를 발표했다.",
    "claimType": "fact",
-   "status": "sourced",
+   "status": "verified",
    "sourceIds": [
-    "intel-4004"
+    "intel-4004",
+    "intel-4004-50",
+    "guinness-4004"
    ],
    "domains": [
     "technology"
@@ -5561,11 +5569,12 @@
   },
   {
    "id": "c80-cn-reform",
-   "text": "중국은 1978년 12월 공산당 11기 3중전회를 계기로 개혁·개방 정책을 시작했다.",
+   "text": "중국은 1978년 12월 18~22일 공산당 11기 3중전회를 계기로 개혁·개방 정책을 시작했다.",
    "claimType": "fact",
-   "status": "sourced",
+   "status": "verified",
    "sourceIds": [
-    "cn-reform-bjreview"
+    "cn-reform-bjreview",
+    "chinadaily-3rd-plenum"
    ],
    "domains": [
     "politics",
@@ -5580,9 +5589,10 @@
    "id": "c80-plaza",
    "text": "1985년 9월 22일 미국·일본·서독·프랑스·영국 재무장관과 중앙은행 총재들은 플라자 호텔에서 달러 가치를 낮추기로 합의했다.",
    "claimType": "fact",
-   "status": "sourced",
+   "status": "verified",
    "sourceIds": [
-    "plaza-frankel"
+    "plaza-frankel",
+    "npr-plaza"
    ],
    "domains": [
     "economy"
@@ -5614,11 +5624,12 @@
   },
   {
    "id": "c90-www",
-   "text": "CERN은 1993년 월드와이드웹 기술을 공개 영역으로 풀었다.",
+   "text": "CERN은 1993년 4월 30일 월드와이드웹 소프트웨어를 공개 영역(퍼블릭 도메인)으로 풀었다.",
    "claimType": "fact",
-   "status": "sourced",
+   "status": "verified",
    "sourceIds": [
-    "www-pew"
+    "www-pew",
+    "cern-www-pd"
    ],
    "domains": [
     "technology"
@@ -5681,11 +5692,12 @@
   },
   {
    "id": "c00-iphone",
-   "text": "애플은 2007년 1월 아이폰을 발표했다.",
+   "text": "애플은 2007년 1월 9일 맥월드에서 아이폰을 발표했다.",
    "claimType": "fact",
-   "status": "sourced",
+   "status": "verified",
    "sourceIds": [
-    "iphone-usad"
+    "iphone-usad",
+    "apple-iphone-2007"
    ],
    "domains": [
     "technology",
@@ -5700,9 +5712,10 @@
    "id": "c20-chatgpt",
    "text": "OpenAI는 2022년 11월 30일 ChatGPT를 공개했다.",
    "claimType": "fact",
-   "status": "sourced",
+   "status": "verified",
    "sourceIds": [
-    "chatgpt-chc"
+    "chatgpt-chc",
+    "history-chatgpt"
    ],
    "domains": [
     "technology"
@@ -6332,11 +6345,12 @@
   },
   {
    "id": "c80-labor",
-   "text": "6·29선언 이후 1987년 7월 현대엔진 노조 결성을 시작으로 노동자 대투쟁이 전국으로 번졌고, 4개월 동안 400여 개 민주노조가 생겼다.",
+   "text": "6·29선언 이후 1987년 7월 5일 울산 현대엔진 노조 결성을 시작으로 노동자 대투쟁이 전국 공단으로 번졌다.",
    "claimType": "fact",
-   "status": "sourced",
+   "status": "verified",
    "sourceIds": [
-    "kr-khan-1987labor"
+    "kr-khan-1987labor",
+    "pressian-1987-labor"
    ],
    "domains": [
     "labor",
@@ -6399,11 +6413,13 @@
   },
   {
    "id": "c80-64k",
-   "text": "삼성반도체통신은 1983년 11월 64K D램 개발에 성공했다. 미국·일본에 이은 세계 세 번째로, 1984년 기흥에 VLSI 공장을 가동했다.",
+   "text": "삼성반도체통신은 1983년 64K D램 개발에 성공했다(12월 1일 발표). 미국·일본에 이은 세계 세 번째로, 1984년 5월 기흥 공장을 준공해 VLSI 양산을 시작했다.",
    "claimType": "fact",
-   "status": "sourced",
+   "status": "verified",
    "sourceIds": [
-    "kr-etnews-64k"
+    "kr-etnews-64k",
+    "samsung-semi-40y",
+    "samsung-semi-giheung"
    ],
    "domains": [
     "technology",
@@ -6453,9 +6469,10 @@
    "id": "c80-ibmpc",
    "text": "IBM은 1981년 8월 12일 개인용 컴퓨터 IBM PC를 발표했다.",
    "claimType": "fact",
-   "status": "sourced",
+   "status": "verified",
    "sourceIds": [
-    "us-ibm-pc"
+    "us-ibm-pc",
+    "spectrum-ibmpc"
    ],
    "domains": [
     "technology"
@@ -7499,17 +7516,21 @@
   },
   {
    "id": "c00-hyp-ad",
-   "text": "2000년대 카드·휴대전화 광고는 '부자 되세요' 같은 소비와 성공의 약속을 앞세웠을 것이다. 광고 원문은 아직 확인하지 않았다.",
-   "claimType": "hypothesis",
-   "status": "needs_source",
-   "sourceIds": [],
+   "text": "2002년 초 BC카드 신년 광고에서 배우 김정은이 외친 '여러분, 부자 되세요'는 새해 덕담처럼 퍼진 유행어가 되었다. 같은 해 카드 빚 문제가 커지자 '비씨로 사세요'를 '빚으로 사세요'로 비튼 풍자가 돌았다. 카드를 쓰라는 광고가 부자 되라는 덕담을 건넨 셈이었다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "cine21-bc-ad",
+    "kr-seoul-2002-star",
+    "kr-seoul-2002-cardcrime"
+   ],
    "domains": [
     "consumption"
    ],
    "countries": [
     "KR"
    ],
-   "aiSynthesized": true
+   "aiSynthesized": false
   },
   {
    "id": "c10-kakao",
@@ -7856,17 +7877,21 @@
   },
   {
    "id": "c10-hyp-ad",
-   "text": "2010년대 광고는 '혼밥·혼술', '소확행', 배달·간편결제처럼 개인 단위의 편리함을 앞세웠을 것이다. 광고 원문은 아직 확인하지 않았다.",
-   "claimType": "hypothesis",
-   "status": "needs_source",
-   "sourceIds": [],
+   "text": "서울대 소비트렌드분석센터는 『트렌드 코리아 2018』에서 '소확행(작지만 확실한 행복)'과 '워라밸'을 2018년 키워드로 꼽았고, 이 말은 그해 내내 널리 쓰였다. 닐슨코리아는 2018년 '소확행' 온라인 언급이 월평균 8천여 건이었다고 집계했다. 광고 문구 자체의 변화는 아직 원문으로 확인하지 않았다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "book-trend2018",
+    "kr-jjan-2019-trend",
+    "nielsen-sohwak"
+   ],
    "domains": [
     "consumption"
    ],
    "countries": [
     "KR"
    ],
-   "aiSynthesized": true
+   "aiSynthesized": false
   },
   {
    "id": "c20-covid-kr",
@@ -7984,9 +8009,11 @@
    "id": "c20-kr-rate",
    "text": "한국은행은 2022년 4월부터 2023년 1월까지 사상 처음 일곱 차례 연속 금리를 올려 기준금리를 연 3.50%로 만들었다. 약 1년 5개월 사이 3.00%포인트가 올랐다.",
    "claimType": "fact",
-   "status": "sourced",
+   "status": "verified",
    "sourceIds": [
-    "jj-230113-rate"
+    "jj-230113-rate",
+    "byline-230113-rate",
+    "sidae-230411-rate"
    ],
    "domains": [
     "economy"
@@ -8188,19 +8215,20 @@
   },
   {
    "id": "c20-hyp-ai-jobs",
-   "text": "생성형 AI가 사무·창작 직무의 업무 방식을 바꿀 것이라는 전망이 많지만, 한국의 직업별 고용 변화 통계와는 아직 연결하지 않았다.",
-   "claimType": "hypothesis",
-   "status": "needs_source",
-   "sourceIds": [],
+   "text": "통계청 직업별 취업자로 계산하면 전문가 비중은 2013년 19.6%에서 2025년 23.1%로 꾸준히 올랐다. 다만 생성형 AI(2022년 말 등장)가 이 흐름을 바꿨는지는 아직 통계로 구분할 수 없다 — 증가는 AI 이전부터 이어진 추세다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "kosis-occ"
+   ],
    "domains": [
     "labor",
     "technology"
    ],
    "countries": [
-    "KR",
-    "WORLD"
+    "KR"
    ],
-   "aiSynthesized": true
+   "aiSynthesized": false
   },
   {
    "id": "c60-me-1967",
@@ -9349,6 +9377,187 @@
    ],
    "domains": [
     "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "cfill-plan2",
+   "text": "1967년 시작된 제2차 경제개발 5개년 계획(1967~1971)은 산업구조 근대화와 자립경제 확립을 목표로 하고, 경공업에서 화학·철강·기계 같은 중화학공업으로 옮겨 가는 방향을 내세웠다. 계획안은 1966년 중반에 확정되었다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "arch-plan2",
+    "kdev-plan2"
+   ],
+   "domains": [
+    "economy",
+    "industry"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "cfill-3term",
+   "text": "대통령의 3선 연임을 허용하는 개헌안은 1969년 9월 14일 새벽 여당 의원만 모인 국회 제3별관에서 처리되었고, 10월 17일 국민투표(투표율 77.1%)로 확정되었다. 야당과 대학가의 반대 시위가 이어졌다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "arch-const6",
+    "arch-chron-1969",
+    "pressian-3term"
+   ],
+   "domains": [
+    "politics"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "cfill-3term-yushin",
+   "text": "3선 개헌으로 1971년 세 번째 대통령 선거에 나설 수 있게 된 박정희 대통령은 이듬해 1972년 10월 유신으로 연임 제한이 없는 체제를 만들었다. 3선 개헌이 유신 체제로 가는 길을 열었다는 평가가 일반적이다.",
+   "claimType": "interpretation",
+   "status": "sourced",
+   "sourceIds": [
+    "pressian-3term"
+   ],
+   "domains": [
+    "politics"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "cfill-bid",
+   "text": "1981년 9월 30일 서독 바덴바덴 국제올림픽위원회 총회에서 서울이 일본 나고야를 52대 27로 누르고 1988년 하계올림픽 개최지로 뽑혔다. 열세라는 예상을 뒤집은 결과였다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "arch-olympic",
+    "khan-badenbaden"
+   ],
+   "domains": [
+    "politics",
+    "culture"
+   ],
+   "countries": [
+    "KR",
+    "JP"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "cfill-line2",
+   "text": "서울지하철 2호선은 1984년 5월 22일 전 구간이 개통되어 강남과 강북을 한 바퀴 도는 순환선이 되었다. 처음 계획에는 없던 노선으로, 서울의 도심 기능을 강남으로 옮기는 과정에서 구체화되었다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "arch-line2",
+    "arch-subway",
+    "seoul-subway50"
+   ],
+   "domains": [
+    "society"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "cfill-un",
+   "text": "1991년 9월 17일 제46차 유엔총회는 남북한 유엔 가입안을 표결 없이 통과시켰다. 북한이 160번째, 한국이 161번째 회원국이 되었다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "arch-un",
+    "seoul-1991-un"
+   ],
+   "domains": [
+    "politics"
+   ],
+   "countries": [
+    "KR",
+    "WORLD"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "cfill-china",
+   "text": "한국과 중국은 1992년 8월 24일 베이징에서 수교 공동성명에 서명해 대사급 외교관계를 맺었고, 같은 날 한국은 대만과 단교했다. 이후 중국은 한국의 최대 교역국이 되었다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "arch-china",
+    "seoul-1992-china"
+   ],
+   "domains": [
+    "politics",
+    "economy"
+   ],
+   "countries": [
+    "KR",
+    "CN"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "cfill-hoju",
+   "text": "헌법재판소의 헌법불합치 결정(2005년 2월 3일)에 이어 국회는 2005년 3월 2일 호주제를 없애는 민법 개정안을 통과시켰다. 2008년 1월 1일부터 호적 대신 개인별 가족관계등록부를 쓰고, 부부가 합의하면 자녀가 어머니의 성을 따를 수도 있게 되었다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "arch-hoju",
+    "pressian-hoju",
+    "seoul-2005-hoju"
+   ],
+   "domains": [
+    "society",
+    "politics"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "cfill-fta",
+   "text": "한국과 미국은 2006년 2월 3일 자유무역협정(FTA) 협상 개시를 선언했고, 2007년 4월 2일 타결, 추가 협상을 거쳐 2012년 3월 15일 발효되었다. 협상 기간 내내 격렬한 반대 시위가 이어졌다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "arch-korusfta",
+    "etoday-fta-log"
+   ],
+   "domains": [
+    "economy",
+    "politics"
+   ],
+   "countries": [
+    "KR",
+    "US"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c80-labor-unions",
+   "text": "대투쟁은 이후 4개월 동안 400여 개의 민주노조를 낳았고(주간경향), 1987년 말 노동조합 수는 1년 전보다 50% 늘었다(프레시안).",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "kr-khan-1987labor",
+    "pressian-2021-labor"
+   ],
+   "domains": [
+    "labor"
    ],
    "countries": [
     "KR"
@@ -12643,6 +12852,345 @@
    "url": "https://m.seoul.co.kr/news/2022/04/18/20220418001012",
    "sourceType": "news",
    "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "arch-plan2",
+   "title": "제2차 경제개발 5개년 계획(1967~1971)",
+   "publisher": "국가기록원 '기록으로 보는 경제개발 5개년 계획'",
+   "url": "https://theme.archives.go.kr/next/economicDevelopment/secondary.do",
+   "sourceType": "government",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kdev-plan2",
+   "title": "The Second Five-Year Economic Development Plan (1967-1971)",
+   "publisher": "K-Developedia (KDI 국제정책대학원)",
+   "url": "https://www.kdevelopedia.org/Resources/view/04201403110130852.do",
+   "sourceType": "institution",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "arch-const6",
+   "title": "헌법개정사 — 제6차 개정(1969년 10월 21일)",
+   "publisher": "국가기록원 '헌법이야기'",
+   "url": "https://theme.archives.go.kr/next/rule/sub2_07.do",
+   "sourceType": "government",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "arch-chron-1969",
+   "title": "연표: 1969년 9월 14일 개헌안 국회 통과, 10월 17일 국민투표(투표율 77.1%)",
+   "publisher": "국가기록원 '연표와 기록'",
+   "url": "https://theme.archives.go.kr/next/chronology/searchArchive.do?page=331",
+   "sourceType": "government",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "pressian-3term",
+   "title": "서중석의 현대사 이야기 — 3선 개헌 반대 운동",
+   "publisher": "프레시안",
+   "url": "https://pressian.com/pages/articles/132058",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "arch-olympic",
+   "title": "88서울올림픽 개최 — 1981년 9월 30일 개최지 선정",
+   "publisher": "국가기록원 '대통령기록·정책'",
+   "url": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=402",
+   "sourceType": "government",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "khan-badenbaden",
+   "title": "1981년 9월 30일 바덴바덴 — '서울 52, 나고야 27' (2011.9.29)",
+   "publisher": "경향신문",
+   "url": "https://www.khan.co.kr/article/201109292200245",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "arch-line2",
+   "title": "1984년 5월 22일 서울지하철 2호선 전 구간 개통",
+   "publisher": "국가기록원 '오늘의 기록'",
+   "url": "https://theme.archives.go.kr/next/daily/viewMain.do?selectDay=19840522",
+   "sourceType": "government",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "arch-subway",
+   "title": "기록으로 보는 대한민국: 지하철",
+   "publisher": "국가기록원",
+   "url": "https://theme.archives.go.kr/next/koreaOfRecord/subway.do",
+   "sourceType": "government",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "seoul-subway50",
+   "title": "서울 지하철 50년사 — 2호선 1984년 순환선 완전 개통",
+   "publisher": "서울시 내 손안에 서울",
+   "url": "https://mediahub.seoul.go.kr/archives/2012200",
+   "sourceType": "government",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "arch-un",
+   "title": "남북 유엔 동시가입 (1991.9.17)",
+   "publisher": "국가기록원 '대통령기록·정책'",
+   "url": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=602",
+   "sourceType": "government",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "seoul-1991-un",
+   "title": "만장일치 가입… 태극기 오르던 날 (1991.9.18)",
+   "publisher": "서울신문",
+   "url": "https://www.seoul.co.kr/news/1991/09/18/19910918003001",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "arch-china",
+   "title": "한중수교 (1992.8.24)",
+   "publisher": "국가기록원 '대통령기록·정책'",
+   "url": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=508",
+   "sourceType": "government",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "seoul-1992-china",
+   "title": "한중 수교 공동성명 — 대사급 외교관계 수립 (1992.8.25)",
+   "publisher": "서울신문",
+   "url": "https://www.seoul.co.kr/news/1992/08/25/19920825003001",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "arch-hoju",
+   "title": "호주제 폐지",
+   "publisher": "국가기록원 '대통령기록·정책'",
+   "url": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=225",
+   "sourceType": "government",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "pressian-hoju",
+   "title": "2008년부터 호적 대신 가족관계등록부",
+   "publisher": "프레시안",
+   "url": "https://pressian.com/pages/articles/88102",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "seoul-2005-hoju",
+   "title": "개정 민법 국회 통과 — 자녀의 성·본 (2005.3.16)",
+   "publisher": "서울신문",
+   "url": "https://m.seoul.co.kr/news/2005/03/16/20050316029004",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "arch-korusfta",
+   "title": "한미FTA 협상 타결",
+   "publisher": "국가기록원 '대통령기록·정책'",
+   "url": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=324",
+   "sourceType": "government",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "cine21-bc-ad",
+   "title": "'부자되세요' 유행시킨 BC카드 광고 — 애교있는 직설화법 (2002)",
+   "publisher": "씨네21",
+   "url": "https://cine21.com/news/view/?mag_id=7559",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-seoul-2002-star",
+   "title": "'2002년은 우리 해' — CF '부자 되세요'로 인기 모은 김정은 (2002.12.25)",
+   "publisher": "서울신문",
+   "url": "https://m.seoul.co.kr/news/2002/12/25/20021225015001",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-seoul-2002-cardcrime",
+   "title": "'빚으로 사세요' 돈놀이 혈안 — 카드 광고 패러디 (2002.5.10)",
+   "publisher": "서울신문",
+   "url": "https://www.seoul.co.kr/news/2002/05/10/20020510010001",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "book-trend2018",
+   "title": "트렌드 코리아 2018 (서울대 소비트렌드분석센터, 미래의창) — 책 소개",
+   "publisher": "왓챠피디아 도서 정보",
+   "url": "https://pedia.watcha.com/en/contents/bovqkeb/book_description",
+   "sourceType": "reference",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-jjan-2019-trend",
+   "title": "신문으로 되짚은 2018년 — '소확행'·'워라밸'이 한 해 내내 (2019.1.3)",
+   "publisher": "전북일보",
+   "url": "https://jjan.kr/article/20190103659767",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "nielsen-sohwak",
+   "title": "한국인의 소소한 행복 — 닐슨코리아 '소확행' 버즈 분석",
+   "publisher": "아이보스(닐슨코리아 발표 인용)",
+   "url": "https://www.i-boss.co.kr/ab-2877-2632",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "etoday-fta-log",
+   "title": "한미FTA 주요 일지 (2012.2.21)",
+   "publisher": "이투데이",
+   "url": "https://www.etoday.co.kr/news/view/548002",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-etnews-hci-1973",
+   "title": "[과학기술이 미래다] 과학기술처, 5대 전략산업 특정연구기관 지정",
+   "publisher": "전자신문",
+   "url": "https://www.etnews.com/20220713000151",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11",
+   "note": "1973년 1월 12일 연두 기자회견 서술"
+  },
+  {
+   "id": "samsung-semi-40y",
+   "title": "삼성 반도체사업 40년, 도전과 창조의 역사",
+   "publisher": "삼성전자 반도체 뉴스룸",
+   "url": "https://news.samsungsemiconductor.com/kr/삼성-반도체사업-40년-도전과-창조의-역사/",
+   "sourceType": "company",
+   "accessedDate": "2026-11-11",
+   "note": "1983년 12월 1일 국내 최초 64K D램 개발 성공"
+  },
+  {
+   "id": "samsung-semi-giheung",
+   "title": "반도체 역사시리즈 6탄: 삼성반도체 45년 사업장의 성장",
+   "publisher": "삼성전자 반도체 뉴스룸",
+   "url": "https://news.samsungsemiconductor.com/kr/%EB%B0%98%EB%8F%84%EC%B2%B4-%EC%97%AD%EC%82%AC%EC%8B%9C%EB%A6%AC%EC%A6%88-6%ED%83%84-%EC%82%BC%EC%84%B1%EB%B0%98%EB%8F%84%EC%B2%B4-45%EB%85%84-%EC%82%AC%EC%97%85%EC%9E%A5%EC%9D%98-%EC%84%B1/",
+   "sourceType": "company",
+   "accessedDate": "2026-11-11",
+   "note": "기흥 라인 1984년 5월 준공, VLSI 양산 시작"
+  },
+  {
+   "id": "pressian-1987-labor",
+   "title": "서중석의 현대사 이야기 — 7·8·9월 노동자 대투쟁",
+   "publisher": "프레시안",
+   "url": "https://pressian.com/pages/articles/154486",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11",
+   "note": "1987년 7월 5일 울산 현대엔진 노조 결성이 전국 투쟁을 촉발"
+  },
+  {
+   "id": "pressian-2021-labor",
+   "title": "87년 노동자대투쟁 (울산노동역사관 자료)",
+   "publisher": "프레시안",
+   "url": "https://www.pressian.com/pages/articles/2021041119135508343",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11",
+   "note": "1987년 말 노동조합 수가 1년 전보다 50% 증가"
+  },
+  {
+   "id": "byline-230113-rate",
+   "title": "한국은행, 기준금리 0.25%p 인상 (2023.1.13)",
+   "publisher": "바이라인네트워크",
+   "url": "https://byline.network/2023/01/13-232/",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11",
+   "note": "연 3.25% → 3.50%, 2022년 4월 이후 일곱 차례 연속 인상"
+  },
+  {
+   "id": "sidae-230411-rate",
+   "title": "한은, 기준금리 2회 연속 3.50% 동결 (2023.4.11)",
+   "publisher": "머니S",
+   "url": "https://www.sidae.com/article/2023041110104448709",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11",
+   "note": "1년 반 동안 10차례 총 3%포인트 인상, 사상 처음 7연속 인상"
+  },
+  {
+   "id": "apple-iphone-2007",
+   "title": "Apple Reinvents the Phone with iPhone (2007.1.9)",
+   "publisher": "Apple Newsroom",
+   "url": "https://www.apple.com/newsroom/2007/01/09Apple-Reinvents-the-Phone-with-iPhone/",
+   "sourceType": "company",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "history-chatgpt",
+   "title": "ChatGPT, the generative AI chatbot, is released",
+   "publisher": "HISTORY (A&E)",
+   "url": "https://www.history.com/this-day-in-history/chatgpt-released-openai",
+   "sourceType": "reference",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "chinadaily-3rd-plenum",
+   "title": "Third Plenary Session of 11th Central Committee of CPC held in 1978",
+   "publisher": "China Daily (People's Daily Online)",
+   "url": "https://covid-19.chinadaily.com.cn/bizchina/2008-10/29/content_7169033.htm",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11",
+   "note": "1978년 12월 18~22일 베이징"
+  },
+  {
+   "id": "npr-plaza",
+   "title": "Plaza Accord (Planet Money)",
+   "publisher": "NPR",
+   "url": "https://www.npr.org/sections/money/2010/12/17/132142673/plaza-accord",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "cern-www-pd",
+   "title": "CERN puts the World Wide Web in the public domain",
+   "publisher": "CERN",
+   "url": "https://timeline.web.cern.ch/node/794",
+   "sourceType": "institution",
+   "accessedDate": "2026-11-11",
+   "note": "1993년 4월 30일"
+  },
+  {
+   "id": "intel-4004-50",
+   "title": "Intel Marks 50th Anniversary of the 4004",
+   "publisher": "Intel Newsroom",
+   "url": "https://intel.com/content/www/us/en/newsroom/news/intel-marks-50th-anniversary-4004.html",
+   "sourceType": "company",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "guinness-4004",
+   "title": "First microprocessor",
+   "publisher": "Guinness World Records",
+   "url": "https://www.guinnessworldrecords.com/world-records/first-microprocessor",
+   "sourceType": "reference",
+   "accessedDate": "2026-11-11",
+   "note": "1971년 11월 15일 판매 시작"
+  },
+  {
+   "id": "frus-iea-1974",
+   "title": "FRUS 1969–76 vol. XXXVII, doc. 20 — Editorial Note",
+   "publisher": "U.S. Department of State, Office of the Historian",
+   "url": "https://history.state.gov/historicaldocuments/frus1969-76v37/d20",
+   "sourceType": "government",
+   "accessedDate": "2026-11-11",
+   "note": "신설 IEA 이사회 첫 회의 1974년 11월 18~19일 파리"
+  },
+  {
+   "id": "spectrum-ibmpc",
+   "title": "How the IBM PC Won, Then Lost, the Personal Computer Market",
+   "publisher": "IEEE Spectrum",
+   "url": "https://spectrum.ieee.org/tech-history/silicon-revolution/how-the-ibm-pc-won-then-lost-the-personal-computer-market",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
   }
  ],
  "events": [
@@ -13826,6 +14374,141 @@
    ],
    "claimIds": [
     "c20-kr-chip"
+   ],
+   "priority": 2
+  },
+  {
+   "id": "e60-plan2",
+   "eraId": "1960s",
+   "date": "1967",
+   "title": "제2차 경제개발 5개년 계획 시작 (1967~1971)",
+   "countries": [
+    "KR"
+   ],
+   "domains": [
+    "economy",
+    "industry"
+   ],
+   "claimIds": [
+    "cfill-plan2"
+   ],
+   "priority": 2
+  },
+  {
+   "id": "e60-3term",
+   "eraId": "1960s",
+   "date": "1969-10-17",
+   "title": "3선 개헌 국민투표 확정",
+   "countries": [
+    "KR"
+   ],
+   "domains": [
+    "politics"
+   ],
+   "claimIds": [
+    "cfill-3term",
+    "cfill-3term-yushin"
+   ],
+   "priority": 2
+  },
+  {
+   "id": "e80-bid",
+   "eraId": "1980s",
+   "date": "1981-09-30",
+   "title": "바덴바덴: 1988 서울올림픽 유치 결정",
+   "countries": [
+    "KR"
+   ],
+   "domains": [
+    "politics",
+    "culture"
+   ],
+   "claimIds": [
+    "cfill-bid"
+   ],
+   "priority": 2
+  },
+  {
+   "id": "e80-line2",
+   "eraId": "1980s",
+   "date": "1984-05-22",
+   "title": "서울지하철 2호선 순환선 완전 개통",
+   "countries": [
+    "KR"
+   ],
+   "domains": [
+    "society"
+   ],
+   "claimIds": [
+    "cfill-line2"
+   ],
+   "priority": 3
+  },
+  {
+   "id": "e90-un",
+   "eraId": "1990s",
+   "date": "1991-09-17",
+   "title": "남북한 유엔 동시 가입",
+   "countries": [
+    "KR"
+   ],
+   "domains": [
+    "politics"
+   ],
+   "claimIds": [
+    "cfill-un"
+   ],
+   "priority": 2
+  },
+  {
+   "id": "e90-china",
+   "eraId": "1990s",
+   "date": "1992-08-24",
+   "title": "한중 수교 (대만과 단교)",
+   "countries": [
+    "KR",
+    "CN"
+   ],
+   "domains": [
+    "politics",
+    "economy"
+   ],
+   "claimIds": [
+    "cfill-china"
+   ],
+   "priority": 1
+  },
+  {
+   "id": "e00-hoju",
+   "eraId": "2000s",
+   "date": "2005-03-02",
+   "title": "호주제 폐지 민법 개정 (2008년 시행)",
+   "countries": [
+    "KR"
+   ],
+   "domains": [
+    "society"
+   ],
+   "claimIds": [
+    "cfill-hoju"
+   ],
+   "priority": 2
+  },
+  {
+   "id": "e00-korusfta",
+   "eraId": "2000s",
+   "date": "2006-02-03",
+   "title": "한미 FTA 협상 개시 (2007 타결·2012 발효)",
+   "countries": [
+    "KR",
+    "US"
+   ],
+   "domains": [
+    "economy",
+    "politics"
+   ],
+   "claimIds": [
+    "cfill-fta"
    ],
    "priority": 2
   }
@@ -29108,7 +29791,7 @@
        ]
       },
       "b": {
-       "text": "사무·창작 직무가 바뀔 것이라는 전망은 많지만 고용 통계와는 아직 연결하지 못했다.",
+       "text": "전문가 비중은 2013년 19.6% → 2025년 23.1%로 올랐지만 AI 이전부터의 추세라, AI의 영향은 아직 구분할 수 없다.",
        "claimIds": [
         "c20-hyp-ai-jobs"
        ]
@@ -29937,7 +30620,7 @@
     "aliases": [
      "수출 공업화와 울산 기간산업 (1960s)"
     ],
-    "degree": 1,
+    "degree": 2,
     "docIds": [
      "doc60-kr-plan-1962"
     ],
@@ -30484,6 +31167,32 @@
     "degree": 1
    },
    {
+    "id": "e60-plan2",
+    "kind": "event",
+    "label": "제2차 경제개발 5개년 계획 시작 (1967~1971)",
+    "year": 1967,
+    "yearPrecision": "year",
+    "date": "1967",
+    "eraId": "1960s",
+    "lane": "economy",
+    "domains": [
+     "economy",
+     "industry"
+    ],
+    "countries": [
+     "KR"
+    ],
+    "importance": 2,
+    "claimIds": [
+     "cfill-plan2"
+    ],
+    "eventIds": [
+     "e60-plan2"
+    ],
+    "degree": 1,
+    "nodeType": "event"
+   },
+   {
     "id": "d-us-folk",
     "label": "미국 포크·팝의 번안 (AFKN·미8군 경로)",
     "year": 1968,
@@ -30607,6 +31316,32 @@
     },
     "degree": 0,
     "nodeType": "trend"
+   },
+   {
+    "id": "e60-3term",
+    "kind": "event",
+    "label": "3선 개헌 국민투표 확정",
+    "year": 1969,
+    "yearPrecision": "year",
+    "date": "1969-10-17",
+    "eraId": "1960s",
+    "lane": "politics",
+    "domains": [
+     "politics"
+    ],
+    "countries": [
+     "KR"
+    ],
+    "importance": 2,
+    "claimIds": [
+     "cfill-3term",
+     "cfill-3term-yushin"
+    ],
+    "eventIds": [
+     "e60-3term"
+    ],
+    "degree": 1,
+    "nodeType": "event"
    },
    {
     "id": "e60-apollo",
@@ -31061,7 +31796,7 @@
     ],
     "eventIds": [],
     "deep": true,
-    "degree": 2
+    "degree": 3
    },
    {
     "id": "d-airlift",
@@ -32268,6 +33003,33 @@
     "nodeType": "trend"
    },
    {
+    "id": "e80-bid",
+    "kind": "event",
+    "label": "바덴바덴: 1988 서울올림픽 유치 결정",
+    "year": 1981,
+    "yearPrecision": "year",
+    "date": "1981-09-30",
+    "eraId": "1980s",
+    "lane": "politics",
+    "domains": [
+     "politics",
+     "culture"
+    ],
+    "countries": [
+     "JP",
+     "KR"
+    ],
+    "importance": 2,
+    "claimIds": [
+     "cfill-bid"
+    ],
+    "eventIds": [
+     "e80-bid"
+    ],
+    "degree": 1,
+    "nodeType": "event"
+   },
+   {
     "id": "e80-ibmpc",
     "kind": "event",
     "label": "IBM PC 발표",
@@ -32449,6 +33211,31 @@
     },
     "degree": 0,
     "nodeType": "trend"
+   },
+   {
+    "id": "e80-line2",
+    "kind": "event",
+    "label": "서울지하철 2호선 순환선 완전 개통",
+    "year": 1984,
+    "yearPrecision": "year",
+    "date": "1984-05-22",
+    "eraId": "1980s",
+    "lane": "society",
+    "domains": [
+     "society"
+    ],
+    "countries": [
+     "KR"
+    ],
+    "importance": 3,
+    "claimIds": [
+     "cfill-line2"
+    ],
+    "eventIds": [
+     "e80-line2"
+    ],
+    "degree": 0,
+    "nodeType": "event"
    },
    {
     "id": "e80-plaza",
@@ -32699,7 +33486,7 @@
     "eventIds": [
      "e80-olympic"
     ],
-    "degree": 0,
+    "degree": 1,
     "docIds": [
      "doc80-chosun"
     ],
@@ -32878,6 +33665,32 @@
     "nodeType": "phenomenon"
    },
    {
+    "id": "e90-un",
+    "kind": "event",
+    "label": "남북한 유엔 동시 가입",
+    "year": 1991,
+    "yearPrecision": "year",
+    "date": "1991-09-17",
+    "eraId": "1990s",
+    "lane": "politics",
+    "domains": [
+     "politics"
+    ],
+    "countries": [
+     "KR",
+     "WORLD"
+    ],
+    "importance": 2,
+    "claimIds": [
+     "cfill-un"
+    ],
+    "eventIds": [
+     "e90-un"
+    ],
+    "degree": 0,
+    "nodeType": "event"
+   },
+   {
     "id": "n-1990s-남순강화-외국인-투자-급증",
     "kind": "phenomenon",
     "label": "남순강화, 외국인 투자 급증",
@@ -32899,6 +33712,33 @@
     "eventIds": [],
     "degree": 2,
     "nodeType": "phenomenon"
+   },
+   {
+    "id": "e90-china",
+    "kind": "event",
+    "label": "한중 수교 (대만과 단교)",
+    "year": 1992,
+    "yearPrecision": "year",
+    "date": "1992-08-24",
+    "eraId": "1990s",
+    "lane": "politics",
+    "domains": [
+     "politics",
+     "economy"
+    ],
+    "countries": [
+     "CN",
+     "KR"
+    ],
+    "importance": 1,
+    "claimIds": [
+     "cfill-china"
+    ],
+    "eventIds": [
+     "e90-china"
+    ],
+    "degree": 1,
+    "nodeType": "event"
    },
    {
     "id": "e90-realname",
@@ -34178,7 +35018,7 @@
      "WTO 가입 (2001)",
      "WTO 가입, 무역 연 26.7% 성장"
     ],
-    "degree": 3,
+    "degree": 4,
     "nodeType": "event"
    },
    {
@@ -34519,6 +35359,58 @@
     },
     "degree": 0,
     "nodeType": "trend"
+   },
+   {
+    "id": "e00-hoju",
+    "kind": "event",
+    "label": "호주제 폐지 민법 개정 (2008년 시행)",
+    "year": 2005,
+    "yearPrecision": "year",
+    "date": "2005-03-02",
+    "eraId": "2000s",
+    "lane": "society",
+    "domains": [
+     "society"
+    ],
+    "countries": [
+     "KR"
+    ],
+    "importance": 2,
+    "claimIds": [
+     "cfill-hoju"
+    ],
+    "eventIds": [
+     "e00-hoju"
+    ],
+    "degree": 0,
+    "nodeType": "event"
+   },
+   {
+    "id": "e00-korusfta",
+    "kind": "event",
+    "label": "한미 FTA 협상 개시 (2007 타결·2012 발효)",
+    "year": 2006,
+    "yearPrecision": "year",
+    "date": "2006-02-03",
+    "eraId": "2000s",
+    "lane": "economy",
+    "domains": [
+     "economy",
+     "politics"
+    ],
+    "countries": [
+     "KR",
+     "US"
+    ],
+    "importance": 2,
+    "claimIds": [
+     "cfill-fta"
+    ],
+    "eventIds": [
+     "e00-korusfta"
+    ],
+    "degree": 0,
+    "nodeType": "event"
    },
    {
     "id": "d08-forward",
@@ -35740,30 +36632,6 @@
     "nodeType": "event"
    },
    {
-    "id": "n-2020s-반도체-ai-인프라-인력-수요-고용-통계-연결-예정",
-    "kind": "phenomenon",
-    "label": "반도체·AI 인프라 인력 수요 (고용 통계 연결 예정)",
-    "eraId": "2020s",
-    "year": 2020,
-    "yearPrecision": "era",
-    "lane": "industry",
-    "domains": [
-     "labor",
-     "technology"
-    ],
-    "countries": [
-     "KR",
-     "WORLD"
-    ],
-    "importance": 3,
-    "claimIds": [
-     "c20-hyp-ai-jobs"
-    ],
-    "eventIds": [],
-    "degree": 2,
-    "nodeType": "change"
-   },
-   {
     "id": "n-2020s-수출-쏠림-위험-반도체-착시",
     "kind": "phenomenon",
     "label": "수출 쏠림 위험 — '반도체 착시'",
@@ -36180,6 +37048,29 @@
     "eventIds": [],
     "degree": 1,
     "nodeType": "background"
+   },
+   {
+    "id": "n-2020s-반도체-ai-인프라-인력-수요-고용-통계-연결-예정",
+    "kind": "phenomenon",
+    "label": "반도체·AI 인프라 인력 수요 (고용 통계 연결 예정)",
+    "eraId": "2020s",
+    "year": 2022,
+    "yearPrecision": "year",
+    "lane": "industry",
+    "domains": [
+     "labor",
+     "technology"
+    ],
+    "countries": [
+     "KR"
+    ],
+    "importance": 3,
+    "claimIds": [
+     "c20-hyp-ai-jobs"
+    ],
+    "eventIds": [],
+    "degree": 2,
+    "nodeType": "change"
    },
    {
     "id": "tr-t20-ai",
@@ -38355,6 +39246,14 @@
     "title": "코로나19와 한국 (2020~2022: 감염 확산 → 금리·재정 대응 → 생활·소비 변화 → 집값·금리 인상)",
     "ref": "2020s",
     "eraId": "2020s",
+    "steps": []
+   },
+   {
+    "id": "fill-years",
+    "kind": "case",
+    "title": "빈 해 채우기로 더한 사건들의 연결",
+    "ref": "1990s",
+    "eraId": "1990s",
     "steps": []
    }
   ],
@@ -41046,6 +41945,55 @@
     "note": "2년 1개월 뒤 거리두기 해제",
     "claimIds": [
      "c2020-endsd"
+    ]
+   },
+   {
+    "id": "e-fill-years-0",
+    "from": "e60-plan",
+    "to": "e60-plan2",
+    "rel": "sequence",
+    "verification": "evidenced",
+    "chainId": "fill-years",
+    "note": "제1차 계획(1962~66)에 이은 제2차 계획",
+    "claimIds": [
+     "cfill-plan2"
+    ]
+   },
+   {
+    "id": "e-fill-years-1",
+    "from": "e60-3term",
+    "to": "d-yushin",
+    "rel": "background",
+    "verification": "interpretation",
+    "chainId": "fill-years",
+    "note": "3선 개헌이 유신 체제로 가는 길을 열었다는 평가",
+    "claimIds": [
+     "cfill-3term-yushin"
+    ]
+   },
+   {
+    "id": "e-fill-years-2",
+    "from": "e80-bid",
+    "to": "e80-olympic",
+    "rel": "sequence",
+    "verification": "evidenced",
+    "chainId": "fill-years",
+    "note": "유치 결정 7년 뒤 개최",
+    "claimIds": [
+     "cfill-bid"
+    ]
+   },
+   {
+    "id": "e-fill-years-3",
+    "from": "e90-china",
+    "to": "e00-wto",
+    "rel": "influence",
+    "verification": "interpretation",
+    "chainId": "fill-years",
+    "note": "수교 이후 대중 교역이 급증하는 출발점",
+    "claimIds": [
+     "cfill-china",
+     "c00-cn-trade"
     ]
    }
   ],

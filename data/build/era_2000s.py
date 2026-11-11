@@ -98,8 +98,8 @@ CLAIMS = [
       "interpretation", "sourced", ["kr-etnews-venture", "kr-khan-card-2010", "sd-020626-street", "kr-segye-cy", "kr-kli-irregular"], ["society", "economy"], ["KR"], True),
     C("c00-syn-card", "외환위기 뒤 고용과 소득이 불안정해진 가계가 빚을 끌어와 소비하는 환경이 만들어졌고, 그것이 카드 부실로 쌓였다는 해석이 있다.",
       "interpretation", "sourced", ["kr-wk-card-why", "kr-khan-card-2010"], ["economy", "labor"], ["KR"], True),
-    C("c00-hyp-ad", "2000년대 카드·휴대전화 광고는 '부자 되세요' 같은 소비와 성공의 약속을 앞세웠을 것이다. 광고 원문은 아직 확인하지 않았다.",
-      "hypothesis", "needs_source", [], ["consumption"], ["KR"], True),
+    C("c00-hyp-ad", "2002년 초 BC카드 신년 광고에서 배우 김정은이 외친 '여러분, 부자 되세요'는 새해 덕담처럼 퍼진 유행어가 되었다. 같은 해 카드 빚 문제가 커지자 '비씨로 사세요'를 '빚으로 사세요'로 비튼 풍자가 돌았다. 카드를 쓰라는 광고가 부자 되라는 덕담을 건넨 셈이었다.",
+      "fact", "verified", ["cine21-bc-ad", "kr-seoul-2002-star", "kr-seoul-2002-cardcrime"], ["consumption"], ["KR"]),
 ]
 
 ERA = {
@@ -132,7 +132,7 @@ ERA = {
     "flow": [
         P("사람들이 살던 세계", ["c00-syn-mood", "c00-worldcup", "c00-kh-football", "c00-cyworld"]),
         P("벤처 거품과 붕괴", ["c00-venture-why", "c00-kosdaq", "c00-sd-venture"]),
-        P("빚으로 떠받친 소비", ["c00-card", "c00-card-why", "c00-syn-card"]),
+        P("빚으로 떠받친 소비", ["c00-hyp-ad", "c00-card", "c00-card-why", "c00-syn-card"]),
         P("일과 여가의 재편", ["c00-irregular", "c00-5day", "c00-5day-leisure"]),
         P("문화가 수출되다", ["c00-hallyu", "c00-cy-decline"]),
         P("세계의 공장과 금융위기", ["c00-cn-wto", "c00-cn-trade", "c00-cn-labor", "c00-subprime", "c00-lehman", "c00-kr-2008"]),
@@ -203,9 +203,9 @@ ERA = {
          "claimIds": ["c00-kosdaq", "c00-card", "c00-irregular", "c00-cyworld", "c00-kr-2008"]},
     ],
     "advertisements": [
-        {"id": "ad00-kr-card", "product": "신용카드", "country": "KR", "year": "2000~2002", "documentIds": [],
+        {"id": "ad00-kr-card", "product": "신용카드", "country": "KR", "year": "2002", "documentIds": [],
          "appealedValues": ["부자 되기", "즉시 소비", "편리함"],
-         "promisedLife": "카드 한 장으로 당장 누리는 풍요 (광고 원문 미확인)",
+         "promisedLife": "BC카드 '여러분, 부자 되세요'(2002) — 누구나 곧 부자가 될 수 있다는 기대",
          "realityCheck": "현금서비스·카드론이 4년 만에 6배로 늘었고, 2003년 말 금융채무 불이행자는 372만 명이 되었다.",
          "realityClaimIds": ["c00-card", "c00-hyp-ad"]},
     ],

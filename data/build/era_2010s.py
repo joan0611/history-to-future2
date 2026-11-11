@@ -87,8 +87,8 @@ CLAIMS = [
       "interpretation", "sourced", ["pressian-delivery", "nw-210222-delivery", "med-201212-1p"], ["labor", "consumption"], ["KR"], True),
     C("c10-hyp-asset", "저금리와 풍부한 유동성이 2010년대 후반 집값·자산가격 상승을 키웠을 것이다. 지역별 집값 통계와의 연결은 아직 하지 않았다.",
       "hypothesis", "needs_source", [], ["economy"], ["KR", "US"], True),
-    C("c10-hyp-ad", "2010년대 광고는 '혼밥·혼술', '소확행', 배달·간편결제처럼 개인 단위의 편리함을 앞세웠을 것이다. 광고 원문은 아직 확인하지 않았다.",
-      "hypothesis", "needs_source", [], ["consumption"], ["KR"], True),
+    C("c10-hyp-ad", "서울대 소비트렌드분석센터는 『트렌드 코리아 2018』에서 '소확행(작지만 확실한 행복)'과 '워라밸'을 2018년 키워드로 꼽았고, 이 말은 그해 내내 널리 쓰였다. 닐슨코리아는 2018년 '소확행' 온라인 언급이 월평균 8천여 건이었다고 집계했다. 광고 문구 자체의 변화는 아직 원문으로 확인하지 않았다.",
+      "fact", "verified", ["book-trend2018", "kr-jjan-2019-trend", "nielsen-sohwak"], ["consumption"], ["KR"]),
 ]
 
 ERA = {
@@ -119,7 +119,7 @@ ERA = {
     ],
     "background": [P("2000년대가 남긴 조건", ["c00-kr-iphone", "c00-lehman", "c00-card", "c00-irregular"])],
     "flow": [
-        P("사람들이 살던 세계", ["c10-syn-mood", "c10-kakao", "c10-1person", "c10-tfr"]),
+        P("사람들이 살던 세계", ["c10-syn-mood", "c10-hyp-ad", "c10-kakao", "c10-1person", "c10-tfr"]),
         P("세계가 돈을 푼 10년", ["c10-fed-qe", "c10-abe", "c10-rate", "c10-debt", "c10-hyp-asset"]),
         P("플랫폼이 바꾼 소비와 노동", ["c10-delivery", "c10-syn-delivery", "c10-rider-risk"]),
         P("세계로 간 한국 문화", ["c10-psy", "c10-bts"]),

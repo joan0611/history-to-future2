@@ -79,8 +79,8 @@ CLAIMS = [
       "interpretation", "sourced", ["motir-2025-ict", "reuters-230201-gpt", "tc-220809-chips"], ["industry", "technology"], ["KR", "US"], True),
     C("c20-syn-inflation", "2022년 세계적 물가 급등은 팬데믹 뒤 수요 회복과 돈 풀기, 그리고 전쟁에 따른 에너지 가격 급등이 겹친 결과로 설명된다. 에너지를 수입하는 한국도 석유류와 공공요금을 중심으로 물가가 뛰었다.",
       "interpretation", "sourced", ["ap-220713-cpi", "econ-220225-war", "nt-220802-cpi"], ["economy", "energy"], ["KR", "US", "WORLD"], True),
-    C("c20-hyp-ai-jobs", "생성형 AI가 사무·창작 직무의 업무 방식을 바꿀 것이라는 전망이 많지만, 한국의 직업별 고용 변화 통계와는 아직 연결하지 않았다.",
-      "hypothesis", "needs_source", [], ["labor", "technology"], ["KR", "WORLD"], True),
+    C("c20-hyp-ai-jobs", "통계청 직업별 취업자로 계산하면 전문가 비중은 2013년 19.6%에서 2025년 23.1%로 꾸준히 올랐다. 다만 생성형 AI(2022년 말 등장)가 이 흐름을 바꿨는지는 아직 통계로 구분할 수 없다 — 증가는 AI 이전부터 이어진 추세다.",
+      "statistical", "sourced", ["kosis-occ"], ["labor", "technology"], ["KR"]),
 ]
 
 ERA = {

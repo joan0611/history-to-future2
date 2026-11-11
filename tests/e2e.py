@@ -137,6 +137,10 @@ with sync_playwright() as p:
     pg.goto(U + '#/history?z=year&y=2021&why=d20-hike&path=d20-hike'); pg.wait_for_timeout(700)
     w = pg.locator('.why').inner_text()
     ok('코로나19: 금리 인상 전환의 원인(집값·가계부채)', '가계부채' in w)
+    # 빈 해 채우기(1967·1984·1992·2005)와 보강된 근거
+    for yy, kw in [(1967, '제2차'), (1984, '2호선'), (1992, '수교'), (2005, '호주제')]:
+        pg.goto(U + f'#/history?z=year&y={yy}'); pg.wait_for_timeout(500)
+        ok(f'{yy}년 사건 채움({kw})', kw in pg.locator('main').inner_text())
     pg.screenshot(path=os.path.join(SHOTS, 'e2e-field.png'))
     # 모바일
     m = b.new_context(viewport={'width': 390, 'height': 844}, has_touch=True, is_mobile=True).new_page()
