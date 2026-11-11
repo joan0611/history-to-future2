@@ -20,10 +20,15 @@ const MISSING: Record<Cat, string[]> = {
   culture: ['2005년 이전 콘텐츠 수출, 2019년 이전·2022년 앨범 판매량', '음원 이용량·공연 관객 장기 통계', '패션 시장 규모 연속 자료(보도된 값이 2000년 21조 원·2022년 47조 원 등 띄엄띄엄뿐)'],
   flow: ['재등장 사례가 아직 적어 반복 간격을 계산할 수 없습니다.'],
 };
-const NUMERIC: Record<Cat, string[]> = {
-  economy: ['gdp-growth', 'gdppc-kr', 'cpi-kr', 'fx-kr', 'unemp-kr', 'emprate-kr', 'disc-kr', 'call-kr', 'baserate-kr', 'oil-dep-kr'],
-  industry: ['exports-kr', 'exp-gdp-kr', 'va-agr-kr', 'va-mfg-kr', 'va-srv-kr', 'empstatus-mix-kr', 'wage-share-kr', 'unpaid-fam-kr', 'occ-mix-kr', 'emp-ag-kr', 'emp-mfg-kr', 'emp-svc-kr', 'tel-kr', 'mobile-kr', 'internet-kr', 'pcbang-kr'],
-  society: ['tfr-kr', 'aged-kr', 'life-kr', 'urban-kr', 'house-kr', 'wage-kr', 'realwage-kr', 'carreg-kr', 'hhcons-kr', 'cons-mix-kr', 'engel-kr', 'cons-house-kr', 'hsupply-kr', 'one-person-kr', 'online-kr'], politics: [], culture: ['content-exp-mix-kr', 'music-exp-kr', 'album-kr', 'cons-culture-kr'], flow: [] };
+// 세부 지표를 주제별로 묶어 보여준다(탭이 15개 넘게 한 줄로 늘어서지 않게)
+type Group = [string, string[]];
+const GROUPS: Record<Cat, Group[]> = {
+  economy: [['성장·물가', ['gdp-growth', 'gdppc-kr', 'cpi-kr']], ['돈·금리·환율', ['fx-kr', 'disc-kr', 'call-kr', 'baserate-kr']], ['일자리', ['unemp-kr', 'emprate-kr']], ['에너지', ['oil-dep-kr']]],
+  industry: [['수출과 생산 구조', ['exports-kr', 'exp-gdp-kr', 'va-agr-kr', 'va-mfg-kr', 'va-srv-kr']], ['일하는 방식·직업', ['empstatus-mix-kr', 'wage-share-kr', 'unpaid-fam-kr', 'occ-mix-kr', 'emp-ag-kr', 'emp-mfg-kr', 'emp-svc-kr']], ['기술 보급', ['tel-kr', 'mobile-kr', 'internet-kr', 'pcbang-kr']]],
+  society: [['인구', ['tfr-kr', 'aged-kr', 'life-kr', 'urban-kr', 'one-person-kr']], ['집·임금', ['house-kr', 'hsupply-kr', 'wage-kr', 'realwage-kr']], ['소비', ['cons-mix-kr', 'engel-kr', 'cons-house-kr', 'hhcons-kr', 'carreg-kr', 'online-kr']]],
+  politics: [], culture: [['문화 산업·음악', ['content-exp-mix-kr', 'music-exp-kr', 'album-kr']], ['문화 소비', ['cons-culture-kr']]], flow: [],
+};
+const NUMERIC: Record<Cat, string[]> = Object.fromEntries(Object.entries(GROUPS).map(([k, g]) => [k, g.flatMap((x) => x[1])])) as Record<Cat, string[]>;
 const SIGNALS: Record<Cat, string[]> = { economy: ['ch-sg-debt'], industry: ['ch-sg-chip', 'ch-sg-connect'], society: ['ch-sg-household'], politics: ['ch-sg-china'], culture: ['ch-sg-folk', 'ch-sg-kculture'], flow: [] };
 
 export function FieldView({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) => void; why: (id: string) => void }) {
@@ -117,8 +122,19 @@ function NumericMain({ ind, inds, r, nav }: { ind: Indicator; inds: Indicator[];
   return (
     <>
       {inds.length > 1 && (
-        <div className="subtabs" role="tablist" aria-label="세부 지표">
-          {inds.map((i) => <button key={i.id} role="tab" aria-selected={i.id === ind.id} className={i.id === ind.id ? 'on' : ''} onClick={() => nav({ ind: i.id })}>{i.title}</button>)}
+        <div className="subgroups" role="tablist" aria-label="세부 지표">
+          {(GROUPS[r.cat] ?? []).map(([label, ids]) => {
+            const list = ids.map((id) => inds.find((i) => i.id === id)).filter(Boolean) as Indicator[];
+            if (!list.length) return null;
+            return (
+              <div key={label} className="subgroup">
+                <span className="sg-label">{label}</span>
+                <div className="subtabs">
+                  {list.map((i) => <button key={i.id} role="tab" aria-selected={i.id === ind.id} className={i.id === ind.id ? 'on' : ''} onClick={() => nav({ ind: i.id })}>{i.title}</button>)}
+                </div>
+              </div>
+            );
+          })}
         </div>
       )}
       <p className="lead"><b>{ind.title}</b> ({ind.unit}) — {ind.description}</p>

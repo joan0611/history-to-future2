@@ -260,3 +260,8 @@ main { padding: 1rem clamp(1rem, 3vw, 2rem) 3rem; max-width: 1360px; margin: 0 a
 .num-check { font-size: .78rem; color: var(--ink-3); display: flex; flex-wrap: wrap; gap: .25rem .6rem; margin: .2rem 0 0; }
 .num-check .nc-ok::before { content: '✓ '; color: #2f7d4f; }
 .num-check .nc-diff::before { content: '≠ '; color: var(--accent); font-weight: 700; }
+.subgroups { display: grid; gap: .35rem; margin-bottom: .6rem; }
+.subgroup { display: grid; grid-template-columns: 9.5rem 1fr; align-items: start; gap: .6rem; }
+.sg-label { font-size: .8rem; font-weight: 700; color: var(--ink-3); padding-top: .65rem; }
+.subgroup .subtabs { margin-bottom: 0; }
+@media (max-width: 720px) { .subgroup { grid-template-columns: 1fr; gap: .2rem; } .sg-label { padding-top: .2rem; } }
