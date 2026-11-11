@@ -5,7 +5,7 @@ import { Chart, SourceLine, type Band } from '../ui/Chart';
 import { TYPE_SHORT } from './FieldView';
 
 /**
- * ③ 사이클 발견 — 엔진(data/build/cycles.py)이 사람의 지정 없이 모든 연간 지표를 분석한 결과.
+ * ④ 반복·비교 — 엔진(data/build/cycles.py)이 사람의 지정 없이 모든 연간 지표를 분석한 결과.
  * 흥미도 순으로 정렬하되 신뢰도는 따로 표시(둘을 섞지 않음). 반복이 없다는 결과도 그대로 보여준다.
  */
 const TYPE_DESC: Record<string, string> = {
@@ -29,8 +29,9 @@ export function CycleView({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) 
   return (
     <div className="view">
       <section className="panel hero">
-        <h2>데이터가 스스로 찾은 반복과 유사성</h2>
-        <p className="lead">엔진이 연간 지표 {analyzed}개를 사람이 비교 대상을 정하지 않은 채 분석했습니다({usable}개는 계산 가능, 나머지는 자료가 짧아 계산하지 않음). 결과마다 유형과 신뢰도를 따로 표시합니다.</p>
+        <h2>반복과 비교 — 닮은 점, 다른 점, 그리고 한계</h2>
+        <p className="lead">두 가지를 구분해 보여줍니다. <b>데이터 모양의 유사성</b>은 엔진이 연간 지표 {analyzed}개를 사람이 비교 대상을 정하지 않은 채 계산한 결과이고({usable}개는 계산 가능), <b>역사적 상황의 유사성</b>은 사람이 근거 문장을 대조해 정리한 비교입니다. 숫자의 모양이 닮았다고 원인이 같거나, 일정한 주기로 되풀이되거나, 다음 일을 예측할 수 있다는 뜻은 아닙니다.</p>
+        <p className="small muted">신뢰도는 통계 판단이 얼마나 안정적인지를 뜻합니다. 그 결과가 역사적으로 얼마나 중요한지를 뜻하지 않습니다.</p>
         <div className="chips" role="group" aria-label="유형">
           <button className={`chip${type === 'all' ? ' on' : ''}`} onClick={() => setType('all')}>전체 {D.findings.length}</button>
           {Object.keys(TYPE_SHORT).filter((t) => D.findings.some((x) => x.type === t)).map((t) => (
@@ -57,6 +58,21 @@ export function CycleView({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) 
       </div>
 
       <section className="panel">
+        <h2>역사적 상황 비교 <span className="sub">사람이 근거 문장을 대조해 정리 — 측면마다 닮음·일부 닮음·다름</span></h2>
+        {D.parallels.map((p) => (
+          <details key={p.id} className="par">
+            <summary><b>{p.title}</b> — {p.a.label}({p.a.years}) ↔ {p.b.label}({p.b.years}) <span className="muted">· 닮음 {p.rows.filter((x) => x.verdict === 'similar' || x.verdict === 'same').length} · 일부 {p.rows.filter((x) => x.verdict === 'partial').length} · 다름 {p.rows.filter((x) => x.verdict === 'different').length}</span></summary>
+            <div className="tbl-wrap"><table className="tbl">
+              <thead><tr><th>측면</th><th>{p.a.label}</th><th>{p.b.label}</th><th>판단</th></tr></thead>
+              <tbody>{p.rows.map((x) => (
+                <tr key={x.aspect}><td>{x.aspect}</td><td>{x.a.text}</td><td>{x.b.text}</td><td><b>{PV[x.verdict] ?? x.verdict}</b><br /><span className="muted small">{x.note}</span></td></tr>
+              ))}</tbody>
+            </table></div>
+          </details>
+        ))}
+      </section>
+
+      <section className="panel">
         <h2>엔진이 본 모든 지표 <span className="sub">반복이 없거나 계산할 수 없는 결과도 숨기지 않습니다</span></h2>
         <div className="tbl-wrap"><table className="tbl">
           <thead><tr><th>지표</th><th>기간</th><th>관측</th><th>판정</th><th>근거</th></tr></thead>
@@ -70,6 +86,7 @@ export function CycleView({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) 
   );
 }
 
+const PV: Record<string, string> = { similar: '닮음', same: '닮음', partial: '일부 닮음', different: '다름', unknown: '확인 안 됨' };
 const VERDICT: Record<string, string> = { A: '통계적 주기 후보', E: '장기 구조 변화', none: '주기 없음', insufficient: '자료 부족 — 계산 안 함' };
 
 function Detail({ f, r, nav, why }: { f: Finding; r: Route; nav: (p: Partial<Route>) => void; why: (id: string) => void }) {
@@ -84,6 +101,7 @@ function Detail({ f, r, nav, why }: { f: Finding; r: Route; nav: (p: Partial<Rou
       <h2>{f.title}</h2>
       <p className="lead">{f.summary}</p>
       <p className="note">이 유형의 뜻: {TYPE_DESC[f.type]}. 신뢰도 근거: {f.confidence.why}.</p>
+      <Guide f={f} main={main} />
 
       {ser.map((a, i) => a.points && (
         <div key={a.key} className="cyc-chart">
@@ -102,6 +120,37 @@ function Detail({ f, r, nav, why }: { f: Finding; r: Route; nav: (p: Partial<Rou
       {main?.sensitivity && <Sensitivity a={main} />}
       {f.type === 'D' && <p className="note">문화 재유행은 차트·판매량 같은 연속 수치가 아직 없어 기록으로 확인된 단계만 비교합니다. 한 번의 재등장으로 '몇 년 주기'를 말하지 않습니다.</p>}
     </article>
+  );
+}
+
+/** 읽는 법 — 무엇을 비교했고, 무엇이 닮았고, 무엇은 확인하지 않았으며, 이 결과로 말할 수 없는 것은 무엇인가 */
+function Guide({ f, main }: { f: Finding; main?: Analysis }) {
+  const ev = f.evidence as Record<string, unknown>;
+  const what: Record<string, string> = {
+    A: '추세를 뺀 값에서 같은 간격의 오르내림이 우연보다 강한지(순열 검정).',
+    B: `${main?.title ?? '지표'}가 ${String(ev.basis ?? main?.episodeBasis ?? '기준')}보다 크게 벗어난 해를 ‘급변’으로 정하고, 그런 구간의 횟수와 간격.`,
+    C: `두 5년 구간의 경제성장률·물가상승률 궤적(숫자 모양)을 표준화해 잰 거리. 사건·제도·국제 정세는 계산에 들어가지 않았습니다.`,
+    D: '기록으로 확인된 단계(등장·확산·쇠퇴·재등장)의 순서. 수치는 비교하지 않았습니다.',
+    E: '직선 추세가 변동을 얼마나 설명하는지와 평균이 바뀐 해.',
+    N: '여러 시차·주기를 무작위로 섞은 자료와 비교한 주기 검정.',
+    R: '추세를 뺀 두 지표가 몇 년 차이를 두고 함께 움직이는지(상관).',
+  };
+  const cannot: Record<string, string> = {
+    A: '왜 그런 간격이 생기는지, 앞으로도 같은 간격일지.',
+    B: `일정한 주기(간격이 들쭉날쭉${ev.cv != null ? `, 변동계수 ${String(ev.cv)}` : ''})나 다음 급변 시점. 급변 횟수가 적어 판단이 흔들릴 수 있습니다.`,
+    C: '두 시기의 원인이 같다거나, 지금 이후가 과거처럼 흘러갈 것이라는 예측.',
+    D: '재등장이 몇 년마다 온다는 주기 — 재등장 사례가 하나뿐입니다.',
+    E: '이 흐름이 앞으로도 같은 기울기로 이어진다는 예측.',
+    N: '이 지표에 반복이 전혀 없다는 단정(관측 기간 안에서 검정한 결과일 뿐).',
+    R: '한 지표가 다른 지표를 움직였다는 인과.',
+  };
+  return (
+    <dl className="guide">
+      <dt>무엇을 비교했나</dt><dd>{what[f.type]}</dd>
+      <dt>닮은 점(데이터)</dt><dd>{f.summary}</dd>
+      <dt>확인하지 않은 것</dt><dd>그 시기를 만든 원인·제도·사람들의 생활이 같았는지는 계산하지 않았습니다.{f.periods.length >= 2 ? ' 아래 ‘조건 비교’에서 구간마다 정리된 사건을 직접 비교할 수 있습니다.' : ''}</dd>
+      <dt>이 결과로 말할 수 없는 것</dt><dd>{cannot[f.type]}</dd>
+    </dl>
   );
 }
 

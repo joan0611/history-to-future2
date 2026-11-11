@@ -249,6 +249,20 @@ def build(seed, signals, deep=None):
                           "chainId": ch["id"], "note": e["note"], "claimIds": e["claimIds"]})
         chains.append({"id": ch["id"], "kind": "case", "title": ch["title"], "ref": ch["eraId"], "eraId": ch["eraId"], "steps": []})
 
+    # 시간 검사: 연도가 확인된 두 항목에서 나중 일이 먼저 일을 '낳았다'고 그릴 수는 없다.
+    # 사슬 단계를 순서대로 이었을 뿐 날짜가 거꾸로인 연결은 지도에서 빼고 기록으로 남긴다.
+    dropped = []
+    kept = []
+    for e in edges:
+        a, b = nodes.get(e["from"]), nodes.get(e["to"])
+        if (a and b and e["rel"] != "similar" and a["yearPrecision"] == "year" and b["yearPrecision"] == "year"
+                and a["year"] > b["year"]):
+            dropped.append({"from": e["from"], "to": e["to"], "fromYear": a["year"], "toYear": b["year"], "chainId": e["chainId"],
+                            "reason": "날짜가 거꾸로(나중 일 → 먼저 일)라 원인·결과로 표시하지 않음"})
+            continue
+        kept.append(e)
+    edges[:] = kept
+
     # 중요도: 사슬 여러 개에 등장하는 노드는 한 단계 올린다(연결이 많을수록 흐름의 교차점)
     deg = {}
     for e in edges:
@@ -274,7 +288,7 @@ def build(seed, signals, deep=None):
             n = nodes[st["nodeId"]]
             if n["kind"] != "event" and not n.get("deep") and st["stage"] in STAGE_TYPE:
                 n["nodeType"] = STAGE_TYPE[st["stage"]]
-    return {"nodes": sorted(nodes.values(), key=lambda n: (n["year"], n["id"])), "chains": chains, "edges": edges, "lanes": LANES,
+    return {"nodes": sorted(nodes.values(), key=lambda n: (n["year"], n["id"])), "chains": chains, "edges": edges, "droppedEdges": dropped, "lanes": LANES,
             "relTypes": REL_KO, "nodeTypes": NODE_TYPE_KO}
 
 

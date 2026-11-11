@@ -17,8 +17,9 @@ with sync_playwright() as p:
     # A 전체 역사: 첫 화면에서 장기 그래프·변화 지도(시대×분야)·시대별 주요 사건이 바로 보인다
     pg.goto(U); pg.wait_for_timeout(1200)
     cells = pg.locator('.cmap-cell:not(.empty)').count(); years = pg.locator('.mt-y').count()
-    ok('A 첫 화면: 공통 시간축(모든 연도)·장기 그래프·변화 지도', years == 67 and pg.locator('.hero .chart svg').count() == 1 and cells >= 30,
+    ok('A 첫 화면: 공통 시간축·질문 5개·시대 카드 7개·변화 지도', years == 67 and pg.locator('.hero .flowcard').count() == 5 and pg.locator('.era-card').count() == 7 and cells >= 30,
        f'연도 칸 {years}, 지도 칸 {cells}')
+    ok('A 첫 화면에 의미 불명 수치(교차검증 %) 없음', '교차검증' not in pg.locator('body').inner_text())
     ok('A 점 지도 없음(첫 화면 정보 밀도)', pg.locator('circle').count() < 20)
     # 시간축: 연도 → 1년 보기, 시대 → 10년 보기
     pg.locator('.mt-y').nth(14).click(); pg.wait_for_timeout(300)
@@ -43,7 +44,7 @@ with sync_playwright() as p:
     pg.get_by_role('button', name='닫기', exact=True).click(); pg.wait_for_timeout(300)
     ok('패널 닫기 후 장기 그래프 유지(전체 기간)', pg.locator('.why').count() == 0 and pg.locator('.hero .chart svg').count() >= 1)
     # E 자동 사이클 발견
-    pg.get_by_role('tab', name='사이클 발견').click(); pg.wait_for_timeout(600)
+    pg.get_by_role('tab', name='반복·비교').click(); pg.wait_for_timeout(600)
     n = pg.locator('.cyc-list li').count(); txt = pg.locator('main').inner_text()
     ok('E 지정 없이 반복 후보 자동 계산', n >= 8 and '불규칙 반복' in txt and '구조적 유사' in txt, f'발견 {n}개')
     pg.locator('.cyc-list button', has_text='소비자물가').first.click(); pg.wait_for_timeout(500)
@@ -137,6 +138,24 @@ with sync_playwright() as p:
     pg.goto(U + '#/history?z=year&y=2021&why=d20-hike&path=d20-hike'); pg.wait_for_timeout(700)
     w = pg.locator('.why').inner_text()
     ok('코로나19: 금리 인상 전환의 원인(집값·가계부채)', '가계부채' in w)
+    # 변화 흐름: 질문 → 단계 → 연결의 성격 → 사건 상세 → 흐름으로 돌아가기
+    pg.goto(U + '#/flow'); pg.wait_for_timeout(600)
+    ok('흐름 목록 5개', pg.locator('.flowcard').count() == 5)
+    pg.goto(U + '#/flow/flow-music?y=1995'); pg.wait_for_timeout(800)
+    t = pg.locator('main').inner_text()
+    ok('음악 흐름: 단계·근거 문장·연결 성격이 클릭 없이 보임', pg.locator('.step').count() >= 8 and '노래방' in t and '시간 순서일 뿐' in t and '확인되지 않은 부분' in t)
+    pg.locator('.step-ev .chip').first.click(); pg.wait_for_timeout(600)
+    ok('흐름 → 사건 상세(돌아가기 버튼·이 사건이 나오는 흐름)', 'from=flow-music' in pg.url and '돌아가기' in pg.locator('.why').inner_text() and '변화 흐름' in pg.locator('.why').inner_text())
+    pg.locator('.why-nav .btn', has_text='돌아가기').click(); pg.wait_for_timeout(400)
+    ok('사건 상세 → 흐름으로 복귀', '#/flow/flow-music' in pg.url and 'why=' not in pg.url)
+    pg.goto(U + '#/flow/flow-relations'); pg.wait_for_timeout(600)
+    ok('관계 흐름: 검증 안 된 가설을 가설로 표시', '검증되지 않은 가설' in pg.locator('main').inner_text())
+    pg.goto(U + '#/history?z=year&y=1983&why=e80-64k&path=e80-64k'); pg.wait_for_timeout(600)
+    w = pg.locator('.why').inner_text()
+    ok('64K 상세: 1986년 사건을 원인으로 표시하지 않음(날짜 역순 제거)', '3저' not in w.split('이것이 무엇을 바꾸었나')[0])
+    ok('64K 상세: 다른 나라 성장률 자동 발견을 붙이지 않음', '미국' not in w.split('다른 시대에도')[-1][:200] if '다른 시대에도' in w else True)
+    pg.goto(U + '#/cycle'); pg.wait_for_timeout(600)
+    ok('반복·비교: 비교 기준·한계 설명', '이 결과로 말할 수 없는 것' in pg.locator('main').inner_text() and pg.locator('.par').count() >= 3)
     # 빈 해 채우기(1967·1984·1992·2005)와 보강된 근거
     for yy, kw in [(1967, '제2차'), (1984, '2호선'), (1992, '수교'), (2005, '호주제')]:
         pg.goto(U + f'#/history?z=year&y={yy}'); pg.wait_for_timeout(500)

@@ -3,6 +3,7 @@ import { CATS, CAT_KO, CAT_SHORT, D, eraEnd, isKR, lead, nodesIn, pickKey, type 
 import type { Route } from '../lib/route';
 import { Chart, SourceLine, type Band, type Marker } from '../ui/Chart';
 import { Lifecycle } from '../ui/Lifecycle';
+import { FlowCard } from './FlowView';
 
 /**
  * ② 분야별 변화 — 분야를 고르면 1960~현재 장기 동향이 먼저(대표 시각화 하나를 크게).
@@ -50,8 +51,16 @@ export function FieldView({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) 
         ))}
       </nav>
 
+      <p className="readorder">읽는 순서: <b>① 핵심 질문</b> → <b>② 장기 흐름</b> → <b>③ 시대별 전환점</b> → <b>④ 그 무렵의 사건</b> → <b>⑤ 반복·자료 공백</b> — 모든 분야가 같은 순서입니다.</p>
+      <section className="panel">
+        <h2>① 이 분야의 핵심 질문 <span className="sub">질문 하나를 이전·조건·전환점·확산·지금까지 근거와 함께</span></h2>
+        {D.flows.filter((f) => f.cats.includes(c)).length ? (
+          <div className="flowgrid compact">{D.flows.filter((f) => f.cats.includes(c)).map((f) => <FlowCard key={f.id} f={f} nav={nav} compact />)}</div>
+        ) : <p className="empty">이 분야를 중심으로 한 변화 흐름은 아직 없습니다. 다른 분야의 흐름에서 이 분야와 연결된 부분을 볼 수 있습니다.</p>}
+      </section>
+
       <section className="panel hero">
-        <h2>{CAT_KO[c]} — 1960년부터 지금까지</h2>
+        <h2>② {CAT_KO[c]} — 1960년부터 지금까지</h2>
         {ind ? <NumericMain ind={ind} inds={inds} r={r} nav={nav} /> : lifeChains.length > 0 ? (
           <><p className="lead">{c === 'politics' ? '정치·외교는 수치 대신 시대별 흐름과 국제 관계의 변화로 봅니다.' : '확인된 기록으로 등장 → 확산 → 쇠퇴 → 재등장 단계를 이었습니다. 점이나 이름을 누르면 원인과 결과로 갑니다.'}</p>
             <Lifecycle chains={lifeChains} year={r.y} why={why} /></>
@@ -60,7 +69,7 @@ export function FieldView({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) 
       </section>
 
       <section className="panel">
-        <h2>시대별 변화 단계 <span className="sub">{CAT_SHORT[c]} 분야에서 시대마다 가장 중요한 변화</span></h2>
+        <h2>③ 시대별 전환점 <span className="sub">{CAT_SHORT[c]} 분야에서 시대마다 가장 중요한 변화 — 누르면 근거와 원인·결과</span></h2>
         <ol className="stages">
           {D.eras.map((e) => {
             const ns = pickKey(D.nodes.filter((n) => n.eraId === e.id && n.lane === c), 2);
@@ -76,7 +85,7 @@ export function FieldView({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) 
       </section>
 
       <section className="panel">
-        <h2>{r.y - 1}~{r.y + 1}년 무슨 일이 있었나 <span className="sub">그래프나 시간축에서 연도를 바꾸면 함께 바뀝니다</span></h2>
+        <h2>④ {r.y - 1}~{r.y + 1}년 무슨 일이 있었나 <span className="sub">그래프나 시간축에서 연도를 바꾸면 함께 바뀝니다</span></h2>
         {near.length === 0 ? <p className="empty">이 기간에 날짜가 확인된 항목이 없습니다.</p> : (
           <ul className="nearlist">
             {[...nearCat, ...near.filter((n) => n.lane !== c)].slice(0, 10).map((n) => (
@@ -89,7 +98,7 @@ export function FieldView({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) 
       </section>
 
       <section className="panel">
-        <h2>이 분야에서 자동으로 찾은 반복·변화 <span className="sub">사이클 발견 엔진 결과</span></h2>
+        <h2>⑤ 자동으로 찾은 반복·변화와 아직 없는 자료 <span className="sub">‘반복·비교’ 화면의 결과 중 이 분야</span></h2>
         {findings.length ? (
           <ul className="flist">
             {findings.map((f) => (

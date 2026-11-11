@@ -242,7 +242,7 @@ main { padding: 1rem clamp(1rem, 3vw, 2rem) 3rem; max-width: 1360px; margin: 0 a
   .cyc { grid-template-columns: 1fr; } .cyc-list { position: static; max-height: 340px; }
 }
 @media (max-width: 760px) {
-  .top { gap: .6rem; } .tabs { margin-left: 0; width: 100%; display: grid; grid-template-columns: repeat(3, 1fr); }
+  .top { gap: .6rem; } .tabs { margin-left: 0; width: 100%; display: grid; grid-template-columns: repeat(4, 1fr); }
   .tabs button { padding: .4rem .5rem; } .tabs button span { display: none; }
   .mt-era { font-size: .62rem; padding: .2rem 0; }
   .cmap { grid-template-columns: 1fr !important; } .cmap > span:first-child { display: none; }
@@ -271,3 +271,65 @@ main { padding: 1rem clamp(1rem, 3vw, 2rem) 3rem; max-width: 1360px; margin: 0 a
 .install-btn { border: 0; background: var(--ink); color: var(--bg); border-radius: 9px; padding: .5rem .9rem; font-weight: 700; cursor: pointer; min-height: 38px; }
 .install-x { border: 0; background: transparent; color: var(--ink-3); font-size: 1rem; cursor: pointer; min-width: 38px; min-height: 38px; }
 .install-how { flex-basis: 100%; margin: .2rem 0 0 2.2rem; padding-left: 1rem; color: var(--ink-2); }
+
+/* ── 변화 흐름 ── */
+.flowgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: .7rem; margin-top: .6rem; }
+.flowgrid.compact { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+.flowcard { display: flex; flex-direction: column; gap: .4rem; text-align: left; border: 1px solid var(--line-2); background: var(--surface); border-radius: var(--r); padding: .85rem .95rem; cursor: pointer; min-height: 44px; }
+.flowcard:hover { border-color: var(--ink-2); }
+.fc-meta { display: flex; flex-wrap: wrap; gap: .35rem; font-size: .74rem; color: var(--ink-3); align-items: center; }
+.fc-cat { display: inline-flex; align-items: center; gap: .2rem; font-weight: 700; color: var(--ink-2); }
+.fc-q { font-size: 1.02rem; line-height: 1.4; }
+.fc-shape { font-size: .84rem; color: var(--ink-2); }
+.fc-foot { font-size: .76rem; color: var(--ink-3); margin-top: auto; }
+.fc-go { color: var(--accent); font-weight: 700; margin-left: .3rem; white-space: nowrap; }
+.crumbline { margin: 0 0 .5rem; }
+.shape { color: var(--ink-2); max-width: 80ch; }
+.lede h3 { font-size: .9rem; margin: .6rem 0 .2rem; color: var(--ink-2); }
+.phasebar { list-style: none; padding: 0; margin: .8rem 0 .3rem; display: flex; flex-wrap: wrap; gap: .35rem; }
+.phasebar li { flex: 0 0 auto; }
+.phasebar a { display: flex; flex-direction: column; gap: .1rem; text-decoration: none; color: var(--ink); background: var(--surface-2); border: 1px solid var(--line); border-radius: 10px; padding: .4rem .6rem; width: 9.5rem; min-height: 44px; }
+.pb-ph { font-size: .7rem; font-weight: 800; color: var(--ink-3); } .pb-y { font-size: .72rem; color: var(--ink-3); } .pb-t { font-size: .82rem; font-weight: 600; line-height: 1.3; }
+.phase { font-size: .72rem; font-weight: 800; border-radius: 6px; padding: .1rem .45rem; background: var(--surface-2); border: 1px solid var(--line-2); }
+.ph-before .phase, .phase.ph-before { color: var(--ink-2); } .phase.ph-condition { color: var(--c-politics); } .phase.ph-turn { color: var(--accent); }
+.phase.ph-spread { color: var(--c-society); } .phase.ph-life { color: var(--c-culture); } .phase.ph-cross { color: var(--c-flow); } .phase.ph-now { color: var(--c-industry); }
+.steps { list-style: none; padding: 0; margin: .4rem 0 0; display: grid; gap: .2rem; }
+.step-card { border: 1px solid var(--line); border-left: 4px solid var(--line-2); background: var(--surface); border-radius: 12px; padding: .75rem .9rem; scroll-margin-top: 110px; }
+.step.ph-turn .step-card { border-left-color: var(--accent); } .step.ph-now .step-card { border-left-color: var(--c-industry); } .step.ph-before .step-card { border-left-color: var(--ink-3); }
+.step-h { display: flex; gap: .5rem; align-items: center; flex-wrap: wrap; } .step-y { font-size: .82rem; color: var(--ink-3); font-weight: 600; }
+.step-card h3 { margin: .3rem 0 .2rem; font-size: 1.05rem; }
+.step-ev { display: flex; flex-wrap: wrap; gap: .35rem; align-items: center; font-size: .82rem; color: var(--ink-3); margin: .4rem 0 0; }
+.conn { display: grid; grid-template-columns: 1.4rem 1fr; gap: .1rem .4rem; align-items: start; padding: .35rem .2rem .35rem .6rem; font-size: .88rem; color: var(--ink-2); }
+.conn-arrow { font-weight: 800; color: var(--ink-3); text-align: center; }
+.conn-ev { grid-column: 2; font-size: .82rem; } .conn-ev summary { cursor: pointer; color: var(--accent); }
+.lk { display: inline-block; font-size: .72rem; font-weight: 800; border-radius: 6px; padding: .05rem .4rem; margin-right: .35rem; border: 1px solid currentColor; }
+.lk.k-causal { color: #c43b2a; } .lk.k-condition { color: var(--c-politics); } .lk.k-correlation { color: var(--c-industry); }
+.lk.k-sequence { color: var(--ink-3); border-style: dotted; } .lk.k-interpretation { color: var(--warn); } .lk.k-hypothesis { color: var(--ink-3); border-style: dashed; }
+.rel-sub { font-size: .7rem; color: var(--ink-3); margin-right: .2rem; }
+.gaps li::before { content: '미확인 · '; color: var(--accent); font-weight: 700; font-size: .78rem; }
+.howto h3 { font-size: .95rem; margin: .2rem 0 .4rem; }
+.mini-ind { margin-bottom: .8rem; } .mini-ind h3 { margin: .2rem 0; font-size: .95rem; }
+.claim-scope { font-size: .8rem; color: var(--ink-2); background: var(--surface-2); border-radius: 8px; padding: .3rem .5rem; margin: .25rem 0 0; }
+.cperiod { font-size: .74rem; color: var(--ink-3); }
+.why-flows { background: var(--surface-2); border-radius: 10px; padding: .5rem .7rem; margin-top: .5rem; font-size: .88rem; }
+.zoom-help { font-size: .82rem; color: var(--ink-3); margin: -.2rem 0 .7rem; }
+.readorder { font-size: .84rem; color: var(--ink-2); margin: .2rem 0 .8rem; }
+/* 전체 역사 — 시대 카드 */
+.eras { list-style: none; padding: 0; margin: .4rem 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: .7rem; }
+.era-card { border: 1px solid var(--line); background: var(--surface); border-radius: var(--r); padding: .8rem .9rem; display: flex; flex-direction: column; gap: .4rem; }
+.era-card.on { border-color: var(--ink); }
+.era-h { border: 0; background: none; padding: 0; text-align: left; cursor: pointer; min-height: 40px; }
+.era-h b { font-size: 1.05rem; } .era-h span { display: block; font-size: .85rem; color: var(--ink-2); }
+.era-card dl { margin: 0; display: grid; grid-template-columns: 4.6rem 1fr; gap: .3rem .5rem; font-size: .86rem; }
+.era-card dt { font-weight: 800; color: var(--ink-3); font-size: .76rem; padding-top: .12rem; } .era-card dd { margin: 0; color: var(--ink-2); }
+.era-flows { display: flex; flex-wrap: wrap; gap: .3rem; align-items: center; font-size: .8rem; margin: .2rem 0; }
+.era-flows .chip { font-size: .76rem; min-height: 30px; padding: .2rem .6rem; text-decoration: none; color: var(--ink); }
+.era-steps li { font-size: .9rem; }
+/* 반복·비교 — 읽는 법 */
+.guide { display: grid; grid-template-columns: 9rem 1fr; gap: .35rem .7rem; font-size: .88rem; background: var(--surface-2); border-radius: 10px; padding: .6rem .8rem; margin: .5rem 0 .8rem; }
+.guide dt { font-weight: 800; color: var(--ink-2); } .guide dd { margin: 0; color: var(--ink-2); }
+.par { border: 1px solid var(--line); border-radius: 10px; padding: .5rem .7rem; margin: .4rem 0; } .par summary { cursor: pointer; }
+@media (max-width: 760px) {
+  .guide, .era-card dl { grid-template-columns: 1fr; } .guide dt, .era-card dt { margin-top: .2rem; }
+  .phasebar a { width: 8rem; }
+}

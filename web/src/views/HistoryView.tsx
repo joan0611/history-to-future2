@@ -1,7 +1,8 @@
-import { useState } from 'react';
-import { CATS, CAT_KO, CAT_SHORT, D, MAX_Y, byId, eraEnd, eraOf, inc, isKR, lead, nodesIn, out, pickKey, type Cat, type Node } from '../lib/data';
+import { CATS, CAT_KO, CAT_SHORT, D, MAX_Y, byId, eraEnd, eraOf, inc, isKR, lead, nodesIn, out, pickKey, type Cat } from '../lib/data';
 import type { Route } from '../lib/route';
 import { Chart } from '../ui/Chart';
+import { FlowCard } from './FlowView';
+import type { Era, Flow } from '../lib/data';
 
 /**
  * ① 전체 역사 — 전체(1960~현재) → 10년 → 1년.
@@ -17,6 +18,7 @@ export function HistoryView({ r, nav, why }: { r: Route; nav: (p: Partial<Route>
           <button key={z} role="tab" aria-selected={r.z === z} className={r.z === z ? 'on' : ''} onClick={() => nav({ z })}>{t}</button>
         ))}
       </div>
+      <p className="zoom-help">{ZOOM_HELP[r.z]}</p>
       {r.z === 'all' && <Overview r={r} nav={nav} why={why} />}
       {r.z === 'decade' && <Decade r={r} nav={nav} why={why} />}
       {r.z === 'year' && <Year r={r} nav={nav} why={why} />}
@@ -24,34 +26,46 @@ export function HistoryView({ r, nav, why }: { r: Route; nav: (p: Partial<Route>
   );
 }
 
+const ZOOM_HELP = {
+  all: '전체: 1960년부터 지금까지를 한눈에. 선택한 연도는 표시만 되고 내용을 거르지 않습니다.',
+  decade: '10년: 선택한 연도가 속한 시대 하나를 봅니다. 시간축에서 다른 연도를 누르면 그 시대로 바뀝니다.',
+  year: '1년: 선택한 연도 한 해에 날짜가 확인된 항목만 봅니다. 다른 해의 내용을 끌어와 채우지 않습니다.',
+} as const;
+
+/** 흐름의 단계가 어느 해에 걸리는지(기간 글자에서 첫 연도) */
+const stepYear = (p: string) => { const m = p.match(/(19|20)\d{2}/); return m ? Number(m[0]) : NaN; };
+export function flowStepsIn(e: Era) {
+  const end = eraEnd(e);
+  const out: { f: Flow; id: string; title: string; period: string }[] = [];
+  for (const f of D.flows) for (const s of f.steps) { if (s.period.includes('이전')) continue; const y = stepYear(s.period); if (y >= e.startYear && y <= end) out.push({ f, id: s.id, title: s.title, period: s.period }); }
+  return out;
+}
+
 function Overview({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) => void; why: (id: string) => void }) {
   const gdp = D.indicators.find((i) => i.id === 'gdp-growth')!;
   const kr = gdp.series.find((s) => s.country === 'KR')!;
   const cpi = D.indicators.find((i) => i.id === 'cpi-kr')!;
   const a = D.analyses.find((x) => x.key === 'gdp-growth:KR');
-  const pc = D.analyses.find((x) => x.key === 'cpi-kr:KR');
-  const [issueCat, setIssueCat] = useState<Cat | 'all'>('all');
   return (
     <>
       <section className="panel hero">
         <div className="hero-text">
-          <h2>고속 성장에서 저성장으로 — 한 줄로 본 65년</h2>
-          <p>{a?.changePoint ? <>성장률은 {a.changePoint.year}년 전후로 평균 {a.changePoint.before}%에서 {a.changePoint.after}%로 한 단계 내려앉았습니다(데이터에서 자동 계산한 변화점). </> : null}
-            {pc?.highEpisodes?.length ? <>물가가 추세보다 크게 뛴 시기는 {pc.highEpisodes.map(([x, y]) => (x === y ? `${x}` : `${x}~${y}`)).join(', ')}년입니다. </> : null}
-            그래프를 누르면 그 해로 갑니다.</p>
+          <h2>1960년부터 지금까지, 한국 사람들의 일·소비·문화·관계는 어떻게 달라졌나</h2>
+          <p>정치·경제의 큰 사건뿐 아니라 사람들이 일하고, 사고, 즐기고, 만나고, 자신을 드러내는 방식의 변화를 근거와 함께 따라갑니다. 먼저 질문 하나를 골라 끝까지 읽거나, 아래에서 시대마다 무엇이 달라졌는지 훑어보세요.</p>
         </div>
-        <Chart ariaLabel="한국 경제성장률과 물가상승률 1960~2025" unit="%" year={r.y} height={260}
-          onPick={(y) => nav({ y, z: 'year' })}
-          series={[
-            { key: 'g', label: '경제성장률', color: 'var(--c-economy)', points: kr.points.map(([t, v]) => [Number(t), v]) },
-            { key: 'p', label: '물가상승률', color: 'var(--c-politics)', points: cpi.series[0].points.map(([t, v]) => [Number(t), v]) },
-          ]} />
-        <div className="legend"><span><i className="lg-line" style={{ background: 'var(--c-economy)' }} />실질 경제성장률</span><span><i className="lg-line" style={{ background: 'var(--c-politics)' }} />소비자물가 상승률</span><span><i className="lg-sel" />선택 연도</span></div>
-        <p className="src-line">출처: FRED(원자료 OECD·세계은행) — 실질 GDP 성장률, 소비자물가 상승률. 같은 단위(%)라 한 축에 그렸습니다.</p>
+        <div className="flowgrid compact">{D.flows.map((f) => <FlowCard key={f.id} f={f} nav={nav} compact />)}</div>
       </section>
 
       <section className="panel">
-        <h2>변화의 지도 <span className="sub">분야마다 시대를 대표하는 변화 하나 — 누르면 원인과 결과</span></h2>
+        <h2>시대마다 무엇이 달라졌나 <span className="sub">이전에서 이어진 것 → 이 시대에 달라진 것 → 다음 시대로 넘긴 것</span></h2>
+        <ol className="eras">
+          {D.eras.map((e, i) => <EraCard key={e.id} e={e} prevSummary={D.transitions.find((t) => t.toEra === e.id)?.summary} first={i === 0} on={eraOf(r.y).id === e.id} nav={nav} />)}
+        </ol>
+        <p className="small muted">시대 요약은 근거 문장을 묶어 작성자가 정리한 것입니다. 문장별 근거와 해마다의 사건은 각 시대의 ‘10년 보기’에서 확인할 수 있습니다.</p>
+      </section>
+
+      <section className="panel">
+        <h2>변화의 지도 <span className="sub">분야마다 시대를 대표하는 사건 하나 — 누르면 사건의 근거와 원인·결과</span></h2>
         <div className="cmap" style={{ gridTemplateColumns: `6.5rem ${D.eras.map((e) => `${eraEnd(e) - e.startYear + 1}fr`).join(' ')}` }}>
           <span />
           {D.eras.map((e) => (
@@ -78,16 +92,39 @@ function Overview({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) => void;
       </section>
 
       <section className="panel">
-        <h2>시대별 주요 사건 <span className="sub">시대마다 중요한 5개 먼저</span></h2>
-        <div className="chips">
-          <button className={`chip${issueCat === 'all' ? ' on' : ''}`} onClick={() => setIssueCat('all')}>전체 분야</button>
-          {CATS.map((c) => <button key={c} className={`chip${issueCat === c ? ' on' : ''}`} onClick={() => setIssueCat(c)}><span className={`cdot c-${c}`} />{CAT_SHORT[c]}</button>)}
-        </div>
-        <div className="issues">
-          {D.eras.map((e) => <EraIssues key={e.id} eraId={e.id} cat={issueCat} why={why} nav={nav} />)}
-        </div>
+        <h2>경제 지표 한 줄로 보기 <span className="sub">경제는 변화의 한 부분일 뿐 — 다른 분야는 ‘분야별 변화’에서</span></h2>
+        <p className="small">{a?.changePoint ? <>성장률은 {a.changePoint.year}년 전후로 평균 {a.changePoint.before}%에서 {a.changePoint.after}%로 한 단계 내려앉았습니다(데이터에서 자동 계산한 변화점). </> : null}그래프를 누르면 그 해로 갑니다.</p>
+        <Chart ariaLabel="한국 경제성장률과 물가상승률 1960~2025" unit="%" year={r.y} height={200}
+          onPick={(y) => nav({ y, z: 'year' })}
+          series={[
+            { key: 'g', label: '경제성장률', color: 'var(--c-economy)', points: kr.points.map(([t, v]) => [Number(t), v]) },
+            { key: 'p', label: '물가상승률', color: 'var(--c-politics)', points: cpi.series[0].points.map(([t, v]) => [Number(t), v]) },
+          ]} />
+        <div className="legend"><span><i className="lg-line" style={{ background: 'var(--c-economy)' }} />실질 경제성장률</span><span><i className="lg-line" style={{ background: 'var(--c-politics)' }} />소비자물가 상승률</span><span><i className="lg-sel" />선택 연도</span></div>
+        <p className="src-line">출처: FRED(원자료 OECD·세계은행) — 실질 GDP 성장률, 소비자물가 상승률. 같은 단위(%)라 한 축에 그렸습니다.</p>
       </section>
     </>
+  );
+}
+
+function EraCard({ e, prevSummary, first, on, nav }: { e: Era; prevSummary?: string; first: boolean; on: boolean; nav: (p: Partial<Route>) => void }) {
+  const steps = flowStepsIn(e);
+  const go = () => nav({ y: e.id === '1970s' ? 1973 : e.startYear, z: 'decade' });
+  return (
+    <li className={`era-card${on ? ' on' : ''}`}>
+      <button className="era-h" onClick={go}><b>{e.label}</b> <span>{e.title}</span></button>
+      <dl>
+        <dt>이전에서</dt><dd>{prevSummary ?? (first ? '이 사이트는 1960년부터 다룹니다. 1960년 이전 배경은 사건 상세의 ‘1960년 이전’ 항목에서 볼 수 있습니다.' : '자료 없음')}</dd>
+        <dt>달라진 것</dt><dd>{e.glance.keyCause ?? '자료 없음'}</dd>
+        {e.glance.legacy && <><dt>다음으로</dt><dd>{e.glance.legacy}</dd></>}
+      </dl>
+      {steps.length > 0 && (
+        <p className="era-flows"><span className="muted">이 시대를 지나는 흐름</span> {steps.slice(0, 6).map((x) => (
+          <a key={x.f.id + x.id} className="chip" href={`#/flow/${x.f.id}?y=${e.startYear}`}>{x.title}</a>
+        ))}</p>
+      )}
+      <button className="link" onClick={go}>10년 보기 — 해마다의 사건과 근거 →</button>
+    </li>
   );
 }
 
@@ -102,30 +139,6 @@ function Row({ c, why }: { c: Cat; why: (id: string) => void }) {
           : <span key={e.id} className="cmap-cell empty">자료 없음</span>;
       })}
     </>
-  );
-}
-
-function EraIssues({ eraId, cat, why, nav }: { eraId: string; cat: Cat | 'all'; why: (id: string) => void; nav: (p: Partial<Route>) => void }) {
-  const e = D.eras.find((x) => x.id === eraId)!;
-  const [more, setMore] = useState(false);
-  const pool = D.nodes.filter((n) => n.eraId === eraId && n.yearPrecision === 'year' && isKR(n) && (cat === 'all' || n.lane === cat));
-  const top = pickKey(pool, 5);
-  const rest = pool.filter((n) => !top.includes(n)).sort((a, b) => a.year - b.year);
-  const list = more ? [...top, ...rest].sort((a, b) => a.year - b.year) : top;
-  return (
-    <div className="era-issues">
-      <button className="era-issues-h" onClick={() => nav({ y: e.id === '1970s' ? 1973 : e.startYear, z: 'decade' })}><b>{e.label}</b> <span>{e.title.split('—')[0].trim()}</span></button>
-      {list.length ? <ol>{list.map((n) => <IssueLine key={n.id} n={n} why={why} strong={top.includes(n)} />)}</ol> : <p className="muted empty">해당 분야 자료 없음</p>}
-      {rest.length > 0 && <button className="link" onClick={() => setMore(!more)}>{more ? '주요 사건만' : `+${rest.length}개 더 보기`}</button>}
-    </div>
-  );
-}
-
-function IssueLine({ n, why, strong }: { n: Node; why: (id: string) => void; strong?: boolean }) {
-  return (
-    <li className={`issue c-${n.lane}${strong ? ' strong' : ''}`}>
-      <button onClick={() => why(n.id)}><span className="y">{n.year}</span><span className={`cdot c-${n.lane}`} /><span className="t">{n.label}</span></button>
-    </li>
   );
 }
 
@@ -179,6 +192,17 @@ function Decade({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) => void; w
         )}
         {tOut && <p className="bridge out"><b>다음 시대로</b> {tOut.summary}</p>}
       </section>
+
+      {flowStepsIn(e).length > 0 && (
+        <section className="panel">
+          <h3>이 시대를 지나는 변화 흐름 <span className="sub">질문별로 이 시대가 어떤 단계였나</span></h3>
+          <ul className="plain era-steps">
+            {flowStepsIn(e).map((x) => (
+              <li key={x.f.id + x.id}><a href={`#/flow/${x.f.id}?y=${r.y}`}><b>{x.f.question}</b></a> <span className="muted">— {x.period}: {x.title}</span></li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       <section className="panel">
         <h3>해마다 무엇이 있었나 <span className="sub">연도를 누르면 1년 보기</span></h3>

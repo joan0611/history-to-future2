@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { CAT_KO, CLAIM_KO, COUNTRY_KO, D, STATUS_KO, VERIF_KO, byId, inc, lead, out, reliability, type Edge, type Node, type Rel } from '../lib/data';
+import { CAT_KO, CLAIM_KO, COUNTRY_KO, D, STATUS_KO, STATUS_SHORT, byId, evidenceCount, flowById, inc, lead, linkKindOf, out, type Edge, type Node, type Rel } from '../lib/data';
 import type { Route } from '../lib/route';
 
 /**
@@ -14,7 +14,7 @@ export function WhyPanel({ r, nav }: { r: Route; nav: (p: Partial<Route>) => voi
   const panel = useRef<HTMLElement>(null);
   useEffect(() => { panel.current?.scrollTo({ top: 0 }); panel.current?.focus(); }, [r.why]);
   useEffect(() => {
-    const k = (e: KeyboardEvent) => { if (e.key === 'Escape') nav({ why: undefined, path: [], rel: undefined }); };
+    const k = (e: KeyboardEvent) => { if (e.key === 'Escape') nav({ why: undefined, path: [], rel: undefined, from: undefined }); };
     window.addEventListener('keydown', k);
     return () => window.removeEventListener('keydown', k);
   });
@@ -23,19 +23,27 @@ export function WhyPanel({ r, nav }: { r: Route; nav: (p: Partial<Route>) => voi
   const causes = group(inc[n.id], 'from');
   const results = group(out[n.id], 'to');
   const sel = r.rel ? D.edges.find((e) => e.id === r.rel) : undefined;
-  const related = D.findings.filter((f) => f.periods.some(([a, b]) => n.year >= a - 1 && n.year <= b + 1) && f.type !== 'N' && f.type !== 'E').slice(0, 4);
+  // 같은 분야·같은 나라의 자동 분석 결과만(다른 나라 성장률 같은 무관한 결과를 붙이지 않음)
+  const nKR = n.countries.includes('KR') || n.countries.length === 0;
+  const related = D.findings.filter((f) => f.category === n.lane && f.periods.some(([a, b]) => n.year >= a - 1 && n.year <= b + 1) && f.type !== 'N' && f.type !== 'E'
+    && f.series.some((k) => (nKR ? k.endsWith(':KR') : !k.endsWith(':KR')))).slice(0, 3);
+  const flows = (n.flowIds ?? []).map((id) => flowById[id]).filter(Boolean);
+  const back = r.from ? flowById[r.from] : undefined;
+  const ev = evidenceCount(n.claimIds);
+  const close = () => nav({ why: undefined, path: [], rel: undefined, from: undefined });
   const pars = D.parallels.filter((p) => p.rows.some((x) => [...x.a.claimIds, ...x.b.claimIds].some((c) => n.claimIds.includes(c))));
   const life = D.chains.filter((c) => c.kind === 'signal' && c.steps.some((s) => s.nodeId === n.id));
   const resp = D.chains.filter((c) => c.steps.some((s) => s.nodeId === n.id)).flatMap((c) => c.countryResponses ?? []);
   const docs = (n.docIds ?? []).map((id) => D.docs[id]).filter(Boolean);
 
   return (
-    <div className="why-wrap" onClick={() => nav({ why: undefined, path: [], rel: undefined })}>
+    <div className="why-wrap" onClick={close}>
       <aside className="why" ref={panel} tabIndex={-1} onClick={(e) => e.stopPropagation()} role="dialog" aria-label={`${n.label} — 원인과 결과`}>
         <header className="why-top">
           <div className="why-nav">
+            {back && <button className="btn sm" onClick={close}>← ‘{back.question}’로 돌아가기</button>}
             {r.path.length > 1 && <button className="btn sm ghost" onClick={() => { const p = r.path.slice(0, -1); nav({ why: p[p.length - 1], path: p, rel: undefined }); }}>← 이전 단계</button>}
-            <button className="btn sm ghost close" onClick={() => nav({ why: undefined, path: [], rel: undefined })} aria-label="닫기">닫기 ✕</button>
+            <button className="btn sm ghost close" onClick={close} aria-label="닫기">닫기 ✕</button>
           </div>
           {r.path.length > 1 && (
             <ol className="crumbs" aria-label="탐색 경로">
@@ -50,7 +58,17 @@ export function WhyPanel({ r, nav }: { r: Route; nav: (p: Partial<Route>) => voi
           <div className="eyebrow"><span className={`cdot c-${n.lane}`} />{CAT_KO[n.lane]} · {D.typeKo[n.nodeType] ?? '현상'} · {n.yearPrecision === 'era' ? `${n.eraId.replace('s', '년대')}(연도 불명확)` : n.year < 1960 ? `${n.year} — 1960년 이전 배경` : `${n.year}년`}</div>
           <h2>{n.label}</h2>
           <p className="why-lead">{lead(n, 220)}</p>
-          <p className="meta">{n.countries.map((c) => COUNTRY_KO[c] ?? c).join(' · ') || '국가 정보 없음'} · 근거 {n.claimIds.length}개 · 교차검증 {Math.round(reliability(n) * 100)}%</p>
+          <p className="meta">{n.countries.map((c) => COUNTRY_KO[c] ?? c).join(' · ') || '국가 정보 없음'} · 근거 문장 {ev.total}개: {STATUS_SHORT.verified} {ev.verified} · {STATUS_SHORT.sourced} {ev.sourced}{ev.missing ? ` · ${STATUS_SHORT.needs_source} ${ev.missing}` : ''}</p>
+          <p className="meta small">문장의 확인 수준과 원인·결과 연결의 성격은 따로 표시합니다. 제목은 요약이며, 근거는 아래 문장 단위로 확인하세요.</p>
+          {flows.length > 0 && (
+            <div className="why-flows">
+              <b>이 사건이 나오는 변화 흐름</b>
+              <ul className="plain">{flows.map((f) => {
+                const st = f.steps.find((s) => s.nodeIds.includes(n.id))!;
+                return <li key={f.id}><a href={`#/flow/${f.id}?y=${n.year}`}>{f.question}</a> <span className="muted">— {D.phaseKo[st.phase]}: {st.title}</span></li>;
+              })}</ul>
+            </div>
+          )}
         </section>
 
         <section className="why-map" aria-label="원인과 결과">
@@ -62,7 +80,7 @@ export function WhyPanel({ r, nav }: { r: Route; nav: (p: Partial<Route>) => voi
         {sel && (
           <section className="why-rel" aria-live="polite">
             <h3>{byId[sel.from]?.label} → {byId[sel.to]?.label}</h3>
-            <p><RelTag e={sel} />{sel.rel === 'sequence' && <span className="muted"> 앞뒤 순서만 정리한 것으로 인과를 주장하지 않습니다.</span>}{sel.verification === 'hypothesis' && <span className="muted"> 검증되지 않은 연결입니다.</span>}</p>
+            <p><RelTag e={sel} /> <span className="muted">{LINK_HELP[linkKindOf(sel)]}</span></p>
             {sel.note && <p><b>작동 원리</b> {sel.note}</p>}
             <Claims ids={sel.claimIds} />
           </section>
@@ -130,26 +148,38 @@ function Column({ title, empty, groups, side, onGo, onRel, relSel }: {
   );
 }
 
+const LINK_HELP: Record<string, string> = {
+  causal: '앞의 일이 뒤의 일을 낳았다는 것을 근거 문장이 보여줍니다.',
+  condition: '배경·조건이었다는 뜻이며 유일한 원인이라는 뜻은 아닙니다.',
+  correlation: '함께 움직였다는 통계적 연관일 뿐 원인 관계는 확인하지 않았습니다.',
+  sequence: '앞뒤 순서만 정리한 것으로 인과를 주장하지 않습니다.',
+  interpretation: '연구자·기관 또는 작성자의 해석입니다.',
+  hypothesis: '검증되지 않은 연결입니다.',
+};
+
 export function RelTag({ e }: { e: Edge }) {
-  return <><span className={`rel r-${e.rel}`}>{D.relKo[e.rel]}</span><span className={`ver v-${e.verification}`}>{VERIF_KO[e.verification]}</span></>;
+  const k = linkKindOf(e);
+  return <><span className={`lk k-${k}`}>{D.linkKo[k]}</span>{k !== 'sequence' && <span className="rel-sub">{D.relKo[e.rel]}</span>}</>;
 }
 
-export function Claims({ ids }: { ids: string[] }) {
+export function Claims({ ids, all }: { ids: string[]; all?: boolean }) {
   const [open, setOpen] = useState(false);
   const cs = ids.map((id) => D.claims[id]).filter(Boolean);
-  const shown = open ? cs : cs.slice(0, 3);
+  const shown = open || all ? cs : cs.slice(0, 3);
   return (
     <ul className="claims">
       {shown.map((c) => (
         <li key={c.id}>
           <p>{c.text}</p>
-          <p className="claim-meta"><span className={`ct t-${c.claimType}`}>{CLAIM_KO[c.claimType]}</span> <span className={`st s-${c.status}`}>{STATUS_KO[c.status]}</span>
-            {c.sourceIds.map((s) => D.sources[s]).filter(Boolean).map((s) => <a key={s.id} href={s.url} target="_blank" rel="noreferrer" title={s.title}>{s.publisher}</a>)}</p>
+          <p className="claim-meta"><span className={`ct t-${c.claimType}`}>{CLAIM_KO[c.claimType]}</span> <span className={`st s-${c.status}`} title={STATUS_KO[c.status]}>{STATUS_SHORT[c.status]}</span>
+            {c.period && <span className="cperiod">다루는 시기 {c.period}</span>}
+            {c.sourceIds.map((s) => D.sources[s]).filter(Boolean).map((s) => <a key={s.id} href={s.url} target="_blank" rel="noreferrer" title={`${s.title}${s.publishedDate ? ` (${s.publishedDate})` : ''}${s.note ? ` — ${s.note}` : ''}`}>{s.publisher}{s.publishedDate ? ` ${s.publishedDate.slice(0, 4)}` : ''}</a>)}</p>
+          {(c.scope || c.support || c.statusNote) && <p className="claim-scope">{c.support && <><b>근거 위치</b> {c.support}. </>}{c.scope && <><b>범위·한계</b> {c.scope} </>}{c.statusNote && <span className="muted">({c.statusNote})</span>}</p>}
           {D.checks[c.id] && <p className="num-check">수치 대조: {D.checks[c.id].map((k, i) => (
             <span key={i} className={k.ok ? 'nc-ok' : k.ok === false ? 'nc-diff' : ''}>{k.year}년 {k.title} — 문장 {k.claimed}, 수집 자료 {k.data ?? '없음'}{k.unit === '%' ? '%' : ''} → {k.verdict}{!k.ok && k.memo ? ` (${k.memo})` : ''}</span>))}</p>}
         </li>
       ))}
-      {cs.length > 3 && <li><button className="link" onClick={() => setOpen(!open)}>{open ? '접기' : `근거 ${cs.length - 3}개 더`}</button></li>}
+      {cs.length > 3 && !all && <li><button className="link" onClick={() => setOpen(!open)}>{open ? '접기' : `근거 ${cs.length - 3}개 더`}</button></li>}
     </ul>
   );
 }

@@ -6,18 +6,20 @@ import { CATS, MAX_Y, MIN_Y, type Cat } from './data';
  *   #/history?z=all|decade|year&y=1973
  *   #/field/economy?y=1973&ind=cpi-kr
  *   #/cycle?f=<발견 id>&y=1973
+ *   #/flow/<흐름 id>?y=1995 (흐름 목록은 #/flow)
+ *   from=<흐름 id>: 흐름을 읽다가 사건 상세를 열었을 때 돌아갈 곳
  *   공통: why=<노드 id>&path=a,b,c (원인 탐색 패널), rel=<관계 id>
  */
-export type Tab = 'history' | 'field' | 'cycle';
+export type Tab = 'history' | 'flow' | 'field' | 'cycle';
 export type Zoom = 'all' | 'decade' | 'year';
-export interface Route { tab: Tab; cat: Cat; z: Zoom; y: number; ind?: string; f?: string; why?: string; path: string[]; rel?: string }
+export interface Route { tab: Tab; cat: Cat; z: Zoom; y: number; ind?: string; f?: string; flow?: string; from?: string; why?: string; path: string[]; rel?: string }
 
 export function parse(hash: string): Route {
   const [p, q = ''] = hash.replace(/^#\/?/, '').split('?');
   const [tab0, cat0] = p.split('/');
   const s = new URLSearchParams(q);
   const y = Number(s.get('y'));
-  const tab: Tab = (['history', 'field', 'cycle'] as Tab[]).includes(tab0 as Tab) ? (tab0 as Tab) : 'history';
+  const tab: Tab = (['history', 'flow', 'field', 'cycle'] as Tab[]).includes(tab0 as Tab) ? (tab0 as Tab) : 'history';
   const z = s.get('z') as Zoom;
   return {
     tab,
@@ -26,6 +28,8 @@ export function parse(hash: string): Route {
     y: y >= MIN_Y && y <= MAX_Y ? y : 1973,
     ind: s.get('ind') || undefined,
     f: s.get('f') || undefined,
+    flow: tab === 'flow' ? cat0 || undefined : undefined,
+    from: s.get('from') || undefined,
     why: s.get('why') || undefined,
     path: (s.get('path') ?? '').split(',').filter(Boolean),
     rel: s.get('rel') || undefined,
@@ -38,8 +42,8 @@ export function hashOf(r: Route): string {
   s.set('y', String(r.y));
   if (r.tab === 'field' && r.ind) s.set('ind', r.ind);
   if (r.tab === 'cycle' && r.f) s.set('f', r.f);
-  if (r.why) { s.set('why', r.why); if (r.path.length) s.set('path', r.path.join(',')); if (r.rel) s.set('rel', r.rel); }
-  const p = r.tab === 'field' ? `field/${r.cat}` : r.tab;
+  if (r.why) { if (r.from) s.set('from', r.from); s.set('why', r.why); if (r.path.length) s.set('path', r.path.join(',')); if (r.rel) s.set('rel', r.rel); }
+  const p = r.tab === 'field' ? `field/${r.cat}` : r.tab === 'flow' && r.flow ? `flow/${r.flow}` : r.tab;
   return `#/${p}?${s.toString().replace(/%2C/g, ',')}`;
 }
 

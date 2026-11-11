@@ -8,12 +8,15 @@ export const CAT_KO: Record<Cat, string> = {
 };
 export const CAT_SHORT: Record<Cat, string> = { politics: '정치', economy: '경제', industry: '산업', society: '생활', culture: '문화', flow: '트렌드' };
 
-export interface Claim { id: string; text: string; claimType: 'fact' | 'statistical' | 'interpretation' | 'hypothesis'; status: 'verified' | 'sourced' | 'needs_source'; sourceIds: string[]; countries: string[] }
-export interface Source { id: string; title: string; publisher: string; url: string; sourceType: string; publishedDate?: string; accessedDate: string; note?: string }
-export interface Era { id: string; label: string; startYear: number; endYear: number | null; title: string; glance: { keyCause?: string } }
+export interface Claim {
+  id: string; text: string; claimType: 'fact' | 'statistical' | 'interpretation' | 'hypothesis'; status: 'verified' | 'sourced' | 'needs_source'; sourceIds: string[]; countries: string[];
+  period?: string; scope?: string; support?: string; statusNote?: string; independentSources?: number;
+}
+export interface Source { id: string; title: string; publisher: string; url: string; sourceType: string; publishedDate?: string; accessedDate: string; note?: string; origin?: string }
+export interface Era { id: string; label: string; startYear: number; endYear: number | null; title: string; glance: { keyCause?: string; legacy?: string; summaryClaimIds?: string[] } }
 export interface Node {
   id: string; kind: string; nodeType: string; label: string; year: number; yearPrecision: 'year' | 'era'; eraId: string; lane: Cat;
-  countries: string[]; importance: 1 | 2 | 3; degree: number; claimIds: string[]; eventIds: string[]; docIds?: string[];
+  countries: string[]; importance: 1 | 2 | 3; degree: number; claimIds: string[]; eventIds: string[]; docIds?: string[]; flowIds?: string[];
 }
 export interface Edge { id: string; from: string; to: string; rel: Rel; verification: Verif; chainId: string; note: string; claimIds: string[] }
 export type Rel = 'cause' | 'background' | 'trigger' | 'influence' | 'sequence' | 'similar';
@@ -39,12 +42,22 @@ export interface Finding {
 }
 export interface Parallel { id: string; title: string; a: { eraId: string; label: string; years: string }; b: { eraId: string; label: string; years: string }; rows: { aspect: string; a: { text: string; claimIds: string[] }; b: { text: string; claimIds: string[] }; verdict: string; note: string }[] }
 
+export type Phase = 'before' | 'condition' | 'turn' | 'spread' | 'life' | 'cross' | 'now';
+export type LinkKind = 'causal' | 'condition' | 'correlation' | 'sequence' | 'interpretation' | 'hypothesis';
+export interface FlowStep { id: string; phase: Phase; period: string; title: string; claimIds: string[]; nodeIds: string[]; empty?: string }
+export interface FlowLink { from: string; to: string; kind: LinkKind; note: string; claimIds: string[] }
+export interface Flow {
+  id: string; question: string; cats: Cat[]; span: [number, number]; shape: string; lede: string[]; indicators: string[];
+  steps: FlowStep[]; links: FlowLink[]; cross: { flow: string; note: string }[]; gaps: string[]; alternatives: string[];
+}
+
 interface Seed {
   eras: Era[]; claims: Claim[]; sources: Source[]; transitions: Transition[]; documents: Doc[]; indicators: Indicator[];
   graph: { nodes: Node[]; edges: Edge[]; chains: Chain[]; relTypes: Record<Rel, string>; nodeTypes: Record<string, string> };
   cycles: { analyses: Analysis[]; findings: Finding[]; params: Record<string, unknown> };
   numberChecks: Record<string, NumberCheck[]>;
   patterns: { parallels: Parallel[] };
+  flows: { flows: Flow[]; phaseKo: Record<Phase, string>; linkKo: Record<LinkKind, string> };
 }
 const seed = seedJson as unknown as Seed;
 
@@ -67,7 +80,11 @@ export const D = {
   findings: seed.cycles.findings,
   cycleParams: seed.cycles.params,
   parallels: seed.patterns.parallels,
+  flows: seed.flows.flows,
+  phaseKo: seed.flows.phaseKo,
+  linkKo: seed.flows.linkKo,
 };
+export const flowById: Record<string, Flow> = Object.fromEntries(seed.flows.flows.map((f) => [f.id, f]));
 
 export const byId: Record<string, Node> = Object.fromEntries(D.nodes.map((n) => [n.id, n]));
 export const out: Record<string, Edge[]> = {};
@@ -83,7 +100,24 @@ export const isKR = (n: Node) => n.countries.includes('KR') || n.countries.lengt
 export const COUNTRY_KO: Record<string, string> = { KR: '한국', US: '미국', JP: '일본', CN: '중국', MIDEAST: '중동', WORLD: '세계', GB: '영국', DE: '독일', FR: '프랑스' };
 export const VERIF_KO: Record<Verif, string> = { evidenced: '근거 있는 인과', interpretation: '해석', statistical: '통계적 연관', hypothesis: '가설' };
 export const CLAIM_KO = { fact: '사실', statistical: '통계', interpretation: '해석', hypothesis: '가설' } as const;
-export const STATUS_KO = { verified: '독립 출처 2개 이상', sourced: '출처 1개', needs_source: '출처 필요' } as const;
+/** 문장(사실) 하나의 확인 수준 — 인과 연결의 확실성과는 따로 표시한다 */
+export const STATUS_KO = { verified: '서로 다른 두 곳 이상에서 확인', sourced: '한 곳에서 확인', needs_source: '출처 미확보 — 사실 여부 미확인' } as const;
+export const STATUS_SHORT = { verified: '두 곳 이상 확인', sourced: '한 곳 확인', needs_source: '출처 미확보' } as const;
+
+/** 원인·결과 연결의 성격(관계망 연결을 변화 흐름과 같은 6가지 말로) */
+export function linkKindOf(e: Edge): LinkKind {
+  if (e.rel === 'sequence') return 'sequence';
+  if (e.verification === 'hypothesis') return 'hypothesis';
+  if (e.verification === 'statistical') return 'correlation';
+  if (e.verification === 'interpretation') return 'interpretation';
+  return e.rel === 'background' ? 'condition' : 'causal';
+}
+
+/** 한 항목의 근거 문장들이 어느 수준까지 확인됐는지 — 숫자 하나로 합치지 않고 그대로 센다 */
+export function evidenceCount(ids: string[]) {
+  const cs = ids.map((id) => D.claims[id]).filter(Boolean);
+  return { total: cs.length, verified: cs.filter((c) => c.status === 'verified').length, sourced: cs.filter((c) => c.status === 'sourced').length, missing: cs.filter((c) => c.status === 'needs_source').length };
+}
 
 /** 근거 신뢰도: 독립 출처 2개 이상인 문장의 비율 */
 export function reliability(n: Node) {
