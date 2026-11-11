@@ -1,0 +1,3100 @@
+{
+ "checkedAt": "2026-11-11T13:14:37.892350Z",
+ "total": 386,
+ "summary": {
+  "blocked": 18,
+  "ok": 329,
+  "broken": 7,
+  "error": 32
+ },
+ "results": [
+  {
+   "id": "iphone-usad",
+   "url": "https://usad.org/USAD/media/Curriculum-Updates/SocialScienceRG_pg84-86.pdf",
+   "publisher": "USAD",
+   "status": 404,
+   "final": "https://usad.org/USAD/media/Curriculum-Updates/SocialScienceRG_pg84-86.pdf",
+   "kind": "broken"
+  },
+  {
+   "id": "jp-gov-abe",
+   "url": "https://japan.go.jp/letters/message/abenomics/2.html",
+   "publisher": "일본 정부 홍보 (japan.go.jp)",
+   "status": 404,
+   "final": "https://www.japan.go.jp/letters/message/abenomics/2.html",
+   "kind": "broken"
+  },
+  {
+   "id": "kr-hri-hallyu",
+   "url": "https://kocca.kr/knowledge/internal/insu/__icsFiles/afieldfile/2010/04/30/BSR20041222_3_1.pdf",
+   "publisher": "현대경제연구원 (KOCCA 게재)",
+   "status": 404,
+   "final": "https://kocca.kr/knowledge/internal/insu/__icsFiles/afieldfile/2010/04/30/BSR20041222_3_1.pdf",
+   "kind": "broken"
+  },
+  {
+   "id": "kr-kdevelopedia-stab",
+   "url": "https://www.kdevelopedia.org/Development-Overview/all/macroeconomic-stabilization--11.do",
+   "publisher": "KDI K-Developedia",
+   "status": 404,
+   "final": "https://www.kdevelopedia.org/Development-Overview/all/macroeconomic-stabilization--11.do",
+   "kind": "broken"
+  },
+  {
+   "id": "nd-kellogg-kr",
+   "url": "https://kellogg.nd.edu/publications/workingpapers/WPS/272.pdf",
+   "publisher": "University of Notre Dame Kellogg Institute",
+   "status": 404,
+   "final": "https://kellogg.nd.edu/sites/default/files/old_files/documents/272.pdf",
+   "kind": "broken"
+  },
+  {
+   "id": "us-bls-100yrs",
+   "url": "https://corpora.tika.apache.org/base/docs/govdocs1/917/917663.pdf",
+   "publisher": "U.S. Bureau of Labor Statistics (미러 사본)",
+   "status": null,
+   "kind": "broken",
+   "err": "HTTPSConnectionPool(host='corpora.tika.apache.org', port=443): Max retries exceeded with url: /base/docs/govdocs1/917/917663.pdf (Caused by NameResolutionError("
+  },
+  {
+   "id": "wana-1967",
+   "url": "https://wanainstitute.org/sites/default/files/fact_sheets/1967%20War.pdf",
+   "publisher": "WANA Institute",
+   "status": 404,
+   "final": "https://wanainstitute.org/sites/default/files/fact_sheets/1967%20War.pdf",
+   "kind": "broken"
+  },
+  {
+   "id": "fred-jp-gdp",
+   "url": "https://fred.stlouisfed.org/data/NAEXKP01JPA657S",
+   "publisher": "OECD via FRED (St. Louis Fed)",
+   "status": null,
+   "kind": "error",
+   "err": "HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=25)"
+  },
+  {
+   "id": "fred-kr-65",
+   "url": "https://fred.stlouisfed.org/data/SPPOP65UPTOZSKOR",
+   "publisher": "FRED (원자료: 세계은행 세계개발지표)",
+   "status": null,
+   "kind": "error",
+   "err": "HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=25)"
+  },
+  {
+   "id": "fred-kr-call",
+   "url": "https://fred.stlouisfed.org/data/IRSTCI01KRM156N",
+   "publisher": "OECD via FRED",
+   "status": null,
+   "kind": "error",
+   "err": "HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=25)"
+  },
+  {
+   "id": "fred-kr-carreg",
+   "url": "https://fred.stlouisfed.org/data/SLRTCR03KRA180N",
+   "publisher": "OECD via FRED",
+   "status": null,
+   "kind": "error",
+   "err": "HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=25)"
+  },
+  {
+   "id": "fred-kr-cpi",
+   "url": "https://fred.stlouisfed.org/data/FPCPITOTLZGKOR",
+   "publisher": "FRED (원자료: 세계은행 세계개발지표)",
+   "status": null,
+   "kind": "error",
+   "err": "HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=25)"
+  },
+  {
+   "id": "fred-kr-disc",
+   "url": "https://fred.stlouisfed.org/data/INTDSRKRM193N",
+   "publisher": "FRED (원자료: IMF 국제금융통계)",
+   "status": null,
+   "kind": "error",
+   "err": "HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=25)"
+  },
+  {
+   "id": "fred-kr-emp-ag",
+   "url": "https://fred.stlouisfed.org/data/LFEAAGTTKRA647N",
+   "publisher": "OECD via FRED",
+   "status": null,
+   "kind": "error",
+   "err": "HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=25)"
+  },
+  {
+   "id": "fred-kr-emp-all",
+   "url": "https://fred.stlouisfed.org/data/LFEMTTTTKRA647N",
+   "publisher": "OECD via FRED",
+   "status": null,
+   "kind": "error",
+   "err": "HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=25)"
+  },
+  {
+   "id": "fred-kr-emp-mfg",
+   "url": "https://fred.stlouisfed.org/data/LFEAMNTTKRA647N",
+   "publisher": "OECD via FRED",
+   "status": null,
+   "kind": "error",
+   "err": "HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=25)"
+  },
+  {
+   "id": "fred-kr-emp-svc",
+   "url": "https://fred.stlouisfed.org/data/LFEASETTKRA647N",
+   "publisher": "OECD via FRED",
+   "status": null,
+   "kind": "error",
+   "err": "HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=25)"
+  },
+  {
+   "id": "fred-kr-emprate",
+   "url": "https://fred.stlouisfed.org/data/LREM64TTKRA156N",
+   "publisher": "OECD via FRED",
+   "status": null,
+   "kind": "error",
+   "err": "HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=25)"
+  },
+  {
+   "id": "fred-kr-exports",
+   "url": "https://fred.stlouisfed.org/data/XTEXVA01KRA667S",
+   "publisher": "OECD via FRED",
+   "status": null,
+   "kind": "error",
+   "err": "HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=25)"
+  },
+  {
+   "id": "fred-kr-fx",
+   "url": "https://fred.stlouisfed.org/data/CCUSMA02KRA618N",
+   "publisher": "OECD via FRED",
+   "status": null,
+   "kind": "error",
+   "err": "HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=25)"
+  },
+  {
+   "id": "fred-kr-fx-h10",
+   "url": "https://fred.stlouisfed.org/data/AEXKOUS",
+   "publisher": "FRED (원자료: 연준 H.10)",
+   "status": null,
+   "kind": "error",
+   "err": "HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=25)"
+  },
+  {
+   "id": "fred-kr-fx-wb",
+   "url": "https://fred.stlouisfed.org/data/FXRATEKRA618NUPN",
+   "publisher": "FRED (원자료: IMF IFS)",
+   "status": null,
+   "kind": "error",
+   "err": "HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=25)"
+  },
+  {
+   "id": "fred-kr-gdp",
+   "url": "https://fred.stlouisfed.org/data/NAEXKP01KRA657S",
+   "publisher": "OECD via FRED (St. Louis Fed)",
+   "status": null,
+   "kind": "error",
+   "err": "HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=25)"
+  },
+  {
+   "id": "fred-kr-gdppc",
+   "url": "https://fred.stlouisfed.org/data/NYGDPPCAPKDKOR",
+   "publisher": "FRED (원자료: 세계은행 세계개발지표)",
+   "status": null,
+   "kind": "error",
+   "err": "HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=25)"
+  },
+  {
+   "id": "fred-kr-house",
+   "url": "https://fred.stlouisfed.org/data/QKRR628BIS",
+   "publisher": "BIS via FRED",
+   "status": null,
+   "kind": "error",
+   "err": "HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=25)"
+  },
+  {
+   "id": "fred-kr-house-nom",
+   "url": "https://fred.stlouisfed.org/data/QKRN628BIS",
+   "publisher": "BIS via FRED",
+   "status": null,
+   "kind": "error",
+   "err": "HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=25)"
+  },
+  {
+   "id": "fred-kr-internet",
+   "url": "https://fred.stlouisfed.org/data/ITNETUSERP2KOR",
+   "publisher": "FRED (원자료: 세계은행 세계개발지표·ITU)",
+   "status": null,
+   "kind": "error",
+   "err": "HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=25)"
+  },
+  {
+   "id": "fred-kr-life",
+   "url": "https://fred.stlouisfed.org/data/SPDYNLE00INKOR",
+   "publisher": "FRED (원자료: 세계은행 세계개발지표)",
+   "status": null,
+   "kind": "error",
+   "err": "HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=25)"
+  },
+  {
+   "id": "fred-kr-mobile",
+   "url": "https://fred.stlouisfed.org/data/ITCELSETSP2KOR",
+   "publisher": "FRED (원자료: 세계은행 세계개발지표·ITU)",
+   "status": null,
+   "kind": "error",
+   "err": "HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=25)"
+  },
+  {
+   "id": "fred-kr-tfr",
+   "url": "https://fred.stlouisfed.org/data/SPDYNTFRTINKOR",
+   "publisher": "FRED (원자료: 세계은행 세계개발지표)",
+   "status": null,
+   "kind": "error",
+   "err": "HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=25)"
+  },
+  {
+   "id": "fred-kr-unemp",
+   "url": "https://fred.stlouisfed.org/data/LRUNTTTTKRA156S",
+   "publisher": "OECD via FRED",
+   "status": null,
+   "kind": "error",
+   "err": "HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=25)"
+  },
+  {
+   "id": "fred-kr-wage",
+   "url": "https://fred.stlouisfed.org/data/LCEAMN01KRA661S",
+   "publisher": "OECD via FRED",
+   "status": null,
+   "kind": "error",
+   "err": "HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=25)"
+  },
+  {
+   "id": "fred-us-gdp",
+   "url": "https://fred.stlouisfed.org/data/NAEXKP01USA657S",
+   "publisher": "OECD via FRED (St. Louis Fed)",
+   "status": null,
+   "kind": "error",
+   "err": "HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=25)"
+  },
+  {
+   "id": "kmi-2008-crisis",
+   "url": "https://koreascience.kr/article/JAKO200866759248814.pdf",
+   "publisher": "한국해양수산개발원 (KoreaScience)",
+   "status": null,
+   "kind": "error",
+   "err": "HTTPSConnectionPool(host='koreascience.kr', port=443): Max retries exceeded with url: /article/JAKO200866759248814.pdf (Caused by ConnectTimeoutError(<HTTPSConn"
+  },
+  {
+   "id": "kr-kais-folk-2011",
+   "url": "https://koreascience.kr/article/CFKO201130533388816.pdf",
+   "publisher": "한국산학기술학회",
+   "status": null,
+   "kind": "error",
+   "err": "HTTPSConnectionPool(host='koreascience.kr', port=443): Max retries exceeded with url: /article/CFKO201130533388816.pdf (Caused by ConnectTimeoutError(<HTTPSConn"
+  },
+  {
+   "id": "wb-kr-hhcons",
+   "url": "https://data.worldbank.org/indicator/NE.CON.PRVT.ZS?locations=KR",
+   "publisher": "세계은행 세계개발지표(WDI)",
+   "status": null,
+   "kind": "error",
+   "err": "HTTPSConnectionPool(host='data.worldbank.org', port=443): Read timed out. (read timeout=25)"
+  },
+  {
+   "id": "wb-kr-tel",
+   "url": "https://data.worldbank.org/indicator/IT.MLT.MAIN.P2?locations=KR",
+   "publisher": "세계은행 세계개발지표(WDI)",
+   "status": null,
+   "kind": "error",
+   "err": "HTTPSConnectionPool(host='data.worldbank.org', port=443): Read timed out. (read timeout=25)"
+  },
+  {
+   "id": "wb-kr-va-agr",
+   "url": "https://data.worldbank.org/indicator/NV.AGR.TOTL.ZS?locations=KR",
+   "publisher": "세계은행 세계개발지표(WDI)",
+   "status": null,
+   "kind": "error",
+   "err": "HTTPSConnectionPool(host='data.worldbank.org', port=443): Read timed out. (read timeout=25)"
+  },
+  {
+   "id": "wb-kr-va-srv",
+   "url": "https://data.worldbank.org/indicator/NV.SRV.TOTL.ZS?locations=KR",
+   "publisher": "세계은행 세계개발지표(WDI)",
+   "status": null,
+   "kind": "error",
+   "err": "HTTPSConnectionPool(host='data.worldbank.org', port=443): Read timed out. (read timeout=25)"
+  },
+  {
+   "id": "ap-220713-cpi",
+   "url": "https://www.advisor.ca/economy/economic-indicators/us-inflation-reached-a-new-40-year-high-in-june-of-9-1/",
+   "publisher": "AP (Advisor.ca 게재)",
+   "status": 403,
+   "final": "https://www.advisor.ca/economy/economic-indicators/us-inflation-reached-a-new-40-year-high-in-june-of-9-1/",
+   "kind": "blocked"
+  },
+  {
+   "id": "bw-ww2museum",
+   "url": "https://www.nationalww2museum.org/war/articles/1944-bretton-woods-conference",
+   "publisher": "The National WWII Museum",
+   "status": 403,
+   "final": "https://www.nationalww2museum.org/war/articles/1944-bretton-woods-conference",
+   "kind": "blocked"
+  },
+  {
+   "id": "cn-bdf-gvc",
+   "url": "https://www.banque-france.fr/en/node/555",
+   "publisher": "Banque de France",
+   "status": 403,
+   "final": "https://www.banque-france.fr/en/node/555",
+   "kind": "blocked"
+  },
+  {
+   "id": "core-kr-crisis",
+   "url": "https://core.ac.uk/download/51178948.pdf",
+   "publisher": "CORE 공개 논문 저장소",
+   "status": 403,
+   "final": "https://core.ac.uk/download/51178948.pdf",
+   "kind": "blocked"
+  },
+  {
+   "id": "glf-britannica",
+   "url": "https://www.britannica.com/event/Great-Leap-Forward",
+   "publisher": "Encyclopaedia Britannica",
+   "status": 403,
+   "final": "https://www.britannica.com/event/Great-Leap-Forward",
+   "kind": "blocked"
+  },
+  {
+   "id": "iea-history",
+   "url": "https://www.iea.org/about/history",
+   "publisher": "International Energy Agency",
+   "status": 403,
+   "final": "https://www.iea.org/about/history",
+   "kind": "blocked"
+  },
+  {
+   "id": "imf-nb-0182",
+   "url": "https://www.imf.org/external/np/sec/nb/2001/nb0182.htm",
+   "publisher": "IMF",
+   "status": 403,
+   "final": "https://www.imf.org/external/np/sec/nb/2001/nb0182.htm",
+   "kind": "blocked"
+  },
+  {
+   "id": "intel-4004",
+   "url": "https://www.intel.com/content/www/us/en/history/museum-story-of-intel-4004.html",
+   "publisher": "Intel",
+   "status": 403,
+   "final": "https://www.intel.com/content/www/us/en/history/museum-story-of-intel-4004.html",
+   "kind": "blocked"
+  },
+  {
+   "id": "intel-founding",
+   "url": "https://www.intel.com/content/www/us/en/history/virtual-vault/articles/intels-founding.html",
+   "publisher": "Intel",
+   "status": 403,
+   "final": "https://www.intel.com/content/www/us/en/history/virtual-vault/articles/intels-founding.html",
+   "kind": "blocked"
+  },
+  {
+   "id": "intel-moore",
+   "url": "https://www.intel.com/content/www/us/en/history/virtual-vault/articles/moores-law.html",
+   "publisher": "Intel",
+   "status": 403,
+   "final": "https://www.intel.com/content/www/us/en/history/virtual-vault/articles/moores-law.html",
+   "kind": "blocked"
+  },
+  {
+   "id": "jp-hk-bubble",
+   "url": "https://sgsg.hankyung.com/article/2014082993781",
+   "publisher": "한국경제 생글생글",
+   "status": 403,
+   "final": "https://sgsg.hankyung.com/article/2014082993781",
+   "kind": "blocked"
+  },
+  {
+   "id": "reuters-220713-cpi",
+   "url": "https://us.fashionnetwork.com/news/U-s-annual-consumer-inflation-posts-largest-increase-since-1981,1423779.html",
+   "publisher": "Reuters (FashionNetwork 게재)",
+   "status": 403,
+   "final": "https://us.fashionnetwork.com/news/U-s-annual-consumer-inflation-posts-largest-increase-since-1981,1423779.html",
+   "kind": "blocked"
+  },
+  {
+   "id": "sg-160617-rate",
+   "url": "https://sgsg.hankyung.com/article/2016061707611",
+   "publisher": "한국경제 생글생글",
+   "status": 403,
+   "final": "https://sgsg.hankyung.com/article/2016061707611",
+   "kind": "blocked"
+  },
+  {
+   "id": "sg-180126-minwage",
+   "url": "https://sgsg.hankyung.com/article/2018012611851",
+   "publisher": "한국경제 생글생글",
+   "status": 403,
+   "final": "https://sgsg.hankyung.com/article/2018012611851",
+   "kind": "blocked"
+  },
+  {
+   "id": "space-jfk",
+   "url": "https://www.jfklibrary.org/JFK/JFK-in-History/Space-Program.aspx",
+   "publisher": "JFK Presidential Library",
+   "status": 403,
+   "final": "https://www.jfklibrary.org/JFK/JFK-in-History/Space-Program.aspx",
+   "kind": "blocked"
+  },
+  {
+   "id": "th-imf-baht",
+   "url": "https://www.imf.org/external/np/sec/nb/1997/nb9712.htm",
+   "publisher": "IMF",
+   "status": 403,
+   "final": "https://www.imf.org/external/np/sec/nb/1997/nb9712.htm",
+   "kind": "blocked"
+  },
+  {
+   "id": "us-bts-vehicles",
+   "url": "https://www.bts.gov/archive/publications/passenger_travel_2015/chapter2/fig2_8",
+   "publisher": "U.S. Bureau of Transportation Statistics",
+   "status": 403,
+   "final": "https://www.bts.gov/archive/publications/passenger_travel_2015/chapter2/fig2_8",
+   "kind": "blocked"
+  },
+  {
+   "id": "us-nasdaq-gr",
+   "url": "https://www.nasdaq.com/articles/a-short-history-of-the-great-recession",
+   "publisher": "Nasdaq",
+   "status": 403,
+   "final": "https://www.nasdaq.com/articles/a-short-history-of-the-great-recession",
+   "kind": "blocked"
+  },
+  {
+   "id": "afa-airlift",
+   "url": "https://www.airandspaceforces.com/article/the-yom-kippur-airlift/",
+   "publisher": "Air & Space Forces Magazine",
+   "status": 200,
+   "final": "https://www.airandspaceforces.com/article/the-yom-kippur-airlift/",
+   "kind": "ok"
+  },
+  {
+   "id": "aj-220224-gas",
+   "url": "https://www.aljazeera.com/economy/2022/2/24/europes-gas-prices-soar-62-as-crisis-puts-fuel-supply-at-risk",
+   "publisher": "Al Jazeera",
+   "status": 200,
+   "final": "https://www.aljazeera.com/economy/2022/2/24/europes-gas-prices-soar-62-as-crisis-puts-fuel-supply-at-risk",
+   "kind": "ok"
+  },
+  {
+   "id": "auto-brookings",
+   "url": "https://www.brookings.edu/articles/vehicle-choice-behavior-and-the-declining-market-share-of-u-s-automakers-2",
+   "publisher": "Brookings",
+   "status": 200,
+   "final": "https://www.brookings.edu/articles/vehicle-choice-behavior-and-the-declining-market-share-of-u-s-automakers-2/",
+   "kind": "ok"
+  },
+  {
+   "id": "barsky-kilian",
+   "url": "https://www.nber.org/papers/w8389",
+   "publisher": "NBER Macroeconomics Annual 2001",
+   "status": 200,
+   "final": "https://www.nber.org/papers/w8389",
+   "kind": "ok"
+  },
+  {
+   "id": "bw-220802-cpi",
+   "url": "https://news.bizwatch.co.kr/article/finance/2022/08/02/0001",
+   "publisher": "비즈워치",
+   "status": 200,
+   "final": "https://news.bizwatch.co.kr/article/finance/2022/08/02/0001",
+   "kind": "ok"
+  },
+  {
+   "id": "bw-ebsco",
+   "url": "https://www.ebsco.com/research-starters/business-and-management/bretton-woods-system",
+   "publisher": "EBSCO",
+   "status": 200,
+   "final": "https://www.ebsco.com/research-starters/business-and-management/bretton-woods-system",
+   "kind": "ok"
+  },
+  {
+   "id": "bw-ips",
+   "url": "https://www.ipsnews.net/?p=196793",
+   "publisher": "IPS News",
+   "status": 200,
+   "final": "https://www.ipsnews.net/2026/09/the-dollar-gold-standards-lingering-demise/",
+   "kind": "ok"
+  },
+  {
+   "id": "ccourt-2024hun-na8",
+   "url": "https://ko.wikisource.org/wiki/2024%ED%97%8C%EB%82%988",
+   "publisher": "헌법재판소 (위키문헌 전재)",
+   "status": 200,
+   "final": "https://ko.wikisource.org/wiki/2024%ED%97%8C%EB%82%988",
+   "kind": "ok"
+  },
+  {
+   "id": "ch-731019",
+   "url": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19731019",
+   "publisher": "조선 뉴스 라이브러리 100",
+   "status": 200,
+   "final": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19731019",
+   "kind": "ok"
+  },
+  {
+   "id": "ch-731109",
+   "url": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19731109",
+   "publisher": "조선 뉴스 라이브러리 100",
+   "status": 200,
+   "final": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19731109",
+   "kind": "ok"
+  },
+  {
+   "id": "ch-731110",
+   "url": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19731110",
+   "publisher": "조선 뉴스 라이브러리 100",
+   "status": 200,
+   "final": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19731110",
+   "kind": "ok"
+  },
+  {
+   "id": "ch-731124",
+   "url": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19731124",
+   "publisher": "조선 뉴스 라이브러리 100",
+   "status": 200,
+   "final": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19731124",
+   "kind": "ok"
+  },
+  {
+   "id": "ch-731127",
+   "url": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19731127",
+   "publisher": "조선 뉴스 라이브러리 100",
+   "status": 200,
+   "final": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19731127",
+   "kind": "ok"
+  },
+  {
+   "id": "ch-731204",
+   "url": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19731204",
+   "publisher": "조선 뉴스 라이브러리 100",
+   "status": 200,
+   "final": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19731204",
+   "kind": "ok"
+  },
+  {
+   "id": "ch-731213",
+   "url": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19731213",
+   "publisher": "조선 뉴스 라이브러리 100",
+   "status": 200,
+   "final": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19731213",
+   "kind": "ok"
+  },
+  {
+   "id": "ch-731218",
+   "url": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19731218",
+   "publisher": "조선 뉴스 라이브러리 100",
+   "status": 200,
+   "final": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19731218",
+   "kind": "ok"
+  },
+  {
+   "id": "ch-731225",
+   "url": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19731225",
+   "publisher": "조선 뉴스 라이브러리 100",
+   "status": 200,
+   "final": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19731225",
+   "kind": "ok"
+  },
+  {
+   "id": "ch-740115",
+   "url": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19740115",
+   "publisher": "조선 뉴스 라이브러리 100",
+   "status": 200,
+   "final": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19740115",
+   "kind": "ok"
+  },
+  {
+   "id": "ch-740122",
+   "url": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19740122",
+   "publisher": "조선 뉴스 라이브러리 100",
+   "status": 200,
+   "final": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19740122",
+   "kind": "ok"
+  },
+  {
+   "id": "ch-801202",
+   "url": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19801202",
+   "publisher": "조선 뉴스 라이브러리 100",
+   "status": 200,
+   "final": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19801202",
+   "kind": "ok"
+  },
+  {
+   "id": "ch-820105",
+   "url": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19820105",
+   "publisher": "조선 뉴스 라이브러리 100",
+   "status": 200,
+   "final": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19820105",
+   "kind": "ok"
+  },
+  {
+   "id": "ch-820327",
+   "url": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19820327",
+   "publisher": "조선 뉴스 라이브러리 100",
+   "status": 200,
+   "final": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19820327",
+   "kind": "ok"
+  },
+  {
+   "id": "ch-840601",
+   "url": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19840601",
+   "publisher": "조선 뉴스 라이브러리 100",
+   "status": 200,
+   "final": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19840601",
+   "kind": "ok"
+  },
+  {
+   "id": "ch-851001",
+   "url": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19851001",
+   "publisher": "조선 뉴스 라이브러리 100",
+   "status": 200,
+   "final": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19851001",
+   "kind": "ok"
+  },
+  {
+   "id": "ch-870630",
+   "url": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19870630",
+   "publisher": "조선 뉴스 라이브러리 100",
+   "status": 200,
+   "final": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19870630",
+   "kind": "ok"
+  },
+  {
+   "id": "ch-870820",
+   "url": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19870820",
+   "publisher": "조선 뉴스 라이브러리 100",
+   "status": 200,
+   "final": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19870820",
+   "kind": "ok"
+  },
+  {
+   "id": "ch-880917",
+   "url": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19880917",
+   "publisher": "조선 뉴스 라이브러리 100",
+   "status": 200,
+   "final": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19880917",
+   "kind": "ok"
+  },
+  {
+   "id": "ch-881201",
+   "url": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19881201",
+   "publisher": "조선 뉴스 라이브러리 100",
+   "status": 200,
+   "final": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19881201",
+   "kind": "ok"
+  },
+  {
+   "id": "ch-890101",
+   "url": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19890101",
+   "publisher": "조선 뉴스 라이브러리 100",
+   "status": 200,
+   "final": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19890101",
+   "kind": "ok"
+  },
+  {
+   "id": "ch-890601",
+   "url": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19890601",
+   "publisher": "조선 뉴스 라이브러리 100",
+   "status": 200,
+   "final": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19890601",
+   "kind": "ok"
+  },
+  {
+   "id": "ch-941022",
+   "url": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19941022",
+   "publisher": "조선 뉴스 라이브러리 100",
+   "status": 200,
+   "final": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19941022",
+   "kind": "ok"
+  },
+  {
+   "id": "ch-950101",
+   "url": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19950101",
+   "publisher": "조선 뉴스 라이브러리 100",
+   "status": 200,
+   "final": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19950101",
+   "kind": "ok"
+  },
+  {
+   "id": "ch-950630",
+   "url": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19950630",
+   "publisher": "조선 뉴스 라이브러리 100",
+   "status": 200,
+   "final": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19950630",
+   "kind": "ok"
+  },
+  {
+   "id": "ch-971122",
+   "url": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19971122",
+   "publisher": "조선 뉴스 라이브러리 100",
+   "status": 200,
+   "final": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19971122",
+   "kind": "ok"
+  },
+  {
+   "id": "ch-971204",
+   "url": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19971204",
+   "publisher": "조선 뉴스 라이브러리 100",
+   "status": 200,
+   "final": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19971204",
+   "kind": "ok"
+  },
+  {
+   "id": "ch-980105",
+   "url": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19980105",
+   "publisher": "조선 뉴스 라이브러리 100",
+   "status": 200,
+   "final": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19980105",
+   "kind": "ok"
+  },
+  {
+   "id": "ch-980108",
+   "url": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19980108",
+   "publisher": "조선 뉴스 라이브러리 100",
+   "status": 200,
+   "final": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19980108",
+   "kind": "ok"
+  },
+  {
+   "id": "ch-980115",
+   "url": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19980115",
+   "publisher": "조선 뉴스 라이브러리 100",
+   "status": 200,
+   "final": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19980115",
+   "kind": "ok"
+  },
+  {
+   "id": "ch-990101",
+   "url": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19990101",
+   "publisher": "조선 뉴스 라이브러리 100",
+   "status": 200,
+   "final": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19990101",
+   "kind": "ok"
+  },
+  {
+   "id": "ch-990615",
+   "url": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19990615",
+   "publisher": "조선 뉴스 라이브러리 100",
+   "status": 200,
+   "final": "https://newslibrary.chosun.com/search/search_result.html?case_num=2&set_date=19990615",
+   "kind": "ok"
+  },
+  {
+   "id": "chatgpt-chc",
+   "url": "https://computinghistory.org.uk/det/71180/OpenAI%20launches%20ChatGPT",
+   "publisher": "Centre for Computing History",
+   "status": 200,
+   "final": "https://www.computinghistory.org.uk/det/71180/OpenAI%20launches%20ChatGPT",
+   "kind": "ok"
+  },
+  {
+   "id": "chm-semi",
+   "url": "https://www.computerhistory.org/semiconductor/timeline.html",
+   "publisher": "Computer History Museum",
+   "status": 200,
+   "final": "https://www.computerhistory.org/siliconengine/timeline/",
+   "kind": "ok"
+  },
+  {
+   "id": "cia-posted",
+   "url": "https://www.cia.gov/readingroom/print/835331",
+   "publisher": "CIA FOIA Reading Room",
+   "status": 200,
+   "final": "https://www.cia.gov/readingroom/",
+   "kind": "ok"
+  },
+  {
+   "id": "cn-bjreview-trade",
+   "url": "https://www.bjreview.com/60th/2009-09/07/content_217199_4.htm",
+   "publisher": "Beijing Review",
+   "status": 200,
+   "final": "https://www.bjreview.com/60th/2009-09/07/content_217199_4.htm",
+   "kind": "ok"
+  },
+  {
+   "id": "cn-cup-evenett",
+   "url": "https://www.cambridge.org/core/product/E13D2F2BD833E37F42C39F6CA1317D51/core-reader",
+   "publisher": "Cambridge University Press (2023)",
+   "status": 200,
+   "final": "https://www.cambridge.org/core/books/china-and-the-wto/postaccession-treatment-of-chinese-goods-exports-by-wto-members/E13D2F2BD833E37F42C39F6CA1317D51",
+   "kind": "ok"
+  },
+  {
+   "id": "cn-reform-bjreview",
+   "url": "https://www.bjreview.com/CHINA_INSIGHT_2021/Illustrated_Guide_to_the_Sixth_Plenary_Session_of_the_19th_CPC_Central_Committee/202201/t20220110_800272580.html",
+   "publisher": "Beijing Review",
+   "status": 200,
+   "final": "https://www.bjreview.com/CHINA_INSIGHT_2021/Illustrated_Guide_to_the_Sixth_Plenary_Session_of_the_19th_CPC_Central_Committee/202201/t20220110_800272580.html",
+   "kind": "ok"
+  },
+  {
+   "id": "cn-tf-1992",
+   "url": "https://www.taylorfrancis.com/books/9780203500712/chapters/10.4324/9780203500712-16",
+   "publisher": "Taylor & Francis",
+   "status": 200,
+   "final": "https://www.taylorfrancis.com/chapters/mono/10.4324/9780203500712-16/women-society-elite-sport-transition-market-economy-1990%E2%80%9398-dong-jinxia",
+   "kind": "ok"
+  },
+  {
+   "id": "cn-wiki-fdi",
+   "url": "https://en.wikipedia.org/wiki/Foreign_direct_investment_in_China",
+   "publisher": "Wikipedia (Naughton 등 인용)",
+   "status": 200,
+   "final": "https://en.wikipedia.org/wiki/Foreign_direct_investment_in_China",
+   "kind": "ok"
+  },
+  {
+   "id": "cn-wto-adst",
+   "url": "https://adst.org/?p=16041",
+   "publisher": "ADST",
+   "status": 200,
+   "final": "https://adst.org/2016/04/tiananmen-another-bump-in-chinas-road-to-wto-accession/",
+   "kind": "ok"
+  },
+  {
+   "id": "dallasfed-2001",
+   "url": "https://www.dallasfed.org/~/media/documents/research/efr/2001/efr0104c.pdf",
+   "publisher": "Federal Reserve Bank of Dallas",
+   "status": 200,
+   "final": "https://www.dallasfed.org/~/media/documents/research/efr/2001/efr0104c.pdf",
+   "kind": "ok"
+  },
+  {
+   "id": "ds-online-2019",
+   "url": "https://dealsite.co.kr/articles/71028",
+   "publisher": "딜사이트",
+   "status": 200,
+   "final": "https://dealsite.co.kr/articles/71028",
+   "kind": "ok"
+  },
+  {
+   "id": "econ-1p-2015",
+   "url": "https://economist.co.kr/article/view/ecn201909080005",
+   "publisher": "이코노미스트 (통계청 인구주택총조사)",
+   "status": 200,
+   "final": "https://economist.co.kr/article/view/ecn201909080005",
+   "kind": "ok"
+  },
+  {
+   "id": "econ-220225-war",
+   "url": "https://economist.co.kr/article/view/ecn202202250004",
+   "publisher": "이코노미스트",
+   "status": 200,
+   "final": "https://economist.co.kr/article/view/ecn202202250004",
+   "kind": "ok"
+  },
+  {
+   "id": "ecos-baserate",
+   "url": "https://ecos.bok.or.kr/",
+   "publisher": "한국은행 경제통계시스템(ECOS)",
+   "status": 200,
+   "final": "https://ecos.bok.or.kr/",
+   "kind": "ok"
+  },
+  {
+   "id": "ecos-hhcons",
+   "url": "https://ecos.bok.or.kr/",
+   "publisher": "한국은행 경제통계시스템(ECOS)",
+   "status": 200,
+   "final": "https://ecos.bok.or.kr/",
+   "kind": "ok"
+  },
+  {
+   "id": "ecos-hsupply",
+   "url": "https://ecos.bok.or.kr/",
+   "publisher": "한국은행 경제통계시스템(ECOS)",
+   "status": 200,
+   "final": "https://ecos.bok.or.kr/",
+   "kind": "ok"
+  },
+  {
+   "id": "ecos-rgdp",
+   "url": "https://ecos.bok.or.kr/",
+   "publisher": "한국은행 경제통계시스템(ECOS)",
+   "status": 200,
+   "final": "https://ecos.bok.or.kr/",
+   "kind": "ok"
+  },
+  {
+   "id": "eia-peak",
+   "url": "https://www.eia.gov/TodayinEnergy/detail.php?id=64125",
+   "publisher": "U.S. Energy Information Administration",
+   "status": 200,
+   "final": "https://www.eia.gov/TodayinEnergy/detail.php?id=64125",
+   "kind": "ok"
+  },
+  {
+   "id": "enara-content",
+   "url": "https://www.index.go.kr/unify/idx-info.do?idxCd=2752",
+   "publisher": "e-나라지표 (문화체육관광부 콘텐츠산업조사)",
+   "status": 200,
+   "final": "https://www.index.go.kr/unify/idx-info.do?idxCd=2752",
+   "kind": "ok"
+  },
+  {
+   "id": "ency-embargo",
+   "url": "https://encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/oil-embargo-1973-1974",
+   "publisher": "Encyclopedia of the Modern Middle East and North Africa (encyclopedia.com)",
+   "status": 200,
+   "final": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/oil-embargo-1973-1974",
+   "kind": "ok"
+  },
+  {
+   "id": "epca-ebsco",
+   "url": "https://www.ebsco.com/research-starters/power-and-energy/energy-policy-and-conservation-act-epca-1975",
+   "publisher": "EBSCO Research Starters",
+   "status": 200,
+   "final": "https://www.ebsco.com/research-starters/power-and-energy/energy-policy-and-conservation-act-epca-1975",
+   "kind": "ok"
+  },
+  {
+   "id": "eu-cvce-customs",
+   "url": "https://www.cvce.eu/content/publication/1997/10/13/2bc2adbc-bf41-4799-b86c-ad58a3426be6/publishable_en.pdf",
+   "publisher": "CVCE.eu (University of Luxembourg)",
+   "status": 200,
+   "final": "https://www.cvce.eu/content/publication/1997/10/13/2bc2adbc-bf41-4799-b86c-ad58a3426be6/publishable_en.pdf",
+   "kind": "ok"
+  },
+  {
+   "id": "eu-dubois-2025",
+   "url": "https://www.cambridge.org/core/product/7860E298C7798903EF23F61BB193AA83/core-reader",
+   "publisher": "Cambridge University Press",
+   "status": 200,
+   "final": "https://www.cambridge.org/core/journals/contemporary-european-history/article/may-1968-and-the-origins-of-the-single-currency-a-connected-history-of-european-integration/7860E298C7798903EF23F61BB193AA83",
+   "kind": "ok"
+  },
+  {
+   "id": "fed-oilshock",
+   "url": "https://www.federalreservehistory.org/essays/oil_shock_of_1973_74",
+   "publisher": "Federal Reserve History",
+   "status": 200,
+   "final": "https://www.federalreservehistory.org/essays/oil-shock-of-1973-74",
+   "kind": "ok"
+  },
+  {
+   "id": "fed-oilshock",
+   "url": "https://www.federalreservehistory.org/essays/oil-shock-of-1973-74",
+   "publisher": "Federal Reserve History (미국 연방준비제도)",
+   "status": 200,
+   "final": "https://www.federalreservehistory.org/essays/oil-shock-of-1973-74",
+   "kind": "ok"
+  },
+  {
+   "id": "frus-200",
+   "url": "https://history.state.gov/historicaldocuments/frus1969-76v25/d200",
+   "publisher": "U.S. Department of State, Office of the Historian",
+   "status": 200,
+   "final": "https://history.state.gov/historicaldocuments/frus1969-76v25/d200",
+   "kind": "ok"
+  },
+  {
+   "id": "geo-tehran",
+   "url": "https://geoexpro.com/?p=46319",
+   "publisher": "GEO ExPro",
+   "status": 200,
+   "final": "https://geoexpro.com/the-first-oil-shock/",
+   "kind": "ok"
+  },
+  {
+   "id": "glf-ebsco",
+   "url": "https://ebsco.com/research-starters/history/great-leap-forward-famine",
+   "publisher": "EBSCO Research Starters",
+   "status": 200,
+   "final": "https://www.ebsco.com/research-starters/history/great-leap-forward-famine",
+   "kind": "ok"
+  },
+  {
+   "id": "gm-130702-kakao",
+   "url": "https://www.gamemeca.com/view.php?gid=299164",
+   "publisher": "게임메카",
+   "status": 200,
+   "final": "https://www.gamemeca.com/view.php?gid=299164",
+   "kind": "ok"
+  },
+  {
+   "id": "gq-1812-bts",
+   "url": "https://www.gqkorea.co.kr/?p=132935",
+   "publisher": "GQ Korea (2018.12)",
+   "status": 200,
+   "final": "https://www.gqkorea.co.kr/2018/12/10/%eb%b0%a9%ed%83%84%ec%86%8c%eb%85%84%eb%8b%a8%ec%9d%b4-%ec%9d%b4%eb%a3%a9%ed%95%9c-%ec%96%b4%eb%a7%88%ec%96%b4%eb%a7%88%ed%95%9c-%ec%88%98%ec%b9%98%eb%93%a4/",
+   "kind": "ok"
+  },
+  {
+   "id": "gta-chips",
+   "url": "https://globaltradealert.org/state-act/66540-united-states-of-america-us-administration-enacts-the-chips-and-science-act-of-2022",
+   "publisher": "Global Trade Alert",
+   "status": 200,
+   "final": "https://globaltradealert.org/state-act/66540-united-states-of-america-us-administration-enacts-the-chips-and-science-act-of-2022",
+   "kind": "ok"
+  },
+  {
+   "id": "hamilton-1983",
+   "url": "https://eclass.aueb.gr/modules/document/file.php/DEOS422/%CE%92%CE%B9%CE%B2%CE%BB%CE%B9%CE%BF%CE%B3%CF%81%CE%B1%CF%86%CE%AF%CE%B1/Oil%20and%20the%20macroeconomy/Hamilton-OilMacroeconomysince-1983.pdf",
+   "publisher": "Journal of Political Economy 91(2)",
+   "status": 200,
+   "final": "https://eclass.aueb.gr/modules/document/file.php/DEOS422/%CE%92%CE%B9%CE%B2%CE%BB%CE%B9%CE%BF%CE%B3%CF%81%CE%B1%CF%86%CE%AF%CE%B1/Oil%20and%20the%20macroeconomy/Hamilton-OilMacroeconomysince-1983.pdf",
+   "kind": "ok"
+  },
+  {
+   "id": "hk-260225-tfr",
+   "url": "https://www.hankyung.com/article/202602253818Y",
+   "publisher": "한국경제",
+   "status": 200,
+   "final": "https://www.hankyung.com/article/202602253818Y",
+   "kind": "ok"
+  },
+  {
+   "id": "hri-2008-debt",
+   "url": "https://test.hri.co.kr/upload/board/20088483610%5b1%5d.pdf",
+   "publisher": "현대경제연구원",
+   "status": 200,
+   "final": "https://test.hri.co.kr/upload/board/20088483610%5B1%5D.pdf",
+   "kind": "ok"
+  },
+  {
+   "id": "ic-gov-share",
+   "url": "https://historyofcomputercommunications.info/section/2.20/The-Integrated-Circuit-1959/",
+   "publisher": "History of Computer Communications",
+   "status": 200,
+   "final": "https://historyofcomputercommunications.info/section/2.20/The-Integrated-Circuit-1959/",
+   "kind": "ok"
+  },
+  {
+   "id": "israeled-242",
+   "url": "https://israeled.org/resolution-242",
+   "publisher": "Center for Israel Education",
+   "status": 200,
+   "final": "https://israeled.org/resolution-242/",
+   "kind": "ok"
+  },
+  {
+   "id": "ito-nber",
+   "url": "https://www.nber.org/system/files/chapters/c9166/c9166.pdf",
+   "publisher": "NBER (Takatoshi Ito)",
+   "status": 200,
+   "final": "https://www.nber.org/system/files/chapters/c9166/c9166.pdf",
+   "kind": "ok"
+  },
+  {
+   "id": "jcer-oil",
+   "url": "https://www.jcer.or.jp/?p=137482",
+   "publisher": "JCER",
+   "status": 200,
+   "final": "https://www.jcer.or.jp/english/japanese-economy-update-april-2026",
+   "kind": "ok"
+  },
+  {
+   "id": "jj-230113-rate",
+   "url": "https://www.jjan.kr/articleAmp/20230113580020",
+   "publisher": "전북일보",
+   "status": 200,
+   "final": "https://www.jjan.kr/articleAmp/20230113580020",
+   "kind": "ok"
+  },
+  {
+   "id": "joongang-sewol",
+   "url": "https://www.koreajoongangdaily.com/korea/10/11694223",
+   "publisher": "코리아중앙데일리",
+   "status": 200,
+   "final": "https://www.koreajoongangdaily.com/korea/10/11694223",
+   "kind": "ok"
+  },
+  {
+   "id": "jp-archives-1963",
+   "url": "https://www.archives.go.jp/learning/archive_collection_8/collection_3/",
+   "publisher": "国立公文書館",
+   "status": 200,
+   "final": "https://www.archives.go.jp/learning/archive_collection_8/collection_3/",
+   "kind": "ok"
+  },
+  {
+   "id": "jp-boe-banking",
+   "url": "https://www.bankofengland.co.uk/-/media/boe/files/quarterly-bulletin/2014/dealing-with-a-banking-crisis-what-lessons-can-be-learned-from-japans-experience.pdf",
+   "publisher": "Bank of England Quarterly Bulletin (2014)",
+   "status": 200,
+   "final": "https://www.bankofengland.co.uk/-/media/boe/files/quarterly-bulletin/2014/dealing-with-a-banking-crisis-what-lessons-can-be-learned-from-japans-experience.pdf",
+   "kind": "ok"
+  },
+  {
+   "id": "jp-bof-abe",
+   "url": "https://www.bofbulletin.fi/article/analysis/2016/abenomics-three-years-the-big-ship-turns-slowly/",
+   "publisher": "Bank of Finland Bulletin (2016)",
+   "status": 200,
+   "final": "https://www.bofbulletin.fi/article/analysis/2016/abenomics-three-years-the-big-ship-turns-slowly/",
+   "kind": "ok"
+  },
+  {
+   "id": "jp-diamond",
+   "url": "https://diamond.jp/articles/-/384937",
+   "publisher": "ダイヤモンド・オンライン",
+   "status": 200,
+   "final": "https://diamond.jp/articles/-/384937",
+   "kind": "ok"
+  },
+  {
+   "id": "jp-jil-kr-unemp",
+   "url": "https://www.jil.go.jp/foreign/jihou/1999/04/kankokuP01.html",
+   "publisher": "労働政策研究・研修機構(JIL)",
+   "status": 200,
+   "final": "https://www.jil.go.jp/foreign/jihou/1999/04/kankokuP01.html",
+   "kind": "ok"
+  },
+  {
+   "id": "jp-mhlw-2011",
+   "url": "https://www.mhlw.go.jp/wp/hakusyo/roudou/11/dl/02-1-2.pdf",
+   "publisher": "厚生労働省",
+   "status": 200,
+   "final": "https://www.mhlw.go.jp/wp/hakusyo/roudou/11/dl/02-1-2.pdf",
+   "kind": "ok"
+  },
+  {
+   "id": "jp-mof-1960",
+   "url": "https://www.mof.go.jp/english/pri/publication/policy_1945-1971/Part2-Chapter5.pdf",
+   "publisher": "일본 재무성 정책사",
+   "status": 200,
+   "final": "https://www.mof.go.jp/english/pri/publication/policy_1945-1971/Part2-Chapter5.pdf",
+   "kind": "ok"
+  },
+  {
+   "id": "jp-mof-1972",
+   "url": "https://www.mof.go.jp/english/pri/publication/policy_1972-1990/Introduction.pdf",
+   "publisher": "일본 재무성 정책사",
+   "status": 200,
+   "final": "https://www.mof.go.jp/english/pri/publication/policy_1972-1990/Introduction.pdf",
+   "kind": "ok"
+  },
+  {
+   "id": "jp-rakuten-nikkei",
+   "url": "https://media.rakuten-sec.net/articles/print/51016",
+   "publisher": "楽天証券 トウシル",
+   "status": 200,
+   "final": "https://media.rakuten-sec.net/articles/print/51016",
+   "kind": "ok"
+  },
+  {
+   "id": "jp-thestar-bubble",
+   "url": "https://thestar.com.my/aseanplus/aseanplus-news/2024/02/22/japan039s-crazy-1980s-bubble-a-dim-memory-as-nikkei-hits-record-high",
+   "publisher": "The Star (Reuters)",
+   "status": 200,
+   "final": "https://www.thestar.com.my/aseanplus/aseanplus-news/2024/02/22/japan039s-crazy-1980s-bubble-a-dim-memory-as-nikkei-hits-record-high",
+   "kind": "ok"
+  },
+  {
+   "id": "jp-toshiba",
+   "url": "https://toshiba-mirai-kagakukan.jp/a-guide/en/history-zone/ichigoki/three-sacred-treasures.htm",
+   "publisher": "Toshiba Science Museum",
+   "status": 200,
+   "final": "https://toshiba-mirai-kagakukan.jp/a-guide/en/history-zone/ichigoki/three-sacred-treasures.htm",
+   "kind": "ok"
+  },
+  {
+   "id": "kakao-130702",
+   "url": "https://www.kakaocorp.com/page/detail/7935",
+   "publisher": "카카오",
+   "status": 200,
+   "final": "https://www.kakaocorp.com/page/detail/7935",
+   "kind": "ok"
+  },
+  {
+   "id": "kdev-crisis",
+   "url": "https://kdevelopedia.org/k-db-originals/koreas-financial-crises-and-economic-restructuring",
+   "publisher": "K-Developedia (KDI 국제정책대학원)",
+   "status": 200,
+   "final": "https://kdevelopedia.org/k-db-originals/koreas-financial-crises-and-economic-restructuring",
+   "kind": "ok"
+  },
+  {
+   "id": "keei-13-02",
+   "url": "https://www.keei.re.kr/library/10110/contents/6842367",
+   "publisher": "에너지경제연구원",
+   "status": 200,
+   "final": "https://www.keei.re.kr/library/10110/contents/6842367",
+   "kind": "ok"
+  },
+  {
+   "id": "kh-020715-proleague",
+   "url": "https://www.khan.co.kr/article/200207151816001",
+   "publisher": "경향신문",
+   "status": 200,
+   "final": "https://www.khan.co.kr/article/200207151816001",
+   "kind": "ok"
+  },
+  {
+   "id": "kh-170716-minwage",
+   "url": "https://www.khan.co.kr/article/201707162254005",
+   "publisher": "경향신문",
+   "status": 200,
+   "final": "https://www.khan.co.kr/article/201707162254005",
+   "kind": "ok"
+  },
+  {
+   "id": "kh-190227-tfr",
+   "url": "https://www.khan.co.kr/article/201902271200021",
+   "publisher": "경향신문",
+   "status": 200,
+   "final": "https://www.khan.co.kr/article/201902271200021",
+   "kind": "ok"
+  },
+  {
+   "id": "kiep-2020-mpm",
+   "url": "https://ideas.repec.org/p/ris/kieppa/2020_018.html",
+   "publisher": "대외경제정책연구원 (RePEc)",
+   "status": 200,
+   "final": "https://ideas.repec.org/p/ris/kieppa/2020_018.html",
+   "kind": "ok"
+  },
+  {
+   "id": "kli-1803-wage",
+   "url": "https://repository.kli.re.kr/bitstream/2021.oak/7102/2/KLI%20%ea%b3%a0%ec%9a%a9%eb%85%b8%eb%8f%99%eb%b8%8c%eb%a6%ac%ed%94%84%20%ec%a0%9c81%ed%98%b8%282018-03%29.pdf",
+   "publisher": "한국노동연구원",
+   "status": 200,
+   "final": "https://repository.kli.re.kr/bitstream/2021.oak/7102/2/KLI%20%EA%B3%A0%EC%9A%A9%EB%85%B8%EB%8F%99%EB%B8%8C%EB%A6%AC%ED%94%84%20%EC%A0%9C81%ED%98%B8%282018-03%29.pdf",
+   "kind": "ok"
+  },
+  {
+   "id": "kli-brief-101",
+   "url": "https://repository.kli.re.kr/bitstream/2021.oak/7122/2/KLI%20%ea%b3%a0%ec%9a%a9%eb%85%b8%eb%8f%99%eb%b8%8c%eb%a6%ac%ed%94%84%20%ec%a0%9c101%ed%98%b8%282020-08%29.pdf",
+   "publisher": "한국노동연구원",
+   "status": 200,
+   "final": "https://repository.kli.re.kr/bitstream/2021.oak/7122/2/KLI%20%EA%B3%A0%EC%9A%A9%EB%85%B8%EB%8F%99%EB%B8%8C%EB%A6%AC%ED%94%84%20%EC%A0%9C101%ED%98%B8%282020-08%29.pdf",
+   "kind": "ok"
+  },
+  {
+   "id": "kosis-occ",
+   "url": "https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_2KAA353",
+   "publisher": "통계청 국가통계포털(KOSIS) 국제통계",
+   "status": 200,
+   "final": "https://kosis.kr/statHtml/statHtml.do?sso=ok&returnurl=https%3A%2F%2Fkosis.kr%3A443%2FstatHtml%2FstatHtml.do%3FtblId%3DDT_2KAA353%26orgId%3D101%26",
+   "kind": "ok"
+  },
+  {
+   "id": "kosis-status",
+   "url": "https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_1DA7010S",
+   "publisher": "통계청 국가통계포털(KOSIS)",
+   "status": 200,
+   "final": "https://kosis.kr/statHtml/statHtml.do?sso=ok&returnurl=https%3A%2F%2Fkosis.kr%3A443%2FstatHtml%2FstatHtml.do%3FtblId%3DDT_1DA7010S%26orgId%3D101%26",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-518-academic",
+   "url": "https://koreascience.kr/article/JAKO201515048150265.page",
+   "publisher": "기록학 연구 (KoreaScience)",
+   "status": 200,
+   "final": "https://koreascience.kr/article/JAKO201515048150265.page",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-ajunews-lehman5",
+   "url": "https://www.ajunews.com/view/20130914000064",
+   "publisher": "아주경제",
+   "status": 200,
+   "final": "https://www.ajunews.com/view/20130914000064",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-aks-imf",
+   "url": "https://dh.aks.ac.kr/Edu/wiki/index.php/IMF_관리체제",
+   "publisher": "한국학중앙연구원 디지털인문학 위키",
+   "status": 200,
+   "final": "https://dh.aks.ac.kr/Edu/wiki/index.php/IMF_%EA%B4%80%EB%A6%AC%EC%B2%B4%EC%A0%9C",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-arch-518",
+   "url": "https://theme.archives.go.kr/next/koreaOfRecord/5_18.do",
+   "publisher": "국가기록원",
+   "status": 200,
+   "final": "https://theme.archives.go.kr/next/koreaOfRecord/5_18.do",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-arch-5day",
+   "url": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=224",
+   "publisher": "국가기록원",
+   "status": 200,
+   "final": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=224",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-arch-appliances",
+   "url": "https://theme.archives.go.kr/next/koreaOfRecord/appliances.do",
+   "publisher": "국가기록원",
+   "status": 200,
+   "final": "https://theme.archives.go.kr/next/koreaOfRecord/appliances.do",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-arch-auto",
+   "url": "https://theme.archives.go.kr/next/pages/new_newsletter/2015/01/sub1.html",
+   "publisher": "국가기록원",
+   "status": 200,
+   "final": "https://theme.archives.go.kr/next/pages/new_newsletter/2015/01/sub1.html",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-arch-broadcast",
+   "url": "https://theme.archives.go.kr/next/photo/broadcastList.do?subNo=02",
+   "publisher": "국가기록원",
+   "status": 200,
+   "final": "https://theme.archives.go.kr/next/photo/broadcastList.do?subNo=02",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-arch-chron-1974",
+   "url": "https://theme.archives.go.kr/next/chronology/searchArchive.do?page=411",
+   "publisher": "국가기록원",
+   "status": 200,
+   "final": "https://theme.archives.go.kr/next/chronology/searchArchive.do?page=411",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-arch-colortv",
+   "url": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=208",
+   "publisher": "국가기록원",
+   "status": 200,
+   "final": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=208",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-arch-curfew",
+   "url": "https://theme.archives.go.kr/next/koreaOfRecord/curfew.do",
+   "publisher": "국가기록원",
+   "status": 200,
+   "final": "https://theme.archives.go.kr/next/koreaOfRecord/curfew.do",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-arch-curfew-day",
+   "url": "https://theme.archives.go.kr/next/daily/viewMain.do?selectDay=19820105",
+   "publisher": "국가기록원",
+   "status": 200,
+   "final": "https://theme.archives.go.kr/next/daily/viewMain.do?selectDay=19820105",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-arch-export",
+   "url": "https://theme.archives.go.kr/next/monthly/viewMain.do",
+   "publisher": "국가기록원",
+   "status": 200,
+   "final": "https://theme.archives.go.kr/next/monthly/viewMain.do",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-arch-film80",
+   "url": "https://theme.archives.go.kr/next/movie/features07.do",
+   "publisher": "국가기록원",
+   "status": 200,
+   "final": "https://theme.archives.go.kr/next/movie/features07.do",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-arch-hci",
+   "url": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=308",
+   "publisher": "국가기록원",
+   "status": 200,
+   "final": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=308",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-arch-hci-policy",
+   "url": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=308",
+   "publisher": "국가기록원",
+   "status": 200,
+   "final": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=308",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-arch-imf",
+   "url": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=322",
+   "publisher": "국가기록원",
+   "status": 200,
+   "final": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=322",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-arch-imf-theme",
+   "url": "https://theme.archives.go.kr/next/koreaOfRecord/imf.do",
+   "publisher": "국가기록원",
+   "status": 200,
+   "final": "https://theme.archives.go.kr/next/koreaOfRecord/imf.do",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-arch-kori-photo",
+   "url": "https://theme.archives.go.kr/next/photo/nuclearEnergy02List.do",
+   "publisher": "국가기록원",
+   "status": 200,
+   "final": "https://theme.archives.go.kr/next/photo/nuclearEnergy02List.do",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-arch-kori-policy",
+   "url": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=309",
+   "publisher": "국가기록원",
+   "status": 200,
+   "final": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=309",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-arch-longhair",
+   "url": "https://theme.archives.go.kr/next/koreaOfRecord/Long-term.do",
+   "publisher": "국가기록원",
+   "status": 200,
+   "final": "https://theme.archives.go.kr/next/koreaOfRecord/Long-term.do",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-arch-mideast",
+   "url": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=310",
+   "publisher": "국가기록원",
+   "status": 200,
+   "final": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=310",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-arch-oecd",
+   "url": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=321",
+   "publisher": "국가기록원",
+   "status": 200,
+   "final": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=321",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-arch-oil",
+   "url": "https://theme.archives.go.kr/next/koreaOfRecord/gasoline.do",
+   "publisher": "국가기록원",
+   "status": 200,
+   "final": "https://theme.archives.go.kr/next/koreaOfRecord/gasoline.do",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-arch-oil-theme",
+   "url": "https://theme.archives.go.kr/next/koreaOfRecord/gasoline.do",
+   "publisher": "국가기록원",
+   "status": 200,
+   "final": "https://theme.archives.go.kr/next/koreaOfRecord/gasoline.do",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-arch-plan",
+   "url": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=305",
+   "publisher": "국가기록원",
+   "status": 200,
+   "final": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=305",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-arch-plan1",
+   "url": "https://theme.archives.go.kr/next/pages/new_newsletter/2015/08/sub3-2.html",
+   "publisher": "국가기록원",
+   "status": 200,
+   "final": "https://theme.archives.go.kr/next/pages/new_newsletter/2015/08/sub3-2.html",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-arch-realname",
+   "url": "https://theme.archives.go.kr/next/koreaOfRecord/realFinancial.do",
+   "publisher": "국가기록원",
+   "status": 200,
+   "final": "https://theme.archives.go.kr/next/koreaOfRecord/realFinancial.do",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-arch-saemaul",
+   "url": "https://theme.archives.go.kr/next/koreaOfRecord/saemaeul.do",
+   "publisher": "국가기록원",
+   "status": 200,
+   "final": "https://theme.archives.go.kr/next/koreaOfRecord/saemaeul.do",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-arch-taboo",
+   "url": "https://theme.archives.go.kr/next/tabooAutonomy/kindOfTaboo02.do",
+   "publisher": "국가기록원",
+   "status": 200,
+   "final": "https://theme.archives.go.kr/next/tabooAutonomy/kindOfTaboo02.do",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-arch-travel",
+   "url": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=215",
+   "publisher": "국가기록원",
+   "status": 200,
+   "final": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=215",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-arch-travel2",
+   "url": "https://theme.archives.go.kr/next/koreaOfRecord/globalTravel.do",
+   "publisher": "국가기록원",
+   "status": 200,
+   "final": "https://theme.archives.go.kr/next/koreaOfRecord/globalTravel.do",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-arch-tripartite",
+   "url": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=220",
+   "publisher": "국가기록원",
+   "status": 200,
+   "final": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=220",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-arch-yushin",
+   "url": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=102",
+   "publisher": "국가기록원",
+   "status": 200,
+   "final": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=102",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-bizhk-hanbo",
+   "url": "https://bizhankook.com/articles/20442.html",
+   "publisher": "비즈한국",
+   "status": 200,
+   "final": "https://bizhankook.com/articles/20442.html",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-bizwatch-hike",
+   "url": "https://news.bizwatch.co.kr/article/finance/2021/08/26/0007",
+   "publisher": "비즈워치",
+   "status": 200,
+   "final": "https://news.bizwatch.co.kr/article/finance/2021/08/26/0007",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-bizwatch-petchem",
+   "url": "https://news.bizwatch.co.kr/article/industry/2019/12/17/0016",
+   "publisher": "비즈워치",
+   "status": 200,
+   "final": "https://news.bizwatch.co.kr/article/industry/2019/12/17/0016",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-block-mou",
+   "url": "https://www.blockmedia.co.kr/archives/194644",
+   "publisher": "블록미디어",
+   "status": 200,
+   "final": "https://www.blockmedia.co.kr/archives/194644",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-bravo-8army",
+   "url": "https://bravo.etoday.co.kr/view/atc_view/4447",
+   "publisher": "브라보 마이 라이프(이투데이)",
+   "status": 200,
+   "final": "https://bravo.etoday.co.kr/view/atc_view/4447",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-chosun-1968-expo",
+   "url": "https://newslibrary.chosun.com/search/search_result.html?case_num=1&query=%EA%B8%88%EC%84%B1%20%ED%85%94%EB%A0%88%EB%B9%84&page=0&sort=1",
+   "publisher": "조선 뉴스 라이브러리 100",
+   "status": 200,
+   "final": "https://newslibrary.chosun.com/search/search_result.html?case_num=1&query=%EA%B8%88%EC%84%B1%20%ED%85%94%EB%A0%88%EB%B9%84&page=0&sort=1",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-cpr-1999",
+   "url": "https://econpapers.repec.org/RePEc:bdi:wptemi:td_343_98",
+   "publisher": "Corsetti, Pesenti & Roubini, Bank of Italy WP 343 (1998)",
+   "status": 200,
+   "final": "https://econpapers.repec.org/paper/bdiwptemi/td_5f343_5f98.htm",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-dailian-album",
+   "url": "https://m.dailian.co.kr/news/view/1707458/",
+   "publisher": "데일리안(써클차트 집계 인용)",
+   "status": 200,
+   "final": "https://m.dailian.co.kr/news/view/1707458/%EC%BC%80%EC%9D%B4%ED%8C%9D-%EC%95%A8%EB%B2%94-3%EB%85%84-%EB%A7%8C%EC%97%90-%E2%80%981%EC%96%B5-%EC%9E%A5%E2%80%99-2026",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-dailian-swap",
+   "url": "https://m.dailian.co.kr/news/view/877456",
+   "publisher": "데일리안",
+   "status": 200,
+   "final": "https://m.dailian.co.kr/news/view/877456/%EC%99%B8%ED%99%94-%EC%95%88%EC%A0%84%ED%8C%90-%ED%95%9C%EB%AF%B8-%ED%86%B5%ED%99%94%EC%8A%A4%EC%99%91%EC%9B%90%EB%8B%AC%EB%9F%AC-%ED%99%98%EC%9C%A8-2020",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-dailian-swap2020",
+   "url": "https://m.dailian.co.kr/news/view/877456",
+   "publisher": "데일리안",
+   "status": 200,
+   "final": "https://m.dailian.co.kr/news/view/877456/%EC%99%B8%ED%99%94-%EC%95%88%EC%A0%84%ED%8C%90-%ED%95%9C%EB%AF%B8-%ED%86%B5%ED%99%94%EC%8A%A4%EC%99%91%EC%9B%90%EB%8B%AC%EB%9F%AC-%ED%99%98%EC%9C%A8-2020",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-designdb-1975",
+   "url": "https://designdb.com/var/fiftieth/img/dk50/book/06_1975_%EC%84%B8%EA%B3%84%20%EC%8B%9C%EC%9E%A5%20%EA%B2%A8%EB%83%A5%ED%95%9C%20%EA%B8%B0%EC%97%85%EC%9D%98%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%A0%84%EB%9E%B5%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%97%B0%EA%B5%AC%EC%8B%A4.pdf",
+   "publisher": "한국디자인진흥원 designdb (디자인 50년)",
+   "status": 200,
+   "final": "https://designdb.com/var/fiftieth/img/dk50/book/06_1975_%EC%84%B8%EA%B3%84%20%EC%8B%9C%EC%9E%A5%20%EA%B2%A8%EB%83%A5%ED%95%9C%20%EA%B8%B0%EC%97%85%EC%9D%98%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%A0%84%EB%9E%B5%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%97%B0%EA%B5%AC%EC%8B%A4.pdf",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-econ-kia",
+   "url": "https://economist.co.kr/article/view/ecn201702050005",
+   "publisher": "이코노미스트",
+   "status": 200,
+   "final": "https://economist.co.kr/article/view/ecn201702050005",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-econ-kosdaq",
+   "url": "https://economist.co.kr/article/view/ecn201607170004",
+   "publisher": "이코노미스트",
+   "status": 200,
+   "final": "https://economist.co.kr/article/view/ecn201607170004",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-economist-sampoong",
+   "url": "https://economist.co.kr/article/view/ecn202506290002",
+   "publisher": "이코노미스트",
+   "status": 200,
+   "final": "https://economist.co.kr/article/view/ecn202506290002",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-encykorea-campus",
+   "url": "https://encykorea.aks.ac.kr/Article/E0014887",
+   "publisher": "한국민족문화대백과사전(한국학중앙연구원)",
+   "status": 200,
+   "final": "https://encykorea.aks.ac.kr/Article/E0014887",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-etnews-1999",
+   "url": "https://m.etnews.com/199906030056",
+   "publisher": "전자신문",
+   "status": 200,
+   "final": "https://m.etnews.com/199906030056",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-etnews-2008",
+   "url": "https://www.etnews.com/200803210022",
+   "publisher": "전자신문",
+   "status": 200,
+   "final": "https://www.etnews.com/200803210022",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-etnews-64k",
+   "url": "https://m.etnews.com/201209110688",
+   "publisher": "전자신문",
+   "status": 200,
+   "final": "https://m.etnews.com/201209110688",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-etnews-a501",
+   "url": "https://www.etnews.com/199904220115?m=1",
+   "publisher": "전자신문",
+   "status": 200,
+   "final": "https://www.etnews.com/199904220115?m=1",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-etnews-radio",
+   "url": "https://m.etnews.com/200802220024",
+   "publisher": "전자신문",
+   "status": 200,
+   "final": "https://m.etnews.com/200802220024",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-etnews-tech80",
+   "url": "https://www.etnews.com/20220913000238",
+   "publisher": "전자신문",
+   "status": 200,
+   "final": "https://www.etnews.com/20220913000238",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-etnews-venture",
+   "url": "https://www.etnews.com/201209110600",
+   "publisher": "전자신문",
+   "status": 200,
+   "final": "https://www.etnews.com/201209110600",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-etoday-kiko235",
+   "url": "https://www.etoday.co.kr/news/view/1544420",
+   "publisher": "이투데이",
+   "status": 200,
+   "final": "https://www.etoday.co.kr/news/view/1544420",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-etri-cdma",
+   "url": "https://etri.re.kr/45th/sub05_8.html",
+   "publisher": "한국전자통신연구원(ETRI)",
+   "status": 200,
+   "final": "https://etri.re.kr/45th/sub05_8.html",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-fn-levy-1012",
+   "url": "https://www.fnnews.com/news/201012191908512306",
+   "publisher": "파이낸셜뉴스",
+   "status": 200,
+   "final": "https://www.fnnews.com/news/201012191908512306",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-gamemeca-10y",
+   "url": "https://www.gamemeca.com/view.php?gid=124535",
+   "publisher": "게임메카",
+   "status": 200,
+   "final": "https://www.gamemeca.com/view.php?gid=124535",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-gq-2018-sanulim",
+   "url": "https://www.gqkorea.co.kr/2018/08/07/%EC%82%B0%EC%9A%B8%EB%A6%BC-1%EC%A7%91-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EB%AA%87-%EC%8B%AD-%EB%B2%88%EC%9D%98-%EC%97%AC%EB%A6%84",
+   "publisher": "GQ Korea",
+   "status": 200,
+   "final": "https://www.gqkorea.co.kr/2018/08/07/%EC%82%B0%EC%9A%B8%EB%A6%BC-1%EC%A7%91-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EB%AA%87-%EC%8B%AD-%EB%B2%88%EC%9D%98-%EC%97%AC%EB%A6%84",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-hanyang-game",
+   "url": "https://scholarworks.bwise.kr/hanyang/bitstream/2021.sw.hanyang/152559/1/1990%eb%85%84%eb%8c%80%20%ed%95%9c%ea%b5%ad%20PC%20%ea%b2%8c%ec%9e%84%20%ec%82%b0%ec%97%85%20PC%20%ea%b2%8c%ec%9e%84%20%ea%b0%9c%eb%b0%9c%ec%9e%90%eb%93%a4%ec%9d%98%20%eb%8f%84%ec%a0%84%ea%b3%bc%20%ec%9d%91%ec%a0%84.pdf",
+   "publisher": "한양대 학술지 (ScholarWorks)",
+   "status": 200,
+   "final": "https://hanyang.scholarworks.kr/api/assets/93588053-375e-4dbb-ade2-1d90ec1a512c/download",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-hri-2004",
+   "url": "https://test.hri.co.kr/upload/board/BSR20040809_2.PDF",
+   "publisher": "현대경제연구원",
+   "status": 200,
+   "final": "https://test.hri.co.kr/upload/board/BSR20040809_2.PDF",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-imaeil-album",
+   "url": "https://www.imaeil.com/page/view/2022122408253096557",
+   "publisher": "매일신문(연합뉴스)",
+   "status": 200,
+   "final": "https://www.imaeil.com/page/view/2022122408253096557",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-imbc-2011-sesibong",
+   "url": "https://enews.imbc.com/News/RetrieveNewsInfo/35777",
+   "publisher": "iMBC 연예",
+   "status": 200,
+   "final": "https://enews.imbc.com/News/RetrieveNewsInfo/35777",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-imf-archive",
+   "url": "https://theme.archives.go.kr/next/koreaOfRecord/imf.do",
+   "publisher": "국가기록원",
+   "status": 200,
+   "final": "https://theme.archives.go.kr/next/koreaOfRecord/imf.do",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-inews-iphone",
+   "url": "https://www.inews24.com/view/590090",
+   "publisher": "아이뉴스24",
+   "status": 200,
+   "final": "https://www.inews24.com/view/590090",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-insight-1997firms",
+   "url": "https://www.insight.co.kr/news/197667",
+   "publisher": "인사이트",
+   "status": 200,
+   "final": "https://www.insight.co.kr/news/197667",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-investkorea-ulsan",
+   "url": "https://www.investkorea.org/ik-kr/bbs/i-2483/detail.do?ntt_sn=39",
+   "publisher": "KOTRA Invest Korea",
+   "status": 200,
+   "final": "https://www.investkorea.org/ik-kr/bbs/i-2483/detail.do?ntt_sn=39",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-jjan-2011-sesibong",
+   "url": "https://www.jjan.kr/articleAmp/20110216386225",
+   "publisher": "전북일보(연합뉴스 인터뷰)",
+   "status": 200,
+   "final": "https://www.jjan.kr/articleAmp/20110216386225",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-joongang-cpi",
+   "url": "https://www.koreajoongangdaily.com/bilingual-news/inflation-must-not-be-allowed-to-outpace-growth-kor/12539902",
+   "publisher": "중앙일보",
+   "status": 200,
+   "final": "https://www.koreajoongangdaily.com/bilingual-news/inflation-must-not-be-allowed-to-outpace-growth-kor/12539902",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-kbmaeil-0528",
+   "url": "https://kbmaeil.com/article/202005280279610",
+   "publisher": "경북매일",
+   "status": 200,
+   "final": "https://kbmaeil.com/article/202005280279610",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-kbmaeil-relief",
+   "url": "https://kbmaeil.com/article/202004300277560",
+   "publisher": "경북매일",
+   "status": 200,
+   "final": "https://kbmaeil.com/article/202004300277560",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-kdi-2012",
+   "url": "https://koreascience.kr/article/JAKO201212469509903.page",
+   "publisher": "KDI Journal of Economic Policy",
+   "status": 200,
+   "final": "https://koreascience.kr/article/JAKO201212469509903.page",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-kdi-energyplan-1996",
+   "url": "https://eiec.kdi.re.kr/epic_txt/1996/D9611018.HWP",
+   "publisher": "KDI 경제정보센터",
+   "status": 200,
+   "final": "https://eiec.kdi.re.kr/epic_txt/1996/D9611018.HWP",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-kdi-unemp-9806",
+   "url": "https://eiec.kdi.re.kr/epic_txt/1998/D9808017.HWP",
+   "publisher": "KDI 경제정보센터 (재정경제부 자료)",
+   "status": 200,
+   "final": "https://eiec.kdi.re.kr/epic_txt/1998/D9808017.HWP",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-khan-1987labor",
+   "url": "https://weekly.khan.co.kr/article/201709121359581",
+   "publisher": "주간경향",
+   "status": 200,
+   "final": "https://weekly.khan.co.kr/article/201709121359581",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-khan-2001-shin",
+   "url": "https://www.khan.co.kr/article/200112301644461/amp",
+   "publisher": "경향신문",
+   "status": 200,
+   "final": "https://www.khan.co.kr/article/200112301644461/amp",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-khan-2012-campus",
+   "url": "https://sports.khan.co.kr/article/201211131810253",
+   "publisher": "스포츠경향",
+   "status": 200,
+   "final": "https://sports.khan.co.kr/article/201211131810253",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-khan-2014-briquette",
+   "url": "https://www.khan.co.kr/article/201401172050015/amp",
+   "publisher": "경향신문",
+   "status": 200,
+   "final": "https://www.khan.co.kr/article/201401172050015/amp",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-khan-2016-tripartite",
+   "url": "https://www.khan.co.kr/article/201605281845021/amp",
+   "publisher": "경향신문",
+   "status": 200,
+   "final": "https://www.khan.co.kr/article/201605281845021/amp",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-khan-518-hearing",
+   "url": "https://weekly.khan.co.kr/article/201507131659471",
+   "publisher": "주간경향",
+   "status": 200,
+   "final": "https://weekly.khan.co.kr/article/201507131659471",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-khan-card-2010",
+   "url": "https://www.khan.co.kr/article/20100916080448A/",
+   "publisher": "경향신문",
+   "status": 200,
+   "final": "https://www.khan.co.kr/article/20100916080448A/",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-khan-kiko",
+   "url": "https://www.khan.co.kr/article/200808261805145/amp",
+   "publisher": "경향신문",
+   "status": 200,
+   "final": "https://www.khan.co.kr/article/200808261805145/amp",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-kli-5day",
+   "url": "https://repository.kli.re.kr/bitstream/2021.oak/7900/2/%eb%a7%a4%ec%9b%94%eb%85%b8%eb%8f%99%eb%8f%99%ed%96%a5_2004%eb%85%84%202%ec%9b%94%ed%98%b8%28%ed%86%b5%ea%b6%8c%20%ec%a0%9c31%ed%98%b8%29_2.pdf",
+   "publisher": "한국노동연구원",
+   "status": 200,
+   "final": "https://repository.kli.re.kr/bitstream/2021.oak/7900/2/%EB%A7%A4%EC%9B%94%EB%85%B8%EB%8F%99%EB%8F%99%ED%96%A5_2004%EB%85%84%202%EC%9B%94%ED%98%B8%28%ED%86%B5%EA%B6%8C%20%EC%A0%9C31%ED%98%B8%29_2.pdf",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-kli-irregular",
+   "url": "https://repository.kli.re.kr/bitstream/2021.oak/6015/2/%eb%85%b8%eb%8f%99%eb%a6%ac%eb%b7%b0_no.106_2014.1_6.pdf",
+   "publisher": "한국노동연구원",
+   "status": 200,
+   "final": "https://repository.kli.re.kr/bitstream/2021.oak/6015/2/%EB%85%B8%EB%8F%99%EB%A6%AC%EB%B7%B0_no.106_2014.1_6.pdf",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-kli-irregular2",
+   "url": "https://repository.kli.re.kr/bitstream/2021.oak/5967/2/%eb%85%b8%eb%8f%99%eb%a6%ac%eb%b7%b0_no.100_2013.7_5.pdf",
+   "publisher": "한국노동연구원",
+   "status": 200,
+   "final": "https://repository.kli.re.kr/bitstream/2021.oak/5967/2/%EB%85%B8%EB%8F%99%EB%A6%AC%EB%B7%B0_no.100_2013.7_5.pdf",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-kocca-hallyu",
+   "url": "https://www.kocca.kr/trend/vol34/sub/s42.html",
+   "publisher": "한국콘텐츠진흥원",
+   "status": 200,
+   "final": "https://www.kocca.kr/trend/vol34/sub/s42.html",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-korea-2009-numbers",
+   "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148685908",
+   "publisher": "대한민국 정책브리핑",
+   "status": 200,
+   "final": "https://www.korea.kr/news/policyNewsView.do?newsId=148685908",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-korea-covid-2020",
+   "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148881350",
+   "publisher": "대한민국 정책브리핑",
+   "status": 200,
+   "final": "https://www.korea.kr/news/policyNewsView.do?newsId=148881350",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-korea-gold",
+   "url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=148738240",
+   "publisher": "정책브리핑 (korea.kr)",
+   "status": 200,
+   "final": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=148738240",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-korea-kr-2005",
+   "url": "https://www.korea.kr/news/policyNewsView.do?newsId=75082134",
+   "publisher": "대한민국 정책브리핑",
+   "status": 200,
+   "final": "https://www.korea.kr/news/policyNewsView.do?newsId=75082134",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-korea-swap-0810",
+   "url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=148658723",
+   "publisher": "대한민국 정책브리핑",
+   "status": 200,
+   "final": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=148658723",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-kosca-sampoong",
+   "url": "https://koreascience.or.kr/article/JAKO200562679988048.pdf",
+   "publisher": "대한건축학회 (KoreaScience, 2005)",
+   "status": 200,
+   "final": "https://koreascience.or.kr/article/JAKO200562679988048.pdf",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-kotra",
+   "url": "https://www.kotra.or.kr/60th_archive/history01.html",
+   "publisher": "KOTRA",
+   "status": 200,
+   "final": "https://www.kotra.or.kr/60th_archive/history01.html",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-lawtimes-kiko",
+   "url": "https://www.lawtimes.co.kr/news/78717",
+   "publisher": "법률신문",
+   "status": 200,
+   "final": "http://www.lawtimes.co.kr/news/articleView.html?idxno=78717",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-mt-crisis-0811",
+   "url": "https://www.mt.co.kr/article/2008110413313571024",
+   "publisher": "머니투데이",
+   "status": 200,
+   "final": "https://www.mt.co.kr/article/2008110413313571024",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-mt-cy",
+   "url": "https://www.mt.co.kr/tech/2019/10/19/2019101809525629656",
+   "publisher": "머니투데이",
+   "status": 200,
+   "final": "https://www.mt.co.kr/tech/2019/10/19/2019101809525629656",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-mt-lehman2",
+   "url": "https://www.mt.co.kr/economy/2010/09/13/2010091314570657193",
+   "publisher": "머니투데이",
+   "status": 200,
+   "final": "https://www.mt.co.kr/economy/2010/09/13/2010091314570657193",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-mt-shortdebt-0805",
+   "url": "https://www.mt.co.kr/stock/2008/05/21/2008052119150460656",
+   "publisher": "머니투데이",
+   "status": 200,
+   "final": "https://www.mt.co.kr/stock/2008/05/21/2008052119150460656",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-mt-supplement",
+   "url": "https://www.mt.co.kr/article/2009032315052313611",
+   "publisher": "머니투데이",
+   "status": 200,
+   "final": "https://www.mt.co.kr/article/2009032315052313611",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-mt-swap-0810",
+   "url": "https://www.mt.co.kr/stock/2008/10/30/2008103009242405699",
+   "publisher": "머니투데이",
+   "status": 200,
+   "final": "https://www.mt.co.kr/stock/2008/10/30/2008103009242405699",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-newsis-2022-imf",
+   "url": "https://www.newsis.com/view/NISX20221229_0002141045",
+   "publisher": "뉴시스",
+   "status": 200,
+   "final": "https://www.newsis.com/view/NISX20221229_0002141045",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-newsis-bigcut",
+   "url": "https://www.newsis.com/view/NISX20200316_0000957725",
+   "publisher": "뉴시스",
+   "status": 200,
+   "final": "https://www.newsis.com/view/NISX20200316_0000957725",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-newsis-covid3y",
+   "url": "https://www.newsis.com/view/NISX20230119_0002165072",
+   "publisher": "뉴시스",
+   "status": 200,
+   "final": "https://www.newsis.com/view/NISX20230119_0002165072",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-newsis-swap2020",
+   "url": "https://www.newsis.com/view/NISX20200319_0000962921",
+   "publisher": "뉴시스",
+   "status": 200,
+   "final": "https://www.newsis.com/view/NISX20200319_0000962921",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-nocut-kospi",
+   "url": "https://nocutnews.co.kr/news/1095599",
+   "publisher": "노컷뉴스",
+   "status": 200,
+   "final": "https://www.nocutnews.co.kr/news/1095599",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-nyfed-cpr",
+   "url": "https://www.newyorkfed.org/research/staff_reports/research_papers/9822.html",
+   "publisher": "Federal Reserve Bank of New York (1998)",
+   "status": 200,
+   "final": "https://www.newyorkfed.org/research/staff_reports/research_papers/9822.html",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-osen-2011-analog",
+   "url": "https://www.osen.co.kr/article/G1105180250",
+   "publisher": "OSEN",
+   "status": 200,
+   "final": "https://www.osen.co.kr/article/G1105180250",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-pony-export",
+   "url": "https://www.smarttoday.co.kr/ko-kr/articles/107407",
+   "publisher": "스마트투데이 (KAMA 자료)",
+   "status": 200,
+   "final": "https://www.smarttoday.co.kr/ko-kr/articles/107407",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-pony-sales",
+   "url": "https://bravo.etoday.co.kr/view/atc_view/4641",
+   "publisher": "브라보마이라이프(이투데이)",
+   "status": 200,
+   "final": "https://bravo.etoday.co.kr/view/atc_view/4641",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-pp21-2008",
+   "url": "https://www.peoplepower21.org/Magazine/720276",
+   "publisher": "참여연대",
+   "status": 200,
+   "final": "https://peoplepower21.org/Magazine/720276",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-pressian-70culture",
+   "url": "https://pressian.com/pages/articles/136421",
+   "publisher": "프레시안",
+   "status": 200,
+   "final": "https://www.pressian.com/pages/articles/136421",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-pressian-ban",
+   "url": "https://pressian.com/pages/articles/21857",
+   "publisher": "프레시안",
+   "status": 200,
+   "final": "https://www.pressian.com/pages/articles/21857",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-pspd-card",
+   "url": "https://peoplepower21.org/changes/1338952",
+   "publisher": "참여연대",
+   "status": 200,
+   "final": "https://peoplepower21.org/changes/1338952",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-radelet-sachs",
+   "url": "https://www.nber.org/papers/w6680",
+   "publisher": "Radelet & Sachs, NBER (1998)",
+   "status": 200,
+   "final": "https://www.nber.org/papers/w6680",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-saemaul-newsletter",
+   "url": "https://theme.archives.go.kr/next/pages/new_newsletter/2015/11/sub1.html",
+   "publisher": "국가기록원",
+   "status": 200,
+   "final": "https://theme.archives.go.kr/next/pages/new_newsletter/2015/11/sub1.html",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-segye-cy",
+   "url": "https://www.segye.com/newsView/20200610518720",
+   "publisher": "세계일보",
+   "status": 200,
+   "final": "https://www.segye.com/newsView/20200610518720",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-seoul-1991-labor",
+   "url": "https://www.seoul.co.kr/news/1991/04/01/19910401014001",
+   "publisher": "서울신문",
+   "status": 200,
+   "final": "https://www.seoul.co.kr/news/1991/04/01/19910401014001",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-seoul-1994-bok",
+   "url": "https://www.seoul.co.kr/news/1994/06/10/19940610009003",
+   "publisher": "서울신문",
+   "status": 200,
+   "final": "https://www.seoul.co.kr/news/1994/06/10/19940610009003",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-seoul-1998-dispatch",
+   "url": "https://www.seoul.co.kr/news/1998/02/12/19980212006002",
+   "publisher": "서울신문",
+   "status": 200,
+   "final": "https://www.seoul.co.kr/news/1998/02/12/19980212006002",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-seoul-1998-shin",
+   "url": "https://m.seoul.co.kr/news/1998/07/11/19980711011001",
+   "publisher": "서울신문",
+   "status": 200,
+   "final": "https://m.seoul.co.kr/news/1998/07/11/19980711011001",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-seoul-2001-4y",
+   "url": "https://m.seoul.co.kr/news/2001/12/03/20011203006002",
+   "publisher": "서울신문",
+   "status": 200,
+   "final": "https://m.seoul.co.kr/news/2001/12/03/20011203006002",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-seoul-2001-sympo",
+   "url": "https://www.seoul.co.kr/news/2001/08/24/20010824009001",
+   "publisher": "서울신문",
+   "status": 200,
+   "final": "https://www.seoul.co.kr/news/2001/08/24/20010824009001",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-seoul-2010-yushin",
+   "url": "https://m.seoul.co.kr/news/2010/12/16/20101216800072",
+   "publisher": "서울신문",
+   "status": 200,
+   "final": "https://m.seoul.co.kr/news/2010/12/16/20101216800072",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-seoul-2017-pact",
+   "url": "https://m.seoul.co.kr/news/2017/10/24/20171024009001",
+   "publisher": "서울신문",
+   "status": 200,
+   "final": "https://m.seoul.co.kr/news/2017/10/24/20171024009001",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-seoul-bigcut",
+   "url": "https://m.seoul.co.kr/news/2020/03/17/20200317001026",
+   "publisher": "서울신문",
+   "status": 200,
+   "final": "https://m.seoul.co.kr/news/2020/03/17/20200317001026",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-seoul-endsd",
+   "url": "https://m.seoul.co.kr/news/2022/04/18/20220418001012",
+   "publisher": "서울신문",
+   "status": 200,
+   "final": "https://m.seoul.co.kr/news/2022/04/18/20220418001012",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-seoul-oecd",
+   "url": "https://m.seoul.co.kr/news/1996/07/07/19960707003001",
+   "publisher": "서울신문",
+   "status": 200,
+   "final": "https://m.seoul.co.kr/news/1996/07/07/19960707003001",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-seoul-realname",
+   "url": "https://www.seoul.co.kr/news/1993/08/13/19930813001001",
+   "publisher": "서울신문",
+   "status": 200,
+   "final": "https://www.seoul.co.kr/news/1993/08/13/19930813001001",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-seoul-unemp-98",
+   "url": "https://www.seoul.co.kr/news/1998/09/05/19980905006004",
+   "publisher": "서울신문",
+   "status": 200,
+   "final": "https://www.seoul.co.kr/news/1998/09/05/19980905006004",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-seoulmedia-endsd",
+   "url": "https://mediahub.seoul.go.kr/archives/2004303",
+   "publisher": "서울시 내 손안에 서울",
+   "status": 200,
+   "final": "https://mediahub.seoul.go.kr/archives/2004303",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-seoulmedia-relief",
+   "url": "https://mediahub.seoul.go.kr/archives/1280379",
+   "publisher": "서울시 내 손안에 서울",
+   "status": 200,
+   "final": "https://mediahub.seoul.go.kr/archives/1280379",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-skt-cdma",
+   "url": "https://news.sktelecom.com/223718",
+   "publisher": "SK텔레콤 뉴스룸",
+   "status": 200,
+   "final": "https://news.sktelecom.com/223718",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-snu-hci",
+   "url": "https://s-space.snu.ac.kr/handle/10371/94918",
+   "publisher": "서울대학교 국제문제연구소 『세계정치』 14",
+   "status": 200,
+   "final": "https://s-space.snu.ac.kr/handle/10371/94918",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-tomato-hike",
+   "url": "https://newstomato.com/ReadNews.aspx?no=1069502",
+   "publisher": "뉴스토마토",
+   "status": 200,
+   "final": "https://newstomato.com/ReadNews.aspx?no=1069502",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-tomato-supplement",
+   "url": "https://newstomato.com/ReadNews.aspx?no=48711",
+   "publisher": "뉴스토마토",
+   "status": 200,
+   "final": "https://newstomato.com/ReadNews.aspx?no=48711",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-ulsan-refinery",
+   "url": "https://biz.newdaily.co.kr/site/data/html/2013/11/29/2013112910043.html",
+   "publisher": "뉴데일리",
+   "status": 200,
+   "final": "https://biz.newdaily.co.kr/site/data/html/2013/11/29/2013112910043.html",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-wk-card-why",
+   "url": "https://weekly.khan.co.kr/article/201012301018501",
+   "publisher": "주간경향",
+   "status": 200,
+   "final": "https://weekly.khan.co.kr/article/201012301018501",
+   "kind": "ok"
+  },
+  {
+   "id": "kr-youthfilm",
+   "url": "https://accesson.kr/daejung/assets/pdf/4896/journal-24-2-205.pdf",
+   "publisher": "대중서사연구 24(2)",
+   "status": 200,
+   "final": "https://accesson.kr/daejung/assets/pdf/4896/journal-24-2-205.pdf",
+   "kind": "ok"
+  },
+  {
+   "id": "med-201212-1p",
+   "url": "https://medigatenews.com/stand/12402",
+   "publisher": "메디게이트뉴스 (아시아경제)",
+   "status": 200,
+   "final": "https://medigatenews.com/stand/12402",
+   "kind": "ok"
+  },
+  {
+   "id": "med-210224-pop",
+   "url": "https://medigatenews.com/stand/17976",
+   "publisher": "메디게이트뉴스",
+   "status": 200,
+   "final": "https://medigatenews.com/stand/17976",
+   "kind": "ok"
+  },
+  {
+   "id": "motir-2025-ict",
+   "url": "https://www.motir.go.kr/attach/down/095a2dda9c864e1d90d751f7668a1117/8f506edd4db38b14b9d6feb2dd6fc822/9a9db098b587ee18b321c826f3707a49",
+   "publisher": "산업통상부",
+   "status": 200,
+   "final": "https://www.motir.go.kr/attach/down/095a2dda9c864e1d90d751f7668a1117/8f506edd4db38b14b9d6feb2dd6fc822/9a9db098b587ee18b321c826f3707a49",
+   "kind": "ok"
+  },
+  {
+   "id": "mt-081120-krw",
+   "url": "https://www.mt.co.kr/article/2008112017107046884",
+   "publisher": "머니투데이",
+   "status": 200,
+   "final": "https://www.mt.co.kr/article/2008112017107046884",
+   "kind": "ok"
+  },
+  {
+   "id": "mt-160609-rate",
+   "url": "https://www.mt.co.kr/finance/2016/06/09/2016060910570748487",
+   "publisher": "머니투데이",
+   "status": 200,
+   "final": "https://www.mt.co.kr/finance/2016/06/09/2016060910570748487",
+   "kind": "ok"
+  },
+  {
+   "id": "mt-251117-covid",
+   "url": "https://www.mt.co.kr/society/2025/11/17/2025111410003189384",
+   "publisher": "머니투데이",
+   "status": 200,
+   "final": "https://www.mt.co.kr/society/2025/11/17/2025111410003189384",
+   "kind": "ok"
+  },
+  {
+   "id": "mt-260101-export",
+   "url": "https://www.mt.co.kr/economy/2026/01/01/2026010109121092166",
+   "publisher": "머니투데이",
+   "status": 200,
+   "final": "https://www.mt.co.kr/economy/2026/01/01/2026010109121092166",
+   "kind": "ok"
+  },
+  {
+   "id": "mt-rider-2021",
+   "url": "https://www.mt.co.kr/index.php/mtreport/853",
+   "publisher": "머니투데이",
+   "status": 200,
+   "final": "https://www.mt.co.kr/index.php/mtreport/853",
+   "kind": "ok"
+  },
+  {
+   "id": "mtn-160811-debt",
+   "url": "https://news.mtn.co.kr/news-detail/2016081117290147945",
+   "publisher": "머니투데이방송",
+   "status": 200,
+   "final": "https://news.mtn.co.kr/news-detail/2016081117290147945",
+   "kind": "ok"
+  },
+  {
+   "id": "mtn-221230-house",
+   "url": "https://news.mtn.co.kr/news-detail/2022123009261151980",
+   "publisher": "머니투데이방송",
+   "status": 200,
+   "final": "https://news.mtn.co.kr/news-detail/2022123009261151980",
+   "kind": "ok"
+  },
+  {
+   "id": "nber-korea",
+   "url": "https://www.nber.org/crisis/korea_report.html",
+   "publisher": "National Bureau of Economic Research",
+   "status": 200,
+   "final": "https://www2.nber.org/crisis/korea_report.html",
+   "kind": "ok"
+  },
+  {
+   "id": "nber-zarnowitz",
+   "url": "https://www.nber.org/chapters/c9101.pdf",
+   "publisher": "NBER (Zarnowitz & Moore)",
+   "status": 200,
+   "final": "https://www.nber.org/system/files/chapters/c9101/c9101.pdf",
+   "kind": "ok"
+  },
+  {
+   "id": "nd-210203-online",
+   "url": "https://biz.newdaily.co.kr/site/data/html/2021/02/03/2021020300128.amp.html",
+   "publisher": "뉴데일리경제",
+   "status": 200,
+   "final": "https://biz.newdaily.co.kr/site/data/html/2021/02/03/2021020300128.amp.html",
+   "kind": "ok"
+  },
+  {
+   "id": "nd-240228-tfr",
+   "url": "https://biz.newdaily.co.kr/site/data/html/2024/02/28/2024022800140.html",
+   "publisher": "뉴데일리경제 (통계청 발표)",
+   "status": 200,
+   "final": "https://biz.newdaily.co.kr/site/data/html/2024/02/28/2024022800140.html",
+   "kind": "ok"
+  },
+  {
+   "id": "nocut-171028",
+   "url": "https://www.nocutnews.co.kr/news/4866330",
+   "publisher": "노컷뉴스",
+   "status": 200,
+   "final": "https://www.nocutnews.co.kr/news/4866330",
+   "kind": "ok"
+  },
+  {
+   "id": "nocut-2025-export",
+   "url": "https://www.nocutnews.co.kr/news/6450485",
+   "publisher": "노컷뉴스",
+   "status": 200,
+   "final": "https://www.nocutnews.co.kr/news/6450485",
+   "kind": "ok"
+  },
+  {
+   "id": "nsa-october-war",
+   "url": "https://nsarchive.gwu.edu/node/2967",
+   "publisher": "National Security Archive, George Washington University",
+   "status": 200,
+   "final": "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB98/index.htm",
+   "kind": "ok"
+  },
+  {
+   "id": "nt-220802-cpi",
+   "url": "https://newstomato.com/ReadNews.aspx?no=1138516",
+   "publisher": "뉴스토마토",
+   "status": 200,
+   "final": "https://newstomato.com/ReadNews.aspx?no=1138516",
+   "kind": "ok"
+  },
+  {
+   "id": "nw-190828-tfr",
+   "url": "https://mobile.newsis.com/view/NISX20190828_0000752780",
+   "publisher": "뉴시스",
+   "status": 200,
+   "final": "https://mobile.newsis.com/view/NISX20190828_0000752780",
+   "kind": "ok"
+  },
+  {
+   "id": "nw-191213-1p",
+   "url": "https://www.newsis.com/view/NISX20191213_0000859486",
+   "publisher": "뉴시스",
+   "status": 200,
+   "final": "https://www.newsis.com/view/NISX20191213_0000859486",
+   "kind": "ok"
+  },
+  {
+   "id": "nw-210222-delivery",
+   "url": "https://mobile.newsis.com/view/NISX20210222_0001347095",
+   "publisher": "뉴시스",
+   "status": 200,
+   "final": "https://mobile.newsis.com/view/NISX20210222_0001347095",
+   "kind": "ok"
+  },
+  {
+   "id": "nw-210402-online",
+   "url": "https://www.newsis.com/view/NISX20210402_0001393029",
+   "publisher": "뉴시스",
+   "status": 200,
+   "final": "https://www.newsis.com/view/NISX20210402_0001393029",
+   "kind": "ok"
+  },
+  {
+   "id": "nw-211002-online",
+   "url": "https://mobile.newsis.com/view/NISX20211002_0001601130",
+   "publisher": "뉴시스",
+   "status": 200,
+   "final": "https://mobile.newsis.com/view/NISX20211002_0001601130",
+   "kind": "ok"
+  },
+  {
+   "id": "nw-220803-cpi",
+   "url": "https://www.newsis.com/view/NISX20220802_0001965003",
+   "publisher": "뉴시스",
+   "status": 200,
+   "final": "https://www.newsis.com/view/NISX20220802_0001965003",
+   "kind": "ok"
+  },
+  {
+   "id": "nw-220808-delivery",
+   "url": "https://www.newsis.com/view/NISX20220808_0001971172",
+   "publisher": "뉴시스",
+   "status": 200,
+   "final": "https://www.newsis.com/view/NISX20220808_0001971172",
+   "kind": "ok"
+  },
+  {
+   "id": "nw-221231-house",
+   "url": "https://mobile.newsis.com/view/NISX20221230_0002143139",
+   "publisher": "뉴시스",
+   "status": 200,
+   "final": "https://mobile.newsis.com/view/NISX20221230_0002143139",
+   "kind": "ok"
+  },
+  {
+   "id": "nw-230119-covid",
+   "url": "https://www.newsis.com/view/NISX20230119_0002165072",
+   "publisher": "뉴시스",
+   "status": 200,
+   "final": "https://www.newsis.com/view/NISX20230119_0002165072",
+   "kind": "ok"
+  },
+  {
+   "id": "nw-230119-cpi",
+   "url": "https://mobile.newsis.com/view/NISX20230119_0002165332",
+   "publisher": "뉴시스",
+   "status": 200,
+   "final": "https://mobile.newsis.com/view/NISX20230119_0002165332",
+   "kind": "ok"
+  },
+  {
+   "id": "nw-250317-martial",
+   "url": "https://www.newsis.com/view/NISX20250317_0003101389",
+   "publisher": "뉴시스",
+   "status": 200,
+   "final": "https://www.newsis.com/view/NISX20250317_0003101389",
+   "kind": "ok"
+  },
+  {
+   "id": "nw-251209-1p",
+   "url": "https://www.newsis.com/view/NISX20251209_0003433761",
+   "publisher": "뉴시스",
+   "status": 200,
+   "final": "https://www.newsis.com/view/NISX20251209_0003433761",
+   "kind": "ok"
+  },
+  {
+   "id": "pbs-silicon",
+   "url": "https://www.pbs.org/wgbh/americanexperience/features/silicon-timeline-silicon/",
+   "publisher": "PBS American Experience",
+   "status": 200,
+   "final": "https://www.pbs.org/wgbh/americanexperience/features/silicon-timeline-silicon/",
+   "kind": "ok"
+  },
+  {
+   "id": "plaza-frankel",
+   "url": "https://www.nber.org/papers/w21813.pdf",
+   "publisher": "NBER (Jeffrey Frankel)",
+   "status": 200,
+   "final": "https://www.nber.org/system/files/working_papers/w21813/w21813.pdf",
+   "kind": "ok"
+  },
+  {
+   "id": "pressian-delivery",
+   "url": "https://pressian.com/pages/articles/259458",
+   "publisher": "프레시안",
+   "status": 200,
+   "final": "https://www.pressian.com/pages/articles/259458",
+   "kind": "ok"
+  },
+  {
+   "id": "prs-240228-tfr",
+   "url": "https://pressian.com/pages/articles/2024022814060107806",
+   "publisher": "프레시안",
+   "status": 200,
+   "final": "https://www.pressian.com/pages/articles/2024022814060107806",
+   "kind": "ok"
+  },
+  {
+   "id": "pspd-sewol",
+   "url": "https://watch.peoplepower21.org/WatchPro/case/204/",
+   "publisher": "참여연대 사법감시센터",
+   "status": 200,
+   "final": "https://watch.peoplepower21.org/WatchPro/case/204/",
+   "kind": "ok"
+  },
+  {
+   "id": "register-230203-gpt",
+   "url": "https://www.theregister.com/2023/02/03/chatgpt_most_popular_apps/",
+   "publisher": "The Register",
+   "status": 200,
+   "final": "https://www.theregister.com/software/2023/02/03/chatgpt-is-the-fastest-growing-web-app-in-history/587740",
+   "kind": "ok"
+  },
+  {
+   "id": "reuters-230201-gpt",
+   "url": "https://www.euronews.com/2023/02/02/openai-chatgpt",
+   "publisher": "Reuters (Euronews 게재)",
+   "status": 200,
+   "final": "https://www.euronews.com/2023/02/02/openai-chatgpt",
+   "kind": "ok"
+  },
+  {
+   "id": "scribd-kr-crisis",
+   "url": "https://www.scribd.com/document/515445472/Article-05",
+   "publisher": "Scribd 게시 학술 논문",
+   "status": 200,
+   "final": "https://www.scribd.com/document/515445472/Article-05",
+   "kind": "ok"
+  },
+  {
+   "id": "sd-001226-venture",
+   "url": "https://www.seoul.co.kr/news/2000/12/26/20001226008005",
+   "publisher": "서울신문",
+   "status": 200,
+   "final": "https://www.seoul.co.kr/news/2000/12/26/20001226008005",
+   "kind": "ok"
+  },
+  {
+   "id": "sd-010711-venture",
+   "url": "https://www.seoul.co.kr/news/2001/07/11/20010711003001",
+   "publisher": "서울신문",
+   "status": 200,
+   "final": "https://www.seoul.co.kr/news/2001/07/11/20010711003001",
+   "kind": "ok"
+  },
+  {
+   "id": "sd-020606-street",
+   "url": "https://m.seoul.co.kr/news/2002/06/06/20020606001001",
+   "publisher": "서울신문",
+   "status": 200,
+   "final": "https://m.seoul.co.kr/news/2002/06/06/20020606001001",
+   "kind": "ok"
+  },
+  {
+   "id": "sd-020626-street",
+   "url": "https://www.seoul.co.kr/news/2002/06/26/20020626005002",
+   "publisher": "서울신문",
+   "status": 200,
+   "final": "https://www.seoul.co.kr/news/2002/06/26/20020626005002",
+   "kind": "ok"
+  },
+  {
+   "id": "sd-030821-5day",
+   "url": "https://www.seoul.co.kr/news/2003/08/21/20030821001004",
+   "publisher": "서울신문",
+   "status": 200,
+   "final": "https://www.seoul.co.kr/news/2003/08/21/20030821001004",
+   "kind": "ok"
+  },
+  {
+   "id": "sd-050630-5day",
+   "url": "https://m.seoul.co.kr/news/plan/2005/06/30/20050630004007",
+   "publisher": "서울신문",
+   "status": 200,
+   "final": "https://m.seoul.co.kr/news/plan/2005/06/30/20050630004007",
+   "kind": "ok"
+  },
+  {
+   "id": "sd-070208-cy",
+   "url": "https://www.seoul.co.kr/news/society/2007/02/08/20070208009012",
+   "publisher": "서울신문",
+   "status": 200,
+   "final": "https://www.seoul.co.kr/news/society/2007/02/08/20070208009012",
+   "kind": "ok"
+  },
+  {
+   "id": "sd-121222-psy",
+   "url": "https://m.seoul.co.kr/news/life/2012/12/22/20121222800032",
+   "publisher": "서울신문",
+   "status": 200,
+   "final": "https://m.seoul.co.kr/news/life/2012/12/22/20121222800032",
+   "kind": "ok"
+  },
+  {
+   "id": "sd-180529-bts",
+   "url": "https://twig24.com/news/entertainments/2018/05/29/20180529002005",
+   "publisher": "서울신문",
+   "status": 200,
+   "final": "https://twig24.com/news/entertainments/2018/05/29/20180529002005",
+   "kind": "ok"
+  },
+  {
+   "id": "sd-250227-tfr",
+   "url": "https://m.seoul.co.kr/news/2025/02/27/20250227001005",
+   "publisher": "서울신문",
+   "status": 200,
+   "final": "https://m.seoul.co.kr/news/2025/02/27/20250227001005",
+   "kind": "ok"
+  },
+  {
+   "id": "sg-210405-online",
+   "url": "https://www.segye.com/newsView/20210405513468",
+   "publisher": "세계일보",
+   "status": 200,
+   "final": "https://www.segye.com/newsView/20210405513468",
+   "kind": "ok"
+  },
+  {
+   "id": "space-nasm",
+   "url": "https://airandspace.si.edu/amp-stories/space-race/index.html",
+   "publisher": "Smithsonian National Air and Space Museum",
+   "status": 200,
+   "final": "https://airandspace.si.edu/amp-stories/space-race/index.html",
+   "kind": "ok"
+  },
+  {
+   "id": "space-sciam",
+   "url": "https://www.scientificamerican.com/article/race-to-the-moon/",
+   "publisher": "Scientific American",
+   "status": 200,
+   "final": "https://www.scientificamerican.com/article/race-to-the-moon/",
+   "kind": "ok"
+  },
+  {
+   "id": "state-embargo",
+   "url": "https://history.state.gov/milestones/1969-1976/oil-embargo",
+   "publisher": "U.S. Department of State, Office of the Historian",
+   "status": 200,
+   "final": "https://history.state.gov/milestones/1969-1976/oil-embargo",
+   "kind": "ok"
+  },
+  {
+   "id": "tc-220809-chips",
+   "url": "https://techcrunch.com/2022/08/09/biden-signs-chips-bill-in-bid-to-supercharge-us-semiconductor-production",
+   "publisher": "TechCrunch",
+   "status": 200,
+   "final": "https://techcrunch.com/2022/08/09/biden-signs-chips-bill-in-bid-to-supercharge-us-semiconductor-production/",
+   "kind": "ok"
+  },
+  {
+   "id": "th-bot-lesson",
+   "url": "https://www.bot.or.th/en/our-roles/special-measures/Tom-Yum-Kung-lesson.html",
+   "publisher": "Bank of Thailand",
+   "status": 200,
+   "final": "https://www.bot.or.th/en/our-roles/special-measures/Tom-Yum-Kung-lesson.html",
+   "kind": "ok"
+  },
+  {
+   "id": "tomato-170312",
+   "url": "https://newstomato.com/ReadNews.aspx?no=737780",
+   "publisher": "뉴스토마토",
+   "status": 200,
+   "final": "https://newstomato.com/ReadNews.aspx?no=737780",
+   "kind": "ok"
+  },
+  {
+   "id": "ts-52h",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=407875",
+   "publisher": "톱스타뉴스",
+   "status": 200,
+   "final": "https://www.topstarnews.net/news/articleView.html?idxno=407875",
+   "kind": "ok"
+  },
+  {
+   "id": "tx-rrc",
+   "url": "https://www.tsl.texas.gov/exhibits/railroad/power/page4.html",
+   "publisher": "Texas State Library and Archives",
+   "status": 200,
+   "final": "https://www.tsl.texas.gov/exhibits/railroad/power/page4.html",
+   "kind": "ok"
+  },
+  {
+   "id": "us-colortv-sv",
+   "url": "https://www.soundandvision.com/content/sixties-flashback-color-tv-revolution",
+   "publisher": "Sound & Vision",
+   "status": 200,
+   "final": "https://www.soundandvision.com/content/sixties-flashback-color-tv-revolution",
+   "kind": "ok"
+  },
+  {
+   "id": "us-crs-301",
+   "url": "https://www.everycrsreport.com/reports/IF10708.html",
+   "publisher": "U.S. Congressional Research Service",
+   "status": 200,
+   "final": "https://www.everycrsreport.com/reports/IF10708.html",
+   "kind": "ok"
+  },
+  {
+   "id": "us-crs-qe",
+   "url": "https://www.everycrsreport.com/files/20180109_RL30354_45a47bc063382ffa81795fefb8fb48e8237c5e72.html",
+   "publisher": "U.S. Congressional Research Service",
+   "status": 200,
+   "final": "https://www.everycrsreport.com/files/20180109_RL30354_45a47bc063382ffa81795fefb8fb48e8237c5e72.html",
+   "kind": "ok"
+  },
+  {
+   "id": "us-documerica",
+   "url": "https://energyhistory.yale.edu/gas-shortages-oregon-1973-74-gallery/",
+   "publisher": "Yale Energy History",
+   "status": 200,
+   "final": "https://energyhistory.yale.edu/gas-shortages-oregon-1973-74-gallery/",
+   "kind": "ok"
+  },
+  {
+   "id": "us-dotcom-ib",
+   "url": "https://internationalbanker.com/history-of-financial-crises/the-dotcom-bubble-burst-2000/",
+   "publisher": "International Banker",
+   "status": 200,
+   "final": "https://internationalbanker.com/history-of-financial-crises/the-dotcom-bubble-burst-2000/",
+   "kind": "ok"
+  },
+  {
+   "id": "us-fed-8182",
+   "url": "https://www.federalreservehistory.org/essay/recession-of-1981-82",
+   "publisher": "Federal Reserve History",
+   "status": 200,
+   "final": "https://www.federalreservehistory.org/not-found",
+   "kind": "ok"
+  },
+  {
+   "id": "us-fed-subprime",
+   "url": "https://www.federalreservehistory.org/-/media/Project/FedHistory/FedHistory/Documents/essaysPDFs/Subprime-Mortgage-Crisis-_-Federal-Reserve-History.pdf",
+   "publisher": "Federal Reserve History",
+   "status": 200,
+   "final": "https://www.federalreservehistory.org/-/media/Project/FedHistory/FedHistory/Documents/essaysPDFs/Subprime-Mortgage-Crisis-_-Federal-Reserve-History.pdf",
+   "kind": "ok"
+  },
+  {
+   "id": "us-fed-volcker",
+   "url": "https://www.federalreservehistory.org/essays/anti_inflation_measures",
+   "publisher": "Federal Reserve History",
+   "status": 200,
+   "final": "https://www.federalreservehistory.org/essays/anti-inflation-measures",
+   "kind": "ok"
+  },
+  {
+   "id": "us-gs-dotcom",
+   "url": "https://www.goldmansachs.com/our-firm/history/moments/2000-dot-com-bubble",
+   "publisher": "Goldman Sachs (회사 연혁)",
+   "status": 200,
+   "final": "https://www.goldmansachs.com/our-firm/history/moments/2000-dot-com-bubble",
+   "kind": "ok"
+  },
+  {
+   "id": "us-henryford-beatles",
+   "url": "https://www.thehenryford.org/collections/explore/articles/the-beatles-conquer-america",
+   "publisher": "The Henry Ford (museum)",
+   "status": 200,
+   "final": "https://www.thehenryford.org/collections/explore/articles/the-beatles-conquer-america",
+   "kind": "ok"
+  },
+  {
+   "id": "us-hist-1967war",
+   "url": "https://www.jewishvirtuallibrary.org/the-1967-arab-israeli-war",
+   "publisher": "Jewish Virtual Library (원문: 미국 국무부 사료실)",
+   "status": 200,
+   "final": "https://jewishvirtuallibrary.org/the-1967-arab-israeli-war",
+   "kind": "ok"
+  },
+  {
+   "id": "us-hist-1973war",
+   "url": "https://history.state.gov/milestones/1969-1976/arab-israeli-war-1973",
+   "publisher": "미국 국무부 사료실(Office of the Historian)",
+   "status": 200,
+   "final": "https://history.state.gov/milestones/1969-1976/arab-israeli-war-1973",
+   "kind": "ok"
+  },
+  {
+   "id": "us-hist-1973war-2012",
+   "url": "https://webarchive.library.unt.edu/web/20121017043239/http://history.state.gov/milestones/1969-1976/ArabIsraeliWar73",
+   "publisher": "미국 국무부 사료실 — UNT 웹 아카이브",
+   "status": 200,
+   "final": "https://webarchive.library.unt.edu/web/20121017043239/http://history.state.gov/milestones/1969-1976/ArabIsraeliWar73",
+   "kind": "ok"
+  },
+  {
+   "id": "us-hist-embargo",
+   "url": "https://history.state.gov/milestones/1969-1976/oil-embargo",
+   "publisher": "미국 국무부 사료실(Office of the Historian)",
+   "status": 200,
+   "final": "https://history.state.gov/milestones/1969-1976/oil-embargo",
+   "kind": "ok"
+  },
+  {
+   "id": "us-history-recession",
+   "url": "https://www.history.com/topics/21st-century/recession",
+   "publisher": "HISTORY.com",
+   "status": 200,
+   "final": "https://www.history.com/articles/recession",
+   "kind": "ok"
+  },
+  {
+   "id": "us-ibm-pc",
+   "url": "https://www.ibm.com/history/personal-computer",
+   "publisher": "IBM",
+   "status": 200,
+   "final": "https://www.ibm.com/history/personal-computer",
+   "kind": "ok"
+  },
+  {
+   "id": "us-jep-qe",
+   "url": "https://www.aeaweb.org/doi/10.1257/jep.32.4.121",
+   "publisher": "American Economic Association",
+   "status": 200,
+   "final": "https://www.aeaweb.org/articles?id=10.1257/jep.32.4.121",
+   "kind": "ok"
+  },
+  {
+   "id": "us-mw-1966-09",
+   "url": "https://www.worldradiohistory.com/Archive-Modern-Era-Miscellaneous/Merchandising-Week-1966-09-19-280125.pdf",
+   "publisher": "McGraw-Hill (World Radio History 아카이브 스캔)",
+   "status": 200,
+   "final": "https://www.worldradiohistory.com/Archive-Modern-Era-Miscellaneous/Merchandising-Week-1966-09-19-280125.pdf",
+   "kind": "ok"
+  },
+  {
+   "id": "us-scmp-trade",
+   "url": "https://www.scmp.com/economy/global-economy/article/3177652/us-china-trade-war-timeline-key-dates-and-events-july-2018",
+   "publisher": "South China Morning Post",
+   "status": 200,
+   "final": "https://www.scmp.com/economy/global-economy/article/3177652/us-china-trade-war-timeline-key-dates-and-events-july-2018",
+   "kind": "ok"
+  },
+  {
+   "id": "wb-kr-exp-gdp",
+   "url": "https://data.worldbank.org/indicator/NE.EXP.GNFS.ZS?locations=KR",
+   "publisher": "세계은행 세계개발지표(WDI)",
+   "status": 200,
+   "final": "https://data.worldbank.org/indicator/NE.EXP.GNFS.ZS?locations=KR",
+   "kind": "ok"
+  },
+  {
+   "id": "wb-kr-urban",
+   "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS?locations=KR",
+   "publisher": "세계은행 세계개발지표(WDI)",
+   "status": 200,
+   "final": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS?locations=KR",
+   "kind": "ok"
+  },
+  {
+   "id": "wb-kr-va-mfg",
+   "url": "https://data.worldbank.org/indicator/NV.IND.MANF.ZS?locations=KR",
+   "publisher": "세계은행 세계개발지표(WDI)",
+   "status": 200,
+   "final": "https://data.worldbank.org/indicator/NV.IND.MANF.ZS?locations=KR",
+   "kind": "ok"
+  },
+  {
+   "id": "wk-091217-iphone",
+   "url": "https://weekly.khan.co.kr/article/200912171059041",
+   "publisher": "주간경향",
+   "status": 200,
+   "final": "https://weekly.khan.co.kr/article/200912171059041",
+   "kind": "ok"
+  },
+  {
+   "id": "wk-160830-debt",
+   "url": "https://weekly.khan.co.kr/article/201608301143211",
+   "publisher": "주간경향",
+   "status": 200,
+   "final": "https://weekly.khan.co.kr/article/201608301143211",
+   "kind": "ok"
+  },
+  {
+   "id": "wk-190304-delivery",
+   "url": "https://weekly.khan.co.kr/article/201903041445421",
+   "publisher": "주간경향",
+   "status": 200,
+   "final": "https://weekly.khan.co.kr/article/201903041445421",
+   "kind": "ok"
+  },
+  {
+   "id": "wk-200424-covid",
+   "url": "https://weekly.khan.co.kr/article/202004241542571",
+   "publisher": "주간경향",
+   "status": 200,
+   "final": "https://weekly.khan.co.kr/article/202004241542571",
+   "kind": "ok"
+  },
+  {
+   "id": "wk-cy-web2",
+   "url": "https://weekly.khan.co.kr/article/14450",
+   "publisher": "주간경향",
+   "status": 200,
+   "final": "https://weekly.khan.co.kr/article/14450",
+   "kind": "ok"
+  },
+  {
+   "id": "wk-hallyu-2004",
+   "url": "https://weekly.khan.co.kr/article/7060",
+   "publisher": "주간경향",
+   "status": 200,
+   "final": "https://weekly.khan.co.kr/article/7060",
+   "kind": "ok"
+  },
+  {
+   "id": "www-pew",
+   "url": "https://www.pewresearch.org/internet/2014/03/11/world-wide-web-timeline/",
+   "publisher": "Pew Research Center",
+   "status": 200,
+   "final": "https://www.pewresearch.org/internet/2014/03/11/world-wide-web-timeline/",
+   "kind": "ok"
+  },
+  {
+   "id": "yt-psy-10y",
+   "url": "https://blog.youtube/intl/ko-kr/creator-and-artist-stories/2022_07_billion-views-club-psy-gangnam-style/",
+   "publisher": "YouTube 공식 블로그",
+   "status": 200,
+   "final": "https://blog.youtube/intl/ko-kr/creator-and-artist-stories/2022_07_billion-views-club-psy-gangnam-style/",
+   "kind": "ok"
+  }
+ ]
+}
