@@ -9030,6 +9030,187 @@
     "KR"
    ],
    "aiSynthesized": false
+  },
+  {
+   "id": "c08-shortdebt",
+   "text": "한국의 단기외채는 1997년 말 638억 달러에서 2001년 403억 달러로 줄었다가 2006년 1,000억 달러를 넘었고 2007년 말 1,587억 달러가 되었다(한국은행 집계 보도).",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "kr-mt-shortdebt-0805"
+   ],
+   "domains": [
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c08-shortdebt-why",
+   "text": "단기외채가 늘어난 주된 이유로 조선업체 등 수출기업의 선물환 매도(환위험 회피)가 꼽힌다. 은행이 이를 받아주며 해외 단기차입을 늘렸고, 외국계 은행 지점의 재정거래와 해외 인수합병 차입도 더해졌다.",
+   "claimType": "interpretation",
+   "status": "verified",
+   "sourceIds": [
+    "kr-mt-shortdebt-0805",
+    "hri-2008-debt"
+   ],
+   "domains": [
+    "economy",
+    "industry"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c08-diff97",
+   "text": "당시 한국은행·금융감독원은 1997년과 달리 경상수지 적자로 단기차입이 급증한 것이 아니고, 외환보유액(2008년 6월 말 2,581억 달러)도 훨씬 많다며 위기 재발 가능성을 낮게 봤다.",
+   "claimType": "interpretation",
+   "status": "verified",
+   "sourceIds": [
+    "kr-mt-shortdebt-0805",
+    "hri-2008-debt"
+   ],
+   "domains": [
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c08-outflow",
+   "text": "외국인은 2006~2008년 11월 초까지 한국 주식을 약 77조 원(약 750억 달러) 순매도했고, 경상수지 흑자는 2004년 281억 달러에서 2006~07년 50억 달러대로 줄었다. 2008년 1~8월에는 원자재값 급등으로 경상수지가 125.8억 달러 적자였다.",
+   "claimType": "statistical",
+   "status": "verified",
+   "sourceIds": [
+    "kr-mt-crisis-0811",
+    "kmi-2008-crisis"
+   ],
+   "domains": [
+    "economy"
+   ],
+   "countries": [
+    "KR",
+    "WORLD"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c08-swap",
+   "text": "2008년 10월 30일 한국은행은 미 연준과 300억 달러 통화스와프를 맺었다. 발표 당일 원·달러 환율은 177원 내린 1,250원으로 마감했고 코스피는 115포인트 올랐다. 계약은 두 차례 연장돼 2010년 2월까지 유지되었다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "kr-korea-swap-0810",
+    "kr-mt-swap-0810",
+    "kr-dailian-swap"
+   ],
+   "domains": [
+    "economy",
+    "politics"
+   ],
+   "countries": [
+    "KR",
+    "US"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c08-rate",
+   "text": "한국은행 기준금리는 리먼 사태 뒤 2008년 10월부터 2009년 2월까지 6차례 인하돼 5.25%에서 2.00%가 되었다. 원·달러 환율은 2009년 2월 말 1,534원까지 올랐다가 미국·일본·중국과의 통화스와프 뒤 안정되었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "kr-korea-2009-numbers"
+   ],
+   "domains": [
+    "economy"
+   ],
+   "countries": [
+    "KR",
+    "US",
+    "JP",
+    "CN"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c08-supplement",
+   "text": "정부는 2009년 3월 사상 최대인 28조 9천억 원 규모의 '슈퍼 추경'을 편성했다(국회 확정 28조 4천억 원). 외환위기 때인 1998년 추경(13조 9천억 원)의 두 배가 넘었고, 일자리 유지·저소득층 생활안정·중소기업 지원에 집중했다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "kr-tomato-supplement",
+    "kr-mt-supplement",
+    "kr-korea-2009-numbers"
+   ],
+   "domains": [
+    "economy",
+    "politics"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c08-kiko",
+   "text": "환율이 계속 내릴 것에 대비해 환헤지 통화옵션 상품 '키코(KIKO)'에 가입한 수출 중소기업들은 2008년 환율이 900원대 후반에서 1,400원대로 치솟자 큰 손실을 입었다. 이후 피해 기업 가운데 235곳이 법정관리에 가거나 폐업한 것으로 집계되었다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "kr-khan-kiko",
+    "kr-lawtimes-kiko",
+    "kr-etoday-kiko235"
+   ],
+   "domains": [
+    "economy",
+    "industry"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c08-jobs-share",
+   "text": "한국노동연구원은 2009년 고용충격이 1998년보다 훨씬 작았던 이유로 위기 강도 차이와 함께 임금조정·일자리 나누기형 구조조정, 기업의 상시적 고용조정 체제, 정부의 고용유지 지원을 든다(실직자 최대: 1998년 180만 명, 2009년 98만 명).",
+   "claimType": "interpretation",
+   "status": "sourced",
+   "sourceIds": [
+    "kli-brief-101"
+   ],
+   "domains": [
+    "society",
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c08-mpm",
+   "text": "위기 뒤 한국은 2010년부터 '거시건전성 3종 세트'(은행 선물환포지션 한도, 외국인 채권투자 과세 환원, 2011년 외환건전성부담금)를 도입해 단기외채와 급격한 자본 유출입을 억제했다. 대외경제정책연구원은 이 정책이 외화부채 만기구조를 개선했다고 평가한다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "kiep-2020-mpm",
+    "kr-fn-levy-1012"
+   ],
+   "domains": [
+    "economy",
+    "politics"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false
   }
  ],
  "sources": [
@@ -11562,6 +11743,24 @@
    "note": "명목 시간당 임금 지수. 1992년부터"
   },
   {
+   "id": "fred-kr-carreg",
+   "title": "Sales: Retail Trade: Car Registration: Passenger Cars for Korea (연간, 월평균 대수) (SLRTCR03KRA180N)",
+   "publisher": "OECD via FRED",
+   "url": "https://fred.stlouisfed.org/data/SLRTCR03KRA180N",
+   "sourceType": "institution",
+   "accessedDate": "2026-11-11",
+   "note": "월평균 등록 대수 ×12로 연간 값을 계산. 1993~2022년"
+  },
+  {
+   "id": "fred-kr-emprate",
+   "title": "Employment Rate: 15 to 64 Years for Korea (연간) (LREM64TTKRA156N)",
+   "publisher": "OECD via FRED",
+   "url": "https://fred.stlouisfed.org/data/LREM64TTKRA156N",
+   "sourceType": "institution",
+   "accessedDate": "2026-11-11",
+   "note": "2000~2025년"
+  },
+  {
    "id": "us-hist-1973war",
    "title": "The 1973 Arab-Israeli War (Milestones 1969–1976)",
    "publisher": "미국 국무부 사료실(Office of the Historian)",
@@ -11997,6 +12196,126 @@
    "publisher": "IMF",
    "url": "https://www.imf.org/external/np/sec/nb/2001/nb0182.htm",
    "sourceType": "institution",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-mt-shortdebt-0805",
+   "title": "'단기외채 대책' 발언에 금융시장 요동 (2008.5.21)",
+   "publisher": "머니투데이",
+   "url": "https://www.mt.co.kr/stock/2008/05/21/2008052119150460656",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "hri-2008-debt",
+   "title": "외채 동향과 시사점 (2008)",
+   "publisher": "현대경제연구원",
+   "url": "https://test.hri.co.kr/upload/board/20088483610%5b1%5d.pdf",
+   "sourceType": "institution",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-mt-crisis-0811",
+   "title": "한국 위기='금융과 환율 분리'의 비극 (2008.11.4)",
+   "publisher": "머니투데이",
+   "url": "https://www.mt.co.kr/article/2008110413313571024",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kmi-2008-crisis",
+   "title": "해운이슈: 글로벌 금융위기와 한국경제 (2008.10)",
+   "publisher": "한국해양수산개발원 (KoreaScience)",
+   "url": "https://koreascience.kr/article/JAKO200866759248814.pdf",
+   "sourceType": "institution",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-korea-swap-0810",
+   "title": "한·미 300억 달러 통화스와프 체결 (2008.10)",
+   "publisher": "대한민국 정책브리핑",
+   "url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=148658723",
+   "sourceType": "government",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-mt-swap-0810",
+   "title": "한은, 미 연준과 300억 달러 통화스와프 (2008.10.30)",
+   "publisher": "머니투데이",
+   "url": "https://www.mt.co.kr/stock/2008/10/30/2008103009242405699",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-dailian-swap",
+   "title": "한미 통화스와프는 2008년 이후 두 번째 (2020)",
+   "publisher": "데일리안",
+   "url": "https://m.dailian.co.kr/news/view/877456",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-korea-2009-numbers",
+   "title": "숫자로 본 2009년 (기준금리·환율·슈퍼 추경)",
+   "publisher": "대한민국 정책브리핑",
+   "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148685908",
+   "sourceType": "government",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-tomato-supplement",
+   "title": "사상 최대 28.9조 슈퍼 추경 편성 (2009.3.24)",
+   "publisher": "뉴스토마토",
+   "url": "https://newstomato.com/ReadNews.aspx?no=48711",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-mt-supplement",
+   "title": "28.9조 '슈퍼 추경'…경기 '반전포인트' 될까 (2009.3.23)",
+   "publisher": "머니투데이",
+   "url": "https://www.mt.co.kr/article/2009032315052313611",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-khan-kiko",
+   "title": "환율 급등에 키코 가입 수출 중소기업 손실 (2008.8.26)",
+   "publisher": "경향신문",
+   "url": "https://www.khan.co.kr/article/200808261805145/amp",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-lawtimes-kiko",
+   "title": "대법원 '키코 계약 유효, 일부 설명의무 위반' (2013)",
+   "publisher": "법률신문",
+   "url": "https://www.lawtimes.co.kr/news/78717",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-etoday-kiko235",
+   "title": "키코 피해기업 235개 도산 (2017)",
+   "publisher": "이투데이",
+   "url": "https://www.etoday.co.kr/news/view/1544420",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kiep-2020-mpm",
+   "title": "대외부문 거시건전성 정책 10년의 성과와 개선방안 (2020)",
+   "publisher": "대외경제정책연구원 (RePEc)",
+   "url": "https://ideas.repec.org/p/ris/kieppa/2020_018.html",
+   "sourceType": "institution",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-fn-levy-1012",
+   "title": "외환건전성부담금으로 자본유출입 3대 규제 완성 (2010.12.19)",
+   "publisher": "파이낸셜뉴스",
+   "url": "https://www.fnnews.com/news/201012191908512306",
+   "sourceType": "news",
    "accessedDate": "2026-11-11"
   }
  ],
@@ -21240,6 +21559,440 @@
     "2020s"
    ],
    "note": "가계지출의 '항목별 구성'(식비·주거비 등) 장기 자료는 아직 수집하지 않음"
+  },
+  {
+   "id": "carreg-kr",
+   "title": "신규 승용차 등록 (연간)",
+   "unit": "만 대",
+   "frequency": "annual",
+   "description": "한 해 동안 새로 등록된 승용차 수(판매에 가까운 값). 보유 대수(보급률)가 아니다.",
+   "category": "society",
+   "series": [
+    {
+     "country": "KR",
+     "label": "한국",
+     "sourceIds": [
+      "fred-kr-carreg"
+     ],
+     "points": [
+      [
+       "1993",
+       99.7
+      ],
+      [
+       "1994",
+       109.6
+      ],
+      [
+       "1995",
+       107.3
+      ],
+      [
+       "1996",
+       115.1
+      ],
+      [
+       "1997",
+       111.0
+      ],
+      [
+       "1998",
+       45.6
+      ],
+      [
+       "1999",
+       65.8
+      ],
+      [
+       "2000",
+       64.9
+      ],
+      [
+       "2001",
+       102.6
+      ],
+      [
+       "2002",
+       124.4
+      ],
+      [
+       "2003",
+       101.3
+      ],
+      [
+       "2004",
+       87.7
+      ],
+      [
+       "2005",
+       91.2
+      ],
+      [
+       "2006",
+       95.2
+      ],
+      [
+       "2007",
+       102.4
+      ],
+      [
+       "2008",
+       102.9
+      ],
+      [
+       "2009",
+       124.1
+      ],
+      [
+       "2010",
+       124.9
+      ],
+      [
+       "2011",
+       130.1
+      ],
+      [
+       "2012",
+       125.5
+      ],
+      [
+       "2013",
+       125.5
+      ],
+      [
+       "2014",
+       140.0
+      ],
+      [
+       "2015",
+       154.3
+      ],
+      [
+       "2016",
+       154.4
+      ],
+      [
+       "2017",
+       153.9
+      ],
+      [
+       "2018",
+       153.7
+      ],
+      [
+       "2019",
+       150.9
+      ],
+      [
+       "2020",
+       163.1
+      ],
+      [
+       "2021",
+       148.0
+      ],
+      [
+       "2022",
+       143.1
+      ]
+     ]
+    }
+   ],
+   "eraIds": [
+    "1990s",
+    "2000s",
+    "2010s",
+    "2020s"
+   ],
+   "note": "자동차 '보급률'(1,000명당 보유 대수) 장기 자료는 아직 없음. 1993년 이전·2023년 이후 이 계열에 없음"
+  },
+  {
+   "id": "emprate-kr",
+   "title": "고용률 (15~64세)",
+   "unit": "%",
+   "frequency": "annual",
+   "description": "일할 나이(15~64세) 인구 가운데 실제로 일하는 사람의 비율.",
+   "category": "economy",
+   "series": [
+    {
+     "country": "KR",
+     "label": "한국",
+     "sourceIds": [
+      "fred-kr-emprate"
+     ],
+     "points": [
+      [
+       "2000",
+       61.51
+      ],
+      [
+       "2001",
+       62.21
+      ],
+      [
+       "2002",
+       63.41
+      ],
+      [
+       "2003",
+       63.03
+      ],
+      [
+       "2004",
+       63.77
+      ],
+      [
+       "2005",
+       63.75
+      ],
+      [
+       "2006",
+       63.97
+      ],
+      [
+       "2007",
+       64.15
+      ],
+      [
+       "2008",
+       63.96
+      ],
+      [
+       "2009",
+       63.02
+      ],
+      [
+       "2010",
+       63.39
+      ],
+      [
+       "2011",
+       63.91
+      ],
+      [
+       "2012",
+       64.34
+      ],
+      [
+       "2013",
+       64.63
+      ],
+      [
+       "2014",
+       65.57
+      ],
+      [
+       "2015",
+       65.91
+      ],
+      [
+       "2016",
+       66.08
+      ],
+      [
+       "2017",
+       66.63
+      ],
+      [
+       "2018",
+       66.61
+      ],
+      [
+       "2019",
+       66.82
+      ],
+      [
+       "2020",
+       65.86
+      ],
+      [
+       "2021",
+       66.53
+      ],
+      [
+       "2022",
+       68.51
+      ],
+      [
+       "2023",
+       69.23
+      ],
+      [
+       "2024",
+       69.54
+      ],
+      [
+       "2025",
+       69.85
+      ]
+     ]
+    }
+   ],
+   "eraIds": [
+    "2000s",
+    "2010s",
+    "2020s"
+   ],
+   "note": "2000년 이전은 이 계열에 없음"
+  },
+  {
+   "id": "realwage-kr",
+   "title": "제조업 실질 시간당 임금 지수 (2015=100, 계산)",
+   "unit": "지수",
+   "frequency": "annual",
+   "description": "명목 임금 지수를 소비자물가로 나눈 값. 물가를 빼고 임금이 실제로 얼마나 올랐는지 보여준다.",
+   "category": "society",
+   "series": [
+    {
+     "country": "KR",
+     "label": "한국",
+     "sourceIds": [
+      "fred-kr-wage",
+      "fred-kr-cpi"
+     ],
+     "points": [
+      [
+       "1992",
+       45.82
+      ],
+      [
+       "1993",
+       48.45
+      ],
+      [
+       "1994",
+       52.59
+      ],
+      [
+       "1995",
+       55.33
+      ],
+      [
+       "1996",
+       59.23
+      ],
+      [
+       "1997",
+       59.65
+      ],
+      [
+       "1998",
+       53.77
+      ],
+      [
+       "1999",
+       61.17
+      ],
+      [
+       "2000",
+       64.92
+      ],
+      [
+       "2001",
+       66.35
+      ],
+      [
+       "2002",
+       72.27
+      ],
+      [
+       "2003",
+       75.92
+      ],
+      [
+       "2004",
+       80.6
+      ],
+      [
+       "2005",
+       84.51
+      ],
+      [
+       "2006",
+       87.29
+      ],
+      [
+       "2007",
+       91.01
+      ],
+      [
+       "2008",
+       85.81
+      ],
+      [
+       "2009",
+       85.25
+      ],
+      [
+       "2010",
+       90.43
+      ],
+      [
+       "2011",
+       88.38
+      ],
+      [
+       "2012",
+       91.92
+      ],
+      [
+       "2013",
+       95.16
+      ],
+      [
+       "2014",
+       97.82
+      ],
+      [
+       "2015",
+       100.0
+      ],
+      [
+       "2016",
+       103.2
+      ],
+      [
+       "2017",
+       103.36
+      ],
+      [
+       "2018",
+       108.75
+      ],
+      [
+       "2019",
+       110.79
+      ],
+      [
+       "2020",
+       109.62
+      ],
+      [
+       "2021",
+       114.28
+      ],
+      [
+       "2022",
+       115.09
+      ],
+      [
+       "2023",
+       114.67
+      ],
+      [
+       "2024",
+       115.01
+      ]
+     ]
+    }
+   ],
+   "eraIds": [
+    "1990s",
+    "2000s",
+    "2010s",
+    "2020s"
+   ],
+   "note": "두 FRED 계열로 이 사이트가 직접 계산한 값(물가 지수는 연간 상승률을 누적해 만듦). 소비자물가 자료가 끝나는 해까지만 표시"
   }
  ],
  "patterns": {
@@ -26175,7 +26928,7 @@
     ],
     "eventIds": [],
     "deep": true,
-    "degree": 4
+    "degree": 5
    },
    {
     "id": "e90-cdma",
@@ -26645,7 +27398,7 @@
     ],
     "eventIds": [],
     "deep": true,
-    "degree": 4
+    "degree": 5
    },
    {
     "id": "e90-gold",
@@ -27162,7 +27915,7 @@
     ],
     "eventIds": [],
     "deep": true,
-    "degree": 1
+    "degree": 2
    },
    {
     "id": "e00-wto",
@@ -27534,6 +28287,76 @@
     "nodeType": "trend"
    },
    {
+    "id": "d08-forward",
+    "label": "조선사 선물환 매도 → 은행 단기 해외차입",
+    "year": 2007,
+    "yearPrecision": "year",
+    "lane": "industry",
+    "nodeType": "mechanism",
+    "countries": [
+     "KR"
+    ],
+    "importance": 2,
+    "claimIds": [
+     "c08-shortdebt-why"
+    ],
+    "kind": "phenomenon",
+    "eraId": "2000s",
+    "domains": [
+     "economy",
+     "industry"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 1
+   },
+   {
+    "id": "d08-shortdebt",
+    "label": "단기외채 다시 급증 (2007년 말 1,587억 달러)",
+    "year": 2007,
+    "yearPrecision": "year",
+    "lane": "economy",
+    "nodeType": "background",
+    "countries": [
+     "KR"
+    ],
+    "importance": 2,
+    "claimIds": [
+     "c08-shortdebt"
+    ],
+    "kind": "phenomenon",
+    "eraId": "2000s",
+    "domains": [
+     "economy"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 4
+   },
+   {
+    "id": "d08-subprime",
+    "label": "미국 서브프라임 주택대출 부실 (2007~)",
+    "year": 2007,
+    "yearPrecision": "year",
+    "lane": "economy",
+    "nodeType": "background",
+    "countries": [
+     "US"
+    ],
+    "importance": 2,
+    "claimIds": [
+     "c00-subprime"
+    ],
+    "kind": "phenomenon",
+    "eraId": "2000s",
+    "domains": [
+     "economy"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 1
+   },
+   {
     "id": "e00-iphone",
     "kind": "event",
     "label": "아이폰 발표",
@@ -27557,6 +28380,125 @@
     ],
     "degree": 0,
     "nodeType": "event"
+   },
+   {
+    "id": "d08-diff",
+    "label": "1997년과 다른 점: 외환보유액 2,581억 달러",
+    "year": 2008,
+    "yearPrecision": "year",
+    "lane": "economy",
+    "nodeType": "background",
+    "countries": [
+     "KR"
+    ],
+    "importance": 3,
+    "claimIds": [
+     "c08-diff97"
+    ],
+    "kind": "phenomenon",
+    "eraId": "2000s",
+    "domains": [
+     "economy"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 1
+   },
+   {
+    "id": "d08-fx",
+    "label": "환율 1,500원 돌파·코스피 반토막 (2008.11)",
+    "year": 2008,
+    "yearPrecision": "year",
+    "lane": "economy",
+    "nodeType": "outcome",
+    "countries": [
+     "KR"
+    ],
+    "importance": 1,
+    "claimIds": [
+     "c00-kr-2008"
+    ],
+    "kind": "phenomenon",
+    "eraId": "2000s",
+    "domains": [
+     "economy"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 7
+   },
+   {
+    "id": "d08-kiko",
+    "label": "키코 사태: 수출 중소기업 환손실",
+    "year": 2008,
+    "yearPrecision": "year",
+    "lane": "industry",
+    "nodeType": "outcome",
+    "countries": [
+     "KR"
+    ],
+    "importance": 2,
+    "claimIds": [
+     "c08-kiko"
+    ],
+    "kind": "phenomenon",
+    "eraId": "2000s",
+    "domains": [
+     "economy",
+     "industry"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 1
+   },
+   {
+    "id": "d08-outflow",
+    "label": "외국인 주식 매도·경상수지 악화 (2006~08)",
+    "year": 2008,
+    "yearPrecision": "year",
+    "lane": "economy",
+    "nodeType": "background",
+    "countries": [
+     "KR",
+     "WORLD"
+    ],
+    "importance": 2,
+    "claimIds": [
+     "c08-outflow"
+    ],
+    "kind": "phenomenon",
+    "eraId": "2000s",
+    "domains": [
+     "economy"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 1
+   },
+   {
+    "id": "d08-swap",
+    "label": "한·미 300억 달러 통화스와프 (2008.10.30)",
+    "year": 2008,
+    "yearPrecision": "year",
+    "lane": "politics",
+    "nodeType": "event",
+    "countries": [
+     "KR",
+     "US"
+    ],
+    "importance": 1,
+    "claimIds": [
+     "c08-swap"
+    ],
+    "kind": "event",
+    "eraId": "2000s",
+    "domains": [
+     "economy",
+     "politics"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 2
    },
    {
     "id": "e00-lehman",
@@ -27584,11 +28526,82 @@
     "aliases": [
      "리먼 파산과 0% 금리 (2008)"
     ],
-    "degree": 1,
+    "degree": 4,
     "docIds": [
      "doc00-newspapers"
     ],
     "nodeType": "event"
+   },
+   {
+    "id": "d08-jobs",
+    "label": "일자리 나누기: 1998년보다 작은 고용충격",
+    "year": 2009,
+    "yearPrecision": "year",
+    "lane": "society",
+    "nodeType": "outcome",
+    "countries": [
+     "KR"
+    ],
+    "importance": 2,
+    "claimIds": [
+     "c08-jobs-share"
+    ],
+    "kind": "phenomenon",
+    "eraId": "2000s",
+    "domains": [
+     "economy",
+     "society"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 2
+   },
+   {
+    "id": "d08-rate",
+    "label": "기준금리 5.25% → 2.00% (2008.10~2009.2)",
+    "year": 2009,
+    "yearPrecision": "year",
+    "lane": "economy",
+    "nodeType": "reaction",
+    "countries": [
+     "KR"
+    ],
+    "importance": 2,
+    "claimIds": [
+     "c08-rate"
+    ],
+    "kind": "phenomenon",
+    "eraId": "2000s",
+    "domains": [
+     "economy"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 2
+   },
+   {
+    "id": "d08-supplement",
+    "label": "28조 원대 '슈퍼 추경' (2009.3)",
+    "year": 2009,
+    "yearPrecision": "year",
+    "lane": "politics",
+    "nodeType": "reaction",
+    "countries": [
+     "KR"
+    ],
+    "importance": 2,
+    "claimIds": [
+     "c08-supplement"
+    ],
+    "kind": "phenomenon",
+    "eraId": "2000s",
+    "domains": [
+     "economy",
+     "politics"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 2
    },
    {
     "id": "e00-kr-iphone",
@@ -27646,6 +28659,30 @@
     "eventIds": [],
     "deep": true,
     "degree": 3
+   },
+   {
+    "id": "d08-mpm",
+    "label": "거시건전성 3종 세트 (2010~2011)",
+    "year": 2010,
+    "yearPrecision": "year",
+    "lane": "economy",
+    "nodeType": "outcome",
+    "countries": [
+     "KR"
+    ],
+    "importance": 2,
+    "claimIds": [
+     "c08-mpm"
+    ],
+    "kind": "phenomenon",
+    "eraId": "2010s",
+    "domains": [
+     "economy",
+     "politics"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 2
    },
    {
     "id": "e10-kakao",
@@ -30878,6 +31915,14 @@
     "ref": "1990s",
     "eraId": "1990s",
     "steps": []
+   },
+   {
+    "id": "deep-2008",
+    "kind": "case",
+    "title": "2008년 글로벌 금융위기와 한국 (선물환·단기외채 → 리먼 → 환율 급등 → 통화스와프·금리·추경 → 거시건전성 규제)",
+    "ref": "2000s",
+    "eraId": "2000s",
+    "steps": []
    }
   ],
   "edges": [
@@ -33205,6 +34250,208 @@
     "note": "외화가 바닥났던 경험 뒤 외환보유액을 위기 완충장치로 쌓음",
     "claimIds": [
      "c97-reserve-build"
+    ]
+   },
+   {
+    "id": "e-deep-2008-0",
+    "from": "d08-subprime",
+    "to": "e00-lehman",
+    "rel": "cause",
+    "verification": "evidenced",
+    "chainId": "deep-2008",
+    "note": "서브프라임 손실이 대형 투자은행 파산으로 번짐",
+    "claimIds": [
+     "c00-subprime",
+     "c00-lehman"
+    ]
+   },
+   {
+    "id": "e-deep-2008-1",
+    "from": "d08-forward",
+    "to": "d08-shortdebt",
+    "rel": "cause",
+    "verification": "evidenced",
+    "chainId": "deep-2008",
+    "note": "선물환을 받아준 은행의 단기 해외차입이 단기외채를 키움",
+    "claimIds": [
+     "c08-shortdebt-why",
+     "c08-shortdebt"
+    ]
+   },
+   {
+    "id": "e-deep-2008-2",
+    "from": "d97-shortdebt",
+    "to": "d08-shortdebt",
+    "rel": "similar",
+    "verification": "interpretation",
+    "chainId": "deep-2008",
+    "note": "두 위기 모두 단기외채가 불안의 통로였다는 점에서 닮음",
+    "claimIds": [
+     "c97-shortdebt",
+     "c08-shortdebt"
+    ]
+   },
+   {
+    "id": "e-deep-2008-3",
+    "from": "d97-reserve",
+    "to": "d08-diff",
+    "rel": "influence",
+    "verification": "interpretation",
+    "chainId": "deep-2008",
+    "note": "1997년 뒤 쌓은 외환보유액이 2008년의 완충장치가 됨",
+    "claimIds": [
+     "c97-reserve-build",
+     "c08-diff97"
+    ]
+   },
+   {
+    "id": "e-deep-2008-4",
+    "from": "e00-lehman",
+    "to": "d08-fx",
+    "rel": "trigger",
+    "verification": "evidenced",
+    "chainId": "deep-2008",
+    "note": "리먼 파산 뒤 세계적 달러 경색 → 원화 급락",
+    "claimIds": [
+     "c00-lehman",
+     "c00-kr-2008"
+    ]
+   },
+   {
+    "id": "e-deep-2008-5",
+    "from": "d08-shortdebt",
+    "to": "d08-fx",
+    "rel": "influence",
+    "verification": "interpretation",
+    "chainId": "deep-2008",
+    "note": "단기외채가 많아 달러 유동성 우려가 환율 급등을 키웠다는 해석",
+    "claimIds": [
+     "c08-shortdebt",
+     "c00-kr-2008"
+    ]
+   },
+   {
+    "id": "e-deep-2008-6",
+    "from": "d08-outflow",
+    "to": "d08-fx",
+    "rel": "influence",
+    "verification": "evidenced",
+    "chainId": "deep-2008",
+    "note": "외국인 자금 이탈과 경상수지 악화로 달러 부족",
+    "claimIds": [
+     "c08-outflow",
+     "c00-kr-2008"
+    ]
+   },
+   {
+    "id": "e-deep-2008-7",
+    "from": "d08-fx",
+    "to": "d08-kiko",
+    "rel": "cause",
+    "verification": "evidenced",
+    "chainId": "deep-2008",
+    "note": "환율이 키코 계약 상단을 넘으며 중소기업 손실 확대",
+    "claimIds": [
+     "c08-kiko"
+    ]
+   },
+   {
+    "id": "e-deep-2008-8",
+    "from": "d08-fx",
+    "to": "d08-swap",
+    "rel": "cause",
+    "verification": "evidenced",
+    "chainId": "deep-2008",
+    "note": "달러 유동성 위기 우려 속 통화스와프 체결",
+    "claimIds": [
+     "c08-swap"
+    ]
+   },
+   {
+    "id": "e-deep-2008-9",
+    "from": "d08-swap",
+    "to": "d08-fx",
+    "rel": "influence",
+    "verification": "evidenced",
+    "chainId": "deep-2008",
+    "note": "발표 당일 환율 177원 하락(이후 2009년 2월 다시 1,534원까지 오름)",
+    "claimIds": [
+     "c08-swap"
+    ]
+   },
+   {
+    "id": "e-deep-2008-10",
+    "from": "e00-lehman",
+    "to": "d08-rate",
+    "rel": "cause",
+    "verification": "evidenced",
+    "chainId": "deep-2008",
+    "note": "리먼 사태 뒤 6차례 금리 인하",
+    "claimIds": [
+     "c08-rate"
+    ]
+   },
+   {
+    "id": "e-deep-2008-11",
+    "from": "d08-rate",
+    "to": "d08-supplement",
+    "rel": "sequence",
+    "verification": "evidenced",
+    "chainId": "deep-2008",
+    "note": "통화 완화에 이어 재정 확대",
+    "claimIds": [
+     "c08-rate",
+     "c08-supplement"
+    ]
+   },
+   {
+    "id": "e-deep-2008-12",
+    "from": "d08-supplement",
+    "to": "d08-jobs",
+    "rel": "influence",
+    "verification": "interpretation",
+    "chainId": "deep-2008",
+    "note": "일자리 유지 예산과 고용유지 지원이 고용충격을 줄인 요인 중 하나(한국노동연구원)",
+    "claimIds": [
+     "c08-supplement",
+     "c08-jobs-share"
+    ]
+   },
+   {
+    "id": "e-deep-2008-13",
+    "from": "d97-unemp",
+    "to": "d08-jobs",
+    "rel": "similar",
+    "verification": "interpretation",
+    "chainId": "deep-2008",
+    "note": "같은 위기라도 1998년은 인원감축, 2009년은 일자리 나누기 중심",
+    "claimIds": [
+     "c97-unemp-cause",
+     "c08-jobs-share"
+    ]
+   },
+   {
+    "id": "e-deep-2008-14",
+    "from": "d08-shortdebt",
+    "to": "d08-mpm",
+    "rel": "cause",
+    "verification": "evidenced",
+    "chainId": "deep-2008",
+    "note": "단기외채·자본 유출입 변동성을 억제하려는 규제",
+    "claimIds": [
+     "c08-mpm"
+    ]
+   },
+   {
+    "id": "e-deep-2008-15",
+    "from": "d08-fx",
+    "to": "d08-mpm",
+    "rel": "background",
+    "verification": "evidenced",
+    "chainId": "deep-2008",
+    "note": "통화정책·미시건전성 정책만으로는 대응하기 어렵다는 반성",
+    "claimIds": [
+     "c08-mpm"
     ]
    }
   ],
@@ -49997,6 +51244,1220 @@
     },
     "verdict": "E",
     "why": "직선 추세가 변동의 75% 설명"
+   },
+   {
+    "key": "carreg-kr:KR",
+    "indicator": "carreg-kr",
+    "country": "KR",
+    "title": "신규 승용차 등록 (연간)",
+    "unit": "만 대",
+    "from": 1993,
+    "to": 2022,
+    "points": [
+     [
+      1993,
+      99.7
+     ],
+     [
+      1994,
+      109.6
+     ],
+     [
+      1995,
+      107.3
+     ],
+     [
+      1996,
+      115.1
+     ],
+     [
+      1997,
+      111.0
+     ],
+     [
+      1998,
+      45.6
+     ],
+     [
+      1999,
+      65.8
+     ],
+     [
+      2000,
+      64.9
+     ],
+     [
+      2001,
+      102.6
+     ],
+     [
+      2002,
+      124.4
+     ],
+     [
+      2003,
+      101.3
+     ],
+     [
+      2004,
+      87.7
+     ],
+     [
+      2005,
+      91.2
+     ],
+     [
+      2006,
+      95.2
+     ],
+     [
+      2007,
+      102.4
+     ],
+     [
+      2008,
+      102.9
+     ],
+     [
+      2009,
+      124.1
+     ],
+     [
+      2010,
+      124.9
+     ],
+     [
+      2011,
+      130.1
+     ],
+     [
+      2012,
+      125.5
+     ],
+     [
+      2013,
+      125.5
+     ],
+     [
+      2014,
+      140.0
+     ],
+     [
+      2015,
+      154.3
+     ],
+     [
+      2016,
+      154.4
+     ],
+     [
+      2017,
+      153.9
+     ],
+     [
+      2018,
+      153.7
+     ],
+     [
+      2019,
+      150.9
+     ],
+     [
+      2020,
+      163.1
+     ],
+     [
+      2021,
+      148.0
+     ],
+     [
+      2022,
+      143.1
+     ]
+    ],
+    "trend": [
+     [
+      1993,
+      79.91
+     ],
+     [
+      2022,
+      154.64
+     ]
+    ],
+    "turningPoints": [
+     {
+      "year": 1996,
+      "kind": "peak",
+      "value": 115.1
+     },
+     {
+      "year": 1999,
+      "kind": "trough",
+      "value": 65.8
+     }
+    ],
+    "highThreshold": 18.52,
+    "lowThreshold": -18.52,
+    "episodeBasis": "추세 대비",
+    "episodeUnit": "만 대",
+    "residual": [
+     [
+      1993,
+      19.79
+     ],
+     [
+      1994,
+      27.12
+     ],
+     [
+      1995,
+      22.24
+     ],
+     [
+      1996,
+      27.46
+     ],
+     [
+      1997,
+      20.79
+     ],
+     [
+      1998,
+      -47.19
+     ],
+     [
+      1999,
+      -29.57
+     ],
+     [
+      2000,
+      -33.05
+     ],
+     [
+      2001,
+      2.08
+     ],
+     [
+      2002,
+      21.3
+     ],
+     [
+      2003,
+      -4.38
+     ],
+     [
+      2004,
+      -20.55
+     ],
+     [
+      2005,
+      -19.63
+     ],
+     [
+      2006,
+      -18.21
+     ],
+     [
+      2007,
+      -13.58
+     ],
+     [
+      2008,
+      -15.66
+     ],
+     [
+      2009,
+      2.96
+     ],
+     [
+      2010,
+      1.18
+     ],
+     [
+      2011,
+      3.81
+     ],
+     [
+      2012,
+      -3.37
+     ],
+     [
+      2013,
+      -5.95
+     ],
+     [
+      2014,
+      5.98
+     ],
+     [
+      2015,
+      17.7
+     ],
+     [
+      2016,
+      15.22
+     ],
+     [
+      2017,
+      12.14
+     ],
+     [
+      2018,
+      9.37
+     ],
+     [
+      2019,
+      3.99
+     ],
+     [
+      2020,
+      13.61
+     ],
+     [
+      2021,
+      -4.06
+     ],
+     [
+      2022,
+      -11.54
+     ]
+    ],
+    "highEpisodes": [
+     [
+      1993,
+      1997
+     ],
+     [
+      2002,
+      2002
+     ]
+    ],
+    "lowEpisodes": [
+     [
+      1998,
+      2000
+     ],
+     [
+      2004,
+      2005
+     ]
+    ],
+    "highIntervals": {
+     "starts": [
+      1993,
+      2002
+     ],
+     "gaps": [
+      9
+     ],
+     "cv": null,
+     "regular": null
+    },
+    "lowIntervals": {
+     "starts": [
+      1998,
+      2004
+     ],
+     "gaps": [
+      6
+     ],
+     "cv": null,
+     "regular": null
+    },
+    "sensitivity": [
+     {
+      "range": [
+       1960,
+       1992
+      ],
+      "n": 0,
+      "verdict": "insufficient"
+     },
+     {
+      "range": [
+       1993,
+       2025
+      ],
+      "n": 30,
+      "verdict": "E",
+      "trendR2": 0.592,
+      "pAcf": 0.004,
+      "pSpectral": 0.102,
+      "period": 7.5
+     },
+     {
+      "range": [
+       1980,
+       2025
+      ],
+      "n": 30,
+      "verdict": "E",
+      "trendR2": 0.592,
+      "pAcf": 0.004,
+      "pSpectral": 0.102,
+      "period": 7.5
+     },
+     {
+      "range": [
+       1994,
+       2022
+      ],
+      "n": 29,
+      "method": "1차 차분(전년 대비 변화)",
+      "verdict": "none",
+      "pAcf": 0.074,
+      "pSpectral": 0.668,
+      "period": 7.2
+     }
+    ],
+    "n": 30,
+    "trendR2": 0.592,
+    "slopePerDecade": 25.77,
+    "changePoint": {
+     "year": 2009,
+     "before": 95.42,
+     "after": 142.25,
+     "explained": 0.65
+    },
+    "periodicity": {
+     "acf": [
+      0.56,
+      0.143,
+      -0.186,
+      -0.301,
+      -0.093,
+      0.088,
+      0.111,
+      0.164,
+      -0.1,
+      -0.479,
+      -0.736,
+      -0.567,
+      -0.273,
+      -0.062
+     ],
+     "bestLag": 11,
+     "maxAbsAcf": 0.736,
+     "pAcf": 0.001,
+     "band": 0.358,
+     "spectralPeriod": 7.5,
+     "spectralShare": 0.31,
+     "pSpectral": 0.11
+    },
+    "verdict": "E",
+    "why": "직선 추세가 변동의 59% 설명"
+   },
+   {
+    "key": "emprate-kr:KR",
+    "indicator": "emprate-kr",
+    "country": "KR",
+    "title": "고용률 (15~64세)",
+    "unit": "%",
+    "from": 2000,
+    "to": 2025,
+    "points": [
+     [
+      2000,
+      61.51
+     ],
+     [
+      2001,
+      62.21
+     ],
+     [
+      2002,
+      63.41
+     ],
+     [
+      2003,
+      63.03
+     ],
+     [
+      2004,
+      63.77
+     ],
+     [
+      2005,
+      63.75
+     ],
+     [
+      2006,
+      63.97
+     ],
+     [
+      2007,
+      64.15
+     ],
+     [
+      2008,
+      63.96
+     ],
+     [
+      2009,
+      63.02
+     ],
+     [
+      2010,
+      63.39
+     ],
+     [
+      2011,
+      63.91
+     ],
+     [
+      2012,
+      64.34
+     ],
+     [
+      2013,
+      64.63
+     ],
+     [
+      2014,
+      65.57
+     ],
+     [
+      2015,
+      65.91
+     ],
+     [
+      2016,
+      66.08
+     ],
+     [
+      2017,
+      66.63
+     ],
+     [
+      2018,
+      66.61
+     ],
+     [
+      2019,
+      66.82
+     ],
+     [
+      2020,
+      65.86
+     ],
+     [
+      2021,
+      66.53
+     ],
+     [
+      2022,
+      68.51
+     ],
+     [
+      2023,
+      69.23
+     ],
+     [
+      2024,
+      69.54
+     ],
+     [
+      2025,
+      69.85
+     ]
+    ],
+    "trend": [
+     [
+      2000,
+      61.78
+     ],
+     [
+      2025,
+      68.7
+     ]
+    ],
+    "turningPoints": [],
+    "highThreshold": 0.93,
+    "lowThreshold": -0.26,
+    "episodeBasis": "전년 대비 변화",
+    "episodeUnit": "%",
+    "residual": [
+     [
+      2000,
+      -0.27
+     ],
+     [
+      2001,
+      0.15
+     ],
+     [
+      2002,
+      1.08
+     ],
+     [
+      2003,
+      0.42
+     ],
+     [
+      2004,
+      0.88
+     ],
+     [
+      2005,
+      0.59
+     ],
+     [
+      2006,
+      0.53
+     ],
+     [
+      2007,
+      0.43
+     ],
+     [
+      2008,
+      -0.03
+     ],
+     [
+      2009,
+      -1.25
+     ],
+     [
+      2010,
+      -1.16
+     ],
+     [
+      2011,
+      -0.91
+     ],
+     [
+      2012,
+      -0.76
+     ],
+     [
+      2013,
+      -0.75
+     ],
+     [
+      2014,
+      -0.08
+     ],
+     [
+      2015,
+      -0.02
+     ],
+     [
+      2016,
+      -0.13
+     ],
+     [
+      2017,
+      0.15
+     ],
+     [
+      2018,
+      -0.15
+     ],
+     [
+      2019,
+      -0.22
+     ],
+     [
+      2020,
+      -1.45
+     ],
+     [
+      2021,
+      -1.06
+     ],
+     [
+      2022,
+      0.64
+     ],
+     [
+      2023,
+      1.09
+     ],
+     [
+      2024,
+      1.12
+     ],
+     [
+      2025,
+      1.15
+     ]
+    ],
+    "highEpisodes": [
+     [
+      2002,
+      2002
+     ],
+     [
+      2014,
+      2014
+     ],
+     [
+      2022,
+      2022
+     ]
+    ],
+    "lowEpisodes": [
+     [
+      2003,
+      2003
+     ],
+     [
+      2009,
+      2009
+     ],
+     [
+      2020,
+      2020
+     ]
+    ],
+    "highIntervals": {
+     "starts": [
+      2002,
+      2014,
+      2022
+     ],
+     "gaps": [
+      12,
+      8
+     ],
+     "cv": 0.2,
+     "regular": false
+    },
+    "lowIntervals": {
+     "starts": [
+      2003,
+      2009,
+      2020
+     ],
+     "gaps": [
+      6,
+      11
+     ],
+     "cv": 0.29,
+     "regular": false
+    },
+    "sensitivity": [
+     {
+      "range": [
+       1960,
+       1992
+      ],
+      "n": 0,
+      "verdict": "insufficient"
+     },
+     {
+      "range": [
+       1993,
+       2025
+      ],
+      "n": 26,
+      "verdict": "E",
+      "trendR2": 0.879,
+      "pAcf": 0.015,
+      "pSpectral": 0.065,
+      "period": 26.0
+     },
+     {
+      "range": [
+       1980,
+       2025
+      ],
+      "n": 26,
+      "verdict": "E",
+      "trendR2": 0.879,
+      "pAcf": 0.017,
+      "pSpectral": 0.062,
+      "period": 26.0
+     },
+     {
+      "range": [
+       2001,
+       2025
+      ],
+      "n": 25,
+      "method": "1차 차분(전년 대비 변화)",
+      "verdict": "none",
+      "pAcf": 0.638,
+      "pSpectral": 0.956,
+      "period": 5.0
+     }
+    ],
+    "n": 26,
+    "trendR2": 0.879,
+    "slopePerDecade": 2.77,
+    "changePoint": {
+     "year": 2014,
+     "before": 63.5,
+     "after": 67.26,
+     "explained": 0.716
+    },
+    "periodicity": {
+     "acf": [
+      0.698,
+      0.309,
+      -0.019,
+      -0.289,
+      -0.363,
+      -0.304,
+      -0.264,
+      -0.123,
+      -0.039,
+      0.031,
+      -0.022,
+      -0.282
+     ],
+     "bestLag": 1,
+     "maxAbsAcf": 0.698,
+     "pAcf": 0.015,
+     "band": 0.384,
+     "spectralPeriod": 26.0,
+     "spectralShare": 0.385,
+     "pSpectral": 0.062
+    },
+    "verdict": "E",
+    "why": "직선 추세가 변동의 88% 설명"
+   },
+   {
+    "key": "realwage-kr:KR",
+    "indicator": "realwage-kr",
+    "country": "KR",
+    "title": "제조업 실질 시간당 임금 지수 (2015=100, 계산)",
+    "unit": "지수",
+    "from": 1992,
+    "to": 2024,
+    "points": [
+     [
+      1992,
+      45.82
+     ],
+     [
+      1993,
+      48.45
+     ],
+     [
+      1994,
+      52.59
+     ],
+     [
+      1995,
+      55.33
+     ],
+     [
+      1996,
+      59.23
+     ],
+     [
+      1997,
+      59.65
+     ],
+     [
+      1998,
+      53.77
+     ],
+     [
+      1999,
+      61.17
+     ],
+     [
+      2000,
+      64.92
+     ],
+     [
+      2001,
+      66.35
+     ],
+     [
+      2002,
+      72.27
+     ],
+     [
+      2003,
+      75.92
+     ],
+     [
+      2004,
+      80.6
+     ],
+     [
+      2005,
+      84.51
+     ],
+     [
+      2006,
+      87.29
+     ],
+     [
+      2007,
+      91.01
+     ],
+     [
+      2008,
+      85.81
+     ],
+     [
+      2009,
+      85.25
+     ],
+     [
+      2010,
+      90.43
+     ],
+     [
+      2011,
+      88.38
+     ],
+     [
+      2012,
+      91.92
+     ],
+     [
+      2013,
+      95.16
+     ],
+     [
+      2014,
+      97.82
+     ],
+     [
+      2015,
+      100.0
+     ],
+     [
+      2016,
+      103.2
+     ],
+     [
+      2017,
+      103.36
+     ],
+     [
+      2018,
+      108.75
+     ],
+     [
+      2019,
+      110.79
+     ],
+     [
+      2020,
+      109.62
+     ],
+     [
+      2021,
+      114.28
+     ],
+     [
+      2022,
+      115.09
+     ],
+     [
+      2023,
+      114.67
+     ],
+     [
+      2024,
+      115.01
+     ]
+    ],
+    "trend": [
+     [
+      1992,
+      48.74
+     ],
+     [
+      2024,
+      120.26
+     ]
+    ],
+    "turningPoints": [],
+    "highThreshold": 5.07,
+    "lowThreshold": -0.75,
+    "episodeBasis": "전년 대비 변화",
+    "episodeUnit": "지수",
+    "residual": [
+     [
+      1992,
+      -2.92
+     ],
+     [
+      1993,
+      -2.52
+     ],
+     [
+      1994,
+      -0.62
+     ],
+     [
+      1995,
+      -0.11
+     ],
+     [
+      1996,
+      1.55
+     ],
+     [
+      1997,
+      -0.26
+     ],
+     [
+      1998,
+      -8.38
+     ],
+     [
+      1999,
+      -3.21
+     ],
+     [
+      2000,
+      -1.7
+     ],
+     [
+      2001,
+      -2.5
+     ],
+     [
+      2002,
+      1.18
+     ],
+     [
+      2003,
+      2.6
+     ],
+     [
+      2004,
+      5.04
+     ],
+     [
+      2005,
+      6.72
+     ],
+     [
+      2006,
+      7.26
+     ],
+     [
+      2007,
+      8.75
+     ],
+     [
+      2008,
+      1.31
+     ],
+     [
+      2009,
+      -1.48
+     ],
+     [
+      2010,
+      1.46
+     ],
+     [
+      2011,
+      -2.82
+     ],
+     [
+      2012,
+      -1.52
+     ],
+     [
+      2013,
+      -0.51
+     ],
+     [
+      2014,
+      -0.09
+     ],
+     [
+      2015,
+      -0.14
+     ],
+     [
+      2016,
+      0.82
+     ],
+     [
+      2017,
+      -1.25
+     ],
+     [
+      2018,
+      1.9
+     ],
+     [
+      2019,
+      1.71
+     ],
+     [
+      2020,
+      -1.7
+     ],
+     [
+      2021,
+      0.73
+     ],
+     [
+      2022,
+      -0.7
+     ],
+     [
+      2023,
+      -3.35
+     ],
+     [
+      2024,
+      -5.25
+     ]
+    ],
+    "highEpisodes": [
+     [
+      1999,
+      1999
+     ],
+     [
+      2002,
+      2002
+     ],
+     [
+      2010,
+      2010
+     ],
+     [
+      2018,
+      2018
+     ]
+    ],
+    "lowEpisodes": [
+     [
+      1998,
+      1998
+     ],
+     [
+      2008,
+      2008
+     ],
+     [
+      2011,
+      2011
+     ],
+     [
+      2020,
+      2020
+     ]
+    ],
+    "highIntervals": {
+     "starts": [
+      1999,
+      2002,
+      2010,
+      2018
+     ],
+     "gaps": [
+      3,
+      8,
+      8
+     ],
+     "cv": 0.37,
+     "regular": false
+    },
+    "lowIntervals": {
+     "starts": [
+      1998,
+      2008,
+      2011,
+      2020
+     ],
+     "gaps": [
+      10,
+      3,
+      9
+     ],
+     "cv": 0.42,
+     "regular": false
+    },
+    "sensitivity": [
+     {
+      "range": [
+       1960,
+       1992
+      ],
+      "n": 1,
+      "verdict": "insufficient"
+     },
+     {
+      "range": [
+       1993,
+       2025
+      ],
+      "n": 32,
+      "verdict": "E",
+      "trendR2": 0.973,
+      "pAcf": 0.025,
+      "pSpectral": 0.261,
+      "period": 16.0
+     },
+     {
+      "range": [
+       1980,
+       2025
+      ],
+      "n": 33,
+      "verdict": "E",
+      "trendR2": 0.975,
+      "pAcf": 0.023,
+      "pSpectral": 0.099,
+      "period": 11.0
+     },
+     {
+      "range": [
+       1993,
+       2024
+      ],
+      "n": 32,
+      "method": "1차 차분(전년 대비 변화)",
+      "verdict": "none",
+      "pAcf": 0.379,
+      "pSpectral": 0.302,
+      "period": 2.7
+     }
+    ],
+    "n": 33,
+    "trendR2": 0.975,
+    "slopePerDecade": 22.35,
+    "changePoint": {
+     "year": 2004,
+     "before": 59.62,
+     "after": 98.71,
+     "explained": 0.761
+    },
+    "periodicity": {
+     "acf": [
+      0.629,
+      0.344,
+      0.216,
+      -0.097,
+      -0.237,
+      -0.284,
+      -0.377,
+      -0.318,
+      -0.25,
+      -0.082,
+      0.085,
+      -0.011,
+      -0.015,
+      -0.081,
+      -0.117
+     ],
+     "bestLag": 1,
+     "maxAbsAcf": 0.629,
+     "pAcf": 0.021,
+     "band": 0.341,
+     "spectralPeriod": 11.0,
+     "spectralShare": 0.276,
+     "pSpectral": 0.102
+    },
+    "verdict": "E",
+    "why": "직선 추세가 변동의 97% 설명"
    }
   ],
   "findings": [
@@ -51410,6 +53871,102 @@
      },
      "pAcf": 0.0,
      "pSpectral": 0.0
+    },
+    "confidence": {
+     "level": "높음",
+     "why": "추세·변화점의 설명력 기준"
+    },
+    "interest": 2.1
+   },
+   {
+    "id": "f-carreg-kr:KR-shape",
+    "type": "E",
+    "series": [
+     "carreg-kr:KR"
+    ],
+    "category": "society",
+    "title": "신규 승용차 등록 (연간)(한국): 장기 구조 변화 — 주기가 아님",
+    "summary": "직선 추세가 변동의 59% 설명",
+    "periods": [
+     [
+      2009,
+      2022
+     ]
+    ],
+    "evidence": {
+     "trendR2": 0.592,
+     "changePoint": {
+      "year": 2009,
+      "before": 95.42,
+      "after": 142.25,
+      "explained": 0.65
+     },
+     "pAcf": 0.001,
+     "pSpectral": 0.11
+    },
+    "confidence": {
+     "level": "높음",
+     "why": "추세·변화점의 설명력 기준"
+    },
+    "interest": 2.1
+   },
+   {
+    "id": "f-emprate-kr:KR-shape",
+    "type": "E",
+    "series": [
+     "emprate-kr:KR"
+    ],
+    "category": "economy",
+    "title": "고용률 (15~64세)(한국): 장기 구조 변화 — 주기가 아님",
+    "summary": "직선 추세가 변동의 88% 설명",
+    "periods": [
+     [
+      2014,
+      2025
+     ]
+    ],
+    "evidence": {
+     "trendR2": 0.879,
+     "changePoint": {
+      "year": 2014,
+      "before": 63.5,
+      "after": 67.26,
+      "explained": 0.716
+     },
+     "pAcf": 0.015,
+     "pSpectral": 0.062
+    },
+    "confidence": {
+     "level": "높음",
+     "why": "추세·변화점의 설명력 기준"
+    },
+    "interest": 2.1
+   },
+   {
+    "id": "f-realwage-kr:KR-shape",
+    "type": "E",
+    "series": [
+     "realwage-kr:KR"
+    ],
+    "category": "society",
+    "title": "제조업 실질 시간당 임금 지수 (2015=100, 계산)(한국): 장기 구조 변화 — 주기가 아님",
+    "summary": "직선 추세가 변동의 97% 설명",
+    "periods": [
+     [
+      2004,
+      2024
+     ]
+    ],
+    "evidence": {
+     "trendR2": 0.975,
+     "changePoint": {
+      "year": 2004,
+      "before": 59.62,
+      "after": 98.71,
+      "explained": 0.761
+     },
+     "pAcf": 0.021,
+     "pSpectral": 0.102
     },
     "confidence": {
      "level": "높음",

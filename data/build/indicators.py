@@ -123,3 +123,4 @@ for _i in INDICATORS:
 import indicators_wb as _W
 SOURCES += _W.SOURCES
 INDICATORS += _W.INDICATORS
+_W.add_real_wage(INDICATORS)
