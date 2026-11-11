@@ -14,7 +14,7 @@ const MULTI_COLOR = ['#c2410c', '#1d4ed8', '#047857', '#a21caf', '#b45309', '#0e
 const SERIES_COLOR: Record<string, string> = { KR: 'var(--c-economy)', US: 'var(--ink-3)', JP: 'var(--c-industry)' };
 const MISSING: Record<Cat, string[]> = {
   economy: ['금리: 재할인율(1964~1998)·콜금리(1991~)·기준금리(1999~)를 따로 표시(정책금리 체계가 바뀌어 하나의 선으로 잇지 않음). 1960~63년 금리 자료 없음', '1989년 이전 실업률', '에너지 소비량 연속 자료 — 석유의존도는 1973·2010년 두 시점만'],
-  industry: ['1983년 이전 산업별 취업자 비중(제조업은 1989년 이전)', '직업구조(직업별 취업자) 통계', '1975년 이전 유선전화 연도별 값'],
+  industry: ['1983년 이전 산업별 취업자 비중(제조업은 1989년 이전) — 통계청 공개 API에도 1983년부터만 있음', '2013년 이전 직업별 취업자(직업분류 개정으로 이어 붙이지 않음)', '1975년 이전 유선전화 연도별 값'],
   society: ['1992년 이전 임금', '자동차 보급률(1,000명당 보유 대수) — 신규 등록 대수(1993~2022)만 있음', '가계 소비 구성은 1970년부터(그 이전 자료 없음)', '1인 가구 2015년 이전 연속 자료'],
   politics: ['정치는 수치 지표 대신 시대별 흐름도로 표시합니다. 정권·제도를 숫자로 바꾼 지표는 만들지 않습니다.'],
   culture: ['2005년 이전 콘텐츠 수출, 2019년 이전·2022년 앨범 판매량', '음원 이용량·공연 관객 장기 통계', '패션 시장 규모 연속 자료(보도된 값이 2000년 21조 원·2022년 47조 원 등 띄엄띄엄뿐)'],
@@ -22,7 +22,7 @@ const MISSING: Record<Cat, string[]> = {
 };
 const NUMERIC: Record<Cat, string[]> = {
   economy: ['gdp-growth', 'gdppc-kr', 'cpi-kr', 'fx-kr', 'unemp-kr', 'emprate-kr', 'disc-kr', 'call-kr', 'baserate-kr', 'oil-dep-kr'],
-  industry: ['exports-kr', 'exp-gdp-kr', 'va-agr-kr', 'va-mfg-kr', 'va-srv-kr', 'emp-ag-kr', 'emp-mfg-kr', 'emp-svc-kr', 'tel-kr', 'mobile-kr', 'internet-kr', 'pcbang-kr'],
+  industry: ['exports-kr', 'exp-gdp-kr', 'va-agr-kr', 'va-mfg-kr', 'va-srv-kr', 'empstatus-mix-kr', 'wage-share-kr', 'unpaid-fam-kr', 'occ-mix-kr', 'emp-ag-kr', 'emp-mfg-kr', 'emp-svc-kr', 'tel-kr', 'mobile-kr', 'internet-kr', 'pcbang-kr'],
   society: ['tfr-kr', 'aged-kr', 'life-kr', 'urban-kr', 'house-kr', 'wage-kr', 'realwage-kr', 'carreg-kr', 'hhcons-kr', 'cons-mix-kr', 'engel-kr', 'cons-house-kr', 'hsupply-kr', 'one-person-kr', 'online-kr'], politics: [], culture: ['content-exp-mix-kr', 'music-exp-kr', 'album-kr', 'cons-culture-kr'], flow: [] };
 const SIGNALS: Record<Cat, string[]> = { economy: ['ch-sg-debt'], industry: ['ch-sg-chip', 'ch-sg-connect'], society: ['ch-sg-household'], politics: ['ch-sg-china'], culture: ['ch-sg-folk', 'ch-sg-kculture'], flow: [] };
 

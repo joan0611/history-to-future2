@@ -124,6 +124,12 @@ with sync_playwright() as p:
     ok('문화: 콘텐츠 수출액 기본 표시(게임·음악·방송)', '콘텐츠 수출액' in h and '게임' in h and '음악' in h)
     pg.goto(U + '#/field/culture?y=2022&ind=album-kr'); pg.wait_for_timeout(700)
     ok('문화: 앨범 판매량, 2022년은 자료 없음으로 밝힘', '2022' in pg.locator('.hero').inner_text() and '자료 없음' in pg.locator('.hero').inner_text())
+    # 통계청: 종사상 지위(1963~), 직업 구성(2013~)
+    pg.goto(U + '#/field/industry?y=1975&ind=empstatus-mix-kr'); pg.wait_for_timeout(700)
+    h = pg.locator('.hero').inner_text()
+    ok('통계청: 임금근로자·자영업자·무급가족종사자 1963~', '임금근로자' in h and '무급가족종사자' in h and '통계청' in h)
+    pg.goto(U + '#/field/industry?y=2020&ind=occ-mix-kr'); pg.wait_for_timeout(700)
+    ok('통계청: 직업 구성(전문가 등)', '전문가' in pg.locator('.hero').inner_text())
     pg.screenshot(path=os.path.join(SHOTS, 'e2e-field.png'))
     # 모바일
     m = b.new_context(viewport={'width': 390, 'height': 844}, has_touch=True, is_mobile=True).new_page()

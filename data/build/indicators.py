@@ -132,3 +132,7 @@ INDICATORS += _E.INDICATORS
 import indicators_culture as _C
 SOURCES += _C.SOURCES
 INDICATORS += _C.INDICATORS
+
+import indicators_kosis as _K
+SOURCES += _K.SOURCES
+INDICATORS += _K.INDICATORS
