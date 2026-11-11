@@ -9,11 +9,11 @@ A = "2026-11-11"
 
 SOURCES = [
     S("fred-kr-gdp", "National Accounts: GDP Constant Prices, Growth rate — Korea (NAEXKP01KRA657S)", "OECD via FRED (St. Louis Fed)",
-      "https://fred.stlouisfed.org/data/NAEXKP01KRA657S", "institution", note="연간, 전년 대비 %. 2026-10-15 갱신본"),
+      "https://fred.stlouisfed.org/series/NAEXKP01KRA657S", "institution", note="연간, 전년 대비 %. 2026-10-15 갱신본"),
     S("fred-us-gdp", "National Accounts: GDP Constant Prices, Growth rate — United States (NAEXKP01USA657S)", "OECD via FRED (St. Louis Fed)",
-      "https://fred.stlouisfed.org/data/NAEXKP01USA657S", "institution", note="연간, 전년 대비 %. 2026-10-15 갱신본"),
+      "https://fred.stlouisfed.org/series/NAEXKP01USA657S", "institution", note="연간, 전년 대비 %. 2026-10-15 갱신본"),
     S("fred-jp-gdp", "National Accounts: GDP Constant Prices, Growth rate — Japan (NAEXKP01JPA657S)", "OECD via FRED (St. Louis Fed)",
-      "https://fred.stlouisfed.org/data/NAEXKP01JPA657S", "institution", note="연간, 1995년부터. 2025-12-15 갱신본(검색 결과 표로 확인)"),
+      "https://fred.stlouisfed.org/series/NAEXKP01JPA657S", "institution", note="연간, 1995년부터. 2025-12-15 갱신본(검색 결과 표로 확인)"),
     S("nd-240228-tfr", "2023년 출생·사망통계 — 연도별 합계출산율 2018~2023 (2024.2.28)", "뉴데일리경제 (통계청 발표)",
       "https://biz.newdaily.co.kr/site/data/html/2024/02/28/2024022800140.html", "news"),
     S("econ-1p-2015", "1인 가구, 2015년 가장 많은 가구 유형 (26.6%)", "이코노미스트 (통계청 인구주택총조사)", "https://economist.co.kr/article/view/ecn201909080005", "news"),
@@ -90,7 +90,7 @@ INDICATORS = [
 # ---- v0.14 DATA FLOW 보강 ----
 SOURCES += [
     {"id": "fred-kr-cpi", "title": "Inflation, consumer prices for the Republic of Korea (FPCPITOTLZGKOR) — 표 데이터", "publisher": "FRED (원자료: 세계은행 세계개발지표)",
-      "url": "https://fred.stlouisfed.org/data/FPCPITOTLZGKOR", "sourceType": "institution", "accessedDate": "2026-11-11",
+      "url": "https://fred.stlouisfed.org/series/FPCPITOTLZGKOR", "sourceType": "institution", "accessedDate": "2026-11-11",
       "note": "1960~2024 연간 값을 표에서 직접 확인. 1974·1975년 값(24.3%·25.2%)은 기존 문장 c70-kr-cpi(24%·25%)와 일치"},
     {"id": "keei-13-02", "title": "KEEI 기본연구보고서 13-02 (석유의존도와 유가충격의 경제적 영향)", "publisher": "에너지경제연구원",
       "url": "https://www.keei.re.kr/library/10110/contents/6842367", "sourceType": "institution", "accessedDate": "2026-11-11",

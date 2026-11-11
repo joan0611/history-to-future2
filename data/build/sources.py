@@ -97,8 +97,8 @@ SOURCES = [
     # ---------- 미국 1960s ----------
     S("us-bts-vehicles", "Household Vehicle Ownership: 1960–2010", "U.S. Bureau of Transportation Statistics",
       "https://www.bts.gov/archive/publications/passenger_travel_2015/chapter2/fig2_8", "government"),
-    S("us-bls-100yrs", "100 Years of U.S. Consumer Spending — 1960-61", "U.S. Bureau of Labor Statistics (미러 사본)",
-      "https://corpora.tika.apache.org/base/docs/govdocs1/917/917663.pdf", "government",
+    S("us-bls-100yrs", "100 Years of U.S. Consumer Spending — 1960-61", "U.S. Bureau of Labor Statistics",
+      "https://www.bls.gov/opub/100-years-of-u-s-consumer-spending.pdf", "government",
       note="BLS 보고서의 미러 사본 — 원 게시처 URL로 교체 필요"),
     S("us-mw-1966-09", "Merchandising Week, Vol.98 (1966-09-19)", "McGraw-Hill (World Radio History 아카이브 스캔)",
       "https://www.worldradiohistory.com/Archive-Modern-Era-Miscellaneous/Merchandising-Week-1966-09-19-280125.pdf",
@@ -173,8 +173,8 @@ SOURCES = [
       "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=322", "government"),
     S("kr-imf-archive", "기록으로 보는 대한민국: IMF", "국가기록원",
       "https://theme.archives.go.kr/next/koreaOfRecord/imf.do", "government"),
-    S("iphone-usad", "Social Science Resource Guide — technology timeline", "USAD",
-      "https://usad.org/USAD/media/Curriculum-Updates/SocialScienceRG_pg84-86.pdf", "reference"),
+    S("iphone-usad", "The iPhone is 10 years old (Business Insider 기사 전재)", "세계경제포럼(WEF)",
+      "https://www.weforum.org/stories/2017/01/the-iphone-is-10-years-old-watch-as-steve-jobs-unveils-the-very-first/", "news"),
     S("chatgpt-chc", "OpenAI launches ChatGPT", "Centre for Computing History",
       "https://computinghistory.org.uk/det/71180/OpenAI%20launches%20ChatGPT", "institution"),
 ]

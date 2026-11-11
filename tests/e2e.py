@@ -17,7 +17,7 @@ with sync_playwright() as p:
     # A 전체 역사: 첫 화면에서 장기 그래프·변화 지도(시대×분야)·시대별 주요 사건이 바로 보인다
     pg.goto(U); pg.wait_for_timeout(1200)
     cells = pg.locator('.cmap-cell:not(.empty)').count(); years = pg.locator('.mt-y').count()
-    ok('A 첫 화면: 공통 시간축·질문 5개·시대 카드 7개·변화 지도', years == 67 and pg.locator('.hero .flowcard').count() == 5 and pg.locator('.era-card').count() == 7 and cells >= 30,
+    ok('A 첫 화면: 공통 시간축·질문 6개·시대 카드 7개·변화 지도', years == 67 and pg.locator('.hero .flowcard').count() == 6 and pg.locator('.era-card').count() == 7 and cells >= 30,
        f'연도 칸 {years}, 지도 칸 {cells}')
     ok('A 첫 화면에 의미 불명 수치(교차검증 %) 없음', '교차검증' not in pg.locator('body').inner_text())
     ok('A 점 지도 없음(첫 화면 정보 밀도)', pg.locator('circle').count() < 20)
@@ -140,7 +140,7 @@ with sync_playwright() as p:
     ok('코로나19: 금리 인상 전환의 원인(집값·가계부채)', '가계부채' in w)
     # 변화 흐름: 질문 → 단계 → 연결의 성격 → 사건 상세 → 흐름으로 돌아가기
     pg.goto(U + '#/flow'); pg.wait_for_timeout(600)
-    ok('흐름 목록 5개', pg.locator('.flowcard').count() == 5)
+    ok('흐름 목록 6개', pg.locator('.flowcard').count() == 6)
     pg.goto(U + '#/flow/flow-music?y=1995'); pg.wait_for_timeout(800)
     t = pg.locator('main').inner_text()
     ok('음악 흐름: 단계·근거 문장·연결 성격이 클릭 없이 보임', pg.locator('.step').count() >= 8 and '노래방' in t and '시간 순서일 뿐' in t and '확인되지 않은 부분' in t)

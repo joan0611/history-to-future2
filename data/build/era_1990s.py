@@ -216,7 +216,7 @@ ERA = {
     "advertisements": [
         {"id": "ad90-kr-mobile", "product": "디지털 휴대전화 (CDMA 단말기)", "country": "KR", "year": "1996~", "documentIds": ["doc90-chosun"],
          "appealedValues": ["세계 최초 기술", "언제 어디서나 연결", "개인의 성공"],
-         "promisedLife": "세계 최초 디지털 이동전화로 어디서든 통화하는 '세계화된' 개인 (광고 원문 미확인)",
+         "promisedLife": "'한국 지형에 강하다' — 외국산보다 한국에 맞는 국산 휴대전화 (삼성 애니콜, 1995~98)",
          "realityCheck": "1996년 말까지 팔린 단말기는 약 100만 대였다. 대중화는 위기 이후에 이뤄졌고, 위기 직후에는 실직과 소비 위축이 먼저 왔다.",
          "realityClaimIds": ["c90-cdma", "c90-unemp", "c90-hyp-ad"]},
     ],

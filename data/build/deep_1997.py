@@ -18,7 +18,7 @@ SOURCES = [
       "https://core.ac.uk/download/51178948.pdf", "academic", "표 1 원자료: 한국은행(1998, 2003), Chopra et al.(2001), 재정경제부"),
     S("scribd-kr-crisis", "Korea's 1997 Financial Crisis (학술지 논문 사본, 353쪽)", "Scribd 게시 학술 논문",
       "https://www.scribd.com/document/515445472/Article-05", "academic", "학술지 원문의 사본. 경상수지 적자 비율을 4.7%로 적어 K-Developedia(4.0%)와 다름"),
-    S("nd-kellogg-kr", "Kellogg Institute Working Paper 272 — 한국 재벌의 부채와 1997년 위기", "University of Notre Dame Kellogg Institute",
+    S("nd-kellogg-kr", "The 1997 Financial Crisis and Governance: The Case of South Korea (Kwan S. Kim, WP #272, 2000)", "University of Notre Dame Kellogg Institute",
       "https://kellogg.nd.edu/publications/workingpapers/WPS/272.pdf", "academic"),
     S("dallasfed-2001", "Economic and Financial Review 2001 Q4 — Korea's crisis and recovery", "Federal Reserve Bank of Dallas",
       "https://www.dallasfed.org/~/media/documents/research/efr/2001/efr0104c.pdf", "institution"),

@@ -13,7 +13,7 @@ def _wb(id_, code, title, note=""):
 
 
 def _fred(id_, sid, title, pub, note=""):
-    return {"id": id_, "title": f"{title} ({sid})", "publisher": pub, "url": f"https://fred.stlouisfed.org/data/{sid}",
+    return {"id": id_, "title": f"{title} ({sid})", "publisher": pub, "url": f"https://fred.stlouisfed.org/series/{sid}",
             "sourceType": "institution", "accessedDate": A, "note": note}
 
 

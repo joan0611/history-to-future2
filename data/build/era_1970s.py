@@ -206,7 +206,7 @@ ERA = {
     "advertisements": [
         {"id": "ad70-kr-pony", "product": "현대 포니", "country": "KR", "year": "1976", "documentIds": [],
          "appealedValues": ["국산 기술 자부심", "가족", "이동의 자유"],
-         "promisedLife": "'우리 차'로 가족과 함께 움직이는 생활 (광고 원문 미확인)",
+         "promisedLife": "광고 문구는 찾지 못함 — 확인된 것은 국산화율 90%·첫해 점유율 43%와 '마이카 시대'라는 평가",
          "realityCheck": "출시 첫해 판매는 1만 726대였다. 자가용은 아직 소수의 것이었고 대중화는 1980년대 후반이다. 1973~74년 유류 통제의 기억 속에서 시작된 마이카 시대였다.",
          "realityClaimIds": ["c70-pony-2", "c70-hyp-pony-ad"]},
     ],

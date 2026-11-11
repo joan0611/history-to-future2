@@ -25,6 +25,7 @@ import deep_2020 as d20c  # noqa: E402
 import fill_years as fy  # noqa: E402
 import corroborate as cor  # noqa: E402
 import flows as fl  # noqa: E402
+import links_extra as lx  # noqa: E402
 import verify_numbers as vn  # noqa: E402
 import cycles as cyc  # noqa: E402
 
@@ -50,7 +51,7 @@ def main():
         "indicators": ind.INDICATORS,
         "patterns": pat.build(ind.INDICATORS),
     }
-    seed["graph"] = gr.build(seed, pat.SIGNALS, [d73, d97, d08, d20c, fy])
+    seed["graph"] = gr.build(seed, pat.SIGNALS, [d73, d97, d08, d20c, fy, lx])
     seed["numberChecks"] = vn.run(seed["indicators"])
     # 독립성: 같은 원자료(발표·조사)를 옮긴 출처나 같은 발행처는 한 곳으로 센다
     srcs = {s["id"]: s for s in seed["sources"]}

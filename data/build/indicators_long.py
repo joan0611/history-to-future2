@@ -6,7 +6,7 @@ A = "2026-11-11"
 
 
 def _src(id_, sid, title, pub, note):
-    return {"id": id_, "title": f"{title} ({sid})", "publisher": pub, "url": f"https://fred.stlouisfed.org/data/{sid}",
+    return {"id": id_, "title": f"{title} ({sid})", "publisher": pub, "url": f"https://fred.stlouisfed.org/series/{sid}",
             "sourceType": "institution", "accessedDate": A, "note": note}
 
 

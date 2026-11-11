@@ -37,7 +37,7 @@ SOURCES = [
     S("us-crs-qe", "Federal Reserve: Unconventional Monetary Policy Options (RL30354 계열)", "U.S. Congressional Research Service", "https://www.everycrsreport.com/files/20180109_RL30354_45a47bc063382ffa81795fefb8fb48e8237c5e72.html", "government"),
     S("us-jep-qe", "Journal of Economic Perspectives 32(4) — Fed 대차대조표 5배 확대", "American Economic Association", "https://www.aeaweb.org/doi/10.1257/jep.32.4.121", "academic"),
     S("jp-bof-abe", "Abenomics: three years – the big ship turns slowly", "Bank of Finland Bulletin (2016)", "https://www.bofbulletin.fi/article/analysis/2016/abenomics-three-years-the-big-ship-turns-slowly/", "institution"),
-    S("jp-gov-abe", "The First and Second Arrows of Abenomics", "일본 정부 홍보 (japan.go.jp)", "https://japan.go.jp/letters/message/abenomics/2.html", "government"),
+    S("jp-gov-abe", "The First and Second Arrows of Abenomics", "일본 정부 홍보 (japan.go.jp)", "https://www.japan.go.jp/tomodachi/2013/winter2013/abenomics2.html", "government"),
 ]
 
 CLAIMS = [

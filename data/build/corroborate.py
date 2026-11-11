@@ -55,6 +55,48 @@ SOURCES = [
       "https://spectrum.ieee.org/tech-history/silicon-revolution/how-the-ibm-pc-won-then-lost-the-personal-computer-market", "news"),
 ]
 
+SOURCES += [
+    S("ad-lge-hitech", "\"순간의 선택이 10년을 좌우합니다\" — 금성사 광고 카피 이야기", "LG전자 뉴스룸",
+      "https://www.lge.co.kr/story/newsroom/172709", "company"),
+    S("ad-segye-230502", "2013년 세계 첫 올레드 55형 출시 (금성 하이테크 칼라비전 광고 언급)", "세계일보",
+      "https://www.segye.com/newsView/20230502513731", "news", note="제1회 한국방송광고대상 수상 언급"),
+    S("ad-samsung-anycall", "애니콜, 새 브랜드 슬로건 'Talk, Play, Love' (역대 슬로건 정리)", "삼성전자 뉴스룸",
+      "https://news.samsung.com/kr/%ec%95%a0%eb%8b%88%ec%bd%9c-%ec%83%88-%eb%b8%8c%eb%9e%9c%eb%93%9c-%ec%8a%ac%eb%a1%9c%ea%b1%b4-talk-play-love", "company"),
+    S("ad-hk-010625", "[한경 소비자 大賞] 이동전화 — 삼성전자 '애니콜'", "한국경제",
+      "https://www.hankyung.com/amp/2001062554441", "news", note="1995년 7월 국내 점유율 1위, 모토로라 추월"),
+    S("ad-etnews-080321", "[전자산업 50년] TV국산화와 가전산업의 태동", "전자신문",
+      "https://www.etnews.com/200803210022", "news", note="VD-191 출시와 공개 추첨 판매"),
+    S("ad-etnews-990603", "가전산업과 TV국산화", "전자신문",
+      "https://m.etnews.com/199906030056", "news", note="VD-191 가격 6만 3,510원, 일제·미제와 비교"),
+    S("ad-khan-230616-pony", "포니 — 국산화율 90%, 첫해 점유율 43%", "경향신문",
+      "https://www.khan.co.kr/article/202306160300045", "news"),
+    S("ad-bravo-151209-pony", "40돌 맞은 국내 첫 고유모델 車 '포니'", "브라보마이라이프(이투데이)",
+      "https://bravo.etoday.co.kr/view/atc_view/4641", "news"),
+    S("hs-economist-211231", "'저금리' vs '공급부족' 집값 폭등 이유 두고 시선 엇갈려", "이코노미스트",
+      "https://economist.co.kr/article/view/ecn202112310015", "news", note="국토연구원 기여도 분석·주택산업연구원 분석 소개"),
+    S("hs-nocut-210611", "공급 절벽에 매물 잠김까지…뛰고 또 뛰는 집값", "노컷뉴스",
+      "https://www.nocutnews.co.kr/news/5568983", "news", note="한국은행 금융안정보고서: 공급 부족·이례적 저금리"),
+]
+
+# 가설이던 문장을 확인한 내용으로 바꾼다(확인하지 못한 부분은 문장에 그대로 밝힌다)
+REPLACE = {
+    "c60-hyp-kr-ad": dict(
+        text="금성 VD-191의 광고 원문은 찾지 못했다. 다만 출시 당시 일제(17인치 7만 8천 원)보다 싼 6만 3,510원으로 값을 매겼고, 공급이 모자라 공개 추첨으로 팔았으며, '우리 손으로 TV를 만들었다'는 사실이 큰 자부심을 불러왔다는 기록이 있다.",
+        claimType="interpretation", status="sourced", sourceIds=["ad-etnews-080321", "ad-etnews-990603"]),
+    "c70-hyp-pony-ad": dict(
+        text="포니 광고의 문구는 찾지 못했다. 확인된 것은 국산화율 90%, 1976년 판매 1만 726대·시장 점유율 43%이고, 포니가 '마이카 시대'를 열고 공업화의 상징이 됐다는 평가다.",
+        claimType="interpretation", status="verified", sourceIds=["ad-khan-230616-pony", "ad-bravo-151209-pony"]),
+    "c80-hyp-ad": dict(
+        text="1980년대 초 금성 '하이테크 칼라비전' TV 광고의 카피는 '순간의 선택이 10년을 좌우합니다'였다. 컬러TV를 10년을 쓸 큰 결정으로 내세운 이 카피는 제1회 한국방송광고대상을 받았다.",
+        claimType="fact", status="verified", sourceIds=["ad-lge-hitech", "ad-segye-230502"]),
+    "c90-hyp-ad": dict(
+        text="삼성 애니콜의 첫 브랜드 슬로건은 '한국 지형에 강하다'(1995~98)였다. 외국산 휴대전화보다 한국 산지 지형에서 잘 터진다는 점을 내세웠고, 애니콜은 1995년 7월 모토로라를 제치고 국내 점유율 1위가 되었다. 1990년대 광고가 '세계화된 개인'을 내세웠으리라던 이전 가설과 달리, 확인된 광고는 '국산이 한국에 맞는다'를 강조했다.",
+        claimType="fact", status="verified", sourceIds=["ad-samsung-anycall", "ad-hk-010625"]),
+    "c10-hyp-asset": dict(
+        text="2017~2021년 집값 급등의 원인을 두고 국토연구원은 금리의 기여도가 가장 컸다고 분석했고(2017.5~2021.5, 샤플리 분해), 주택산업연구원은 공급 부족을 가장 큰 요인으로 꼽았다. 한국은행은 공급 부족과 이례적 저금리를 함께 들었다. 어느 한 요인으로 단정하기 어렵다는 평가도 있다.",
+        claimType="interpretation", status="sourced", sourceIds=["hs-economist-211231", "hs-nocut-210611"]),
+}
+
 # 주장 id → 추가 출처 id
 ADD = {
     "c70-kr-hci": ["kr-etnews-hci-1973"],
@@ -99,6 +141,10 @@ CLAIMS = [
 def apply(claims):
     """claims 목록을 제자리에서 고친다. 바뀐 주장 수를 돌려준다."""
     by = {c["id"]: c for c in claims}
+    for cid, r in REPLACE.items():
+        if cid not in by:
+            raise KeyError(f"corroborate: 없는 주장 {cid}")
+        by[cid].update(r)
     n = 0
     for cid, extra in ADD.items():
         c = by.get(cid)

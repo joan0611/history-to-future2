@@ -25,7 +25,7 @@ SOURCES = [
     S("us-hist-1967war", "The 1967 Arab-Israeli War (국무부 사료실 글 전재)", "Jewish Virtual Library (원문: 미국 국무부 사료실)",
       "https://www.jewishvirtuallibrary.org/the-1967-arab-israeli-war", "government", "국무부 사료실 글을 그대로 옮긴 페이지로 확인"),
     S("wana-1967", "Factsheet: 1967 Arab-Israeli War and Resolution 242", "WANA Institute",
-      "https://wanainstitute.org/sites/default/files/fact_sheets/1967%20War.pdf", "institution"),
+      "https://wanainstitute.org/en/fact_sheet/1967-arab-israeli-war-and-resolution-242", "institution"),
     S("israeled-242", "November 22, 1967 — Resolution 242", "Center for Israel Education",
       "https://israeled.org/resolution-242", "institution"),
     S("us-hist-embargo", "Oil Embargo, 1973–1974 (Milestones)", "미국 국무부 사료실(Office of the Historian)",

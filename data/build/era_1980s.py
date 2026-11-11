@@ -40,7 +40,7 @@ SOURCES = [
     S("kr-arch-travel2", "기록으로 보는 대한민국: 해외여행", "국가기록원", "https://theme.archives.go.kr/next/koreaOfRecord/globalTravel.do", "government"),
     S("kr-arch-film80", "영화 — 1980년대 문화영화와 TV·VTR", "국가기록원", "https://theme.archives.go.kr/next/movie/features07.do", "government"),
     S("kr-kdevelopedia-stab", "Macroeconomic Stabilization (1980s)", "KDI K-Developedia",
-      "https://www.kdevelopedia.org/Development-Overview/all/macroeconomic-stabilization--11.do", "institution"),
+      "https://www.kdevelopedia.org/k-db-originals/koreas-stabilization-policies-in-the-1980s", "institution"),
     S("kr-seoul-1994-bok", "한국은행 「경기상승기의 비교」 보도 (1994.6.10)", "서울신문", "https://www.seoul.co.kr/news/1994/06/10/19940610009003", "news"),
     S("kr-seoul-1991-labor", "노동부 노동백서 인용 보도 (1991.4.1)", "서울신문", "https://www.seoul.co.kr/news/1991/04/01/19910401014001", "news"),
     S("kr-khan-1987labor", "노동자대투쟁 30년, 기로에 선 노동운동", "주간경향", "https://weekly.khan.co.kr/article/201709121359581", "news"),
@@ -229,7 +229,7 @@ ERA = {
     "advertisements": [
         {"id": "ad80-kr-color", "product": "컬러TV (국산 가전 3사)", "country": "KR", "year": "1980~", "documentIds": ["doc80-chosun"],
          "appealedValues": ["총천연색의 새로움", "가족 여가", "현대적 생활"],
-         "promisedLife": "온 가족이 컬러 화면 앞에 모이는 거실 (광고 원문 미확인)",
+         "promisedLife": "'순간의 선택이 10년을 좌우합니다' — 오래 쓸 큰 결정으로서의 컬러TV (금성 하이테크 칼라비전)",
          "realityCheck": "흑백TV 보급률이 이미 90%였기에 컬러TV는 '새로 사는' 물건이 아니라 '바꾸는' 물건이었다. 정부가 방송 허용으로 교체 수요를 만든 정책 시장이었다.",
          "realityClaimIds": ["c80-colortv", "c80-hyp-ad"]},
     ],
