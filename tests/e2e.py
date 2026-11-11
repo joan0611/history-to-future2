@@ -77,6 +77,15 @@ with sync_playwright() as p:
     # 주소 유지
     pg.goto(U + '#/field/society?y=2018&ind=tfr-kr'); pg.reload(); pg.wait_for_timeout(700)
     ok('주소 유지(분야·지표·연도)', pg.get_by_role('tab', name='사회·생활·소비').get_attribute('aria-selected') == 'true' and '합계출산율' in pg.locator('.hero').inner_text())
+    # 2.0 장기 지표: 출산율 1960년부터 연속, 산업 분야 수출(로그 눈금)·취업자 비중, 환율
+    ok('출산율 1960년부터 연속(자료 없음 아님)', '1960' in pg.locator('.hero').inner_text() or pg.locator('.hero svg path').count() > 0)
+    pg.goto(U + '#/field/industry?y=1998'); pg.wait_for_timeout(700)
+    h = pg.locator('.hero').inner_text()
+    ok('산업: 수출액 기본 표시 + 로그 눈금 안내', '수출액' in h and '로그' in h)
+    pg.get_by_role('tab', name='제조업 취업자 비중').click(); pg.wait_for_timeout(400)
+    ok('산업: 제조업 취업자 비중 탭', 'ind=emp-mfg-kr' in pg.url and '1989' in pg.locator('.hero').inner_text())
+    pg.goto(U + '#/field/economy?y=1998&ind=fx-kr'); pg.wait_for_timeout(700)
+    ok('경제: 환율 지표와 고정환율기 설명', '환율' in pg.locator('.hero').inner_text() and '고정환율' in pg.locator('.hero').inner_text())
     pg.screenshot(path=os.path.join(SHOTS, 'e2e-field.png'))
     # 모바일
     m = b.new_context(viewport={'width': 390, 'height': 844}, has_touch=True, is_mobile=True).new_page()

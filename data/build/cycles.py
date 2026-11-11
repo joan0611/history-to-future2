@@ -15,6 +15,7 @@
 - 양성·음성 대조군(인공 사인파·흰잡음·직선 추세)으로 엔진 자체를 검사한다(test_cycles.py).
 """
 import numpy as np
+import zlib
 
 SEED = 20261111
 N_PERM = 2000
@@ -236,8 +237,25 @@ def sensitivity(t, y, rng, windows):
 
 
 # ---------- 엔진 ----------
+def _rng(key):
+    """지표마다 고정된 난수열 — 지표를 추가·삭제해도 다른 지표의 검정 결과가 바뀌지 않게."""
+    return np.random.default_rng([SEED, zlib.crc32(key.encode())])
+
+
+def _ep_text(x, side, thr):
+    b, u = x["episodeBasis"], x["episodeUnit"]
+    hi = side == "high"
+    if b == "추세 대비":
+        return f"추세선보다 1표준편차 이상 {'높았던' if hi else '낮았던'} 구간(경계 {thr}{u}): "
+    if b.startswith("전년 대비"):
+        return f"{b}{'이' if b.endswith('율') else '가'} 평소보다 1표준편차 이상 {'컸던' if hi else '작았던(또는 반대 방향이었던)'} 해(경계 {thr}{u}): "
+    return f"평균±1표준편차 밖({'위' if hi else '아래'}, 경계 {thr}{u})으로 나간 구간: "
+
+
 def run(indicators, signals, graph_nodes):
     rng = np.random.default_rng(SEED)
+    for ind in indicators:
+        _CAT[ind["id"]] = ind.get("category", "economy")
     series = {}
     for ind in indicators:
         if ind["frequency"] != "annual":
@@ -256,21 +274,33 @@ def run(indicators, signals, graph_nodes):
                              "verdict": "insufficient", "why": f"관측 {len(t)}개{'' if contiguous else '·중간 연도 빠짐'} — 반복을 계산할 수 없음",
                              "n": len(t), "from": int(t[0]), "to": int(t[-1])})
             continue
+        rng = _rng(key)
         c = classify_series(t, y, rng)
         r, fit, _ = detrend(t, y)
-        # 장기 추세가 강하면(E) 원값이 아니라 '추세 대비' 이탈로 급변 구간을 찾는다 — 추세를 반복으로 오인하지 않게
-        base = r if c.get("trendR2", 0) >= 0.3 else y - y.mean()
+        r2 = c.get("trendR2", 0)
+        # 급변 구간의 기준:
+        #  - 추세가 거의 전부인 수준 지표(R²≥0.6: 환율·기대수명·출산율 등)는 직선 추세 잔차가 곡선 모양의 오차일 뿐이므로
+        #    '전년 대비 변화'(원·달러 단위는 변화율 %)가 평소보다 컸던 해를 찾는다.
+        #  - 추세가 일부인 지표(0.3≤R²<0.6)는 추세 대비 이탈, 그 밖은 평균 대비 이탈.
+        if r2 >= 0.6:
+            pct = ind["unit"] in ("원", "달러", "억 달러")
+            dv = (np.diff(y) / y[:-1] * 100) if pct else np.diff(y)
+            et, base = t[1:], dv - dv.mean()
+            basis, eunit, center = ("전년 대비 변화율", "%", float(dv.mean())) if pct else ("전년 대비 변화", ind["unit"], float(dv.mean()))
+        elif r2 >= 0.3:
+            et, base, basis, eunit, center = t, r, "추세 대비", ("%p" if ind["unit"] == "%" else ind["unit"]), 0.0
+        else:
+            et, base, basis, eunit, center = t, y - y.mean(), "평균 대비", ind["unit"], float(y.mean())
         sd = float(np.std(base))
-        rel = c.get("trendR2", 0) >= 0.3
-        ep_hi = episodes(t, base, sd, True)
-        ep_lo = episodes(t, base, -sd, False)
-        hi_thr = round(float((y.mean() if not rel else 0) + sd), 2)
-        lo_thr = round(float((y.mean() if not rel else 0) - sd), 2)
+        ep_hi = episodes(et, base, sd, True)
+        ep_lo = episodes(et, base, -sd, False)
+        hi_thr = round(center + sd, 2)
+        lo_thr = round(center - sd, 2)
         sens = sensitivity(t, y, rng, [(1960, 1992), (1993, 2025), (1980, 2025)])
         a = {"key": key, "indicator": ind["id"], "country": S["s"]["country"], "title": ind["title"], "unit": ind["unit"],
              "from": int(t[0]), "to": int(t[-1]), "points": [[int(a_), round(float(b_), 2)] for a_, b_ in zip(t, y)],
              "trend": [[int(t[0]), round(float(fit[0]), 2)], [int(t[-1]), round(float(fit[-1]), 2)]],
-             "turningPoints": turning_points(t, y), "highThreshold": hi_thr, "lowThreshold": lo_thr, "episodeBasis": "추세 대비" if rel else "평균 대비",
+             "turningPoints": turning_points(t, y), "highThreshold": hi_thr, "lowThreshold": lo_thr, "episodeBasis": basis, "episodeUnit": eunit,
              "residual": [[int(a_), round(float(b_), 2)] for a_, b_ in zip(t, r)],
              "highEpisodes": ep_hi, "lowEpisodes": ep_lo, "highIntervals": interval_stats(ep_hi), "lowIntervals": interval_stats(ep_lo),
              "sensitivity": sens, **c}
@@ -303,8 +333,8 @@ def run(indicators, signals, graph_nodes):
                 continue
             reg = st["regular"]
             add({"id": f"f-{x['key']}-{side}", "type": "A" if reg and x["verdict"] == "A" else "B", "series": [x["key"]], "category": x_cat(x),
-                 "title": f"{x['title']}({country_ko(x['country'])}) {'급등' if side == 'high' else '급락'} 구간 {len(eps)}회",
-                 "summary": (f"추세선보다 1표준편차({thr}%p) 이상 {'높았던' if side == 'high' else '낮았던'} 구간: " if x["episodeBasis"] == "추세 대비" else f"평균±1표준편차({thr}{x['unit']}) 밖으로 나간 구간: ") + ", ".join(f"{a}" if a == b else f"{a}~{b}" for a, b in eps)
+                 "title": f"{x['title']}({country_ko(x['country'])}) " + ((f"{'평소보다 크게 오른' if side == 'high' else '평소보다 덜 오르거나 내린'} 해 {len(eps)}번") if x["episodeBasis"].startswith("전년 대비") else f"{'급등' if side == 'high' else '급락'} 구간 {len(eps)}회"),
+                 "summary": _ep_text(x, side, thr) + ", ".join(f"{a}" if a == b else f"{a}~{b}" for a, b in eps)
                  + f". 간격 {', '.join(map(str, st['gaps']))}년 — 변동계수 {st['cv']}"
                  + (" (간격이 비교적 일정하지만 횟수가 적어 주기로 확정하지 않음)" if reg else " → 간격이 일정하지 않은 불규칙한 반복"),
                  "periods": eps, "intervals": st["gaps"], "evidence": {"threshold": thr, "basis": x["episodeBasis"], "cv": st["cv"], "count": len(eps)}})
@@ -315,7 +345,7 @@ def run(indicators, signals, graph_nodes):
         lo, hi = max(g["t"][0], p["t"][0]), min(g["t"][-1], p["t"][-1])
         mg, mp = (g["t"] >= lo) & (g["t"] <= hi), (p["t"] >= lo) & (p["t"] <= hi)
         t = g["t"][mg]
-        an, npairs = window_analogs(t, [g["y"][mg], p["y"][mp]], w=5, top=4, rng=rng)
+        an, npairs = window_analogs(t, [g["y"][mg], p["y"][mp]], w=5, top=4, rng=_rng("analog:gdp-cpi"))
         rec = recent_analog(t, [g["y"][mg], p["y"][mp]], w=5)
         rec_pair = (tuple(rec[0]["past"]), tuple(rec[0]["recent"]))
         for i, x in enumerate([x for x in an if (tuple(x["a"]), tuple(x["b"])) != rec_pair]):
@@ -327,7 +357,7 @@ def run(indicators, signals, graph_nodes):
              "title": f"최근 5년({rec[0]['recent'][0]}~{rec[0]['recent'][1]})과 가장 닮은 과거: {rec[0]['past'][0]}~{rec[0]['past'][1]}",
              "summary": f"거리 {rec[0]['distance']} (과거 구간 중 하위 {rec[0]['percentile']}%). 2·3위: " + ", ".join(f"{r['past'][0]}~{r['past'][1]}" for r in rec[1:]),
              "periods": [rec[0]["past"], rec[0]["recent"]], "evidence": {"candidates": rec}, "current": True})
-        lc = lag_corr(g["t"], g["y"], p["t"], p["y"], rng)
+        lc = lag_corr(g["t"], g["y"], p["t"], p["y"], _rng("lag:gdp-cpi"))
         best = max(lc["values"], key=lambda v: abs(v["r"]))
         add({"id": "f-lag-gdp-cpi", "type": "R", "series": ["gdp-growth:KR", "cpi-kr:KR"], "category": "economy",
              "title": "성장률과 물가: 시차 관계" + (" — 우연 범위" if lc["p"] >= 0.05 else ""),
@@ -396,6 +426,8 @@ def country_ko(c):
     return {"KR": "한국", "US": "미국", "JP": "일본"}.get(c, c)
 
 
+_CAT = {}
+
+
 def x_cat(x):
-    return {"gdp-growth": "economy", "cpi-kr": "economy", "tfr-kr": "society", "one-person-kr": "society", "online-kr": "society",
-            "pcbang-kr": "industry", "oil-dep-kr": "economy"}.get(x["indicator"], "economy")
+    return _CAT.get(x["indicator"], "economy")

@@ -11,9 +11,9 @@ export interface Series { key: string; label: string; color: string; points: [nu
 export interface Band { from: number; to: number; tone?: 'hi' | 'lo' | 'cmp'; label?: string }
 export interface Marker { year: number; kind: 'peak' | 'trough'; label?: string }
 
-export function Chart({ series, unit, year, onPick, bands = [], markers = [], trend, height = 300, zero = true, x0 = MIN_Y, x1 = MAX_Y, eraBands = true, ariaLabel }: {
+export function Chart({ series, unit, year, onPick, bands = [], markers = [], trend, height = 300, zero = true, x0 = MIN_Y, x1 = MAX_Y, eraBands = true, ariaLabel, log = false }: {
   series: Series[]; unit: string; year?: number; onPick?: (y: number) => void; bands?: Band[]; markers?: Marker[];
-  trend?: [number, number][]; height?: number; zero?: boolean; x0?: number; x1?: number; eraBands?: boolean; ariaLabel: string;
+  trend?: [number, number][]; height?: number; zero?: boolean; x0?: number; x1?: number; eraBands?: boolean; ariaLabel: string; log?: boolean;
 }) {
   const box = useRef<HTMLDivElement>(null);
   const [w, setW] = useState(800);
@@ -25,21 +25,24 @@ export function Chart({ series, unit, year, onPick, bands = [], markers = [], tr
     return () => ro.disconnect();
   }, []);
   const narrow = w < 560;
-  const all = series.flatMap((s) => s.points.map((p) => p[1]));
-  const lo0 = Math.min(...all, zero ? 0 : Infinity), hi0 = Math.max(...all);
+  // log: 값이 수백 배로 변하는 지표는 배수(로그) 눈금 — 같은 높이 = 같은 배율
+  const tf = (v: number) => (log ? Math.log10(Math.max(v, 1e-9)) : v);
+  const all = series.flatMap((s) => s.points.map((p) => tf(p[1])));
+  const lo0 = Math.min(...all, zero && !log ? 0 : Infinity), hi0 = Math.max(...all);
   const pad = (hi0 - lo0) * 0.08 || 1;
-  const lo = zero && lo0 >= 0 ? 0 : lo0 - pad, hi = hi0 + pad;
+  const lo = log ? Math.floor(lo0) : zero && lo0 >= 0 ? 0 : lo0 - pad, hi = log ? Math.ceil(hi0) : hi0 + pad;
   const m = { l: narrow ? 34 : 44, r: narrow ? 10 : 16, t: 16, b: 28 };
   const H = narrow ? Math.round(height * 0.8) : height;
   const X = (y: number) => m.l + ((y - x0) / (x1 - x0)) * (w - m.l - m.r);
-  const Y = (v: number) => m.t + (1 - (v - lo) / (hi - lo)) * (H - m.t - m.b);
+  const Y = (v: number) => m.t + (1 - (tf(v) - lo) / (hi - lo)) * (H - m.t - m.b);
   const ticks = useMemo(() => {
+    if (log) { const o = []; for (let e = lo; e <= hi; e++) o.push(10 ** e); return o; }
     const span = hi - lo, step0 = span / 5, mag = 10 ** Math.floor(Math.log10(step0));
     const step = [1, 2, 2.5, 5, 10].map((k) => k * mag).find((s) => span / s <= 6) ?? mag * 10;
     const out = [];
     for (let v = Math.ceil(lo / step) * step; v <= hi; v += step) out.push(Math.round(v * 100) / 100);
     return out;
-  }, [lo, hi]);
+  }, [lo, hi, log]);
   const years = [...new Set(series.flatMap((s) => s.points.map((p) => p[0])))].sort((a, b) => a - b);
 
   const pick = (clientX: number) => {
@@ -83,7 +86,7 @@ export function Chart({ series, unit, year, onPick, bands = [], markers = [], tr
         {ticks.map((v) => (
           <g key={v}>
             <line x1={m.l} x2={w - m.r} y1={Y(v)} y2={Y(v)} className={v === 0 ? 'zero' : 'grid'} />
-            <text x={m.l - 6} y={Y(v) + 4} textAnchor="end" className="axis-t">{v}</text>
+            <text x={m.l - 6} y={Y(v) + 4} textAnchor="end" className="axis-t">{v.toLocaleString()}</text>
           </g>
         ))}
         {trend && <line x1={X(trend[0][0])} y1={Y(trend[0][1])} x2={X(trend[1][0])} y2={Y(trend[1][1])} className="trend" />}

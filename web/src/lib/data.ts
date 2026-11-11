@@ -20,7 +20,7 @@ export type Rel = 'cause' | 'background' | 'trigger' | 'influence' | 'sequence' 
 export type Verif = 'evidenced' | 'interpretation' | 'statistical' | 'hypothesis';
 export interface Chain { id: string; kind: string; title: string; steps: { nodeId: string; stage: string; stageLabel: string }[]; countryResponses?: { country: string; situation: string }[] }
 export interface Indicator {
-  id: string; title: string; unit: string; frequency: 'annual' | 'monthly'; description: string; note?: string; category?: Cat;
+  id: string; title: string; unit: string; frequency: 'annual' | 'monthly'; description: string; note?: string; category?: Cat; log?: boolean;
   series: { country: string; label: string; sourceIds: string[]; points: [string, number][] }[]; zeroLine?: boolean; refLine?: { value: number; label: string };
 }
 export interface Doc { id: string; publication: string; title: string; publishedDate: string; url: string; verification: { accessLevel: string; whatWasViewed?: string } }

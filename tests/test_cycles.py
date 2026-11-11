@@ -69,6 +69,11 @@ def test_real_data_findings_exist_and_are_honest():
     v = {a["key"]: a["verdict"] for a in d["analyses"]}
     assert v["gdp-growth:KR"] != "A" and v["cpi-kr:KR"] != "A"
     # 짧은 시계열은 계산을 거부
-    assert v["tfr-kr:KR"] == "insufficient"
+    assert v["one-person-kr:KR"] == "insufficient" and v["pcbang-kr:KR"] == "insufficient"
+    # 출산율(1960~)은 뚜렷한 장기 하락 → 주기가 아니라 구조 변화(E)
+    assert v["tfr-kr:KR"] == "E"
+    # 강한 추세 지표의 급변 구간은 '전년 대비 변화' 기준이어야 한다(직선 잔차의 곡선 오차를 반복으로 오인하지 않게)
+    basis = {a["key"]: a.get("episodeBasis") for a in d["analyses"]}
+    assert basis["fx-kr:KR"] == "전년 대비 변화율" and basis["life-kr:KR"] == "전년 대비 변화"
     for f in d["findings"]:
         assert f["confidence"]["level"] in ("높음", "보통", "낮음") and f["summary"]

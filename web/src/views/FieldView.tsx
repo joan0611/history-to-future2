@@ -11,14 +11,17 @@ import { Lifecycle } from '../ui/Lifecycle';
  */
 const SERIES_COLOR: Record<string, string> = { KR: 'var(--c-economy)', US: 'var(--ink-3)', JP: 'var(--c-industry)' };
 const MISSING: Record<Cat, string[]> = {
-  economy: ['금리·환율 장기 시계열(한국은행 ECOS) — 아직 수집하지 않음', '에너지 소비량 연속 자료 — 석유의존도는 1973·2010년 두 시점만'],
-  industry: ['농업·제조업·서비스업 비중, 산업별 고용 비중(KOSIS) — 아직 수집하지 않음', '기술 보급률(전화·자동차·인터넷) 연속 자료', '직업구조 통계'],
-  society: ['1960~2014년 출산율', '고용·임금·주거·가계지출 장기 자료'],
+  economy: ['금리 장기 시계열 — 아직 수집하지 않음(정책금리 체계가 1999년에 바뀌어 하나의 선으로 잇기 어려움)', '1989년 이전 실업률', '에너지 소비량 연속 자료 — 석유의존도는 1973·2010년 두 시점만'],
+  industry: ['산업별 생산(부가가치) 비중 — 아직 수집하지 않음', '1983년 이전 산업별 취업자 비중(제조업은 1989년 이전)', '자동차·유선전화 보급률', '직업구조 통계'],
+  society: ['임금·주거·가계지출 장기 자료', '1인 가구 2015년 이전 연속 자료'],
   politics: ['정치는 수치 지표 대신 시대별 흐름도로 표시합니다. 정권·제도를 숫자로 바꾼 지표는 만들지 않습니다.'],
   culture: ['음악 차트·음반 판매·방송 통계 — 아직 수집하지 않음(지금은 기록으로 확인된 단계만)', '패션 자료 없음'],
   flow: ['재등장 사례가 아직 적어 반복 간격을 계산할 수 없습니다.'],
 };
-const NUMERIC: Record<Cat, string[]> = { economy: ['gdp-growth', 'cpi-kr', 'oil-dep-kr'], industry: ['pcbang-kr'], society: ['tfr-kr', 'one-person-kr', 'online-kr'], politics: [], culture: [], flow: [] };
+const NUMERIC: Record<Cat, string[]> = {
+  economy: ['gdp-growth', 'gdppc-kr', 'cpi-kr', 'fx-kr', 'unemp-kr', 'oil-dep-kr'],
+  industry: ['exports-kr', 'emp-ag-kr', 'emp-mfg-kr', 'emp-svc-kr', 'internet-kr', 'mobile-kr', 'pcbang-kr'],
+  society: ['tfr-kr', 'aged-kr', 'life-kr', 'one-person-kr', 'online-kr'], politics: [], culture: [], flow: [] };
 const SIGNALS: Record<Cat, string[]> = { economy: ['ch-sg-debt'], industry: ['ch-sg-chip', 'ch-sg-connect'], society: ['ch-sg-household'], politics: ['ch-sg-china'], culture: ['ch-sg-folk', 'ch-sg-kculture'], flow: [] };
 
 export function FieldView({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) => void; why: (id: string) => void }) {
@@ -126,12 +129,13 @@ function NumericMain({ ind, inds, r, nav }: { ind: Indicator; inds: Indicator[];
         {ind.series.length > 1 && <label><input type="checkbox" checked={others} onChange={(e) => setOthers(e.target.checked)} /> 미국·일본 함께 보기</label>}
       </div>
       <Chart ariaLabel={`${ind.title} 장기 추이`} unit={ind.unit} year={r.y} onPick={(y) => nav({ y })} series={series} bands={bands} markers={markers}
-        trend={a?.verdict === 'E' ? a.trend : undefined} height={320} zero={!!ind.zeroLine} />
+        trend={a?.verdict === 'E' && !ind.log ? a.trend : undefined} height={320} zero={!!ind.zeroLine} log={!!ind.log} />
       <div className="legend">
         <span><i className="lg-line" />{ind.title}</span>
         {bands.length > 0 && <><span><i className="lg-hi" />{a?.episodeBasis} 크게 높았던 구간</span><span><i className="lg-lo" />{a?.episodeBasis} 크게 낮았던 구간</span></>}
         {markers.length > 0 && <span>▼▲ 자동 탐지한 고점·저점(누르면 그 해로)</span>}
-        {a?.verdict === 'E' && <span><i className="lg-trend" />장기 추세선</span>}
+        {a?.verdict === 'E' && !ind.log && <span><i className="lg-trend" />장기 추세선</span>}
+        {ind.log && <span>세로축: 배수(로그) 눈금</span>}
         <span><i className="lg-sel" />선택 연도</span>
       </div>
       <SourceLine ids={ind.series.flatMap((s) => s.sourceIds)} extra={ind.note} />

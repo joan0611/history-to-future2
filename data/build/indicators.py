@@ -110,3 +110,12 @@ CATEGORY = {"gdp-growth": "economy", "tfr-kr": "society", "one-person-kr": "soci
             "cpi-kr-2022": "economy", "pcbang-kr": "industry", "cpi-kr": "economy", "oil-dep-kr": "economy"}
 for _i in INDICATORS:
     _i.setdefault("category", CATEGORY.get(_i["id"], "economy"))
+
+
+# ---- 2.0 장기 지표 보강 ----
+import indicators_long as _L
+SOURCES += _L.SOURCES
+INDICATORS += _L.INDICATORS
+for _i in INDICATORS:
+    if _i["id"] == "tfr-kr":
+        _L.merge_tfr(_i)
