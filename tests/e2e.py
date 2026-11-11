@@ -130,6 +130,13 @@ with sync_playwright() as p:
     ok('통계청: 임금근로자·자영업자·무급가족종사자 1963~', '임금근로자' in h and '무급가족종사자' in h and '통계청' in h)
     pg.goto(U + '#/field/industry?y=2020&ind=occ-mix-kr'); pg.wait_for_timeout(700)
     ok('통계청: 직업 구성(전문가 등)', '전문가' in pg.locator('.hero').inner_text())
+    # 코로나19 심층 사례: 확산 → 금리·통화스와프·재난지원금 → 소비 변화, 2008과 비교
+    pg.goto(U + '#/history?z=year&y=2020&why=d20-spread&path=d20-spread'); pg.wait_for_timeout(700)
+    w = pg.locator('.why').inner_text()
+    ok('코로나19: 확산의 결과(빅컷·통화스와프·재난지원금·소비 변화)', all(k in w for k in ['빅컷', '통화스와프', '재난지원금']))
+    pg.goto(U + '#/history?z=year&y=2021&why=d20-hike&path=d20-hike'); pg.wait_for_timeout(700)
+    w = pg.locator('.why').inner_text()
+    ok('코로나19: 금리 인상 전환의 원인(집값·가계부채)', '가계부채' in w)
     pg.screenshot(path=os.path.join(SHOTS, 'e2e-field.png'))
     # 모바일
     m = b.new_context(viewport={'width': 390, 'height': 844}, has_touch=True, is_mobile=True).new_page()

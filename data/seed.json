@@ -9211,6 +9211,149 @@
     "KR"
    ],
    "aiSynthesized": false
+  },
+  {
+   "id": "c2020-first",
+   "text": "국내 첫 코로나19 확진자는 2020년 1월 20일 인천공항 검역 단계에서 확인되었다(중국 우한에서 입국한 여성). 한 달 동안 30명 안팎이던 확진자는 2월 18일 대구의 31번째 환자 이후 급증해, 한 달 만에 대구·경북 누적 확진자가 약 8,000명이 되었다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "kr-newsis-covid3y",
+    "kr-korea-covid-2020"
+   ],
+   "domains": [
+    "society",
+    "politics"
+   ],
+   "countries": [
+    "KR",
+    "CN"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c2020-bigcut",
+   "text": "한국은행은 2020년 3월 16일 임시 금융통화위원회를 열어 기준금리를 1.25%에서 0.75%로 0.5%포인트 내렸다(사상 첫 0%대). 전날 미국 연준이 제로금리로 돌아간 직후였고, 5월 28일 다시 0.5%로 내렸다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "kr-seoul-bigcut",
+    "kr-newsis-bigcut",
+    "kr-kbmaeil-0528"
+   ],
+   "domains": [
+    "economy"
+   ],
+   "countries": [
+    "KR",
+    "US"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c2020-swap",
+   "text": "2020년 3월 19일 한국은행은 미 연준과 600억 달러 통화스와프를 맺었다. 2008년(300억 달러) 이후 두 번째로, 달러 자금시장 경색과 환율 급등(이날 1,285.7원)에 대응한 것이다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "kr-newsis-swap2020",
+    "kr-dailian-swap2020"
+   ],
+   "domains": [
+    "economy",
+    "politics"
+   ],
+   "countries": [
+    "KR",
+    "US"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c2020-relief",
+   "text": "정부는 2020년 5월 모든 가구에 긴급재난지원금(1인 가구 40만 원~4인 이상 가구 100만 원)을 지급했다. 국비 12조 2천억 원과 지방비 2조 1천억 원을 합쳐 14조 3천억 원 규모였다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "kr-kbmaeil-relief",
+    "kr-seoulmedia-relief"
+   ],
+   "domains": [
+    "politics",
+    "society"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c2020-hike",
+   "text": "한국은행은 2021년 8월 26일 기준금리를 0.5%에서 0.75%로 올려 2년 9개월 만에 긴축으로 돌아섰다. 코로나 확산보다 가계부채 급증과 집값 상승(금융불균형)을 더 큰 위험으로 본 결정으로 해석되었다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "kr-bizwatch-hike",
+    "kr-tomato-hike"
+   ],
+   "domains": [
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c2020-endsd",
+   "text": "사회적 거리두기는 2022년 4월 18일 2년 1개월(757일) 만에 전면 해제되었다. 영업시간·사적모임 인원 제한이 사라졌고, 오미크론 유행이 3월 셋째 주를 정점으로 줄어든 것이 배경이었다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "kr-seoulmedia-endsd",
+    "kr-seoul-endsd"
+   ],
+   "domains": [
+    "society",
+    "politics"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c2020-spend",
+   "text": "한국은행 국민계정으로 계산하면 가계 소비 가운데 오락·스포츠·문화의 몫은 2019년 7.54%에서 2020년 6.16%로, 의류·신발은 6.08%에서 5.15%로 줄었다. 반대로 식료품 몫은 11.53%에서 12.95%로 늘었다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "ecos-hhcons"
+   ],
+   "domains": [
+    "society",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c2020-gdp",
+   "text": "한국은행 실질 GDP로 계산한 2020년 성장률은 -0.7%로, 1998년(-4.9%) 이후 처음 마이너스였다. 2021년에는 4.7%로 반등했다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "ecos-rgdp"
+   ],
+   "domains": [
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false
   }
  ],
  "sources": [
@@ -12394,6 +12537,110 @@
    "title": "외환건전성부담금으로 자본유출입 3대 규제 완성 (2010.12.19)",
    "publisher": "파이낸셜뉴스",
    "url": "https://www.fnnews.com/news/201012191908512306",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-newsis-covid3y",
+   "title": "[코로나 3년] 확진자 첫 발생부터 실내마스크 완화까지 (2023.1.19)",
+   "publisher": "뉴시스",
+   "url": "https://www.newsis.com/view/NISX20230119_0002165072",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-korea-covid-2020",
+   "title": "2020년 코로나19 1년 정리 — 31번째 환자 이후 대구·경북 급증",
+   "publisher": "대한민국 정책브리핑",
+   "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148881350",
+   "sourceType": "government",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-seoul-bigcut",
+   "title": "美 이어 한은도 '빅컷'… 첫 0%대 금리 (2020.3.17)",
+   "publisher": "서울신문",
+   "url": "https://m.seoul.co.kr/news/2020/03/17/20200317001026",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-newsis-bigcut",
+   "title": "한은, 기준금리 0.75%로 인하…'미지의 길' 간다 (2020.3.16)",
+   "publisher": "뉴시스",
+   "url": "https://www.newsis.com/view/NISX20200316_0000957725",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-kbmaeil-0528",
+   "title": "한은, 기준금리 0.25%p 인하…0.5%로 역대 최저 (2020.5.28)",
+   "publisher": "경북매일",
+   "url": "https://kbmaeil.com/article/202005280279610",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-newsis-swap2020",
+   "title": "한·미 600억달러 통화스와프 체결…10년만에 재개 (2020.3.19)",
+   "publisher": "뉴시스",
+   "url": "https://www.newsis.com/view/NISX20200319_0000962921",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-dailian-swap2020",
+   "title": "한미 통화스왑은 2008년 이후 두 번째 (2020.3.19)",
+   "publisher": "데일리안",
+   "url": "https://m.dailian.co.kr/news/view/877456",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-kbmaeil-relief",
+   "title": "전국민 긴급재난지원금 5월 13일부터 지급… 총 14조 3천억 원 (2020.4.30)",
+   "publisher": "경북매일",
+   "url": "https://kbmaeil.com/article/202004300277560",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-seoulmedia-relief",
+   "title": "전 국민 '긴급재난지원금' 이렇게 신청하세요 (2020.5.12)",
+   "publisher": "서울시 내 손안에 서울",
+   "url": "https://mediahub.seoul.go.kr/archives/1280379",
+   "sourceType": "government",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-bizwatch-hike",
+   "title": "한은 기준금리 0.75%로 인상 — 가계부채·집값 위험 (2021.8.26)",
+   "publisher": "비즈워치",
+   "url": "https://news.bizwatch.co.kr/article/finance/2021/08/26/0007",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-tomato-hike",
+   "title": "2년 9개월 만에 긴축 선회 — '금융불균형'이 더 심각 판단 (2021.8.26)",
+   "publisher": "뉴스토마토",
+   "url": "https://newstomato.com/ReadNews.aspx?no=1069502",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-seoulmedia-endsd",
+   "title": "18일부터 사회적 거리두기 전면 해제…마스크 유지 (2022.4.15)",
+   "publisher": "서울시 내 손안에 서울",
+   "url": "https://mediahub.seoul.go.kr/archives/2004303",
+   "sourceType": "government",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-seoul-endsd",
+   "title": "들뜬 자영업자들 '매출 벌써 올라요' — 757일 만에 해제 (2022.4.18)",
+   "publisher": "서울신문",
+   "url": "https://m.seoul.co.kr/news/2022/04/18/20220418001012",
    "sourceType": "news",
    "accessedDate": "2026-11-11"
   }
@@ -34485,7 +34732,7 @@
     ],
     "eventIds": [],
     "deep": true,
-    "degree": 2
+    "degree": 3
    },
    {
     "id": "e00-lehman",
@@ -35321,6 +35568,150 @@
     "nodeType": "event"
    },
    {
+    "id": "d20-bigcut",
+    "label": "기준금리 '빅컷' 1.25% → 0.5% (2020.3~5)",
+    "year": 2020,
+    "yearPrecision": "year",
+    "lane": "economy",
+    "nodeType": "reaction",
+    "countries": [
+     "KR",
+     "US"
+    ],
+    "importance": 1,
+    "claimIds": [
+     "c2020-bigcut"
+    ],
+    "kind": "phenomenon",
+    "eraId": "2020s",
+    "domains": [
+     "economy"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 2
+   },
+   {
+    "id": "d20-gdp",
+    "label": "1998년 이후 첫 역성장 (2020년 -0.7%)",
+    "year": 2020,
+    "yearPrecision": "year",
+    "lane": "economy",
+    "nodeType": "outcome",
+    "countries": [
+     "KR"
+    ],
+    "importance": 2,
+    "claimIds": [
+     "c2020-gdp"
+    ],
+    "kind": "phenomenon",
+    "eraId": "2020s",
+    "domains": [
+     "economy"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 1
+   },
+   {
+    "id": "d20-relief",
+    "label": "전 국민 긴급재난지원금 14조 3천억 원 (2020.5)",
+    "year": 2020,
+    "yearPrecision": "year",
+    "lane": "politics",
+    "nodeType": "reaction",
+    "countries": [
+     "KR"
+    ],
+    "importance": 2,
+    "claimIds": [
+     "c2020-relief"
+    ],
+    "kind": "phenomenon",
+    "eraId": "2020s",
+    "domains": [
+     "politics",
+     "society"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 1
+   },
+   {
+    "id": "d20-spend",
+    "label": "소비의 이동: 문화·의류 ↓, 식료품 ↑",
+    "year": 2020,
+    "yearPrecision": "year",
+    "lane": "society",
+    "nodeType": "outcome",
+    "countries": [
+     "KR"
+    ],
+    "importance": 2,
+    "claimIds": [
+     "c2020-spend"
+    ],
+    "kind": "phenomenon",
+    "eraId": "2020s",
+    "domains": [
+     "culture",
+     "society"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 1
+   },
+   {
+    "id": "d20-spread",
+    "label": "대구 집단감염과 1차 대유행 (2020.2~3)",
+    "year": 2020,
+    "yearPrecision": "year",
+    "lane": "society",
+    "nodeType": "trigger",
+    "countries": [
+     "KR"
+    ],
+    "importance": 1,
+    "claimIds": [
+     "c2020-first"
+    ],
+    "kind": "phenomenon",
+    "eraId": "2020s",
+    "domains": [
+     "politics",
+     "society"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 8
+   },
+   {
+    "id": "d20-swap",
+    "label": "한·미 600억 달러 통화스와프 (2020.3.19)",
+    "year": 2020,
+    "yearPrecision": "year",
+    "lane": "politics",
+    "nodeType": "event",
+    "countries": [
+     "KR",
+     "US"
+    ],
+    "importance": 2,
+    "claimIds": [
+     "c2020-swap"
+    ],
+    "kind": "event",
+    "eraId": "2020s",
+    "domains": [
+     "economy",
+     "politics"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 2
+   },
+   {
     "id": "e20-covid",
     "kind": "event",
     "label": "국내 첫 코로나19 확진",
@@ -35342,7 +35733,7 @@
     "eventIds": [
      "e20-covid"
     ],
-    "degree": 0,
+    "degree": 1,
     "docIds": [
      "doc20-newspapers"
     ],
@@ -35501,7 +35892,7 @@
       }
      ]
     },
-    "degree": 0,
+    "degree": 2,
     "nodeType": "trend"
    },
    {
@@ -35545,8 +35936,31 @@
       }
      ]
     },
-    "degree": 0,
+    "degree": 1,
     "nodeType": "trend"
+   },
+   {
+    "id": "d20-hike",
+    "label": "금리 인상 전환 (2021.8) — 가계부채·집값",
+    "year": 2021,
+    "yearPrecision": "year",
+    "lane": "economy",
+    "nodeType": "reaction",
+    "countries": [
+     "KR"
+    ],
+    "importance": 2,
+    "claimIds": [
+     "c2020-hike"
+    ],
+    "kind": "phenomenon",
+    "eraId": "2020s",
+    "domains": [
+     "economy"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 2
    },
    {
     "id": "n-2020s-아파트값-2021년-18-2022년-7",
@@ -35570,6 +35984,30 @@
     "eventIds": [],
     "degree": 1,
     "nodeType": "outcome"
+   },
+   {
+    "id": "d20-endsd",
+    "label": "사회적 거리두기 전면 해제 (2022.4.18)",
+    "year": 2022,
+    "yearPrecision": "year",
+    "lane": "society",
+    "nodeType": "event",
+    "countries": [
+     "KR"
+    ],
+    "importance": 2,
+    "claimIds": [
+     "c2020-endsd"
+    ],
+    "kind": "event",
+    "eraId": "2020s",
+    "domains": [
+     "politics",
+     "society"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 1
    },
    {
     "id": "e20-chatgpt",
@@ -35672,7 +36110,7 @@
     "countries": [
      "KR"
     ],
-    "importance": 2,
+    "importance": 1,
     "claimIds": [
      "c20-kr-cpi"
     ],
@@ -35682,7 +36120,7 @@
     "aliases": [
      "한국 물가 6.3% (24년 만의 최고)"
     ],
-    "degree": 2,
+    "degree": 3,
     "docIds": [
      "doc20-newspapers"
     ],
@@ -35806,7 +36244,7 @@
      "금리 급등과 집값 하락 (2022~)",
      "아파트값 급등 뒤 금리 인상기 하락"
     ],
-    "degree": 4,
+    "degree": 6,
     "docIds": [
      "doc20-newspapers"
     ],
@@ -37909,6 +38347,14 @@
     "title": "2008년 글로벌 금융위기와 한국 (선물환·단기외채 → 리먼 → 환율 급등 → 통화스와프·금리·추경 → 거시건전성 규제)",
     "ref": "2000s",
     "eraId": "2000s",
+    "steps": []
+   },
+   {
+    "id": "deep-2020",
+    "kind": "case",
+    "title": "코로나19와 한국 (2020~2022: 감염 확산 → 금리·재정 대응 → 생활·소비 변화 → 집값·금리 인상)",
+    "ref": "2020s",
+    "eraId": "2020s",
     "steps": []
    }
   ],
@@ -40439,6 +40885,167 @@
     "note": "통화정책·미시건전성 정책만으로는 대응하기 어렵다는 반성",
     "claimIds": [
      "c08-mpm"
+    ]
+   },
+   {
+    "id": "e-deep-2020-0",
+    "from": "e20-covid",
+    "to": "d20-spread",
+    "rel": "sequence",
+    "verification": "evidenced",
+    "chainId": "deep-2020",
+    "note": "첫 확진 한 달 뒤 대구에서 급증",
+    "claimIds": [
+     "c2020-first"
+    ]
+   },
+   {
+    "id": "e-deep-2020-1",
+    "from": "d20-spread",
+    "to": "d20-bigcut",
+    "rel": "cause",
+    "verification": "evidenced",
+    "chainId": "deep-2020",
+    "note": "감염 확산에 따른 경제 충격에 대응한 임시 금리 인하",
+    "claimIds": [
+     "c2020-bigcut"
+    ]
+   },
+   {
+    "id": "e-deep-2020-2",
+    "from": "d20-spread",
+    "to": "d20-swap",
+    "rel": "cause",
+    "verification": "evidenced",
+    "chainId": "deep-2020",
+    "note": "세계적 달러 경색과 환율 급등",
+    "claimIds": [
+     "c2020-swap"
+    ]
+   },
+   {
+    "id": "e-deep-2020-3",
+    "from": "d08-swap",
+    "to": "d20-swap",
+    "rel": "similar",
+    "verification": "evidenced",
+    "chainId": "deep-2020",
+    "note": "2008년 통화스와프의 경험을 같은 방식으로 다시 씀(규모는 두 배)",
+    "claimIds": [
+     "c08-swap",
+     "c2020-swap"
+    ]
+   },
+   {
+    "id": "e-deep-2020-4",
+    "from": "d20-spread",
+    "to": "d20-relief",
+    "rel": "cause",
+    "verification": "evidenced",
+    "chainId": "deep-2020",
+    "note": "생계 충격에 대한 재정 대응",
+    "claimIds": [
+     "c2020-relief"
+    ]
+   },
+   {
+    "id": "e-deep-2020-5",
+    "from": "d20-spread",
+    "to": "d20-gdp",
+    "rel": "cause",
+    "verification": "interpretation",
+    "chainId": "deep-2020",
+    "note": "방역에 따른 활동 위축이 역성장으로 이어졌다는 일반적 해석(성장률 분해는 아직 하지 않음)",
+    "claimIds": [
+     "c2020-gdp"
+    ]
+   },
+   {
+    "id": "e-deep-2020-6",
+    "from": "d20-spread",
+    "to": "d20-spend",
+    "rel": "influence",
+    "verification": "interpretation",
+    "chainId": "deep-2020",
+    "note": "모임·공연·외출이 줄며 소비 구성이 바뀜(항목별 비중 변화는 통계, 원인은 해석)",
+    "claimIds": [
+     "c2020-spend"
+    ]
+   },
+   {
+    "id": "e-deep-2020-7",
+    "from": "d20-spread",
+    "to": "tr-t20-untact",
+    "rel": "cause",
+    "verification": "evidenced",
+    "chainId": "deep-2020",
+    "note": "온라인 수업·온라인쇼핑 급증",
+    "claimIds": [
+     "c20-covid-kr",
+     "c20-online"
+    ]
+   },
+   {
+    "id": "e-deep-2020-8",
+    "from": "d20-bigcut",
+    "to": "tr-t20-home",
+    "rel": "influence",
+    "verification": "interpretation",
+    "chainId": "deep-2020",
+    "note": "초저금리가 2020~21년 집값 급등을 키웠다는 해석(지역별 대출 자료와의 연결은 아직 없음)",
+    "claimIds": [
+     "c2020-bigcut",
+     "c20-house"
+    ]
+   },
+   {
+    "id": "e-deep-2020-9",
+    "from": "tr-t20-home",
+    "to": "d20-hike",
+    "rel": "cause",
+    "verification": "evidenced",
+    "chainId": "deep-2020",
+    "note": "가계부채·집값 위험을 이유로 금리 인상 시작",
+    "claimIds": [
+     "c2020-hike"
+    ]
+   },
+   {
+    "id": "e-deep-2020-10",
+    "from": "d20-hike",
+    "to": "e20-rate",
+    "rel": "sequence",
+    "verification": "evidenced",
+    "chainId": "deep-2020",
+    "note": "2022~23년 연속 인상으로 이어짐(물가 급등도 겹침)",
+    "claimIds": [
+     "c2020-hike",
+     "c20-kr-rate"
+    ]
+   },
+   {
+    "id": "e-deep-2020-11",
+    "from": "e20-kcpi",
+    "to": "e20-rate",
+    "rel": "cause",
+    "verification": "evidenced",
+    "chainId": "deep-2020",
+    "note": "물가 급등이 빠른 금리 인상의 배경",
+    "claimIds": [
+     "c20-kr-cpi",
+     "c20-kr-rate"
+    ]
+   },
+   {
+    "id": "e-deep-2020-12",
+    "from": "d20-spread",
+    "to": "d20-endsd",
+    "rel": "sequence",
+    "verification": "evidenced",
+    "chainId": "deep-2020",
+    "note": "2년 1개월 뒤 거리두기 해제",
+    "claimIds": [
+     "c2020-endsd"
     ]
    }
   ],
