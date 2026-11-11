@@ -11,17 +11,17 @@ import { Lifecycle } from '../ui/Lifecycle';
  */
 const SERIES_COLOR: Record<string, string> = { KR: 'var(--c-economy)', US: 'var(--ink-3)', JP: 'var(--c-industry)' };
 const MISSING: Record<Cat, string[]> = {
-  economy: ['금리 장기 시계열 — 아직 수집하지 않음(정책금리 체계가 1999년에 바뀌어 하나의 선으로 잇기 어려움)', '1989년 이전 실업률', '에너지 소비량 연속 자료 — 석유의존도는 1973·2010년 두 시점만'],
-  industry: ['산업별 생산(부가가치) 비중 — 아직 수집하지 않음', '1983년 이전 산업별 취업자 비중(제조업은 1989년 이전)', '자동차·유선전화 보급률', '직업구조 통계'],
-  society: ['임금·주거·가계지출 장기 자료', '1인 가구 2015년 이전 연속 자료'],
+  economy: ['금리: 1964~1998년 재할인율과 1991년 이후 콜금리를 따로 표시(1999년 정책금리 체계 변경으로 하나의 선으로 잇지 않음). 1960~63년 금리 자료 없음', '1989년 이전 실업률', '에너지 소비량 연속 자료 — 석유의존도는 1973·2010년 두 시점만'],
+  industry: ['1983년 이전 산업별 취업자 비중(제조업은 1989년 이전)', '자동차 보급률', '직업구조(직업별 취업자) 통계', '1975년 이전 유선전화 연도별 값'],
+  society: ['1992년 이전 임금, 물가를 뺀 실질임금', '가계지출 항목별 구성(식비·주거비 등)', '1인 가구 2015년 이전 연속 자료'],
   politics: ['정치는 수치 지표 대신 시대별 흐름도로 표시합니다. 정권·제도를 숫자로 바꾼 지표는 만들지 않습니다.'],
   culture: ['음악 차트·음반 판매·방송 통계 — 아직 수집하지 않음(지금은 기록으로 확인된 단계만)', '패션 자료 없음'],
   flow: ['재등장 사례가 아직 적어 반복 간격을 계산할 수 없습니다.'],
 };
 const NUMERIC: Record<Cat, string[]> = {
-  economy: ['gdp-growth', 'gdppc-kr', 'cpi-kr', 'fx-kr', 'unemp-kr', 'oil-dep-kr'],
-  industry: ['exports-kr', 'emp-ag-kr', 'emp-mfg-kr', 'emp-svc-kr', 'internet-kr', 'mobile-kr', 'pcbang-kr'],
-  society: ['tfr-kr', 'aged-kr', 'life-kr', 'one-person-kr', 'online-kr'], politics: [], culture: [], flow: [] };
+  economy: ['gdp-growth', 'gdppc-kr', 'cpi-kr', 'fx-kr', 'unemp-kr', 'disc-kr', 'call-kr', 'oil-dep-kr'],
+  industry: ['exports-kr', 'exp-gdp-kr', 'va-agr-kr', 'va-mfg-kr', 'va-srv-kr', 'emp-ag-kr', 'emp-mfg-kr', 'emp-svc-kr', 'tel-kr', 'mobile-kr', 'internet-kr', 'pcbang-kr'],
+  society: ['tfr-kr', 'aged-kr', 'life-kr', 'urban-kr', 'house-kr', 'wage-kr', 'hhcons-kr', 'one-person-kr', 'online-kr'], politics: [], culture: [], flow: [] };
 const SIGNALS: Record<Cat, string[]> = { economy: ['ch-sg-debt'], industry: ['ch-sg-chip', 'ch-sg-connect'], society: ['ch-sg-household'], politics: ['ch-sg-china'], culture: ['ch-sg-folk', 'ch-sg-kculture'], flow: [] };
 
 export function FieldView({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) => void; why: (id: string) => void }) {

@@ -8696,6 +8696,340 @@
     "KR"
    ],
    "aiSynthesized": false
+  },
+  {
+   "id": "c97-ca",
+   "text": "1996년 한국의 경상수지 적자는 약 230억 달러로 1995년(85억 달러)의 세 배 가까이로 커졌다. GDP 대비 비율은 자료에 따라 4.0~4.7%로 적혀 있다.",
+   "claimType": "statistical",
+   "status": "verified",
+   "sourceIds": [
+    "kdev-crisis",
+    "scribd-kr-crisis"
+   ],
+   "domains": [
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c97-shortdebt",
+   "text": "단기 대외채무는 1996년 말 759억 달러로 가용 외환보유액 294억 달러의 2.5배를 넘었다(K-Developedia는 280%로 정리). 1997년 말에는 단기외채 638억 달러에 가용 보유액이 91억 달러뿐이었다.",
+   "claimType": "statistical",
+   "status": "verified",
+   "sourceIds": [
+    "core-kr-crisis",
+    "kdev-crisis"
+   ],
+   "domains": [
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c97-leverage",
+   "text": "제조업 평균 부채비율은 1996년 317%, 1997년 396%였고, 30대 재벌의 평균 부채비율은 1996년 말 400~500%로 국제 기준(약 200%)의 두 배를 넘었다.",
+   "claimType": "statistical",
+   "status": "verified",
+   "sourceIds": [
+    "core-kr-crisis",
+    "nd-kellogg-kr",
+    "dallasfed-2001"
+   ],
+   "domains": [
+    "economy",
+    "industry"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c97-mismatch",
+   "text": "1994~96년 종합금융회사가 6곳에서 30곳으로 늘었고, 상당수가 재벌 소유였다. 이들은 값싼 단기 해외자금(주로 일본)을 빌려 장기 투자에 빌려주어, 빌린 돈과 빌려준 돈의 만기가 크게 어긋났다.",
+   "claimType": "interpretation",
+   "status": "verified",
+   "sourceIds": [
+    "core-kr-crisis",
+    "dallasfed-2001"
+   ],
+   "domains": [
+    "economy"
+   ],
+   "countries": [
+    "KR",
+    "JP"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c97-chaebol-root",
+   "text": "재벌의 높은 부채 의존은 1970년대 후반에 이미 흔했다는 분석이 있다. 정책금융으로 중화학공업을 키운 방식이 빚에 기댄 확장 구조를 남겼다는 해석이다.",
+   "claimType": "interpretation",
+   "status": "sourced",
+   "sourceIds": [
+    "nd-kellogg-kr"
+   ],
+   "domains": [
+    "economy",
+    "industry"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c97-hanbo",
+   "text": "재계 14위 한보그룹은 당진제철소 건설에 5조 원이 넘는 대출을 끌어 쓰다 1997년 1월 23일 최종 부도 처리되었다. 은행 대출 과정에서 정경유착이 드러났다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "kr-bizhk-hanbo",
+    "kr-insight-1997firms"
+   ],
+   "domains": [
+    "economy",
+    "politics"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c97-kia",
+   "text": "재계 8위 기아그룹은 1997년 7월 15일 부도유예협약 대상이 되었고, 약 100일 뒤인 10월 22일 법정관리로 결론이 났다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "kr-econ-kia",
+    "kr-insight-1997firms"
+   ],
+   "domains": [
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c97-kia-delay",
+   "text": "한보·기아 사태 대응이 늦어 대외 신인도 추락을 재촉했다는 평가가 있다. 대선을 앞두고 정치권이 기아 회생을 약속한 것도 결정을 늦춘 요인으로 거론된다.",
+   "claimType": "interpretation",
+   "status": "sourced",
+   "sourceIds": [
+    "kr-econ-kia"
+   ],
+   "domains": [
+    "economy",
+    "politics"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c97-rollover",
+   "text": "위기의 핵심은 외국 은행들이 한국 금융기관의 단기외채 만기 연장을 거부한 데 있었다. 외환보유액이 단기외채에 비해 턱없이 적어 갚을 수 없었고, 원화가 급락했다.",
+   "claimType": "interpretation",
+   "status": "verified",
+   "sourceIds": [
+    "nber-korea",
+    "dallasfed-2001"
+   ],
+   "domains": [
+    "economy"
+   ],
+   "countries": [
+    "KR",
+    "US",
+    "JP"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c97-fx",
+   "text": "1997년 7월 336억 달러였던 외환보유액은 12월 말 204억 달러로 줄었고, 11월까지 900원대였던 원·달러 환율은 12월 23일 1,962원까지 치솟았다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "kr-newsis-2022-imf"
+   ],
+   "domains": [
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c97-mou",
+   "text": "1997년 12월 3일 정부와 한국은행은 IMF 총재가 지켜보는 가운데 구제금융 정책이행각서에 서명했다. 이날이 'IMF 체제'의 시작으로 기록된다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "kr-block-mou",
+    "kr-seoul-2001-4y"
+   ],
+   "domains": [
+    "economy",
+    "politics"
+   ],
+   "countries": [
+    "KR",
+    "WORLD"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c97-view-liquidity",
+   "text": "NBER 회의에서 여러 경제학자는 한국 위기의 본질을 '유동성 위기'로 보았다. 기업 부채 등 약점이 있었더라도 외환보유액이 단기외채보다 충분했다면 위기가 이 정도로 커졌을지 묻는 문제 제기가 나왔다.",
+   "claimType": "interpretation",
+   "status": "sourced",
+   "sourceIds": [
+    "nber-korea"
+   ],
+   "domains": [
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c97-view-structure",
+   "text": "반대로 IMF 졸업 시점의 국내 심포지엄에서는 구제금융을 부른 것이 외환보유고 고갈이 아니라 경제의 구조적 모순(부실 금융·기업 지배구조)이라는 지적이 나왔다. NBER 회의에서도 취약한 금융 부문과 기업 지배구조가 전염에 취약하게 만들었다는 견해가 있었다.",
+   "claimType": "interpretation",
+   "status": "verified",
+   "sourceIds": [
+    "kr-seoul-2001-sympo",
+    "nber-korea"
+   ],
+   "domains": [
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c97-tripartite",
+   "text": "1998년 1월 15일 노사정위원회가 출범했고, 2월 '경제위기 극복을 위한 사회협약'에서 노동계는 정리해고제와 근로자파견제를 받아들이는 대신 노조의 정치활동 허용·전교조 합법화 등을 얻었다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "kr-arch-tripartite",
+    "kr-khan-2016-tripartite",
+    "kr-seoul-2017-pact"
+   ],
+   "domains": [
+    "politics",
+    "society"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c97-dispatch",
+   "text": "정리해고제와 파견근로제는 합의 직후 법제화되었고 파견업은 1998년 7월 시행되었다. 당시 한국노동연구원 부원장은 기업들이 정규직 비중을 낮추면서 인력 효율을 높일 수 있게 되었다고 평가했다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "kr-seoul-1998-dispatch",
+    "kr-seoul-2017-pact"
+   ],
+   "domains": [
+    "society",
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c97-unemp-cause",
+   "text": "한국노동연구원은 1998년 고용위기가 IMF의 고금리 긴축과 강한 구조조정 요구, 부도 기업 속출, 정리해고제 도입에 따른 인원감축 중심 구조조정으로 실업대란이 된 것이라고 정리한다. 실직자는 최대 180만 명이었다.",
+   "claimType": "interpretation",
+   "status": "sourced",
+   "sourceIds": [
+    "kli-brief-101"
+   ],
+   "domains": [
+    "society",
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c97-safety",
+   "text": "정부는 1998~2001년 실업대책에 20조 원을 투입하고, 고용보험·산재보험을 1인 이상 사업장으로, 국민연금을 1999년 도시 자영업자까지 넓혔다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "kr-korea-gold"
+   ],
+   "domains": [
+    "society",
+    "politics"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c97-repay",
+   "text": "한국은 2001년 8월 23일 IMF 차입금 195억 달러를 예정(2004년 5월)보다 약 3년 앞당겨 모두 갚고 IMF 관리체제를 벗어났다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "kr-arch-imf-theme",
+    "kr-aks-imf",
+    "imf-nb-0182"
+   ],
+   "domains": [
+    "economy"
+   ],
+   "countries": [
+    "KR",
+    "WORLD"
+   ],
+   "aiSynthesized": false
+  },
+  {
+   "id": "c97-reserve-build",
+   "text": "외환보유액은 1998년 말 520억 달러, 2001년 말 1,028억 달러, 2005년 2월 2,000억 달러를 넘었다. 위기 뒤 외환보유액을 위기 완충장치로 꾸준히 늘렸다.",
+   "claimType": "statistical",
+   "status": "verified",
+   "sourceIds": [
+    "kr-aks-imf",
+    "kr-newsis-2022-imf"
+   ],
+   "domains": [
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false
   }
  ],
  "sources": [
@@ -11120,6 +11454,114 @@
    "note": "1960~1983년은 0(서비스 없음), 1984·1985년 값 없음 → 1986년부터 표시"
   },
   {
+   "id": "wb-kr-va-agr",
+   "title": "Agriculture, forestry, and fishing, value added (% of GDP) (NV.AGR.TOTL.ZS)",
+   "publisher": "세계은행 세계개발지표(WDI)",
+   "url": "https://data.worldbank.org/indicator/NV.AGR.TOTL.ZS?locations=KR",
+   "sourceType": "institution",
+   "accessedDate": "2026-11-11",
+   "note": "API 최종 갱신 2026-10-08."
+  },
+  {
+   "id": "wb-kr-va-mfg",
+   "title": "Manufacturing, value added (% of GDP) (NV.IND.MANF.ZS)",
+   "publisher": "세계은행 세계개발지표(WDI)",
+   "url": "https://data.worldbank.org/indicator/NV.IND.MANF.ZS?locations=KR",
+   "sourceType": "institution",
+   "accessedDate": "2026-11-11",
+   "note": "API 최종 갱신 2026-10-08."
+  },
+  {
+   "id": "wb-kr-va-srv",
+   "title": "Services, value added (% of GDP) (NV.SRV.TOTL.ZS)",
+   "publisher": "세계은행 세계개발지표(WDI)",
+   "url": "https://data.worldbank.org/indicator/NV.SRV.TOTL.ZS?locations=KR",
+   "sourceType": "institution",
+   "accessedDate": "2026-11-11",
+   "note": "API 최종 갱신 2026-10-08."
+  },
+  {
+   "id": "wb-kr-tel",
+   "title": "Fixed telephone subscriptions (per 100 people) (IT.MLT.MAIN.P2)",
+   "publisher": "세계은행 세계개발지표(WDI)",
+   "url": "https://data.worldbank.org/indicator/IT.MLT.MAIN.P2?locations=KR",
+   "sourceType": "institution",
+   "accessedDate": "2026-11-11",
+   "note": "API 최종 갱신 2026-10-08. 1965~1969년(0.76)·1970~1974년(1.49)은 같은 값이 반복돼 해마다 측정한 값으로 보기 어려움 → 1975년부터 표시"
+  },
+  {
+   "id": "wb-kr-urban",
+   "title": "Urban population (% of total population) (SP.URB.TOTL.IN.ZS)",
+   "publisher": "세계은행 세계개발지표(WDI)",
+   "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS?locations=KR",
+   "sourceType": "institution",
+   "accessedDate": "2026-11-11",
+   "note": "API 최종 갱신 2026-10-08. UN 세계도시화전망 기반 추정치"
+  },
+  {
+   "id": "wb-kr-hhcons",
+   "title": "Households and NPISHs final consumption expenditure (% of GDP) (NE.CON.PRVT.ZS)",
+   "publisher": "세계은행 세계개발지표(WDI)",
+   "url": "https://data.worldbank.org/indicator/NE.CON.PRVT.ZS?locations=KR",
+   "sourceType": "institution",
+   "accessedDate": "2026-11-11",
+   "note": "API 최종 갱신 2026-10-08."
+  },
+  {
+   "id": "wb-kr-exp-gdp",
+   "title": "Exports of goods and services (% of GDP) (NE.EXP.GNFS.ZS)",
+   "publisher": "세계은행 세계개발지표(WDI)",
+   "url": "https://data.worldbank.org/indicator/NE.EXP.GNFS.ZS?locations=KR",
+   "sourceType": "institution",
+   "accessedDate": "2026-11-11",
+   "note": "API 최종 갱신 2026-10-08."
+  },
+  {
+   "id": "fred-kr-call",
+   "title": "Interest Rates: Immediate Rates (< 24 Hours): Call Money/Interbank Rate — Korea (월별) (IRSTCI01KRM156N)",
+   "publisher": "OECD via FRED",
+   "url": "https://fred.stlouisfed.org/data/IRSTCI01KRM156N",
+   "sourceType": "institution",
+   "accessedDate": "2026-11-11",
+   "note": "월별 값의 연평균을 직접 계산. 1991년부터"
+  },
+  {
+   "id": "fred-kr-disc",
+   "title": "Discount Rate, Percent per Annum for Republic of Korea (월별) (INTDSRKRM193N)",
+   "publisher": "FRED (원자료: IMF 국제금융통계)",
+   "url": "https://fred.stlouisfed.org/data/INTDSRKRM193N",
+   "sourceType": "institution",
+   "accessedDate": "2026-11-11",
+   "note": "월별 값의 연평균을 직접 계산. 1964~1998년만 사용"
+  },
+  {
+   "id": "fred-kr-house",
+   "title": "Real Residential Property Prices for Republic of Korea (분기, 2010=100) (QKRR628BIS)",
+   "publisher": "BIS via FRED",
+   "url": "https://fred.stlouisfed.org/data/QKRR628BIS",
+   "sourceType": "institution",
+   "accessedDate": "2026-11-11",
+   "note": "분기 값의 연평균을 직접 계산. 물가를 뺀 실질 주택가격 지수. 명목 지수(QKRN628BIS)는 1975→2025년 약 20배"
+  },
+  {
+   "id": "fred-kr-house-nom",
+   "title": "Residential Property Prices for Republic of Korea (명목, 분기, 2010=100) (QKRN628BIS)",
+   "publisher": "BIS via FRED",
+   "url": "https://fred.stlouisfed.org/data/QKRN628BIS",
+   "sourceType": "institution",
+   "accessedDate": "2026-11-11",
+   "note": "대조용"
+  },
+  {
+   "id": "fred-kr-wage",
+   "title": "Hourly Earnings: Manufacturing — Korea (연간 지수, 2015=100) (LCEAMN01KRA661S)",
+   "publisher": "OECD via FRED",
+   "url": "https://fred.stlouisfed.org/data/LCEAMN01KRA661S",
+   "sourceType": "institution",
+   "accessedDate": "2026-11-11",
+   "note": "명목 시간당 임금 지수. 1992년부터"
+  },
+  {
    "id": "us-hist-1973war",
    "title": "The 1973 Arab-Israeli War (Milestones 1969–1976)",
    "publisher": "미국 국무부 사료실(Office of the Historian)",
@@ -11385,6 +11827,176 @@
    "publisher": "OSEN",
    "url": "https://www.osen.co.kr/article/G1105180250",
    "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-bizhk-hanbo",
+   "title": "한보그룹, 무리한 대출과 1997년 1월 부도",
+   "publisher": "비즈한국",
+   "url": "https://bizhankook.com/articles/20442.html",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-insight-1997firms",
+   "title": "IMF 당시 무너진 한국 기업 6곳 (한보·기아·해태 등)",
+   "publisher": "인사이트",
+   "url": "https://www.insight.co.kr/news/197667",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-econ-kia",
+   "title": "외환위기 다시 보기 — 기아 사태 100일 (2017)",
+   "publisher": "이코노미스트",
+   "url": "https://economist.co.kr/article/view/ecn201702050005",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kdev-crisis",
+   "title": "Korea's Financial Crises and Economic Restructuring",
+   "publisher": "K-Developedia (KDI 국제정책대학원)",
+   "url": "https://kdevelopedia.org/k-db-originals/koreas-financial-crises-and-economic-restructuring",
+   "sourceType": "institution",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "core-kr-crisis",
+   "title": "Korea's External Debts, Usable Gross Reserves, and Debt-Equity Ratios (표 1, 한국은행 자료 인용 논문)",
+   "publisher": "CORE 공개 논문 저장소",
+   "url": "https://core.ac.uk/download/51178948.pdf",
+   "sourceType": "academic",
+   "accessedDate": "2026-11-11",
+   "note": "표 1 원자료: 한국은행(1998, 2003), Chopra et al.(2001), 재정경제부"
+  },
+  {
+   "id": "scribd-kr-crisis",
+   "title": "Korea's 1997 Financial Crisis (학술지 논문 사본, 353쪽)",
+   "publisher": "Scribd 게시 학술 논문",
+   "url": "https://www.scribd.com/document/515445472/Article-05",
+   "sourceType": "academic",
+   "accessedDate": "2026-11-11",
+   "note": "학술지 원문의 사본. 경상수지 적자 비율을 4.7%로 적어 K-Developedia(4.0%)와 다름"
+  },
+  {
+   "id": "nd-kellogg-kr",
+   "title": "Kellogg Institute Working Paper 272 — 한국 재벌의 부채와 1997년 위기",
+   "publisher": "University of Notre Dame Kellogg Institute",
+   "url": "https://kellogg.nd.edu/publications/workingpapers/WPS/272.pdf",
+   "sourceType": "academic",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "dallasfed-2001",
+   "title": "Economic and Financial Review 2001 Q4 — Korea's crisis and recovery",
+   "publisher": "Federal Reserve Bank of Dallas",
+   "url": "https://www.dallasfed.org/~/media/documents/research/efr/2001/efr0104c.pdf",
+   "sourceType": "institution",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "nber-korea",
+   "title": "The Korean Currency Crisis (NBER 회의 보고)",
+   "publisher": "National Bureau of Economic Research",
+   "url": "https://www.nber.org/crisis/korea_report.html",
+   "sourceType": "academic",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-seoul-2001-sympo",
+   "title": "IMF 졸업 심포지엄: '외환보유고 고갈이 아니라 구조적 모순' (2001.8.24)",
+   "publisher": "서울신문",
+   "url": "https://www.seoul.co.kr/news/2001/08/24/20010824009001",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-block-mou",
+   "title": "실록 한국경제 — 1997년 12월 3일 IMF 정책이행각서 서명",
+   "publisher": "블록미디어",
+   "url": "https://www.blockmedia.co.kr/archives/194644",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-seoul-2001-4y",
+   "title": "IMF 4년 현주소 (2001.12.3)",
+   "publisher": "서울신문",
+   "url": "https://m.seoul.co.kr/news/2001/12/03/20011203006002",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-newsis-2022-imf",
+   "title": "외환위기 25년 — 외환보유액·환율 (2022.12.29)",
+   "publisher": "뉴시스",
+   "url": "https://www.newsis.com/view/NISX20221229_0002141045",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-arch-tripartite",
+   "title": "노사정위원회 출범 — 정책 해설",
+   "publisher": "국가기록원",
+   "url": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=220",
+   "sourceType": "government",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-khan-2016-tripartite",
+   "title": "사회적 대타협의 역사 (2016.5.28)",
+   "publisher": "경향신문",
+   "url": "https://www.khan.co.kr/article/201605281845021/amp",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-seoul-2017-pact",
+   "title": "'사회적 대화' 돌파구 없나 — 1998년 사회협약 (2017.10.24)",
+   "publisher": "서울신문",
+   "url": "https://m.seoul.co.kr/news/2017/10/24/20171024009001",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-seoul-1998-dispatch",
+   "title": "파견업 7월 시행… 기업 정규직 줄여 인건비 절감 (1998.2.12)",
+   "publisher": "서울신문",
+   "url": "https://www.seoul.co.kr/news/1998/02/12/19980212006002",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kli-brief-101",
+   "title": "고용·노동브리프 제101호 — 1998년·2009년 경제위기와 고용",
+   "publisher": "한국노동연구원",
+   "url": "https://repository.kli.re.kr/bitstream/2021.oak/7122/2/KLI%20%ea%b3%a0%ec%9a%a9%eb%85%b8%eb%8f%99%eb%b8%8c%eb%a6%ac%ed%94%84%20%ec%a0%9c101%ed%98%b8%282020-08%29.pdf",
+   "sourceType": "institution",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-arch-imf-theme",
+   "title": "기록으로 보는 대한민국: IMF 외환위기",
+   "publisher": "국가기록원",
+   "url": "https://theme.archives.go.kr/next/koreaOfRecord/imf.do",
+   "sourceType": "government",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "kr-aks-imf",
+   "title": "IMF 관리체제",
+   "publisher": "한국학중앙연구원 디지털인문학 위키",
+   "url": "https://dh.aks.ac.kr/Edu/wiki/index.php/IMF_관리체제",
+   "sourceType": "reference",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "imf-nb-0182",
+   "title": "IMF Managing Director Congratulates Korea on Early Repayment of 1997 Stand-By Credit (2001.8.22)",
+   "publisher": "IMF",
+   "url": "https://www.imf.org/external/np/sec/nb/2001/nb0182.htm",
+   "sourceType": "institution",
    "accessedDate": "2026-11-11"
   }
  ],
@@ -15658,7 +16270,8 @@
     "2010s",
     "2020s"
    ],
-   "note": "1964·1980년 급등은 정부의 평가절하, 1975~79년 484원 고정은 고정환율기 값. 1997년 12월 자유변동환율제 전환 이전에는 시장이 정한 값이 아님"
+   "note": "1964·1980년 급등은 정부의 평가절하, 1975~79년 484원 고정은 고정환율기 값. 1997년 12월 자유변동환율제 전환 이전에는 시장이 정한 값이 아님",
+   "episodeFindings": true
   },
   {
    "id": "unemp-kr",
@@ -17918,6 +18531,2715 @@
     "2020s"
    ],
    "note": "1984~1985년 값 없음, 그 이전은 서비스 이전(0)"
+  },
+  {
+   "id": "va-agr-kr",
+   "title": "농림어업 생산 비중 (GDP 대비)",
+   "unit": "%",
+   "frequency": "annual",
+   "description": "나라 전체 생산(부가가치) 가운데 농림어업이 만든 몫.",
+   "category": "industry",
+   "series": [
+    {
+     "country": "KR",
+     "label": "한국",
+     "sourceIds": [
+      "wb-kr-va-agr"
+     ],
+     "points": [
+      [
+       "1960",
+       36.44
+      ],
+      [
+       "1961",
+       38.53
+      ],
+      [
+       "1962",
+       36.46
+      ],
+      [
+       "1963",
+       42.9
+      ],
+      [
+       "1964",
+       46.29
+      ],
+      [
+       "1965",
+       37.28
+      ],
+      [
+       "1966",
+       34.15
+      ],
+      [
+       "1967",
+       29.97
+      ],
+      [
+       "1968",
+       27.94
+      ],
+      [
+       "1969",
+       27.18
+      ],
+      [
+       "1970",
+       26.25
+      ],
+      [
+       "1971",
+       26.86
+      ],
+      [
+       "1972",
+       26.19
+      ],
+      [
+       "1973",
+       24.27
+      ],
+      [
+       "1974",
+       23.78
+      ],
+      [
+       "1975",
+       24.1
+      ],
+      [
+       "1976",
+       22.68
+      ],
+      [
+       "1977",
+       21.44
+      ],
+      [
+       "1978",
+       19.59
+      ],
+      [
+       "1979",
+       18.22
+      ],
+      [
+       "1980",
+       14.01
+      ],
+      [
+       "1981",
+       14.74
+      ],
+      [
+       "1982",
+       13.72
+      ],
+      [
+       "1983",
+       12.35
+      ],
+      [
+       "1984",
+       11.59
+      ],
+      [
+       "1985",
+       11.46
+      ],
+      [
+       "1986",
+       10.14
+      ],
+      [
+       "1987",
+       9.03
+      ],
+      [
+       "1988",
+       8.95
+      ],
+      [
+       "1989",
+       8.29
+      ],
+      [
+       "1990",
+       7.37
+      ],
+      [
+       "1991",
+       6.61
+      ],
+      [
+       "1992",
+       6.39
+      ],
+      [
+       "1993",
+       5.72
+      ],
+      [
+       "1994",
+       5.47
+      ],
+      [
+       "1995",
+       5.14
+      ],
+      [
+       "1996",
+       4.79
+      ],
+      [
+       "1997",
+       4.32
+      ],
+      [
+       "1998",
+       4.07
+      ],
+      [
+       "1999",
+       4.09
+      ],
+      [
+       "2000",
+       3.71
+      ],
+      [
+       "2001",
+       3.43
+      ],
+      [
+       "2002",
+       3.08
+      ],
+      [
+       "2003",
+       2.85
+      ],
+      [
+       "2004",
+       2.84
+      ],
+      [
+       "2005",
+       2.51
+      ],
+      [
+       "2006",
+       2.39
+      ],
+      [
+       "2007",
+       2.18
+      ],
+      [
+       "2008",
+       2.04
+      ],
+      [
+       "2009",
+       2.14
+      ],
+      [
+       "2010",
+       2.04
+      ],
+      [
+       "2011",
+       2.11
+      ],
+      [
+       "2012",
+       2.08
+      ],
+      [
+       "2013",
+       2.0
+      ],
+      [
+       "2014",
+       1.95
+      ],
+      [
+       "2015",
+       1.9
+      ],
+      [
+       "2016",
+       1.74
+      ],
+      [
+       "2017",
+       1.71
+      ],
+      [
+       "2018",
+       1.6
+      ],
+      [
+       "2019",
+       1.51
+      ],
+      [
+       "2020",
+       1.58
+      ],
+      [
+       "2021",
+       1.67
+      ],
+      [
+       "2022",
+       1.45
+      ],
+      [
+       "2023",
+       1.45
+      ],
+      [
+       "2024",
+       1.46
+      ],
+      [
+       "2025",
+       1.46
+      ]
+     ]
+    }
+   ],
+   "eraIds": [
+    "1960s",
+    "1970s",
+    "1980s",
+    "1990s",
+    "2000s",
+    "2010s",
+    "2020s"
+   ]
+  },
+  {
+   "id": "va-mfg-kr",
+   "title": "제조업 생산 비중 (GDP 대비)",
+   "unit": "%",
+   "frequency": "annual",
+   "description": "나라 전체 생산(부가가치) 가운데 제조업이 만든 몫.",
+   "category": "industry",
+   "series": [
+    {
+     "country": "KR",
+     "label": "한국",
+     "sourceIds": [
+      "wb-kr-va-mfg"
+     ],
+     "points": [
+      [
+       "1960",
+       11.4
+      ],
+      [
+       "1961",
+       11.95
+      ],
+      [
+       "1962",
+       11.7
+      ],
+      [
+       "1963",
+       12.82
+      ],
+      [
+       "1964",
+       14.22
+      ],
+      [
+       "1965",
+       17.05
+      ],
+      [
+       "1966",
+       16.64
+      ],
+      [
+       "1967",
+       16.76
+      ],
+      [
+       "1968",
+       17.12
+      ],
+      [
+       "1969",
+       17.02
+      ],
+      [
+       "1970",
+       17.29
+      ],
+      [
+       "1971",
+       16.55
+      ],
+      [
+       "1972",
+       18.58
+      ],
+      [
+       "1973",
+       21.3
+      ],
+      [
+       "1974",
+       20.65
+      ],
+      [
+       "1975",
+       19.97
+      ],
+      [
+       "1976",
+       21.29
+      ],
+      [
+       "1977",
+       20.93
+      ],
+      [
+       "1978",
+       21.03
+      ],
+      [
+       "1979",
+       21.54
+      ],
+      [
+       "1980",
+       21.9
+      ],
+      [
+       "1981",
+       21.77
+      ],
+      [
+       "1982",
+       21.81
+      ],
+      [
+       "1983",
+       22.97
+      ],
+      [
+       "1984",
+       24.61
+      ],
+      [
+       "1985",
+       24.33
+      ],
+      [
+       "1986",
+       25.55
+      ],
+      [
+       "1987",
+       26.8
+      ],
+      [
+       "1988",
+       27.72
+      ],
+      [
+       "1989",
+       26.75
+      ],
+      [
+       "1990",
+       25.24
+      ],
+      [
+       "1991",
+       25.5
+      ],
+      [
+       "1992",
+       24.79
+      ],
+      [
+       "1993",
+       25.02
+      ],
+      [
+       "1994",
+       25.73
+      ],
+      [
+       "1995",
+       26.31
+      ],
+      [
+       "1996",
+       25.22
+      ],
+      [
+       "1997",
+       25.13
+      ],
+      [
+       "1998",
+       25.77
+      ],
+      [
+       "1999",
+       25.79
+      ],
+      [
+       "2000",
+       26.59
+      ],
+      [
+       "2001",
+       25.14
+      ],
+      [
+       "2002",
+       24.78
+      ],
+      [
+       "2003",
+       24.43
+      ],
+      [
+       "2004",
+       26.41
+      ],
+      [
+       "2005",
+       26.09
+      ],
+      [
+       "2006",
+       25.72
+      ],
+      [
+       "2007",
+       25.92
+      ],
+      [
+       "2008",
+       26.08
+      ],
+      [
+       "2009",
+       26.3
+      ],
+      [
+       "2010",
+       28.1
+      ],
+      [
+       "2011",
+       29.0
+      ],
+      [
+       "2012",
+       28.74
+      ],
+      [
+       "2013",
+       28.87
+      ],
+      [
+       "2014",
+       28.28
+      ],
+      [
+       "2015",
+       27.82
+      ],
+      [
+       "2016",
+       27.51
+      ],
+      [
+       "2017",
+       28.03
+      ],
+      [
+       "2018",
+       27.77
+      ],
+      [
+       "2019",
+       26.37
+      ],
+      [
+       "2020",
+       25.7
+      ],
+      [
+       "2021",
+       26.25
+      ],
+      [
+       "2022",
+       26.5
+      ],
+      [
+       "2023",
+       25.46
+      ],
+      [
+       "2024",
+       26.62
+      ],
+      [
+       "2025",
+       27.43
+      ]
+     ]
+    }
+   ],
+   "eraIds": [
+    "1960s",
+    "1970s",
+    "1980s",
+    "1990s",
+    "2000s",
+    "2010s",
+    "2020s"
+   ]
+  },
+  {
+   "id": "va-srv-kr",
+   "title": "서비스업 생산 비중 (GDP 대비)",
+   "unit": "%",
+   "frequency": "annual",
+   "description": "나라 전체 생산(부가가치) 가운데 서비스업이 만든 몫.",
+   "category": "industry",
+   "series": [
+    {
+     "country": "KR",
+     "label": "한국",
+     "sourceIds": [
+      "wb-kr-va-srv"
+     ],
+     "points": [
+      [
+       "1960",
+       39.31
+      ],
+      [
+       "1961",
+       37.77
+      ],
+      [
+       "1962",
+       38.64
+      ],
+      [
+       "1963",
+       33.57
+      ],
+      [
+       "1964",
+       30.21
+      ],
+      [
+       "1965",
+       34.19
+      ],
+      [
+       "1966",
+       36.54
+      ],
+      [
+       "1967",
+       39.64
+      ],
+      [
+       "1968",
+       39.69
+      ],
+      [
+       "1969",
+       39.77
+      ],
+      [
+       "1970",
+       40.44
+      ],
+      [
+       "1971",
+       41.72
+      ],
+      [
+       "1972",
+       42.01
+      ],
+      [
+       "1973",
+       41.18
+      ],
+      [
+       "1974",
+       41.76
+      ],
+      [
+       "1975",
+       40.46
+      ],
+      [
+       "1976",
+       40.04
+      ],
+      [
+       "1977",
+       40.2
+      ],
+      [
+       "1978",
+       39.93
+      ],
+      [
+       "1979",
+       40.09
+      ],
+      [
+       "1980",
+       43.69
+      ],
+      [
+       "1981",
+       43.9
+      ],
+      [
+       "1982",
+       44.51
+      ],
+      [
+       "1983",
+       43.9
+      ],
+      [
+       "1984",
+       43.89
+      ],
+      [
+       "1985",
+       45.0
+      ],
+      [
+       "1986",
+       45.61
+      ],
+      [
+       "1987",
+       45.86
+      ],
+      [
+       "1988",
+       45.56
+      ],
+      [
+       "1989",
+       47.05
+      ],
+      [
+       "1990",
+       47.22
+      ],
+      [
+       "1991",
+       47.8
+      ],
+      [
+       "1992",
+       49.12
+      ],
+      [
+       "1993",
+       49.73
+      ],
+      [
+       "1994",
+       49.68
+      ],
+      [
+       "1995",
+       49.71
+      ],
+      [
+       "1996",
+       50.74
+      ],
+      [
+       "1997",
+       51.28
+      ],
+      [
+       "1998",
+       52.87
+      ],
+      [
+       "1999",
+       52.53
+      ],
+      [
+       "2000",
+       52.45
+      ],
+      [
+       "2001",
+       53.72
+      ],
+      [
+       "2002",
+       54.22
+      ],
+      [
+       "2003",
+       54.46
+      ],
+      [
+       "2004",
+       53.69
+      ],
+      [
+       "2005",
+       54.42
+      ],
+      [
+       "2006",
+       55.15
+      ],
+      [
+       "2007",
+       55.51
+      ],
+      [
+       "2008",
+       56.59
+      ],
+      [
+       "2009",
+       56.29
+      ],
+      [
+       "2010",
+       54.88
+      ],
+      [
+       "2011",
+       54.69
+      ],
+      [
+       "2012",
+       54.98
+      ],
+      [
+       "2013",
+       54.93
+      ],
+      [
+       "2014",
+       55.2
+      ],
+      [
+       "2015",
+       55.11
+      ],
+      [
+       "2016",
+       54.98
+      ],
+      [
+       "2017",
+       54.57
+      ],
+      [
+       "2018",
+       55.39
+      ],
+      [
+       "2019",
+       56.94
+      ],
+      [
+       "2020",
+       56.92
+      ],
+      [
+       "2021",
+       56.9
+      ],
+      [
+       "2022",
+       58.07
+      ],
+      [
+       "2023",
+       58.88
+      ],
+      [
+       "2024",
+       57.5
+      ],
+      [
+       "2025",
+       57.23
+      ]
+     ]
+    }
+   ],
+   "eraIds": [
+    "1960s",
+    "1970s",
+    "1980s",
+    "1990s",
+    "2000s",
+    "2010s",
+    "2020s"
+   ]
+  },
+  {
+   "id": "exp-gdp-kr",
+   "title": "수출 의존도 (GDP 대비 수출)",
+   "unit": "%",
+   "frequency": "annual",
+   "description": "한 해 생산 가운데 외국에 판 상품·서비스의 크기.",
+   "category": "industry",
+   "series": [
+    {
+     "country": "KR",
+     "label": "한국",
+     "sourceIds": [
+      "wb-kr-exp-gdp"
+     ],
+     "points": [
+      [
+       "1960",
+       2.63
+      ],
+      [
+       "1961",
+       4.03
+      ],
+      [
+       "1962",
+       3.86
+      ],
+      [
+       "1963",
+       3.93
+      ],
+      [
+       "1964",
+       4.94
+      ],
+      [
+       "1965",
+       7.09
+      ],
+      [
+       "1966",
+       8.38
+      ],
+      [
+       "1967",
+       9.04
+      ],
+      [
+       "1968",
+       10.06
+      ],
+      [
+       "1969",
+       10.52
+      ],
+      [
+       "1970",
+       11.3
+      ],
+      [
+       "1971",
+       12.5
+      ],
+      [
+       "1972",
+       16.33
+      ],
+      [
+       "1973",
+       23.52
+      ],
+      [
+       "1974",
+       21.77
+      ],
+      [
+       "1975",
+       22.18
+      ],
+      [
+       "1976",
+       25.04
+      ],
+      [
+       "1977",
+       25.52
+      ],
+      [
+       "1978",
+       24.49
+      ],
+      [
+       "1979",
+       23.13
+      ],
+      [
+       "1980",
+       27.73
+      ],
+      [
+       "1981",
+       29.17
+      ],
+      [
+       "1982",
+       26.69
+      ],
+      [
+       "1983",
+       27.16
+      ],
+      [
+       "1984",
+       28.13
+      ],
+      [
+       "1985",
+       26.12
+      ],
+      [
+       "1986",
+       30.98
+      ],
+      [
+       "1987",
+       33.68
+      ],
+      [
+       "1988",
+       31.44
+      ],
+      [
+       "1989",
+       26.47
+      ],
+      [
+       "1990",
+       24.17
+      ],
+      [
+       "1991",
+       22.99
+      ],
+      [
+       "1992",
+       23.26
+      ],
+      [
+       "1993",
+       22.86
+      ],
+      [
+       "1994",
+       23.51
+      ],
+      [
+       "1995",
+       25.09
+      ],
+      [
+       "1996",
+       24.15
+      ],
+      [
+       "1997",
+       27.47
+      ],
+      [
+       "1998",
+       38.24
+      ],
+      [
+       "1999",
+       31.51
+      ],
+      [
+       "2000",
+       32.86
+      ],
+      [
+       "2001",
+       30.86
+      ],
+      [
+       "2002",
+       28.87
+      ],
+      [
+       "2003",
+       30.44
+      ],
+      [
+       "2004",
+       35.61
+      ],
+      [
+       "2005",
+       34.13
+      ],
+      [
+       "2006",
+       34.45
+      ],
+      [
+       "2007",
+       36.04
+      ],
+      [
+       "2008",
+       45.85
+      ],
+      [
+       "2009",
+       43.51
+      ],
+      [
+       "2010",
+       45.27
+      ],
+      [
+       "2011",
+       51.28
+      ],
+      [
+       "2012",
+       52.02
+      ],
+      [
+       "2013",
+       49.23
+      ],
+      [
+       "2014",
+       45.79
+      ],
+      [
+       "2015",
+       40.97
+      ],
+      [
+       "2016",
+       38.11
+      ],
+      [
+       "2017",
+       38.85
+      ],
+      [
+       "2018",
+       39.45
+      ],
+      [
+       "2019",
+       37.04
+      ],
+      [
+       "2020",
+       34.62
+      ],
+      [
+       "2021",
+       39.34
+      ],
+      [
+       "2022",
+       45.29
+      ],
+      [
+       "2023",
+       41.32
+      ],
+      [
+       "2024",
+       44.36
+      ],
+      [
+       "2025",
+       45.76
+      ]
+     ]
+    }
+   ],
+   "eraIds": [
+    "1960s",
+    "1970s",
+    "1980s",
+    "1990s",
+    "2000s",
+    "2010s",
+    "2020s"
+   ]
+  },
+  {
+   "id": "tel-kr",
+   "title": "유선전화 가입 (100명당)",
+   "unit": "건",
+   "frequency": "annual",
+   "description": "인구 100명당 집·사무실 전화 가입 건수.",
+   "category": "industry",
+   "series": [
+    {
+     "country": "KR",
+     "label": "한국",
+     "sourceIds": [
+      "wb-kr-tel"
+     ],
+     "points": [
+      [
+       "1975",
+       2.94
+      ],
+      [
+       "1976",
+       3.49
+      ],
+      [
+       "1977",
+       4.16
+      ],
+      [
+       "1978",
+       5.03
+      ],
+      [
+       "1979",
+       6.08
+      ],
+      [
+       "1980",
+       7.09
+      ],
+      [
+       "1981",
+       8.43
+      ],
+      [
+       "1982",
+       10.35
+      ],
+      [
+       "1983",
+       12.01
+      ],
+      [
+       "1984",
+       13.76
+      ],
+      [
+       "1985",
+       15.81
+      ],
+      [
+       "1986",
+       17.99
+      ],
+      [
+       "1987",
+       20.34
+      ],
+      [
+       "1988",
+       23.97
+      ],
+      [
+       "1989",
+       27.07
+      ],
+      [
+       "1990",
+       30.1
+      ],
+      [
+       "1991",
+       32.8
+      ],
+      [
+       "1992",
+       34.9
+      ],
+      [
+       "1993",
+       37.2
+      ],
+      [
+       "1994",
+       39.1
+      ],
+      [
+       "1995",
+       41.0
+      ],
+      [
+       "1996",
+       42.9
+      ],
+      [
+       "1997",
+       44.5
+      ],
+      [
+       "1998",
+       43.5
+      ],
+      [
+       "1999",
+       55.1
+      ],
+      [
+       "2000",
+       55.3
+      ],
+      [
+       "2001",
+       54.79
+      ],
+      [
+       "2002",
+       54.41
+      ],
+      [
+       "2003",
+       52.88
+      ],
+      [
+       "2004",
+       49.41
+      ],
+      [
+       "2005",
+       49.96
+      ],
+      [
+       "2006",
+       46.73
+      ],
+      [
+       "2007",
+       47.75
+      ],
+      [
+       "2008",
+       50.37
+      ],
+      [
+       "2009",
+       55.4
+      ],
+      [
+       "2010",
+       58.53
+      ],
+      [
+       "2011",
+       59.98
+      ],
+      [
+       "2012",
+       60.68
+      ],
+      [
+       "2013",
+       60.58
+      ],
+      [
+       "2014",
+       58.33
+      ],
+      [
+       "2015",
+       56.65
+      ],
+      [
+       "2016",
+       54.65
+      ],
+      [
+       "2017",
+       52.14
+      ],
+      [
+       "2018",
+       50.17
+      ],
+      [
+       "2019",
+       47.77
+      ],
+      [
+       "2020",
+       46.01
+      ],
+      [
+       "2021",
+       44.77
+      ],
+      [
+       "2022",
+       44.05
+      ],
+      [
+       "2023",
+       42.81
+      ],
+      [
+       "2024",
+       41.17
+      ]
+     ]
+    }
+   ],
+   "eraIds": [
+    "1970s",
+    "1980s",
+    "1990s",
+    "2000s",
+    "2010s",
+    "2020s"
+   ],
+   "note": "1975년 이전은 같은 값이 여러 해 반복돼 연도별 측정값으로 보기 어려워 표시하지 않음. 1998→1999년 급등은 원자료 그대로(집계 기준 변화 가능성)"
+  },
+  {
+   "id": "call-kr",
+   "title": "콜금리 (단기 시장금리, 연평균)",
+   "unit": "%",
+   "frequency": "annual",
+   "description": "금융회사끼리 하루 이틀 돈을 빌릴 때의 금리. 1999년 전후 정책금리 제도가 바뀌어도 같은 기준으로 이어지는 시장금리라 장기 비교에 사용.",
+   "category": "economy",
+   "series": [
+    {
+     "country": "KR",
+     "label": "한국",
+     "sourceIds": [
+      "fred-kr-call"
+     ],
+     "points": [
+      [
+       "1991",
+       16.63
+      ],
+      [
+       "1992",
+       14.26
+      ],
+      [
+       "1993",
+       11.98
+      ],
+      [
+       "1994",
+       12.28
+      ],
+      [
+       "1995",
+       12.38
+      ],
+      [
+       "1996",
+       12.35
+      ],
+      [
+       "1997",
+       13.18
+      ],
+      [
+       "1998",
+       14.98
+      ],
+      [
+       "1999",
+       4.99
+      ],
+      [
+       "2000",
+       5.13
+      ],
+      [
+       "2001",
+       4.68
+      ],
+      [
+       "2002",
+       4.19
+      ],
+      [
+       "2003",
+       3.98
+      ],
+      [
+       "2004",
+       3.63
+      ],
+      [
+       "2005",
+       3.33
+      ],
+      [
+       "2006",
+       4.19
+      ],
+      [
+       "2007",
+       4.77
+      ],
+      [
+       "2008",
+       4.78
+      ],
+      [
+       "2009",
+       1.98
+      ],
+      [
+       "2010",
+       2.16
+      ],
+      [
+       "2011",
+       3.09
+      ],
+      [
+       "2012",
+       3.08
+      ],
+      [
+       "2013",
+       2.58
+      ],
+      [
+       "2014",
+       2.33
+      ],
+      [
+       "2015",
+       1.64
+      ],
+      [
+       "2016",
+       1.34
+      ],
+      [
+       "2017",
+       1.26
+      ],
+      [
+       "2018",
+       1.52
+      ],
+      [
+       "2019",
+       1.59
+      ],
+      [
+       "2020",
+       0.7
+      ],
+      [
+       "2021",
+       0.61
+      ],
+      [
+       "2022",
+       2.02
+      ],
+      [
+       "2023",
+       3.51
+      ],
+      [
+       "2024",
+       3.44
+      ],
+      [
+       "2025",
+       2.66
+      ]
+     ]
+    }
+   ],
+   "eraIds": [
+    "1990s",
+    "2000s",
+    "2010s",
+    "2020s"
+   ],
+   "note": "1991년 이전 값은 이 계열에 없음. 월별 값을 직접 연평균함. 정책금리(기준금리) 자체가 아님"
+  },
+  {
+   "id": "disc-kr",
+   "title": "한국은행 재할인율 (1964~1998, 연평균)",
+   "unit": "%",
+   "frequency": "annual",
+   "description": "한국은행이 은행에 돈을 빌려줄 때의 금리. 금리를 정부가 정하던 시기의 대표 금리.",
+   "category": "economy",
+   "series": [
+    {
+     "country": "KR",
+     "label": "한국",
+     "sourceIds": [
+      "fred-kr-disc"
+     ],
+     "points": [
+      [
+       "1964",
+       10.45
+      ],
+      [
+       "1965",
+       12.83
+      ],
+      [
+       "1966",
+       28.0
+      ],
+      [
+       "1967",
+       28.0
+      ],
+      [
+       "1968",
+       22.67
+      ],
+      [
+       "1969",
+       22.42
+      ],
+      [
+       "1970",
+       21.08
+      ],
+      [
+       "1971",
+       17.25
+      ],
+      [
+       "1972",
+       12.17
+      ],
+      [
+       "1973",
+       11.0
+      ],
+      [
+       "1974",
+       11.0
+      ],
+      [
+       "1975",
+       11.5
+      ],
+      [
+       "1976",
+       14.0
+      ],
+      [
+       "1977",
+       14.0
+      ],
+      [
+       "1978",
+       14.58
+      ],
+      [
+       "1979",
+       15.0
+      ],
+      [
+       "1980",
+       19.42
+      ],
+      [
+       "1981",
+       15.33
+      ],
+      [
+       "1982",
+       5.08
+      ],
+      [
+       "1983",
+       5.0
+      ],
+      [
+       "1984",
+       5.0
+      ],
+      [
+       "1985",
+       5.4
+      ],
+      [
+       "1986",
+       6.0
+      ],
+      [
+       "1987",
+       7.0
+      ],
+      [
+       "1988",
+       7.33
+      ],
+      [
+       "1989",
+       7.83
+      ],
+      [
+       "1990",
+       7.0
+      ],
+      [
+       "1991",
+       7.0
+      ],
+      [
+       "1992",
+       7.0
+      ],
+      [
+       "1993",
+       5.0
+      ],
+      [
+       "1994",
+       5.0
+      ],
+      [
+       "1995",
+       5.0
+      ],
+      [
+       "1996",
+       5.0
+      ],
+      [
+       "1997",
+       5.0
+      ],
+      [
+       "1998",
+       4.33
+      ]
+     ]
+    }
+   ],
+   "eraIds": [
+    "1960s",
+    "1970s",
+    "1980s",
+    "1990s"
+   ],
+   "note": "1999년부터 정책금리는 콜금리 목표·기준금리 체계로 바뀌어 이 선과 잇지 않음(같은 계열의 1999년 이후 값은 성격이 다른 대출금리라 제외)"
+  },
+  {
+   "id": "house-kr",
+   "title": "실질 주택가격 지수 (2010=100)",
+   "unit": "지수",
+   "frequency": "annual",
+   "description": "물가 상승분을 뺀 주택가격. 100보다 크면 2010년보다 실질적으로 비싸다는 뜻.",
+   "category": "society",
+   "series": [
+    {
+     "country": "KR",
+     "label": "한국",
+     "sourceIds": [
+      "fred-kr-house",
+      "fred-kr-house-nom"
+     ],
+     "points": [
+      [
+       "1975",
+       66.36
+      ],
+      [
+       "1976",
+       72.99
+      ],
+      [
+       "1977",
+       88.41
+      ],
+      [
+       "1978",
+       115.17
+      ],
+      [
+       "1979",
+       113.88
+      ],
+      [
+       "1980",
+       98.95
+      ],
+      [
+       "1981",
+       87.49
+      ],
+      [
+       "1982",
+       85.95
+      ],
+      [
+       "1983",
+       98.49
+      ],
+      [
+       "1984",
+       109.02
+      ],
+      [
+       "1985",
+       113.84
+      ],
+      [
+       "1986",
+       118.95
+      ],
+      [
+       "1987",
+       115.85
+      ],
+      [
+       "1988",
+       124.95
+      ],
+      [
+       "1989",
+       134.91
+      ],
+      [
+       "1990",
+       145.51
+      ],
+      [
+       "1991",
+       147.0
+      ],
+      [
+       "1992",
+       129.37
+      ],
+      [
+       "1993",
+       119.19
+      ],
+      [
+       "1994",
+       110.33
+      ],
+      [
+       "1995",
+       105.44
+      ],
+      [
+       "1996",
+       101.21
+      ],
+      [
+       "1997",
+       99.78
+      ],
+      [
+       "1998",
+       84.26
+      ],
+      [
+       "1999",
+       82.51
+      ],
+      [
+       "2000",
+       82.14
+      ],
+      [
+       "2001",
+       82.03
+      ],
+      [
+       "2002",
+       93.11
+      ],
+      [
+       "2003",
+       98.08
+      ],
+      [
+       "2004",
+       95.77
+      ],
+      [
+       "2005",
+       93.94
+      ],
+      [
+       "2006",
+       97.54
+      ],
+      [
+       "2007",
+       103.72
+      ],
+      [
+       "2008",
+       103.07
+      ],
+      [
+       "2009",
+       100.5
+      ],
+      [
+       "2010",
+       100.0
+      ],
+      [
+       "2011",
+       101.18
+      ],
+      [
+       "2012",
+       101.85
+      ],
+      [
+       "2013",
+       100.1
+      ],
+      [
+       "2014",
+       100.34
+      ],
+      [
+       "2015",
+       102.98
+      ],
+      [
+       "2016",
+       104.7
+      ],
+      [
+       "2017",
+       104.04
+      ],
+      [
+       "2018",
+       104.8
+      ],
+      [
+       "2019",
+       105.89
+      ],
+      [
+       "2020",
+       109.32
+      ],
+      [
+       "2021",
+       121.09
+      ],
+      [
+       "2022",
+       122.89
+      ],
+      [
+       "2023",
+       111.48
+      ],
+      [
+       "2024",
+       107.77
+      ],
+      [
+       "2025",
+       105.79
+      ]
+     ]
+    }
+   ],
+   "eraIds": [
+    "1970s",
+    "1980s",
+    "1990s",
+    "2000s",
+    "2010s",
+    "2020s"
+   ],
+   "note": "분기 값을 직접 연평균함. 1975년 이전 자료 없음"
+  },
+  {
+   "id": "wage-kr",
+   "title": "제조업 시간당 임금 지수 (명목, 2015=100)",
+   "unit": "지수",
+   "frequency": "annual",
+   "description": "제조업 노동자의 시간당 임금 수준(물가 미조정).",
+   "category": "society",
+   "series": [
+    {
+     "country": "KR",
+     "label": "한국",
+     "sourceIds": [
+      "fred-kr-wage"
+     ],
+     "points": [
+      [
+       "1992",
+       21.57
+      ],
+      [
+       "1993",
+       23.9
+      ],
+      [
+       "1994",
+       27.58
+      ],
+      [
+       "1995",
+       30.32
+      ],
+      [
+       "1996",
+       34.05
+      ],
+      [
+       "1997",
+       35.8
+      ],
+      [
+       "1998",
+       34.69
+      ],
+      [
+       "1999",
+       39.78
+      ],
+      [
+       "2000",
+       43.19
+      ],
+      [
+       "2001",
+       45.95
+      ],
+      [
+       "2002",
+       51.45
+      ],
+      [
+       "2003",
+       55.94
+      ],
+      [
+       "2004",
+       61.53
+      ],
+      [
+       "2005",
+       66.32
+      ],
+      [
+       "2006",
+       70.01
+      ],
+      [
+       "2007",
+       74.82
+      ],
+      [
+       "2008",
+       73.86
+      ],
+      [
+       "2009",
+       75.43
+      ],
+      [
+       "2010",
+       82.33
+      ],
+      [
+       "2011",
+       83.69
+      ],
+      [
+       "2012",
+       88.95
+      ],
+      [
+       "2013",
+       93.29
+      ],
+      [
+       "2014",
+       97.14
+      ],
+      [
+       "2015",
+       100.0
+      ],
+      [
+       "2016",
+       104.23
+      ],
+      [
+       "2017",
+       106.38
+      ],
+      [
+       "2018",
+       113.6
+      ],
+      [
+       "2019",
+       116.2
+      ],
+      [
+       "2020",
+       115.54
+      ],
+      [
+       "2021",
+       123.47
+      ],
+      [
+       "2022",
+       130.68
+      ],
+      [
+       "2023",
+       134.9
+      ],
+      [
+       "2024",
+       138.41
+      ],
+      [
+       "2025",
+       143.12
+      ]
+     ]
+    }
+   ],
+   "eraIds": [
+    "1990s",
+    "2000s",
+    "2010s",
+    "2020s"
+   ],
+   "note": "1992년 이전 자료 없음. 물가를 빼지 않은 값"
+  },
+  {
+   "id": "urban-kr",
+   "title": "도시 인구 비율",
+   "unit": "%",
+   "frequency": "annual",
+   "description": "전체 인구 가운데 도시에 사는 사람의 비율.",
+   "category": "society",
+   "series": [
+    {
+     "country": "KR",
+     "label": "한국",
+     "sourceIds": [
+      "wb-kr-urban"
+     ],
+     "points": [
+      [
+       "1960",
+       27.69
+      ],
+      [
+       "1961",
+       28.45
+      ],
+      [
+       "1962",
+       29.23
+      ],
+      [
+       "1963",
+       30.06
+      ],
+      [
+       "1964",
+       30.96
+      ],
+      [
+       "1965",
+       31.96
+      ],
+      [
+       "1966",
+       33.1
+      ],
+      [
+       "1967",
+       34.56
+      ],
+      [
+       "1968",
+       36.53
+      ],
+      [
+       "1969",
+       38.71
+      ],
+      [
+       "1970",
+       40.71
+      ],
+      [
+       "1971",
+       42.35
+      ],
+      [
+       "1972",
+       43.79
+      ],
+      [
+       "1973",
+       45.15
+      ],
+      [
+       "1974",
+       46.51
+      ],
+      [
+       "1975",
+       47.97
+      ],
+      [
+       "1976",
+       49.57
+      ],
+      [
+       "1977",
+       51.3
+      ],
+      [
+       "1978",
+       53.1
+      ],
+      [
+       "1979",
+       54.9
+      ],
+      [
+       "1980",
+       56.66
+      ],
+      [
+       "1981",
+       58.33
+      ],
+      [
+       "1982",
+       59.95
+      ],
+      [
+       "1983",
+       61.54
+      ],
+      [
+       "1984",
+       63.15
+      ],
+      [
+       "1985",
+       64.8
+      ],
+      [
+       "1986",
+       66.58
+      ],
+      [
+       "1987",
+       68.56
+      ],
+      [
+       "1988",
+       70.59
+      ],
+      [
+       "1989",
+       72.47
+      ],
+      [
+       "1990",
+       73.99
+      ],
+      [
+       "1991",
+       75.16
+      ],
+      [
+       "1992",
+       76.2
+      ],
+      [
+       "1993",
+       77.11
+      ],
+      [
+       "1994",
+       77.86
+      ],
+      [
+       "1995",
+       78.4
+      ],
+      [
+       "1996",
+       78.75
+      ],
+      [
+       "1997",
+       78.99
+      ],
+      [
+       "1998",
+       79.18
+      ],
+      [
+       "1999",
+       79.36
+      ],
+      [
+       "2000",
+       79.58
+      ],
+      [
+       "2001",
+       79.88
+      ],
+      [
+       "2002",
+       80.28
+      ],
+      [
+       "2003",
+       80.71
+      ],
+      [
+       "2004",
+       81.1
+      ],
+      [
+       "2005",
+       81.39
+      ],
+      [
+       "2006",
+       81.57
+      ],
+      [
+       "2007",
+       81.71
+      ],
+      [
+       "2008",
+       81.84
+      ],
+      [
+       "2009",
+       81.92
+      ],
+      [
+       "2010",
+       81.97
+      ],
+      [
+       "2011",
+       81.96
+      ],
+      [
+       "2012",
+       81.91
+      ],
+      [
+       "2013",
+       81.83
+      ],
+      [
+       "2014",
+       81.73
+      ],
+      [
+       "2015",
+       81.64
+      ],
+      [
+       "2016",
+       81.56
+      ],
+      [
+       "2017",
+       81.47
+      ],
+      [
+       "2018",
+       81.38
+      ],
+      [
+       "2019",
+       81.29
+      ],
+      [
+       "2020",
+       81.18
+      ],
+      [
+       "2021",
+       81.16
+      ],
+      [
+       "2022",
+       81.16
+      ],
+      [
+       "2023",
+       81.16
+      ],
+      [
+       "2024",
+       81.17
+      ],
+      [
+       "2025",
+       81.17
+      ]
+     ]
+    }
+   ],
+   "eraIds": [
+    "1960s",
+    "1970s",
+    "1980s",
+    "1990s",
+    "2000s",
+    "2010s",
+    "2020s"
+   ],
+   "note": "UN 추정치. 1990년대 후반부터 80% 안팎에서 거의 변하지 않음"
+  },
+  {
+   "id": "hhcons-kr",
+   "title": "가계 소비 비중 (GDP 대비)",
+   "unit": "%",
+   "frequency": "annual",
+   "description": "한 해 생산 가운데 가계가 소비에 쓴 몫. 1960년 85% → 1988년 49%.",
+   "category": "society",
+   "series": [
+    {
+     "country": "KR",
+     "label": "한국",
+     "sourceIds": [
+      "wb-kr-hhcons"
+     ],
+     "points": [
+      [
+       "1960",
+       84.85
+      ],
+      [
+       "1961",
+       83.69
+      ],
+      [
+       "1962",
+       82.99
+      ],
+      [
+       "1963",
+       80.42
+      ],
+      [
+       "1964",
+       82.62
+      ],
+      [
+       "1965",
+       83.28
+      ],
+      [
+       "1966",
+       78.41
+      ],
+      [
+       "1967",
+       78.94
+      ],
+      [
+       "1968",
+       75.32
+      ],
+      [
+       "1969",
+       72.05
+      ],
+      [
+       "1970",
+       73.55
+      ],
+      [
+       "1971",
+       75.18
+      ],
+      [
+       "1972",
+       72.54
+      ],
+      [
+       "1973",
+       68.45
+      ],
+      [
+       "1974",
+       68.48
+      ],
+      [
+       "1975",
+       68.87
+      ],
+      [
+       "1976",
+       64.26
+      ],
+      [
+       "1977",
+       61.0
+      ],
+      [
+       "1978",
+       59.66
+      ],
+      [
+       "1979",
+       59.94
+      ],
+      [
+       "1980",
+       62.57
+      ],
+      [
+       "1981",
+       62.57
+      ],
+      [
+       "1982",
+       61.29
+      ],
+      [
+       "1983",
+       58.14
+      ],
+      [
+       "1984",
+       56.19
+      ],
+      [
+       "1985",
+       55.62
+      ],
+      [
+       "1986",
+       52.96
+      ],
+      [
+       "1987",
+       50.47
+      ],
+      [
+       "1988",
+       48.72
+      ],
+      [
+       "1989",
+       50.49
+      ],
+      [
+       "1990",
+       50.05
+      ],
+      [
+       "1991",
+       50.23
+      ],
+      [
+       "1992",
+       50.84
+      ],
+      [
+       "1993",
+       51.09
+      ],
+      [
+       "1994",
+       51.85
+      ],
+      [
+       "1995",
+       52.09
+      ],
+      [
+       "1996",
+       53.45
+      ],
+      [
+       "1997",
+       53.6
+      ],
+      [
+       "1998",
+       50.47
+      ],
+      [
+       "1999",
+       52.7
+      ],
+      [
+       "2000",
+       54.6
+      ],
+      [
+       "2001",
+       55.47
+      ],
+      [
+       "2002",
+       56.28
+      ],
+      [
+       "2003",
+       54.45
+      ],
+      [
+       "2004",
+       52.05
+      ],
+      [
+       "2005",
+       52.81
+      ],
+      [
+       "2006",
+       53.62
+      ],
+      [
+       "2007",
+       53.14
+      ],
+      [
+       "2008",
+       53.29
+      ],
+      [
+       "2009",
+       52.54
+      ],
+      [
+       "2010",
+       51.2
+      ],
+      [
+       "2011",
+       52.15
+      ],
+      [
+       "2012",
+       52.25
+      ],
+      [
+       "2013",
+       51.54
+      ],
+      [
+       "2014",
+       51.08
+      ],
+      [
+       "2015",
+       49.79
+      ],
+      [
+       "2016",
+       49.25
+      ],
+      [
+       "2017",
+       48.95
+      ],
+      [
+       "2018",
+       49.41
+      ],
+      [
+       "2019",
+       50.11
+      ],
+      [
+       "2020",
+       47.81
+      ],
+      [
+       "2021",
+       47.11
+      ],
+      [
+       "2022",
+       49.03
+      ],
+      [
+       "2023",
+       49.95
+      ],
+      [
+       "2024",
+       48.49
+      ],
+      [
+       "2025",
+       48.02
+      ]
+     ]
+    }
+   ],
+   "eraIds": [
+    "1960s",
+    "1970s",
+    "1980s",
+    "1990s",
+    "2000s",
+    "2010s",
+    "2020s"
+   ],
+   "note": "가계지출의 '항목별 구성'(식비·주거비 등) 장기 자료는 아직 수집하지 않음"
   }
  ],
  "patterns": {
@@ -20850,7 +24172,7 @@
     ],
     "eventIds": [],
     "deep": true,
-    "degree": 1
+    "degree": 2
    },
    {
     "id": "d-hci-why",
@@ -21683,6 +25005,30 @@
     "eventIds": [],
     "deep": true,
     "degree": 1
+   },
+   {
+    "id": "d97-chaebol-root",
+    "label": "정책금융으로 커진 재벌의 빚 의존 구조",
+    "year": 1978,
+    "yearPrecision": "era",
+    "lane": "industry",
+    "nodeType": "background",
+    "countries": [
+     "KR"
+    ],
+    "importance": 3,
+    "claimIds": [
+     "c97-chaebol-root"
+    ],
+    "kind": "phenomenon",
+    "eraId": "1970s",
+    "domains": [
+     "economy",
+     "industry"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 2
    },
    {
     "id": "e80-reform",
@@ -22738,6 +26084,100 @@
     "nodeType": "phenomenon"
    },
    {
+    "id": "d97-ca",
+    "label": "경상수지 적자 확대 (1996년 약 230억 달러)",
+    "year": 1996,
+    "yearPrecision": "year",
+    "lane": "economy",
+    "nodeType": "background",
+    "countries": [
+     "KR"
+    ],
+    "importance": 2,
+    "claimIds": [
+     "c97-ca"
+    ],
+    "kind": "phenomenon",
+    "eraId": "1990s",
+    "domains": [
+     "economy"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 1
+   },
+   {
+    "id": "d97-leverage",
+    "label": "재벌·제조업의 높은 부채비율 (400~500%)",
+    "year": 1996,
+    "yearPrecision": "year",
+    "lane": "industry",
+    "nodeType": "background",
+    "countries": [
+     "KR"
+    ],
+    "importance": 2,
+    "claimIds": [
+     "c97-leverage"
+    ],
+    "kind": "phenomenon",
+    "eraId": "1990s",
+    "domains": [
+     "economy",
+     "industry"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 4
+   },
+   {
+    "id": "d97-mismatch",
+    "label": "종금사 급증: 단기로 빌려 장기로 빌려줌",
+    "year": 1996,
+    "yearPrecision": "year",
+    "lane": "economy",
+    "nodeType": "mechanism",
+    "countries": [
+     "KR",
+     "JP"
+    ],
+    "importance": 2,
+    "claimIds": [
+     "c97-mismatch"
+    ],
+    "kind": "phenomenon",
+    "eraId": "1990s",
+    "domains": [
+     "economy"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 2
+   },
+   {
+    "id": "d97-shortdebt",
+    "label": "단기외채가 외환보유액의 2.5배 이상",
+    "year": 1996,
+    "yearPrecision": "year",
+    "lane": "economy",
+    "nodeType": "background",
+    "countries": [
+     "KR"
+    ],
+    "importance": 1,
+    "claimIds": [
+     "c97-shortdebt"
+    ],
+    "kind": "phenomenon",
+    "eraId": "1990s",
+    "domains": [
+     "economy"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 4
+   },
+   {
     "id": "e90-cdma",
     "kind": "event",
     "label": "세계 최초 CDMA 상용화",
@@ -22796,7 +26236,7 @@
     "aliases": [
      "1990년대 자본 개방과 외환위기"
     ],
-    "degree": 1,
+    "degree": 2,
     "nodeType": "event"
    },
    {
@@ -22839,6 +26279,174 @@
     "nodeType": "trend"
    },
    {
+    "id": "d97-fx",
+    "label": "환율 1,962원·외환보유액 급감 (1997.12)",
+    "year": 1997,
+    "yearPrecision": "year",
+    "lane": "economy",
+    "nodeType": "outcome",
+    "countries": [
+     "KR"
+    ],
+    "importance": 1,
+    "claimIds": [
+     "c97-fx"
+    ],
+    "kind": "phenomenon",
+    "eraId": "1990s",
+    "domains": [
+     "economy"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 3
+   },
+   {
+    "id": "d97-hanbo",
+    "label": "한보 부도 (1997.1.23)",
+    "year": 1997,
+    "yearPrecision": "year",
+    "lane": "economy",
+    "nodeType": "trigger",
+    "countries": [
+     "KR"
+    ],
+    "importance": 2,
+    "claimIds": [
+     "c97-hanbo"
+    ],
+    "kind": "phenomenon",
+    "eraId": "1990s",
+    "domains": [
+     "economy",
+     "politics"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 2
+   },
+   {
+    "id": "d97-kia",
+    "label": "기아 부도유예·법정관리 (1997.7~10)",
+    "year": 1997,
+    "yearPrecision": "year",
+    "lane": "economy",
+    "nodeType": "trigger",
+    "countries": [
+     "KR"
+    ],
+    "importance": 2,
+    "claimIds": [
+     "c97-kia",
+     "c97-kia-delay"
+    ],
+    "kind": "phenomenon",
+    "eraId": "1990s",
+    "domains": [
+     "economy",
+     "politics"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 3
+   },
+   {
+    "id": "d97-mou",
+    "label": "IMF 정책이행각서 서명 (1997.12.3)",
+    "year": 1997,
+    "yearPrecision": "year",
+    "lane": "politics",
+    "nodeType": "event",
+    "countries": [
+     "KR",
+     "WORLD"
+    ],
+    "importance": 1,
+    "claimIds": [
+     "c97-mou"
+    ],
+    "kind": "event",
+    "eraId": "1990s",
+    "domains": [
+     "economy",
+     "politics"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 5
+   },
+   {
+    "id": "d97-rollover",
+    "label": "외국 은행의 만기연장 거부 → 외화 고갈",
+    "year": 1997,
+    "yearPrecision": "year",
+    "lane": "economy",
+    "nodeType": "mechanism",
+    "countries": [
+     "KR",
+     "US",
+     "JP"
+    ],
+    "importance": 1,
+    "claimIds": [
+     "c97-rollover"
+    ],
+    "kind": "phenomenon",
+    "eraId": "1990s",
+    "domains": [
+     "economy"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 4
+   },
+   {
+    "id": "d97-view-liq",
+    "label": "해석 ①: 유동성 위기 — 외화가 모자라 생긴 위기",
+    "year": 1997,
+    "yearPrecision": "year",
+    "lane": "economy",
+    "nodeType": "background",
+    "countries": [
+     "KR"
+    ],
+    "importance": 3,
+    "claimIds": [
+     "c97-view-liquidity"
+    ],
+    "kind": "phenomenon",
+    "eraId": "1990s",
+    "domains": [
+     "economy"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 1
+   },
+   {
+    "id": "d97-view-str",
+    "label": "해석 ②: 구조적 위기 — 부실 금융·기업 지배구조",
+    "year": 1997,
+    "yearPrecision": "year",
+    "lane": "economy",
+    "nodeType": "background",
+    "countries": [
+     "KR"
+    ],
+    "importance": 3,
+    "claimIds": [
+     "c97-view-structure"
+    ],
+    "kind": "phenomenon",
+    "eraId": "1990s",
+    "domains": [
+     "economy"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 1
+   },
+   {
     "id": "e90-baht",
     "kind": "event",
     "label": "태국 바트화 변동환율 — 아시아 외환위기 시작",
@@ -22866,7 +26474,7 @@
      "1997년 7월 2일 태국은 바트화 고정환율을 포기하고 관리변동환율로…",
      "태국발 위기 전염 → IMF 구제금융"
     ],
-    "degree": 4,
+    "degree": 5,
     "nodeType": "event"
    },
    {
@@ -22924,7 +26532,7 @@
     "eventIds": [
      "e90-imfreq"
     ],
-    "degree": 0,
+    "degree": 2,
     "docIds": [
      "doc90-chosun"
     ],
@@ -22966,6 +26574,80 @@
     "nodeType": "trend"
    },
    {
+    "id": "d97-dispatch",
+    "label": "파견근로 합법화 → 정규직 비중 축소 압력",
+    "year": 1998,
+    "yearPrecision": "year",
+    "lane": "society",
+    "nodeType": "change",
+    "countries": [
+     "KR"
+    ],
+    "importance": 2,
+    "claimIds": [
+     "c97-dispatch"
+    ],
+    "kind": "phenomenon",
+    "eraId": "1990s",
+    "domains": [
+     "economy",
+     "society"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 1
+   },
+   {
+    "id": "d97-tripartite",
+    "label": "노사정 사회협약: 정리해고·파견 수용 (1998.2)",
+    "year": 1998,
+    "yearPrecision": "year",
+    "lane": "politics",
+    "nodeType": "change",
+    "countries": [
+     "KR"
+    ],
+    "importance": 1,
+    "claimIds": [
+     "c97-tripartite"
+    ],
+    "kind": "phenomenon",
+    "eraId": "1990s",
+    "domains": [
+     "politics",
+     "society"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 3
+   },
+   {
+    "id": "d97-unemp",
+    "label": "실업대란 (1998, 실직자 최대 180만)",
+    "year": 1998,
+    "yearPrecision": "year",
+    "lane": "society",
+    "nodeType": "outcome",
+    "countries": [
+     "KR"
+    ],
+    "importance": 1,
+    "claimIds": [
+     "c97-unemp-cause",
+     "c90-unemp"
+    ],
+    "kind": "phenomenon",
+    "eraId": "1990s",
+    "domains": [
+     "economy",
+     "labor",
+     "society"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 4
+   },
+   {
     "id": "e90-gold",
     "kind": "event",
     "label": "금 모으기 운동 (~4월)",
@@ -22980,7 +26662,7 @@
     "countries": [
      "KR"
     ],
-    "importance": 2,
+    "importance": 1,
     "claimIds": [
      "c90-gold",
      "c90-unemp",
@@ -22994,7 +26676,7 @@
     "aliases": [
      "1997년 2.6%였던 실업률은 1998년 연평균 6.8%로 올랐다.…"
     ],
-    "degree": 2,
+    "degree": 3,
     "nodeType": "event"
    },
    {
@@ -23184,8 +26866,32 @@
       }
      ]
     },
-    "degree": 0,
+    "degree": 1,
     "nodeType": "trend"
+   },
+   {
+    "id": "d97-safety",
+    "label": "사회안전망 확대 (고용보험·국민연금)",
+    "year": 1999,
+    "yearPrecision": "year",
+    "lane": "society",
+    "nodeType": "change",
+    "countries": [
+     "KR"
+    ],
+    "importance": 2,
+    "claimIds": [
+     "c97-safety"
+    ],
+    "kind": "phenomenon",
+    "eraId": "1990s",
+    "domains": [
+     "politics",
+     "society"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 1
    },
    {
     "id": "e90-euro",
@@ -23410,6 +27116,53 @@
     "eventIds": [],
     "degree": 2,
     "nodeType": "change"
+   },
+   {
+    "id": "d97-repay",
+    "label": "IMF 차입금 조기 상환 (2001.8.23)",
+    "year": 2001,
+    "yearPrecision": "year",
+    "lane": "economy",
+    "nodeType": "outcome",
+    "countries": [
+     "KR",
+     "WORLD"
+    ],
+    "importance": 2,
+    "claimIds": [
+     "c97-repay"
+    ],
+    "kind": "phenomenon",
+    "eraId": "2000s",
+    "domains": [
+     "economy"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 1
+   },
+   {
+    "id": "d97-reserve",
+    "label": "외환보유액 확충 (2001년 1,000억 → 2005년 2,000억 달러)",
+    "year": 2001,
+    "yearPrecision": "year",
+    "lane": "economy",
+    "nodeType": "outcome",
+    "countries": [
+     "KR"
+    ],
+    "importance": 2,
+    "claimIds": [
+     "c97-reserve-build"
+    ],
+    "kind": "phenomenon",
+    "eraId": "2000s",
+    "domains": [
+     "economy"
+    ],
+    "eventIds": [],
+    "deep": true,
+    "degree": 1
    },
    {
     "id": "e00-wto",
@@ -27117,6 +30870,14 @@
     "ref": "1970s",
     "eraId": "1970s",
     "steps": []
+   },
+   {
+    "id": "deep-1997",
+    "kind": "case",
+    "title": "1997년 외환위기 심층 사례 (단기외채·재벌 부채 → 만기연장 거부 → IMF → 노동시장·외환보유액)",
+    "ref": "1990s",
+    "eraId": "1990s",
+    "steps": []
    }
   ],
   "edges": [
@@ -28617,7 +32378,7 @@
     ]
    },
    {
-    "id": "e-d73-0",
+    "id": "e-deep-1973-0",
     "from": "d-bw",
     "to": "e70-nixon",
     "rel": "background",
@@ -28630,7 +32391,7 @@
     ]
    },
    {
-    "id": "e-d73-1",
+    "id": "e-deep-1973-1",
     "from": "e70-nixon",
     "to": "e70-oil",
     "rel": "influence",
@@ -28642,7 +32403,7 @@
     ]
    },
    {
-    "id": "e-d73-2",
+    "id": "e-deep-1973-2",
     "from": "d-1967war",
     "to": "d-res242",
     "rel": "cause",
@@ -28655,7 +32416,7 @@
     ]
    },
    {
-    "id": "e-d73-3",
+    "id": "e-deep-1973-3",
     "from": "d-1967war",
     "to": "d-stalemate",
     "rel": "background",
@@ -28668,7 +32429,7 @@
     ]
    },
    {
-    "id": "e-d73-4",
+    "id": "e-deep-1973-4",
     "from": "d-res242",
     "to": "d-stalemate",
     "rel": "background",
@@ -28681,7 +32442,7 @@
     ]
    },
    {
-    "id": "e-d73-5",
+    "id": "e-deep-1973-5",
     "from": "d-stalemate",
     "to": "d-goals",
     "rel": "cause",
@@ -28693,7 +32454,7 @@
     ]
    },
    {
-    "id": "e-d73-6",
+    "id": "e-deep-1973-6",
     "from": "d-goals",
     "to": "d-war1973",
     "rel": "cause",
@@ -28705,7 +32466,7 @@
     ]
    },
    {
-    "id": "e-d73-7",
+    "id": "e-deep-1973-7",
     "from": "d-us-coldwar",
     "to": "d-airlift",
     "rel": "background",
@@ -28718,7 +32479,7 @@
     ]
    },
    {
-    "id": "e-d73-8",
+    "id": "e-deep-1973-8",
     "from": "d-war1973",
     "to": "d-airlift",
     "rel": "trigger",
@@ -28730,7 +32491,7 @@
     ]
    },
    {
-    "id": "e-d73-9",
+    "id": "e-deep-1973-9",
     "from": "d-saudi",
     "to": "d-embargo",
     "rel": "influence",
@@ -28743,7 +32504,7 @@
     ]
    },
    {
-    "id": "e-d73-10",
+    "id": "e-deep-1973-10",
     "from": "d-war1973",
     "to": "d-embargo",
     "rel": "background",
@@ -28755,7 +32516,7 @@
     ]
    },
    {
-    "id": "e-d73-11",
+    "id": "e-deep-1973-11",
     "from": "d-airlift",
     "to": "d-embargo",
     "rel": "trigger",
@@ -28768,7 +32529,7 @@
     ]
    },
    {
-    "id": "e-d73-12",
+    "id": "e-deep-1973-12",
     "from": "d-embargo",
     "to": "d-price-mech",
     "rel": "cause",
@@ -28780,7 +32541,7 @@
     ]
    },
    {
-    "id": "e-d73-13",
+    "id": "e-deep-1973-13",
     "from": "e70-oil",
     "to": "d-price-mech",
     "rel": "influence",
@@ -28793,7 +32554,7 @@
     ]
    },
    {
-    "id": "e-d73-14",
+    "id": "e-deep-1973-14",
     "from": "e70-nixon",
     "to": "d-price-mech",
     "rel": "background",
@@ -28806,7 +32567,7 @@
     ]
    },
    {
-    "id": "e-d73-15",
+    "id": "e-deep-1973-15",
     "from": "d-price-mech",
     "to": "e70-iea",
     "rel": "cause",
@@ -28818,7 +32579,7 @@
     ]
    },
    {
-    "id": "e-d73-16",
+    "id": "e-deep-1973-16",
     "from": "d-kr-structure",
     "to": "d-transmit",
     "rel": "background",
@@ -28831,7 +32592,7 @@
     ]
    },
    {
-    "id": "e-d73-17",
+    "id": "e-deep-1973-17",
     "from": "d-price-mech",
     "to": "d-transmit",
     "rel": "cause",
@@ -28843,7 +32604,7 @@
     ]
    },
    {
-    "id": "e-d73-18",
+    "id": "e-deep-1973-18",
     "from": "d-embargo",
     "to": "e70-kr-order",
     "rel": "cause",
@@ -28856,7 +32617,7 @@
     ]
    },
    {
-    "id": "e-d73-19",
+    "id": "e-deep-1973-19",
     "from": "d-transmit",
     "to": "d-kr-cpi",
     "rel": "cause",
@@ -28869,7 +32630,7 @@
     ]
    },
    {
-    "id": "e-d73-20",
+    "id": "e-deep-1973-20",
     "from": "d-transmit",
     "to": "d-briquette",
     "rel": "influence",
@@ -28881,7 +32642,7 @@
     ]
    },
    {
-    "id": "e-d73-21",
+    "id": "e-deep-1973-21",
     "from": "d-transmit",
     "to": "e70-emergency",
     "rel": "cause",
@@ -28894,7 +32655,7 @@
     ]
    },
    {
-    "id": "e-d73-22",
+    "id": "e-deep-1973-22",
     "from": "d-yushin",
     "to": "e70-emergency",
     "rel": "background",
@@ -28907,7 +32668,7 @@
     ]
    },
    {
-    "id": "e-d73-23",
+    "id": "e-deep-1973-23",
     "from": "d-price-mech",
     "to": "d-kr-mideast",
     "rel": "cause",
@@ -28919,7 +32680,7 @@
     ]
    },
    {
-    "id": "e-d73-24",
+    "id": "e-deep-1973-24",
     "from": "d-hci-why",
     "to": "e70-hci",
     "rel": "cause",
@@ -28932,7 +32693,7 @@
     ]
    },
    {
-    "id": "e-d73-25",
+    "id": "e-deep-1973-25",
     "from": "e70-hci",
     "to": "d-hci-fund",
     "rel": "cause",
@@ -28944,7 +32705,7 @@
     ]
    },
    {
-    "id": "e-d73-26",
+    "id": "e-deep-1973-26",
     "from": "e70-hci",
     "to": "d-kr-2nd",
     "rel": "background",
@@ -28956,7 +32717,7 @@
     ]
    },
    {
-    "id": "e-d73-27",
+    "id": "e-deep-1973-27",
     "from": "d-kr-structure",
     "to": "d-kr-2nd",
     "rel": "sequence",
@@ -28968,7 +32729,7 @@
     ]
    },
    {
-    "id": "e-d73-28",
+    "id": "e-deep-1973-28",
     "from": "d-price-mech",
     "to": "d-ministry",
     "rel": "influence",
@@ -28980,7 +32741,7 @@
     ]
    },
    {
-    "id": "e-d73-29",
+    "id": "e-deep-1973-29",
     "from": "d-price-mech",
     "to": "d-kori",
     "rel": "influence",
@@ -28992,7 +32753,7 @@
     ]
    },
    {
-    "id": "e-d73-30",
+    "id": "e-deep-1973-30",
     "from": "d-pop60",
     "to": "d-folk70",
     "rel": "background",
@@ -29005,7 +32766,7 @@
     ]
    },
    {
-    "id": "e-d73-31",
+    "id": "e-deep-1973-31",
     "from": "d-sesibong",
     "to": "d-folk70",
     "rel": "cause",
@@ -29017,7 +32778,7 @@
     ]
    },
    {
-    "id": "e-d73-32",
+    "id": "e-deep-1973-32",
     "from": "d-us-folk",
     "to": "d-folk70",
     "rel": "influence",
@@ -29029,7 +32790,7 @@
     ]
    },
    {
-    "id": "e-d73-33",
+    "id": "e-deep-1973-33",
     "from": "d-culture-cond",
     "to": "d-folk70",
     "rel": "background",
@@ -29041,7 +32802,7 @@
     ]
    },
    {
-    "id": "e-d73-34",
+    "id": "e-deep-1973-34",
     "from": "d-folk70",
     "to": "tr-t70-youth",
     "rel": "cause",
@@ -29054,7 +32815,7 @@
     ]
    },
    {
-    "id": "e-d73-35",
+    "id": "e-deep-1973-35",
     "from": "tr-t70-youth",
     "to": "e70-taboo",
     "rel": "influence",
@@ -29067,7 +32828,7 @@
     ]
    },
    {
-    "id": "e-d73-36",
+    "id": "e-deep-1973-36",
     "from": "d-yushin",
     "to": "e70-taboo",
     "rel": "sequence",
@@ -29080,7 +32841,7 @@
     ]
    },
    {
-    "id": "e-d73-37",
+    "id": "e-deep-1973-37",
     "from": "tr-t70-youth",
     "to": "d-ban1975",
     "rel": "influence",
@@ -29092,7 +32853,7 @@
     ]
    },
    {
-    "id": "e-d73-38",
+    "id": "e-deep-1973-38",
     "from": "d-ban1975",
     "to": "d-campus1977",
     "rel": "sequence",
@@ -29105,7 +32866,7 @@
     ]
    },
    {
-    "id": "e-d73-39",
+    "id": "e-deep-1973-39",
     "from": "d-folk70",
     "to": "d-sesibong-revival",
     "rel": "sequence",
@@ -29118,7 +32879,7 @@
     ]
    },
    {
-    "id": "e-d73-40",
+    "id": "e-deep-1973-40",
     "from": "d-sesibong-revival",
     "to": "d-analog2011",
     "rel": "similar",
@@ -29128,6 +32889,322 @@
     "claimIds": [
      "c10-sesibong",
      "c10-analog"
+    ]
+   },
+   {
+    "id": "e-deep-1997-0",
+    "from": "d-hci-fund",
+    "to": "d97-chaebol-root",
+    "rel": "background",
+    "verification": "interpretation",
+    "chainId": "deep-1997",
+    "note": "정책금융으로 중화학공업에 빚을 몰아준 방식이 빚에 기댄 확장의 출발점이라는 해석",
+    "claimIds": [
+     "c70-hci-fund",
+     "c97-chaebol-root"
+    ]
+   },
+   {
+    "id": "e-deep-1997-1",
+    "from": "d97-chaebol-root",
+    "to": "d97-leverage",
+    "rel": "background",
+    "verification": "interpretation",
+    "chainId": "deep-1997",
+    "note": "1970년대 후반부터 이어진 높은 부채 의존",
+    "claimIds": [
+     "c97-chaebol-root",
+     "c97-leverage"
+    ]
+   },
+   {
+    "id": "e-deep-1997-2",
+    "from": "e90-oecd",
+    "to": "d97-mismatch",
+    "rel": "background",
+    "verification": "interpretation",
+    "chainId": "deep-1997",
+    "note": "OECD 가입을 위한 금융 개방 속에서 단기 외화차입이 늘어남",
+    "claimIds": [
+     "c90-why-open",
+     "c97-mismatch"
+    ]
+   },
+   {
+    "id": "e-deep-1997-3",
+    "from": "d97-ca",
+    "to": "d97-shortdebt",
+    "rel": "influence",
+    "verification": "evidenced",
+    "chainId": "deep-1997",
+    "note": "경상수지 적자를 주로 외국 자본 유입으로 메워 외채가 늘어남",
+    "claimIds": [
+     "c97-ca",
+     "c97-shortdebt"
+    ]
+   },
+   {
+    "id": "e-deep-1997-4",
+    "from": "d97-mismatch",
+    "to": "d97-shortdebt",
+    "rel": "cause",
+    "verification": "evidenced",
+    "chainId": "deep-1997",
+    "note": "금융기관의 단기 해외차입이 단기외채를 키움",
+    "claimIds": [
+     "c97-mismatch",
+     "c97-shortdebt"
+    ]
+   },
+   {
+    "id": "e-deep-1997-5",
+    "from": "d97-leverage",
+    "to": "d97-hanbo",
+    "rel": "background",
+    "verification": "interpretation",
+    "chainId": "deep-1997",
+    "note": "빚으로 확장한 대기업이 금리·수익 악화를 견디지 못함",
+    "claimIds": [
+     "c97-leverage",
+     "c97-hanbo"
+    ]
+   },
+   {
+    "id": "e-deep-1997-6",
+    "from": "d97-leverage",
+    "to": "d97-kia",
+    "rel": "background",
+    "verification": "interpretation",
+    "chainId": "deep-1997",
+    "note": "",
+    "claimIds": [
+     "c97-leverage",
+     "c97-kia"
+    ]
+   },
+   {
+    "id": "e-deep-1997-7",
+    "from": "d97-hanbo",
+    "to": "d97-kia",
+    "rel": "sequence",
+    "verification": "interpretation",
+    "chainId": "deep-1997",
+    "note": "1997년 대기업 연쇄 부도의 시작과 정점. 한보가 기아 부도를 일으켰다는 근거는 없음",
+    "claimIds": [
+     "c97-hanbo",
+     "c97-kia"
+    ]
+   },
+   {
+    "id": "e-deep-1997-8",
+    "from": "d97-kia",
+    "to": "d97-rollover",
+    "rel": "influence",
+    "verification": "interpretation",
+    "chainId": "deep-1997",
+    "note": "처리 지연이 대외 신인도 하락을 재촉했다는 평가(한 출처의 해석)",
+    "claimIds": [
+     "c97-kia-delay",
+     "c97-rollover"
+    ]
+   },
+   {
+    "id": "e-deep-1997-9",
+    "from": "e90-baht",
+    "to": "d97-rollover",
+    "rel": "trigger",
+    "verification": "interpretation",
+    "chainId": "deep-1997",
+    "note": "아시아 위기가 번지며 외국 은행들이 아시아 단기 대출을 회수",
+    "claimIds": [
+     "c90-baht",
+     "c97-rollover"
+    ]
+   },
+   {
+    "id": "e-deep-1997-10",
+    "from": "d97-shortdebt",
+    "to": "d97-rollover",
+    "rel": "cause",
+    "verification": "evidenced",
+    "chainId": "deep-1997",
+    "note": "갚아야 할 단기외채가 보유 외화보다 훨씬 많아 연장 거부가 곧 지급불능 위험이 됨",
+    "claimIds": [
+     "c97-shortdebt",
+     "c97-rollover"
+    ]
+   },
+   {
+    "id": "e-deep-1997-11",
+    "from": "d97-rollover",
+    "to": "d97-fx",
+    "rel": "cause",
+    "verification": "evidenced",
+    "chainId": "deep-1997",
+    "note": "외화 유출 → 보유액 급감 → 환율 폭등",
+    "claimIds": [
+     "c97-rollover",
+     "c97-fx"
+    ]
+   },
+   {
+    "id": "e-deep-1997-12",
+    "from": "d97-fx",
+    "to": "e90-imfreq",
+    "rel": "cause",
+    "verification": "evidenced",
+    "chainId": "deep-1997",
+    "note": "외화가 바닥나 IMF에 구제금융 요청",
+    "claimIds": [
+     "c97-fx",
+     "c90-kr-imf"
+    ]
+   },
+   {
+    "id": "e-deep-1997-13",
+    "from": "e90-imfreq",
+    "to": "d97-mou",
+    "rel": "sequence",
+    "verification": "evidenced",
+    "chainId": "deep-1997",
+    "note": "요청 12일 뒤 이행각서 서명",
+    "claimIds": [
+     "c97-mou",
+     "c90-ch-550"
+    ]
+   },
+   {
+    "id": "e-deep-1997-14",
+    "from": "d97-shortdebt",
+    "to": "d97-view-liq",
+    "rel": "similar",
+    "verification": "interpretation",
+    "chainId": "deep-1997",
+    "note": "단기외채 대비 외화 부족을 핵심으로 보는 견해",
+    "claimIds": [
+     "c97-view-liquidity"
+    ]
+   },
+   {
+    "id": "e-deep-1997-15",
+    "from": "d97-leverage",
+    "to": "d97-view-str",
+    "rel": "similar",
+    "verification": "interpretation",
+    "chainId": "deep-1997",
+    "note": "부실 금융·기업 지배구조를 핵심으로 보는 견해",
+    "claimIds": [
+     "c97-view-structure"
+    ]
+   },
+   {
+    "id": "e-deep-1997-16",
+    "from": "d97-mou",
+    "to": "d97-unemp",
+    "rel": "cause",
+    "verification": "evidenced",
+    "chainId": "deep-1997",
+    "note": "고금리 긴축과 구조조정 요구 → 부도 속출 → 실업대란(한국노동연구원)",
+    "claimIds": [
+     "c97-unemp-cause"
+    ]
+   },
+   {
+    "id": "e-deep-1997-17",
+    "from": "d97-mou",
+    "to": "d97-tripartite",
+    "rel": "background",
+    "verification": "evidenced",
+    "chainId": "deep-1997",
+    "note": "IMF가 요구한 구조조정을 위한 사회적 합의",
+    "claimIds": [
+     "c97-tripartite"
+    ]
+   },
+   {
+    "id": "e-deep-1997-18",
+    "from": "d97-tripartite",
+    "to": "d97-dispatch",
+    "rel": "cause",
+    "verification": "evidenced",
+    "chainId": "deep-1997",
+    "note": "사회협약 직후 정리해고제·파견근로제 법제화",
+    "claimIds": [
+     "c97-tripartite",
+     "c97-dispatch"
+    ]
+   },
+   {
+    "id": "e-deep-1997-19",
+    "from": "d97-tripartite",
+    "to": "d97-unemp",
+    "rel": "influence",
+    "verification": "evidenced",
+    "chainId": "deep-1997",
+    "note": "정리해고제 도입으로 인원감축 중심의 구조조정",
+    "claimIds": [
+     "c97-unemp-cause"
+    ]
+   },
+   {
+    "id": "e-deep-1997-20",
+    "from": "d97-unemp",
+    "to": "d97-safety",
+    "rel": "cause",
+    "verification": "evidenced",
+    "chainId": "deep-1997",
+    "note": "대량 실업에 대응한 실업대책·사회보험 확대",
+    "claimIds": [
+     "c97-safety"
+    ]
+   },
+   {
+    "id": "e-deep-1997-21",
+    "from": "d97-unemp",
+    "to": "tr-t90-pcbang",
+    "rel": "influence",
+    "verification": "hypothesis",
+    "chainId": "deep-1997",
+    "note": "실직자의 PC방 창업이 많았다는 이야기가 있으나 정량 근거는 아직 없음(가설)",
+    "claimIds": [
+     "c90-unemp",
+     "c90-pcbang"
+    ]
+   },
+   {
+    "id": "e-deep-1997-22",
+    "from": "d97-mou",
+    "to": "e90-gold",
+    "rel": "sequence",
+    "verification": "evidenced",
+    "chainId": "deep-1997",
+    "note": "IMF 체제 직후 금 모으기 운동",
+    "claimIds": [
+     "c90-gold"
+    ]
+   },
+   {
+    "id": "e-deep-1997-23",
+    "from": "d97-mou",
+    "to": "d97-repay",
+    "rel": "sequence",
+    "verification": "evidenced",
+    "chainId": "deep-1997",
+    "note": "3년 8개월 뒤 조기 상환",
+    "claimIds": [
+     "c97-repay"
+    ]
+   },
+   {
+    "id": "e-deep-1997-24",
+    "from": "d97-fx",
+    "to": "d97-reserve",
+    "rel": "influence",
+    "verification": "interpretation",
+    "chainId": "deep-1997",
+    "note": "외화가 바닥났던 경험 뒤 외환보유액을 위기 완충장치로 쌓음",
+    "claimIds": [
+     "c97-reserve-build"
     ]
    }
   ],
@@ -29159,6 +33236,191 @@
    "trend": "유행·생활 트렌드",
    "phenomenon": "현상"
   }
+ },
+ "numberChecks": {
+  "c70-kr-cpi": [
+   {
+    "indicator": "cpi-kr",
+    "title": "한국 소비자물가 상승률",
+    "year": 1974,
+    "claimed": 24,
+    "data": 24.3,
+    "unit": "%",
+    "memo": "",
+    "ok": true,
+    "verdict": "일치"
+   },
+   {
+    "indicator": "cpi-kr",
+    "title": "한국 소비자물가 상승률",
+    "year": 1975,
+    "claimed": 25,
+    "data": 25.2,
+    "unit": "%",
+    "memo": "",
+    "ok": true,
+    "verdict": "일치"
+   }
+  ],
+  "c70-kr-growth": [
+   {
+    "indicator": "gdp-growth",
+    "title": "실질 경제성장률",
+    "year": 1973,
+    "claimed": 12.3,
+    "data": 14.97,
+    "unit": "%",
+    "memo": "국민계정 기준연도 개편으로 옛 집계와 현재 계열이 다를 수 있음",
+    "ok": false,
+    "verdict": "차이"
+   },
+   {
+    "indicator": "gdp-growth",
+    "title": "실질 경제성장률",
+    "year": 1974,
+    "claimed": 7.4,
+    "data": 9.65,
+    "unit": "%",
+    "memo": "국민계정 기준연도 개편으로 옛 집계와 현재 계열이 다를 수 있음",
+    "ok": false,
+    "verdict": "차이"
+   },
+   {
+    "indicator": "gdp-growth",
+    "title": "실질 경제성장률",
+    "year": 1976,
+    "claimed": 11.2,
+    "data": 13.26,
+    "unit": "%",
+    "memo": "국민계정 기준연도 개편으로 옛 집계와 현재 계열이 다를 수 있음",
+    "ok": false,
+    "verdict": "차이"
+   }
+  ],
+  "c70-kr-2nd": [
+   {
+    "indicator": "gdp-growth",
+    "title": "실질 경제성장률",
+    "year": 1980,
+    "claimed": -5.2,
+    "data": -1.52,
+    "unit": "%",
+    "memo": "국민계정 기준연도 개편으로 옛 집계와 현재 계열이 다를 수 있음",
+    "ok": false,
+    "verdict": "차이"
+   },
+   {
+    "indicator": "cpi-kr",
+    "title": "한국 소비자물가 상승률",
+    "year": 1980,
+    "claimed": 30,
+    "data": 28.7,
+    "unit": "%",
+    "memo": "문장은 '30%에 이르렀다'(어림값)",
+    "ok": true,
+    "verdict": "일치"
+   }
+  ],
+  "c90-unemp": [
+   {
+    "indicator": "unemp-kr",
+    "title": "실업률",
+    "year": 1997,
+    "claimed": 2.6,
+    "data": 2.617,
+    "unit": "%",
+    "memo": "",
+    "ok": true,
+    "verdict": "일치"
+   },
+   {
+    "indicator": "unemp-kr",
+    "title": "실업률",
+    "year": 1998,
+    "claimed": 6.8,
+    "data": 6.95,
+    "unit": "%",
+    "memo": "통계청 연평균과 OECD 계절조정 연평균의 차이",
+    "ok": true,
+    "verdict": "일치"
+   }
+  ],
+  "c90-growth98": [
+   {
+    "indicator": "gdp-growth",
+    "title": "실질 경제성장률",
+    "year": 1998,
+    "claimed": -6.9,
+    "data": -4.94,
+    "unit": "%",
+    "memo": "문장이 이미 '현재 기준치(약 -5%대)와 다르다'고 밝힘",
+    "ok": false,
+    "verdict": "차이"
+   }
+  ],
+  "c10-tfr": [
+   {
+    "indicator": "tfr-kr",
+    "title": "한국 합계출산율",
+    "year": 2018,
+    "claimed": 0.98,
+    "data": 0.98,
+    "unit": "명",
+    "memo": "",
+    "ok": true,
+    "verdict": "일치"
+   }
+  ],
+  "c20-pop": [
+   {
+    "indicator": "tfr-kr",
+    "title": "한국 합계출산율",
+    "year": 2023,
+    "claimed": 0.72,
+    "data": 0.72,
+    "unit": "명",
+    "memo": "",
+    "ok": true,
+    "verdict": "일치"
+   },
+   {
+    "indicator": "tfr-kr",
+    "title": "한국 합계출산율",
+    "year": 2024,
+    "claimed": 0.75,
+    "data": 0.75,
+    "unit": "명",
+    "memo": "",
+    "ok": true,
+    "verdict": "일치"
+   }
+  ],
+  "c60-kr-export-1": [
+   {
+    "indicator": "exports-kr",
+    "title": "상품 수출액",
+    "year": 1964,
+    "claimed": 1.0,
+    "data": 1.16,
+    "unit": "억 달러",
+    "memo": "문장: 1964년 수출 1억 달러 돌파 → 연간 값이 1억 달러 이상인지 확인",
+    "ok": true,
+    "verdict": "일치"
+   }
+  ],
+  "c20-kr-chip": [
+   {
+    "indicator": "exports-kr",
+    "title": "상품 수출액",
+    "year": 2025,
+    "claimed": 7097,
+    "data": 7111.01,
+    "unit": "억 달러",
+    "memo": "상대 오차 1% (통관 기준과 OECD 집계 차이)",
+    "ok": true,
+    "verdict": "일치"
+   }
+  ]
  },
  "cycles": {
   "analyses": [
@@ -38935,6 +43197,6806 @@
     },
     "verdict": "E",
     "why": "직선 추세가 변동의 97% 설명"
+   },
+   {
+    "key": "va-agr-kr:KR",
+    "indicator": "va-agr-kr",
+    "country": "KR",
+    "title": "농림어업 생산 비중 (GDP 대비)",
+    "unit": "%",
+    "from": 1960,
+    "to": 2025,
+    "points": [
+     [
+      1960,
+      36.44
+     ],
+     [
+      1961,
+      38.53
+     ],
+     [
+      1962,
+      36.46
+     ],
+     [
+      1963,
+      42.9
+     ],
+     [
+      1964,
+      46.29
+     ],
+     [
+      1965,
+      37.28
+     ],
+     [
+      1966,
+      34.15
+     ],
+     [
+      1967,
+      29.97
+     ],
+     [
+      1968,
+      27.94
+     ],
+     [
+      1969,
+      27.18
+     ],
+     [
+      1970,
+      26.25
+     ],
+     [
+      1971,
+      26.86
+     ],
+     [
+      1972,
+      26.19
+     ],
+     [
+      1973,
+      24.27
+     ],
+     [
+      1974,
+      23.78
+     ],
+     [
+      1975,
+      24.1
+     ],
+     [
+      1976,
+      22.68
+     ],
+     [
+      1977,
+      21.44
+     ],
+     [
+      1978,
+      19.59
+     ],
+     [
+      1979,
+      18.22
+     ],
+     [
+      1980,
+      14.01
+     ],
+     [
+      1981,
+      14.74
+     ],
+     [
+      1982,
+      13.72
+     ],
+     [
+      1983,
+      12.35
+     ],
+     [
+      1984,
+      11.59
+     ],
+     [
+      1985,
+      11.46
+     ],
+     [
+      1986,
+      10.14
+     ],
+     [
+      1987,
+      9.03
+     ],
+     [
+      1988,
+      8.95
+     ],
+     [
+      1989,
+      8.29
+     ],
+     [
+      1990,
+      7.37
+     ],
+     [
+      1991,
+      6.61
+     ],
+     [
+      1992,
+      6.39
+     ],
+     [
+      1993,
+      5.72
+     ],
+     [
+      1994,
+      5.47
+     ],
+     [
+      1995,
+      5.14
+     ],
+     [
+      1996,
+      4.79
+     ],
+     [
+      1997,
+      4.32
+     ],
+     [
+      1998,
+      4.07
+     ],
+     [
+      1999,
+      4.09
+     ],
+     [
+      2000,
+      3.71
+     ],
+     [
+      2001,
+      3.43
+     ],
+     [
+      2002,
+      3.08
+     ],
+     [
+      2003,
+      2.85
+     ],
+     [
+      2004,
+      2.84
+     ],
+     [
+      2005,
+      2.51
+     ],
+     [
+      2006,
+      2.39
+     ],
+     [
+      2007,
+      2.18
+     ],
+     [
+      2008,
+      2.04
+     ],
+     [
+      2009,
+      2.14
+     ],
+     [
+      2010,
+      2.04
+     ],
+     [
+      2011,
+      2.11
+     ],
+     [
+      2012,
+      2.08
+     ],
+     [
+      2013,
+      2.0
+     ],
+     [
+      2014,
+      1.95
+     ],
+     [
+      2015,
+      1.9
+     ],
+     [
+      2016,
+      1.74
+     ],
+     [
+      2017,
+      1.71
+     ],
+     [
+      2018,
+      1.6
+     ],
+     [
+      2019,
+      1.51
+     ],
+     [
+      2020,
+      1.58
+     ],
+     [
+      2021,
+      1.67
+     ],
+     [
+      2022,
+      1.45
+     ],
+     [
+      2023,
+      1.45
+     ],
+     [
+      2024,
+      1.46
+     ],
+     [
+      2025,
+      1.46
+     ]
+    ],
+    "trend": [
+     [
+      1960,
+      31.73
+     ],
+     [
+      2025,
+      -7.07
+     ]
+    ],
+    "turningPoints": [
+     {
+      "year": 1964,
+      "kind": "peak",
+      "value": 46.29
+     }
+    ],
+    "highThreshold": 1.21,
+    "lowThreshold": -2.29,
+    "episodeBasis": "전년 대비 변화",
+    "episodeUnit": "%",
+    "residual": [
+     [
+      1960,
+      4.71
+     ],
+     [
+      1961,
+      7.4
+     ],
+     [
+      1962,
+      5.92
+     ],
+     [
+      1963,
+      12.96
+     ],
+     [
+      1964,
+      16.95
+     ],
+     [
+      1965,
+      8.53
+     ],
+     [
+      1966,
+      6.0
+     ],
+     [
+      1967,
+      2.42
+     ],
+     [
+      1968,
+      0.99
+     ],
+     [
+      1969,
+      0.82
+     ],
+     [
+      1970,
+      0.49
+     ],
+     [
+      1971,
+      1.7
+     ],
+     [
+      1972,
+      1.62
+     ],
+     [
+      1973,
+      0.3
+     ],
+     [
+      1974,
+      0.41
+     ],
+     [
+      1975,
+      1.32
+     ],
+     [
+      1976,
+      0.5
+     ],
+     [
+      1977,
+      -0.14
+     ],
+     [
+      1978,
+      -1.39
+     ],
+     [
+      1979,
+      -2.17
+     ],
+     [
+      1980,
+      -5.78
+     ],
+     [
+      1981,
+      -4.45
+     ],
+     [
+      1982,
+      -4.88
+     ],
+     [
+      1983,
+      -5.65
+     ],
+     [
+      1984,
+      -5.81
+     ],
+     [
+      1985,
+      -5.35
+     ],
+     [
+      1986,
+      -6.07
+     ],
+     [
+      1987,
+      -6.58
+     ],
+     [
+      1988,
+      -6.06
+     ],
+     [
+      1989,
+      -6.13
+     ],
+     [
+      1990,
+      -6.45
+     ],
+     [
+      1991,
+      -6.61
+     ],
+     [
+      1992,
+      -6.24
+     ],
+     [
+      1993,
+      -6.31
+     ],
+     [
+      1994,
+      -5.96
+     ],
+     [
+      1995,
+      -5.7
+     ],
+     [
+      1996,
+      -5.45
+     ],
+     [
+      1997,
+      -5.32
+     ],
+     [
+      1998,
+      -4.97
+     ],
+     [
+      1999,
+      -4.36
+     ],
+     [
+      2000,
+      -4.14
+     ],
+     [
+      2001,
+      -3.82
+     ],
+     [
+      2002,
+      -3.58
+     ],
+     [
+      2003,
+      -3.21
+     ],
+     [
+      2004,
+      -2.62
+     ],
+     [
+      2005,
+      -2.36
+     ],
+     [
+      2006,
+      -1.88
+     ],
+     [
+      2007,
+      -1.49
+     ],
+     [
+      2008,
+      -1.03
+     ],
+     [
+      2009,
+      -0.34
+     ],
+     [
+      2010,
+      0.16
+     ],
+     [
+      2011,
+      0.83
+     ],
+     [
+      2012,
+      1.39
+     ],
+     [
+      2013,
+      1.91
+     ],
+     [
+      2014,
+      2.46
+     ],
+     [
+      2015,
+      3.0
+     ],
+     [
+      2016,
+      3.44
+     ],
+     [
+      2017,
+      4.01
+     ],
+     [
+      2018,
+      4.5
+     ],
+     [
+      2019,
+      5.0
+     ],
+     [
+      2020,
+      5.67
+     ],
+     [
+      2021,
+      6.36
+     ],
+     [
+      2022,
+      6.73
+     ],
+     [
+      2023,
+      7.33
+     ],
+     [
+      2024,
+      7.94
+     ],
+     [
+      2025,
+      8.53
+     ]
+    ],
+    "highEpisodes": [
+     [
+      1961,
+      1964
+     ]
+    ],
+    "lowEpisodes": [
+     [
+      1965,
+      1967
+     ],
+     [
+      1980,
+      1980
+     ]
+    ],
+    "highIntervals": {
+     "starts": [
+      1961
+     ],
+     "gaps": [],
+     "cv": null,
+     "regular": null
+    },
+    "lowIntervals": {
+     "starts": [
+      1965,
+      1980
+     ],
+     "gaps": [
+      15
+     ],
+     "cv": null,
+     "regular": null
+    },
+    "sensitivity": [
+     {
+      "range": [
+       1960,
+       1992
+      ],
+      "n": 33,
+      "verdict": "E",
+      "trendR2": 0.942,
+      "pAcf": 0.054,
+      "pSpectral": 0.185,
+      "period": 11.0
+     },
+     {
+      "range": [
+       1993,
+       2025
+      ],
+      "n": 33,
+      "verdict": "E",
+      "trendR2": 0.845,
+      "pAcf": 0.0,
+      "pSpectral": 0.0,
+      "period": 33.0
+     },
+     {
+      "range": [
+       1980,
+       2025
+      ],
+      "n": 46,
+      "verdict": "E",
+      "trendR2": 0.809,
+      "pAcf": 0.0,
+      "pSpectral": 0.0,
+      "period": 46.0
+     },
+     {
+      "range": [
+       1961,
+       2025
+      ],
+      "n": 65,
+      "method": "1차 차분(전년 대비 변화)",
+      "verdict": "none",
+      "pAcf": 0.288,
+      "pSpectral": 0.991,
+      "period": 65.0
+     }
+    ],
+    "n": 66,
+    "trendR2": 0.823,
+    "slopePerDecade": -5.97,
+    "changePoint": {
+     "year": 1980,
+     "before": 29.53,
+     "after": 4.85,
+     "explained": 0.818
+    },
+    "periodicity": {
+     "acf": [
+      0.944,
+      0.874,
+      0.808,
+      0.738,
+      0.704,
+      0.644,
+      0.586,
+      0.521,
+      0.447,
+      0.38,
+      0.314,
+      0.225,
+      0.124,
+      0.016,
+      -0.098,
+      -0.226,
+      -0.323,
+      -0.4,
+      -0.481,
+      -0.541
+     ],
+     "bestLag": 1,
+     "maxAbsAcf": 0.944,
+     "pAcf": 0.0,
+     "band": 0.241,
+     "spectralPeriod": 66.0,
+     "spectralShare": 0.862,
+     "pSpectral": 0.0
+    },
+    "verdict": "E",
+    "why": "직선 추세가 변동의 82% 설명"
+   },
+   {
+    "key": "va-mfg-kr:KR",
+    "indicator": "va-mfg-kr",
+    "country": "KR",
+    "title": "제조업 생산 비중 (GDP 대비)",
+    "unit": "%",
+    "from": 1960,
+    "to": 2025,
+    "points": [
+     [
+      1960,
+      11.4
+     ],
+     [
+      1961,
+      11.95
+     ],
+     [
+      1962,
+      11.7
+     ],
+     [
+      1963,
+      12.82
+     ],
+     [
+      1964,
+      14.22
+     ],
+     [
+      1965,
+      17.05
+     ],
+     [
+      1966,
+      16.64
+     ],
+     [
+      1967,
+      16.76
+     ],
+     [
+      1968,
+      17.12
+     ],
+     [
+      1969,
+      17.02
+     ],
+     [
+      1970,
+      17.29
+     ],
+     [
+      1971,
+      16.55
+     ],
+     [
+      1972,
+      18.58
+     ],
+     [
+      1973,
+      21.3
+     ],
+     [
+      1974,
+      20.65
+     ],
+     [
+      1975,
+      19.97
+     ],
+     [
+      1976,
+      21.29
+     ],
+     [
+      1977,
+      20.93
+     ],
+     [
+      1978,
+      21.03
+     ],
+     [
+      1979,
+      21.54
+     ],
+     [
+      1980,
+      21.9
+     ],
+     [
+      1981,
+      21.77
+     ],
+     [
+      1982,
+      21.81
+     ],
+     [
+      1983,
+      22.97
+     ],
+     [
+      1984,
+      24.61
+     ],
+     [
+      1985,
+      24.33
+     ],
+     [
+      1986,
+      25.55
+     ],
+     [
+      1987,
+      26.8
+     ],
+     [
+      1988,
+      27.72
+     ],
+     [
+      1989,
+      26.75
+     ],
+     [
+      1990,
+      25.24
+     ],
+     [
+      1991,
+      25.5
+     ],
+     [
+      1992,
+      24.79
+     ],
+     [
+      1993,
+      25.02
+     ],
+     [
+      1994,
+      25.73
+     ],
+     [
+      1995,
+      26.31
+     ],
+     [
+      1996,
+      25.22
+     ],
+     [
+      1997,
+      25.13
+     ],
+     [
+      1998,
+      25.77
+     ],
+     [
+      1999,
+      25.79
+     ],
+     [
+      2000,
+      26.59
+     ],
+     [
+      2001,
+      25.14
+     ],
+     [
+      2002,
+      24.78
+     ],
+     [
+      2003,
+      24.43
+     ],
+     [
+      2004,
+      26.41
+     ],
+     [
+      2005,
+      26.09
+     ],
+     [
+      2006,
+      25.72
+     ],
+     [
+      2007,
+      25.92
+     ],
+     [
+      2008,
+      26.08
+     ],
+     [
+      2009,
+      26.3
+     ],
+     [
+      2010,
+      28.1
+     ],
+     [
+      2011,
+      29.0
+     ],
+     [
+      2012,
+      28.74
+     ],
+     [
+      2013,
+      28.87
+     ],
+     [
+      2014,
+      28.28
+     ],
+     [
+      2015,
+      27.82
+     ],
+     [
+      2016,
+      27.51
+     ],
+     [
+      2017,
+      28.03
+     ],
+     [
+      2018,
+      27.77
+     ],
+     [
+      2019,
+      26.37
+     ],
+     [
+      2020,
+      25.7
+     ],
+     [
+      2021,
+      26.25
+     ],
+     [
+      2022,
+      26.5
+     ],
+     [
+      2023,
+      25.46
+     ],
+     [
+      2024,
+      26.62
+     ],
+     [
+      2025,
+      27.43
+     ]
+    ],
+    "trend": [
+     [
+      1960,
+      16.52
+     ],
+     [
+      2025,
+      30.16
+     ]
+    ],
+    "turningPoints": [],
+    "highThreshold": 1.17,
+    "lowThreshold": -0.68,
+    "episodeBasis": "전년 대비 변화",
+    "episodeUnit": "%",
+    "residual": [
+     [
+      1960,
+      -5.12
+     ],
+     [
+      1961,
+      -4.78
+     ],
+     [
+      1962,
+      -5.24
+     ],
+     [
+      1963,
+      -4.33
+     ],
+     [
+      1964,
+      -3.14
+     ],
+     [
+      1965,
+      -0.52
+     ],
+     [
+      1966,
+      -1.14
+     ],
+     [
+      1967,
+      -1.23
+     ],
+     [
+      1968,
+      -1.08
+     ],
+     [
+      1969,
+      -1.39
+     ],
+     [
+      1970,
+      -1.33
+     ],
+     [
+      1971,
+      -2.28
+     ],
+     [
+      1972,
+      -0.46
+     ],
+     [
+      1973,
+      2.05
+     ],
+     [
+      1974,
+      1.19
+     ],
+     [
+      1975,
+      0.3
+     ],
+     [
+      1976,
+      1.41
+     ],
+     [
+      1977,
+      0.84
+     ],
+     [
+      1978,
+      0.73
+     ],
+     [
+      1979,
+      1.03
+     ],
+     [
+      1980,
+      1.18
+     ],
+     [
+      1981,
+      0.84
+     ],
+     [
+      1982,
+      0.67
+     ],
+     [
+      1983,
+      1.62
+     ],
+     [
+      1984,
+      3.05
+     ],
+     [
+      1985,
+      2.56
+     ],
+     [
+      1986,
+      3.57
+     ],
+     [
+      1987,
+      4.61
+     ],
+     [
+      1988,
+      5.32
+     ],
+     [
+      1989,
+      4.14
+     ],
+     [
+      1990,
+      2.42
+     ],
+     [
+      1991,
+      2.47
+     ],
+     [
+      1992,
+      1.56
+     ],
+     [
+      1993,
+      1.58
+     ],
+     [
+      1994,
+      2.08
+     ],
+     [
+      1995,
+      2.45
+     ],
+     [
+      1996,
+      1.15
+     ],
+     [
+      1997,
+      0.85
+     ],
+     [
+      1998,
+      1.28
+     ],
+     [
+      1999,
+      1.09
+     ],
+     [
+      2000,
+      1.68
+     ],
+     [
+      2001,
+      0.02
+     ],
+     [
+      2002,
+      -0.55
+     ],
+     [
+      2003,
+      -1.11
+     ],
+     [
+      2004,
+      0.66
+     ],
+     [
+      2005,
+      0.13
+     ],
+     [
+      2006,
+      -0.45
+     ],
+     [
+      2007,
+      -0.46
+     ],
+     [
+      2008,
+      -0.51
+     ],
+     [
+      2009,
+      -0.5
+     ],
+     [
+      2010,
+      1.09
+     ],
+     [
+      2011,
+      1.78
+     ],
+     [
+      2012,
+      1.31
+     ],
+     [
+      2013,
+      1.23
+     ],
+     [
+      2014,
+      0.43
+     ],
+     [
+      2015,
+      -0.24
+     ],
+     [
+      2016,
+      -0.76
+     ],
+     [
+      2017,
+      -0.45
+     ],
+     [
+      2018,
+      -0.92
+     ],
+     [
+      2019,
+      -2.53
+     ],
+     [
+      2020,
+      -3.41
+     ],
+     [
+      2021,
+      -3.07
+     ],
+     [
+      2022,
+      -3.03
+     ],
+     [
+      2023,
+      -4.28
+     ],
+     [
+      2024,
+      -3.33
+     ],
+     [
+      2025,
+      -2.73
+     ]
+    ],
+    "highEpisodes": [
+     [
+      1964,
+      1965
+     ],
+     [
+      1972,
+      1973
+     ],
+     [
+      1976,
+      1976
+     ],
+     [
+      1984,
+      1987
+     ],
+     [
+      2004,
+      2004
+     ],
+     [
+      2010,
+      2010
+     ]
+    ],
+    "lowEpisodes": [
+     [
+      1971,
+      1971
+     ],
+     [
+      1989,
+      1992
+     ],
+     [
+      1996,
+      1996
+     ],
+     [
+      2001,
+      2001
+     ],
+     [
+      2019,
+      2019
+     ],
+     [
+      2023,
+      2023
+     ]
+    ],
+    "highIntervals": {
+     "starts": [
+      1964,
+      1972,
+      1976,
+      1984,
+      2004,
+      2010
+     ],
+     "gaps": [
+      8,
+      4,
+      8,
+      20,
+      6
+     ],
+     "cv": 0.61,
+     "regular": false
+    },
+    "lowIntervals": {
+     "starts": [
+      1971,
+      1989,
+      1996,
+      2001,
+      2019,
+      2023
+     ],
+     "gaps": [
+      18,
+      7,
+      5,
+      18,
+      4
+     ],
+     "cv": 0.6,
+     "regular": false
+    },
+    "sensitivity": [
+     {
+      "range": [
+       1960,
+       1992
+      ],
+      "n": 33,
+      "verdict": "A",
+      "trendR2": 0.929,
+      "pAcf": 0.016,
+      "pSpectral": 0.017,
+      "period": 11.0
+     },
+     {
+      "range": [
+       1993,
+       2025
+      ],
+      "n": 33,
+      "verdict": "E",
+      "trendR2": 0.232,
+      "pAcf": 0.002,
+      "pSpectral": 0.002,
+      "period": 16.5
+     },
+     {
+      "range": [
+       1980,
+       2025
+      ],
+      "n": 46,
+      "verdict": "E",
+      "trendR2": 0.418,
+      "pAcf": 0.0,
+      "pSpectral": 0.0,
+      "period": 23.0
+     },
+     {
+      "range": [
+       1961,
+       2025
+      ],
+      "n": 65,
+      "method": "1차 차분(전년 대비 변화)",
+      "verdict": "none",
+      "pAcf": 0.742,
+      "pSpectral": 0.537,
+      "period": 3.8
+     }
+    ],
+    "n": 66,
+    "trendR2": 0.751,
+    "slopePerDecade": 2.1,
+    "changePoint": {
+     "year": 1983,
+     "before": 17.88,
+     "after": 26.26,
+     "explained": 0.749
+    },
+    "periodicity": {
+     "acf": [
+      0.916,
+      0.806,
+      0.713,
+      0.615,
+      0.496,
+      0.428,
+      0.369,
+      0.292,
+      0.214,
+      0.148,
+      0.104,
+      -0.001,
+      -0.055,
+      -0.046,
+      -0.053,
+      -0.103,
+      -0.152,
+      -0.192,
+      -0.241,
+      -0.28
+     ],
+     "bestLag": 1,
+     "maxAbsAcf": 0.916,
+     "pAcf": 0.0,
+     "band": 0.241,
+     "spectralPeriod": 66.0,
+     "spectralShare": 0.67,
+     "pSpectral": 0.0
+    },
+    "verdict": "E",
+    "why": "직선 추세가 변동의 75% 설명"
+   },
+   {
+    "key": "va-srv-kr:KR",
+    "indicator": "va-srv-kr",
+    "country": "KR",
+    "title": "서비스업 생산 비중 (GDP 대비)",
+    "unit": "%",
+    "from": 1960,
+    "to": 2025,
+    "points": [
+     [
+      1960,
+      39.31
+     ],
+     [
+      1961,
+      37.77
+     ],
+     [
+      1962,
+      38.64
+     ],
+     [
+      1963,
+      33.57
+     ],
+     [
+      1964,
+      30.21
+     ],
+     [
+      1965,
+      34.19
+     ],
+     [
+      1966,
+      36.54
+     ],
+     [
+      1967,
+      39.64
+     ],
+     [
+      1968,
+      39.69
+     ],
+     [
+      1969,
+      39.77
+     ],
+     [
+      1970,
+      40.44
+     ],
+     [
+      1971,
+      41.72
+     ],
+     [
+      1972,
+      42.01
+     ],
+     [
+      1973,
+      41.18
+     ],
+     [
+      1974,
+      41.76
+     ],
+     [
+      1975,
+      40.46
+     ],
+     [
+      1976,
+      40.04
+     ],
+     [
+      1977,
+      40.2
+     ],
+     [
+      1978,
+      39.93
+     ],
+     [
+      1979,
+      40.09
+     ],
+     [
+      1980,
+      43.69
+     ],
+     [
+      1981,
+      43.9
+     ],
+     [
+      1982,
+      44.51
+     ],
+     [
+      1983,
+      43.9
+     ],
+     [
+      1984,
+      43.89
+     ],
+     [
+      1985,
+      45.0
+     ],
+     [
+      1986,
+      45.61
+     ],
+     [
+      1987,
+      45.86
+     ],
+     [
+      1988,
+      45.56
+     ],
+     [
+      1989,
+      47.05
+     ],
+     [
+      1990,
+      47.22
+     ],
+     [
+      1991,
+      47.8
+     ],
+     [
+      1992,
+      49.12
+     ],
+     [
+      1993,
+      49.73
+     ],
+     [
+      1994,
+      49.68
+     ],
+     [
+      1995,
+      49.71
+     ],
+     [
+      1996,
+      50.74
+     ],
+     [
+      1997,
+      51.28
+     ],
+     [
+      1998,
+      52.87
+     ],
+     [
+      1999,
+      52.53
+     ],
+     [
+      2000,
+      52.45
+     ],
+     [
+      2001,
+      53.72
+     ],
+     [
+      2002,
+      54.22
+     ],
+     [
+      2003,
+      54.46
+     ],
+     [
+      2004,
+      53.69
+     ],
+     [
+      2005,
+      54.42
+     ],
+     [
+      2006,
+      55.15
+     ],
+     [
+      2007,
+      55.51
+     ],
+     [
+      2008,
+      56.59
+     ],
+     [
+      2009,
+      56.29
+     ],
+     [
+      2010,
+      54.88
+     ],
+     [
+      2011,
+      54.69
+     ],
+     [
+      2012,
+      54.98
+     ],
+     [
+      2013,
+      54.93
+     ],
+     [
+      2014,
+      55.2
+     ],
+     [
+      2015,
+      55.11
+     ],
+     [
+      2016,
+      54.98
+     ],
+     [
+      2017,
+      54.57
+     ],
+     [
+      2018,
+      55.39
+     ],
+     [
+      2019,
+      56.94
+     ],
+     [
+      2020,
+      56.92
+     ],
+     [
+      2021,
+      56.9
+     ],
+     [
+      2022,
+      58.07
+     ],
+     [
+      2023,
+      58.88
+     ],
+     [
+      2024,
+      57.5
+     ],
+     [
+      2025,
+      57.23
+     ]
+    ],
+    "trend": [
+     [
+      1960,
+      35.95
+     ],
+     [
+      2025,
+      60.13
+     ]
+    ],
+    "turningPoints": [
+     {
+      "year": 1964,
+      "kind": "trough",
+      "value": 30.21
+     }
+    ],
+    "highThreshold": 1.58,
+    "lowThreshold": -1.03,
+    "episodeBasis": "전년 대비 변화",
+    "episodeUnit": "%",
+    "residual": [
+     [
+      1960,
+      3.36
+     ],
+     [
+      1961,
+      1.45
+     ],
+     [
+      1962,
+      1.95
+     ],
+     [
+      1963,
+      -3.49
+     ],
+     [
+      1964,
+      -7.22
+     ],
+     [
+      1965,
+      -3.62
+     ],
+     [
+      1966,
+      -1.64
+     ],
+     [
+      1967,
+      1.09
+     ],
+     [
+      1968,
+      0.77
+     ],
+     [
+      1969,
+      0.48
+     ],
+     [
+      1970,
+      0.77
+     ],
+     [
+      1971,
+      1.68
+     ],
+     [
+      1972,
+      1.6
+     ],
+     [
+      1973,
+      0.4
+     ],
+     [
+      1974,
+      0.6
+     ],
+     [
+      1975,
+      -1.07
+     ],
+     [
+      1976,
+      -1.86
+     ],
+     [
+      1977,
+      -2.07
+     ],
+     [
+      1978,
+      -2.71
+     ],
+     [
+      1979,
+      -2.93
+     ],
+     [
+      1980,
+      0.3
+     ],
+     [
+      1981,
+      0.14
+     ],
+     [
+      1982,
+      0.38
+     ],
+     [
+      1983,
+      -0.6
+     ],
+     [
+      1984,
+      -0.99
+     ],
+     [
+      1985,
+      -0.25
+     ],
+     [
+      1986,
+      -0.01
+     ],
+     [
+      1987,
+      -0.13
+     ],
+     [
+      1988,
+      -0.8
+     ],
+     [
+      1989,
+      0.31
+     ],
+     [
+      1990,
+      0.11
+     ],
+     [
+      1991,
+      0.32
+     ],
+     [
+      1992,
+      1.27
+     ],
+     [
+      1993,
+      1.51
+     ],
+     [
+      1994,
+      1.08
+     ],
+     [
+      1995,
+      0.74
+     ],
+     [
+      1996,
+      1.4
+     ],
+     [
+      1997,
+      1.57
+     ],
+     [
+      1998,
+      2.79
+     ],
+     [
+      1999,
+      2.07
+     ],
+     [
+      2000,
+      1.62
+     ],
+     [
+      2001,
+      2.52
+     ],
+     [
+      2002,
+      2.65
+     ],
+     [
+      2003,
+      2.52
+     ],
+     [
+      2004,
+      1.37
+     ],
+     [
+      2005,
+      1.73
+     ],
+     [
+      2006,
+      2.09
+     ],
+     [
+      2007,
+      2.08
+     ],
+     [
+      2008,
+      2.79
+     ],
+     [
+      2009,
+      2.11
+     ],
+     [
+      2010,
+      0.33
+     ],
+     [
+      2011,
+      -0.23
+     ],
+     [
+      2012,
+      -0.31
+     ],
+     [
+      2013,
+      -0.73
+     ],
+     [
+      2014,
+      -0.84
+     ],
+     [
+      2015,
+      -1.3
+     ],
+     [
+      2016,
+      -1.8
+     ],
+     [
+      2017,
+      -2.58
+     ],
+     [
+      2018,
+      -2.13
+     ],
+     [
+      2019,
+      -0.96
+     ],
+     [
+      2020,
+      -1.35
+     ],
+     [
+      2021,
+      -1.74
+     ],
+     [
+      2022,
+      -0.94
+     ],
+     [
+      2023,
+      -0.5
+     ],
+     [
+      2024,
+      -2.26
+     ],
+     [
+      2025,
+      -2.9
+     ]
+    ],
+    "highEpisodes": [
+     [
+      1965,
+      1967
+     ],
+     [
+      1980,
+      1980
+     ],
+     [
+      1998,
+      1998
+     ]
+    ],
+    "lowEpisodes": [
+     [
+      1961,
+      1964
+     ],
+     [
+      1975,
+      1975
+     ],
+     [
+      2010,
+      2010
+     ],
+     [
+      2024,
+      2024
+     ]
+    ],
+    "highIntervals": {
+     "starts": [
+      1965,
+      1980,
+      1998
+     ],
+     "gaps": [
+      15,
+      18
+     ],
+     "cv": 0.09,
+     "regular": true
+    },
+    "lowIntervals": {
+     "starts": [
+      1961,
+      1975,
+      2010,
+      2024
+     ],
+     "gaps": [
+      14,
+      35,
+      14
+     ],
+     "cv": 0.47,
+     "regular": false
+    },
+    "sensitivity": [
+     {
+      "range": [
+       1960,
+       1992
+      ],
+      "n": 33,
+      "verdict": "A",
+      "trendR2": 0.774,
+      "pAcf": 0.017,
+      "pSpectral": 0.005,
+      "period": 11.0
+     },
+     {
+      "range": [
+       1993,
+       2025
+      ],
+      "n": 33,
+      "verdict": "E",
+      "trendR2": 0.809,
+      "pAcf": 0.002,
+      "pSpectral": 0.022,
+      "period": 33.0
+     },
+     {
+      "range": [
+       1980,
+       2025
+      ],
+      "n": 46,
+      "verdict": "E",
+      "trendR2": 0.905,
+      "pAcf": 0.0,
+      "pSpectral": 0.0,
+      "period": 46.0
+     },
+     {
+      "range": [
+       1961,
+       2025
+      ],
+      "n": 65,
+      "method": "1차 차분(전년 대비 변화)",
+      "verdict": "none",
+      "pAcf": 0.21,
+      "pSpectral": 0.708,
+      "period": 13.0
+     }
+    ],
+    "n": 66,
+    "trendR2": 0.932,
+    "slopePerDecade": 3.72,
+    "changePoint": {
+     "year": 1991,
+     "before": 41.08,
+     "after": 54.2,
+     "explained": 0.797
+    },
+    "periodicity": {
+     "acf": [
+      0.762,
+      0.454,
+      0.223,
+      0.129,
+      0.181,
+      0.158,
+      0.119,
+      0.046,
+      0.064,
+      0.074,
+      0.102,
+      0.109,
+      0.053,
+      -0.028,
+      -0.173,
+      -0.382,
+      -0.492,
+      -0.468,
+      -0.444,
+      -0.342
+     ],
+     "bestLag": 1,
+     "maxAbsAcf": 0.762,
+     "pAcf": 0.0,
+     "band": 0.241,
+     "spectralPeriod": 66.0,
+     "spectralShare": 0.247,
+     "pSpectral": 0.005
+    },
+    "verdict": "E",
+    "why": "직선 추세가 변동의 93% 설명"
+   },
+   {
+    "key": "exp-gdp-kr:KR",
+    "indicator": "exp-gdp-kr",
+    "country": "KR",
+    "title": "수출 의존도 (GDP 대비 수출)",
+    "unit": "%",
+    "from": 1960,
+    "to": 2025,
+    "points": [
+     [
+      1960,
+      2.63
+     ],
+     [
+      1961,
+      4.03
+     ],
+     [
+      1962,
+      3.86
+     ],
+     [
+      1963,
+      3.93
+     ],
+     [
+      1964,
+      4.94
+     ],
+     [
+      1965,
+      7.09
+     ],
+     [
+      1966,
+      8.38
+     ],
+     [
+      1967,
+      9.04
+     ],
+     [
+      1968,
+      10.06
+     ],
+     [
+      1969,
+      10.52
+     ],
+     [
+      1970,
+      11.3
+     ],
+     [
+      1971,
+      12.5
+     ],
+     [
+      1972,
+      16.33
+     ],
+     [
+      1973,
+      23.52
+     ],
+     [
+      1974,
+      21.77
+     ],
+     [
+      1975,
+      22.18
+     ],
+     [
+      1976,
+      25.04
+     ],
+     [
+      1977,
+      25.52
+     ],
+     [
+      1978,
+      24.49
+     ],
+     [
+      1979,
+      23.13
+     ],
+     [
+      1980,
+      27.73
+     ],
+     [
+      1981,
+      29.17
+     ],
+     [
+      1982,
+      26.69
+     ],
+     [
+      1983,
+      27.16
+     ],
+     [
+      1984,
+      28.13
+     ],
+     [
+      1985,
+      26.12
+     ],
+     [
+      1986,
+      30.98
+     ],
+     [
+      1987,
+      33.68
+     ],
+     [
+      1988,
+      31.44
+     ],
+     [
+      1989,
+      26.47
+     ],
+     [
+      1990,
+      24.17
+     ],
+     [
+      1991,
+      22.99
+     ],
+     [
+      1992,
+      23.26
+     ],
+     [
+      1993,
+      22.86
+     ],
+     [
+      1994,
+      23.51
+     ],
+     [
+      1995,
+      25.09
+     ],
+     [
+      1996,
+      24.15
+     ],
+     [
+      1997,
+      27.47
+     ],
+     [
+      1998,
+      38.24
+     ],
+     [
+      1999,
+      31.51
+     ],
+     [
+      2000,
+      32.86
+     ],
+     [
+      2001,
+      30.86
+     ],
+     [
+      2002,
+      28.87
+     ],
+     [
+      2003,
+      30.44
+     ],
+     [
+      2004,
+      35.61
+     ],
+     [
+      2005,
+      34.13
+     ],
+     [
+      2006,
+      34.45
+     ],
+     [
+      2007,
+      36.04
+     ],
+     [
+      2008,
+      45.85
+     ],
+     [
+      2009,
+      43.51
+     ],
+     [
+      2010,
+      45.27
+     ],
+     [
+      2011,
+      51.28
+     ],
+     [
+      2012,
+      52.02
+     ],
+     [
+      2013,
+      49.23
+     ],
+     [
+      2014,
+      45.79
+     ],
+     [
+      2015,
+      40.97
+     ],
+     [
+      2016,
+      38.11
+     ],
+     [
+      2017,
+      38.85
+     ],
+     [
+      2018,
+      39.45
+     ],
+     [
+      2019,
+      37.04
+     ],
+     [
+      2020,
+      34.62
+     ],
+     [
+      2021,
+      39.34
+     ],
+     [
+      2022,
+      45.29
+     ],
+     [
+      2023,
+      41.32
+     ],
+     [
+      2024,
+      44.36
+     ],
+     [
+      2025,
+      45.76
+     ]
+    ],
+    "trend": [
+     [
+      1960,
+      8.61
+     ],
+     [
+      2025,
+      47.83
+     ]
+    ],
+    "turningPoints": [
+     {
+      "year": 2012,
+      "kind": "peak",
+      "value": 52.02
+     }
+    ],
+    "highThreshold": 3.89,
+    "lowThreshold": -2.56,
+    "episodeBasis": "전년 대비 변화",
+    "episodeUnit": "%",
+    "residual": [
+     [
+      1960,
+      -5.98
+     ],
+     [
+      1961,
+      -5.18
+     ],
+     [
+      1962,
+      -5.95
+     ],
+     [
+      1963,
+      -6.49
+     ],
+     [
+      1964,
+      -6.08
+     ],
+     [
+      1965,
+      -4.53
+     ],
+     [
+      1966,
+      -3.85
+     ],
+     [
+      1967,
+      -3.79
+     ],
+     [
+      1968,
+      -3.37
+     ],
+     [
+      1969,
+      -3.52
+     ],
+     [
+      1970,
+      -3.34
+     ],
+     [
+      1971,
+      -2.74
+     ],
+     [
+      1972,
+      0.48
+     ],
+     [
+      1973,
+      7.07
+     ],
+     [
+      1974,
+      4.72
+     ],
+     [
+      1975,
+      4.52
+     ],
+     [
+      1976,
+      6.78
+     ],
+     [
+      1977,
+      6.65
+     ],
+     [
+      1978,
+      5.02
+     ],
+     [
+      1979,
+      3.06
+     ],
+     [
+      1980,
+      7.05
+     ],
+     [
+      1981,
+      7.89
+     ],
+     [
+      1982,
+      4.81
+     ],
+     [
+      1983,
+      4.67
+     ],
+     [
+      1984,
+      5.04
+     ],
+     [
+      1985,
+      2.43
+     ],
+     [
+      1986,
+      6.68
+     ],
+     [
+      1987,
+      8.78
+     ],
+     [
+      1988,
+      5.94
+     ],
+     [
+      1989,
+      0.36
+     ],
+     [
+      1990,
+      -2.54
+     ],
+     [
+      1991,
+      -4.32
+     ],
+     [
+      1992,
+      -4.66
+     ],
+     [
+      1993,
+      -5.66
+     ],
+     [
+      1994,
+      -5.61
+     ],
+     [
+      1995,
+      -4.64
+     ],
+     [
+      1996,
+      -6.18
+     ],
+     [
+      1997,
+      -3.46
+     ],
+     [
+      1998,
+      6.7
+     ],
+     [
+      1999,
+      -0.63
+     ],
+     [
+      2000,
+      0.12
+     ],
+     [
+      2001,
+      -2.49
+     ],
+     [
+      2002,
+      -5.08
+     ],
+     [
+      2003,
+      -4.11
+     ],
+     [
+      2004,
+      0.45
+     ],
+     [
+      2005,
+      -1.63
+     ],
+     [
+      2006,
+      -1.91
+     ],
+     [
+      2007,
+      -0.93
+     ],
+     [
+      2008,
+      8.28
+     ],
+     [
+      2009,
+      5.34
+     ],
+     [
+      2010,
+      6.49
+     ],
+     [
+      2011,
+      11.9
+     ],
+     [
+      2012,
+      12.04
+     ],
+     [
+      2013,
+      8.64
+     ],
+     [
+      2014,
+      4.6
+     ],
+     [
+      2015,
+      -0.83
+     ],
+     [
+      2016,
+      -4.29
+     ],
+     [
+      2017,
+      -4.15
+     ],
+     [
+      2018,
+      -4.16
+     ],
+     [
+      2019,
+      -7.17
+     ],
+     [
+      2020,
+      -10.19
+     ],
+     [
+      2021,
+      -6.08
+     ],
+     [
+      2022,
+      -0.73
+     ],
+     [
+      2023,
+      -5.3
+     ],
+     [
+      2024,
+      -2.87
+     ],
+     [
+      2025,
+      -2.07
+     ]
+    ],
+    "highEpisodes": [
+     [
+      1973,
+      1973
+     ],
+     [
+      1980,
+      1980
+     ],
+     [
+      1986,
+      1986
+     ],
+     [
+      1998,
+      1998
+     ],
+     [
+      2004,
+      2004
+     ],
+     [
+      2008,
+      2008
+     ],
+     [
+      2011,
+      2011
+     ],
+     [
+      2021,
+      2022
+     ]
+    ],
+    "lowEpisodes": [
+     [
+      1989,
+      1989
+     ],
+     [
+      1999,
+      1999
+     ],
+     [
+      2013,
+      2016
+     ],
+     [
+      2023,
+      2023
+     ]
+    ],
+    "highIntervals": {
+     "starts": [
+      1973,
+      1980,
+      1986,
+      1998,
+      2004,
+      2008,
+      2011,
+      2021
+     ],
+     "gaps": [
+      7,
+      6,
+      12,
+      6,
+      4,
+      3,
+      10
+     ],
+     "cv": 0.43,
+     "regular": false
+    },
+    "lowIntervals": {
+     "starts": [
+      1989,
+      1999,
+      2013,
+      2023
+     ],
+     "gaps": [
+      10,
+      14,
+      10
+     ],
+     "cv": 0.17,
+     "regular": true
+    },
+    "sensitivity": [
+     {
+      "range": [
+       1960,
+       1992
+      ],
+      "n": 33,
+      "verdict": "E",
+      "trendR2": 0.797,
+      "pAcf": 0.0,
+      "pSpectral": 0.0,
+      "period": 33.0
+     },
+     {
+      "range": [
+       1993,
+       2025
+      ],
+      "n": 33,
+      "verdict": "E",
+      "trendR2": 0.509,
+      "pAcf": 0.001,
+      "pSpectral": 0.006,
+      "period": 33.0
+     },
+     {
+      "range": [
+       1980,
+       2025
+      ],
+      "n": 46,
+      "verdict": "E",
+      "trendR2": 0.584,
+      "pAcf": 0.0,
+      "pSpectral": 0.002,
+      "period": 23.0
+     },
+     {
+      "range": [
+       1961,
+       2025
+      ],
+      "n": 65,
+      "method": "1차 차분(전년 대비 변화)",
+      "verdict": "none",
+      "pAcf": 0.234,
+      "pSpectral": 0.066,
+      "period": 3.4
+     }
+    ],
+    "n": 66,
+    "trendR2": 0.819,
+    "slopePerDecade": 6.03,
+    "changePoint": {
+     "year": 1973,
+     "before": 8.05,
+     "after": 33.17,
+     "explained": 0.619
+    },
+    "periodicity": {
+     "acf": [
+      0.822,
+      0.642,
+      0.515,
+      0.35,
+      0.153,
+      0.004,
+      -0.136,
+      -0.252,
+      -0.325,
+      -0.281,
+      -0.31,
+      -0.365,
+      -0.344,
+      -0.344,
+      -0.485,
+      -0.553,
+      -0.549,
+      -0.546,
+      -0.538,
+      -0.423
+     ],
+     "bestLag": 1,
+     "maxAbsAcf": 0.822,
+     "pAcf": 0.0,
+     "band": 0.241,
+     "spectralPeriod": 33.0,
+     "spectralShare": 0.489,
+     "pSpectral": 0.0
+    },
+    "verdict": "E",
+    "why": "직선 추세가 변동의 82% 설명"
+   },
+   {
+    "key": "tel-kr:KR",
+    "indicator": "tel-kr",
+    "country": "KR",
+    "title": "유선전화 가입 (100명당)",
+    "unit": "건",
+    "from": 1975,
+    "to": 2024,
+    "points": [
+     [
+      1975,
+      2.94
+     ],
+     [
+      1976,
+      3.49
+     ],
+     [
+      1977,
+      4.16
+     ],
+     [
+      1978,
+      5.03
+     ],
+     [
+      1979,
+      6.08
+     ],
+     [
+      1980,
+      7.09
+     ],
+     [
+      1981,
+      8.43
+     ],
+     [
+      1982,
+      10.35
+     ],
+     [
+      1983,
+      12.01
+     ],
+     [
+      1984,
+      13.76
+     ],
+     [
+      1985,
+      15.81
+     ],
+     [
+      1986,
+      17.99
+     ],
+     [
+      1987,
+      20.34
+     ],
+     [
+      1988,
+      23.97
+     ],
+     [
+      1989,
+      27.07
+     ],
+     [
+      1990,
+      30.1
+     ],
+     [
+      1991,
+      32.8
+     ],
+     [
+      1992,
+      34.9
+     ],
+     [
+      1993,
+      37.2
+     ],
+     [
+      1994,
+      39.1
+     ],
+     [
+      1995,
+      41.0
+     ],
+     [
+      1996,
+      42.9
+     ],
+     [
+      1997,
+      44.5
+     ],
+     [
+      1998,
+      43.5
+     ],
+     [
+      1999,
+      55.1
+     ],
+     [
+      2000,
+      55.3
+     ],
+     [
+      2001,
+      54.79
+     ],
+     [
+      2002,
+      54.41
+     ],
+     [
+      2003,
+      52.88
+     ],
+     [
+      2004,
+      49.41
+     ],
+     [
+      2005,
+      49.96
+     ],
+     [
+      2006,
+      46.73
+     ],
+     [
+      2007,
+      47.75
+     ],
+     [
+      2008,
+      50.37
+     ],
+     [
+      2009,
+      55.4
+     ],
+     [
+      2010,
+      58.53
+     ],
+     [
+      2011,
+      59.98
+     ],
+     [
+      2012,
+      60.68
+     ],
+     [
+      2013,
+      60.58
+     ],
+     [
+      2014,
+      58.33
+     ],
+     [
+      2015,
+      56.65
+     ],
+     [
+      2016,
+      54.65
+     ],
+     [
+      2017,
+      52.14
+     ],
+     [
+      2018,
+      50.17
+     ],
+     [
+      2019,
+      47.77
+     ],
+     [
+      2020,
+      46.01
+     ],
+     [
+      2021,
+      44.77
+     ],
+     [
+      2022,
+      44.05
+     ],
+     [
+      2023,
+      42.81
+     ],
+     [
+      2024,
+      41.17
+     ]
+    ],
+    "trend": [
+     [
+      1975,
+      11.01
+     ],
+     [
+      2024,
+      63.99
+     ]
+    ],
+    "turningPoints": [],
+    "highThreshold": 3.28,
+    "lowThreshold": -1.72,
+    "episodeBasis": "전년 대비 변화",
+    "episodeUnit": "건",
+    "residual": [
+     [
+      1975,
+      -8.07
+     ],
+     [
+      1976,
+      -8.6
+     ],
+     [
+      1977,
+      -9.01
+     ],
+     [
+      1978,
+      -9.22
+     ],
+     [
+      1979,
+      -9.25
+     ],
+     [
+      1980,
+      -9.32
+     ],
+     [
+      1981,
+      -9.06
+     ],
+     [
+      1982,
+      -8.23
+     ],
+     [
+      1983,
+      -7.65
+     ],
+     [
+      1984,
+      -6.98
+     ],
+     [
+      1985,
+      -6.01
+     ],
+     [
+      1986,
+      -4.91
+     ],
+     [
+      1987,
+      -3.64
+     ],
+     [
+      1988,
+      -1.09
+     ],
+     [
+      1989,
+      0.93
+     ],
+     [
+      1990,
+      2.87
+     ],
+     [
+      1991,
+      4.49
+     ],
+     [
+      1992,
+      5.51
+     ],
+     [
+      1993,
+      6.73
+     ],
+     [
+      1994,
+      7.55
+     ],
+     [
+      1995,
+      8.37
+     ],
+     [
+      1996,
+      9.19
+     ],
+     [
+      1997,
+      9.7
+     ],
+     [
+      1998,
+      7.62
+     ],
+     [
+      1999,
+      18.14
+     ],
+     [
+      2000,
+      17.26
+     ],
+     [
+      2001,
+      15.67
+     ],
+     [
+      2002,
+      14.21
+     ],
+     [
+      2003,
+      11.6
+     ],
+     [
+      2004,
+      7.05
+     ],
+     [
+      2005,
+      6.51
+     ],
+     [
+      2006,
+      2.2
+     ],
+     [
+      2007,
+      2.14
+     ],
+     [
+      2008,
+      3.68
+     ],
+     [
+      2009,
+      7.63
+     ],
+     [
+      2010,
+      9.68
+     ],
+     [
+      2011,
+      10.05
+     ],
+     [
+      2012,
+      9.67
+     ],
+     [
+      2013,
+      8.48
+     ],
+     [
+      2014,
+      5.15
+     ],
+     [
+      2015,
+      2.39
+     ],
+     [
+      2016,
+      -0.69
+     ],
+     [
+      2017,
+      -4.28
+     ],
+     [
+      2018,
+      -7.33
+     ],
+     [
+      2019,
+      -10.81
+     ],
+     [
+      2020,
+      -13.65
+     ],
+     [
+      2021,
+      -15.98
+     ],
+     [
+      2022,
+      -17.78
+     ],
+     [
+      2023,
+      -20.1
+     ],
+     [
+      2024,
+      -22.82
+     ]
+    ],
+    "highEpisodes": [
+     [
+      1988,
+      1988
+     ],
+     [
+      1999,
+      1999
+     ],
+     [
+      2009,
+      2009
+     ]
+    ],
+    "lowEpisodes": [
+     [
+      2004,
+      2006
+     ],
+     [
+      2014,
+      2020
+     ]
+    ],
+    "highIntervals": {
+     "starts": [
+      1988,
+      1999,
+      2009
+     ],
+     "gaps": [
+      11,
+      10
+     ],
+     "cv": 0.05,
+     "regular": true
+    },
+    "lowIntervals": {
+     "starts": [
+      2004,
+      2014
+     ],
+     "gaps": [
+      10
+     ],
+     "cv": null,
+     "regular": null
+    },
+    "sensitivity": [
+     {
+      "range": [
+       1960,
+       1992
+      ],
+      "n": 18,
+      "verdict": "insufficient"
+     },
+     {
+      "range": [
+       1993,
+       2025
+      ],
+      "n": 32,
+      "verdict": "E",
+      "trendR2": 0.033,
+      "pAcf": 0.0,
+      "pSpectral": 0.001,
+      "period": 32.0
+     },
+     {
+      "range": [
+       1980,
+       2025
+      ],
+      "n": 45,
+      "verdict": "E",
+      "trendR2": 0.606,
+      "pAcf": 0.0,
+      "pSpectral": 0.0,
+      "period": 45.0
+     },
+     {
+      "range": [
+       1976,
+       2024
+      ],
+      "n": 49,
+      "method": "1차 차분(전년 대비 변화)",
+      "verdict": "none",
+      "pAcf": 0.2,
+      "pSpectral": 0.006,
+      "period": 49.0
+     }
+    ],
+    "n": 50,
+    "trendR2": 0.712,
+    "slopePerDecade": 10.81,
+    "changePoint": {
+     "year": 1991,
+     "before": 13.04,
+     "after": 49.01,
+     "explained": 0.823
+    },
+    "periodicity": {
+     "acf": [
+      0.968,
+      0.908,
+      0.816,
+      0.694,
+      0.553,
+      0.413,
+      0.272,
+      0.155,
+      0.053,
+      -0.036,
+      -0.121,
+      -0.191,
+      -0.254,
+      -0.313,
+      -0.372,
+      -0.435,
+      -0.524,
+      -0.625,
+      -0.721,
+      -0.782
+     ],
+     "bestLag": 1,
+     "maxAbsAcf": 0.968,
+     "pAcf": 0.0,
+     "band": 0.277,
+     "spectralPeriod": 50.0,
+     "spectralShare": 0.823,
+     "pSpectral": 0.0
+    },
+    "verdict": "E",
+    "why": "직선 추세가 변동의 71% 설명"
+   },
+   {
+    "key": "call-kr:KR",
+    "indicator": "call-kr",
+    "country": "KR",
+    "title": "콜금리 (단기 시장금리, 연평균)",
+    "unit": "%",
+    "from": 1991,
+    "to": 2025,
+    "points": [
+     [
+      1991,
+      16.63
+     ],
+     [
+      1992,
+      14.26
+     ],
+     [
+      1993,
+      11.98
+     ],
+     [
+      1994,
+      12.28
+     ],
+     [
+      1995,
+      12.38
+     ],
+     [
+      1996,
+      12.35
+     ],
+     [
+      1997,
+      13.18
+     ],
+     [
+      1998,
+      14.98
+     ],
+     [
+      1999,
+      4.99
+     ],
+     [
+      2000,
+      5.13
+     ],
+     [
+      2001,
+      4.68
+     ],
+     [
+      2002,
+      4.19
+     ],
+     [
+      2003,
+      3.98
+     ],
+     [
+      2004,
+      3.63
+     ],
+     [
+      2005,
+      3.33
+     ],
+     [
+      2006,
+      4.19
+     ],
+     [
+      2007,
+      4.77
+     ],
+     [
+      2008,
+      4.78
+     ],
+     [
+      2009,
+      1.98
+     ],
+     [
+      2010,
+      2.16
+     ],
+     [
+      2011,
+      3.09
+     ],
+     [
+      2012,
+      3.08
+     ],
+     [
+      2013,
+      2.58
+     ],
+     [
+      2014,
+      2.33
+     ],
+     [
+      2015,
+      1.64
+     ],
+     [
+      2016,
+      1.34
+     ],
+     [
+      2017,
+      1.26
+     ],
+     [
+      2018,
+      1.52
+     ],
+     [
+      2019,
+      1.59
+     ],
+     [
+      2020,
+      0.7
+     ],
+     [
+      2021,
+      0.61
+     ],
+     [
+      2022,
+      2.02
+     ],
+     [
+      2023,
+      3.51
+     ],
+     [
+      2024,
+      3.44
+     ],
+     [
+      2025,
+      2.66
+     ]
+    ],
+    "trend": [
+     [
+      1991,
+      11.77
+     ],
+     [
+      2025,
+      -1.08
+     ]
+    ],
+    "turningPoints": [],
+    "highThreshold": 1.51,
+    "lowThreshold": -2.34,
+    "episodeBasis": "전년 대비 변화",
+    "episodeUnit": "%",
+    "residual": [
+     [
+      1991,
+      4.86
+     ],
+     [
+      1992,
+      2.86
+     ],
+     [
+      1993,
+      0.96
+     ],
+     [
+      1994,
+      1.64
+     ],
+     [
+      1995,
+      2.12
+     ],
+     [
+      1996,
+      2.47
+     ],
+     [
+      1997,
+      3.67
+     ],
+     [
+      1998,
+      5.85
+     ],
+     [
+      1999,
+      -3.76
+     ],
+     [
+      2000,
+      -3.24
+     ],
+     [
+      2001,
+      -3.31
+     ],
+     [
+      2002,
+      -3.43
+     ],
+     [
+      2003,
+      -3.26
+     ],
+     [
+      2004,
+      -3.23
+     ],
+     [
+      2005,
+      -3.15
+     ],
+     [
+      2006,
+      -1.92
+     ],
+     [
+      2007,
+      -0.96
+     ],
+     [
+      2008,
+      -0.57
+     ],
+     [
+      2009,
+      -2.99
+     ],
+     [
+      2010,
+      -2.43
+     ],
+     [
+      2011,
+      -1.13
+     ],
+     [
+      2012,
+      -0.76
+     ],
+     [
+      2013,
+      -0.88
+     ],
+     [
+      2014,
+      -0.75
+     ],
+     [
+      2015,
+      -1.06
+     ],
+     [
+      2016,
+      -0.99
+     ],
+     [
+      2017,
+      -0.69
+     ],
+     [
+      2018,
+      -0.05
+     ],
+     [
+      2019,
+      0.4
+     ],
+     [
+      2020,
+      -0.11
+     ],
+     [
+      2021,
+      0.17
+     ],
+     [
+      2022,
+      1.96
+     ],
+     [
+      2023,
+      3.83
+     ],
+     [
+      2024,
+      4.14
+     ],
+     [
+      2025,
+      3.74
+     ]
+    ],
+    "highEpisodes": [
+     [
+      1998,
+      1998
+     ]
+    ],
+    "lowEpisodes": [
+     [
+      1992,
+      1992
+     ],
+     [
+      1999,
+      1999
+     ],
+     [
+      2009,
+      2009
+     ]
+    ],
+    "highIntervals": {
+     "starts": [
+      1998
+     ],
+     "gaps": [],
+     "cv": null,
+     "regular": null
+    },
+    "lowIntervals": {
+     "starts": [
+      1992,
+      1999,
+      2009
+     ],
+     "gaps": [
+      7,
+      10
+     ],
+     "cv": 0.18,
+     "regular": true
+    },
+    "sensitivity": [
+     {
+      "range": [
+       1960,
+       1992
+      ],
+      "n": 2,
+      "verdict": "insufficient"
+     },
+     {
+      "range": [
+       1993,
+       2025
+      ],
+      "n": 33,
+      "verdict": "E",
+      "trendR2": 0.614,
+      "pAcf": 0.002,
+      "pSpectral": 0.001,
+      "period": 33.0
+     },
+     {
+      "range": [
+       1980,
+       2025
+      ],
+      "n": 35,
+      "verdict": "E",
+      "trendR2": 0.673,
+      "pAcf": 0.002,
+      "pSpectral": 0.0,
+      "period": 35.0
+     },
+     {
+      "range": [
+       1992,
+       2025
+      ],
+      "n": 34,
+      "method": "1차 차분(전년 대비 변화)",
+      "verdict": "none",
+      "pAcf": 0.052,
+      "pSpectral": 0.972,
+      "period": 3.4
+     }
+    ],
+    "n": 35,
+    "trendR2": 0.673,
+    "slopePerDecade": -3.78,
+    "changePoint": {
+     "year": 1999,
+     "before": 13.5,
+     "after": 2.93,
+     "explained": 0.911
+    },
+    "periodicity": {
+     "acf": [
+      0.724,
+      0.491,
+      0.349,
+      0.231,
+      0.152,
+      0.114,
+      -0.06,
+      -0.39,
+      -0.33,
+      -0.252,
+      -0.347,
+      -0.433,
+      -0.463,
+      -0.461,
+      -0.407,
+      -0.327
+     ],
+     "bestLag": 1,
+     "maxAbsAcf": 0.724,
+     "pAcf": 0.002,
+     "band": 0.331,
+     "spectralPeriod": 35.0,
+     "spectralShare": 0.575,
+     "pSpectral": 0.0
+    },
+    "verdict": "E",
+    "why": "직선 추세가 변동의 67% 설명"
+   },
+   {
+    "key": "disc-kr:KR",
+    "indicator": "disc-kr",
+    "country": "KR",
+    "title": "한국은행 재할인율 (1964~1998, 연평균)",
+    "unit": "%",
+    "from": 1964,
+    "to": 1998,
+    "points": [
+     [
+      1964,
+      10.45
+     ],
+     [
+      1965,
+      12.83
+     ],
+     [
+      1966,
+      28.0
+     ],
+     [
+      1967,
+      28.0
+     ],
+     [
+      1968,
+      22.67
+     ],
+     [
+      1969,
+      22.42
+     ],
+     [
+      1970,
+      21.08
+     ],
+     [
+      1971,
+      17.25
+     ],
+     [
+      1972,
+      12.17
+     ],
+     [
+      1973,
+      11.0
+     ],
+     [
+      1974,
+      11.0
+     ],
+     [
+      1975,
+      11.5
+     ],
+     [
+      1976,
+      14.0
+     ],
+     [
+      1977,
+      14.0
+     ],
+     [
+      1978,
+      14.58
+     ],
+     [
+      1979,
+      15.0
+     ],
+     [
+      1980,
+      19.42
+     ],
+     [
+      1981,
+      15.33
+     ],
+     [
+      1982,
+      5.08
+     ],
+     [
+      1983,
+      5.0
+     ],
+     [
+      1984,
+      5.0
+     ],
+     [
+      1985,
+      5.4
+     ],
+     [
+      1986,
+      6.0
+     ],
+     [
+      1987,
+      7.0
+     ],
+     [
+      1988,
+      7.33
+     ],
+     [
+      1989,
+      7.83
+     ],
+     [
+      1990,
+      7.0
+     ],
+     [
+      1991,
+      7.0
+     ],
+     [
+      1992,
+      7.0
+     ],
+     [
+      1993,
+      5.0
+     ],
+     [
+      1994,
+      5.0
+     ],
+     [
+      1995,
+      5.0
+     ],
+     [
+      1996,
+      5.0
+     ],
+     [
+      1997,
+      5.0
+     ],
+     [
+      1998,
+      4.33
+     ]
+    ],
+    "trend": [
+     [
+      1964,
+      20.25
+     ],
+     [
+      1998,
+      2.59
+     ]
+    ],
+    "turningPoints": [
+     {
+      "year": 1967,
+      "kind": "peak",
+      "value": 28.0
+     }
+    ],
+    "highThreshold": 3.51,
+    "lowThreshold": -3.87,
+    "episodeBasis": "전년 대비 변화",
+    "episodeUnit": "%",
+    "residual": [
+     [
+      1964,
+      -9.8
+     ],
+     [
+      1965,
+      -6.9
+     ],
+     [
+      1966,
+      8.79
+     ],
+     [
+      1967,
+      9.31
+     ],
+     [
+      1968,
+      4.5
+     ],
+     [
+      1969,
+      4.77
+     ],
+     [
+      1970,
+      3.95
+     ],
+     [
+      1971,
+      0.64
+     ],
+     [
+      1972,
+      -3.92
+     ],
+     [
+      1973,
+      -4.57
+     ],
+     [
+      1974,
+      -4.06
+     ],
+     [
+      1975,
+      -3.04
+     ],
+     [
+      1976,
+      -0.02
+     ],
+     [
+      1977,
+      0.5
+     ],
+     [
+      1978,
+      1.6
+     ],
+     [
+      1979,
+      2.54
+     ],
+     [
+      1980,
+      7.48
+     ],
+     [
+      1981,
+      3.91
+     ],
+     [
+      1982,
+      -5.82
+     ],
+     [
+      1983,
+      -5.38
+     ],
+     [
+      1984,
+      -4.86
+     ],
+     [
+      1985,
+      -3.94
+     ],
+     [
+      1986,
+      -2.82
+     ],
+     [
+      1987,
+      -1.3
+     ],
+     [
+      1988,
+      -0.45
+     ],
+     [
+      1989,
+      0.57
+     ],
+     [
+      1990,
+      0.26
+     ],
+     [
+      1991,
+      0.78
+     ],
+     [
+      1992,
+      1.3
+     ],
+     [
+      1993,
+      -0.19
+     ],
+     [
+      1994,
+      0.33
+     ],
+     [
+      1995,
+      0.85
+     ],
+     [
+      1996,
+      1.37
+     ],
+     [
+      1997,
+      1.89
+     ],
+     [
+      1998,
+      1.74
+     ]
+    ],
+    "highEpisodes": [
+     [
+      1966,
+      1966
+     ],
+     [
+      1980,
+      1980
+     ]
+    ],
+    "lowEpisodes": [
+     [
+      1968,
+      1968
+     ],
+     [
+      1972,
+      1972
+     ],
+     [
+      1981,
+      1982
+     ]
+    ],
+    "highIntervals": {
+     "starts": [
+      1966,
+      1980
+     ],
+     "gaps": [
+      14
+     ],
+     "cv": null,
+     "regular": null
+    },
+    "lowIntervals": {
+     "starts": [
+      1968,
+      1972,
+      1981
+     ],
+     "gaps": [
+      4,
+      9
+     ],
+     "cv": 0.38,
+     "regular": false
+    },
+    "sensitivity": [
+     {
+      "range": [
+       1960,
+       1992
+      ],
+      "n": 29,
+      "verdict": "E",
+      "trendR2": 0.521,
+      "pAcf": 0.007,
+      "pSpectral": 0.016,
+      "period": 9.7
+     },
+     {
+      "range": [
+       1993,
+       2025
+      ],
+      "n": 6,
+      "verdict": "insufficient"
+     },
+     {
+      "range": [
+       1980,
+       2025
+      ],
+      "n": 19,
+      "verdict": "insufficient"
+     },
+     {
+      "range": [
+       1965,
+       1998
+      ],
+      "n": 34,
+      "method": "1차 차분(전년 대비 변화)",
+      "verdict": "A",
+      "pAcf": 0.025,
+      "pSpectral": 0.046,
+      "period": 11.3
+     }
+    ],
+    "n": 35,
+    "trendR2": 0.604,
+    "slopePerDecade": -5.19,
+    "changePoint": {
+     "year": 1982,
+     "before": 16.71,
+     "after": 5.82,
+     "explained": 0.649
+    },
+    "periodicity": {
+     "acf": [
+      0.605,
+      -0.002,
+      -0.178,
+      -0.355,
+      -0.595,
+      -0.637,
+      -0.381,
+      -0.047,
+      0.255,
+      0.479,
+      0.466,
+      0.279,
+      0.149,
+      -0.018,
+      -0.484,
+      -0.761
+     ],
+     "bestLag": 16,
+     "maxAbsAcf": 0.761,
+     "pAcf": 0.001,
+     "band": 0.331,
+     "spectralPeriod": 11.7,
+     "spectralShare": 0.355,
+     "pSpectral": 0.012
+    },
+    "verdict": "E",
+    "why": "직선 추세가 변동의 60% 설명"
+   },
+   {
+    "key": "house-kr:KR",
+    "indicator": "house-kr",
+    "country": "KR",
+    "title": "실질 주택가격 지수 (2010=100)",
+    "unit": "지수",
+    "from": 1975,
+    "to": 2025,
+    "points": [
+     [
+      1975,
+      66.36
+     ],
+     [
+      1976,
+      72.99
+     ],
+     [
+      1977,
+      88.41
+     ],
+     [
+      1978,
+      115.17
+     ],
+     [
+      1979,
+      113.88
+     ],
+     [
+      1980,
+      98.95
+     ],
+     [
+      1981,
+      87.49
+     ],
+     [
+      1982,
+      85.95
+     ],
+     [
+      1983,
+      98.49
+     ],
+     [
+      1984,
+      109.02
+     ],
+     [
+      1985,
+      113.84
+     ],
+     [
+      1986,
+      118.95
+     ],
+     [
+      1987,
+      115.85
+     ],
+     [
+      1988,
+      124.95
+     ],
+     [
+      1989,
+      134.91
+     ],
+     [
+      1990,
+      145.51
+     ],
+     [
+      1991,
+      147.0
+     ],
+     [
+      1992,
+      129.37
+     ],
+     [
+      1993,
+      119.19
+     ],
+     [
+      1994,
+      110.33
+     ],
+     [
+      1995,
+      105.44
+     ],
+     [
+      1996,
+      101.21
+     ],
+     [
+      1997,
+      99.78
+     ],
+     [
+      1998,
+      84.26
+     ],
+     [
+      1999,
+      82.51
+     ],
+     [
+      2000,
+      82.14
+     ],
+     [
+      2001,
+      82.03
+     ],
+     [
+      2002,
+      93.11
+     ],
+     [
+      2003,
+      98.08
+     ],
+     [
+      2004,
+      95.77
+     ],
+     [
+      2005,
+      93.94
+     ],
+     [
+      2006,
+      97.54
+     ],
+     [
+      2007,
+      103.72
+     ],
+     [
+      2008,
+      103.07
+     ],
+     [
+      2009,
+      100.5
+     ],
+     [
+      2010,
+      100.0
+     ],
+     [
+      2011,
+      101.18
+     ],
+     [
+      2012,
+      101.85
+     ],
+     [
+      2013,
+      100.1
+     ],
+     [
+      2014,
+      100.34
+     ],
+     [
+      2015,
+      102.98
+     ],
+     [
+      2016,
+      104.7
+     ],
+     [
+      2017,
+      104.04
+     ],
+     [
+      2018,
+      104.8
+     ],
+     [
+      2019,
+      105.89
+     ],
+     [
+      2020,
+      109.32
+     ],
+     [
+      2021,
+      121.09
+     ],
+     [
+      2022,
+      122.89
+     ],
+     [
+      2023,
+      111.48
+     ],
+     [
+      2024,
+      107.77
+     ],
+     [
+      2025,
+      105.79
+     ]
+    ],
+    "trend": [
+     [
+      1975,
+      102.17
+     ],
+     [
+      2025,
+      106.61
+     ]
+    ],
+    "turningPoints": [
+     {
+      "year": 1979,
+      "kind": "peak",
+      "value": 113.88
+     },
+     {
+      "year": 1982,
+      "kind": "trough",
+      "value": 85.95
+     },
+     {
+      "year": 1990,
+      "kind": "peak",
+      "value": 145.51
+     },
+     {
+      "year": 2000,
+      "kind": "trough",
+      "value": 82.14
+     }
+    ],
+    "highThreshold": 120.29,
+    "lowThreshold": 88.49,
+    "episodeBasis": "평균 대비",
+    "episodeUnit": "지수",
+    "residual": [
+     [
+      1975,
+      -35.81
+     ],
+     [
+      1976,
+      -29.27
+     ],
+     [
+      1977,
+      -13.94
+     ],
+     [
+      1978,
+      12.73
+     ],
+     [
+      1979,
+      11.35
+     ],
+     [
+      1980,
+      -3.66
+     ],
+     [
+      1981,
+      -15.21
+     ],
+     [
+      1982,
+      -16.84
+     ],
+     [
+      1983,
+      -4.39
+     ],
+     [
+      1984,
+      6.05
+     ],
+     [
+      1985,
+      10.78
+     ],
+     [
+      1986,
+      15.8
+     ],
+     [
+      1987,
+      12.61
+     ],
+     [
+      1988,
+      21.62
+     ],
+     [
+      1989,
+      31.5
+     ],
+     [
+      1990,
+      42.01
+     ],
+     [
+      1991,
+      43.41
+     ],
+     [
+      1992,
+      25.69
+     ],
+     [
+      1993,
+      15.42
+     ],
+     [
+      1994,
+      6.47
+     ],
+     [
+      1995,
+      1.49
+     ],
+     [
+      1996,
+      -2.83
+     ],
+     [
+      1997,
+      -4.34
+     ],
+     [
+      1998,
+      -19.95
+     ],
+     [
+      1999,
+      -21.79
+     ],
+     [
+      2000,
+      -22.25
+     ],
+     [
+      2001,
+      -22.45
+     ],
+     [
+      2002,
+      -11.46
+     ],
+     [
+      2003,
+      -6.58
+     ],
+     [
+      2004,
+      -8.98
+     ],
+     [
+      2005,
+      -10.89
+     ],
+     [
+      2006,
+      -7.38
+     ],
+     [
+      2007,
+      -1.29
+     ],
+     [
+      2008,
+      -2.03
+     ],
+     [
+      2009,
+      -4.69
+     ],
+     [
+      2010,
+      -5.28
+     ],
+     [
+      2011,
+      -4.19
+     ],
+     [
+      2012,
+      -3.61
+     ],
+     [
+      2013,
+      -5.45
+     ],
+     [
+      2014,
+      -5.29
+     ],
+     [
+      2015,
+      -2.74
+     ],
+     [
+      2016,
+      -1.11
+     ],
+     [
+      2017,
+      -1.86
+     ],
+     [
+      2018,
+      -1.19
+     ],
+     [
+      2019,
+      -0.19
+     ],
+     [
+      2020,
+      3.15
+     ],
+     [
+      2021,
+      14.83
+     ],
+     [
+      2022,
+      16.55
+     ],
+     [
+      2023,
+      5.05
+     ],
+     [
+      2024,
+      1.25
+     ],
+     [
+      2025,
+      -0.82
+     ]
+    ],
+    "highEpisodes": [
+     [
+      1988,
+      1992
+     ],
+     [
+      2021,
+      2022
+     ]
+    ],
+    "lowEpisodes": [
+     [
+      1975,
+      1977
+     ],
+     [
+      1981,
+      1982
+     ],
+     [
+      1998,
+      2001
+     ]
+    ],
+    "highIntervals": {
+     "starts": [
+      1988,
+      2021
+     ],
+     "gaps": [
+      33
+     ],
+     "cv": null,
+     "regular": null
+    },
+    "lowIntervals": {
+     "starts": [
+      1975,
+      1981,
+      1998
+     ],
+     "gaps": [
+      6,
+      17
+     ],
+     "cv": 0.48,
+     "regular": false
+    },
+    "sensitivity": [
+     {
+      "range": [
+       1960,
+       1992
+      ],
+      "n": 18,
+      "verdict": "insufficient"
+     },
+     {
+      "range": [
+       1993,
+       2025
+      ],
+      "n": 33,
+      "verdict": "E",
+      "trendR2": 0.216,
+      "pAcf": 0.0,
+      "pSpectral": 0.162,
+      "period": 16.5
+     },
+     {
+      "range": [
+       1980,
+       2025
+      ],
+      "n": 46,
+      "verdict": "A",
+      "trendR2": 0.008,
+      "pAcf": 0.0,
+      "pSpectral": 0.002,
+      "period": 15.3
+     },
+     {
+      "range": [
+       1976,
+       2025
+      ],
+      "n": 50,
+      "method": "1차 차분(전년 대비 변화)",
+      "verdict": "none",
+      "pAcf": 0.053,
+      "pSpectral": 0.006,
+      "period": 6.2
+     }
+    ],
+    "n": 51,
+    "trendR2": 0.007,
+    "slopePerDecade": 0.89,
+    "changePoint": {
+     "year": 1984,
+     "before": 91.97,
+     "after": 107.05,
+     "explained": 0.131
+    },
+    "periodicity": {
+     "acf": [
+      0.867,
+      0.594,
+      0.354,
+      0.279,
+      0.255,
+      0.142,
+      -0.07,
+      -0.306,
+      -0.442,
+      -0.447,
+      -0.385,
+      -0.341,
+      -0.381,
+      -0.451,
+      -0.484,
+      -0.438,
+      -0.328,
+      -0.227,
+      -0.203,
+      -0.267
+     ],
+     "bestLag": 1,
+     "maxAbsAcf": 0.867,
+     "pAcf": 0.0,
+     "band": 0.274,
+     "spectralPeriod": 25.5,
+     "spectralShare": 0.365,
+     "pSpectral": 0.0
+    },
+    "verdict": "none",
+    "why": "주기 검정 p=0.0(시차)·0.0(주기도) — 우연 범위, 뚜렷한 장기 추세도 없음"
+   },
+   {
+    "key": "wage-kr:KR",
+    "indicator": "wage-kr",
+    "country": "KR",
+    "title": "제조업 시간당 임금 지수 (명목, 2015=100)",
+    "unit": "지수",
+    "from": 1992,
+    "to": 2025,
+    "points": [
+     [
+      1992,
+      21.57
+     ],
+     [
+      1993,
+      23.9
+     ],
+     [
+      1994,
+      27.58
+     ],
+     [
+      1995,
+      30.32
+     ],
+     [
+      1996,
+      34.05
+     ],
+     [
+      1997,
+      35.8
+     ],
+     [
+      1998,
+      34.69
+     ],
+     [
+      1999,
+      39.78
+     ],
+     [
+      2000,
+      43.19
+     ],
+     [
+      2001,
+      45.95
+     ],
+     [
+      2002,
+      51.45
+     ],
+     [
+      2003,
+      55.94
+     ],
+     [
+      2004,
+      61.53
+     ],
+     [
+      2005,
+      66.32
+     ],
+     [
+      2006,
+      70.01
+     ],
+     [
+      2007,
+      74.82
+     ],
+     [
+      2008,
+      73.86
+     ],
+     [
+      2009,
+      75.43
+     ],
+     [
+      2010,
+      82.33
+     ],
+     [
+      2011,
+      83.69
+     ],
+     [
+      2012,
+      88.95
+     ],
+     [
+      2013,
+      93.29
+     ],
+     [
+      2014,
+      97.14
+     ],
+     [
+      2015,
+      100.0
+     ],
+     [
+      2016,
+      104.23
+     ],
+     [
+      2017,
+      106.38
+     ],
+     [
+      2018,
+      113.6
+     ],
+     [
+      2019,
+      116.2
+     ],
+     [
+      2020,
+      115.54
+     ],
+     [
+      2021,
+      123.47
+     ],
+     [
+      2022,
+      130.68
+     ],
+     [
+      2023,
+      134.9
+     ],
+     [
+      2024,
+      138.41
+     ],
+     [
+      2025,
+      143.12
+     ]
+    ],
+    "trend": [
+     [
+      1992,
+      16.74
+     ],
+     [
+      2025,
+      138.44
+     ]
+    ],
+    "turningPoints": [],
+    "highThreshold": 5.85,
+    "lowThreshold": 1.52,
+    "episodeBasis": "전년 대비 변화",
+    "episodeUnit": "지수",
+    "residual": [
+     [
+      1992,
+      4.83
+     ],
+     [
+      1993,
+      3.47
+     ],
+     [
+      1994,
+      3.46
+     ],
+     [
+      1995,
+      2.51
+     ],
+     [
+      1996,
+      2.56
+     ],
+     [
+      1997,
+      0.62
+     ],
+     [
+      1998,
+      -4.18
+     ],
+     [
+      1999,
+      -2.78
+     ],
+     [
+      2000,
+      -3.06
+     ],
+     [
+      2001,
+      -3.98
+     ],
+     [
+      2002,
+      -2.17
+     ],
+     [
+      2003,
+      -1.37
+     ],
+     [
+      2004,
+      0.53
+     ],
+     [
+      2005,
+      1.64
+     ],
+     [
+      2006,
+      1.64
+     ],
+     [
+      2007,
+      2.76
+     ],
+     [
+      2008,
+      -1.89
+     ],
+     [
+      2009,
+      -4.01
+     ],
+     [
+      2010,
+      -0.79
+     ],
+     [
+      2011,
+      -3.12
+     ],
+     [
+      2012,
+      -1.55
+     ],
+     [
+      2013,
+      -0.9
+     ],
+     [
+      2014,
+      -0.73
+     ],
+     [
+      2015,
+      -1.56
+     ],
+     [
+      2016,
+      -1.02
+     ],
+     [
+      2017,
+      -2.56
+     ],
+     [
+      2018,
+      0.97
+     ],
+     [
+      2019,
+      -0.11
+     ],
+     [
+      2020,
+      -4.46
+     ],
+     [
+      2021,
+      -0.22
+     ],
+     [
+      2022,
+      3.3
+     ],
+     [
+      2023,
+      3.84
+     ],
+     [
+      2024,
+      3.66
+     ],
+     [
+      2025,
+      4.68
+     ]
+    ],
+    "highEpisodes": [
+     [
+      2010,
+      2010
+     ],
+     [
+      2018,
+      2018
+     ],
+     [
+      2021,
+      2022
+     ]
+    ],
+    "lowEpisodes": [
+     [
+      1998,
+      1998
+     ],
+     [
+      2008,
+      2008
+     ],
+     [
+      2011,
+      2011
+     ],
+     [
+      2020,
+      2020
+     ]
+    ],
+    "highIntervals": {
+     "starts": [
+      2010,
+      2018,
+      2021
+     ],
+     "gaps": [
+      8,
+      3
+     ],
+     "cv": 0.45,
+     "regular": false
+    },
+    "lowIntervals": {
+     "starts": [
+      1998,
+      2008,
+      2011,
+      2020
+     ],
+     "gaps": [
+      10,
+      3,
+      9
+     ],
+     "cv": 0.42,
+     "regular": false
+    },
+    "sensitivity": [
+     {
+      "range": [
+       1960,
+       1992
+      ],
+      "n": 1,
+      "verdict": "insufficient"
+     },
+     {
+      "range": [
+       1993,
+       2025
+      ],
+      "n": 33,
+      "verdict": "E",
+      "trendR2": 0.994,
+      "pAcf": 0.021,
+      "pSpectral": 0.08,
+      "period": 16.5
+     },
+     {
+      "range": [
+       1980,
+       2025
+      ],
+      "n": 34,
+      "verdict": "E",
+      "trendR2": 0.994,
+      "pAcf": 0.014,
+      "pSpectral": 0.06,
+      "period": 17.0
+     },
+     {
+      "range": [
+       1993,
+       2025
+      ],
+      "n": 33,
+      "method": "1차 차분(전년 대비 변화)",
+      "verdict": "none",
+      "pAcf": 0.252,
+      "pSpectral": 0.357,
+      "period": 2.8
+     }
+    ],
+    "n": 34,
+    "trendR2": 0.994,
+    "slopePerDecade": 36.88,
+    "changePoint": {
+     "year": 2010,
+     "before": 48.12,
+     "after": 110.75,
+     "explained": 0.742
+    },
+    "periodicity": {
+     "acf": [
+      0.668,
+      0.364,
+      0.172,
+      -0.203,
+      -0.424,
+      -0.442,
+      -0.381,
+      -0.249,
+      -0.109,
+      0.042,
+      0.261,
+      0.127,
+      -0.076,
+      -0.183,
+      -0.166,
+      -0.232
+     ],
+     "bestLag": 1,
+     "maxAbsAcf": 0.668,
+     "pAcf": 0.009,
+     "band": 0.336,
+     "spectralPeriod": 17.0,
+     "spectralShare": 0.319,
+     "pSpectral": 0.061
+    },
+    "verdict": "E",
+    "why": "직선 추세가 변동의 99% 설명"
+   },
+   {
+    "key": "urban-kr:KR",
+    "indicator": "urban-kr",
+    "country": "KR",
+    "title": "도시 인구 비율",
+    "unit": "%",
+    "from": 1960,
+    "to": 2025,
+    "points": [
+     [
+      1960,
+      27.69
+     ],
+     [
+      1961,
+      28.45
+     ],
+     [
+      1962,
+      29.23
+     ],
+     [
+      1963,
+      30.06
+     ],
+     [
+      1964,
+      30.96
+     ],
+     [
+      1965,
+      31.96
+     ],
+     [
+      1966,
+      33.1
+     ],
+     [
+      1967,
+      34.56
+     ],
+     [
+      1968,
+      36.53
+     ],
+     [
+      1969,
+      38.71
+     ],
+     [
+      1970,
+      40.71
+     ],
+     [
+      1971,
+      42.35
+     ],
+     [
+      1972,
+      43.79
+     ],
+     [
+      1973,
+      45.15
+     ],
+     [
+      1974,
+      46.51
+     ],
+     [
+      1975,
+      47.97
+     ],
+     [
+      1976,
+      49.57
+     ],
+     [
+      1977,
+      51.3
+     ],
+     [
+      1978,
+      53.1
+     ],
+     [
+      1979,
+      54.9
+     ],
+     [
+      1980,
+      56.66
+     ],
+     [
+      1981,
+      58.33
+     ],
+     [
+      1982,
+      59.95
+     ],
+     [
+      1983,
+      61.54
+     ],
+     [
+      1984,
+      63.15
+     ],
+     [
+      1985,
+      64.8
+     ],
+     [
+      1986,
+      66.58
+     ],
+     [
+      1987,
+      68.56
+     ],
+     [
+      1988,
+      70.59
+     ],
+     [
+      1989,
+      72.47
+     ],
+     [
+      1990,
+      73.99
+     ],
+     [
+      1991,
+      75.16
+     ],
+     [
+      1992,
+      76.2
+     ],
+     [
+      1993,
+      77.11
+     ],
+     [
+      1994,
+      77.86
+     ],
+     [
+      1995,
+      78.4
+     ],
+     [
+      1996,
+      78.75
+     ],
+     [
+      1997,
+      78.99
+     ],
+     [
+      1998,
+      79.18
+     ],
+     [
+      1999,
+      79.36
+     ],
+     [
+      2000,
+      79.58
+     ],
+     [
+      2001,
+      79.88
+     ],
+     [
+      2002,
+      80.28
+     ],
+     [
+      2003,
+      80.71
+     ],
+     [
+      2004,
+      81.1
+     ],
+     [
+      2005,
+      81.39
+     ],
+     [
+      2006,
+      81.57
+     ],
+     [
+      2007,
+      81.71
+     ],
+     [
+      2008,
+      81.84
+     ],
+     [
+      2009,
+      81.92
+     ],
+     [
+      2010,
+      81.97
+     ],
+     [
+      2011,
+      81.96
+     ],
+     [
+      2012,
+      81.91
+     ],
+     [
+      2013,
+      81.83
+     ],
+     [
+      2014,
+      81.73
+     ],
+     [
+      2015,
+      81.64
+     ],
+     [
+      2016,
+      81.56
+     ],
+     [
+      2017,
+      81.47
+     ],
+     [
+      2018,
+      81.38
+     ],
+     [
+      2019,
+      81.29
+     ],
+     [
+      2020,
+      81.18
+     ],
+     [
+      2021,
+      81.16
+     ],
+     [
+      2022,
+      81.16
+     ],
+     [
+      2023,
+      81.16
+     ],
+     [
+      2024,
+      81.17
+     ],
+     [
+      2025,
+      81.17
+     ]
+    ],
+    "trend": [
+     [
+      1960,
+      36.28
+     ],
+     [
+      2025,
+      94.87
+     ]
+    ],
+    "turningPoints": [],
+    "highThreshold": 1.58,
+    "lowThreshold": 0.07,
+    "episodeBasis": "전년 대비 변화",
+    "episodeUnit": "%",
+    "residual": [
+     [
+      1960,
+      -8.59
+     ],
+     [
+      1961,
+      -8.74
+     ],
+     [
+      1962,
+      -8.86
+     ],
+     [
+      1963,
+      -8.93
+     ],
+     [
+      1964,
+      -8.93
+     ],
+     [
+      1965,
+      -8.83
+     ],
+     [
+      1966,
+      -8.59
+     ],
+     [
+      1967,
+      -8.03
+     ],
+     [
+      1968,
+      -6.96
+     ],
+     [
+      1969,
+      -5.69
+     ],
+     [
+      1970,
+      -4.59
+     ],
+     [
+      1971,
+      -3.85
+     ],
+     [
+      1972,
+      -3.31
+     ],
+     [
+      1973,
+      -2.85
+     ],
+     [
+      1974,
+      -2.39
+     ],
+     [
+      1975,
+      -1.83
+     ],
+     [
+      1976,
+      -1.13
+     ],
+     [
+      1977,
+      -0.31
+     ],
+     [
+      1978,
+      0.59
+     ],
+     [
+      1979,
+      1.49
+     ],
+     [
+      1980,
+      2.35
+     ],
+     [
+      1981,
+      3.12
+     ],
+     [
+      1982,
+      3.84
+     ],
+     [
+      1983,
+      4.53
+     ],
+     [
+      1984,
+      5.24
+     ],
+     [
+      1985,
+      5.98
+     ],
+     [
+      1986,
+      6.86
+     ],
+     [
+      1987,
+      7.94
+     ],
+     [
+      1988,
+      9.07
+     ],
+     [
+      1989,
+      10.05
+     ],
+     [
+      1990,
+      10.67
+     ],
+     [
+      1991,
+      10.94
+     ],
+     [
+      1992,
+      11.08
+     ],
+     [
+      1993,
+      11.08
+     ],
+     [
+      1994,
+      10.93
+     ],
+     [
+      1995,
+      10.57
+     ],
+     [
+      1996,
+      10.02
+     ],
+     [
+      1997,
+      9.36
+     ],
+     [
+      1998,
+      8.65
+     ],
+     [
+      1999,
+      7.93
+     ],
+     [
+      2000,
+      7.25
+     ],
+     [
+      2001,
+      6.64
+     ],
+     [
+      2002,
+      6.14
+     ],
+     [
+      2003,
+      5.67
+     ],
+     [
+      2004,
+      5.16
+     ],
+     [
+      2005,
+      4.55
+     ],
+     [
+      2006,
+      3.83
+     ],
+     [
+      2007,
+      3.07
+     ],
+     [
+      2008,
+      2.3
+     ],
+     [
+      2009,
+      1.47
+     ],
+     [
+      2010,
+      0.62
+     ],
+     [
+      2011,
+      -0.29
+     ],
+     [
+      2012,
+      -1.24
+     ],
+     [
+      2013,
+      -2.22
+     ],
+     [
+      2014,
+      -3.22
+     ],
+     [
+      2015,
+      -4.21
+     ],
+     [
+      2016,
+      -5.19
+     ],
+     [
+      2017,
+      -6.19
+     ],
+     [
+      2018,
+      -7.18
+     ],
+     [
+      2019,
+      -8.17
+     ],
+     [
+      2020,
+      -9.18
+     ],
+     [
+      2021,
+      -10.1
+     ],
+     [
+      2022,
+      -11.0
+     ],
+     [
+      2023,
+      -11.9
+     ],
+     [
+      2024,
+      -12.79
+     ],
+     [
+      2025,
+      -13.7
+     ]
+    ],
+    "highEpisodes": [
+     [
+      1968,
+      1971
+     ],
+     [
+      1976,
+      1989
+     ]
+    ],
+    "lowEpisodes": [
+     [
+      2010,
+      2025
+     ]
+    ],
+    "highIntervals": {
+     "starts": [
+      1968,
+      1976
+     ],
+     "gaps": [
+      8
+     ],
+     "cv": null,
+     "regular": null
+    },
+    "lowIntervals": {
+     "starts": [
+      2010
+     ],
+     "gaps": [],
+     "cv": null,
+     "regular": null
+    },
+    "sensitivity": [
+     {
+      "range": [
+       1960,
+       1992
+      ],
+      "n": 33,
+      "verdict": "E",
+      "trendR2": 0.996,
+      "pAcf": 0.0,
+      "pSpectral": 0.0,
+      "period": 33.0
+     },
+     {
+      "range": [
+       1993,
+       2025
+      ],
+      "n": 33,
+      "verdict": "E",
+      "trendR2": 0.547,
+      "pAcf": 0.0,
+      "pSpectral": 0.0,
+      "period": 33.0
+     },
+     {
+      "range": [
+       1980,
+       2025
+      ],
+      "n": 46,
+      "verdict": "E",
+      "trendR2": 0.668,
+      "pAcf": 0.0,
+      "pSpectral": 0.0,
+      "period": 46.0
+     },
+     {
+      "range": [
+       1961,
+       2025
+      ],
+      "n": 65,
+      "method": "1차 차분(전년 대비 변화)",
+      "verdict": "A",
+      "pAcf": 0.0,
+      "pSpectral": 0.0,
+      "period": 65.0
+     }
+    ],
+    "n": 66,
+    "trendR2": 0.849,
+    "slopePerDecade": 9.01,
+    "changePoint": {
+     "year": 1982,
+     "before": 41.44,
+     "after": 77.64,
+     "explained": 0.839
+    },
+    "periodicity": {
+     "acf": [
+      0.995,
+      0.978,
+      0.949,
+      0.908,
+      0.854,
+      0.788,
+      0.71,
+      0.62,
+      0.522,
+      0.418,
+      0.31,
+      0.2,
+      0.089,
+      -0.021,
+      -0.13,
+      -0.235,
+      -0.335,
+      -0.429,
+      -0.516,
+      -0.595
+     ],
+     "bestLag": 1,
+     "maxAbsAcf": 0.995,
+     "pAcf": 0.0,
+     "band": 0.241,
+     "spectralPeriod": 66.0,
+     "spectralShare": 0.98,
+     "pSpectral": 0.0
+    },
+    "verdict": "E",
+    "why": "직선 추세가 변동의 85% 설명"
+   },
+   {
+    "key": "hhcons-kr:KR",
+    "indicator": "hhcons-kr",
+    "country": "KR",
+    "title": "가계 소비 비중 (GDP 대비)",
+    "unit": "%",
+    "from": 1960,
+    "to": 2025,
+    "points": [
+     [
+      1960,
+      84.85
+     ],
+     [
+      1961,
+      83.69
+     ],
+     [
+      1962,
+      82.99
+     ],
+     [
+      1963,
+      80.42
+     ],
+     [
+      1964,
+      82.62
+     ],
+     [
+      1965,
+      83.28
+     ],
+     [
+      1966,
+      78.41
+     ],
+     [
+      1967,
+      78.94
+     ],
+     [
+      1968,
+      75.32
+     ],
+     [
+      1969,
+      72.05
+     ],
+     [
+      1970,
+      73.55
+     ],
+     [
+      1971,
+      75.18
+     ],
+     [
+      1972,
+      72.54
+     ],
+     [
+      1973,
+      68.45
+     ],
+     [
+      1974,
+      68.48
+     ],
+     [
+      1975,
+      68.87
+     ],
+     [
+      1976,
+      64.26
+     ],
+     [
+      1977,
+      61.0
+     ],
+     [
+      1978,
+      59.66
+     ],
+     [
+      1979,
+      59.94
+     ],
+     [
+      1980,
+      62.57
+     ],
+     [
+      1981,
+      62.57
+     ],
+     [
+      1982,
+      61.29
+     ],
+     [
+      1983,
+      58.14
+     ],
+     [
+      1984,
+      56.19
+     ],
+     [
+      1985,
+      55.62
+     ],
+     [
+      1986,
+      52.96
+     ],
+     [
+      1987,
+      50.47
+     ],
+     [
+      1988,
+      48.72
+     ],
+     [
+      1989,
+      50.49
+     ],
+     [
+      1990,
+      50.05
+     ],
+     [
+      1991,
+      50.23
+     ],
+     [
+      1992,
+      50.84
+     ],
+     [
+      1993,
+      51.09
+     ],
+     [
+      1994,
+      51.85
+     ],
+     [
+      1995,
+      52.09
+     ],
+     [
+      1996,
+      53.45
+     ],
+     [
+      1997,
+      53.6
+     ],
+     [
+      1998,
+      50.47
+     ],
+     [
+      1999,
+      52.7
+     ],
+     [
+      2000,
+      54.6
+     ],
+     [
+      2001,
+      55.47
+     ],
+     [
+      2002,
+      56.28
+     ],
+     [
+      2003,
+      54.45
+     ],
+     [
+      2004,
+      52.05
+     ],
+     [
+      2005,
+      52.81
+     ],
+     [
+      2006,
+      53.62
+     ],
+     [
+      2007,
+      53.14
+     ],
+     [
+      2008,
+      53.29
+     ],
+     [
+      2009,
+      52.54
+     ],
+     [
+      2010,
+      51.2
+     ],
+     [
+      2011,
+      52.15
+     ],
+     [
+      2012,
+      52.25
+     ],
+     [
+      2013,
+      51.54
+     ],
+     [
+      2014,
+      51.08
+     ],
+     [
+      2015,
+      49.79
+     ],
+     [
+      2016,
+      49.25
+     ],
+     [
+      2017,
+      48.95
+     ],
+     [
+      2018,
+      49.41
+     ],
+     [
+      2019,
+      50.11
+     ],
+     [
+      2020,
+      47.81
+     ],
+     [
+      2021,
+      47.11
+     ],
+     [
+      2022,
+      49.03
+     ],
+     [
+      2023,
+      49.95
+     ],
+     [
+      2024,
+      48.49
+     ],
+     [
+      2025,
+      48.02
+     ]
+    ],
+    "trend": [
+     [
+      1960,
+      75.3
+     ],
+     [
+      2025,
+      42.4
+     ]
+    ],
+    "turningPoints": [],
+    "highThreshold": 1.18,
+    "lowThreshold": -2.31,
+    "episodeBasis": "전년 대비 변화",
+    "episodeUnit": "%",
+    "residual": [
+     [
+      1960,
+      9.55
+     ],
+     [
+      1961,
+      8.89
+     ],
+     [
+      1962,
+      8.7
+     ],
+     [
+      1963,
+      6.64
+     ],
+     [
+      1964,
+      9.34
+     ],
+     [
+      1965,
+      10.51
+     ],
+     [
+      1966,
+      6.14
+     ],
+     [
+      1967,
+      7.18
+     ],
+     [
+      1968,
+      4.07
+     ],
+     [
+      1969,
+      1.3
+     ],
+     [
+      1970,
+      3.31
+     ],
+     [
+      1971,
+      5.45
+     ],
+     [
+      1972,
+      3.31
+     ],
+     [
+      1973,
+      -0.27
+     ],
+     [
+      1974,
+      0.26
+     ],
+     [
+      1975,
+      1.16
+     ],
+     [
+      1976,
+      -2.94
+     ],
+     [
+      1977,
+      -5.7
+     ],
+     [
+      1978,
+      -6.53
+     ],
+     [
+      1979,
+      -5.75
+     ],
+     [
+      1980,
+      -2.61
+     ],
+     [
+      1981,
+      -2.1
+     ],
+     [
+      1982,
+      -2.88
+     ],
+     [
+      1983,
+      -5.52
+     ],
+     [
+      1984,
+      -6.96
+     ],
+     [
+      1985,
+      -7.03
+     ],
+     [
+      1986,
+      -9.18
+     ],
+     [
+      1987,
+      -11.17
+     ],
+     [
+      1988,
+      -12.41
+     ],
+     [
+      1989,
+      -10.13
+     ],
+     [
+      1990,
+      -10.07
+     ],
+     [
+      1991,
+      -9.38
+     ],
+     [
+      1992,
+      -8.27
+     ],
+     [
+      1993,
+      -7.51
+     ],
+     [
+      1994,
+      -6.24
+     ],
+     [
+      1995,
+      -5.5
+     ],
+     [
+      1996,
+      -3.63
+     ],
+     [
+      1997,
+      -2.98
+     ],
+     [
+      1998,
+      -5.6
+     ],
+     [
+      1999,
+      -2.86
+     ],
+     [
+      2000,
+      -0.46
+     ],
+     [
+      2001,
+      0.92
+     ],
+     [
+      2002,
+      2.24
+     ],
+     [
+      2003,
+      0.91
+     ],
+     [
+      2004,
+      -0.98
+     ],
+     [
+      2005,
+      0.28
+     ],
+     [
+      2006,
+      1.6
+     ],
+     [
+      2007,
+      1.63
+     ],
+     [
+      2008,
+      2.28
+     ],
+     [
+      2009,
+      2.04
+     ],
+     [
+      2010,
+      1.2
+     ],
+     [
+      2011,
+      2.66
+     ],
+     [
+      2012,
+      3.27
+     ],
+     [
+      2013,
+      3.06
+     ],
+     [
+      2014,
+      3.11
+     ],
+     [
+      2015,
+      2.33
+     ],
+     [
+      2016,
+      2.29
+     ],
+     [
+      2017,
+      2.5
+     ],
+     [
+      2018,
+      3.46
+     ],
+     [
+      2019,
+      4.67
+     ],
+     [
+      2020,
+      2.88
+     ],
+     [
+      2021,
+      2.68
+     ],
+     [
+      2022,
+      5.11
+     ],
+     [
+      2023,
+      6.53
+     ],
+     [
+      2024,
+      5.58
+     ],
+     [
+      2025,
+      5.62
+     ]
+    ],
+    "highEpisodes": [
+     [
+      1964,
+      1964
+     ],
+     [
+      1970,
+      1971
+     ],
+     [
+      1980,
+      1980
+     ],
+     [
+      1989,
+      1989
+     ],
+     [
+      1996,
+      1996
+     ],
+     [
+      1999,
+      2000
+     ],
+     [
+      2022,
+      2022
+     ]
+    ],
+    "lowEpisodes": [
+     [
+      1963,
+      1963
+     ],
+     [
+      1966,
+      1969
+     ],
+     [
+      1972,
+      1973
+     ],
+     [
+      1976,
+      1977
+     ],
+     [
+      1983,
+      1983
+     ],
+     [
+      1986,
+      1987
+     ],
+     [
+      1998,
+      1998
+     ],
+     [
+      2004,
+      2004
+     ]
+    ],
+    "highIntervals": {
+     "starts": [
+      1964,
+      1970,
+      1980,
+      1989,
+      1996,
+      1999,
+      2022
+     ],
+     "gaps": [
+      6,
+      10,
+      9,
+      7,
+      3,
+      23
+     ],
+     "cv": 0.66,
+     "regular": false
+    },
+    "lowIntervals": {
+     "starts": [
+      1963,
+      1966,
+      1972,
+      1976,
+      1983,
+      1986,
+      1998,
+      2004
+     ],
+     "gaps": [
+      3,
+      6,
+      4,
+      7,
+      3,
+      12,
+      6
+     ],
+     "cv": 0.5,
+     "regular": false
+    },
+    "sensitivity": [
+     {
+      "range": [
+       1960,
+       1992
+      ],
+      "n": 33,
+      "verdict": "E",
+      "trendR2": 0.969,
+      "pAcf": 0.058,
+      "pSpectral": 0.039,
+      "period": 8.2
+     },
+     {
+      "range": [
+       1993,
+       2025
+      ],
+      "n": 33,
+      "verdict": "E",
+      "trendR2": 0.531,
+      "pAcf": 0.003,
+      "pSpectral": 0.004,
+      "period": 33.0
+     },
+     {
+      "range": [
+       1980,
+       2025
+      ],
+      "n": 46,
+      "verdict": "E",
+      "trendR2": 0.426,
+      "pAcf": 0.0,
+      "pSpectral": 0.001,
+      "period": 23.0
+     },
+     {
+      "range": [
+       1961,
+       2025
+      ],
+      "n": 65,
+      "method": "1차 차분(전년 대비 변화)",
+      "verdict": "none",
+      "pAcf": 0.07,
+      "pSpectral": 0.792,
+      "period": 5.4
+     }
+    ],
+    "n": 66,
+    "trendR2": 0.747,
+    "slopePerDecade": -5.06,
+    "changePoint": {
+     "year": 1976,
+     "before": 76.85,
+     "after": 53.09,
+     "explained": 0.833
+    },
+    "periodicity": {
+     "acf": [
+      0.951,
+      0.886,
+      0.843,
+      0.795,
+      0.742,
+      0.671,
+      0.589,
+      0.496,
+      0.423,
+      0.363,
+      0.251,
+      0.1,
+      -0.029,
+      -0.119,
+      -0.21,
+      -0.311,
+      -0.389,
+      -0.457,
+      -0.509,
+      -0.558
+     ],
+     "bestLag": 1,
+     "maxAbsAcf": 0.951,
+     "pAcf": 0.0,
+     "band": 0.241,
+     "spectralPeriod": 66.0,
+     "spectralShare": 0.8,
+     "pSpectral": 0.0
+    },
+    "verdict": "E",
+    "why": "직선 추세가 변동의 75% 설명"
    }
   ],
   "findings": [
@@ -39163,65 +50225,6 @@
     "interest": 3.7
    },
    {
-    "id": "f-gdppc-kr:KR-high",
-    "type": "B",
-    "series": [
-     "gdppc-kr:KR"
-    ],
-    "category": "economy",
-    "title": "1인당 실질 GDP (2015년 달러)(한국) 평소보다 크게 오른 해 7번",
-    "summary": "전년 대비 변화율이 평소보다 1표준편차 이상 컸던 해(경계 9.51%): 1968~1969, 1973, 1976~1977, 1983, 1986~1988, 1991, 1999. 간격 5, 3, 7, 3, 5, 8년 — 변동계수 0.36 → 간격이 일정하지 않은 불규칙한 반복",
-    "periods": [
-     [
-      1968,
-      1969
-     ],
-     [
-      1973,
-      1973
-     ],
-     [
-      1976,
-      1977
-     ],
-     [
-      1983,
-      1983
-     ],
-     [
-      1986,
-      1988
-     ],
-     [
-      1991,
-      1991
-     ],
-     [
-      1999,
-      1999
-     ]
-    ],
-    "intervals": [
-     5,
-     3,
-     7,
-     3,
-     5,
-     8
-    ],
-    "evidence": {
-     "threshold": 9.51,
-     "basis": "전년 대비 변화율",
-     "cv": 0.36,
-     "count": 7
-    },
-    "confidence": {
-     "level": "보통",
-     "why": "급변 구간 7회 — 횟수가 적을수록 간격 판단이 불안정"
-    },
-    "interest": 3.7
-   },
-   {
     "id": "f-gdp-growth:KR-low",
     "type": "B",
     "series": [
@@ -39267,168 +50270,6 @@
      "threshold": -3.18,
      "basis": "추세 대비",
      "cv": 0.4,
-     "count": 6
-    },
-    "confidence": {
-     "level": "보통",
-     "why": "급변 구간 6회 — 횟수가 적을수록 간격 판단이 불안정"
-    },
-    "interest": 3.6
-   },
-   {
-    "id": "f-tfr-kr:KR-high",
-    "type": "B",
-    "series": [
-     "tfr-kr:KR"
-    ],
-    "category": "society",
-    "title": "한국 합계출산율(한국) 평소보다 크게 오른 해 6번",
-    "summary": "전년 대비 변화가 평소보다 1표준편차 이상 컸던 해(경계 0.05명): 1970, 1979, 1991, 2000, 2007, 2010. 간격 9, 12, 9, 7, 3년 — 변동계수 0.37 → 간격이 일정하지 않은 불규칙한 반복",
-    "periods": [
-     [
-      1970,
-      1970
-     ],
-     [
-      1979,
-      1979
-     ],
-     [
-      1991,
-      1991
-     ],
-     [
-      2000,
-      2000
-     ],
-     [
-      2007,
-      2007
-     ],
-     [
-      2010,
-      2010
-     ]
-    ],
-    "intervals": [
-     9,
-     12,
-     9,
-     7,
-     3
-    ],
-    "evidence": {
-     "threshold": 0.05,
-     "basis": "전년 대비 변화",
-     "cv": 0.37,
-     "count": 6
-    },
-    "confidence": {
-     "level": "보통",
-     "why": "급변 구간 6회 — 횟수가 적을수록 간격 판단이 불안정"
-    },
-    "interest": 3.6
-   },
-   {
-    "id": "f-gdppc-kr:KR-low",
-    "type": "B",
-    "series": [
-     "gdppc-kr:KR"
-    ],
-    "category": "economy",
-    "title": "1인당 실질 GDP (2015년 달러)(한국) 평소보다 덜 오르거나 내린 해 6번",
-    "summary": "전년 대비 변화율이 평소보다 1표준편차 이상 작았던(또는 반대 방향이었던) 해(경계 1.97%): 1962, 1980, 1998, 2009, 2019~2020, 2023~2025. 간격 18, 18, 11, 10, 4년 — 변동계수 0.43 → 간격이 일정하지 않은 불규칙한 반복",
-    "periods": [
-     [
-      1962,
-      1962
-     ],
-     [
-      1980,
-      1980
-     ],
-     [
-      1998,
-      1998
-     ],
-     [
-      2009,
-      2009
-     ],
-     [
-      2019,
-      2020
-     ],
-     [
-      2023,
-      2025
-     ]
-    ],
-    "intervals": [
-     18,
-     18,
-     11,
-     10,
-     4
-    ],
-    "evidence": {
-     "threshold": 1.97,
-     "basis": "전년 대비 변화율",
-     "cv": 0.43,
-     "count": 6
-    },
-    "confidence": {
-     "level": "보통",
-     "why": "급변 구간 6회 — 횟수가 적을수록 간격 판단이 불안정"
-    },
-    "interest": 3.6
-   },
-   {
-    "id": "f-exports-kr:KR-low",
-    "type": "B",
-    "series": [
-     "exports-kr:KR"
-    ],
-    "category": "industry",
-    "title": "상품 수출액(한국) 평소보다 덜 오르거나 내린 해 6번",
-    "summary": "전년 대비 변화율이 평소보다 1표준편차 이상 작았던(또는 반대 방향이었던) 해(경계 -1.49%): 1998, 2001, 2009, 2015~2016, 2019~2020, 2023. 간격 3, 8, 6, 4, 4년 — 변동계수 0.36 → 간격이 일정하지 않은 불규칙한 반복",
-    "periods": [
-     [
-      1998,
-      1998
-     ],
-     [
-      2001,
-      2001
-     ],
-     [
-      2009,
-      2009
-     ],
-     [
-      2015,
-      2016
-     ],
-     [
-      2019,
-      2020
-     ],
-     [
-      2023,
-      2023
-     ]
-    ],
-    "intervals": [
-     3,
-     8,
-     6,
-     4,
-     4
-    ],
-    "evidence": {
-     "threshold": -1.49,
-     "basis": "전년 대비 변화율",
-     "cv": 0.36,
      "count": 6
     },
     "confidence": {
@@ -39537,8 +50378,8 @@
      "fx-kr:KR"
     ],
     "category": "economy",
-    "title": "원/달러 환율 (연평균)(한국) 평소보다 크게 오른 해 4번",
-    "summary": "전년 대비 변화율이 평소보다 1표준편차 이상 컸던 해(경계 22.63%): 1961, 1964~1965, 1980, 1998. 간격 3, 16, 18년 — 변동계수 0.54 → 간격이 일정하지 않은 불규칙한 반복",
+    "title": "원/달러 환율 (연평균)(한국) 전년 대비 변화가 평소보다 위로 튄 해 4번",
+    "summary": "전년 대비 변화율이 평균 변화보다 1표준편차 이상 위였던(더 크게 오르거나 덜 내린) 해(경계 22.63%): 1961, 1964~1965, 1980, 1998. 간격 3, 16, 18년 — 변동계수 0.54 → 간격이 일정하지 않은 불규칙한 반복",
     "periods": [
      [
       1961,
@@ -39566,50 +50407,6 @@
      "threshold": 22.63,
      "basis": "전년 대비 변화율",
      "cv": 0.54,
-     "count": 4
-    },
-    "confidence": {
-     "level": "보통",
-     "why": "급변 구간 4회 — 횟수가 적을수록 간격 판단이 불안정"
-    },
-    "interest": 3.4
-   },
-   {
-    "id": "f-emp-mfg-kr:KR-high",
-    "type": "B",
-    "series": [
-     "emp-mfg-kr:KR"
-    ],
-    "category": "industry",
-    "title": "제조업 취업자 비중(한국) 평소보다 크게 오른 해 4번",
-    "summary": "전년 대비 변화가 평소보다 1표준편차 이상 컸던 해(경계 0.2%): 1991, 2000, 2010, 2013~2015. 간격 9, 10, 3년 — 변동계수 0.42 → 간격이 일정하지 않은 불규칙한 반복",
-    "periods": [
-     [
-      1991,
-      1991
-     ],
-     [
-      2000,
-      2000
-     ],
-     [
-      2010,
-      2010
-     ],
-     [
-      2013,
-      2015
-     ]
-    ],
-    "intervals": [
-     9,
-     10,
-     3
-    ],
-    "evidence": {
-     "threshold": 0.2,
-     "basis": "전년 대비 변화",
-     "cv": 0.42,
      "count": 4
     },
     "confidence": {
@@ -39658,45 +50455,6 @@
     "interest": 3.3
    },
    {
-    "id": "f-tfr-kr:KR-low",
-    "type": "B",
-    "series": [
-     "tfr-kr:KR"
-    ],
-    "category": "society",
-    "title": "한국 합계출산율(한국) 평소보다 덜 오르거나 내린 해 3번",
-    "summary": "전년 대비 변화가 평소보다 1표준편차 이상 작았던(또는 반대 방향이었던) 해(경계 -0.21명): 1962~1964, 1972~1978, 1981~1984. 간격 10, 9년 — 변동계수 0.05 (간격이 비교적 일정하지만 횟수가 적어 주기로 확정하지 않음)",
-    "periods": [
-     [
-      1962,
-      1964
-     ],
-     [
-      1972,
-      1978
-     ],
-     [
-      1981,
-      1984
-     ]
-    ],
-    "intervals": [
-     10,
-     9
-    ],
-    "evidence": {
-     "threshold": -0.21,
-     "basis": "전년 대비 변화",
-     "cv": 0.05,
-     "count": 3
-    },
-    "confidence": {
-     "level": "낮음",
-     "why": "급변 구간 3회 — 횟수가 적을수록 간격 판단이 불안정"
-    },
-    "interest": 3.3
-   },
-   {
     "id": "f-cpi-kr:KR-low",
     "type": "B",
     "series": [
@@ -39736,75 +50494,36 @@
     "interest": 3.3
    },
    {
-    "id": "f-emp-svc-kr:KR-high",
+    "id": "f-house-kr:KR-low",
     "type": "B",
     "series": [
-     "emp-svc-kr:KR"
+     "house-kr:KR"
     ],
-    "category": "industry",
-    "title": "서비스업 취업자 비중(한국) 평소보다 크게 오른 해 3번",
-    "summary": "전년 대비 변화가 평소보다 1표준편차 이상 컸던 해(경계 1.42%): 1985, 1991~1993, 1996~1998. 간격 6, 5년 — 변동계수 0.09 (간격이 비교적 일정하지만 횟수가 적어 주기로 확정하지 않음)",
+    "category": "society",
+    "title": "실질 주택가격 지수 (2010=100)(한국) 급락 구간 3회",
+    "summary": "평균±1표준편차 밖(아래, 경계 88.49지수)으로 나간 구간: 1975~1977, 1981~1982, 1998~2001. 간격 6, 17년 — 변동계수 0.48 → 간격이 일정하지 않은 불규칙한 반복",
     "periods": [
      [
-      1985,
-      1985
+      1975,
+      1977
      ],
      [
-      1991,
-      1993
+      1981,
+      1982
      ],
      [
-      1996,
-      1998
+      1998,
+      2001
      ]
     ],
     "intervals": [
      6,
-     5
+     17
     ],
     "evidence": {
-     "threshold": 1.42,
-     "basis": "전년 대비 변화",
-     "cv": 0.09,
-     "count": 3
-    },
-    "confidence": {
-     "level": "낮음",
-     "why": "급변 구간 3회 — 횟수가 적을수록 간격 판단이 불안정"
-    },
-    "interest": 3.3
-   },
-   {
-    "id": "f-emp-svc-kr:KR-low",
-    "type": "B",
-    "series": [
-     "emp-svc-kr:KR"
-    ],
-    "category": "industry",
-    "title": "서비스업 취업자 비중(한국) 평소보다 덜 오르거나 내린 해 3번",
-    "summary": "전년 대비 변화가 평소보다 1표준편차 이상 작았던(또는 반대 방향이었던) 해(경계 0.04%): 1987, 2010, 2013~2020. 간격 23, 3년 — 변동계수 0.77 → 간격이 일정하지 않은 불규칙한 반복",
-    "periods": [
-     [
-      1987,
-      1987
-     ],
-     [
-      2010,
-      2010
-     ],
-     [
-      2013,
-      2020
-     ]
-    ],
-    "intervals": [
-     23,
-     3
-    ],
-    "evidence": {
-     "threshold": 0.04,
-     "basis": "전년 대비 변화",
-     "cv": 0.77,
+     "threshold": 88.49,
+     "basis": "평균 대비",
+     "cv": 0.48,
      "count": 3
     },
     "confidence": {
@@ -40379,6 +51098,326 @@
     "interest": 2.1
    },
    {
+    "id": "f-va-agr-kr:KR-shape",
+    "type": "E",
+    "series": [
+     "va-agr-kr:KR"
+    ],
+    "category": "industry",
+    "title": "농림어업 생산 비중 (GDP 대비)(한국): 장기 구조 변화 — 주기가 아님",
+    "summary": "직선 추세가 변동의 82% 설명",
+    "periods": [
+     [
+      1980,
+      2025
+     ]
+    ],
+    "evidence": {
+     "trendR2": 0.823,
+     "changePoint": {
+      "year": 1980,
+      "before": 29.53,
+      "after": 4.85,
+      "explained": 0.818
+     },
+     "pAcf": 0.0,
+     "pSpectral": 0.0
+    },
+    "confidence": {
+     "level": "높음",
+     "why": "추세·변화점의 설명력 기준"
+    },
+    "interest": 2.1
+   },
+   {
+    "id": "f-va-mfg-kr:KR-shape",
+    "type": "E",
+    "series": [
+     "va-mfg-kr:KR"
+    ],
+    "category": "industry",
+    "title": "제조업 생산 비중 (GDP 대비)(한국): 장기 구조 변화 — 주기가 아님",
+    "summary": "직선 추세가 변동의 75% 설명",
+    "periods": [
+     [
+      1983,
+      2025
+     ]
+    ],
+    "evidence": {
+     "trendR2": 0.751,
+     "changePoint": {
+      "year": 1983,
+      "before": 17.88,
+      "after": 26.26,
+      "explained": 0.749
+     },
+     "pAcf": 0.0,
+     "pSpectral": 0.0
+    },
+    "confidence": {
+     "level": "높음",
+     "why": "추세·변화점의 설명력 기준"
+    },
+    "interest": 2.1
+   },
+   {
+    "id": "f-va-srv-kr:KR-shape",
+    "type": "E",
+    "series": [
+     "va-srv-kr:KR"
+    ],
+    "category": "industry",
+    "title": "서비스업 생산 비중 (GDP 대비)(한국): 장기 구조 변화 — 주기가 아님",
+    "summary": "직선 추세가 변동의 93% 설명",
+    "periods": [
+     [
+      1991,
+      2025
+     ]
+    ],
+    "evidence": {
+     "trendR2": 0.932,
+     "changePoint": {
+      "year": 1991,
+      "before": 41.08,
+      "after": 54.2,
+      "explained": 0.797
+     },
+     "pAcf": 0.0,
+     "pSpectral": 0.005
+    },
+    "confidence": {
+     "level": "높음",
+     "why": "추세·변화점의 설명력 기준"
+    },
+    "interest": 2.1
+   },
+   {
+    "id": "f-exp-gdp-kr:KR-shape",
+    "type": "E",
+    "series": [
+     "exp-gdp-kr:KR"
+    ],
+    "category": "industry",
+    "title": "수출 의존도 (GDP 대비 수출)(한국): 장기 구조 변화 — 주기가 아님",
+    "summary": "직선 추세가 변동의 82% 설명",
+    "periods": [
+     [
+      1973,
+      2025
+     ]
+    ],
+    "evidence": {
+     "trendR2": 0.819,
+     "changePoint": {
+      "year": 1973,
+      "before": 8.05,
+      "after": 33.17,
+      "explained": 0.619
+     },
+     "pAcf": 0.0,
+     "pSpectral": 0.0
+    },
+    "confidence": {
+     "level": "높음",
+     "why": "추세·변화점의 설명력 기준"
+    },
+    "interest": 2.1
+   },
+   {
+    "id": "f-tel-kr:KR-shape",
+    "type": "E",
+    "series": [
+     "tel-kr:KR"
+    ],
+    "category": "industry",
+    "title": "유선전화 가입 (100명당)(한국): 장기 구조 변화 — 주기가 아님",
+    "summary": "직선 추세가 변동의 71% 설명",
+    "periods": [
+     [
+      1991,
+      2024
+     ]
+    ],
+    "evidence": {
+     "trendR2": 0.712,
+     "changePoint": {
+      "year": 1991,
+      "before": 13.04,
+      "after": 49.01,
+      "explained": 0.823
+     },
+     "pAcf": 0.0,
+     "pSpectral": 0.0
+    },
+    "confidence": {
+     "level": "높음",
+     "why": "추세·변화점의 설명력 기준"
+    },
+    "interest": 2.1
+   },
+   {
+    "id": "f-call-kr:KR-shape",
+    "type": "E",
+    "series": [
+     "call-kr:KR"
+    ],
+    "category": "economy",
+    "title": "콜금리 (단기 시장금리, 연평균)(한국): 장기 구조 변화 — 주기가 아님",
+    "summary": "직선 추세가 변동의 67% 설명",
+    "periods": [
+     [
+      1999,
+      2025
+     ]
+    ],
+    "evidence": {
+     "trendR2": 0.673,
+     "changePoint": {
+      "year": 1999,
+      "before": 13.5,
+      "after": 2.93,
+      "explained": 0.911
+     },
+     "pAcf": 0.002,
+     "pSpectral": 0.0
+    },
+    "confidence": {
+     "level": "높음",
+     "why": "추세·변화점의 설명력 기준"
+    },
+    "interest": 2.1
+   },
+   {
+    "id": "f-disc-kr:KR-shape",
+    "type": "E",
+    "series": [
+     "disc-kr:KR"
+    ],
+    "category": "economy",
+    "title": "한국은행 재할인율 (1964~1998, 연평균)(한국): 장기 구조 변화 — 주기가 아님",
+    "summary": "직선 추세가 변동의 60% 설명",
+    "periods": [
+     [
+      1982,
+      1998
+     ]
+    ],
+    "evidence": {
+     "trendR2": 0.604,
+     "changePoint": {
+      "year": 1982,
+      "before": 16.71,
+      "after": 5.82,
+      "explained": 0.649
+     },
+     "pAcf": 0.001,
+     "pSpectral": 0.012
+    },
+    "confidence": {
+     "level": "높음",
+     "why": "추세·변화점의 설명력 기준"
+    },
+    "interest": 2.1
+   },
+   {
+    "id": "f-wage-kr:KR-shape",
+    "type": "E",
+    "series": [
+     "wage-kr:KR"
+    ],
+    "category": "society",
+    "title": "제조업 시간당 임금 지수 (명목, 2015=100)(한국): 장기 구조 변화 — 주기가 아님",
+    "summary": "직선 추세가 변동의 99% 설명",
+    "periods": [
+     [
+      2010,
+      2025
+     ]
+    ],
+    "evidence": {
+     "trendR2": 0.994,
+     "changePoint": {
+      "year": 2010,
+      "before": 48.12,
+      "after": 110.75,
+      "explained": 0.742
+     },
+     "pAcf": 0.009,
+     "pSpectral": 0.061
+    },
+    "confidence": {
+     "level": "높음",
+     "why": "추세·변화점의 설명력 기준"
+    },
+    "interest": 2.1
+   },
+   {
+    "id": "f-urban-kr:KR-shape",
+    "type": "E",
+    "series": [
+     "urban-kr:KR"
+    ],
+    "category": "society",
+    "title": "도시 인구 비율(한국): 장기 구조 변화 — 주기가 아님",
+    "summary": "직선 추세가 변동의 85% 설명",
+    "periods": [
+     [
+      1982,
+      2025
+     ]
+    ],
+    "evidence": {
+     "trendR2": 0.849,
+     "changePoint": {
+      "year": 1982,
+      "before": 41.44,
+      "after": 77.64,
+      "explained": 0.839
+     },
+     "pAcf": 0.0,
+     "pSpectral": 0.0
+    },
+    "confidence": {
+     "level": "높음",
+     "why": "추세·변화점의 설명력 기준"
+    },
+    "interest": 2.1
+   },
+   {
+    "id": "f-hhcons-kr:KR-shape",
+    "type": "E",
+    "series": [
+     "hhcons-kr:KR"
+    ],
+    "category": "society",
+    "title": "가계 소비 비중 (GDP 대비)(한국): 장기 구조 변화 — 주기가 아님",
+    "summary": "직선 추세가 변동의 75% 설명",
+    "periods": [
+     [
+      1976,
+      2025
+     ]
+    ],
+    "evidence": {
+     "trendR2": 0.747,
+     "changePoint": {
+      "year": 1976,
+      "before": 76.85,
+      "after": 53.09,
+      "explained": 0.833
+     },
+     "pAcf": 0.0,
+     "pSpectral": 0.0
+    },
+    "confidence": {
+     "level": "높음",
+     "why": "추세·변화점의 설명력 기준"
+    },
+    "interest": 2.1
+   },
+   {
     "id": "f-unemp-kr:KR-shape",
     "type": "E",
     "series": [
@@ -40498,6 +51537,27 @@
      "pAcf": 0.053,
      "pSpectral": 0.704,
      "bestLag": 11
+    },
+    "confidence": {
+     "level": "높음",
+     "why": "주기가 '없다'는 판단은 순열 검정 결과가 직접 뒷받침"
+    },
+    "interest": 1.0
+   },
+   {
+    "id": "f-house-kr:KR-nocycle",
+    "type": "N",
+    "series": [
+     "house-kr:KR"
+    ],
+    "category": "society",
+    "title": "실질 주택가격 지수 (2010=100)(한국): 일정한 주기 없음",
+    "summary": "주기 검정 p=0.0(시차)·0.0(주기도) — 우연 범위, 뚜렷한 장기 추세도 없음",
+    "periods": [],
+    "evidence": {
+     "pAcf": 0.0,
+     "pSpectral": 0.0,
+     "bestLag": 1
     },
     "confidence": {
      "level": "높음",

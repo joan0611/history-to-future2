@@ -43,13 +43,17 @@ interface Seed {
   eras: Era[]; claims: Claim[]; sources: Source[]; transitions: Transition[]; documents: Doc[]; indicators: Indicator[];
   graph: { nodes: Node[]; edges: Edge[]; chains: Chain[]; relTypes: Record<Rel, string>; nodeTypes: Record<string, string> };
   cycles: { analyses: Analysis[]; findings: Finding[]; params: Record<string, unknown> };
+  numberChecks: Record<string, NumberCheck[]>;
   patterns: { parallels: Parallel[] };
 }
 const seed = seedJson as unknown as Seed;
 
+export interface NumberCheck { indicator: string; title: string; year: number; claimed: number; data: number | null; unit: string; memo: string; ok: boolean | null; verdict: string }
+
 export const D = {
   eras: seed.eras,
   claims: Object.fromEntries(seed.claims.map((c) => [c.id, c])) as Record<string, Claim>,
+  checks: (seed.numberChecks ?? {}) as Record<string, NumberCheck[]>,
   sources: Object.fromEntries(seed.sources.map((s) => [s.id, s])) as Record<string, Source>,
   docs: Object.fromEntries(seed.documents.map((d) => [d.id, d])) as Record<string, Doc>,
   transitions: seed.transitions,

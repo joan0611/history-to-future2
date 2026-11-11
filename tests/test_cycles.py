@@ -77,3 +77,16 @@ def test_real_data_findings_exist_and_are_honest():
     assert basis["fx-kr:KR"] == "전년 대비 변화율" and basis["life-kr:KR"] == "전년 대비 변화"
     for f in d["findings"]:
         assert f["confidence"]["level"] in ("높음", "보통", "낮음") and f["summary"]
+
+
+def test_number_checks_and_deep_1997():
+    import json
+    d = json.load(open(os.path.join(os.path.dirname(__file__), "..", "data", "seed.json")))
+    nc = d["numberChecks"]
+    assert sum(len(v) for v in nc.values()) >= 10
+    # 차이가 나는 대조는 숨기지 않고 남긴다(성장률 기준 개편)
+    assert any(x["verdict"] == "차이" for v in nc.values() for x in v)
+    ids = {n["id"] for n in d["graph"]["nodes"]}
+    assert {"d97-rollover", "d97-shortdebt", "d97-tripartite"} <= ids
+    e97 = [e for e in d["graph"]["edges"] if e["chainId"] == "deep-1997"]
+    assert len(e97) >= 20 and any(e["verification"] == "hypothesis" for e in e97)

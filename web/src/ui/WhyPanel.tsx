@@ -145,6 +145,8 @@ export function Claims({ ids }: { ids: string[] }) {
           <p>{c.text}</p>
           <p className="claim-meta"><span className={`ct t-${c.claimType}`}>{CLAIM_KO[c.claimType]}</span> <span className={`st s-${c.status}`}>{STATUS_KO[c.status]}</span>
             {c.sourceIds.map((s) => D.sources[s]).filter(Boolean).map((s) => <a key={s.id} href={s.url} target="_blank" rel="noreferrer" title={s.title}>{s.publisher}</a>)}</p>
+          {D.checks[c.id] && <p className="num-check">수치 대조: {D.checks[c.id].map((k, i) => (
+            <span key={i} className={k.ok ? 'nc-ok' : k.ok === false ? 'nc-diff' : ''}>{k.year}년 {k.title} — 문장 {k.claimed}, 수집 자료 {k.data ?? '없음'}{k.unit === '%' ? '%' : ''} → {k.verdict}{!k.ok && k.memo ? ` (${k.memo})` : ''}</span>))}</p>}
         </li>
       ))}
       {cs.length > 3 && <li><button className="link" onClick={() => setOpen(!open)}>{open ? '접기' : `근거 ${cs.length - 3}개 더`}</button></li>}

@@ -135,8 +135,9 @@ def build(seed, signals, deep=None):
         if y < 1960:
             return "1960s"
         return max((e for e, s0 in ERA_START.items() if s0 <= y), key=lambda e: ERA_START[e])
-    if deep:
-        for d in deep.NODES:
+    deeps = deep if isinstance(deep, (list, tuple)) else ([deep] if deep else [])
+    for dm in deeps:
+        for d in dm.NODES:
             nodes[d["id"]] = {**d, "kind": "event" if d["nodeType"] == "event" else ("trend" if d["nodeType"] == "trend" else "phenomenon"),
                               "eraId": era_for_year(d["year"]), "domains": sorted(meta_from_claims(d["claimIds"])[0]), "eventIds": [], "deep": True}
 
@@ -233,20 +234,20 @@ def build(seed, signals, deep=None):
                               "need": tr.get("need"), "whyThen": tr.get("whyThen"), "timeline": tr.get("timeline", [])}}
 
     edges = build_edges(chains)
-    if deep:  # 심층 사례의 관계는 관계 유형·검증 수준을 직접 지정
-        def resolve(ref):
-            if ref.startswith("claim:"):
-                c = ref[6:]
-                return next((n["id"] for n in nodes.values() if c in n["claimIds"]), None)
-            return ref if ref in nodes else None
-        for i, e in enumerate(deep.EDGES):
+    def resolve(ref):
+        if ref.startswith("claim:"):
+            c = ref[6:]
+            return next((n["id"] for n in nodes.values() if c in n["claimIds"]), None)
+        return ref if ref in nodes else None
+    for dm in deeps:  # 심층 사례의 관계는 관계 유형·검증 수준을 직접 지정
+        ch = dm.CHAIN
+        for i, e in enumerate(dm.EDGES):
             a, b = resolve(e["from"]), resolve(e["to"])
             if not a or not b:
-                raise SystemExit(f"deep_1973 관계의 노드를 찾을 수 없음: {e['from']} → {e['to']}")
-            edges.append({"id": f"e-d73-{i}", "from": a, "to": b, "rel": e["rel"], "verification": e["verification"],
-                          "chainId": "deep-1973", "note": e["note"], "claimIds": e["claimIds"]})
-        chains.append({"id": "deep-1973", "kind": "case", "title": "1973년 대한민국 심층 사례 (석유파동·유신·중화학공업·청년문화)", "ref": "1970s",
-                       "eraId": "1970s", "steps": []})
+                raise SystemExit(f"{ch['id']} 관계의 노드를 찾을 수 없음: {e['from']} → {e['to']}")
+            edges.append({"id": f"e-{ch['id']}-{i}", "from": a, "to": b, "rel": e["rel"], "verification": e["verification"],
+                          "chainId": ch["id"], "note": e["note"], "claimIds": e["claimIds"]})
+        chains.append({"id": ch["id"], "kind": "case", "title": ch["title"], "ref": ch["eraId"], "eraId": ch["eraId"], "steps": []})
 
     # 중요도: 사슬 여러 개에 등장하는 노드는 한 단계 올린다(연결이 많을수록 흐름의 교차점)
     deg = {}

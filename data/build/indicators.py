@@ -119,3 +119,7 @@ INDICATORS += _L.INDICATORS
 for _i in INDICATORS:
     if _i["id"] == "tfr-kr":
         _L.merge_tfr(_i)
+
+import indicators_wb as _W
+SOURCES += _W.SOURCES
+INDICATORS += _W.INDICATORS

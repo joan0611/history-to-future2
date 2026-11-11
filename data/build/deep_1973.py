@@ -129,6 +129,8 @@ CLAIMS = [
       "fact", "sourced", ["kr-osen-2011-analog"], ["culture", "consumption"], ["KR"]),
 ]
 
+CHAIN = {"id": "deep-1973", "title": "1973년 대한민국 심층 사례 (석유파동·유신·중화학공업·청년문화)", "eraId": "1970s"}
+
 # 노드: (id, 이름, 연도, 연도정확도, 줄, 유형, 국가, 중요도, 근거)
 def N(id, label, year, lane, ntype, countries, imp, claims, prec="year"):
     return {"id": id, "label": label, "year": year, "yearPrecision": prec, "lane": lane, "nodeType": ntype,

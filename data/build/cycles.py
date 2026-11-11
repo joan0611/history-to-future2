@@ -248,7 +248,7 @@ def _ep_text(x, side, thr):
     if b == "추세 대비":
         return f"추세선보다 1표준편차 이상 {'높았던' if hi else '낮았던'} 구간(경계 {thr}{u}): "
     if b.startswith("전년 대비"):
-        return f"{b}{'이' if b.endswith('율') else '가'} 평소보다 1표준편차 이상 {'컸던' if hi else '작았던(또는 반대 방향이었던)'} 해(경계 {thr}{u}): "
+        return f"{b}{'이' if b.endswith('율') else '가'} 평균 변화보다 1표준편차 이상 {'위였던(더 크게 오르거나 덜 내린)' if hi else '아래였던(더 크게 내리거나 덜 오른)'} 해(경계 {thr}{u}): "
     return f"평균±1표준편차 밖({'위' if hi else '아래'}, 경계 {thr}{u})으로 나간 구간: "
 
 
@@ -256,6 +256,7 @@ def run(indicators, signals, graph_nodes):
     rng = np.random.default_rng(SEED)
     for ind in indicators:
         _CAT[ind["id"]] = ind.get("category", "economy")
+        _EPF[ind["id"]] = bool(ind.get("episodeFindings"))
     series = {}
     for ind in indicators:
         if ind["frequency"] != "annual":
@@ -327,13 +328,17 @@ def run(indicators, signals, graph_nodes):
     for x in analyses:
         if x["verdict"] == "insufficient":
             continue
+        # 전년 대비 변화 기준(완만한 수준 지표)의 '튄 해'는 대부분 잡음이라 발견으로 올리지 않는다.
+        # 예외: 정책적 단절이 실제로 있는 지표(지표에 episodeFindings=True, 예: 환율 평가절하)
+        if x["episodeBasis"].startswith("전년 대비") and not _EPF.get(x["indicator"]):
+            continue
         for side, eps, st, thr in (("high", x["highEpisodes"], x["highIntervals"], x["highThreshold"]),
                                    ("low", x["lowEpisodes"], x["lowIntervals"], x["lowThreshold"])):
             if len(eps) < 3:
                 continue
             reg = st["regular"]
             add({"id": f"f-{x['key']}-{side}", "type": "A" if reg and x["verdict"] == "A" else "B", "series": [x["key"]], "category": x_cat(x),
-                 "title": f"{x['title']}({country_ko(x['country'])}) " + ((f"{'평소보다 크게 오른' if side == 'high' else '평소보다 덜 오르거나 내린'} 해 {len(eps)}번") if x["episodeBasis"].startswith("전년 대비") else f"{'급등' if side == 'high' else '급락'} 구간 {len(eps)}회"),
+                 "title": f"{x['title']}({country_ko(x['country'])}) " + ((f"{'전년 대비 변화가 평소보다 위로 튄' if side == 'high' else '전년 대비 변화가 평소보다 아래로 튄'} 해 {len(eps)}번") if x["episodeBasis"].startswith("전년 대비") else f"{'급등' if side == 'high' else '급락'} 구간 {len(eps)}회"),
                  "summary": _ep_text(x, side, thr) + ", ".join(f"{a}" if a == b else f"{a}~{b}" for a, b in eps)
                  + f". 간격 {', '.join(map(str, st['gaps']))}년 — 변동계수 {st['cv']}"
                  + (" (간격이 비교적 일정하지만 횟수가 적어 주기로 확정하지 않음)" if reg else " → 간격이 일정하지 않은 불규칙한 반복"),
@@ -427,6 +432,7 @@ def country_ko(c):
 
 
 _CAT = {}
+_EPF = {}
 
 
 def x_cat(x):
