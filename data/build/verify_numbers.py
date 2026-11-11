@@ -9,10 +9,10 @@
 CHECKS = [
     ("c70-kr-cpi", "cpi-kr", "KR", 1974, 24, 0.6, ""),
     ("c70-kr-cpi", "cpi-kr", "KR", 1975, 25, 0.6, ""),
-    ("c70-kr-growth", "gdp-growth", "KR", 1973, 12.3, 0.6, "국민계정 기준연도 개편으로 옛 집계와 현재 계열이 다를 수 있음"),
-    ("c70-kr-growth", "gdp-growth", "KR", 1974, 7.4, 0.6, "국민계정 기준연도 개편으로 옛 집계와 현재 계열이 다를 수 있음"),
-    ("c70-kr-growth", "gdp-growth", "KR", 1976, 11.2, 0.6, "국민계정 기준연도 개편으로 옛 집계와 현재 계열이 다를 수 있음"),
-    ("c70-kr-2nd", "gdp-growth", "KR", 1980, -5.2, 0.6, "국민계정 기준연도 개편으로 옛 집계와 현재 계열이 다를 수 있음"),
+    ("c70-kr-growth", "gdp-growth", "KR", 1973, 12.3, 0.6, "문장의 값은 옛 국민계정(개편 전) 집계로 보임"),
+    ("c70-kr-growth", "gdp-growth", "KR", 1974, 7.4, 0.6, "문장의 값은 옛 국민계정(개편 전) 집계로 보임"),
+    ("c70-kr-growth", "gdp-growth", "KR", 1976, 11.2, 0.6, "문장의 값은 옛 국민계정(개편 전) 집계로 보임"),
+    ("c70-kr-2nd", "gdp-growth", "KR", 1980, -5.2, 0.6, "문장의 값은 옛 국민계정(개편 전) 집계로 보임"),
     ("c70-kr-2nd", "cpi-kr", "KR", 1980, 30, 1.5, "문장은 '30%에 이르렀다'(어림값)"),
     ("c90-unemp", "unemp-kr", "KR", 1997, 2.6, 0.2, ""),
     ("c90-unemp", "unemp-kr", "KR", 1998, 6.8, 0.2, "통계청 연평균과 OECD 계절조정 연평균의 차이"),
@@ -23,6 +23,11 @@ CHECKS = [
     ("c60-kr-export-1", "exports-kr", "KR", 1964, 1.0, None, "문장: 1964년 수출 1억 달러 돌파 → 연간 값이 1억 달러 이상인지 확인"),
     ("c20-kr-chip", "exports-kr", "KR", 2025, 7097, 0.01, "상대 오차 1% (통관 기준과 OECD 집계 차이)"),
 ]
+
+
+def bok_growth(year):
+    import indicators_ecos as E
+    return E.BOK_GROWTH.get(year)
 
 
 def run(indicators):
@@ -39,6 +44,9 @@ def run(indicators):
             lim = tol * abs(claimed) if ind == "exports-kr" and tol < 0.1 else tol
             ok = abs(v - claimed) <= lim
             res = {"ok": ok, "verdict": "일치" if ok else "차이"}
+        if ind == "gdp-growth":
+            b = bok_growth(year)
+            memo = (f"한국은행 현재 국민계정(ECOS 실질 GDP) 기준 {b}%와 비교. " if b is not None else "") + memo
         out.setdefault(cid, []).append({"indicator": ind, "title": I[ind]["title"], "year": year, "claimed": claimed, "data": v,
                                         "unit": I[ind]["unit"], "memo": memo, **res})
     return out

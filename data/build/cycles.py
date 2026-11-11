@@ -259,6 +259,8 @@ def run(indicators, signals, graph_nodes):
         _EPF[ind["id"]] = bool(ind.get("episodeFindings"))
     series = {}
     for ind in indicators:
+        if ind.get("multi"):
+            continue
         if ind["frequency"] != "annual":
             continue
         for s in ind["series"]:

@@ -112,6 +112,12 @@ with sync_playwright() as p:
     ok('2008↔1997 비교: 단기외채 닮은 점 연결', '1996' in w and ('비슷' in w or '닮' in w))
     pg.goto(U + '#/field/society?y=1998&ind=realwage-kr'); pg.wait_for_timeout(700)
     ok('실질임금: 계산 값임을 밝힘', '계산' in pg.locator('.hero').inner_text())
+    # 한국은행 자료: 가계 소비 구성(여러 항목 한 그래프), 기준금리
+    pg.goto(U + '#/field/society?y=1998&ind=cons-mix-kr'); pg.wait_for_timeout(700)
+    h = pg.locator('.hero').inner_text()
+    ok('가계 소비 구성: 항목 9개 범례', all(k in h for k in ['식료품', '주거', '음식점', '교육']))
+    pg.goto(U + '#/field/economy?y=2008&ind=baserate-kr'); pg.wait_for_timeout(700)
+    ok('기준금리 1999~', '기준금리' in pg.locator('.hero').inner_text())
     pg.screenshot(path=os.path.join(SHOTS, 'e2e-field.png'))
     # 모바일
     m = b.new_context(viewport={'width': 390, 'height': 844}, has_touch=True, is_mobile=True).new_page()
