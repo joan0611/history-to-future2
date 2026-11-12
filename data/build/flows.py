@@ -399,6 +399,8 @@ FLOWS = [
              "claimIds": ["fl-jobs-emp", "fl-jobs-1991"], "nodeIds": []},
             {"id": "j8", "phase": "turn", "period": "1997~2004", "title": "외환위기 구조조정과 비정규직 확대",
              "claimIds": ["c90-ch-1998", "c00-irregular"], "nodeIds": ["e90-imf"]},
+            {"id": "j11", "phase": "spread", "period": "2006~2012", "title": "자유무역협정 — 수출 시장을 넓히다",
+             "claimIds": ["cfill-fta", "fl-jobs-exports"], "nodeIds": ["e00-korusfta"]},
             {"id": "j9", "phase": "life", "period": "2013~", "title": "앱으로 연결되는 일 — 배달 라이더",
              "claimIds": ["c10-delivery", "c10-rider-risk"], "nodeIds": ["tr-t10-delivery"]},
             {"id": "j10", "phase": "now", "period": "2013~2025", "title": "전문직 비중의 증가와 AI",
@@ -689,3 +691,11 @@ def validate(claims, nodes, indicators):
             if c not in cids:
                 raise SystemExit(f"{f['id']}: 요약 근거 없음 {c}")
     return {"flows": FLOWS, "phaseKo": PHASE_KO, "linkKo": LINK_KO}
+
+
+# 추가 흐름: 가족과 제도, 도시와 교통
+import flows_family_city as _ffc  # noqa: E402
+
+SOURCES += _ffc.SOURCES
+CLAIMS += _ffc.CLAIMS
+FLOWS += _ffc.FLOWS
