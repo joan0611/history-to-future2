@@ -4,6 +4,7 @@ import type { Route } from '../lib/route';
 import { Chart, SourceLine, type Band, type Marker } from '../ui/Chart';
 import { Lifecycle } from '../ui/Lifecycle';
 import { FlowCard } from './FlowView';
+import { IndustryLife } from './IndustryLife';
 
 /**
  * ② 분야별 변화 — 분야를 고르면 1960~현재 장기 동향이 먼저(대표 시각화 하나를 크게).
@@ -51,6 +52,8 @@ export function FieldView({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) 
         ))}
       </nav>
 
+      {c === 'industry' && <IndustryLife nav={nav} />}
+
       <p className="readorder">읽는 순서: <b>① 핵심 질문</b> → <b>② 장기 흐름</b> → <b>③ 시대별 전환점</b> → <b>④ 그 무렵의 사건</b> → <b>⑤ 반복·자료 공백</b> — 모든 분야가 같은 순서입니다.</p>
       <section className="panel">
         <h2>① 이 분야의 핵심 질문 <span className="sub">질문 하나를 이전·조건·전환점·확산·지금까지 근거와 함께</span></h2>
@@ -69,7 +72,8 @@ export function FieldView({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) 
       </section>
 
       <section className="panel">
-        <h2>③ 시대별 전환점 <span className="sub">{CAT_SHORT[c]} 분야에서 시대마다 가장 중요한 변화 — 누르면 근거와 원인·결과</span></h2>
+        <h2>③ {c === 'industry' ? '시대별 산업 사건 모음(보조)' : '시대별 전환점'} <span className="sub">{CAT_SHORT[c]} 분야에서 시대마다 가장 중요한 변화 — 누르면 근거와 원인·결과</span></h2>
+        {c === 'industry' && <p className="small muted">이 목록은 시대마다 다른 산업의 대표 사건을 고른 것이라 하나의 흐름이 아닙니다. 한 산업의 변화는 위 '산업 일대기'에서 보세요.</p>}
         <ol className="stages">
           {D.eras.map((e) => {
             const ns = pickKey(D.nodes.filter((n) => n.eraId === e.id && n.lane === c), 2);

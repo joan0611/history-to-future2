@@ -64,6 +64,7 @@ export interface Explainer {
   figure: { title: string; nodes: { t: string; s: string; block?: boolean }[]; read: string; ids: string[] };
   numbers: { what: string; value: string; base: string; alt: string; means: string; ids: string[] }[]; numbersRead: string;
   terms: { t: string; d: string }[]; changes: ExLine[]; unsure: ExLine[];
+  compare: { intro: string; cols: string[]; rows: { q: string; common: string; cells: string[]; means: string; ids: string[] }[]; read: string; readIds: string[] };
 }
 export interface Study {
   explainer?: Explainer;
@@ -128,6 +129,7 @@ interface Seed {
   studies: Study[];
   tastes: Tastes;
   stories: Stories;
+  industries: unknown;
 }
 const seed = seedJson as unknown as Seed;
 
@@ -136,6 +138,7 @@ export interface NumberCheck { indicator: string; title: string; year: number; c
 export const D = {
   tastes: seed.tastes,
   stories: seed.stories,
+  industries: seed.industries,
   eras: seed.eras,
   claims: Object.fromEntries(seed.claims.map((c) => [c.id, c])) as Record<string, Claim>,
   checks: (seed.numberChecks ?? {}) as Record<string, NumberCheck[]>,

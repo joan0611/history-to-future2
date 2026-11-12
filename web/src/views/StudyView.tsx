@@ -36,7 +36,7 @@ const MK_SHORT: Record<MechKind, string> = { effect: '연구 추정 효과', cha
 const SEC = ['요약', '소비 추이', '핵심 주장 점검', '전달 과정', '국면 비교', '시나리오', '관찰 지표', '근거'];
 
 export function StudyDetail({ s, nav }: { s: Study; nav: (p: Partial<Route>) => void }) {
-  const [ep, setEp] = useState<string>('all');
+  const [ep, setEp] = useState<string>('now');
   const [edge, setEdge] = useState<number | null>(null);
   const [cell, setCell] = useState<string | null>(null);
   const [ex, setEx] = useState(s.explain[0]);
@@ -139,9 +139,10 @@ export function StudyDetail({ s, nav }: { s: Study; nav: (p: Partial<Route>) => 
 
       <section className="panel" id="st-3">
         <h2><span className="stepno">3</span> 전달 과정 <span className="sub">충격(왼쪽) → 경로(가운데) → 소비. 선의 모양 = 근거 수준</span></h2>
+        <p className="small">먼저 <b>{s.episodes.find((e) => e.id === ep)?.label ?? '모든 국면'}</b>의 경로만 보여 줍니다. 다른 시기를 고르면 그 시기의 경로로 바뀝니다. 모든 시기를 겹쳐 보는 것은 맨 끝 버튼입니다.</p>
         <div className="seg">
-          <button className={`chip${ep === 'all' ? ' on' : ''}`} onClick={() => setEp('all')}>모든 국면</button>
-          {s.episodes.map((e) => <button key={e.id} className={`chip${ep === e.id ? ' on' : ''}`} onClick={() => setEp(e.id)}>{e.label}</button>)}
+          {[...s.episodes].reverse().map((e) => <button key={e.id} className={`chip${ep === e.id ? ' on' : ''}`} onClick={() => setEp(e.id)}>{e.label}</button>)}
+          <button className={`chip${ep === 'all' ? ' on' : ''}`} onClick={() => setEp('all')}>모든 시기 겹쳐 보기</button>
         </div>
         <div className="mechfig">
           <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="소비에 이르는 전달 경로">
@@ -160,6 +161,7 @@ export function StudyDetail({ s, nav }: { s: Study; nav: (p: Partial<Route>) => 
           </svg>
         </div>
         <div className="legend mk">{(Object.keys(MK_SHORT) as MechKind[]).filter((k) => s.mechanism.edges.some((e) => e.kind === k)).map((k) => <span key={k}><i className={`mk-l k-${k}`} />{MK_SHORT[k]} — <span className="muted">{s.mechanism.kinds[k]}</span></span>)}</div>
+        {ep !== 'all' && <p className="mech-read"><b>읽는 법:</b> {s.mechanism.edges.filter((e) => on(e.eps)).map((e) => `${nodeOf[e.from].label} → ${nodeOf[e.to].label}`).join(' · ')}. 선을 누르거나 아래 목록을 펼치면 왜 이어지는지와 근거가 나옵니다.</p>}
         <ul className="plain mech-list">
           {s.mechanism.edges.map((e, i) => on(e.eps) && (
             <li key={i} className={edge === i ? 'on' : ''}>
@@ -172,7 +174,18 @@ export function StudyDetail({ s, nav }: { s: Study; nav: (p: Partial<Route>) => 
       </section>
 
       <section className="panel" id="st-4">
-        <h2><span className="stepno">4</span> 과거 국면과 지금 — 항목마다 같은 기준으로 <span className="sub">칸을 누르면 근거</span></h2>
+        <h2><span className="stepno">4</span> 과거 위기와 지금 — 같은 질문으로 비교 </h2>
+        {s.explainer?.compare && (() => { const c = s.explainer.compare; return (
+          <div className="qcmp">
+            <p>{c.intro}</p>
+            <div className="tablewrap"><table className="tz-table">
+              <thead><tr><th>비교 질문</th><th>공통으로 보는 경로</th>{c.cols.map((x) => <th key={x} className={x.startsWith('지금') ? 'cur' : ''}>{x}</th>)}<th>지금 판단에 주는 의미</th></tr></thead>
+              <tbody>{c.rows.map((r) => <tr key={r.q}><th>{r.q}</th><td>{r.common}</td>{r.cells.map((x, i) => <td key={i} className={i === r.cells.length - 1 ? 'cur' : ''}>{x}</td>)}<td><b>{r.means}</b></td></tr>)}</tbody>
+            </table></div>
+            <p className="qcmp-read">{c.read}</p>
+          </div>); })()}
+        <details className="bigtbl">
+        <summary>상세: 항목별 전체 비교표(9개 항목 × 6개 시기, 칸을 누르면 근거)</summary>
         <div className="tbl-wrap"><table className="tbl cmp">
           <thead><tr><th>항목 · 기준</th>{s.episodes.map((e) => <th key={e.id} className={e.current ? 'cur' : ''}>{e.label}<br /><span className="muted small">{e.years}</span></th>)}</tr></thead>
           <tbody>{s.rows.map((row) => (
@@ -185,6 +198,7 @@ export function StudyDetail({ s, nav }: { s: Study; nav: (p: Partial<Route>) => 
         </table></div>
         {cell && (() => { const [item, e2] = cell.split('|'); const row = s.rows.find((x) => x.item === item)!; return <div className="mech-ev"><p className="small"><b>{item} · {s.episodes.find((e) => e.id === e2)!.label}</b></p><Claims ids={row.cells[e2][1]} all /></div>; })()}
         <p className="small muted">연간 값과 분기·월 값은 같은 칸에서 순위로 비교하지 않습니다. 색은 '지금' 열 표시에만 씁니다.</p>
+        </details>
         <div className="two">
           <div><h3>지금과 같은 점</h3><ul className="plain synths">{s.same.map((y) => <SynthLine key={y.text} y={y} />)}</ul></div>
           <div><h3>지금과 다른 점</h3><ul className="plain synths">{s.different.map((y) => <SynthLine key={y.text} y={y} />)}</ul></div>
