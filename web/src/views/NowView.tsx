@@ -72,9 +72,9 @@ function StudyCard({ s, nav }: { s: Study; nav: (p: Partial<Route>) => void }) {
   return (
     <button className="studycard" onClick={() => nav({ tab: 'now', study: s.id })}>
       <span className="sc-meta"><StatusChips s={s} /> 자료 기준일 {s.asOf}</span>
-      <b className="sc-q">{s.title} <span className="sc-sub">— {s.subtitle}</span></b>
-      <span className="sc-find"><b>지금</b> {s.summary.state.text}</span>
-      <span className="sc-now"><b>먼저 볼 것</b> {s.whyNow.text}</span>
+      <b className="sc-q">{s.explainer ? s.explainer.question : s.title}</b>
+      <span className="sc-find">{s.explainer ? s.explainer.short : s.summary.state.text}</span>
+      <span className="sc-now muted small">{s.title} — {s.subtitle}</span>
       <span className="fc-go">읽기 →</span>
     </button>
   );

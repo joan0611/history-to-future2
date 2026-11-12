@@ -57,7 +57,16 @@ export interface Flow {
 export interface Synth { text: string; claimIds: string[]; kind: 'synthesis' }
 export type MechKind = 'effect' | 'channel' | 'condition' | 'correlation' | 'sequence' | 'interpretation' | 'hypothesis';
 export interface WatchItem { id: string; name: string; def: string; latest: string; unit: string; source: string; threshold?: string; supports: [string, string][]; weakens: [string, string][]; caution: string; claimIds: string[] }
+export interface ExLine { layer: 'fact' | 'source' | 'inference' | 'hypothesis'; text: string; ids: string[] }
+export interface Explainer {
+  question: string; short: string; shortIds: string[];
+  story: { h: string; intro?: string; lines: ExLine[] }[];
+  figure: { title: string; nodes: { t: string; s: string; block?: boolean }[]; read: string; ids: string[] };
+  numbers: { what: string; value: string; base: string; alt: string; means: string; ids: string[] }[]; numbersRead: string;
+  terms: { t: string; d: string }[]; changes: ExLine[]; unsure: ExLine[];
+}
 export interface Study {
+  explainer?: Explainer;
   id: string; title: string; subtitle: string; question: string; short: string; asOf: string;
   status: { content: string; evidence: string; data: string; backtest: string; reviewed: string };
   statusRules: { axis: string; levels: string; rule: string }[];

@@ -3,6 +3,7 @@ import { D, ECON_KO, flowById, type MechKind, type Study, type Synth } from '../
 import type { Route } from '../lib/route';
 import { Chart, SourceLine } from '../ui/Chart';
 import { Claims } from '../ui/WhyPanel';
+import { SLineView } from '../ui/Story';
 
 /**
  * 대표 경제 분석 화면.
@@ -75,6 +76,10 @@ export function StudyDetail({ s, nav }: { s: Study; nav: (p: Partial<Route>) => 
   return (
     <div className="view study">
       <nav className="crumbline"><button className="link" onClick={() => nav({ study: undefined })}>← 지금 판단하기</button></nav>
+
+      {s.explainer && <ExplainerView e={s.explainer} asOf={s.asOf} />}
+
+      <p className="ex-divider">아래부터는 위 설명의 근거를 자세히 보는 상세 분석입니다 — 소비 추이 그래프, 과거 위기와의 비교, 전달 과정, 시나리오, 지표.</p>
 
       <section className="panel hero" id="st-0">
         <div className="eyebrow"><StatusChips s={s} /> 최종 검토일 <b>{s.status.reviewed}</b></div>
@@ -242,5 +247,56 @@ export function StudyDetail({ s, nav }: { s: Study; nav: (p: Partial<Route>) => 
         <details><summary>{allClaims.length}개 펼치기</summary><Claims ids={allClaims} all /></details>
       </section>
     </div>
+  );
+}
+
+function ExplainerView({ e, asOf }: { e: NonNullable<Study['explainer']>; asOf: string }) {
+  const [ids, setIds] = useState<string[] | null>(null);
+  return (
+    <section className="panel ex" id="ex">
+      <p className="eyebrow">지금 판단하기 · 자료 기준일 {asOf} (역사 연도 선택과 무관)</p>
+      <h2 className="ex-q">{e.question}</h2>
+      <p className="ex-short">{e.short} <button className="link small" onClick={() => setIds(ids ? null : e.shortIds)}>{ids ? '접기' : '근거 보기'}</button></p>
+      {ids && <Claims ids={ids} all />}
+
+      <figure className="ex-fig" aria-label={e.figure.title}>
+        <figcaption><b>{e.figure.title}</b></figcaption>
+        <ol className="ex-path">
+          {e.figure.nodes.map((n, i) => (
+            <li key={i} className={n.block ? 'block' : ''}><b>{n.t}</b><span>{n.s}</span></li>
+          ))}
+        </ol>
+        <p className="ex-read">{e.figure.read}</p>
+      </figure>
+
+      {e.story.map((sec, i) => (
+        <div key={i} className="ex-sec">
+          <h3>{sec.h}</h3>
+          {sec.intro && <p className="small muted">{sec.intro}</p>}
+          {sec.lines.map((x, j) => <SLineView key={j} x={x} />)}
+        </div>
+      ))}
+
+      <div className="ex-sec">
+        <h3>숫자로 확인하기 — 무엇과 비교한 값인가</h3>
+        <p className="small">{e.numbersRead}</p>
+        <div className="tablewrap"><table className="tz-table ex-num">
+          <thead><tr><th>무엇</th><th>값</th><th>비교 기준</th><th>다른 기준으로 보면</th><th>뜻</th></tr></thead>
+          <tbody>{e.numbers.map((r) => <tr key={r.what}><th>{r.what}</th><td className="v">{r.value}</td><td>{r.base}</td><td>{r.alt}</td><td>{r.means}</td></tr>)}</tbody>
+        </table></div>
+      </div>
+
+      <div className="ex-sec">
+        <h3>판단이 달라질 조건과 다음에 볼 것</h3>
+        {e.changes.map((x, j) => <SLineView key={j} x={x} />)}
+        <h3>아직 확실하지 않은 것</h3>
+        {e.unsure.map((x, j) => <SLineView key={j} x={x} />)}
+      </div>
+
+      <details className="ex-terms">
+        <summary>용어 풀이 — 실질·전기 대비·민간소비·이전소득·평균소비성향·DSR</summary>
+        <dl>{e.terms.map((t) => <div key={t.t}><dt>{t.t}</dt><dd>{t.d}</dd></div>)}</dl>
+      </details>
+    </section>
   );
 }
