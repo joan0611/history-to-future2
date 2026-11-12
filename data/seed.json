@@ -16201,6 +16201,1299 @@
    "aiSynthesized": false,
    "period": "2025",
    "independentSources": 1
+  },
+  {
+   "id": "tp-ch-walmart",
+   "text": "1996년 유통시장 전면 개방 뒤 까르푸가 그해 7월 부천에 1호점을 열었고 월마트도 들어왔다. 두 회사는 2006년 나란히 철수했다. 신세계(이마트)는 2006년 5월 월마트 매장 16개를 8,250억 원에 인수했고, 까르푸는 이랜드에 매각됐다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-sgsg-060419",
+    "tp-mt-210302",
+    "tp-sidae-191120"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1996~2006",
+   "independentSources": 3
+  },
+  {
+   "id": "tp-ch-walmart-why",
+   "text": "실패 원인으로는 서구식 창고형 매장과 공산품 위주 대용량 판매를 고수한 점(보도), 국내 소비시장 정보 파악의 한계와 비싼 부동산, 이마트·롯데마트 같은 국내 할인점과의 경쟁에서 우위를 갖지 못한 점(2006년 연구)이 꼽혔다.",
+   "claimType": "interpretation",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-sidae-230731",
+    "tp-ks-2006"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2006",
+   "independentSources": 2
+  },
+  {
+   "id": "tp-ch-kdi-mart",
+   "text": "KDI에 따르면 대형마트 매출은 2006년 26.4조 원에서 2014년 39.5조 원까지 늘었다가 감소로 돌아서 2023년 28.3조 원이 됐다. 2012년 도입된 의무휴업은 대형마트·SSM이 월 2회 주말에 쉬도록 한 규제로, 대형마트와 전통시장의 수요가 겹친다는 전제에서 소비를 전통시장으로 옮기려는 정책이었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-kdi-260521"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2006~2023",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-ch-jeonju",
+   "text": "의무휴업 첫 시행일인 2012년 4월 22일 전주시 조사에서 대형마트·SSM이 문을 닫자 전통시장 매출이 10~40% 늘었다고 시는 밝혔다. 같은 기사는 대형마트들이 평일 대규모 세일로 휴업일 매출 감소를 만회하려 했다고 전한다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-khan-120425"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2012",
+   "scope": "도입 첫날 한 도시의 상인회·마트협의회 조사",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-ch-martcount",
+   "text": "대형마트 3사의 국내 점포는 2012년 383개에서 2019년 423개까지 늘었다가 이후 4년 동안 약 22곳이 문을 닫았다. 산업부 집계로 2014년 유통시장에서 대형마트 매출 비중은 27.8%였다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-mt-mart10"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2012~2023",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-ch-kdi-weekday",
+   "text": "KDI가 2024년까지의 카드 결제 자료로 분석한 결과, 의무휴업일을 주말에서 평일로 바꾼 지역에서 대형마트 매출은 대구 4.7%, 서울(서초·동대문) 2.8%, 부산 6.2~7.9% 늘었지만 전통시장·골목상권 매출 감소를 뒷받침하는 일관된 결과는 없었다. 대구에서는 전환 뒤 쿠팡·컬리 등을 포함한 온라인 결제액이 2.9% 줄었다(20대 3.7%, 30대 2.6%, 40대 3.5%).",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-kdi-260521",
+    "tp-herald-260521"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2023~2024",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-ch-rocket",
+   "text": "쿠팡은 2014년 자정까지 주문하면 다음날 받는 '로켓배송'을 시작했다. 영업손실은 2014년 1,215억 원에서 2018년 1조 970억 원으로 커졌고, 회사는 이를 '계획된 적자'라고 설명했다. 2019년에 처음으로 적자가 줄었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-newsis-181214",
+    "tp-byline-200414"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2014~2019",
+   "independentSources": 2
+  },
+  {
+   "id": "tp-ch-amazon",
+   "text": "쿠팡이 아마존(물류 투자·회원제·직매입)을 거의 그대로 따라 한다는 것은 업계에서 공인된 일이라는 평가가 있다.",
+   "claimType": "interpretation",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-byline-190118"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2019",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-ch-kurly",
+   "text": "새벽배송 시장은 2015년 마켓컬리가 '샛별배송'(서울·인천·경기에서 밤 11시까지 주문하면 다음날 아침 7시까지 배송)을 시작하며 열렸고, 업계는 2019년 시장 규모를 약 8천억 원으로 추정했다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-newdaily-200413"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2015~2019",
+   "scope": "시장 규모는 업계 추정",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-ch-online25",
+   "text": "2025년 온라인쇼핑 거래액은 272조 398억 원으로 1년 전보다 4.9% 늘어 2017년 통계 작성 이래 가장 컸지만 증가율은 가장 낮았다. 모바일 거래액은 211조 1,448억 원으로 전체의 77.6%였다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-newdaily-260202",
+    "tp-insight-260203"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2025",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-ch-saturate",
+   "text": "전문가들은 2025년 온라인 증가율 둔화를 오프라인에서 온라인으로 옮겨 가던 수요가 포화 단계에 들어선 것으로 해석했다. 2025년 말 쿠팡 개인정보 유출 사태는 거래액 통계에서 뚜렷한 변화로 나타나지 않았다.",
+   "claimType": "interpretation",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-insight-260203"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2025",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-ch-specialty",
+   "text": "2025년 5월 온라인쇼핑에서 종합몰 거래액은 1년 전보다 4.6% 줄고 전문몰은 8.5% 늘었다. 2025년 4월 음식서비스 거래의 99%가 모바일이었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-jkn-2505",
+    "tp-jkn-2504"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2025",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-ch-offline25",
+   "text": "산업부 집계로 2025년 상반기 주요 유통업체의 오프라인 매출은 0.1% 줄어 2020년 이후 상반기 기준 처음 역성장했고, 온라인 매출은 15.8% 늘었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-motir-250730"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2025 상반기",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-ch-2026h1",
+   "text": "2026년 상반기 백화점 매출은 소비심리 개선과 외국인 관광객 매출 증가로 20.1% 늘었다. 대형마트는 주력인 식품 부진으로 2024년 2분기부터 9분기 연속, SSM은 4분기 연속 매출이 줄었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-newsis-260729"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2024~2026",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-ch-homeplus",
+   "text": "연 매출 7조 원대의 대형마트 2위 홈플러스는 2025년 3월 4일 기업회생을 신청했다. 대주주 MBK파트너스가 2015년 차입 인수한 뒤 이자 부담을 회사에 떠넘겼다는 비판이 나왔고, 12월 회생계획안에는 6년간 최대 41개 점포 폐점이 담겼다. 2026년 6월에는 휴점 중이던 37개 점포의 폐점이 결정됐다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-bizwatch-251231",
+    "tp-segye-260604"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2025~2026",
+   "independentSources": 2
+  },
+  {
+   "id": "tp-ch-cdirect",
+   "text": "2023년 해외 직접구매액은 6조 7,600억 원으로 26.9% 늘었고 그 절반인 3조 2,900억 원이 중국 사이트에서 나왔다(2022년 1조 4,900억 원). 2024년 1월 알리익스프레스 월 사용자는 514만 명, 2023년 8월 들어온 테무는 421만 명으로 11번가(565만)·지마켓(433만)과 비슷했다(쿠팡 약 2,127만 명).",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-fn-240213"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2022~2024",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-ch-cdirect25",
+   "text": "2025년 해외 직접구매액은 8조 5천억 원을 넘어 역대 최대였고 중국 직구가 5조 5천억 원을 넘었다. 와이즈앱 추정으로 2026년 1~4월 알리익스프레스·테무·쉬인의 합산 결제액은 1조 6,700억 원으로 2024년 같은 기간보다 67.5% 늘었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-twig-260202",
+    "tp-ddaily-2606"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2025~2026",
+   "independentSources": 2
+  },
+  {
+   "id": "tp-ch-cstall",
+   "text": "삼일PwC는 2024년을 강타한 C-커머스 위협론이 품질·배송기간·개인정보 문제로 이용자 수가 정체되며 다소 잠잠해졌지만, 중국 자본의 한국 유통 진출은 이제 시작 단계라고 진단했다(2025년 8월).",
+   "claimType": "interpretation",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-pwc-2508"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2024~2025",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-ch-reg26",
+   "text": "2026년 정부와 정치권은 2012년 도입된 대형마트 의무휴업·영업시간 제한의 완화와 대형마트 새벽배송 허용을 논의하기 시작했다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-newdaily-260616"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2026",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-pay-2015",
+   "text": "한국은행의 2015년 지급수단 이용행태 조사(성인 2,500명)에서 이용 건수 기준으로 신용카드 결제가 처음 현금보다 많아졌다. 1년 전 조사에서는 현금이 가장 많이 쓰인 지급수단이었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-fntimes-2015pay"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2014~2015",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-pay-cash24",
+   "text": "한국은행 2024년 조사(성인 3,551명)에서 현금 이용 비중은 건수 기준 15.9%로 신용카드(46.2%)·체크카드(16.4%)에 이어 세 번째였고 모바일카드(12.9%)가 바짝 뒤따랐다. 현금 비중은 2013년 41.3%, 2015년 36.0%, 2019년 26.4%, 2021년 21.6%였다. 20대는 체크카드, 30~50대는 신용카드를, 60대 이상은 현금을 상대적으로 많이 썼다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-sbs-250515"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2013~2024",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-pay-intl",
+   "text": "한국은행이 인용한 월드페이 자료로 2023년 한국의 현금 사용도는 10%로 주요 40개국 중 29위였고, 일본은 41%, 독일은 36%였다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-sbs-250515"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2023",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-pay-satis",
+   "text": "2024년 조사에서 편리성·안전성·수용성·비용을 합한 지급수단 만족도는 신용카드 75.5점, 체크카드 72.9점, 현금 64.4점이었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-kyeongin-pay"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2024",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-pay-easy",
+   "text": "간편결제는 2015년 3월 공인인증서 의무 사용 폐지 뒤 크게 늘었다. 하루 평균 이용액은 2024년 9,594억 원, 2025년 1조 1,053억 원(이용 3,557만 건, 각각 14.6%·14.9% 증가)이었고, 2025년 상반기 기준 네이버페이·카카오페이·토스페이 같은 전자금융업자 비중이 55.1%, 삼성페이·애플페이 같은 휴대폰 제조사가 23.9%였다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-hk-250929",
+    "tp-kdi-260320"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2015~2025",
+   "independentSources": 2
+  },
+  {
+   "id": "tp-pay-nocard",
+   "text": "국내 가맹점 카드 결제 중 실물카드를 내밀지 않는 결제(모바일기기·PC·생체인식 등)의 비중은 2023년 50.5%로 처음 실물카드를 넘었고 2025년 54.3%가 됐다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-kbr-cash"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2023~2025",
+   "scope": "2019~2022년 계열은 언론 재인용",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-pay-check10",
+   "text": "신용카드와 체크카드의 소득공제율이 처음 갈린 2010년(신용 20%, 체크 25%) 체크카드 이용액은 51조 7,362억 원으로 전년(29조 7,220억 원)보다 74% 늘었다. 2013년 체크카드 이용액은 92조 7,989억 원으로 2005년의 12배 가까이 됐고, 같은 기간 신용카드 이용액은 두 배도 늘지 않았다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-dailian-150105"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2005~2013",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-pay-check13",
+   "text": "2013년 체크카드 발급 장수(1억 701만 장)가 1999년 도입 이후 처음 신용카드(1억 202만 장)를 넘었다. 신용카드 소득공제율은 2012년 20%에서 15%로 줄고 체크카드는 30%를 유지했다. 업계는 가계부채를 줄이려는 정부의 체크카드 활성화 정책과 카드사 부가서비스 축소를 원인으로 꼽았고, 같은 해 말 가계신용은 처음 1,000조 원을 넘었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-dailian-140226"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2012~2013",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-pay-bnpl21",
+   "text": "2021년 네이버·쿠팡은 쇼핑 결제수단으로, 카카오는 후불 교통카드로 '먼저 사고 나중에 내는' 후불결제(BNPL) 시범 서비스를 시작했다. 한 연구원은 빅테크의 목적을 미래 금융 고객의 확보와 플랫폼 이탈 방지로 설명했다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-econ-210814"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2021",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-pay-bnpl-early",
+   "text": "현대카드 정태영 부회장은 2022년 1월 후불결제를 '가장 초기 신용카드의 구조'로 평가했다. 신용등급과 관계없이 쓸 수 있고 분할납부 수수료가 없다는 점이 신용카드와 가장 큰 차이로 꼽혔다.",
+   "claimType": "interpretation",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-newsis-220503"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2022",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-pay-bnpl-late",
+   "text": "금융감독원 자료로 2022년 3월 네이버페이 후불결제의 1개월 이상 연체율은 1.26%로 신용카드(0.54%)의 두 배가 넘었고, 이용자 연체 정보가 공유되지 않아 다중채무 우려가 제기됐다. 영국(2021)·미국(2021) 감독 당국도 후불결제 감독 강화를 검토했다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-ceoscore-220706"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2021~2022",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-pay-gap",
+   "text": "2024년 한국은행 연구는 코로나19 기간 디지털 이해도와 현금 수요의 관계를 분석했고, 같은 시기 '현금 없는 버스·가게'에서 현금만 가진 고령층의 불편이 보도됐다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-sbs-241031"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2024",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-own-ana",
+   "text": "서초구 토요벼룩시장은 1997년 12월 외환위기를 극복하자는 '아나바다(아껴 쓰고 나눠 쓰고 바꿔 쓰고 다시 쓰자)' 운동의 하나로 1998년 1월 시작해 2016년 말까지 856회, 누적 44만 3천여 명이 참여했다. 1998년 2월에는 YMCA 녹색가게 등에서 양복 한 벌 3천 원, 초등생 가방 1천 원에 중고품이 거래됐다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-mediahub-seocho",
+    "tp-seoul-980216"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1998~2016",
+   "independentSources": 2
+  },
+  {
+   "id": "tp-own-ana-crit",
+   "text": "1998년 9월 신문은 '무조건적 아나바다 운동은 소비 심리를 위축시킨다'며 내수 위축을 막으려면 소비를 되살려야 한다는 전문가 의견을 실었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-seoul-980908"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1998",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-own-image",
+   "text": "1998년 전후 중고거래는 '아나바다'처럼 절약·재활용을 위한 사회 운동이라는 인식이 강해 선하지만 투박한 이미지였다는 평가가 있다.",
+   "claimType": "interpretation",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-byline-211228"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1998~2021",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-own-size",
+   "text": "한국인터넷진흥원 자료로 국내 중고거래 시장은 2008년 4조 원에서 2021년 24조 원으로 약 6배가 됐다. 2003년 네이버 카페로 시작한 중고나라의 거래액은 2017년 2조 1천억 원에서 2019년 3조 5천억 원으로 늘었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-bizhankook-25683",
+    "tp-econ-221201"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2003~2021",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-own-nchar",
+   "text": "서울대 소비트렌드분석센터는 2021년 소비 키워드로 'N차 신상'(여러 번 주인이 바뀌어도 새로운 상품)을 꼽고, 2008년 금융위기 이후 저성장이 굳어지며 중고 소비로 '적게 쓰고 크게 만족하려는 전략'이 퍼졌다고 해석했다.",
+   "claimType": "interpretation",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-hmg-used"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2008~2021",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-own-carrot",
+   "text": "당근마켓은 2015년 '당신 근처의 마켓'을 내걸고 시작해, 동네 인증을 거쳐 3~4km 안에서만 직거래하게 해 기존 중고거래의 사기 위험을 줄이려 했다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-econ-211220"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2015~2021",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-own-bigco",
+   "text": "2022년 백화점 3사가 중고 매장을 열거나 중고 플랫폼에 투자했고 네이버·무신사도 뛰어들었다. 기사는 젊은 층의 친환경 가치 소비와 고물가 속 '짠테크'를 배경으로 들었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-econ-221201"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2022",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-own-coway",
+   "text": "코웨이(당시 웅진)는 외환위기 중인 1998년 4월 국내 처음으로 제품을 빌려주고 주기적으로 관리해 주는 렌탈 제도를 도입했다. 100만 원대 정수기를 월 2만 7천 원에 빌려주는 방식으로, 팔리지 않는 재고를 빌려주자는 발상에서 나왔다고 회사 측 자료는 전한다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-ibto-250721",
+    "tp-daum-coway"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1998",
+   "independentSources": 2
+  },
+  {
+   "id": "tp-own-rentalsize",
+   "text": "KT경제경영연구소 추정으로 렌탈 시장은 2014년 처음 10조 원을 넘었고 2021년 약 40조 원이 됐다(업계는 2025년 100조 원을 전망했다). 코웨이의 2025년 매출은 4조 9,636억 원이었고 렌탈 부문이 90% 이상을 차지했다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-hkmag-220126",
+    "tp-ibto-260716"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2014~2025",
+   "scope": "2025년 100조 원은 전망치",
+   "independentSources": 2
+  },
+  {
+   "id": "tp-own-rentalnew",
+   "text": "2025년 보일러 업체들이 렌탈 시장에 뛰어드는 등 렌탈 품목이 주거 환경 전반으로 넓어졌다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-tomato-250613"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2025",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-own-sub25",
+   "text": "서울시전자상거래센터 2025년 조사에서 응답자의 95.9%가 하나 이상의 구독 서비스를 쓰고 있었고, 월평균 약 4만 원을 지출했다. 10명 중 6명은 해지를 어렵게 만드는 '다크패턴'이 있다고 답했다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-segye-250416"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2025",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-own-ott-ad",
+   "text": "2025 방송매체 이용행태조사에서 OTT 이용률은 81.8%, 유료 OTT 이용률은 65.5%였고, 유료 이용자의 34.6%가 광고를 보는 대신 싼 광고형 요금제를 썼다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-asiae-260515"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2025",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-own-ai-sub",
+   "text": "한국소비자원 2025 소비생활지표에서 생성형 AI 이용자의 24.3%가 유료 구독 중이었고 20대는 30.1%였다. 카드사 분석으로 2025년 말 유료 AI 결제 고객의 60%가 4개월 이상 결제를 유지했다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-kbr-ai-sub"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2025",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-own-raas",
+   "text": "로봇업계에서는 가사·돌봄 로봇이 보급되면 가전 렌털과 장비 렌털의 경계가 흐려지고 구독형 로봇 서비스 시장이 열릴 것이라는 전망이 나왔다.",
+   "claimType": "interpretation",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-hk-260311"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2026",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-it-7080",
+   "text": "가계 소비에서 식료품비 비중(엥겔지수)은 1970~1980년대 30~40%를 넘나들다 생활 형편이 나아진 1990년대 중반 이후 낮아졌다는 설명이 있다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-jkn-2011engel",
+    "tp-sgsg-210305"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1970~1990년대",
+   "scope": "식료품비만의 비중(외식 제외) 기준",
+   "independentSources": 2
+  },
+  {
+   "id": "tp-it-1991",
+   "text": "1991년 통계청 분석은 소득 향상으로 도시가계의 식료품 비중이 낮아지고 교육·오락·개인교통비 지출이 늘었으며, 식료품 안에서도 주식비 비중은 줄고 외식비가 늘었다고 했다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-seoul-910320"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1980년대 말~1991",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-it-1994",
+   "text": "1994년 3분기 도시근로자 가계의 월평균 외식비가 처음 10만 원을 넘었고 개인교통비는 51%, 교육비는 17% 늘었다. 1995년에는 교육비가 처음 월 10만 원을 넘었고, 자동차 수요 포화로 교통비 증가율이 크게 둔화했으며, 평균소비성향은 71%로 사상 최저였다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-seoul-941117",
+    "tp-seoul-960328"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1994~1995",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-it-edugap",
+   "text": "도시가계조사에서 가계지출 중 교육비 비중은 소득 하위 30%가 1995년 8.2%에서 2004년 9.1%로 소폭 늘었지만, 상위 30%는 9.7%에서 12.4%로 크게 늘어 격차가 커졌다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-sgsg-050825"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1995~2004",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-it-2011",
+   "text": "글로벌 금융위기 전후 식료품 물가가 가파르게 오르며 엥겔지수가 2008년 상반기부터 2011년 상반기까지 4년 반 동안 연속 올라 2000년 이후 가장 높아졌다. 같은 2011년 2분기 주류·담배 지출 비중(2.13%)은 1970년 이래 최저였고 교육비 비중도 7%대 후반에서 6.6%로 내려갔다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-jkn-2011engel"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2008~2011",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-it-dine",
+   "text": "1990년 이후 2004년까지는 식료품비 비중이 줄고 외식비 비중이 느는 흐름이 뚜렷했다. 외식비 비중은 2021년 12.7%에서 2022년 처음 14%, 2024년 14.5%로 사상 최고를 이어 가며 식비의 절반을 넘었다. 2024년 소득 하위 20%는 식비 중 64.9%가 식료품, 상위 20%는 56.5%가 외식이었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-hani-250317"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1990~2024",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-it-apc",
+   "text": "대한상의 분석으로 평균소비성향은 2014년 73.6%에서 2024년 70.3%로 낮아졌고, 60대는 69.3%에서 62.4%로 가장 크게 떨어졌다. 20·30대 월평균 소비액은 257만 원에서 248만 원으로 오히려 줄었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-asiae-250601"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2014~2024",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-it-engel25",
+   "text": "외식비를 포함한 엥겔계수는 2025년 30.3%로 1994년(30.0%) 이후 31년 만에 다시 30%를 넘었다. 2002년 26.7%까지 낮아졌다가 2019년 27.8%, 2022년 29.9%로 올랐다. 2025년 가계는 월평균 366만 원 중 111만 원을 식료품과 외식에 썼다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-hk-260318",
+    "tp-sgsg-260403"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1994~2025",
+   "scope": "외식비 포함 기준",
+   "independentSources": 2
+  },
+  {
+   "id": "tp-it-why25",
+   "text": "보도는 반등 원인으로 2020년 이후 먹거리 물가가 소비자물가를 1~2%p 웃돈 점(2020년 이후 소비자물가 16.7%, 농축수산물 26%, 외식 25% 상승), 외식·배달의 일상화, 고령화, 청년층이 '먼 미래 대신 지금'에 쓰는 소비를 들었다. OECD 기준 한국 빈곤율은 2011년 18.6%에서 2021년 14.8%로 낮아져, 반등을 가난해진 증거로 보는 전문가는 많지 않다고 전했다.",
+   "claimType": "interpretation",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-hk-260318",
+    "tp-sgsg-260403"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2020~2025",
+   "independentSources": 2
+  },
+  {
+   "id": "tp-it-scene26",
+   "text": "2026년 보도 속 인천의 30대 부부는 월 소득 400만~500만 원의 40~50%를 식비로 쓰고, 6천 원짜리 '두쫀쿠'를 한 달 내내 매일 사 먹으며 '부동산 같은 먼 미래 대신 지금의 우리에게 투자하고 싶다'고 말했다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-hk-260318"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2026",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-it-nonc",
+   "text": "2025년 가구 소득은 3.4% 늘었지만 세금·사회보험료·이자 같은 비소비 지출이 5.7% 늘어 처분가능소득은 2.9% 느는 데 그쳤다. 한국은행은 집값이 5% 오를 때 50세 미만 가계의 후생이 0.23% 줄어든다고 분석했다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-hk-260318"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2025~2026",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-it-2025",
+   "text": "2025년 월평균 소비지출은 293만 9천 원으로 명목 1.7% 늘었지만 실질로는 0.4% 줄었다(실질 감소는 2020년 이후 처음). 비목별 비중은 음식·숙박 15.8%, 식료품·비주류음료 15.3%였고 주거·수도·광열 지출은 2.6% 늘었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-jkn-2025real",
+    "tp-kbr-2025exp"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2025",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-it-krei26",
+   "text": "한국농촌경제연구원 자료로 외식 물가의 전년 동기 대비 상승률(1분기 기준)은 2023년 7.5%에서 2024년 3.8%, 2025년 3.0%, 2026년 2.9%로 낮아졌지만 농축산물·가공식품보다는 높았다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-krei-2026q1"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2023~2026",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-it-japan",
+   "text": "일본의 엥겔계수도 2025년 28.6%로 1981년 수준으로 돌아갔다는 보도가 있다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-hk-260318"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2025",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-if-2000",
+   "text": "2000년 설에는 온라인 쇼핑몰 접속이 11% 늘 때 가격비교 검색 사이트 접속은 71% 늘었다는 업계 발언이 보도됐다. 같은 기사는 미국 가격비교 사이트 마이사이먼이 7억 달러에 인수된 사례를 들었다. 다나와는 2000년 4월 설립됐다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-seoul-000306",
+    "tp-dealsite-danawa"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2000",
+   "independentSources": 2
+  },
+  {
+   "id": "tp-if-2005",
+   "text": "업계 회고에 따르면 2005년 네이버가 '지식쇼핑'으로 가격비교 서비스를 시작해 포털 검색이 쇼핑 정보의 입구가 됐다.",
+   "claimType": "interpretation",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-iboss-ecomhist"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2005",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-if-blog11",
+   "text": "공정위는 2011년 11월 공동구매를 알선하고 업체에서 수수료를 몰래 받은 카페·블로그 운영자 47곳을 제재했고, 수수료가 큰 4곳에 각 500만 원의 과태료를 매겼다. 이들은 2010년 7월~2011년 6월 수수료로 각각 8억 8천만 원, 7억 6,600만 원 등을 받았다. 한 파워블로거가 공동구매한 36만 원짜리 오존 세척기는 3천 대가 팔렸다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-khan-111113",
+    "tp-etnews-111113",
+    "tp-mt-131111"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2010~2011",
+   "independentSources": 3
+  },
+  {
+   "id": "tp-if-blogwhy",
+   "text": "2011년 보도에는 포털이 '파워블로거'를 뽑아 준 것이 문제를 키웠다는 이용자 의견이 실렸고, 블로그산업협회는 2009년부터 대가성 글은 미리 밝히라는 준수사항을 두고 있었다. 2010년 조사에서 파워블로거 운영 동기로 '정보 공유'(81.8%)가 '경제적 이익'(43.4%)보다 많았다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-mt-110803",
+    "tp-mt-110805"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2009~2011",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-if-back20",
+   "text": "2020년 8월 유명 먹방 유튜버들의 '뒷광고'(대가를 받고도 광고임을 숨긴 영상) 논란이 이어져 한 유튜버는 은퇴를 선언했다. 공정위는 2020년 9월 1일부터 SNS에서 대가 사실을 밝히지 않은 후기형 광고를 금지하는 개정 심사지침을 시행했다(위반 시 관련 매출의 2% 이하 또는 5억 원 이하 과징금).",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-etoday-200812"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2020",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-if-mon21",
+   "text": "공정위는 2019년 인스타그램 뒷광고를 한 화장품·가전 기업들을 제재했고, 2021년 4~12월 모니터링에서 뒷광고 게시물 17,020건(네이버 블로그 7,383건, 인스타그램 9,538건, 유튜브 99건)을 적발했다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-ytn-220426"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2019~2021",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-if-live",
+   "text": "라이브커머스(실시간 방송으로 파는 쇼핑)는 중국에서 먼저 퍼졌고, 국내에서는 코로나19가 확산한 2020년이 원년으로 꼽힌다. 2020년 시장 규모는 출처마다 크게 달라 교보증권은 약 4천억 원, 한국인터넷진흥원은 약 3조 원으로 추산했다. 한국인터넷진흥원은 2023년 약 10조 원으로 추산했다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-ditoday-live",
+    "tp-bizhankook-22310",
+    "tp-daum-live"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2020~2023",
+   "scope": "시장 규모는 추정치, 출처 간 차이 큼",
+   "independentSources": 3
+  },
+  {
+   "id": "tp-if-age",
+   "text": "CJ메조미디어 2025 리포트에서 10~30대는 인플루언서 리뷰 광고, 40대는 키워드 광고, 50대는 PPL을 가장 신뢰한다고 답했다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-iboss-meso"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2025",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-if-ai26",
+   "text": "2026년 한 조사에서 상품을 살 때 가장 먼저 쓰는 채널은 포털 검색(54.2%)이었고 생성형 AI가 14.0%로 뒤를 이었다. 49.9%는 AI가 추천한 제품을 산 적이 있었고, 71.1%는 AI 답변을 인터넷 검색으로 다시 확인한다고 답했다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-ditoday-ai"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2026",
+   "independentSources": 1
+  },
+  {
+   "id": "tp-if-agent26",
+   "text": "2026년 8월 조사에서 AI 쇼핑 기능 중 가장 관심이 큰 것은 실시간 최저가 탐색·쿠폰 자동 적용(50.4%)과 리뷰 요약(45.8%)이었다. 74.0%는 최종 결제 버튼은 사람이 직접 눌러야 한다고 답했고, AI에 다 맡기지 않는 이유로는 'AI가 취향을 완벽히 알기 어렵다'(43.0%)가 가장 많았다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-segye-260825",
+    "tp-iboss-fatigue"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2026",
+   "independentSources": 2
+  },
+  {
+   "id": "tp-if-seo26",
+   "text": "유통업계에서는 판매자의 노출 경쟁이 검색 최적화·키워드 광고에서 생성형 AI의 추천 후보에 드는 것으로 넓어지고 있다는 관측이 나왔다.",
+   "claimType": "interpretation",
+   "status": "sourced",
+   "sourceIds": [
+    "tp-ddaily-260915"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2026",
+   "independentSources": 1
   }
  ],
  "sources": [
@@ -23334,6 +24627,815 @@
    "sourceType": "news",
    "accessedDate": "2026-11-12",
    "publishedDate": "2025-12-20"
+  },
+  {
+   "id": "tp-kdi-260521",
+   "title": "의무휴업일 평일 전환이 시사하는 유통정책의 전환 방향(KDI FOCUS)",
+   "publisher": "한국개발연구원",
+   "url": "https://www.kdi.re.kr/research/focusView?pub_no=19187",
+   "sourceType": "research",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-05-21"
+  },
+  {
+   "id": "tp-herald-260521",
+   "title": "대형마트 주말에 열어도…전통시장 타격 없었다(KDI 분석 보도)",
+   "publisher": "헤럴드경제",
+   "url": "https://www.heraldk.com/article/2026052115342765638",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-05-21",
+   "origin": "한국개발연구원"
+  },
+  {
+   "id": "tp-khan-120425",
+   "title": "대형마트 의무휴업 효과 컸다(전주시 조사)",
+   "publisher": "경향신문",
+   "url": "https://www.khan.co.kr/article/201204251442501",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2012-04-25"
+  },
+  {
+   "id": "tp-mt-mart10",
+   "title": "마트 의무휴업 10년, 잃어버린 것들",
+   "publisher": "머니투데이",
+   "url": "https://www.mt.co.kr/mtreport/1025",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2023"
+  },
+  {
+   "id": "tp-sgsg-060419",
+   "title": "까르푸, 한국 시장 철수 준비",
+   "publisher": "한국경제 생글생글",
+   "url": "https://sgsg.hankyung.com/article/2006041969641",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2006-04-19"
+  },
+  {
+   "id": "tp-mt-210302",
+   "title": "쿠팡과 월마트는 어떻게 다른가?(2006년 5월 이마트의 월마트 인수)",
+   "publisher": "머니투데이",
+   "url": "https://www.mt.co.kr/opinion/2021/03/02/2021030110594965672",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2021-03-02"
+  },
+  {
+   "id": "tp-sidae-191120",
+   "title": "파란눈 '코스트코' DNA — 월마트·까르푸 철수",
+   "publisher": "머니투데이(시대 재게시)",
+   "url": "https://www.sidae.com/article/2019112008198029953",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2019-11-20"
+  },
+  {
+   "id": "tp-sidae-230731",
+   "title": "글로벌 유통업체의 한국 실패(서구식 창고형·대용량)",
+   "publisher": "머니투데이(시대 재게시)",
+   "url": "https://www.sidae.com/article/2023073113491591629",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2023-07-31"
+  },
+  {
+   "id": "tp-ks-2006",
+   "title": "유통서비스의 글로벌 시장적응력 — 월마트와 까르푸를 중심으로",
+   "publisher": "통상정보연구(KoreaScience)",
+   "url": "https://koreascience.kr/article/JAKO200630159713107.pdf",
+   "sourceType": "academic",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2006-12"
+  },
+  {
+   "id": "tp-newsis-181214",
+   "title": "쿠팡, 로켓배송 이어 새벽·당일배송 추진",
+   "publisher": "뉴시스",
+   "url": "https://mobile.newsis.com/view/NISX20181214_0000503127",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2018-12-14"
+  },
+  {
+   "id": "tp-byline-200414",
+   "title": "로켓배송 사상 최초 적자 줄인 쿠팡, 그 의미",
+   "publisher": "바이라인네트워크",
+   "url": "https://byline.network/2020/04/14-91/",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2020-04-14"
+  },
+  {
+   "id": "tp-byline-190118",
+   "title": "아마존의 과거와 쿠팡의 현재는 닮아있다",
+   "publisher": "바이라인네트워크",
+   "url": "https://byline.network/2019/01/18-42/",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2019-01-18"
+  },
+  {
+   "id": "tp-newdaily-200413",
+   "title": "식품 배송 전쟁 — 새벽배송 시장은 2015년 마켓컬리 샛별배송으로 열려",
+   "publisher": "뉴데일리",
+   "url": "https://biz.newdaily.co.kr/site/data/html/2020/04/13/2020041300092.amp.html",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2020-04-13"
+  },
+  {
+   "id": "tp-newdaily-260202",
+   "title": "2025년 온라인 쇼핑 거래액 272조…증가율은 최저",
+   "publisher": "뉴데일리",
+   "url": "https://biz.newdaily.co.kr/site/data/html/2026/02/02/2026020200320.amp.html",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-02-02",
+   "origin": "국가데이터처 온라인쇼핑동향"
+  },
+  {
+   "id": "tp-insight-260203",
+   "title": "2025년 온라인쇼핑 272조…모바일 77.6%",
+   "publisher": "인사이트",
+   "url": "https://www.insight.co.kr/news/541294",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-02-03",
+   "origin": "국가데이터처 온라인쇼핑동향"
+  },
+  {
+   "id": "tp-jkn-2505",
+   "title": "5월 온라인쇼핑 22조…종합몰 감소·전문몰 강세",
+   "publisher": "재경일보",
+   "url": "https://news.jkn.co.kr/post/853645",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-07-01",
+   "origin": "통계청 온라인쇼핑동향"
+  },
+  {
+   "id": "tp-jkn-2504",
+   "title": "4월 온라인쇼핑 21.7조…음식서비스 모바일 비중 99%",
+   "publisher": "재경일보",
+   "url": "https://news.jkn.co.kr/post/853146",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-06-02",
+   "origin": "통계청 온라인쇼핑동향"
+  },
+  {
+   "id": "tp-motir-250730",
+   "title": "'25년 상반기 및 6월 주요 유통업체 매출 동향",
+   "publisher": "산업통상자원부",
+   "url": "https://www.motir.go.kr/attach/down/095a2dda9c864e1d90d751f7668a1117/caf4ab14a561543922e8fe6aac7eb98f/9a9db098b587ee18b321c826f3707a49",
+   "sourceType": "government",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-07-30"
+  },
+  {
+   "id": "tp-newsis-260729",
+   "title": "상반기 오프라인 6.2%↑ 온라인 8.1%↑(2026년 상반기 유통업체 매출)",
+   "publisher": "뉴시스",
+   "url": "https://mobile.newsis.com/view/NISX20260729_0003727319",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-07-29",
+   "origin": "산업통상부"
+  },
+  {
+   "id": "tp-bizwatch-251231",
+   "title": "[생활경제25] 홈플러스도 무너졌다…오프라인에 덮친 불황 그늘",
+   "publisher": "비즈워치",
+   "url": "https://news.bizwatch.co.kr/article/consumer/2025/12/30/0024",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-12-31"
+  },
+  {
+   "id": "tp-segye-260604",
+   "title": "홈플러스, 휴점 37개 점포 폐점 결정",
+   "publisher": "세계일보",
+   "url": "https://www.segye.com/newsView/20260604513047",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-06-04"
+  },
+  {
+   "id": "tp-fn-240213",
+   "title": "이젠 중국서 쇼핑 직구…(2023년 해외 직구·알리·테무 이용자)",
+   "publisher": "파이낸셜뉴스",
+   "url": "https://www.fnnews.com/news/202402131446417691",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2024-02-13",
+   "origin": "통계청·와이즈앱"
+  },
+  {
+   "id": "tp-twig-260202",
+   "title": "해외 직구 10건 중 6건은 중국산",
+   "publisher": "한국일보(twig24)",
+   "url": "https://www.twig24.com/news/2026/02/02/20260202500090",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-02-02",
+   "origin": "국가데이터처"
+  },
+  {
+   "id": "tp-ddaily-2606",
+   "title": "\"또 테무에서 샀어?\"…알리 제친 테무",
+   "publisher": "디지털데일리",
+   "url": "https://www.ddaily.co.kr/page/view/2026060621340700985",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-06-06",
+   "origin": "와이즈앱·리테일"
+  },
+  {
+   "id": "tp-pwc-2508",
+   "title": "C(China)-커머스의 공습 — 한국 E-커머스의 대응방안 모색",
+   "publisher": "삼일PwC경영연구원",
+   "url": "https://www.pwc.com/kr/ko/insights/industry-focus/samilpwc_c-commerce.pdf",
+   "sourceType": "report",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-08"
+  },
+  {
+   "id": "tp-newdaily-260616",
+   "title": "대형마트 새벽배송 허용·의무휴업 완화 논의",
+   "publisher": "뉴데일리",
+   "url": "https://biz.newdaily.co.kr/site/data/html/2026/06/16/2026061600081.amp.html",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-06-16"
+  },
+  {
+   "id": "tp-sbs-250515",
+   "title": "시장 빈대떡 먹어도 '페이' 결제…요즘 누가 현금 쓰나요?(2024년 지급수단 이용행태 조사)",
+   "publisher": "SBS Biz",
+   "url": "https://biz.sbs.co.kr/amp/article/20000234605",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-05-15",
+   "origin": "한국은행"
+  },
+  {
+   "id": "tp-kyeongin-pay",
+   "title": "지급수단 만족도 신용 75.5점 vs 현금 64.4점",
+   "publisher": "경인일보",
+   "url": "https://www.kyeongin.com/article/1760641",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025",
+   "origin": "한국은행"
+  },
+  {
+   "id": "tp-fntimes-2015pay",
+   "title": "2015년 지급수단 이용행태 조사 — 신용카드 결제가 현금을 앞서",
+   "publisher": "한국금융신문",
+   "url": "https://www.fntimes.com/html/view.php?ud=146833",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2016",
+   "origin": "한국은행"
+  },
+  {
+   "id": "tp-kbr-cash",
+   "title": "현금 비중 15.9%, 실물카드 미제시 결제 과반(한국은행 자료 정리)",
+   "publisher": "Korea Business Review",
+   "url": "https://www.koreabizreview.com/articles/kbr-analysis-kbr-research-notes-content-20260809-ivx9",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-08",
+   "origin": "한국은행"
+  },
+  {
+   "id": "tp-hk-250929",
+   "title": "간편결제 이용액 하루 1조원 넘었다(2025년 상반기 전자지급서비스)",
+   "publisher": "한국경제",
+   "url": "https://www.hankyung.com/article/202509294322i",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-09-29",
+   "origin": "한국은행"
+  },
+  {
+   "id": "tp-kdi-260320",
+   "title": "2025년 중 전자지급서비스 이용현황",
+   "publisher": "한국은행(KDI 경제정보센터 게시)",
+   "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=278263",
+   "sourceType": "government",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-03-20"
+  },
+  {
+   "id": "tp-dailian-150105",
+   "title": "'백 투 더 2010년' 체크카드 시장 격돌 예고",
+   "publisher": "데일리안",
+   "url": "https://www.dailian.co.kr/news/view/479900/",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2015-01-05"
+  },
+  {
+   "id": "tp-dailian-140226",
+   "title": "가계 빚 1000조 시대…구원투수로 나선 체크카드",
+   "publisher": "데일리안",
+   "url": "https://www.dailian.co.kr/news/view/423640/",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2014-02-26"
+  },
+  {
+   "id": "tp-newsis-220503",
+   "title": "BNPL, 카드사도 뛰어든다…문제없나",
+   "publisher": "뉴시스",
+   "url": "https://mobile.newsis.com/view/NISX20220503_0001857555",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2022-05-03"
+  },
+  {
+   "id": "tp-ceoscore-220706",
+   "title": "일단 사고 나중에 갚는 BNPL…핀테크 이어 카드사도 진출",
+   "publisher": "CEO스코어데일리",
+   "url": "https://ceoscoredaily.com/page/view/2022070615202734500",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2022-07-06",
+   "origin": "금융감독원(윤창현 의원실)"
+  },
+  {
+   "id": "tp-econ-210814",
+   "title": "'디지털판 외상'에 뛰어드는 네이버·카카오·쿠팡",
+   "publisher": "이코노미스트",
+   "url": "https://economist.co.kr/article/view/ecn202108140014",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2021-08-14"
+  },
+  {
+   "id": "tp-sbs-241031",
+   "title": "현금 없는 버스·가게, 현금만 있는 어르신 어떡하라고?",
+   "publisher": "SBS Biz",
+   "url": "https://biz.sbs.co.kr/amp/article/20000199310",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2024-10-31"
+  },
+  {
+   "id": "tp-seoul-980908",
+   "title": "무조건적 '아나바다운동'은 소비 심리 위축",
+   "publisher": "서울신문",
+   "url": "https://www.seoul.co.kr/news/1998/09/08/19980908004003",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "1998-09-08"
+  },
+  {
+   "id": "tp-seoul-980216",
+   "title": "양복 한벌 3천원·초등생 가방 1천원 — YMCA 녹색가게, 알뜰시장",
+   "publisher": "서울신문",
+   "url": "https://www.seoul.co.kr/news/1998/02/16/19980216013001",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "1998-02-16"
+  },
+  {
+   "id": "tp-mediahub-seocho",
+   "title": "전국 최장수 아나바다장터, 서초토요벼룩시장",
+   "publisher": "서울시 미디어허브",
+   "url": "https://mediahub.seoul.go.kr/archives/1080456",
+   "sourceType": "government",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2017"
+  },
+  {
+   "id": "tp-byline-211228",
+   "title": "중고거래 이미지가 바뀌고 있다",
+   "publisher": "바이라인네트워크",
+   "url": "https://byline.network/2021/12/28-182/",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2021-12-28"
+  },
+  {
+   "id": "tp-bizhankook-25683",
+   "title": "소유의 종말이 가져온 짠테크 '중고거래'",
+   "publisher": "비즈한국",
+   "url": "https://bizhankook.com/articles/25683.html",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2023",
+   "origin": "한국인터넷진흥원"
+  },
+  {
+   "id": "tp-econ-221201",
+   "title": "백화점부터 네이버·무신사도 뛰어들었다…24조원 중고시장",
+   "publisher": "이코노미스트",
+   "url": "https://economist.co.kr/article/view/ecn202212010026",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2022-12-01",
+   "origin": "한국인터넷진흥원"
+  },
+  {
+   "id": "tp-econ-211220",
+   "title": "새것만큼 잘 나가는 중고…당근·번개·중나 '중고 빅3'",
+   "publisher": "이코노미스트",
+   "url": "https://economist.co.kr/article/view/ecn202112200005",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2021-12-20"
+  },
+  {
+   "id": "tp-hmg-used",
+   "title": "소비의 대세가 된 중고 시장('N차 신상')",
+   "publisher": "현대자동차그룹 뉴스룸",
+   "url": "https://www.hyundaimotorgroup.com/ko/story/CONT0000000000003649",
+   "sourceType": "company",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2021"
+  },
+  {
+   "id": "tp-ibto-250721",
+   "title": "코웨이, 정수기 1500만대 판매 돌파(1998년 4월 렌탈 도입)",
+   "publisher": "IB토마토",
+   "url": "https://www.ibtomato.com/View.aspx?no=15620&type=1",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-07-21"
+  },
+  {
+   "id": "tp-daum-coway",
+   "title": "'코웨이'는 어떻게 정수기에서 출발해 4조원 렌탈 거인으로 성장했을까?",
+   "publisher": "다음(기고 재게시)",
+   "url": "https://v.daum.net/v/Xny78O1mBb",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2023-11"
+  },
+  {
+   "id": "tp-hkmag-220126",
+   "title": "렌털 시장 2025년 100조 전망 — 기존 강자·신규 진입",
+   "publisher": "한경비즈니스",
+   "url": "https://magazine.hankyung.com/business/article/202201265813b",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2022-01-26",
+   "origin": "KT경제경영연구소"
+  },
+  {
+   "id": "tp-ibto-260716",
+   "title": "코웨이, 5조 클럽 눈앞…얼음정수기 렌탈 35% 급증",
+   "publisher": "IB토마토",
+   "url": "https://www.ibtomato.com/ExternalView.aspx?no=18947&type=1",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-07-16"
+  },
+  {
+   "id": "tp-tomato-250613",
+   "title": "보일러 투톱, 렌탈 시장 참전",
+   "publisher": "뉴스토마토",
+   "url": "https://newstomato.com/ReadNews.aspx?no=1265074",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-06-13"
+  },
+  {
+   "id": "tp-segye-250416",
+   "title": "구독 서비스 월평균 4만원…10명 중 6명 '해지 어렵게 하는 다크패턴'",
+   "publisher": "세계일보",
+   "url": "https://www.segye.com/newsView/20250416514216",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-04-16",
+   "origin": "서울시전자상거래센터"
+  },
+  {
+   "id": "tp-asiae-260515",
+   "title": "OTT 비용 줄이는 법(2025 방송매체 이용행태조사)",
+   "publisher": "아시아경제",
+   "url": "https://view.asiae.co.kr/article/2026051515242178858",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-05-15",
+   "origin": "방송미디어통신위원회"
+  },
+  {
+   "id": "tp-kbr-ai-sub",
+   "title": "AI 구독료가 '당연히 나가는 돈'이 되다",
+   "publisher": "Korea Business Review",
+   "url": "https://www.koreabizreview.com/articles/kbr-analysis-kbr-research-notes-ai-20260615-2s35",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-06-15",
+   "origin": "한국소비자원·KB국민카드"
+  },
+  {
+   "id": "tp-hk-260311",
+   "title": "서비스형 로봇 시장과 렌털의 경계",
+   "publisher": "한국경제",
+   "url": "https://www.hankyung.com/article/2026031145601",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-03-11"
+  },
+  {
+   "id": "tp-jkn-2011engel",
+   "title": "엥겔지수 2000년 이후 11년만에 최악",
+   "publisher": "재경일보",
+   "url": "https://news.jkn.co.kr/post/728943",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2011",
+   "origin": "한국은행 국민계정"
+  },
+  {
+   "id": "tp-sgsg-210305",
+   "title": "엥겔의 법칙과 소득 탄력성",
+   "publisher": "한국경제 생글생글",
+   "url": "https://sgsg.hankyung.com/article/2021030555701",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2021-03-05",
+   "origin": "한국은행"
+  },
+  {
+   "id": "tp-seoul-910320",
+   "title": "교육·오락·교통·외식비등 지출은 급증(도시가계 소비구조 변화)",
+   "publisher": "서울신문",
+   "url": "https://www.seoul.co.kr/news/1991/03/20/19910320007003",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "1991-03-20",
+   "origin": "통계청"
+  },
+  {
+   "id": "tp-seoul-941117",
+   "title": "3분기 가계 수지동향 — 외식비 처음 월 10만원 넘어",
+   "publisher": "서울신문",
+   "url": "https://www.seoul.co.kr/news/1994/11/17/19941117009001",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "1994-11-17",
+   "origin": "통계청"
+  },
+  {
+   "id": "tp-seoul-960328",
+   "title": "교육비 첫 10만원 넘어…소비성향 71% 사상최저",
+   "publisher": "서울신문",
+   "url": "https://www.seoul.co.kr/news/1996/03/28/19960328010001",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "1996-03-28",
+   "origin": "통계청"
+  },
+  {
+   "id": "tp-sgsg-050825",
+   "title": "소득 계층별 교육비 지출 격차 확대",
+   "publisher": "한국경제 생글생글",
+   "url": "https://sgsg.hankyung.com/article/2005082515351",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2005-08-25",
+   "origin": "통계청 도시가계조사"
+  },
+  {
+   "id": "tp-hani-250317",
+   "title": "식비 중 외식비 비중 50% 처음 넘었다…월 52만원",
+   "publisher": "한겨레(다음 재게시)",
+   "url": "https://v.daum.net/v/20250317090501117",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-03-17",
+   "origin": "통계청 가계동향조사"
+  },
+  {
+   "id": "tp-asiae-250601",
+   "title": "10년 전보다 돈 덜 쓴다(대한상의 세대별 소비성향 보고서)",
+   "publisher": "아시아경제",
+   "url": "https://view.asiae.co.kr/article/2025060111025112514",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-06-01",
+   "origin": "대한상공회의소"
+  },
+  {
+   "id": "tp-hk-260318",
+   "title": "연금소득 의존해도 외식은 포기안해…늙어가는 한국의 단면(엥겔계수 30.3%)",
+   "publisher": "한국경제",
+   "url": "https://www.hankyung.com/article/2026031805601",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-03-18",
+   "origin": "국가데이터처"
+  },
+  {
+   "id": "tp-sgsg-260403",
+   "title": "엥겔계수와 생활수준",
+   "publisher": "한국경제 생글생글",
+   "url": "https://sgsg.hankyung.com/article/2026040365701",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-04-03"
+  },
+  {
+   "id": "tp-kbr-2025exp",
+   "title": "2025년 가계 소비 구조(가계동향조사 연간 지출)",
+   "publisher": "Korea Business Review",
+   "url": "https://www.koreabizreview.com/articles/kbr-legacy-7642",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-03",
+   "origin": "국가데이터처"
+  },
+  {
+   "id": "tp-jkn-2025real",
+   "title": "고물가에 작년 실질 소비지출 0.4% 감소",
+   "publisher": "재경일보",
+   "url": "https://news.jkn.co.kr/post/856468",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-02-26",
+   "origin": "국가데이터처"
+  },
+  {
+   "id": "tp-krei-2026q1",
+   "title": "2026년 1분기 식품 소비·물가 동향",
+   "publisher": "한국농촌경제연구원",
+   "url": "https://m.krei.re.kr/foodInfo/board/atchDown.do?no=114050",
+   "sourceType": "research",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026"
+  },
+  {
+   "id": "tp-seoul-000306",
+   "title": "가격비교 검색사이트 접속 폭주",
+   "publisher": "서울신문",
+   "url": "https://www.seoul.co.kr/news/2000/03/06/20000306011003",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2000-03-06"
+  },
+  {
+   "id": "tp-dealsite-danawa",
+   "title": "다나와 — 2000년 4월 설립된 가격비교 플랫폼",
+   "publisher": "딜사이트",
+   "url": "https://dealsite.co.kr/articles/77250",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12"
+  },
+  {
+   "id": "tp-iboss-ecomhist",
+   "title": "온라인 MD 이야기 — 한국 이커머스의 역사(2005년 네이버 지식쇼핑 가격비교)",
+   "publisher": "아이보스(기고)",
+   "url": "https://www.i-boss.co.kr/ab-6141-49974",
+   "sourceType": "blog",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2018-08-25"
+  },
+  {
+   "id": "tp-khan-111113",
+   "title": "돈받고 공동구매 알선한 '파워블로거' 적발",
+   "publisher": "경향신문",
+   "url": "https://www.khan.co.kr/article/201111131418061",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2011-11-13"
+  },
+  {
+   "id": "tp-etnews-111113",
+   "title": "네티즌 기만한 파워블로거들 고작 500만원 철퇴?",
+   "publisher": "전자신문",
+   "url": "https://m.etnews.com/201111130045",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2011-11-13"
+  },
+  {
+   "id": "tp-mt-131111",
+   "title": "'나 파워블로거인데 밥값 내야 돼요?'(깨끄미 공동구매)",
+   "publisher": "머니투데이",
+   "url": "https://www.mt.co.kr/tech/2013/11/11/2013110815250149968",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2013-11-11"
+  },
+  {
+   "id": "tp-mt-110805",
+   "title": "블로거의 항변 — 2009년 블로그마케팅 준수사항, 파워블로거 수입 조사",
+   "publisher": "머니투데이",
+   "url": "https://www.mt.co.kr/article/2011072814168119907",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2011-08-05"
+  },
+  {
+   "id": "tp-mt-110803",
+   "title": "'e-수상한 세상' 멍석 깔아준 포털, 대책은?",
+   "publisher": "머니투데이",
+   "url": "https://www.mt.co.kr/article/2011072818088182587",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2011-08-03"
+  },
+  {
+   "id": "tp-etoday-200812",
+   "title": "내달부터 유튜브 '뒷광고' 금지…공정위 '계도기간 후 제재'",
+   "publisher": "이투데이",
+   "url": "https://www.etoday.co.kr/news/view/1928588",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2020-08-12"
+  },
+  {
+   "id": "tp-ytn-220426",
+   "title": "공정위 뒷광고 모니터링 — 2021년 위반 게시물 17,020건",
+   "publisher": "YTN 라디오",
+   "url": "https://www.ytn.co.kr/_ln/0102_202204261820000169",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2022-04-26",
+   "origin": "공정거래위원회"
+  },
+  {
+   "id": "tp-daum-live",
+   "title": "확 커진 라이브커머스 시장…공정위 실태조사(한국인터넷진흥원 추산)",
+   "publisher": "다음(언론 재게시)",
+   "url": "https://v.daum.net/v/2LSCwfvaze?f=p",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2023",
+   "origin": "한국인터넷진흥원"
+  },
+  {
+   "id": "tp-bizhankook-22310",
+   "title": "네이버·카카오·배민·CJ…홈쇼핑도 이커머스도 '라방'으로",
+   "publisher": "비즈한국",
+   "url": "https://bizhankook.com/articles/22310.html",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2021-07-28",
+   "origin": "교보증권"
+  },
+  {
+   "id": "tp-ditoday-live",
+   "title": "라이브커머스는 어떻게 쇼핑의 패러다임을 바꿨을까?",
+   "publisher": "디지털인사이트",
+   "url": "https://ditoday.com/?p=52327",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2021"
+  },
+  {
+   "id": "tp-ditoday-ai",
+   "title": "이제는 쇼핑 파트너… 49.9% 'AI 추천 제품 구매했다'(프레인글로벌 조사)",
+   "publisher": "디지털인사이트",
+   "url": "https://ditoday.com/?p=150713",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026"
+  },
+  {
+   "id": "tp-segye-260825",
+   "title": "AI에 원하는 건 구매 대행보다 탐색·비교",
+   "publisher": "세계일보",
+   "url": "https://www.segye.com/newsView/20260825504489",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-08-25"
+  },
+  {
+   "id": "tp-iboss-fatigue",
+   "title": "쇼핑도 '결정 피로'… 절반 이상 '상품·최저가 비교하다 지친다'",
+   "publisher": "아이보스",
+   "url": "https://www.i-boss.co.kr/ab-2877-17923",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-08"
+  },
+  {
+   "id": "tp-iboss-meso",
+   "title": "CJ메조미디어 2025 타겟 리포트 요약(연령별 광고 신뢰)",
+   "publisher": "아이보스",
+   "url": "https://www.i-boss.co.kr/ab-2877-16475",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025",
+   "origin": "CJ메조미디어"
+  },
+  {
+   "id": "tp-ddaily-260915",
+   "title": "검색창 대신 챗GPT 켠다…유통업계 '쇼핑 첫 화면' 쟁탈전",
+   "publisher": "디지털데일리",
+   "url": "https://www.ddaily.co.kr/page/view/2026091510354153903",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-09-15"
   }
  ],
  "events": [
@@ -90633,5 +92735,5236 @@
    "episodeRule": "평균±1표준편차, 2년 이내 이웃은 한 구간",
    "windowYears": 5
   }
+ },
+ "topics": {
+  "domains": [
+   {
+    "id": "shop",
+    "label": "소비·쇼핑",
+    "desc": "어디서, 무엇으로, 어떻게 갖고, 무엇에 먼저 쓰고, 무엇을 보고 고르나 — 다섯 가지를 따로 추적합니다."
+   }
+  ],
+  "topics": [
+   {
+    "id": "shop-channel",
+    "domain": "shop",
+    "label": "어디서 사나 — 구매 장소와 유통 채널",
+    "tracks": "생필품·식품·공산품을 사는 장소(시장·동네 가게·백화점 → 편의점·대형마트 → 홈쇼핑·인터넷 → 모바일·배송). 결제 수단, 중고·대여, 정보 경로는 각각 다른 주제로 따로 추적한다.",
+    "question": "장 보러 '가던' 사람들이 왜 '받는' 쪽으로 옮겼고, 그런데도 왜 매장은 다 사라지지 않나?",
+    "scene": {
+     "layer": "fact",
+     "text": "2025년 3월 4일, 연 매출 7조 원대의 대형마트 2위 홈플러스가 기업회생을 신청했다. 같은 해 온라인쇼핑은 272조 원으로 사상 최대였지만, 증가율은 통계 작성 이래 가장 낮았다.",
+     "ids": [
+      "tp-ch-homeplus",
+      "tp-ch-online25"
+     ]
+    },
+    "span": [
+     1968,
+     2026
+    ],
+    "scope": [
+     {
+      "layer": "inference",
+      "text": "1968년 첫 대형 슈퍼마켓부터 시작한다. 그 이전 시장·행상의 규모를 보여 주는 연속 통계는 확보하지 못했다.",
+      "ids": [
+       "er-shop-1968"
+      ]
+     },
+     {
+      "layer": "inference",
+      "text": "업태별 매출 비중의 연속 통계는 1990년대 이전이 비어 있어, 1970~80년대는 신문·연구의 서술에 기대고 숫자로 비교하지 않았다.",
+      "ids": [
+       "fl-shop-before"
+      ]
+     }
+    ],
+    "turns": [
+     {
+      "id": "t1",
+      "years": "1968~1980년대",
+      "start": 1968,
+      "end": 1968,
+      "title": "걸어서 가는 가게 — 시장·동네 가게와 도심 백화점",
+      "why": {
+       "layer": "inference",
+       "text": "이후 모든 변화가 '이 방식의 불편'을 기준으로 일어나므로 출발점으로 잡았다.",
+       "ids": [
+        "fl-shop-before"
+       ]
+      },
+      "before": [
+       {
+        "layer": "source",
+        "text": "1970~80년대 유통은 동네 슈퍼와 재래시장이 대부분을 맡았고, 큰 가게도 100~200평 규모였다는 설명이 있다.",
+        "ids": [
+         "fl-shop-before"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "1968년 서울에 첫 대형 슈퍼마켓(뉴서울 슈퍼마켓)이 열렸고, 1970년대 명동은 신세계·미도파 백화점을 중심으로 쇼핑 중심지가 됐다.",
+        "ids": [
+         "er-shop-1968",
+         "er-shop-myeongdong"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "inference",
+        "text": "평소 장보기는 걸어서 가는 단골 가게, 특별한 물건은 도심 백화점 — 두 갈래로 나뉘었다. 외상·흥정·덤처럼 사람 사이의 관계가 거래 조건의 일부였다.",
+        "ids": [
+         "fl-shop-before",
+         "er-shop-myeongdong"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "source",
+        "text": "한 연구는 한국 소매업이 '정적인 구조'를 오래 이어 오다 1980년대 말부터 업태가 다양해지며 급변했다고 본다.",
+        "ids": [
+         "fl-shop-before"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "영업시간이 정해져 있고(통금), 한 번에 들고 올 수 있는 양에 한계가 있었다. 이 두 제약 — 시간과 운반 — 이 다음 전환점의 출발 조건이 된다.",
+        "ids": [
+         "c80-curfew",
+         "fl-shop-before"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t2",
+      "years": "1989~1996",
+      "start": 1989,
+      "end": 1989,
+      "title": "밤에 조금 · 주말에 많이 — 편의점과 대형 할인점",
+      "why": {
+       "layer": "fact",
+       "text": "1989년 첫 편의점, 1993년 첫 할인점이 4년 사이에 함께 등장해 '시간'과 '양'의 제약을 서로 다른 방향으로 풀었다.",
+       "ids": [
+        "er-shop-cvs",
+        "fl-shop-emart"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "통금이 있던 시절엔 밤 소비 자체가 막혀 있었고, 차가 드물어 한 번에 많이 사서 옮길 수 없었다.",
+        "ids": [
+         "c80-curfew"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "1982년 야간통행금지 해제 당일 신문은 '24시간을 생활한다'고 썼다.",
+        "ids": [
+         "c80-ch-24h"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "자동차 등록은 1985년 100만 대에서 1992년 500만 대를 넘었다.",
+        "ids": [
+         "sx-cars"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "1989년 5월 첫 편의점(세븐일레븐)은 '24시간 여는 슈퍼마켓'으로 받아들여졌고, 업계는 배경으로 올림픽 이후 국제화와 소득 증가를 꼽는다.",
+        "ids": [
+         "er-shop-cvs"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "신세계는 1993년 11월 창동에 첫 창고형 할인점 이마트를 열었고, 1996년까지 대형 할인점이 30여 곳으로 늘었다.",
+        "ids": [
+         "fl-shop-emart"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "inference",
+        "text": "같은 시기에 반대 방향의 두 가게가 함께 컸다: 편의점은 가까운 곳에서 밤에 조금, 할인점은 차로 주말에 많이. 한 사람이 둘 다 쓰는 '역할 나눔'의 시작이다.",
+        "ids": [
+         "er-shop-cvs",
+         "fl-shop-emart",
+         "sx-cars"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "할인점은 '차가 있고 냉장고가 큰 가족'을 전제로 한 형식이었다. 이 전제가 나중에 1인 가구 증가로 흔들린다.",
+        "ids": [
+         "fl-shop-emart",
+         "c10-1person"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t3",
+      "years": "1996~2006",
+      "start": 1996,
+      "end": 1996,
+      "title": "세계 1·2위 할인점이 들어왔다 나가다",
+      "why": {
+       "layer": "fact",
+       "text": "1996년 유통시장 개방으로 세계 최대 유통업체들이 들어왔고, 10년 만인 2006년 둘 다 철수했다 — 해외 형식이 그대로는 통하지 않은 사례라 전환점으로 잡았다.",
+       "ids": [
+        "tp-ch-walmart",
+        "fl-shop-discount-stage"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "1993~1996년 국내 할인점은 막 도입되는 단계였다.",
+        "ids": [
+         "fl-shop-discount-stage"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "1996년 유통시장이 열리며 까르푸(1996년 7월 부천)와 월마트가 들어왔다.",
+        "ids": [
+         "tp-ch-walmart"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "1997~1999년 국내 업체들은 점포를 크게 늘리며 외국계와 경쟁했다.",
+        "ids": [
+         "fl-shop-discount-stage"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "월마트와 까르푸는 2006년 철수했고, 이마트가 월마트 매장 16개를 8,250억 원에 샀다.",
+        "ids": [
+         "tp-ch-walmart"
+        ]
+       },
+       {
+        "layer": "source",
+        "text": "원인으로 서구식 창고형·대용량 판매 고수, 국내 소비자 정보 부족, 비싼 부동산, 국내 할인점과의 경쟁이 꼽혔다.",
+        "ids": [
+         "tp-ch-walmart-why"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "한국식 할인점(신선식품·가족 단위 장보기 중심)이 표준이 됐다. 이 형식은 2014년 매출 정점까지 이어지지만, '신선식품을 직접 보고 산다'는 강점이 나중에 새벽배송의 공략 대상이 된다.",
+        "ids": [
+         "tp-ch-kdi-mart",
+         "tp-ch-kurly"
+        ]
+       }
+      ],
+      "world": {
+       "what": {
+        "layer": "fact",
+        "text": "세계 1·2위 유통업체가 아시아로 매장을 넓혔다.",
+        "ids": [
+         "tp-ch-walmart"
+        ]
+       },
+       "route": {
+        "layer": "fact",
+        "text": "1996년 유통시장 전면 개방이라는 제도 변화로 직접 들어왔다.",
+        "ids": [
+         "tp-ch-walmart"
+        ]
+       },
+       "response": {
+        "layer": "fact",
+        "text": "국내 업체가 점포를 빠르게 늘려 맞섰다.",
+        "ids": [
+         "fl-shop-discount-stage"
+        ]
+       },
+       "result": {
+        "layer": "source",
+        "text": "해외 형식은 밀려나고 국내 업체가 매장을 인수했다.",
+        "ids": [
+         "tp-ch-walmart",
+         "tp-ch-walmart-why"
+        ]
+       },
+       "mode": "rejected"
+      }
+     },
+     {
+      "id": "t4",
+      "years": "1995~2010년대 초",
+      "start": 1995,
+      "end": 1995,
+      "title": "가지 않고 사기 — TV 홈쇼핑과 인터넷 쇼핑몰",
+      "why": {
+       "layer": "fact",
+       "text": "1995년 케이블 홈쇼핑 시험 방송이 '매장에 가지 않고 사는' 첫 대중적 형식이었다.",
+       "ids": [
+        "fl-shop-homeshop"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "여기까지의 변화는 모두 '어느 가게에 갈까'의 선택지였다.",
+        "ids": [
+         "fl-shop-emart"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "홈쇼핑은 1995년 8월 4시간 시험 방송으로 시작했다.",
+        "ids": [
+         "fl-shop-homeshop"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "홈쇼핑 두 회사의 취급고는 1995년 34억 원에서 2011년 10조 원, 2014년 14조 원을 넘었다.",
+        "ids": [
+         "fl-shop-homeshop"
+        ]
+       },
+       {
+        "layer": "source",
+        "text": "2000년대 중반 10~20대 의류 고객이 동대문 상가에서 인터넷 쇼핑몰로 옮겨 갔다는 분석이 있다.",
+        "ids": [
+         "fl-fash-decline"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "inference",
+        "text": "'가게까지 이동하는 수고'를 '배송을 기다리는 시간'과 바꾸는 거래가 처음 대중화했다. 다만 이때는 TV 편성 시간이나 PC 앞이라는 제약이 남았다.",
+        "ids": [
+         "fl-shop-homeshop",
+         "fl-fash-decline"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "화면으로 보고 사는 습관과 택배망이 깔렸다 — 스마트폰이 오자 '시간·장소 제약'만 걷어내면 되는 상태였다.",
+        "ids": [
+         "fl-shop-homeshop",
+         "c00-kr-iphone"
+        ]
+       }
+      ],
+      "gap": "2001~2012년 인터넷쇼핑 거래액 연속 수치는 이 주제에 아직 연결하지 않았다."
+     },
+     {
+      "id": "t5",
+      "years": "2012~2015",
+      "start": 2012,
+      "end": 2012,
+      "title": "대형마트 규제와 '손안의 가게'가 같은 시기에",
+      "why": {
+       "layer": "fact",
+       "text": "대형마트 매출이 정점(2014년)을 찍기 직전에 의무휴업(2012), 로켓배송(2014), 모바일쇼핑 비중 50%(2015), 새벽배송(2015)이 몰렸다.",
+       "ids": [
+        "tp-ch-kdi-mart",
+        "tp-ch-rocket",
+        "fl-shop-mobile",
+        "tp-ch-kurly"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "대형마트 매출은 2006년 26.4조 원에서 2014년 39.5조 원까지 늘었고, 2014년 유통 매출의 27.8%가 대형마트였다.",
+        "ids": [
+         "tp-ch-kdi-mart",
+         "tp-ch-martcount"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "2012년부터 대형마트·SSM은 월 2회 주말에 문을 닫아야 했다.",
+        "ids": [
+         "tp-ch-kdi-mart"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "스마트폰 가입자는 2009년 말 약 80만에서 2010년 말 약 722만이 됐다.",
+        "ids": [
+         "c00-kr-iphone"
+        ]
+       },
+       {
+        "layer": "source",
+        "text": "모바일쇼핑 확대 이유로 모든 연령의 스마트폰 이용, 화면 대형화, 2015년 간편결제 경쟁적 도입이 꼽혔다.",
+        "ids": [
+         "fl-shop-mobile-why"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "쿠팡은 2014년 로켓배송을 시작하며 해마다 수천억 원의 적자를 감수했다.",
+        "ids": [
+         "tp-ch-rocket"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "마켓컬리는 2015년 밤 11시까지 주문하면 아침 7시에 받는 샛별배송을 시작했다.",
+        "ids": [
+         "tp-ch-kurly"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "모바일쇼핑은 2015년 11월 처음 온라인쇼핑의 절반에 이르렀다.",
+        "ids": [
+         "fl-shop-mobile"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "의무휴업 첫날 전주에서는 전통시장 매출이 10~40% 늘었다는 시 조사가 있었다.",
+        "ids": [
+         "tp-ch-jeonju"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "가장 강하던 할인점의 두 강점 — 주말 한 번에 많이, 신선식품을 보고 고르기 — 가 동시에 공략당했다. 주말 영업은 규제로, 신선식품은 새벽배송으로.",
+        "ids": [
+         "tp-ch-kdi-mart",
+         "tp-ch-kurly"
+        ]
+       }
+      ],
+      "world": {
+       "what": {
+        "layer": "fact",
+        "text": "미국에서 아마존이 물류 투자·회원제·직매입으로 커졌다.",
+        "ids": [
+         "tp-ch-amazon"
+        ]
+       },
+       "route": {
+        "layer": "source",
+        "text": "국내 기업이 사업 모델을 따라 하고 해외 투자금으로 물류에 투자했다.",
+        "ids": [
+         "tp-ch-amazon",
+         "tp-ch-rocket"
+        ]
+       },
+       "response": {
+        "layer": "fact",
+        "text": "쿠팡은 '계획된 적자'로 물류망을 넓혔다.",
+        "ids": [
+         "tp-ch-rocket"
+        ]
+       },
+       "result": {
+        "layer": "inference",
+        "text": "한국에서는 땅이 좁고 아파트 밀집도가 높아 '다음날·새벽' 배송이 빨리 표준이 됐다고 본다(인구밀도와 배송 속도의 관계는 직접 확인하지 않음).",
+        "ids": [
+         "tp-ch-kurly",
+         "fl-city-apt"
+        ]
+       },
+       "mode": "adapted"
+      }
+     },
+     {
+      "id": "t6",
+      "years": "2020~2026",
+      "start": 2020,
+      "end": 2020,
+      "title": "온라인은 포화에 가깝고, 매장은 쪼개진다",
+      "why": {
+       "layer": "fact",
+       "text": "코로나19로 온라인 비중이 27.2%가 된 2020년부터 홈플러스 회생(2025)과 규제 완화 논의(2026)까지, '온라인 대 오프라인' 구도가 '어떤 오프라인이 남나'로 바뀌었다.",
+       "ids": [
+        "c20-online",
+        "tp-ch-homeplus",
+        "tp-ch-reg26"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "2020년 온라인쇼핑은 소매판매의 27.2%가 됐다.",
+        "ids": [
+         "c20-online"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "2025년 온라인쇼핑은 272조 원으로 최대였지만 증가율은 최저였고, 모바일이 77.6%였다.",
+        "ids": [
+         "tp-ch-online25"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "2025년 해외 직구는 8조 5천억 원을 넘었고 그중 중국이 5조 5천억 원 이상이었다.",
+        "ids": [
+         "tp-ch-cdirect25"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "홈플러스는 2025년 회생을 신청하고 점포를 대거 닫기로 했다.",
+        "ids": [
+         "tp-ch-homeplus"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "정부와 국회는 2026년 의무휴업 완화와 대형마트 새벽배송 허용을 논의하기 시작했다.",
+        "ids": [
+         "tp-ch-reg26"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "2026년 상반기 백화점 매출은 외국인 관광객 덕에 20.1% 늘었지만, 대형마트는 9분기 연속 감소였다.",
+        "ids": [
+         "tp-ch-2026h1"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "2025년 온라인 안에서도 종합몰은 줄고 전문몰은 늘었다.",
+        "ids": [
+         "tp-ch-specialty"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "'어디서 사나'의 답이 장소별로 갈라졌다: 매일의 반복 구매는 배송, 경험·관광은 대형 백화점, 급한 소량은 편의점. 가장 애매한 '주말 대량 장보기'가 줄어드는 자리다.",
+        "ids": [
+         "tp-ch-2026h1",
+         "tp-ch-specialty"
+        ]
+       }
+      ],
+      "world": {
+       "what": {
+        "layer": "fact",
+        "text": "중국 플랫폼(알리익스프레스·테무·쉬인)이 초저가 상품으로 해외 시장을 넓혔다.",
+        "ids": [
+         "tp-ch-cdirect"
+        ]
+       },
+       "route": {
+        "layer": "fact",
+        "text": "2023년부터 한국 법인·광고와 함께 직구 형태로 들어왔다.",
+        "ids": [
+         "tp-ch-cdirect"
+        ]
+       },
+       "response": {
+        "layer": "source",
+        "text": "2024년 품질·배송·개인정보 문제로 이용자가 정체됐다는 진단이 있다.",
+        "ids": [
+         "tp-ch-cstall"
+        ]
+       },
+       "result": {
+        "layer": "fact",
+        "text": "그래도 2025년 중국 직구는 5조 5천억 원을 넘었고 2026년 1~4월 결제액은 67.5% 늘었다.",
+        "ids": [
+         "tp-ch-cdirect25"
+        ]
+       },
+       "mode": "same"
+      },
+      "gap": "2026년 3분기 이후 업태별 자료는 아직 반영하지 않았다."
+     }
+    ],
+    "branches": {
+     "intro": "한 줄은 한 가지 구매 장소입니다. 새 장소가 생겨도 옛 장소가 사라졌는지, 역할을 나눠 남았는지를 표시했습니다.",
+     "lanes": [
+      {
+       "label": "재래시장·동네 가게",
+       "start": 1960,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "inference",
+        "text": "매출을 지키려는 정책(의무휴업)이 있었지만, 2026년 KDI 분석은 마트 규제를 풀어도 전통시장 매출이 일관되게 줄지 않았다고 본다 — 이미 마트와 다른 수요를 맡고 있다는 뜻으로 읽힌다.",
+        "ids": [
+         "tp-ch-kdi-weekday"
+        ]
+       }
+      },
+      {
+       "label": "백화점",
+       "start": 1969,
+       "end": null,
+       "state": "분화",
+       "note": {
+        "layer": "fact",
+        "text": "2026년 상반기 외국인 관광객 덕에 20.1% 성장 — 생필품 장소가 아니라 경험·관광 장소로 옮겨 갔다.",
+        "ids": [
+         "tp-ch-2026h1"
+        ]
+       }
+      },
+      {
+       "label": "편의점",
+       "start": 1989,
+       "end": null,
+       "state": "공존",
+       "note": {
+        "layer": "inference",
+        "text": "가까운 곳·소량·밤이라는 역할은 배송이 대신하기 어려워 남았다.",
+        "ids": [
+         "er-shop-cvs"
+        ]
+       }
+      },
+      {
+       "label": "대형마트",
+       "start": 1993,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "fact",
+        "text": "매출 2014년 정점 뒤 감소, 2024년 2분기부터 9분기 연속 감소, 2위 업체 회생.",
+        "ids": [
+         "tp-ch-kdi-mart",
+         "tp-ch-2026h1",
+         "tp-ch-homeplus"
+        ]
+       }
+      },
+      {
+       "label": "외국계 대형 할인점",
+       "start": 1996,
+       "end": 2006,
+       "state": "교체",
+       "note": {
+        "layer": "fact",
+        "text": "2006년 철수, 국내 업체가 매장 인수.",
+        "ids": [
+         "tp-ch-walmart"
+        ]
+       }
+      },
+      {
+       "label": "TV 홈쇼핑",
+       "start": 1995,
+       "end": null,
+       "state": "판단 보류",
+       "note": {
+        "layer": "hypothesis",
+        "text": "2014년 14조 원 이후 자료는 이 주제에 아직 연결하지 않아 현재 위치는 판단하지 않았다.",
+        "ids": [
+         "fl-shop-homeshop"
+        ]
+       }
+      },
+      {
+       "label": "온라인(종합몰·전문몰)",
+       "start": 2000,
+       "end": null,
+       "state": "분화",
+       "note": {
+        "layer": "fact",
+        "text": "2025년 종합몰 −4.6%, 전문몰 +8.5% — 한 곳에서 다 사는 것보다 분야별 전문 매장으로 갈라진다.",
+        "ids": [
+         "tp-ch-specialty"
+        ]
+       }
+      },
+      {
+       "label": "모바일·새벽배송",
+       "start": 2014,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "2025년 온라인의 77.6%가 모바일.",
+        "ids": [
+         "tp-ch-online25"
+        ]
+       }
+      },
+      {
+       "label": "해외 직구(중국 플랫폼)",
+       "start": 2023,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "2025년 중국 직구 5조 5천억 원 이상.",
+        "ids": [
+         "tp-ch-cdirect25"
+        ]
+       }
+      }
+     ],
+     "read": {
+      "layer": "inference",
+      "text": "교체된 것은 외국계 할인점 하나뿐이다. 나머지는 '역할을 나눠 남거나(편의점·시장), 다른 역할로 옮기거나(백화점), 줄어든(대형마트)' 경우다. 그래서 '오프라인이 사라진다'보다 '어떤 이유로 가는 매장만 남는다'가 더 맞는 요약이다.",
+      "ids": [
+       "tp-ch-2026h1",
+       "tp-ch-walmart",
+       "tp-ch-kdi-weekday"
+      ]
+     }
+    },
+    "reasons": [
+     {
+      "title": "왜 대형마트가 가장 먼저 밀렸나 — 편의점도 시장도 아닌",
+      "facts": [
+       {
+        "layer": "fact",
+        "text": "대형마트 매출 2014년 39.5조 → 2023년 28.3조.",
+        "ids": [
+         "tp-ch-kdi-mart"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "같은 시기 모바일쇼핑이 절반을 넘었고(2015) 새벽배송이 생겼다(2015).",
+        "ids": [
+         "fl-shop-mobile",
+         "tp-ch-kurly"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "2026년 상반기 편의점은 회복, 대형마트는 9분기 연속 감소.",
+        "ids": [
+         "tp-ch-2026h1"
+        ]
+       }
+      ],
+      "logic": {
+       "layer": "inference",
+       "text": "대형마트의 가치는 '차를 몰고 가서 한 번에 많이 싸게'였다. 배송이 이동을 대신하자, 이동 비용을 아끼려고 많이 사던 이유가 사라졌다. 반면 편의점의 가치(지금·여기·조금)와 백화점의 가치(경험·관광)는 배송으로 대신하기 어렵다.",
+       "ids": [
+        "tp-ch-kdi-mart",
+        "tp-ch-2026h1"
+       ]
+      },
+      "proposal": {
+       "layer": "inference",
+       "text": "대형마트가 먼저 밀린 것은 '오프라인이어서'가 아니라, 대형마트만의 장점이 정확히 배송이 대체하는 기능이었기 때문이라고 본다.",
+       "ids": [
+        "tp-ch-kdi-mart",
+        "tp-ch-kurly"
+       ]
+      },
+      "rivals": [
+       {
+        "layer": "source",
+        "text": "규제 설명 — 2012년 주말 의무휴업이 소비를 전통시장이 아니라 온라인으로 보냈다는 지적이 이어졌다.",
+        "ids": [
+         "tp-ch-kdi-mart",
+         "tp-ch-reg26"
+        ]
+       },
+       {
+        "layer": "source",
+        "text": "기업 고유 요인 — 홈플러스는 차입 인수 뒤 이자 부담이 회생의 원인으로 지목됐다. 이 경우 업태 전체의 쇠퇴로 일반화하기 어렵다.",
+        "ids": [
+         "tp-ch-homeplus"
+        ]
+       },
+       {
+        "layer": "inference",
+        "text": "가구 설명 — 1인 가구가 가장 흔한 가구가 되면서(2015) 대용량 구매 자체가 줄었다.",
+        "ids": [
+         "c10-1person"
+        ]
+       }
+      ],
+      "scope": {
+       "layer": "inference",
+       "text": "2014년 이후, 식품·생필품 장보기, 수도권의 맞벌이·1인 가구에서 가장 강하게 나타났을 것으로 본다. 지방·고령층의 비중은 확인하지 못했다.",
+       "ids": [
+        "tp-ch-kdi-weekday"
+       ]
+      },
+      "check": [
+       {
+        "layer": "fact",
+        "text": "확인 쪽: 의무휴업을 평일로 바꾼 대구에서 마트 매출이 늘고 온라인 결제가 2.9% 줄었다 — 접근성이 바뀌면 일부 소비가 돌아온다는 뜻이라 규제 설명도 일부 지지한다.",
+        "ids": [
+         "tp-ch-kdi-weekday"
+        ]
+       },
+       {
+        "layer": "hypothesis",
+        "text": "반박이 될 자료: 규제가 없는 창고형 회원제 매장의 매출 추이(같은 대용량 형식인데 성장했다면 '대용량 쇠퇴' 설명은 약해진다) — 아직 확보하지 못했다.",
+        "ids": []
+       }
+      ]
+     }
+    ],
+    "repeats": [
+     {
+      "type": "반복되는 긴장",
+      "title": "편리함(가까움·빠름)과 싸게 많이 사기 사이의 긴장",
+      "past": {
+       "layer": "inference",
+       "text": "1990년대: 밤에 조금은 편의점, 주말에 많이는 할인점 — 두 가치를 장소를 나눠 해결.",
+       "ids": [
+        "er-shop-cvs",
+        "fl-shop-emart"
+       ]
+      },
+      "now": {
+       "layer": "inference",
+       "text": "2020년대: 반복 구매는 새벽배송·멤버십, 급한 것은 편의점·배달 — 같은 긴장을 '배송 속도'로 다시 나눔.",
+       "ids": [
+        "tp-ch-specialty",
+        "tp-ch-online25"
+       ]
+      },
+      "alike": {
+       "layer": "inference",
+       "text": "동기(시간을 아끼면서 비용도 아끼기)는 같고, 수단(차→배송)이 바뀌었다.",
+       "ids": [
+        "sx-cars",
+        "tp-ch-rocket"
+       ]
+      },
+      "changed": {
+       "layer": "inference",
+       "text": "과거엔 이동 비용을 소비자가 냈고, 지금은 배송 비용을 기업(적자)·회원비·노동이 나눠 낸다. 그 비용이 보이지 않게 된 것이 새 불편(노동·포장 쓰레기)의 조건이다.",
+       "ids": [
+        "tp-ch-rocket",
+        "c20-delivery"
+       ]
+      },
+      "alternatives": [
+       {
+        "layer": "inference",
+        "text": "'싫증' 설명은 맞지 않는다 — 사람들이 편의점을 질려서 떠난 적은 없다. 가구 규모·차·스마트폰 같은 조건 변화가 더 잘 설명한다.",
+        "ids": [
+         "c10-1person",
+         "sx-cars"
+        ]
+       }
+      ],
+      "counter": [
+       {
+        "layer": "fact",
+        "text": "편의점은 장소가 바뀌지 않고 남았다 — 모든 장소가 배송으로 바뀐다는 설명은 성립하지 않는다.",
+        "ids": [
+         "tp-ch-2026h1"
+        ]
+       }
+      ],
+      "at": [
+       "t2",
+       "t6"
+      ]
+     }
+    ],
+    "links": [
+     {
+      "kind": "topic",
+      "target": "shop-pay",
+      "at": "1999·2015",
+      "why": "카드 소득공제(1999)와 간편결제(2015)가 '어디서 살 수 있나'를 넓혔다 — 결제 쪽 이야기는 따로 본다."
+     },
+     {
+      "kind": "topic",
+      "target": "shop-own",
+      "at": "2015~",
+      "why": "중고 거래 앱은 '새 물건을 어디서 사나'와 다른 질문(물건을 어떻게 갖나)이라 따로 추적한다."
+     },
+     {
+      "kind": "flow",
+      "target": "flow-time",
+      "at": "1982",
+      "why": "통금 해제가 밤 소비를 열었다."
+     },
+     {
+      "kind": "flow",
+      "target": "flow-family",
+      "at": "2015",
+      "why": "1인 가구가 가장 흔한 가구가 되며 대용량 구매의 전제가 흔들렸다."
+     }
+    ],
+    "futures": {
+     "split": {
+      "layer": "inference",
+      "text": "갈라지는 이유는 두 가지가 아직 정해지지 않았기 때문이다: (1) 온라인 증가율 둔화가 '포화'인지 '경기 탓 일시 둔화'인지, (2) 규제 완화로 대형마트가 배송 경쟁에 들어오는지.",
+      "ids": [
+       "tp-ch-saturate",
+       "tp-ch-reg26"
+      ]
+     },
+     "items": [
+      {
+       "kind": "계속",
+       "name": "온라인 비중은 오르되 속도는 느려진다",
+       "change": {
+        "layer": "inference",
+        "text": "온라인 거래액은 계속 늘지만 연 5% 안팎의 낮은 증가율이 이어진다.",
+        "ids": [
+         "tp-ch-online25"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "2025년 증가율 4.9%는 통계 작성 이래 최저.",
+         "ids": [
+          "tp-ch-online25"
+         ]
+        },
+        {
+         "layer": "source",
+         "text": "전문가들은 포화 단계로 해석.",
+         "ids": [
+          "tp-ch-saturate"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "옮겨 올 수 있는 구매가 대부분 옮겨 왔다면, 남은 것은 오프라인이 유리한 구매(신선·즉시·경험)다.",
+        "ids": [
+         "tp-ch-specialty"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "경기가 회복돼도 증가율이 크게 오르지 않아야 한다.",
+        "ids": [
+         "tp-ch-online25"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "거래액보다 수익성 경쟁 — 멤버십·광고·물류 효율, 전문몰.",
+        "ids": [
+         "tp-ch-specialty"
+        ]
+       },
+       "watch": [
+        "월별 온라인쇼핑 증가율(전년 동월 대비)",
+        "전문몰과 종합몰 증가율 차이"
+       ],
+       "against": [
+        "경기 회복기에 온라인 증가율이 다시 두 자릿수로 오르면 '포화'가 아니라 '경기 둔화'였다는 뜻"
+       ]
+      },
+      {
+       "kind": "경로 변경",
+       "name": "규제가 풀리면 대형마트가 배송 경쟁자로 돌아온다",
+       "change": {
+        "layer": "inference",
+        "text": "의무휴업 완화·새벽배송 허용 시 대형마트 점포가 동네 물류센터 역할을 하며 일부 온라인 수요를 되찾는다.",
+        "ids": [
+         "tp-ch-reg26",
+         "tp-ch-kdi-weekday"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "평일 전환 지역에서 마트 매출 증가·온라인 결제 2.9% 감소.",
+         "ids": [
+          "tp-ch-kdi-weekday"
+         ]
+        },
+        {
+         "layer": "fact",
+         "text": "2026년 국회 논의 시작.",
+         "ids": [
+          "tp-ch-reg26"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "점포가 이미 도심에 있으므로, 영업 제한만 풀리면 새 물류센터 없이 배송 거점을 가질 수 있다.",
+        "ids": [
+         "tp-ch-martcount"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "법 개정, 그리고 전통시장 영향 평가에서 큰 피해가 없다는 결과가 유지돼야 한다.",
+        "ids": [
+         "tp-ch-kdi-weekday"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "점포 기반 당일·새벽배송, 매장 안 소형 물류 설비.",
+        "ids": [
+         "tp-ch-reg26"
+        ]
+       },
+       "watch": [
+        "유통산업발전법 개정 여부",
+        "규제 완화 지역의 온라인 결제 비중"
+       ],
+       "against": [
+        "완화 뒤에도 마트 매출이 계속 줄면 규제보다 형식 자체의 쇠퇴가 컸다는 뜻"
+       ]
+      },
+      {
+       "kind": "분화",
+       "name": "매일의 장보기는 배송으로, 매장은 '갈 이유'가 있는 곳만",
+       "change": {
+        "layer": "inference",
+        "text": "편의점(즉시·소량), 대형 백화점·복합몰(경험·관광), 전문매장은 남고 중간형(주말 대량)은 줄어든다.",
+        "ids": [
+         "tp-ch-2026h1"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "2026년 상반기 백화점 +20.1%, 대형마트 9분기 연속 감소.",
+         "ids": [
+          "tp-ch-2026h1"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "배송이 대체하지 못하는 가치(지금 당장, 직접 체험, 외국인의 관광 쇼핑)를 가진 장소만 방문 이유가 남는다.",
+        "ids": [
+         "tp-ch-2026h1"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "외국인 관광 수요와 배송 비용 구조가 유지돼야 한다.",
+        "ids": [
+         "tp-ch-2026h1"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "체험형 매장, 관광객 대상 면세·환급 서비스, 소형 근린 매장.",
+        "ids": [
+         "tp-ch-2026h1"
+        ]
+       },
+       "watch": [
+        "업태별 매출(산업부 월간)",
+        "외국인 카드 결제액"
+       ],
+       "against": [
+        "관광객 감소기에도 백화점 매출이 유지되면 '관광' 설명이 약해진다"
+       ]
+      },
+      {
+       "kind": "경로 변경",
+       "name": "중국 플랫폼이 '싼 물건'의 장소가 된다 — 또는 다시 정체한다",
+       "change": {
+        "layer": "hypothesis",
+        "text": "저가 생활용품·의류의 구매 장소가 국내 온라인·다이소 등에서 중국 직구로 일부 옮긴다.",
+        "ids": [
+         "tp-ch-cdirect25"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "2025년 중국 직구 5조 5천억 원, 2026년 1~4월 결제 67.5% 증가.",
+         "ids": [
+          "tp-ch-cdirect25"
+         ]
+        },
+        {
+         "layer": "source",
+         "text": "2024년 품질·개인정보 문제로 정체했다는 진단.",
+         "ids": [
+          "tp-ch-cstall"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "가격 차이가 크면 배송 기간·품질 위험을 감수하는 구매자가 늘지만, 위험 사건이 터지면 다시 빠진다 — 두 신호가 모두 관찰됐다.",
+        "ids": [
+         "tp-ch-cdirect25",
+         "tp-ch-cstall"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "관세·통관 규제, 개인정보·안전 기준이 지금 수준이어야 한다.",
+        "ids": [
+         "tp-ch-cstall"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "국내 업체의 초저가 PB, 통관·안전 검사 서비스.",
+        "ids": [
+         "tp-ch-cdirect"
+        ]
+       },
+       "watch": [
+        "해외 직구 중 중국 비중",
+        "알리·테무 월 사용자와 이탈률"
+       ],
+       "against": [
+        "안전·통관 규제 강화 뒤 결제액이 줄면 정체 쪽"
+       ]
+      }
+     ]
+    },
+    "conclusion": {
+     "key": {
+      "layer": "inference",
+      "text": "구매 장소의 변화는 '시간과 운반'이라는 두 제약을 누가 대신 떠안느냐의 역사로 읽힌다: 처음엔 소비자(걸어서·들고), 다음엔 소비자의 차(할인점), 지금은 기업의 물류(배송). 대형마트는 소비자가 운반을 떠안던 시대의 가장 완성된 형식이라 가장 먼저 흔들렸다.",
+      "ids": [
+       "tp-ch-kdi-mart",
+       "tp-ch-rocket"
+      ]
+     },
+     "favored": {
+      "layer": "inference",
+      "text": "'오프라인 몰락'보다 '역할 분화' 해석을 더 지지한다. 근거: 편의점은 남았고, 백화점은 다른 이유(관광)로 성장했으며, 규제를 풀었을 때 소비 일부가 오프라인으로 돌아왔다. 다만 대형마트 쇠퇴에서 규제 몫과 형식 쇠퇴 몫을 나눌 자료는 아직 없다.",
+      "ids": [
+       "tp-ch-2026h1",
+       "tp-ch-kdi-weekday"
+      ]
+     },
+     "undecided": {
+      "layer": "inference",
+      "text": "온라인 증가율 둔화가 포화인지 경기 탓인지, 중국 플랫폼이 계속 클지는 2025~2026년 자료만으로 판단할 수 없다.",
+      "ids": [
+       "tp-ch-saturate",
+       "tp-ch-cdirect25"
+      ]
+     },
+     "next": {
+      "layer": "inference",
+      "text": "의무휴업·새벽배송 규제 변경이 실제로 일어나는지가 가장 큰 갈림길이다.",
+      "ids": [
+       "tp-ch-reg26"
+      ]
+     },
+     "change": {
+      "layer": "inference",
+      "text": "규제 완화 뒤에도 대형마트 매출이 계속 줄면 '형식 쇠퇴' 쪽으로, 편의점·백화점까지 함께 줄면 '역할 분화'가 아니라 '오프라인 전반 쇠퇴' 쪽으로 판단을 고친다.",
+      "ids": [
+       "tp-ch-2026h1"
+      ]
+     }
+    }
+   },
+   {
+    "id": "shop-pay",
+    "domain": "shop",
+    "label": "무엇으로 값을 치르나 — 결제·신용·구매 자금",
+    "tracks": "물건값을 치르는 수단과 '나중에 내는' 신용(외상 → 백화점 카드 → 은행 신용카드 → 체크카드 → 간편결제 → 후불결제). 사는 장소는 '어디서 사나' 주제에서 따로 본다.",
+    "question": "현금을 내던 나라가 왜 10년 만에 '현금 쓰는 사람이 드문' 나라가 됐고, 사라진 줄 알았던 외상은 왜 다시 돌아왔나?",
+    "scene": {
+     "layer": "fact",
+     "text": "2013년 성인의 결제 열 번 중 네 번(41.3%)은 현금이었다. 2024년에는 15.9%로, 휴대폰 속 모바일카드(12.9%)와 거의 같아졌다.",
+     "ids": [
+      "tp-pay-cash24"
+     ]
+    },
+    "span": [
+     1969,
+     2026
+    ],
+    "scope": [
+     {
+      "layer": "inference",
+      "text": "1960~70년대 동네 가게 외상의 규모는 통계가 없어 서술로만 다룬다. 지급수단별 이용 비중은 한국은행 조사가 시작된 2013년부터 숫자로 비교한다.",
+      "ids": [
+       "tp-pay-cash24"
+      ]
+     }
+    ],
+    "turns": [
+     {
+      "id": "p1",
+      "years": "1969~1970년대",
+      "start": 1969,
+      "end": 1969,
+      "title": "그 가게에서만 쓰는 외상 — 백화점 회원카드",
+      "why": {
+       "layer": "fact",
+       "text": "국내 신용카드의 출발이 1969년 백화점 자사 카드라, '가게와의 관계'에서 신용이 시작됐음을 보여 준다.",
+       "ids": [
+        "er-shop-card69"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "현금을 내거나, 단골 가게에서 장부에 적어 두는 외상이 '나중에 내기'의 거의 유일한 방법이었다. 외상은 가게 주인이 손님을 아는 만큼만 가능했다.",
+        "ids": [
+         "fl-shop-before"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "1969년 신세계백화점이 그 백화점에서만 쓰는 회원제 카드를 냈고, 1970년대 미도파·롯데도 뒤따랐다.",
+        "ids": [
+         "er-shop-card69"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "inference",
+        "text": "백화점은 장부 외상을 플라스틱 카드로 바꿔, 단골을 붙잡는 수단으로 썼다.",
+        "ids": [
+         "er-shop-card69"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "신용이 '한 가게 안'의 회원제로 처음 제도화됐다.",
+        "ids": [
+         "er-shop-card69"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "한 가게에서만 쓰는 신용은 가게를 옮기면 소용없었다 — 어디서나 쓰는 카드가 다음 조건이 된다.",
+        "ids": [
+         "er-shop-card69",
+         "er-shop-card78"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p2",
+      "years": "1978~1990년대",
+      "start": 1978,
+      "end": 1978,
+      "title": "어디서나 쓰는 은행 카드",
+      "why": {
+       "layer": "fact",
+       "text": "1978년 처음으로 가게를 가리지 않는 범용 카드가 나왔다.",
+       "ids": [
+        "er-shop-card78"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "카드는 백화점 회원제뿐이었다.",
+        "ids": [
+         "er-shop-card69"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "1978년 외환은행이 비자와 제휴해 범용 신용카드를 발급했고, 1982년 5개 은행이 은행신용카드협회(현 BC카드)를 만들었다.",
+        "ids": [
+         "er-shop-card78"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "inference",
+        "text": "은행들이 가맹점을 공동으로 모아 '한 장으로 여러 가게'를 가능하게 했다.",
+        "ids": [
+         "er-shop-card78"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "inference",
+        "text": "신용의 주체가 가게 주인에서 은행으로 옮겨 갔다 — 손님을 아는 사람이 아니라 소득을 확인한 기관이 외상을 대신 서 준다.",
+        "ids": [
+         "er-shop-card78"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "카드는 아직 일부의 수단이었다. 이것을 모두의 수단으로 만든 것은 다음 단계의 세금 정책이다.",
+        "ids": [
+         "er-shop-cardpolicy"
+        ]
+       }
+      ],
+      "world": {
+       "what": {
+        "layer": "fact",
+        "text": "미국 카드 네트워크(비자)가 국제 결제망을 넓혔다.",
+        "ids": [
+         "er-shop-card78"
+        ]
+       },
+       "route": {
+        "layer": "fact",
+        "text": "국내 은행이 비자와 제휴하는 방식으로 들어왔다.",
+        "ids": [
+         "er-shop-card78"
+        ]
+       },
+       "response": {
+        "layer": "fact",
+        "text": "은행들이 공동 협회(BC)를 만들어 국내 가맹점망을 따로 키웠다.",
+        "ids": [
+         "er-shop-card78"
+        ]
+       },
+       "result": {
+        "layer": "inference",
+        "text": "국제 브랜드를 달되 국내 가맹점망은 은행 연합이 쥔 형태로 바뀌어 정착했다.",
+        "ids": [
+         "er-shop-card78"
+        ]
+       },
+       "mode": "adapted"
+      }
+     },
+     {
+      "id": "p3",
+      "years": "1999~2003",
+      "start": 1999,
+      "end": 1999,
+      "title": "카드를 쓰면 세금을 깎아 주다 — 그리고 카드대란",
+      "why": {
+       "layer": "fact",
+       "text": "1999년 카드 소득공제로 정부가 결제 수단 선택에 직접 개입했고, 4년 뒤 카드 빚 위기로 이어졌다.",
+       "ids": [
+        "er-shop-cardpolicy",
+        "c00-card"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "외환위기 직후 가계 소득이 크게 줄어 있었다.",
+        "ids": [
+         "an-c-1998inc"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "1999년 신용카드 소득공제, 2000년 카드 영수증 복권제가 시행됐다.",
+        "ids": [
+         "er-shop-cardpolicy"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "현금서비스·카드론은 1998년 약 10조 원에서 2002년 하반기 약 60조 원으로 불어났다.",
+        "ids": [
+         "c00-card"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "2002년 초 카드 광고의 '여러분, 부자 되세요'가 덕담처럼 퍼졌다.",
+        "ids": [
+         "c00-hyp-ad"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "금융채무 불이행자는 2003년 말 372만 명이 됐고, 2003년 민간소비는 마이너스였다.",
+        "ids": [
+         "c00-card",
+         "an-c-2003"
+        ]
+       },
+       {
+        "layer": "source",
+        "text": "원인으로 무분별한 발급과 현금서비스 한도 폐지, 그리고 내수를 살리려 카드 사용을 장려한 정책이 함께 꼽힌다.",
+        "ids": [
+         "c00-card-why"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "정책 하나로 결제 습관이 바뀐다는 것, 그리고 '신용'이 지나치면 위기가 된다는 것을 동시에 남겼다. 다음 정책은 같은 도구(소득공제)를 반대 방향으로 쓴다.",
+        "ids": [
+         "er-shop-cardpolicy",
+         "tp-pay-check10"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p4",
+      "years": "2010~2016",
+      "start": 2010,
+      "end": 2010,
+      "title": "통장에 있는 만큼만 — 체크카드가 신용카드를 넘다",
+      "why": {
+       "layer": "fact",
+       "text": "2010년 체크카드 공제율이 신용카드보다 높아진 해에 이용액이 74% 늘었고, 2013년 발급 장수가 신용카드를 넘었다.",
+       "ids": [
+        "tp-pay-check10",
+        "tp-pay-check13"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "2005년 체크카드 이용액은 7조 원대였다.",
+        "ids": [
+         "tp-pay-check10"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "공제율은 2010년 신용 20%·체크 25%로 처음 갈렸고, 2013년부터 신용 15%·체크 30%가 됐다.",
+        "ids": [
+         "tp-pay-check10",
+         "tp-pay-check13"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "2013년 말 가계신용은 처음 1,000조 원을 넘었다.",
+        "ids": [
+         "tp-pay-check13"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "업계는 정부의 체크카드 활성화 정책과 카드사 부가서비스 축소를 원인으로 꼽았다.",
+        "ids": [
+         "tp-pay-check13"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "2013년 체크카드 이용액은 92조 원대로 2005년의 12배 가까이 됐고 발급 장수가 신용카드를 넘었다.",
+        "ids": [
+         "tp-pay-check10",
+         "tp-pay-check13"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "현금 대신 카드를 쓰는 습관은 완성됐다. 남은 건 '카드를 꺼내는 수고'였고, 다음 단계는 그 수고를 없앤다.",
+        "ids": [
+         "tp-pay-check13",
+         "tp-pay-easy"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p5",
+      "years": "2015~2025",
+      "start": 2015,
+      "end": 2015,
+      "title": "카드도 꺼내지 않는다 — 간편결제",
+      "why": {
+       "layer": "fact",
+       "text": "2015년 3월 공인인증서 의무 사용 폐지와 같은 해 '카드가 현금 추월'이 겹쳤다.",
+       "ids": [
+        "tp-pay-easy",
+        "tp-pay-2015"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "2014년 조사까지는 현금이 가장 많이 쓰인 지급수단이었다.",
+        "ids": [
+         "tp-pay-2015"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "2015년 3월 공인인증서 의무 사용이 폐지됐다.",
+        "ids": [
+         "tp-pay-easy"
+        ]
+       },
+       {
+        "layer": "source",
+        "text": "같은 해 앱카드·네이버페이·페이코·SSG페이가 경쟁적으로 도입됐다.",
+        "ids": [
+         "fl-shop-mobile-why"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "간편결제 하루 이용액은 2025년 1조 1,053억 원으로 늘었고, 절반 이상이 네이버·카카오·토스 같은 플랫폼 몫이었다.",
+        "ids": [
+         "tp-pay-easy"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "현금 비중은 2024년 15.9%, 실물카드를 내밀지 않는 결제가 2023년 처음 절반을 넘었다.",
+        "ids": [
+         "tp-pay-cash24",
+         "tp-pay-nocard"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "2023년 한국의 현금 사용도는 10%로 일본(41%)·독일(36%)보다 훨씬 낮았다.",
+        "ids": [
+         "tp-pay-intl"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "결제가 쇼핑 앱과 한 몸이 되면서, 결제 회사가 '누가 언제 무엇을 사는지'를 알게 됐다. 그 정보로 '나중에 내기'를 다시 팔 수 있는 조건이 생겼다.",
+        "ids": [
+         "tp-pay-easy",
+         "tp-pay-bnpl21"
+        ]
+       }
+      ],
+      "world": {
+       "what": {
+        "layer": "inference",
+        "text": "스마트폰 지갑(삼성페이·애플페이)과 플랫폼 결제가 세계적으로 퍼졌다.",
+        "ids": [
+         "tp-pay-easy"
+        ]
+       },
+       "route": {
+        "layer": "fact",
+        "text": "국내 규제(공인인증서 의무)가 풀리자 국내 플랫폼·제조사가 먼저 깔았다.",
+        "ids": [
+         "tp-pay-easy"
+        ]
+       },
+       "response": {
+        "layer": "fact",
+        "text": "2025년 상반기 국내 간편결제의 55.1%가 국내 플랫폼, 23.9%가 휴대폰 제조사 몫이었다.",
+        "ids": [
+         "tp-pay-easy"
+        ]
+       },
+       "result": {
+        "layer": "inference",
+        "text": "해외 기술이 들어왔다기보다, 규제가 풀린 순간 이미 카드 습관이 완성된 시장이라 빠르게 퍼졌다고 본다.",
+        "ids": [
+         "tp-pay-cash24",
+         "tp-pay-easy"
+        ]
+       },
+       "mode": "adapted"
+      }
+     },
+     {
+      "id": "p6",
+      "years": "2021~2026",
+      "start": 2021,
+      "end": 2021,
+      "title": "다시 돌아온 외상 — 후불결제, 그리고 남겨진 현금",
+      "why": {
+       "layer": "fact",
+       "text": "2021년 빅테크가 '먼저 사고 나중에 내는' 결제를 시작해, 1969년 회원제 카드와 닮은 구조가 다시 나타났다.",
+       "ids": [
+        "tp-pay-bnpl21",
+        "tp-pay-bnpl-early"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "2010년대 정책은 신용카드보다 체크카드(통장에 있는 만큼)를 밀었다.",
+        "ids": [
+         "tp-pay-check13"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "네이버·쿠팡·카카오가 2021년 후불결제 시범 서비스를 냈다.",
+        "ids": [
+         "tp-pay-bnpl21"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "source",
+        "text": "신용등급과 무관하게 쓸 수 있어 '가장 초기 신용카드의 구조'라는 평가가 나왔다.",
+        "ids": [
+         "tp-pay-bnpl-early"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "2022년 3월 네이버페이 후불결제 연체율은 1.26%로 신용카드의 두 배를 넘었고, 다중채무 우려가 제기됐다.",
+        "ids": [
+         "tp-pay-bnpl-late"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "60대 이상은 여전히 현금 비중이 높고, '현금 없는 버스·가게'에서 고령층의 불편이 보도됐다.",
+        "ids": [
+         "tp-pay-cash24",
+         "tp-pay-gap"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "결제의 미래는 '더 편한 쪽'과 '누가 빠지느냐'가 함께 걸린 문제가 됐다.",
+        "ids": [
+         "tp-pay-gap",
+         "tp-pay-bnpl-late"
+        ]
+       }
+      ],
+      "world": {
+       "what": {
+        "layer": "fact",
+        "text": "영국·미국에서 후불결제가 빠르게 커져 감독 당국이 조사에 나섰다.",
+        "ids": [
+         "tp-pay-bnpl-late"
+        ]
+       },
+       "route": {
+        "layer": "fact",
+        "text": "국내에서는 전문 업체가 아니라 빅테크 플랫폼이 시범 서비스로 들여왔다.",
+        "ids": [
+         "tp-pay-bnpl21"
+        ]
+       },
+       "response": {
+        "layer": "fact",
+        "text": "카드사들도 후불결제에 진출했다.",
+        "ids": [
+         "tp-pay-bnpl-late"
+        ]
+       },
+       "result": {
+        "layer": "inference",
+        "text": "해외보다 늦게, 그리고 쇼핑 플랫폼 안의 소액 기능으로 변형돼 들어왔다.",
+        "ids": [
+         "tp-pay-bnpl21"
+        ]
+       },
+       "mode": "late"
+      },
+      "gap": "2023~2026년 국내 후불결제 이용 규모·연체율의 공식 연속 통계는 아직 연결하지 않았다."
+     }
+    ],
+    "branches": {
+     "intro": "한 줄은 한 가지 지급 수단입니다.",
+     "lanes": [
+      {
+       "label": "현금",
+       "start": 1960,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "fact",
+        "text": "2013년 41.3% → 2024년 15.9%. 60대 이상은 여전히 많이 쓴다.",
+        "ids": [
+         "tp-pay-cash24"
+        ]
+       }
+      },
+      {
+       "label": "가게 외상·회원카드",
+       "start": 1960,
+       "end": 1990,
+       "state": "재등장",
+       "note": {
+        "layer": "inference",
+        "text": "사라진 듯했다가 플랫폼 후불결제로 다시 나타났다(아래 '되풀이되는 것').",
+        "ids": [
+         "tp-pay-bnpl-early"
+        ]
+       }
+      },
+      {
+       "label": "신용카드",
+       "start": 1978,
+       "end": null,
+       "state": "공존",
+       "note": {
+        "layer": "fact",
+        "text": "2024년에도 건수 기준 46.2%로 가장 많다.",
+        "ids": [
+         "tp-pay-cash24"
+        ]
+       }
+      },
+      {
+       "label": "체크카드",
+       "start": 1999,
+       "end": null,
+       "state": "공존",
+       "note": {
+        "layer": "fact",
+        "text": "20대가 많이 쓴다(2024).",
+        "ids": [
+         "tp-pay-cash24"
+        ]
+       }
+      },
+      {
+       "label": "간편결제(○○페이)",
+       "start": 2015,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "2025년 하루 1조 1,053억 원.",
+        "ids": [
+         "tp-pay-easy"
+        ]
+       }
+      },
+      {
+       "label": "후불결제",
+       "start": 2021,
+       "end": null,
+       "state": "판단 보류",
+       "note": {
+        "layer": "hypothesis",
+        "text": "공식 연속 통계가 아직 연결되지 않아 크기는 판단하지 않았다.",
+        "ids": [
+         "tp-pay-bnpl21"
+        ]
+       }
+      }
+     ],
+     "read": {
+      "layer": "inference",
+      "text": "결제 수단은 '교체'보다 '겹침'이다: 간편결제도 대부분 안에 신용·체크카드를 담고 있다. 실제로 줄어든 것은 현금 하나이고, 그것도 나이에 따라 속도가 크게 다르다.",
+      "ids": [
+       "tp-pay-cash24",
+       "tp-pay-easy"
+      ]
+     }
+    },
+    "reasons": [
+     {
+      "title": "왜 한국은 현금이 유난히 빨리 사라졌나",
+      "facts": [
+       {
+        "layer": "fact",
+        "text": "2023년 현금 사용도 한국 10%, 일본 41%, 독일 36%.",
+        "ids": [
+         "tp-pay-intl"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "1999년 카드 소득공제, 2010·2013년 체크카드 공제율 상향.",
+        "ids": [
+         "er-shop-cardpolicy",
+         "tp-pay-check13"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "2015년 공인인증서 의무 폐지 뒤 간편결제 급증.",
+        "ids": [
+         "tp-pay-easy"
+        ]
+       }
+      ],
+      "logic": {
+       "layer": "inference",
+       "text": "결제 수단을 바꾸는 데 드는 '습관 비용'을 세금 환급이 20년 넘게 대신 내 줬다. 카드 습관이 이미 완성된 뒤라 스마트폰 결제는 새 습관이 아니라 '카드를 꺼내지 않는 것' 정도의 작은 변화였다.",
+       "ids": [
+        "er-shop-cardpolicy",
+        "tp-pay-check10",
+        "tp-pay-easy"
+       ]
+      },
+      "proposal": {
+       "layer": "inference",
+       "text": "한국의 빠른 현금 감소는 기술보다 '정책이 먼저 만든 카드 습관 위에 기술이 얹힌 것'으로 본다.",
+       "ids": [
+        "er-shop-cardpolicy",
+        "tp-pay-intl"
+       ]
+      },
+      "rivals": [
+       {
+        "layer": "inference",
+        "text": "기술 설명 — 스마트폰 보급과 빠른 통신망이 원인이라는 설명. 다만 일본도 스마트폰은 흔한데 현금이 41%라, 기술만으로는 차이가 설명되지 않는다.",
+        "ids": [
+         "tp-pay-intl"
+        ]
+       },
+       {
+        "layer": "inference",
+        "text": "안전·편의 설명 — 사람들이 카드를 더 편하고 안전하다고 느낀다는 설명(만족도 신용 75.5 vs 현금 64.4). 이것은 결과일 수도 원인일 수도 있다.",
+        "ids": [
+         "tp-pay-satis"
+        ]
+       }
+      ],
+      "scope": {
+       "layer": "inference",
+       "text": "1999년 이후, 주로 근로소득이 있는 20~50대에 해당한다. 은퇴한 60대 이상은 이 경로 밖에 있었다고 본다.",
+       "ids": [
+        "tp-pay-cash24"
+       ]
+      },
+      "check": [
+       {
+        "layer": "fact",
+        "text": "확인 쪽: 공제율이 처음 갈린 2010년 체크카드 이용액이 한 해 74% 늘었다 — 정책 효과가 컸다는 직접 신호.",
+        "ids": [
+         "tp-pay-check10"
+        ]
+       },
+       {
+        "layer": "hypothesis",
+        "text": "반박이 될 자료: 소득공제가 없는 나라 중 한국만큼 현금이 빨리 줄어든 나라가 있다면 정책 설명은 약해진다 — 국가 비교 연구는 아직 확보하지 못했다.",
+        "ids": []
+       }
+      ]
+     }
+    ],
+    "repeats": [
+     {
+      "type": "재등장",
+      "title": "외상이 돌아왔다 — 가게 장부 → 회원카드 → 신용카드 → 후불결제",
+      "past": {
+       "layer": "inference",
+       "text": "1960~70년대: 단골 가게 주인이 손님을 알아서 외상을 줬고, 백화점은 단골을 묶으려고 회원카드를 냈다.",
+       "ids": [
+        "er-shop-card69"
+       ]
+      },
+      "now": {
+       "layer": "fact",
+       "text": "2021년~: 쇼핑 플랫폼이 이용 기록을 근거로 '먼저 사고 나중에 내기'를 준다. 신용등급과 무관하게 쓸 수 있다.",
+       "ids": [
+        "tp-pay-bnpl21",
+        "tp-pay-bnpl-early"
+       ]
+      },
+      "alike": {
+       "layer": "source",
+       "text": "구조가 닮았다는 평가가 업계에서 직접 나왔다('가장 초기 신용카드의 구조').",
+       "ids": [
+        "tp-pay-bnpl-early"
+       ]
+      },
+      "changed": {
+       "layer": "inference",
+       "text": "손님을 '아는' 근거가 사람의 기억에서 플랫폼의 구매 데이터로 바뀌었다. 과거 외상의 불편(한 가게에서만)은 플랫폼 안에서만이라는 형태로 그대로 남았다.",
+       "ids": [
+        "tp-pay-bnpl21"
+       ]
+      },
+      "alternatives": [
+       {
+        "layer": "inference",
+        "text": "유행의 반복이 아니라 사업 전략 — 플랫폼이 고객을 붙잡는(이탈 방지) 수단으로 되살린 것이라는 설명이 더 직접적이다.",
+        "ids": [
+         "tp-pay-bnpl21"
+        ]
+       }
+      ],
+      "counter": [
+       {
+        "layer": "fact",
+        "text": "2010년대에는 정반대로 '통장에 있는 만큼만' 쓰는 체크카드가 컸다 — 외상 방향만 반복된 것은 아니다.",
+        "ids": [
+         "tp-pay-check13"
+        ]
+       }
+      ],
+      "at": [
+       "p1",
+       "p6"
+      ]
+     }
+    ],
+    "links": [
+     {
+      "kind": "topic",
+      "target": "shop-channel",
+      "at": "2015",
+      "why": "간편결제가 모바일쇼핑을 키웠다 — 결제가 쉬워지자 '어디서 사나'의 제약이 줄었다."
+     },
+     {
+      "kind": "flow",
+      "target": "flow-economy",
+      "at": "2003",
+      "why": "카드대란은 경제 위기 흐름에서 원인과 결과를 따로 본다."
+     }
+    ],
+    "futures": {
+     "split": {
+      "layer": "inference",
+      "text": "두 힘이 반대로 당긴다: 플랫폼은 결제와 신용을 묶어 더 편하게 만들려 하고, 연체·소외(고령층) 문제는 규제와 현금 보호를 부른다.",
+      "ids": [
+       "tp-pay-bnpl-late",
+       "tp-pay-gap"
+      ]
+     },
+     "items": [
+      {
+       "kind": "계속",
+       "name": "현금은 더 줄고, 결제는 플랫폼 앱 안으로",
+       "change": {
+        "layer": "inference",
+        "text": "간편결제 비중이 계속 늘고 현금은 10%대 아래로 내려간다.",
+        "ids": [
+         "tp-pay-cash24",
+         "tp-pay-easy"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "간편결제 2025년 14.6% 증가.",
+         "ids": [
+          "tp-pay-easy"
+         ]
+        },
+        {
+         "layer": "fact",
+         "text": "현금 비중 2021년 21.6% → 2024년 15.9%.",
+         "ids": [
+          "tp-pay-cash24"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "지금 현금을 쓰는 핵심 집단(60대 이상)이 스마트폰 결제에 익숙한 세대로 바뀌면서 줄어든다.",
+        "ids": [
+         "tp-pay-cash24"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "현금 수용을 강제하는 규제가 없어야 한다.",
+        "ids": [
+         "tp-pay-gap"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "플랫폼 지갑, 매장 무인 결제 장비, 결제 데이터 기반 서비스.",
+        "ids": [
+         "tp-pay-easy"
+        ]
+       },
+       "watch": [
+        "한국은행 지급수단 조사의 현금 비중(연령별)",
+        "간편결제 일평균 이용액"
+       ],
+       "against": [
+        "60대 이상의 현금 비중이 줄지 않거나, 현금 수용 의무 논의가 법제화되면 감소 속도가 늦어진다"
+       ]
+      },
+      {
+       "kind": "결합",
+       "name": "결제와 '나중에 내기'가 한 버튼으로",
+       "change": {
+        "layer": "hypothesis",
+        "text": "쇼핑 앱 결제 화면에서 후불·할부가 기본 선택지가 되고, 신용카드가 없는 청년층이 주 이용자가 된다.",
+        "ids": [
+         "tp-pay-bnpl21"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "2021년 빅테크 후불결제 시작.",
+         "ids": [
+          "tp-pay-bnpl21"
+         ]
+        },
+        {
+         "layer": "source",
+         "text": "빅테크의 목적은 고객 확보와 이탈 방지라는 설명.",
+         "ids": [
+          "tp-pay-bnpl21"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "결제 데이터를 가진 회사가 신용을 팔면 고객이 다른 앱으로 떠나기 어렵다 — 회원제 카드와 같은 원리다.",
+        "ids": [
+         "tp-pay-bnpl-early"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "연체율이 관리되고 규제가 허용 범위를 넓혀야 한다.",
+        "ids": [
+         "tp-pay-bnpl-late"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "대안 신용평가(구매 기록 기반), 소액 분할결제.",
+        "ids": [
+         "tp-pay-bnpl-late"
+        ]
+       },
+       "watch": [
+        "후불결제 연체율 공시",
+        "후불결제 한도·이용자 수"
+       ],
+       "against": [
+        "연체율이 오르며 한도가 줄면 '카드대란' 경로로 되돌아갈 위험이 커진다"
+       ]
+      },
+      {
+       "kind": "반작용",
+       "name": "현금을 지키는 쪽 — 고령층·재난 대비",
+       "change": {
+        "layer": "hypothesis",
+        "text": "현금 결제 거부를 제한하거나, 무인 매장에 현금 선택지를 두라는 요구가 커진다.",
+        "ids": [
+         "tp-pay-gap"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "60대 이상 현금 비중이 높고 '현금 없는 버스·가게' 불편이 보도됐다.",
+         "ids": [
+          "tp-pay-cash24",
+          "tp-pay-gap"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "현금이 줄수록 현금만 가진 사람의 불편은 커지므로, 소수의 문제가 정치·정책 문제로 바뀌는 시점이 온다.",
+        "ids": [
+         "tp-pay-gap"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "고령 인구 증가와 디지털 격차 문제 제기가 이어져야 한다.",
+        "ids": [
+         "tp-pay-gap"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "고령층용 쉬운 결제, 현금·카드 겸용 무인기.",
+        "ids": [
+         "tp-pay-gap"
+        ]
+       },
+       "watch": [
+        "현금 수용 관련 법안·지자체 조례",
+        "고령층 모바일금융 이용률"
+       ],
+       "against": [
+        "고령층의 모바일금융 이용률이 빠르게 오르면 이 압력은 약해진다"
+       ]
+      }
+     ]
+    },
+    "conclusion": {
+     "key": {
+      "layer": "inference",
+      "text": "한국의 결제 변화는 기술보다 세금 정책이 먼저 길을 냈다는 점이 가장 중요하다. 1999년 카드 공제가 습관을 만들었고, 2010년대 체크카드 공제가 방향을 틀었으며, 간편결제는 그 위에 얹혔다.",
+      "ids": [
+       "er-shop-cardpolicy",
+       "tp-pay-check10",
+       "tp-pay-easy"
+      ]
+     },
+     "favored": {
+      "layer": "inference",
+      "text": "'정책이 만든 습관 + 기술' 해석을 더 지지한다. 공제율이 갈린 해 체크카드가 74% 늘었다는 직접 신호가 있다. 다만 국가 비교 연구로 확인하지는 못했다.",
+      "ids": [
+       "tp-pay-check10",
+       "tp-pay-intl"
+      ]
+     },
+     "undecided": {
+      "layer": "inference",
+      "text": "후불결제가 얼마나 커졌는지, 연체가 위험 수준인지는 2023년 이후 공식 통계를 확보하지 못해 판단할 수 없다.",
+      "ids": [
+       "tp-pay-bnpl-late"
+      ]
+     },
+     "next": {
+      "layer": "inference",
+      "text": "결제 앱 안의 '나중에 내기'가 카드대란 때처럼 정책·마케팅으로 부풀려지는지가 가장 볼 만한 갈림길이다.",
+      "ids": [
+       "c00-card-why",
+       "tp-pay-bnpl21"
+      ]
+     },
+     "change": {
+      "layer": "inference",
+      "text": "후불결제 연체율이 신용카드 수준으로 안정되고 이용 규모가 크게 늘면 '결합' 쪽으로, 연체율이 계속 오르면 '반작용(규제)' 쪽으로 판단을 고친다.",
+      "ids": [
+       "tp-pay-bnpl-late"
+      ]
+     }
+    }
+   },
+   {
+    "id": "shop-own",
+    "domain": "shop",
+    "label": "어떻게 갖나 — 새것·중고·대여·구독",
+    "tracks": "물건과 서비스를 '갖는 방식' — 새것을 사서 오래 쓰기, 중고로 사고팔기, 빌려 쓰기(렌탈), 매달 내고 쓰기(구독). 어디서 샀는지·무엇으로 냈는지는 다른 주제에서 본다.",
+    "question": "외환위기 때 '아껴 쓰자'던 중고는 왜 지금 '재밌는 쇼핑'이 됐고, 사람들은 왜 사지 않고 빌리거나 매달 내게 됐나?",
+    "scene": {
+     "layer": "fact",
+     "text": "1998년 2월 서울의 알뜰장터에서는 양복 한 벌이 3천 원이었다. 2021년 국내 중고거래는 24조 원 규모가 됐다.",
+     "ids": [
+      "tp-own-ana",
+      "tp-own-size"
+     ]
+    },
+    "span": [
+     1990,
+     2026
+    ],
+    "scope": [
+     {
+      "layer": "inference",
+      "text": "중고거래 시장 규모는 2008년부터 추정치가 있다. 1998년 이전 중고 거래의 규모는 자료가 없어 서술로만 다룬다.",
+      "ids": [
+       "tp-own-size"
+      ]
+     }
+    ],
+    "turns": [
+     {
+      "id": "o1",
+      "years": "1990년대 초·중반",
+      "start": 1990,
+      "end": 1990,
+      "title": "새것을 한 번에 갖추고 오래 쓰기",
+      "why": {
+       "layer": "inference",
+       "text": "이후 변화가 모두 '새것을 사서 오래 갖는다'는 기본값에서 벗어나는 과정이라 출발점으로 잡았다.",
+       "ids": [
+        "ts-h-1993"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "1993년 예비부부들은 혼수를 대형 백화점에서 예물·가전·장롱을 묶은 패키지로 한 번에 샀고, 가격대는 600만~1,500만 원이었다.",
+        "ids": [
+         "ts-h-1993"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "inference",
+        "text": "소득이 오르던 시기라 '한 번에 제대로 갖추는 것'이 가정의 출발이었다.",
+        "ids": [
+         "an-c-avg"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "1990년 웅진은 정수기 판매를 시작했다(당시 100만 원대).",
+        "ids": [
+         "tp-own-coway"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "inference",
+        "text": "비싼 물건은 목돈을 모아 사는 것이 기본이었다.",
+        "ids": [
+         "ts-h-1993",
+         "tp-own-coway"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "목돈이 사라지는 순간 이 방식은 멈춘다 — 1997년 외환위기가 그 순간이었다.",
+        "ids": [
+         "an-c-1998inc"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "o2",
+      "years": "1998",
+      "start": 1998,
+      "end": 1998,
+      "title": "위기 속 두 갈래 — '아껴 쓰자'와 '빌려 쓰자'",
+      "why": {
+       "layer": "fact",
+       "text": "1998년 한 해에 아나바다 장터(1월)와 국내 첫 가전 렌탈(4월)이 함께 시작됐다.",
+       "ids": [
+        "tp-own-ana",
+        "tp-own-coway"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "1998년 도시가구 소득은 12.5%, 소비지출은 11.8% 줄었다.",
+        "ids": [
+         "an-c-1998inc"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "외환위기 극복을 내건 아나바다 운동이 시작됐다.",
+        "ids": [
+         "tp-own-ana"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "서초구 벼룩시장(1998년 1월), YMCA 녹색가게 등에서 양복 3천 원·가방 1천 원에 중고가 거래됐다.",
+        "ids": [
+         "tp-own-ana"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "웅진은 1998년 4월 100만 원대 정수기를 월 2만 7천 원에 빌려주는 렌탈을 시작했다.",
+        "ids": [
+         "tp-own-coway"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "같은 해 9월 신문은 무조건적 아나바다가 소비 심리를 위축시킨다고 비판했다.",
+        "ids": [
+         "tp-own-ana-crit"
+        ]
+       },
+       {
+        "layer": "source",
+        "text": "중고거래는 절약·재활용을 위한 '선하지만 투박한' 사회 운동 이미지를 얻었다.",
+        "ids": [
+         "tp-own-image"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "두 가지 '사지 않고 갖는 법'이 같은 위기에서 태어났지만 이미지는 정반대였다: 중고는 '어려울 때 하는 일', 렌탈은 '관리까지 해 주는 편리한 방식'. 이 차이가 이후 20년의 경로를 갈랐다.",
+        "ids": [
+         "tp-own-image",
+         "tp-own-coway"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "o3",
+      "years": "2003~2014",
+      "start": 2003,
+      "end": 2003,
+      "title": "온라인 중고 카페 — 저성장 속 생활의 일부로",
+      "why": {
+       "layer": "fact",
+       "text": "2003년 네이버 카페로 시작한 중고나라가 이후 최대 중고 플랫폼이 됐다.",
+       "ids": [
+        "tp-own-size"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "중고는 동네 장터·지인 사이 거래에 머물렀다.",
+        "ids": [
+         "tp-own-ana"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "중고나라는 2003년 네이버 카페로 시작했다.",
+        "ids": [
+         "tp-own-size"
+        ]
+       },
+       {
+        "layer": "source",
+        "text": "2008년 금융위기 뒤 저성장이 굳어지면서 '적게 쓰고 크게 만족하려는' 중고 소비가 퍼졌다는 해석이 있다.",
+        "ids": [
+         "tp-own-nchar"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "중고거래 시장은 2008년 약 4조 원 규모로 추정됐다.",
+        "ids": [
+         "tp-own-size"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "inference",
+        "text": "팔 사람과 살 사람이 동네를 넘어 전국에서 만났지만, 모르는 사람과의 거래라 사기 위험이 따라붙었다.",
+        "ids": [
+         "tp-own-carrot"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "'믿을 수 있나'가 중고의 가장 큰 불편으로 남았다 — 다음 단계는 이 불편을 정면으로 다룬다.",
+        "ids": [
+         "tp-own-carrot"
+        ]
+       }
+      ],
+      "gap": "2008~2017년 중고나라 거래액의 연도별 자료는 확보하지 못했다."
+     },
+     {
+      "id": "o4",
+      "years": "2014~2025",
+      "start": 2014,
+      "end": 2014,
+      "title": "빌려 쓰기가 '모든 가전'으로 — 렌탈 10조에서 40조로",
+      "why": {
+       "layer": "fact",
+       "text": "렌탈 시장이 2014년 처음 10조 원을 넘었다.",
+       "ids": [
+        "tp-own-rentalsize"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "렌탈은 1998년 정수기 하나로 시작했다.",
+        "ids": [
+         "tp-own-coway"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "inference",
+        "text": "한 번에 목돈을 내기보다 매달 나눠 내고 관리까지 받는 방식이 맞벌이·1인 가구에 맞았다고 본다.",
+        "ids": [
+         "tp-own-coway",
+         "c10-1person"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "코웨이는 공기청정기·비데·매트리스로 품목을 넓혀 2025년 매출 4조 9,636억 원, 그중 90% 이상이 렌탈이었다.",
+        "ids": [
+         "tp-own-rentalsize"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "2025년 보일러 업체까지 렌탈에 들어왔다.",
+        "ids": [
+         "tp-own-rentalnew"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "렌탈 시장은 2021년 약 40조 원으로 추정됐다.",
+        "ids": [
+         "tp-own-rentalsize"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "'빌려 쓰기'가 물건에서 '매달 나가는 돈'의 습관이 됐다 — 이 습관 위에 디지털 구독이 쌓인다.",
+        "ids": [
+         "tp-own-rentalsize",
+         "tp-own-sub25"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "o5",
+      "years": "2015~2023",
+      "start": 2015,
+      "end": 2015,
+      "title": "동네 인증·취향 거래 — 중고가 '재밌는 쇼핑'이 되다",
+      "why": {
+       "layer": "fact",
+       "text": "2015년 동네 인증 직거래(당근마켓)가 시작됐고, 2021년 시장이 24조 원이 됐다.",
+       "ids": [
+        "tp-own-carrot",
+        "tp-own-size"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "모르는 사람과의 온라인 중고는 사기 위험이 컸다.",
+        "ids": [
+         "tp-own-carrot"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "당근마켓은 동네 인증 뒤 3~4km 안에서만 직거래하게 해 사기 위험을 줄이려 했다.",
+        "ids": [
+         "tp-own-carrot"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "당근마켓 누적 가입자는 2023년 3월 3,300만 명이었고, 번개장터 이용자의 78%가 MZ세대였다.",
+        "ids": [
+         "ts-h-carrot"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "2022년 백화점 3사와 네이버·무신사도 중고에 뛰어들었다.",
+        "ids": [
+         "tp-own-bigco"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "source",
+        "text": "2020년 보도는 MZ세대가 중고를 둘러보는 '재밌는 쇼핑'으로 여기고 한정판·굿즈에 웃돈을 낸다고 전했다.",
+        "ids": [
+         "ts-x-used-fun"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "중고 명품을 산 MZ세대의 절반 이상이 1년 안에 되팔았다(2023년 보도).",
+        "ids": [
+         "ts-x-resell"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "물건을 '영원히 갖는 것'이 아니라 '되팔 수 있는 동안 갖는 것'으로 사는 태도가 생겼다. 새것을 살 때도 되팔 값을 따지게 됐다.",
+        "ids": [
+         "ts-x-resell"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "o6",
+      "years": "2020~2026",
+      "start": 2020,
+      "end": 2020,
+      "title": "매달 나가는 돈이 늘다 — 구독, 그리고 고르기",
+      "why": {
+       "layer": "fact",
+       "text": "2025년 조사에서 거의 모두(95.9%)가 구독을 쓰고, 광고를 보는 대신 싼 요금제를 고르는 사람이 3분의 1을 넘었다.",
+       "ids": [
+        "tp-own-sub25",
+        "tp-own-ott-ad"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "렌탈이 '물건을 매달 내고 쓰는' 습관을 만들어 두었다.",
+        "ids": [
+         "tp-own-rentalsize"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "OTT 이용률 81.8%, 유료 OTT 65.5%(2025).",
+        "ids": [
+         "tp-own-ott-ad"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "구독 지출은 월평균 약 4만 원, 10명 중 6명은 해지를 어렵게 하는 장치(다크패턴)가 있다고 답했다.",
+        "ids": [
+         "tp-own-sub25"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "유료 OTT 이용자의 34.6%가 광고형 요금제를 썼다.",
+        "ids": [
+         "tp-own-ott-ad"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "생성형 AI 유료 구독은 이용자의 24.3%(20대 30.1%), 결제 고객의 60%가 4개월 이상 유지했다.",
+        "ids": [
+         "tp-own-ai-sub"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "구독이 늘어날수록 '무엇을 남기고 무엇을 끊을지'를 고르는 일이 새 부담이 됐다. 오락형 구독은 끊었다 다시 켜고, 일에 쓰는 구독은 유지하는 식의 분화가 보인다.",
+        "ids": [
+         "tp-own-ott-ad",
+         "tp-own-ai-sub"
+        ]
+       }
+      ]
+     }
+    ],
+    "branches": {
+     "intro": "한 줄은 한 가지 '갖는 방식'입니다. 새 방식이 생겨도 옛 방식이 함께 쓰이는지 표시했습니다.",
+     "lanes": [
+      {
+       "label": "새것 구매·소유",
+       "start": 1990,
+       "end": null,
+       "state": "공존",
+       "note": {
+        "layer": "inference",
+        "text": "여전히 기본 방식이지만, 살 때부터 되팔 값을 따지는 태도가 섞였다.",
+        "ids": [
+         "ts-x-resell"
+        ]
+       }
+      },
+      {
+       "label": "오프라인 중고 장터(아나바다)",
+       "start": 1998,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "fact",
+        "text": "서초 벼룩시장처럼 20년 넘게 이어진 곳도 있다(2016년까지 856회).",
+        "ids": [
+         "tp-own-ana"
+        ]
+       }
+      },
+      {
+       "label": "온라인 중고 카페",
+       "start": 2003,
+       "end": null,
+       "state": "공존",
+       "note": {
+        "layer": "fact",
+        "text": "중고나라 거래액 2019년 3조 5천억 원.",
+        "ids": [
+         "tp-own-size"
+        ]
+       }
+      },
+      {
+       "label": "동네 기반 중고 앱",
+       "start": 2015,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "당근마켓 가입자 3,300만(2023).",
+        "ids": [
+         "ts-h-carrot"
+        ]
+       }
+      },
+      {
+       "label": "한정판 되팔기(리셀)",
+       "start": 2018,
+       "end": null,
+       "state": "판단 보류",
+       "note": {
+        "layer": "hypothesis",
+        "text": "시장 규모 연속 자료를 연결하지 않아 지금 커지는지 줄어드는지는 판단하지 않았다.",
+        "ids": [
+         "ts-x-resell",
+         "ts-g-labubu"
+        ]
+       }
+      },
+      {
+       "label": "렌탈(빌려 쓰기)",
+       "start": 1998,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "2014년 10조 → 2021년 약 40조 원(추정).",
+        "ids": [
+         "tp-own-rentalsize"
+        ]
+       }
+      },
+      {
+       "label": "디지털 구독",
+       "start": 2015,
+       "end": null,
+       "state": "분화",
+       "note": {
+        "layer": "fact",
+        "text": "광고형 요금제 34.6%, AI 구독은 장기 유지 — 같은 구독 안에서 갈라진다.",
+        "ids": [
+         "tp-own-ott-ad",
+         "tp-own-ai-sub"
+        ]
+       }
+      }
+     ],
+     "read": {
+      "layer": "inference",
+      "text": "'소유에서 접근으로'라는 한 방향 요약은 맞지 않는다. 새것 구매는 남았고, 중고는 소유의 한 방식(되팔 수 있는 소유)으로 바뀌었으며, 렌탈·구독은 '매달 내는 소유'로 덧붙었다.",
+      "ids": [
+       "ts-x-resell",
+       "tp-own-rentalsize",
+       "tp-own-sub25"
+      ]
+     }
+    },
+    "reasons": [
+     {
+      "title": "중고는 왜 '어려울 때 하는 일'에서 '재밌는 쇼핑'이 됐나",
+      "facts": [
+       {
+        "layer": "source",
+        "text": "1998년 무렵 중고는 선하지만 투박한 절약 운동 이미지였다.",
+        "ids": [
+         "tp-own-image"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "2015년 동네 인증 직거래로 사기 위험을 줄이려 했다.",
+        "ids": [
+         "tp-own-carrot"
+        ]
+       },
+       {
+        "layer": "source",
+        "text": "2020년 MZ세대는 중고를 둘러보는 재밌는 쇼핑으로 여겼다.",
+        "ids": [
+         "ts-x-used-fun"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "중고 명품 산 MZ세대 절반 이상이 1년 안에 되팔았다.",
+        "ids": [
+         "ts-x-resell"
+        ]
+       }
+      ],
+      "logic": {
+       "layer": "inference",
+       "text": "중고의 불편은 (1) 믿을 수 있나 (2) 찾기 어렵다 (3) 남의 눈 세 가지였다. 동네 인증이 (1)을, 앱 검색·알림이 (2)를 줄였고, 한정판·빈티지처럼 '새것으로는 못 사는 물건'이 중고에서만 나오자 (3)이 오히려 장점이 됐다.",
+       "ids": [
+        "tp-own-carrot",
+        "ts-x-used-fun",
+        "ts-h-used-why"
+       ]
+      },
+      "proposal": {
+       "layer": "inference",
+       "text": "중고의 이미지 변화는 경제가 어려워서라기보다, 거래의 불편을 플랫폼이 줄이고 '중고에서만 구할 수 있는 것'이 생기면서 동기가 절약에서 탐색·취향으로 바뀐 결과라고 본다.",
+       "ids": [
+        "tp-own-carrot",
+        "ts-x-used-fun"
+       ]
+      },
+      "rivals": [
+       {
+        "layer": "source",
+        "text": "저성장 설명 — 2008년 이후 저성장 속 '적게 쓰고 크게 만족하는 전략'이라는 해석(N차 신상).",
+        "ids": [
+         "tp-own-nchar"
+        ]
+       },
+       {
+        "layer": "source",
+        "text": "가치 소비 설명 — 젊은 층의 친환경 가치와 고물가 '짠테크'가 함께 키웠다는 보도.",
+        "ids": [
+         "tp-own-bigco"
+        ]
+       }
+      ],
+      "scope": {
+       "layer": "inference",
+       "text": "2015년 이후, 주로 20~30대에 해당한다. 중장년층의 중고 이용 동기는 자료로 구분하지 못했다.",
+       "ids": [
+        "ts-h-carrot"
+       ]
+      },
+      "check": [
+       {
+        "layer": "fact",
+        "text": "확인 쪽: 번개장터 이용자의 78%가 MZ세대, 중고 명품 되팔기도 MZ세대 중심 — 젊은 층에서 동기가 달라졌다는 설명과 맞는다.",
+        "ids": [
+         "ts-h-carrot",
+         "ts-x-resell"
+        ]
+       },
+       {
+        "layer": "hypothesis",
+        "text": "반박이 될 자료: 경기가 좋아진 시기에 중고 거래가 크게 줄었다면 저성장 설명이 더 맞다 — 연도별 시장 규모와 경기의 비교는 아직 하지 못했다.",
+        "ids": []
+       }
+      ]
+     }
+    ],
+    "repeats": [
+     {
+      "type": "재등장",
+      "title": "중고 거래 — 1998년 아나바다 장터와 2020년대 동네 앱",
+      "past": {
+       "layer": "fact",
+       "text": "1998년: 외환위기 극복을 내건 절약 운동. 시민단체·구청이 연 장터에서 양복 3천 원.",
+       "ids": [
+        "tp-own-ana"
+       ]
+      },
+      "now": {
+       "layer": "source",
+       "text": "2020년대: 앱으로 둘러보는 쇼핑, 한정판·빈티지 탐색, 되팔기.",
+       "ids": [
+        "ts-x-used-fun",
+        "ts-x-resell"
+       ]
+      },
+      "alike": {
+       "layer": "inference",
+       "text": "겉모양(남이 쓰던 물건을 사고판다)만 같고 동기는 거의 반대다 — 그때는 '참는 것', 지금은 '고르는 재미'.",
+       "ids": [
+        "tp-own-image",
+        "ts-x-used-fun"
+       ]
+      },
+      "changed": {
+       "layer": "inference",
+       "text": "그때의 불편(믿을 수 없음·찾기 어려움)은 동네 인증·앱 검색으로 상당히 줄었고, 새 불편(되팔 값의 하락 위험, 사기·분쟁)이 생겼다.",
+       "ids": [
+        "tp-own-carrot",
+        "ts-g-labubu"
+       ]
+      },
+      "alternatives": [
+       {
+        "layer": "inference",
+        "text": "'유행이 돌아왔다'보다, 플랫폼 기업이 공급(앱·인증)을 만들고 대기업이 투자하면서 시장이 커졌다는 공급 쪽 설명이 더 직접적이다.",
+        "ids": [
+         "tp-own-bigco"
+        ]
+       }
+      ],
+      "counter": [
+       {
+        "layer": "fact",
+        "text": "1998년 당시에도 전문가들은 아나바다가 소비를 위축시킨다고 비판했다 — 중고가 늘 긍정적 의미였던 것은 아니다.",
+        "ids": [
+         "tp-own-ana-crit"
+        ]
+       }
+      ],
+      "at": [
+       "o2",
+       "o5"
+      ]
+     },
+     {
+      "type": "결합·변형",
+      "title": "렌탈 — 할부가 '관리 서비스'를 입다",
+      "past": {
+       "layer": "fact",
+       "text": "1998년: 100만 원대 정수기를 월 2만 7천 원에 빌려준 것은 사실상 장기 할부와 같았다.",
+       "ids": [
+        "tp-own-coway"
+       ]
+      },
+      "now": {
+       "layer": "fact",
+       "text": "2025년: 매트리스·보일러까지, 렌탈이 회사 매출의 90% 이상인 기업이 나왔다.",
+       "ids": [
+        "tp-own-rentalsize",
+        "tp-own-rentalnew"
+       ]
+      },
+      "alike": {
+       "layer": "inference",
+       "text": "'목돈 없이 매달 나눠 낸다'는 기능은 할부와 같다. 다른 점은 관리(필터 교체·점검)를 함께 판다는 것이다.",
+       "ids": [
+        "tp-own-coway"
+       ]
+      },
+      "changed": {
+       "layer": "inference",
+       "text": "소비자는 목돈과 관리 수고를 덜었지만, 계약 기간 동안 해지가 어려운 새 불편이 생겼다 — 구독의 다크패턴 문제와 같은 뿌리다.",
+       "ids": [
+        "tp-own-sub25"
+       ]
+      },
+      "alternatives": [
+       {
+        "layer": "inference",
+        "text": "기업 쪽 설명 — 렌탈은 일시불 판매보다 수익이 꾸준해서(재고를 빌려주자는 발상) 공급자가 밀어붙인 측면이 크다.",
+        "ids": [
+         "tp-own-coway"
+        ]
+       }
+      ],
+      "counter": [
+       {
+        "layer": "hypothesis",
+        "text": "일시불 판매가 여전히 중심인 가전 업체도 있다는 보도가 있어, 모든 품목이 렌탈로 가는 것은 아니다.",
+        "ids": [
+         "tp-own-rentalnew"
+        ]
+       }
+      ],
+      "at": [
+       "o2",
+       "o4"
+      ]
+     }
+    ],
+    "links": [
+     {
+      "kind": "topic",
+      "target": "shop-pay",
+      "at": "2021",
+      "why": "후불결제와 렌탈·구독은 모두 '나중에·나눠 내기'라는 같은 원리를 쓴다 — 결제 쪽 이야기는 따로 본다."
+     },
+     {
+      "kind": "flow",
+      "target": "taste-home",
+      "at": "2014~",
+      "why": "중고로 가구를 들이고 다시 파는 집 꾸미기는 공간 취향 흐름에서 자세히 본다."
+     }
+    ],
+    "futures": {
+     "split": {
+      "layer": "inference",
+      "text": "갈라지는 이유는 '매달 나가는 돈'에 대한 피로와, 되팔 수 있는 소유의 편리함이 동시에 커지고 있기 때문이다.",
+      "ids": [
+       "tp-own-sub25",
+       "ts-x-resell"
+      ]
+     },
+     "items": [
+      {
+       "kind": "계속",
+       "name": "중고는 '두 번째 쇼핑몰'로 굳어진다",
+       "change": {
+        "layer": "inference",
+        "text": "중고 거래가 새 상품 구매 옆의 기본 선택지가 되고, 브랜드가 직접 중고를 받는다.",
+        "ids": [
+         "tp-own-bigco"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "2008년 4조 → 2021년 24조 원.",
+         "ids": [
+          "tp-own-size"
+         ]
+        },
+        {
+         "layer": "fact",
+         "text": "백화점·네이버·무신사 진출(2022).",
+         "ids": [
+          "tp-own-bigco"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "되팔 수 있으면 새것을 사는 부담도 줄어, 새것과 중고가 서로를 키운다.",
+        "ids": [
+         "ts-x-resell"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "거래 신뢰(사기·분쟁 관리)가 유지돼야 한다.",
+        "ids": [
+         "tp-own-carrot"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "검수·인증, 브랜드 공식 중고, 중고 시세 정보.",
+        "ids": [
+         "tp-own-bigco"
+        ]
+       },
+       "watch": [
+        "중고거래 시장 규모(공식 추정)",
+        "브랜드 공식 재판매 매장 수"
+       ],
+       "against": [
+        "중고 사기·분쟁 급증으로 이용자가 줄면 성장 둔화"
+       ]
+      },
+      {
+       "kind": "반작용",
+       "name": "구독 피로 — 끊고, 묶고, 광고를 본다",
+       "change": {
+        "layer": "inference",
+        "text": "오락형 구독은 필요할 때만 켜고 끄거나, 광고형·묶음 요금제로 옮긴다.",
+        "ids": [
+         "tp-own-ott-ad"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "광고형 요금제 34.6%.",
+         "ids": [
+          "tp-own-ott-ad"
+         ]
+        },
+        {
+         "layer": "fact",
+         "text": "10명 중 6명이 해지 방해 장치를 경험.",
+         "ids": [
+          "tp-own-sub25"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "구독 수가 늘면 하나하나의 가치가 상대적으로 작아져 '해지하기 쉬운지'가 선택 기준이 된다.",
+        "ids": [
+         "tp-own-sub25"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "구독료 인상이 이어지고 해지 규제가 강화돼야 한다.",
+        "ids": [
+         "tp-own-sub25"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "구독 통합 관리 서비스, 묶음 요금제, 광고형 요금제.",
+        "ids": [
+         "tp-own-ott-ad"
+        ]
+       },
+       "watch": [
+        "유료 OTT 이용률",
+        "광고형 요금제 비중"
+       ],
+       "against": [
+        "광고형 비중이 줄고 유료 이용률이 오르면 피로보다 만족이 크다는 뜻"
+       ]
+      },
+      {
+       "kind": "분화",
+       "name": "'일에 쓰는 구독'과 '놀이 구독'이 갈라진다",
+       "change": {
+        "layer": "inference",
+        "text": "AI·업무 도구 구독은 장기 유지되고, 콘텐츠 구독은 들고 나는 일이 잦아진다.",
+        "ids": [
+         "tp-own-ai-sub"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "AI 유료 고객 60%가 4개월 이상 유지.",
+         "ids": [
+          "tp-own-ai-sub"
+         ]
+        },
+        {
+         "layer": "fact",
+         "text": "OTT는 광고형으로 이동.",
+         "ids": [
+          "tp-own-ott-ad"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "시간을 아껴 주는 구독은 끊으면 손해가 바로 보이지만, 오락 구독은 미뤄도 손해가 작다.",
+        "ids": [
+         "tp-own-ai-sub"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "AI 도구가 실제 업무 시간을 줄여야 한다.",
+        "ids": [
+         "tp-own-ai-sub"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "업무형 AI 구독, 기업 단체 구독.",
+        "ids": [
+         "tp-own-ai-sub"
+        ]
+       },
+       "watch": [
+        "AI 유료 구독 유지 기간",
+        "20대 유료 결제율"
+       ],
+       "against": [
+        "AI 구독 해지율이 OTT 수준으로 오르면 분화가 아니라 같은 피로"
+       ]
+      },
+      {
+       "kind": "결합",
+       "name": "렌탈이 로봇·서비스 구독으로",
+       "change": {
+        "layer": "hypothesis",
+        "text": "가사·돌봄 로봇을 사지 않고 매달 내고 쓰는 방식이 나온다.",
+        "ids": [
+         "tp-own-raas"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "source",
+         "text": "로봇업계의 서비스형 로봇 전망.",
+         "ids": [
+          "tp-own-raas"
+         ]
+        },
+        {
+         "layer": "fact",
+         "text": "렌탈 기업의 관리 인력 모델.",
+         "ids": [
+          "tp-own-coway"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "비싸고 고장 관리가 필요한 물건일수록 '사서 갖기'보다 '빌리고 관리받기'가 유리하다 — 정수기와 같은 원리.",
+        "ids": [
+         "tp-own-coway",
+         "tp-own-raas"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "가정용 로봇이 실제로 상용화돼야 한다(시점은 근거가 없어 정하지 않음).",
+        "ids": [
+         "tp-own-raas"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "로봇 구독·관리 서비스.",
+        "ids": [
+         "tp-own-raas"
+        ]
+       },
+       "watch": [
+        "가정용 로봇 출시·렌탈 상품",
+        "렌탈 업체의 신규 품목"
+       ],
+       "against": [
+        "로봇 가격이 빠르게 떨어져 일시불 구매가 쉬워지면 렌탈의 이점이 줄어든다"
+       ]
+      }
+     ]
+    },
+    "conclusion": {
+     "key": {
+      "layer": "inference",
+      "text": "가장 중요하게 읽은 것은 1998년 같은 위기에서 '중고'와 '렌탈'이 함께 생겼지만 한쪽은 절약의 상징, 다른 쪽은 편리한 서비스로 출발했다는 점이다. 중고가 이미지를 바꾸기까지 약 20년, 그리고 거래 신뢰를 해결한 플랫폼이 필요했다.",
+      "ids": [
+       "tp-own-ana",
+       "tp-own-coway",
+       "tp-own-carrot"
+      ]
+     },
+     "favored": {
+      "layer": "inference",
+      "text": "중고 확대는 '저성장 때문'보다 '거래 불편이 줄고 동기가 탐색·취향으로 바뀐 것'이 더 잘 설명한다고 본다. 근거: 젊은 층 중심, 되팔기·한정판 거래. 다만 저성장 설명을 배제할 자료(경기별 비교)는 없다.",
+      "ids": [
+       "ts-h-carrot",
+       "ts-x-resell",
+       "tp-own-nchar"
+      ]
+     },
+     "undecided": {
+      "layer": "inference",
+      "text": "리셀 시장이 커지는지, 렌탈 시장이 2025년 전망(100조 원)에 실제로 닿았는지는 확인하지 못했다.",
+      "ids": [
+       "tp-own-rentalsize"
+      ]
+     },
+     "next": {
+      "layer": "inference",
+      "text": "구독이 '일에 쓰는 것'과 '놀이'로 갈라지는지가 가장 볼 만하다.",
+      "ids": [
+       "tp-own-ai-sub",
+       "tp-own-ott-ad"
+      ]
+     },
+     "change": {
+      "layer": "inference",
+      "text": "AI 구독 해지율이 OTT처럼 높아지면 '분화' 대신 '구독 전반의 피로'로, 중고 분쟁이 급증해 거래가 줄면 '계속' 대신 '정체'로 판단을 고친다.",
+      "ids": [
+       "tp-own-ai-sub",
+       "tp-own-sub25"
+      ]
+     }
+    }
+   },
+   {
+    "id": "shop-items",
+    "domain": "shop",
+    "label": "무엇에 먼저 쓰나 — 구매 품목과 지출 우선순위",
+    "tracks": "가계가 쓰는 돈이 어떤 항목(먹는 것·교육·교통·외식·주거·문화)에 먼저 가는지, 그 순서가 어떻게 바뀌는지. 개별 상품의 유행은 취향 흐름에서 따로 본다.",
+    "question": "31년 만에 '먹는 데 쓰는 돈'의 비중이 다시 30%가 됐다. 그때로 돌아간 걸까, 전혀 다른 이유일까?",
+    "scene": {
+     "layer": "fact",
+     "text": "2026년 인천의 한 30대 부부는 소득의 40~50%를 식비로 쓰며 6천 원짜리 디저트를 한 달 내내 매일 사 먹었다. '먼 미래 대신 지금의 우리에게 투자하고 싶다'고 했다.",
+     "ids": [
+      "tp-it-scene26"
+     ]
+    },
+    "span": [
+     1970,
+     2026
+    ],
+    "scope": [
+     {
+      "layer": "inference",
+      "text": "엥겔계수는 출처마다 외식을 넣는지 뺐는지가 달라, 같은 기준끼리만 비교했다(1970~80년대의 30~40%는 식료품만, 2025년 30.3%는 외식 포함).",
+      "ids": [
+       "tp-it-7080",
+       "tp-it-engel25"
+      ]
+     },
+     {
+      "layer": "inference",
+      "text": "2025년 가계동향 항목 분류가 바뀌어(국제 기준 적용) 2019년 이전과 세부 항목을 그대로 비교하기 어렵다.",
+      "ids": [
+       "tp-it-2025"
+      ]
+     }
+    ],
+    "turns": [
+     {
+      "id": "i1",
+      "years": "1970~1980년대",
+      "start": 1970,
+      "end": 1970,
+      "title": "먹는 데 대부분 — 식료품 30~40%",
+      "why": {
+       "layer": "fact",
+       "text": "식료품 비중이 30~40%를 넘나든 시기로, 이후 모든 변화의 출발점이다.",
+       "ids": [
+        "tp-it-7080"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "소득이 낮아 먹고사는 데 쓰고 나면 다른 데 쓸 여유가 적었다.",
+        "ids": [
+         "tp-it-7080"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "1970~80년대 엥겔지수는 30~40%대였다.",
+        "ids": [
+         "tp-it-7080"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "inference",
+        "text": "가전·자동차 같은 큰 물건은 목표였지 일상 지출이 아니었다.",
+        "ids": [
+         "c60-syn-kr-ad"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "inference",
+        "text": "소득이 오르면서 식비 비중이 천천히 줄어드는 '엥겔의 법칙'대로 움직였다.",
+        "ids": [
+         "tp-it-7080"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "식비에서 남는 돈이 생기자 '다음에 무엇에 쓸까'가 생겼다 — 1990년대의 답은 교육·차·외식이었다.",
+        "ids": [
+         "tp-it-1991"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "i2",
+      "years": "1990~1996",
+      "start": 1990,
+      "end": 1990,
+      "title": "교육·차·외식으로 — 지출의 무게중심 이동",
+      "why": {
+       "layer": "fact",
+       "text": "1991년 통계청이 소비 구조 변화를 처음 공식적으로 짚었고, 1994~95년 외식비·교육비가 차례로 월 10만 원을 넘었다.",
+       "ids": [
+        "tp-it-1991",
+        "tp-it-1994"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "식료품 중심, 그 안에서도 주식비(쌀 등) 중심이었다.",
+        "ids": [
+         "tp-it-1991"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "3저 호황 뒤 소득이 오르고 자동차 등록이 빠르게 늘었다.",
+        "ids": [
+         "c80-3low",
+         "sx-cars"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "1994년 3분기 외식비가 처음 월 10만 원을 넘고 개인교통비가 51% 늘었다.",
+        "ids": [
+         "tp-it-1994"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "1995년 교육비가 처음 월 10만 원을 넘었고, 자동차 수요가 포화하자 교통비 증가세는 둔화했다. 평균소비성향은 71%로 낮았다.",
+        "ids": [
+         "tp-it-1994"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "교육비가 '선택'이 아니라 '먼저 떼어 두는 돈'이 됐다. 이 지출은 소득에 따라 크게 갈라지게 된다.",
+        "ids": [
+         "tp-it-edugap"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "i3",
+      "years": "1997~2004",
+      "start": 1997,
+      "end": 1997,
+      "title": "위기 뒤 — 줄인 것과 못 줄인 것",
+      "why": {
+       "layer": "fact",
+       "text": "외환위기로 소득과 지출이 처음 함께 크게 줄었다.",
+       "ids": [
+        "an-c-1998inc"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "교육·외식·교통 지출이 빠르게 늘던 중이었다.",
+        "ids": [
+         "tp-it-1994"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "1998년 도시가구 소득 −12.5%, 소비지출 −11.8%.",
+        "ids": [
+         "an-c-1998inc"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "교육비 비중은 하위 30% 8.2→9.1%, 상위 30% 9.7→12.4%(1995→2004)로, 위기를 지나며 계층 간 격차가 커졌다.",
+        "ids": [
+         "tp-it-edugap"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "2004년까지 식료품 비중은 줄고 외식 비중은 늘었다.",
+        "ids": [
+         "tp-it-dine"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "위기에도 교육비는 줄이지 않는 '우선순위 1번'이 됐고, 그 여력은 소득에 따라 달랐다.",
+        "ids": [
+         "tp-it-edugap"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "i4",
+      "years": "2008~2011",
+      "start": 2008,
+      "end": 2008,
+      "title": "먹거리 물가가 다시 식비 비중을 올리다",
+      "why": {
+       "layer": "fact",
+       "text": "엥겔지수가 4년 반 연속 올라 2000년 이후 최고가 됐다 — 소득 하락이 아니라 물가로 식비 비중이 오른 첫 사례다.",
+       "ids": [
+        "tp-it-2011"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "2002년 엥겔계수(외식 포함)는 26.7%까지 낮아졌다.",
+        "ids": [
+         "tp-it-engel25"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "금융위기 전후 식료품 물가가 가파르게 올랐다.",
+        "ids": [
+         "tp-it-2011"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "주류·담배 지출 비중은 1970년 이래 최저, 교육비 비중도 줄었다.",
+        "ids": [
+         "tp-it-2011"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "inference",
+        "text": "가계는 줄이기 어려운 식비를 지키고, 술·담배·교육 같은 다른 항목을 줄였다.",
+        "ids": [
+         "tp-it-2011"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "'식비 비중 상승 = 가난해짐'이라는 공식이 처음 흔들렸다 — 물가만으로도 비중이 오를 수 있다.",
+        "ids": [
+         "tp-it-2011"
+        ]
+       }
+      ],
+      "world": {
+       "what": {
+        "layer": "inference",
+        "text": "2008년 무렵 국제 곡물·원자재 가격이 크게 올랐다(이 주제에서 국제 가격 자료는 직접 연결하지 않음).",
+        "ids": [
+         "tp-it-2011"
+        ]
+       },
+       "route": {
+        "layer": "inference",
+        "text": "수입 곡물·사료·에너지 가격이 식품 물가로 옮겨 온다.",
+        "ids": [
+         "tp-it-2025"
+        ]
+       },
+       "response": {
+        "layer": "fact",
+        "text": "가계는 다른 지출을 줄였다.",
+        "ids": [
+         "tp-it-2011"
+        ]
+       },
+       "result": {
+        "layer": "fact",
+        "text": "엥겔지수가 2000년 이후 최고가 됐다.",
+        "ids": [
+         "tp-it-2011"
+        ]
+       },
+       "mode": "same"
+      },
+      "gap": "2008년 국제 곡물 가격과 국내 식품 물가를 직접 잇는 자료는 이 주제에 아직 연결하지 않았다."
+     },
+     {
+      "id": "i5",
+      "years": "2014~2024",
+      "start": 2014,
+      "end": 2014,
+      "title": "벌어도 덜 쓴다 — 소비성향 하락",
+      "why": {
+       "layer": "fact",
+       "text": "10년 사이 평균소비성향이 3.3%p 떨어지고, 20·30대는 월 소비액 자체가 줄었다.",
+       "ids": [
+        "tp-it-apc"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "2014년 평균소비성향 73.6%.",
+        "ids": [
+         "tp-it-apc"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "60대 소비성향 69.3% → 62.4%로 가장 크게 하락.",
+        "ids": [
+         "tp-it-apc"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "집값이 5% 오르면 50세 미만 가계의 후생이 0.23% 준다는 한은 분석.",
+        "ids": [
+         "tp-it-nonc"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "20·30대 월평균 소비액은 257만 원에서 248만 원으로 줄었다.",
+        "ids": [
+         "tp-it-apc"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "외식비 비중은 2022년 처음 14%를 넘었고 2024년 14.5%로 최고를 이어 갔다.",
+        "ids": [
+         "tp-it-dine"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "큰 지출(집·차)은 미루고 작은 지출(외식·디저트)은 유지하는 모양이 굳어졌다.",
+        "ids": [
+         "tp-it-dine",
+         "tp-it-apc"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "i6",
+      "years": "2020~2025",
+      "start": 2020,
+      "end": 2020,
+      "title": "엥겔계수 30% — 숫자는 1994년, 이유는 다르다",
+      "why": {
+       "layer": "fact",
+       "text": "2025년 외식 포함 엥겔계수가 30.3%로 1994년 이후 처음 30%를 넘었다.",
+       "ids": [
+        "tp-it-engel25"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "2019년 27.8%, 2022년 29.9%로 오르고 있었다.",
+        "ids": [
+         "tp-it-engel25"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "source",
+        "text": "2020년 이후 먹거리 물가가 소비자물가를 꾸준히 웃돌았다.",
+        "ids": [
+         "tp-it-why25"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "2025년 비소비 지출(세금·이자)이 5.7% 늘어 처분가능소득은 2.9%만 늘었다.",
+        "ids": [
+         "tp-it-nonc"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "2025년 실질 소비지출은 0.4% 줄었지만, 음식·숙박(15.8%)과 식료품(15.3%)을 합한 식생활 비중은 31.1%였다.",
+        "ids": [
+         "tp-it-2025"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "식비의 절반 이상이 외식이 됐고, 하위 20%는 식재료, 상위 20%는 외식 위주로 갈라졌다.",
+        "ids": [
+         "tp-it-dine"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "'무엇에 먼저 쓰나'의 답이 소득별로 갈라졌다: 하위층은 생존 식비, 상위층은 경험으로서의 외식. 같은 30%가 계층마다 다른 의미다.",
+        "ids": [
+         "tp-it-dine",
+         "tp-it-why25"
+        ]
+       }
+      ],
+      "world": {
+       "what": {
+        "layer": "fact",
+        "text": "일본도 2025년 엥겔계수가 28.6%로 1981년 수준으로 돌아갔다.",
+        "ids": [
+         "tp-it-japan"
+        ]
+       },
+       "route": {
+        "layer": "inference",
+        "text": "직접 영향이 아니라 고령화·식품 물가라는 비슷한 조건이 두 나라에 함께 있다(동시 발생).",
+        "ids": [
+         "tp-it-japan",
+         "tp-it-why25"
+        ]
+       },
+       "response": {
+        "layer": "inference",
+        "text": "두 나라 모두 다른 지출을 줄여 식비를 유지했다.",
+        "ids": [
+         "tp-it-japan"
+        ]
+       },
+       "result": {
+        "layer": "inference",
+        "text": "같은 숫자 변화가 이웃 나라에서도 보여, 한국만의 특수한 원인보다 고령화·물가라는 공통 조건의 몫이 크다고 본다.",
+        "ids": [
+         "tp-it-japan"
+        ]
+       },
+       "mode": "same"
+      }
+     }
+    ],
+    "branches": {
+     "intro": "한 줄은 한 지출 항목입니다. 상태는 가계 지출에서 차지하는 비중의 방향입니다.",
+     "lanes": [
+      {
+       "label": "식료품(집밥 재료)",
+       "start": 1970,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "fact",
+        "text": "1970~80년대 30~40% → 2025년 15.3%. 다만 하위 20%에게는 여전히 식비의 중심.",
+        "ids": [
+         "tp-it-7080",
+         "tp-it-2025",
+         "tp-it-dine"
+        ]
+       }
+      },
+      {
+       "label": "외식·배달",
+       "start": 1990,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "2024년 지출의 14.5%, 식비의 절반 이상.",
+        "ids": [
+         "tp-it-dine"
+        ]
+       }
+      },
+      {
+       "label": "교육",
+       "start": 1990,
+       "end": null,
+       "state": "분화",
+       "note": {
+        "layer": "fact",
+        "text": "소득 상위층에서 더 크게 늘어 격차가 벌어졌다(1995→2004).",
+        "ids": [
+         "tp-it-edugap"
+        ]
+       }
+      },
+      {
+       "label": "교통(자동차)",
+       "start": 1990,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "fact",
+        "text": "1995년 수요 포화로 증가세 둔화, 2025년 1분기 교통·운송 감소.",
+        "ids": [
+         "tp-it-1994"
+        ]
+       }
+      },
+      {
+       "label": "술·담배",
+       "start": 1970,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "fact",
+        "text": "2011년 비중 1970년 이래 최저.",
+        "ids": [
+         "tp-it-2011"
+        ]
+       }
+      },
+      {
+       "label": "주거·수도·광열",
+       "start": 1970,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "2025년 2.6% 증가, '줄일 수 없는 고정비'.",
+        "ids": [
+         "tp-it-2025"
+        ]
+       }
+      }
+     ],
+     "read": {
+      "layer": "inference",
+      "text": "우선순위는 한 줄로 이동하지 않았다. 식료품→교육·차→외식으로 무게중심이 옮겼지만, 2008년과 2020년대처럼 물가가 오르면 식비가 다시 앞으로 나온다. 그리고 지금은 소득에 따라 같은 '식비'의 내용(재료냐 외식이냐)이 갈라진다.",
+      "ids": [
+       "tp-it-2011",
+       "tp-it-dine"
+      ]
+     }
+    },
+    "reasons": [
+     {
+      "title": "2025년 엥겔계수 30%는 '가난해진 것'인가",
+      "facts": [
+       {
+        "layer": "fact",
+        "text": "엥겔계수 2025년 30.3%(1994년 30.0% 이후 처음).",
+        "ids": [
+         "tp-it-engel25"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "외식비 비중 사상 최고, 식비의 절반 이상이 외식.",
+        "ids": [
+         "tp-it-dine"
+        ]
+       },
+       {
+        "layer": "source",
+        "text": "빈곤율은 2011년 18.6% → 2021년 14.8%로 낮아졌다.",
+        "ids": [
+         "tp-it-why25"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "2025년 실질 소비 −0.4%, 처분가능소득은 2.9%만 증가.",
+        "ids": [
+         "tp-it-2025",
+         "tp-it-nonc"
+        ]
+       }
+      ],
+      "logic": {
+       "layer": "inference",
+       "text": "1994년의 30%는 소득이 아직 낮아 식비가 큰 몫을 차지한 결과였다. 2025년의 30%는 (1) 먹거리 값이 다른 물가보다 빨리 오르고 (2) 외식·배달이 식사 방식이 되고 (3) 집·차 같은 큰 지출을 미뤄 분모가 작아진 결과로 읽힌다.",
+       "ids": [
+        "tp-it-why25",
+        "tp-it-dine",
+        "tp-it-apc"
+       ]
+      },
+      "proposal": {
+       "layer": "inference",
+       "text": "'가난해짐'보다 '비싸진 먹거리 + 바뀐 식사 방식 + 미룬 큰 지출'이 겹친 것으로 본다. 다만 하위 20%에게는 생존 식비 부담이라는 뜻이 그대로 남아 있다.",
+       "ids": [
+        "tp-it-dine",
+        "tp-it-why25"
+       ]
+      },
+      "rivals": [
+       {
+        "layer": "source",
+        "text": "고령화 설명 — 연금에 기대는 고령 가구는 식비 비중이 커서, 고령화가 진행될수록 계수가 오른다는 해석.",
+        "ids": [
+         "tp-it-why25"
+        ]
+       },
+       {
+        "layer": "source",
+        "text": "청년 소비 설명 — 계층 이동이 막히자 먼 미래(집) 대신 지금(음식)에 쓴다는 해석.",
+        "ids": [
+         "tp-it-why25",
+         "tp-it-scene26"
+        ]
+       },
+       {
+        "layer": "inference",
+        "text": "경기 둔화 설명 — 전체 지출이 줄어 줄이기 어려운 식비의 비중이 커졌다는 설명(분모 효과).",
+        "ids": [
+         "tp-it-2025"
+        ]
+       }
+      ],
+      "scope": {
+       "layer": "inference",
+       "text": "2020~2025년, 전 연령에 해당하지만 의미는 소득별로 다르다(하위층은 부담, 상위층은 외식 선택).",
+       "ids": [
+        "tp-it-dine"
+       ]
+      },
+      "check": [
+       {
+        "layer": "fact",
+        "text": "확인 쪽: 외식 물가 상승률이 2023년 7.5%에서 2026년 2.9%로 낮아졌다 — 물가 설명이 맞다면 계수 상승세가 둔해져야 한다.",
+        "ids": [
+         "tp-it-krei26"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "비교: 일본도 2025년 28.6%로 1981년 수준 — 고령화·물가라는 공통 조건 설명과 맞는다.",
+        "ids": [
+         "tp-it-japan"
+        ]
+       },
+       {
+        "layer": "hypothesis",
+        "text": "반박이 될 자료: 연령별 엥겔계수에서 청년층의 상승폭이 고령층보다 크다면 '고령화'보다 '청년 소비 방식' 설명이 강해진다 — 연령별 자료는 아직 확보하지 못했다.",
+        "ids": []
+       }
+      ]
+     }
+    ],
+    "repeats": [
+     {
+      "type": "재등장",
+      "title": "엥겔계수 30% — 1994년과 2025년",
+      "past": {
+       "layer": "inference",
+       "text": "1994년: 소득이 오르는 중이었고 식비 비중이 내려가는 길목의 30%. 외식비가 막 월 10만 원을 넘던 때.",
+       "ids": [
+        "tp-it-1994",
+        "tp-it-engel25"
+       ]
+      },
+      "now": {
+       "layer": "source",
+       "text": "2025년: 먹거리 물가·외식·고령화·미룬 큰 지출이 겹친 30%. 빈곤율은 오히려 낮아졌다.",
+       "ids": [
+        "tp-it-why25"
+       ]
+      },
+      "alike": {
+       "layer": "inference",
+       "text": "숫자만 같다. 방향(그때는 내려가는 중, 지금은 올라가는 중)과 내용(그때는 집밥, 지금은 외식 절반)이 다르다.",
+       "ids": [
+        "tp-it-dine"
+       ]
+      },
+      "changed": {
+       "layer": "inference",
+       "text": "가격(먹거리 물가가 다른 물가보다 빠름), 식사 방식(배달·외식), 인구(고령화)가 달라졌다. 과거의 불편(먹고 나면 남는 게 없음)은 대부분 해결됐지만, 새 불편(먹거리 값과 주거비 사이에 끼인 지출)이 생겼다.",
+       "ids": [
+        "tp-it-why25",
+        "tp-it-nonc"
+       ]
+      },
+      "alternatives": [
+       {
+        "layer": "inference",
+        "text": "통계 설명 — 외식을 포함한 계수라 외식 문화가 커지면 소득과 무관하게 오를 수 있다.",
+        "ids": [
+         "tp-it-engel25"
+        ]
+       }
+      ],
+      "counter": [
+       {
+        "layer": "fact",
+        "text": "2002~2019년에는 계수가 26~28%대에 머물러 '되돌아감'이 계속 있었던 것은 아니다.",
+        "ids": [
+         "tp-it-engel25"
+        ]
+       }
+      ],
+      "at": [
+       "i2",
+       "i6"
+      ]
+     },
+     {
+      "type": "경제·산업 순환",
+      "title": "물가가 오를 때마다 식비가 앞으로 — 2008~2011, 2020~2025",
+      "past": {
+       "layer": "fact",
+       "text": "2008~2011: 식료품 물가 상승으로 엥겔지수 4년 반 연속 상승, 술·담배·교육 비중 감소.",
+       "ids": [
+        "tp-it-2011"
+       ]
+      },
+      "now": {
+       "layer": "source",
+       "text": "2020~2025: 먹거리 물가가 소비자물가를 계속 웃돌며 계수 상승.",
+       "ids": [
+        "tp-it-why25"
+       ]
+      },
+      "alike": {
+       "layer": "inference",
+       "text": "기능은 같다 — 줄이기 어려운 식비가 지켜지고 다른 항목이 밀린다.",
+       "ids": [
+        "tp-it-2011"
+       ]
+      },
+      "changed": {
+       "layer": "inference",
+       "text": "이번에는 줄어든 쪽이 술·회식 같은 '모임 지출'과 큰 내구재다.",
+       "ids": [
+        "ts-r-alcohol",
+        "tp-it-apc"
+       ]
+      },
+      "alternatives": [
+       {
+        "layer": "inference",
+        "text": "물가 충격이 끝나면 비중이 내려가는 '일시적 순환'인지, 고령화로 굳는 '장기 구조 변화'인지는 아직 가를 수 없다.",
+        "ids": [
+         "tp-it-why25"
+        ]
+       }
+      ],
+      "counter": [
+       {
+        "layer": "fact",
+        "text": "2011년 이후에는 계수가 다시 내려갔다 — 첫 번째 순환은 일시적이었다.",
+        "ids": [
+         "tp-it-engel25"
+        ]
+       }
+      ],
+      "at": [
+       "i4",
+       "i6"
+      ]
+     }
+    ],
+    "links": [
+     {
+      "kind": "flow",
+      "target": "taste-dining",
+      "at": "2015~2026",
+      "why": "외식에서 무엇을 사는지(노포·오마카세·애프터눈 티)는 외식 취향 흐름에서 자세히 본다."
+     },
+     {
+      "kind": "flow",
+      "target": "taste-gather",
+      "at": "2023~2026",
+      "why": "술·회식 지출이 줄어든 이유는 모임 흐름에서 본다."
+     },
+     {
+      "kind": "topic",
+      "target": "shop-channel",
+      "at": "2013~",
+      "why": "배달앱이 외식 지출을 키운 쪽은 구매 장소 이야기에서 본다."
+     }
+    ],
+    "futures": {
+     "split": {
+      "layer": "inference",
+      "text": "갈리는 지점은 '먹거리 물가가 진정되면 식비 비중도 내려가는가'다. 물가 설명이 맞으면 내려가고, 고령화·생활 방식 설명이 맞으면 높게 남는다.",
+      "ids": [
+       "tp-it-krei26",
+       "tp-it-why25"
+      ]
+     },
+     "items": [
+      {
+       "kind": "경로 변경",
+       "name": "외식 물가 둔화 → 식비 비중이 다시 내려간다",
+       "change": {
+        "layer": "inference",
+        "text": "엥겔계수가 2020년대 후반 20%대 후반으로 돌아간다.",
+        "ids": [
+         "tp-it-krei26"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "외식 물가 상승률 7.5%(2023) → 2.9%(2026 1분기).",
+         "ids": [
+          "tp-it-krei26"
+         ]
+        },
+        {
+         "layer": "fact",
+         "text": "2011년 이후 첫 상승기는 일시적이었다.",
+         "ids": [
+          "tp-it-engel25"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "2008~2011년처럼 물가 충격이 끝나면 비중도 내려간다.",
+        "ids": [
+         "tp-it-2011"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "식품·외식 물가가 소비자물가 수준으로 내려와야 한다.",
+        "ids": [
+         "tp-it-krei26"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "미뤘던 내구재·여행 지출의 회복.",
+        "ids": [
+         "tp-it-apc"
+        ]
+       },
+       "watch": [
+        "외식·가공식품 물가 상승률",
+        "분기별 엥겔계수(외식 포함)"
+       ],
+       "against": [
+        "물가가 둔화해도 계수가 30% 위에 머물면 구조적 원인(고령화·생활 방식) 쪽"
+       ]
+      },
+      {
+       "kind": "계속",
+       "name": "고령화로 식비 비중이 높게 굳는다",
+       "change": {
+        "layer": "inference",
+        "text": "식비·의료비 같은 필수 지출 비중이 높고 오락·교통 지출은 낮은 구조가 굳어진다.",
+        "ids": [
+         "tp-it-why25"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "source",
+         "text": "고령 가구일수록 식비 비중이 크다는 해석.",
+         "ids": [
+          "tp-it-why25"
+         ]
+        },
+        {
+         "layer": "fact",
+         "text": "60대 소비성향 크게 하락.",
+         "ids": [
+          "tp-it-apc"
+         ]
+        },
+        {
+         "layer": "fact",
+         "text": "일본도 같은 현상.",
+         "ids": [
+          "tp-it-japan"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "은퇴 가구는 큰 지출을 하지 않고 일상 지출(식사)이 대부분이 된다.",
+        "ids": [
+         "tp-it-apc"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "고령화가 지금 속도로 진행돼야 한다(인구 전망은 비교적 확실).",
+        "ids": [
+         "tp-it-why25"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "고령층 식사 서비스(아파트 상가 식당·푸드코트·도시락), 간편식.",
+        "ids": [
+         "tp-it-why25"
+        ]
+       },
+       "watch": [
+        "가구주 연령별 식비 비중",
+        "고령 가구 외식·배달 이용"
+       ],
+       "against": [
+        "고령 가구 식비 비중이 늘지 않는다면 고령화 설명이 약해진다"
+       ]
+      },
+      {
+       "kind": "분화",
+       "name": "같은 식비, 다른 의미 — 하위층은 재료, 상위층은 경험",
+       "change": {
+        "layer": "inference",
+        "text": "하위층은 식재료·할인 위주로, 상위층은 외식·디저트 같은 경험형 소비로 더 갈라진다.",
+        "ids": [
+         "tp-it-dine"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "2024년 하위 20% 식재료 64.9%, 상위 20% 외식 56.5%.",
+         "ids": [
+          "tp-it-dine"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "먹거리 값이 오르면 여유 없는 쪽은 재료로 아끼고, 여유 있는 쪽은 외식을 '작은 사치'로 유지한다.",
+        "ids": [
+         "tp-it-dine",
+         "tp-it-scene26"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "소득 격차와 외식 물가가 지금 수준이어야 한다.",
+        "ids": [
+         "tp-it-dine"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "하위층: 할인 식재료·PB 간편식 / 상위층: 디저트·프리미엄 외식.",
+        "ids": [
+         "tp-it-dine"
+        ]
+       },
+       "watch": [
+        "소득 분위별 외식비 비중",
+        "PB·할인 식재료 매출"
+       ],
+       "against": [
+        "하위층의 외식 비중이 오르면 분화보다 전 계층의 식사 방식 변화"
+       ]
+      }
+     ]
+    },
+    "conclusion": {
+     "key": {
+      "layer": "inference",
+      "text": "가장 중요하게 읽은 것은 '같은 30%, 다른 이유'다. 1994년의 30%는 가난에서 벗어나는 길목이었고, 2025년의 30%는 먹거리 물가·외식 문화·고령화·미룬 큰 지출이 겹친 결과다.",
+      "ids": [
+       "tp-it-engel25",
+       "tp-it-why25"
+      ]
+     },
+     "favored": {
+      "layer": "inference",
+      "text": "물가와 식사 방식 변화를 가장 큰 원인으로 본다. 근거: 외식이 식비의 절반을 넘었고, 빈곤율은 낮아졌다. 다만 고령화의 몫을 연령별로 나눠 확인하지는 못했다.",
+      "ids": [
+       "tp-it-dine",
+       "tp-it-why25"
+      ]
+     },
+     "undecided": {
+      "layer": "inference",
+      "text": "이번 상승이 2008~2011년처럼 일시적인지, 고령화로 굳는지는 아직 판단할 수 없다.",
+      "ids": [
+       "tp-it-2011",
+       "tp-it-why25"
+      ]
+     },
+     "next": {
+      "layer": "inference",
+      "text": "외식 물가가 둔화하는 지금(2026년 1분기 2.9%)이 시험대다 — 계수가 따라 내려가는지 보면 된다.",
+      "ids": [
+       "tp-it-krei26"
+      ]
+     },
+     "change": {
+      "layer": "inference",
+      "text": "물가가 진정되는데도 계수가 30% 위에 머물면 '구조 변화(고령화·생활 방식)' 쪽으로 판단을 옮긴다.",
+      "ids": [
+       "tp-it-krei26"
+      ]
+     }
+    }
+   },
+   {
+    "id": "shop-info",
+    "domain": "shop",
+    "label": "무엇을 보고 고르나 — 구매 결정 정보와 영향력",
+    "tracks": "사람들이 살 물건을 고를 때 기대는 정보와 그 정보를 주는 사람(광고 → 가격비교 → 블로그 후기 → 인플루언서·영상 → 라이브 방송 → AI 추천), 그리고 그 정보를 믿을 수 있는지.",
+    "question": "믿을 만한 추천을 찾아 옮겨 갈 때마다 왜 그 자리는 곧 광고가 되고, 이번엔 AI도 그렇게 될까?",
+    "scene": {
+     "layer": "fact",
+     "text": "2011년 한 주부 파워블로거가 공동구매한 36만 원짜리 세척기는 3천 대가 팔렸다. 그 블로거는 1년 동안 업체에서 수억 원의 수수료를 받고도 알리지 않았다.",
+     "ids": [
+      "tp-if-blog11"
+     ]
+    },
+    "span": [
+     1980,
+     2026
+    ],
+    "scope": [
+     {
+      "layer": "inference",
+      "text": "1990년대 이전 '무엇을 보고 골랐나'는 광고 문구 외에는 체계적인 조사 자료를 찾지 못해 짧게 다룬다.",
+      "ids": [
+       "c80-hyp-ad"
+      ]
+     }
+    ],
+    "turns": [
+     {
+      "id": "f1",
+      "years": "1980~1990년대",
+      "start": 1980,
+      "end": 1980,
+      "title": "광고와 매장 — 파는 쪽이 정보를 쥐다",
+      "why": {
+       "layer": "inference",
+       "text": "이후 모든 변화는 '파는 쪽이 아닌 정보'를 찾는 과정이므로 출발점으로 잡았다.",
+       "ids": [
+        "c80-hyp-ad"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "물건 정보는 TV·신문 광고, 매장 점원, 주변 사람의 말이 거의 전부였다.",
+        "ids": [
+         "c80-hyp-ad"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "1980년대 초 컬러TV 광고 '순간의 선택이 10년을 좌우합니다'는 제1회 방송광고대상을 받았다.",
+        "ids": [
+         "c80-hyp-ad"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "inference",
+        "text": "큰 물건일수록 광고가 '오래 쓸 결정'이라는 감정을 팔았다.",
+        "ids": [
+         "c80-hyp-ad"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "inference",
+        "text": "가격을 여러 곳과 비교하려면 직접 발품을 팔아야 했다.",
+        "ids": [
+         "c80-hyp-ad"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "'다른 가게는 얼마인가'를 쉽게 알 수 없다는 불편이 인터넷이 처음 푼 문제였다.",
+        "ids": [
+         "tp-if-2000"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "f2",
+      "years": "2000~2005",
+      "start": 2000,
+      "end": 2000,
+      "title": "가격을 한눈에 — 가격비교와 포털 검색",
+      "why": {
+       "layer": "fact",
+       "text": "2000년 가격비교 사이트 접속이 쇼핑몰 접속보다 훨씬 빠르게 늘었고 다나와가 생겼다.",
+       "ids": [
+        "tp-if-2000"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "가격 비교는 발품의 영역이었다.",
+        "ids": [
+         "c80-hyp-ad"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "초고속 인터넷 가입자가 2002년 1천만 명을 넘었다.",
+        "ids": [
+         "ix-nt-94"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "다나와(2000년 4월)가 생겼고, 2000년 설 가격비교 접속이 71% 늘었다.",
+        "ids": [
+         "tp-if-2000"
+        ]
+       },
+       {
+        "layer": "source",
+        "text": "2005년 네이버 지식쇼핑 가격비교로 포털 검색이 쇼핑 입구가 됐다는 회고가 있다.",
+        "ids": [
+         "tp-if-2005"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "inference",
+        "text": "가격 정보의 주도권이 판매자에서 구매자 쪽으로 처음 넘어왔다.",
+        "ids": [
+         "tp-if-2000"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "가격은 비교할 수 있게 됐지만 '써 보니 어떤가'는 여전히 알 수 없었다 — 후기의 시대가 그 빈자리에서 시작한다.",
+        "ids": [
+         "tp-if-blogwhy"
+        ]
+       }
+      ],
+      "world": {
+       "what": {
+        "layer": "fact",
+        "text": "미국에서 가격비교 사이트(마이사이먼)가 7억 달러에 인수될 만큼 주목받았다.",
+        "ids": [
+         "tp-if-2000"
+        ]
+       },
+       "route": {
+        "layer": "inference",
+        "text": "같은 사업 모델이 국내 벤처로 들어왔다.",
+        "ids": [
+         "tp-if-2000"
+        ]
+       },
+       "response": {
+        "layer": "fact",
+        "text": "다나와 같은 국내 가격비교 사이트가 생겼다.",
+        "ids": [
+         "tp-if-2000"
+        ]
+       },
+       "result": {
+        "layer": "source",
+        "text": "결국 포털(네이버)이 가격비교를 흡수해 검색과 쇼핑을 묶었다.",
+        "ids": [
+         "tp-if-2005"
+        ]
+       },
+       "mode": "adapted"
+      }
+     },
+     {
+      "id": "f3",
+      "years": "2009~2011",
+      "start": 2009,
+      "end": 2009,
+      "title": "'써 본 사람'의 말 — 파워블로거, 그리고 숨긴 돈",
+      "why": {
+       "layer": "fact",
+       "text": "2011년 공정위가 수수료를 숨긴 블로그 47곳을 제재해 '후기'의 신뢰 문제가 처음 공식화됐다.",
+       "ids": [
+        "tp-if-blog11"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "가격은 비교할 수 있지만 품질·사용감은 알 수 없었다.",
+        "ids": [
+         "tp-if-2000"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "포털이 '파워블로거'를 선정했고, 블로그 운영자 다수는 정보 공유를 동기로 꼽았다.",
+        "ids": [
+         "tp-if-blogwhy"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "일부 파워블로거는 공동구매로 1년에 수억 원의 수수료를 받으면서 알리지 않았다.",
+        "ids": [
+         "tp-if-blog11"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "2011년 11월 공정위가 47곳을 제재하고 대가성 표시 기준을 만들겠다고 했다.",
+        "ids": [
+         "tp-if-blog11"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "'믿을 만한 개인의 후기'가 판매 수단이 되면 신뢰가 무너진다는 첫 사례. 사람들은 다음 신뢰처(영상·SNS)로 옮겨 갔다.",
+        "ids": [
+         "tp-if-blog11",
+         "tp-if-back20"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "f4",
+      "years": "2015~2021",
+      "start": 2015,
+      "end": 2015,
+      "title": "얼굴을 보여 주는 추천 — 인플루언서와 뒷광고",
+      "why": {
+       "layer": "fact",
+       "text": "2020년 뒷광고 논란으로 SNS 후기 광고 표시가 법적 의무가 됐다(2020년 9월).",
+       "ids": [
+        "tp-if-back20"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "블로그 후기는 2011년 제재 뒤에도 여전히 큰 정보원이었다(2021년 적발 7,383건).",
+        "ids": [
+         "tp-if-mon21"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "inference",
+        "text": "스마트폰과 영상 플랫폼이 '얼굴과 목소리가 있는 후기'를 가능하게 했다.",
+        "ids": [
+         "c00-kr-iphone"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "2019년 공정위는 인스타그램 뒷광고 기업들을 제재했다.",
+        "ids": [
+         "tp-if-mon21"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "2020년 유명 유튜버들의 뒷광고가 드러나 한 유튜버는 은퇴를 선언했다.",
+        "ids": [
+         "tp-if-back20"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "2020년 9월 개정 지침 시행, 2021년 9개월간 뒷광고 17,020건 적발(인스타그램 9,538건).",
+        "ids": [
+         "tp-if-back20",
+         "tp-if-mon21"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "2011년 블로그와 같은 일이 10년 뒤 영상에서 되풀이됐다. 이번엔 규칙(광고 표시)이 생겼지만, '내 돈 주고 산 후기(내돈내산)'라는 표현이 신뢰의 표시로 따로 떠올랐다.",
+        "ids": [
+         "tp-if-back20"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "f5",
+      "years": "2020~2023",
+      "start": 2020,
+      "end": 2020,
+      "title": "보면서 묻고 바로 산다 — 라이브커머스",
+      "why": {
+       "layer": "fact",
+       "text": "2020년이 국내 라이브커머스 원년으로 꼽힌다.",
+       "ids": [
+        "tp-if-live"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "TV 홈쇼핑은 한 방향 방송이었다.",
+        "ids": [
+         "fl-shop-homeshop"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "코로나19로 매장 방문이 줄었다.",
+        "ids": [
+         "c20-online"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "네이버·카카오 등이 라이브 쇼핑을 열었다.",
+        "ids": [
+         "tp-if-live"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "시장 규모는 2023년 약 10조 원으로 추산됐지만, 2020년 규모는 출처에 따라 4천억~3조 원으로 크게 달랐다.",
+        "ids": [
+         "tp-if-live"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "판매자가 직접 질문에 답하는 방식은 '정보'와 '판매'를 한 화면에 합쳤다 — 판매자의 말이라는 점은 1980년대 광고와 같다.",
+        "ids": [
+         "tp-if-live"
+        ]
+       }
+      ],
+      "world": {
+       "what": {
+        "layer": "source",
+        "text": "중국에서 인플루언서가 실시간 방송으로 파는 방식이 먼저 퍼졌다.",
+        "ids": [
+         "tp-if-live"
+        ]
+       },
+       "route": {
+        "layer": "inference",
+        "text": "국내 포털·메신저 플랫폼이 기능으로 들였다.",
+        "ids": [
+         "tp-if-live"
+        ]
+       },
+       "response": {
+        "layer": "fact",
+        "text": "네이버·카카오가 서비스를 열었다.",
+        "ids": [
+         "tp-if-live"
+        ]
+       },
+       "result": {
+        "layer": "inference",
+        "text": "중국처럼 개인 인플루언서보다, 국내에서는 포털·플랫폼이 판을 깔고 브랜드가 방송하는 형태로 변형됐다고 본다.",
+        "ids": [
+         "tp-if-live"
+        ]
+       },
+       "mode": "adapted"
+      },
+      "gap": "2024년 이후 라이브커머스 규모의 공식 연속 추정은 아직 연결하지 않았다."
+     },
+     {
+      "id": "f6",
+      "years": "2024~2026",
+      "start": 2024,
+      "end": 2024,
+      "title": "AI에게 묻고 사람이 고른다",
+      "why": {
+       "layer": "fact",
+       "text": "2026년 조사에서 생성형 AI가 구매 첫 채널 2위(14.0%)가 됐다.",
+       "ids": [
+        "tp-if-ai26"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "포털 검색이 여전히 첫 채널(54.2%)이다.",
+        "ids": [
+         "tp-if-ai26"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "생성형 AI 경험률은 2025년 44.5%로 1년 새 11.2%p 늘었다.",
+        "ids": [
+         "er-tech-ai"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "49.9%가 AI 추천 제품을 샀지만, 71.1%는 AI 답을 검색으로 다시 확인했다.",
+        "ids": [
+         "tp-if-ai26"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "가장 원하는 AI 기능은 최저가·쿠폰 탐색과 리뷰 요약이었고, 74.0%는 최종 결제는 사람이 해야 한다고 답했다.",
+        "ids": [
+         "tp-if-agent26"
+        ]
+       },
+       {
+        "layer": "source",
+        "text": "판매자의 노출 경쟁이 AI 추천 후보에 드는 것으로 넓어지고 있다는 관측.",
+        "ids": [
+         "tp-if-seo26"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "AI는 2000년의 가격비교와 2011년의 후기 읽기를 한꺼번에 대신하지만, 판매자가 AI 추천에 들어가려 경쟁하기 시작했다 — 신뢰 문제가 다시 시작될 조건이다.",
+        "ids": [
+         "tp-if-seo26",
+         "tp-if-agent26"
+        ]
+       }
+      ]
+     }
+    ],
+    "branches": {
+     "intro": "한 줄은 한 가지 정보원입니다. 새 정보원이 생겨도 옛 정보원은 다른 세대·다른 상황에서 쓰입니다.",
+     "lanes": [
+      {
+       "label": "TV·신문 광고·PPL",
+       "start": 1980,
+       "end": null,
+       "state": "공존",
+       "note": {
+        "layer": "fact",
+        "text": "50대는 PPL을 가장 신뢰한다(2025).",
+        "ids": [
+         "tp-if-age"
+        ]
+       }
+      },
+      {
+       "label": "가격비교·포털 검색",
+       "start": 2000,
+       "end": null,
+       "state": "공존",
+       "note": {
+        "layer": "fact",
+        "text": "2026년에도 구매 첫 채널 54.2%. 40대는 키워드 광고를 가장 신뢰.",
+        "ids": [
+         "tp-if-ai26",
+         "tp-if-age"
+        ]
+       }
+      },
+      {
+       "label": "블로그 후기",
+       "start": 2009,
+       "end": null,
+       "state": "공존",
+       "note": {
+        "layer": "fact",
+        "text": "2021년 뒷광고 적발 7,383건 — 여전히 큰 정보원.",
+        "ids": [
+         "tp-if-mon21"
+        ]
+       }
+      },
+      {
+       "label": "인플루언서·영상 후기",
+       "start": 2015,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "10~30대가 가장 신뢰하는 광고 유형.",
+        "ids": [
+         "tp-if-age"
+        ]
+       }
+      },
+      {
+       "label": "라이브커머스",
+       "start": 2020,
+       "end": null,
+       "state": "판단 보류",
+       "note": {
+        "layer": "hypothesis",
+        "text": "2024년 이후 규모 자료를 연결하지 않았다.",
+        "ids": [
+         "tp-if-live"
+        ]
+       }
+      },
+      {
+       "label": "생성형 AI 추천",
+       "start": 2024,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "첫 채널 14.0%, 추천 제품 구매 경험 49.9%.",
+        "ids": [
+         "tp-if-ai26"
+        ]
+       }
+      }
+     ],
+     "read": {
+      "layer": "inference",
+      "text": "정보원은 교체되지 않고 쌓였다. 사람들은 한 곳을 믿기보다 여러 곳을 오가며 '교차 확인'한다(AI 답의 71.1%를 검색으로 재확인). 세대마다 처음 믿는 곳이 다를 뿐이다.",
+      "ids": [
+       "tp-if-ai26",
+       "tp-if-age"
+      ]
+     }
+    },
+    "reasons": [
+     {
+      "title": "왜 새 정보원은 매번 광고가 되나",
+      "facts": [
+       {
+        "layer": "fact",
+        "text": "2011년 블로그 수수료 은폐 제재.",
+        "ids": [
+         "tp-if-blog11"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "2020년 유튜브 뒷광고 논란과 규정 시행.",
+        "ids": [
+         "tp-if-back20"
+        ]
+       },
+       {
+        "layer": "source",
+        "text": "2026년 판매자가 AI 추천 후보에 들려는 경쟁 시작.",
+        "ids": [
+         "tp-if-seo26"
+        ]
+       }
+      ],
+      "logic": {
+       "layer": "inference",
+       "text": "소비자가 어떤 경로를 '파는 쪽이 아니라서' 믿기 시작하면, 판매자에게는 그 경로가 가장 효과적인 광고 자리가 된다. 돈이 몰리면 대가를 숨길 유인이 생기고, 드러나면 신뢰가 떨어져 소비자는 다음 경로로 옮긴다.",
+       "ids": [
+        "tp-if-blog11",
+        "tp-if-back20"
+       ]
+      },
+      "proposal": {
+       "layer": "inference",
+       "text": "정보원의 이동은 기술 발전만이 아니라 '신뢰 → 광고화 → 신뢰 하락 → 이동'의 반복으로 설명된다고 본다. AI도 같은 압력을 받기 시작했다.",
+       "ids": [
+        "tp-if-seo26"
+       ]
+      },
+      "rivals": [
+       {
+        "layer": "source",
+        "text": "플랫폼 설명 — 포털이 파워블로거를 선정해 권력을 만들어 준 것이 문제였다는 의견처럼, 개인보다 플랫폼의 구조 탓이라는 설명.",
+        "ids": [
+         "tp-if-blogwhy"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "개인 일탈 설명 — 2010년 조사에서 블로거 다수는 정보 공유가 동기였고 고수입자는 극소수였다. 문제는 일부였다는 반론.",
+        "ids": [
+         "tp-if-blogwhy"
+        ]
+       }
+      ],
+      "scope": {
+       "layer": "inference",
+       "text": "2009년 이후 온라인 정보원 전반, 특히 생활용품·식품·화장품처럼 써 봐야 아는 물건에 강하게 해당한다고 본다.",
+       "ids": [
+        "tp-if-blog11",
+        "tp-if-mon21"
+       ]
+      },
+      "check": [
+       {
+        "layer": "fact",
+        "text": "확인 쪽: 규정이 생긴 뒤에도 2021년 뒷광고가 1만 7천 건 적발됐다 — 유인이 규정보다 강하다는 신호.",
+        "ids": [
+         "tp-if-mon21"
+        ]
+       },
+       {
+        "layer": "hypothesis",
+        "text": "반박이 될 자료: AI 추천이 광고와 분리돼 표시되고 소비자의 재확인 비율이 오히려 줄어든다면, 이번에는 반복이 끊긴 것이다.",
+        "ids": []
+       }
+      ]
+     }
+    ],
+    "repeats": [
+     {
+      "type": "반복되는 긴장",
+      "title": "믿을 만한 추천과 돈 받은 추천 — 블로그(2011) · 영상(2020) · AI(2026)",
+      "past": {
+       "layer": "fact",
+       "text": "2011년: 정보 공유를 내건 블로그가 공동구매 수수료를 숨겼다.",
+       "ids": [
+        "tp-if-blog11"
+       ]
+      },
+      "now": {
+       "layer": "source",
+       "text": "2026년: 판매자가 AI 추천 후보에 들려고 경쟁하기 시작했다는 관측.",
+       "ids": [
+        "tp-if-seo26"
+       ]
+      },
+      "alike": {
+       "layer": "inference",
+       "text": "구조(믿을 만해 보이는 제3자 → 판매자의 돈)가 같다. 다른 점은 이번 '제3자'가 사람이 아니라 알고리즘이라 대가가 오갔는지 보이지 않는다는 것이다.",
+       "ids": [
+        "tp-if-seo26"
+       ]
+      },
+      "changed": {
+       "layer": "inference",
+       "text": "블로그·영상은 '광고' 표시 규정으로 대응했다. AI 추천에는 아직 그런 표시 기준이 연결되지 않았다(이 주제에서 확인하지 못함).",
+       "ids": [
+        "tp-if-back20"
+       ]
+      },
+      "alternatives": [
+       {
+        "layer": "inference",
+        "text": "유행 반복이 아니라 광고 시장의 원리 — 주목이 모이는 곳에 광고비가 따라간다는 단순한 설명이 더 직접적이다.",
+        "ids": [
+         "tp-if-seo26"
+        ]
+       }
+      ],
+      "counter": [
+       {
+        "layer": "fact",
+        "text": "가격비교(2000년)는 광고화 논란보다 포털 흡수로 이어졌다 — 모든 정보원이 같은 경로를 밟지는 않았다.",
+        "ids": [
+         "tp-if-2005"
+        ]
+       }
+      ],
+      "at": [
+       "f3",
+       "f4",
+       "f6"
+      ]
+     }
+    ],
+    "links": [
+     {
+      "kind": "topic",
+      "target": "shop-channel",
+      "at": "2014~",
+      "why": "정보원이 쇼핑 앱 안으로 들어오면서 '어디서 사나'와 '무엇을 보고 고르나'가 한 화면에 합쳐졌다."
+     },
+     {
+      "kind": "flow",
+      "target": "taste-goods",
+      "at": "2024~2025",
+      "why": "연예인이 단 작은 인형 키링이 품절된 사례는 굿즈 흐름에서 본다."
+     }
+    ],
+    "futures": {
+     "split": {
+      "layer": "inference",
+      "text": "갈림길은 AI 추천이 '중립적인 비교'로 남느냐, '새 광고 자리'가 되느냐다. 소비자가 최종 결정은 직접 하겠다는 태도(74.0%)가 이 갈림을 늦출 수 있다.",
+      "ids": [
+       "tp-if-agent26",
+       "tp-if-seo26"
+      ]
+     },
+     "items": [
+      {
+       "kind": "계속",
+       "name": "AI가 '비교·요약' 담당으로 자리 잡는다",
+       "change": {
+        "layer": "inference",
+        "text": "최저가 탐색·리뷰 요약은 AI가, 최종 선택은 사람이 하는 분업이 굳는다.",
+        "ids": [
+         "tp-if-agent26"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "가장 원하는 기능: 최저가·쿠폰(50.4%), 리뷰 요약(45.8%).",
+         "ids": [
+          "tp-if-agent26"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "비교는 피곤하고 시간 드는 일이라 맡기고 싶지만, 취향은 AI가 모른다고 느끼기 때문이다.",
+        "ids": [
+         "tp-if-agent26"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "AI 답의 정확성이 유지돼야 한다.",
+        "ids": [
+         "tp-if-ai26"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "AI 쇼핑 비서, 리뷰 요약, 가격 알림.",
+        "ids": [
+         "tp-if-agent26"
+        ]
+       },
+       "watch": [
+        "구매 첫 채널 중 생성형 AI 비중",
+        "AI 답 재확인 비율"
+       ],
+       "against": [
+        "재확인 비율이 크게 오르면 AI 신뢰가 떨어지고 있다는 뜻"
+       ]
+      },
+      {
+       "kind": "반작용",
+       "name": "AI 추천도 광고가 되고, 다시 '사람'을 찾는다",
+       "change": {
+        "layer": "hypothesis",
+        "text": "AI 추천에 대가가 섞였다는 논란이 생기고, 실제 사용자 커뮤니티·지인 추천의 가치가 다시 오른다.",
+        "ids": [
+         "tp-if-seo26"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "source",
+         "text": "판매자가 AI 추천에 들려는 경쟁.",
+         "ids": [
+          "tp-if-seo26"
+         ]
+        },
+        {
+         "layer": "fact",
+         "text": "블로그(2011)·영상(2020)의 선례.",
+         "ids": [
+          "tp-if-blog11",
+          "tp-if-back20"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "앞의 두 번과 같은 원리(신뢰 → 광고화 → 신뢰 하락)가 작동한다면.",
+        "ids": [
+         "tp-if-back20"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "AI 추천에 광고 표시 기준이 늦게 생겨야 한다.",
+        "ids": [
+         "tp-if-back20"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "검증된 후기 플랫폼, 소규모 취향 커뮤니티.",
+        "ids": [
+         "ts-r-why"
+        ]
+       },
+       "watch": [
+        "AI 추천 관련 광고 표시 규정 논의",
+        "AI 쇼핑 관련 소비자 불만"
+       ],
+       "against": [
+        "AI 추천에 광고 표시가 빨리 정착하면 반작용은 약하다"
+       ]
+      },
+      {
+       "kind": "분화",
+       "name": "세대마다 믿는 곳이 갈린다",
+       "change": {
+        "layer": "inference",
+        "text": "10~30대는 인플루언서·AI, 40대는 검색, 50대 이상은 방송·PPL로 처음 믿는 정보원이 갈린 채 유지된다.",
+        "ids": [
+         "tp-if-age"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "2025년 연령별 신뢰 광고 유형이 다르다.",
+         "ids": [
+          "tp-if-age"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "처음 쇼핑 정보를 익힌 매체가 평생 기본값이 되기 쉽다고 본다(세대 효과 — 직접 검증하지 않음).",
+        "ids": [
+         "tp-if-age"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "세대별 매체 이용 차이가 유지돼야 한다.",
+        "ids": [
+         "tp-if-age"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "세대별로 다른 광고·판매 채널 조합.",
+        "ids": [
+         "tp-if-age"
+        ]
+       },
+       "watch": [
+        "연령별 광고 신뢰 조사의 연도별 변화"
+       ],
+       "against": [
+        "50대 이상에서 AI·인플루언서 신뢰가 빠르게 오르면 세대보다 매체 자체의 변화"
+       ]
+      }
+     ]
+    },
+    "conclusion": {
+     "key": {
+      "layer": "inference",
+      "text": "정보원의 역사는 '파는 쪽이 아닌 목소리'를 찾아 옮겨 가는 과정이었고, 새 목소리는 매번 판매자의 돈을 끌어당겼다. 블로그(2011)와 영상(2020)에서 같은 일이 10년 간격으로 일어났다.",
+      "ids": [
+       "tp-if-blog11",
+       "tp-if-back20"
+      ]
+     },
+     "favored": {
+      "layer": "inference",
+      "text": "'신뢰 → 광고화 → 이동'의 반복 해석을 더 지지한다. 근거: 두 번의 사례와 규정 뒤에도 남은 대량 위반. 다만 AI에서도 반복될지는 아직 신호(판매자 경쟁) 단계다.",
+      "ids": [
+       "tp-if-mon21",
+       "tp-if-seo26"
+      ]
+     },
+     "undecided": {
+      "layer": "inference",
+      "text": "AI 추천에 대가가 섞이는지, 소비자가 그것을 알아차릴 수 있는지는 아직 판단할 수 없다.",
+      "ids": [
+       "tp-if-seo26"
+      ]
+     },
+     "next": {
+      "layer": "inference",
+      "text": "AI 쇼핑 추천에 '광고' 표시 기준이 생기는지가 가장 중요한 갈림길이다.",
+      "ids": [
+       "tp-if-back20"
+      ]
+     },
+     "change": {
+      "layer": "inference",
+      "text": "AI 추천에 표시 기준이 빨리 정착하고 재확인 비율이 줄면 '반복' 해석을 약하게, 관련 논란이 터지면 강하게 수정한다.",
+      "ids": [
+       "tp-if-ai26"
+      ]
+     }
+    }
+   }
+  ],
+  "planned": [],
+  "check": [
+   {
+    "key": "before",
+    "label": "이전 선택과 매력",
+    "where": [
+     "turns.before"
+    ]
+   },
+   {
+    "key": "popular",
+    "label": "인기 상품·스타일·공간·활동",
+    "where": [
+     "turns.response",
+     "turns.change"
+    ]
+   },
+   {
+    "key": "who",
+    "label": "누구·언제·계기",
+    "where": [
+     "turns.condition",
+     "turns.why"
+    ]
+   },
+   {
+    "key": "satisfy",
+    "label": "만족",
+    "where": [
+     "turns.change",
+     "reasons"
+    ]
+   },
+   {
+    "key": "pain",
+    "label": "흔해짐·비싸짐·불편",
+    "where": [
+     "turns.legacy"
+    ]
+   },
+   {
+    "key": "diff",
+    "label": "새 선택의 차이",
+    "where": [
+     "turns.change"
+    ]
+   },
+   {
+    "key": "forces",
+    "label": "가격·소득·주거·기술·인구·제도·미디어",
+    "where": [
+     "turns.condition",
+     "turns.world"
+    ]
+   },
+   {
+    "key": "brands",
+    "label": "브랜드·사업자",
+    "where": [
+     "turns.response"
+    ]
+   },
+   {
+    "key": "relation",
+    "label": "교체·공존·혼합·분화·재등장",
+    "where": [
+     "branches"
+    ]
+   },
+   {
+    "key": "remain",
+    "label": "남은 불편",
+    "where": [
+     "turns.legacy",
+     "conclusion"
+    ]
+   },
+   {
+    "key": "next",
+    "label": "다음 수요",
+    "where": [
+     "futures"
+    ]
+   }
+  ]
  }
 }

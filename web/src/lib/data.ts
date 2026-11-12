@@ -130,6 +130,7 @@ interface Seed {
   tastes: Tastes;
   stories: Stories;
   industries: unknown;
+  topics: Topics;
 }
 const seed = seedJson as unknown as Seed;
 
@@ -139,6 +140,7 @@ export const D = {
   tastes: seed.tastes,
   stories: seed.stories,
   industries: seed.industries,
+  topics: seed.topics,
   eras: seed.eras,
   claims: Object.fromEntries(seed.claims.map((c) => [c.id, c])) as Record<string, Claim>,
   checks: (seed.numberChecks ?? {}) as Record<string, NumberCheck[]>,
@@ -234,3 +236,21 @@ export const yearCount = (() => {
   for (const n of D.nodes) if (n.yearPrecision === 'year' && isKR(n)) m[n.year] = (m[n.year] ?? 0) + 1;
   return m;
 })();
+
+/* ── 주제 이야기(R-Q) ───────────────────────────────── */
+export interface TLine { layer: 'fact' | 'source' | 'inference' | 'hypothesis'; text: string; ids: string[] }
+export interface TWorld { what: TLine; route: TLine; response: TLine; result: TLine; mode: string }
+export interface TTurn { id: string; years: string; start: number; end: number; title: string; why: TLine; before: TLine[]; condition: TLine[]; response: TLine[]; change: TLine[]; legacy: TLine[]; world?: TWorld; gap?: string }
+export interface TLane { label: string; start: number; end: number | null; state: string; note: TLine }
+export interface TReason { title: string; facts: TLine[]; logic: TLine; proposal: TLine; rivals: TLine[]; scope: TLine; check: TLine[] }
+export interface TFuture { kind: string; name: string; change: TLine; basis: TLine[]; logic: TLine; conditions: TLine; demand: TLine; watch: string[]; against: string[]; horizon?: string }
+export interface TRepeat { type: string; title: string; past: TLine; now: TLine; alike: TLine; changed: TLine; alternatives: TLine[]; counter: TLine[]; at: string[]; interval?: string }
+export interface TLink { kind: 'topic' | 'flow' | 'industry'; target: string; at: string; why: string }
+export interface Topic {
+  id: string; domain: string; label: string; tracks: string; question: string; scene: TLine; span: [number, number]; scope?: TLine[];
+  turns: TTurn[]; branches: { intro: string; lanes: TLane[]; read: TLine }; reasons: TReason[]; repeats?: TRepeat[]; links?: TLink[];
+  futures: { split: TLine; items: TFuture[] }; conclusion: { key: TLine; favored: TLine; undecided: TLine; next: TLine; change: TLine };
+}
+export interface Topics { domains: { id: string; label: string; desc: string }[]; topics: Topic[]; planned: { domain: string; id: string; label: string }[]; check: { key: string; label: string; where: string[] }[] }
+export const topicById: Record<string, Topic> = Object.fromEntries((seed.topics?.topics ?? []).map((t) => [t.id, t]));
+export const MODE_KO: Record<string, string> = { same: '거의 그대로 들어옴', late: '늦게 확산', adapted: '국내 조건에 맞게 변형', rejected: '들어왔다가 밀려남', outbound: '한국에서 세계로' };

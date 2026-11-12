@@ -1,0 +1,275 @@
+import { D, MODE_KO, topicById, type Topic, type TLine, type TTurn } from '../lib/data';
+import type { Route } from '../lib/route';
+import { SLineView, goTo } from '../ui/Story';
+
+/**
+ * 주제 이야기 — 같은 대상을 끝까지 따라가는 본문(R-Q3, R-Q7).
+ * 순서(R-FU3): 질문·장면 → 시간축 → 전환점 이야기(세계 연결 포함) → 갈래 → 다른 흐름과 만나는 곳 → 핵심 추론 → 반복 → 미래 → 결론.
+ * 11개 질문은 본문 목록이 아니라 데이터 점검표로만 쓴다(R-Q6).
+ */
+type Nav = (p: Partial<Route>) => void;
+const T = D.topics;
+
+const Lines = ({ xs }: { xs: TLine[] }) => <>{xs.map((x, i) => <SLineView key={i} x={x} />)}</>;
+const scrollTo = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+export function TopicView({ r, nav }: { r: Route; nav: Nav }) {
+  const t = r.topic ? topicById[r.topic] : undefined;
+  if (t) return <TopicDetail t={t} nav={nav} />;
+  return <TopicMap nav={nav} />;
+}
+
+/* ── 주제 지도: 읽을 수 있는 주제만 활성, 다룰 예정은 다른 모양(R-Q16) ── */
+export function TopicMap({ nav }: { nav: Nav }) {
+  return (
+    <div className="view topics">
+      <section className="panel hero">
+        <h2>한 가지를 끝까지 따라가는 이야기</h2>
+        <p className="lead">주제 하나를 고르면 처음에는 어땠는지, 무엇이 언제 왜 바뀌었는지, 옛 선택은 어떻게 남았는지, 지금 어디에 와 있고 앞으로 어떤 방향이 가능한지를 한 흐름으로 읽습니다. 한 주제 안에서는 같은 대상만 따라갑니다.</p>
+      </section>
+      {T.domains.map((d) => {
+        const ts = T.topics.filter((t) => t.domain === d.id);
+        const pl = T.planned.filter((p) => p.domain === d.id);
+        return (
+          <section key={d.id} className="panel tp-dom">
+            <h2>{d.label}</h2>
+            <p className="muted">{d.desc}</p>
+            <div className="tp-cards">
+              {ts.map((t) => (
+                <button key={t.id} className="tp-card" onClick={() => { nav({ tab: 'topic', topic: t.id }); window.scrollTo({ top: 0 }); }}>
+                  <b>{t.label}</b>
+                  <span className="tp-q">{t.question}</span>
+                  <span className="muted small">{t.span[0]}~{t.span[1]} · 전환점 {t.turns.length}개</span>
+                  <span className="fc-go">읽기 →</span>
+                </button>
+              ))}
+            </div>
+            <Interplay domain={d.id} nav={nav} />
+            {pl.length > 0 && (
+              <div className="tp-planned">
+                <span className="muted small">다룰 예정(아직 읽을 내용 없음)</span>
+                <ul>{pl.map((p) => <li key={p.id}>{p.label}</li>)}</ul>
+              </div>
+            )}
+          </section>
+        );
+      })}
+    </div>
+  );
+}
+
+/* ── 주제 본문 ── */
+function TopicDetail({ t, nav }: { t: Topic; nav: Nav }) {
+  const dom = T.domains.find((d) => d.id === t.domain);
+  return (
+    <div className="view topic">
+      <p><button className="link" onClick={() => nav({ tab: 'topic', topic: undefined })}>← {dom?.label ?? '주제'} 전체</button></p>
+      <section className="panel" id="tp-q">
+        <p className="muted small">{dom?.label}</p>
+        <h2 className="tp-title">{t.label}</h2>
+        <p className="tp-question">{t.question}</p>
+        <div className="tp-scene"><SLineView x={t.scene} /></div>
+        <p className="tp-tracks"><b>이 이야기가 계속 따라가는 것</b> {t.tracks}</p>
+        {t.scope && t.scope.length > 0 && <details className="tp-scope"><summary>시작 시점과 자료가 비는 곳</summary><Lines xs={t.scope} /></details>}
+        <nav className="tp-toc" aria-label="이 주제의 순서">
+          {[['tp-time', '시간 흐름'], ['tp-turns', '전환점 이야기'], ['tp-branch', '옛 선택은 어떻게 남았나'], ['tp-reason', '왜 그렇게 봤나'], ...(t.repeats?.length ? [['tp-repeat', '되풀이되는 것']] : []), ['tp-future', '앞으로 가능한 방향'], ['tp-end', '결론']].map(([id, l]) => <button key={id} className="chip" onClick={() => scrollTo(id)}>{l}</button>)}
+        </nav>
+      </section>
+
+      <TimeAxis t={t} />
+
+      <section className="panel" id="tp-turns">
+        <h2>전환점 이야기</h2>
+        <p className="muted">각 전환점은 <b>그전 상태 → 새로 생긴 조건 → 사람·기업의 반응 → 구체적인 변화 → 다음에 남긴 것</b> 순서로 읽습니다. 앞 전환점이 남긴 것이 다음 전환점의 조건이 됩니다.</p>
+        {t.turns.map((tu, i) => <TurnCard key={tu.id} tu={tu} n={i + 1} />)}
+      </section>
+
+      <Branches t={t} />
+      {t.links && t.links.length > 0 && <Links t={t} nav={nav} />}
+
+      <section className="panel" id="tp-reason">
+        <h2>왜 그렇게 봤나 — 핵심 추론</h2>
+        <p className="muted">이야기에서 가장 중요한 연결을 어떤 사실에서 출발해 어떻게 이었는지, 다른 설명은 무엇이고 무엇으로 확인·반박할 수 있는지 보여 줍니다.</p>
+        {t.reasons.map((x) => (
+          <article key={x.title} className="tp-reason">
+            <h3>{x.title}</h3>
+            <h4>출발한 사실</h4><Lines xs={x.facts} />
+            <h4>이어 붙인 논리</h4><SLineView x={x.logic} />
+            <h4>제안하는 설명</h4><SLineView x={x.proposal} />
+            <h4>경쟁하는 다른 설명</h4><Lines xs={x.rivals} />
+            <h4>어느 시기·누구에게 해당하나</h4><SLineView x={x.scope} />
+            <h4>확인하거나 반박할 자료</h4><Lines xs={x.check} />
+          </article>
+        ))}
+      </section>
+
+      {t.repeats && t.repeats.length > 0 && (
+        <section className="panel" id="tp-repeat">
+          <h2>되풀이되는 것 — 그리고 달라진 것</h2>
+          <p className="muted">같은 모양이 다시 나타났다고 같은 이유인지는 따로 따져야 합니다. 과거와 지금을 같은 질문으로 나란히 놓았습니다.</p>
+          {t.repeats.map((rp) => (
+            <article key={rp.title} className="tp-repeat">
+              <h3><span className="tp-kind">{rp.type}</span> {rp.title}</h3>
+              <table className="tp-cmp"><tbody>
+                <tr><th>그때 누가·왜</th><td><SLineView x={rp.past} /></td></tr>
+                <tr><th>지금 누가·왜</th><td><SLineView x={rp.now} /></td></tr>
+                <tr><th>겉모양만 같나, 이유도 같나</th><td><SLineView x={rp.alike} /></td></tr>
+                <tr><th>달라진 것(가격·기술·매체·의미, 과거 불편)</th><td><SLineView x={rp.changed} /></td></tr>
+                <tr><th>다른 설명</th><td><Lines xs={rp.alternatives} /></td></tr>
+                <tr><th>반대 사례·안 맞는 조건</th><td><Lines xs={rp.counter} /></td></tr>
+              </tbody></table>
+              {rp.at.length > 0 && <p className="small">해당 구간으로: {rp.at.map((a) => { const tu = t.turns.find((x) => x.id === a); return <button key={a} className="chip" onClick={() => scrollTo(`turn-${a}`)}>{tu?.years} {tu?.title}</button>; })}</p>}
+            </article>
+          ))}
+        </section>
+      )}
+
+      <section className="panel" id="tp-future">
+        <h2>앞으로 가능한 방향</h2>
+        <div className="tp-split"><b>왜 방향이 갈라지나</b> <SLineView x={t.futures.split} /></div>
+        <p className="muted small">확률은 붙이지 않았습니다. 시점도 근거가 있을 때만 적었습니다. 각 가능성마다 무엇을 보면 판단을 고쳐야 하는지 함께 적었습니다.</p>
+        <div className="tp-futs">
+          {t.futures.items.map((f) => (
+            <article key={f.name} className="tp-fut">
+              <h3><span className="tp-kind">{f.kind}</span> {f.name}</h3>
+              <table className="tp-cmp"><tbody>
+                <tr><th>예상 변화</th><td><SLineView x={f.change} /></td></tr>
+                <tr><th>근거</th><td><Lines xs={f.basis} /></td></tr>
+                <tr><th>연결 논리</th><td><SLineView x={f.logic} /></td></tr>
+                <tr><th>성립 조건</th><td><SLineView x={f.conditions} /></td></tr>
+                <tr><th>필요해질 상품·서비스</th><td><SLineView x={f.demand} /></td></tr>
+                <tr><th>볼 신호</th><td><ul>{f.watch.map((w) => <li key={w}>{w}</li>)}</ul></td></tr>
+                <tr><th>판단을 바꿀 신호</th><td><ul>{f.against.map((w) => <li key={w}>{w}</li>)}</ul></td></tr>
+                {f.horizon && <tr><th>시간 범위</th><td>{f.horizon}</td></tr>}
+              </tbody></table>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="panel tp-end" id="tp-end">
+        <h2>결론</h2>
+        <dl>
+          <dt>가장 중요하게 읽은 것</dt><dd><SLineView x={t.conclusion.key} /></dd>
+          <dt>지금 더 지지하는 해석과 이유</dt><dd><SLineView x={t.conclusion.favored} /></dd>
+          <dt>아직 판단할 수 없는 것</dt><dd><SLineView x={t.conclusion.undecided} /></dd>
+          <dt>다음에 주목할 가능성</dt><dd><SLineView x={t.conclusion.next} /></dd>
+          <dt>이것이 보이면 판단을 바꾼다</dt><dd><SLineView x={t.conclusion.change} /></dd>
+        </dl>
+      </section>
+    </div>
+  );
+}
+
+/* 시간축: 전환점이 언제 시작했는지(칸 = 다음 전환점까지) */
+function TimeAxis({ t }: { t: Topic }) {
+  const [a, b] = t.span;
+  const W = 900, L = 20, R = 20, H = 70;
+  const x = (y: number) => L + ((y - a) / Math.max(1, b - a)) * (W - L - R);
+  const ticks = Array.from({ length: Math.floor((b - a) / 10) + 2 }, (_, i) => Math.ceil(a / 10) * 10 + i * 10).filter((y) => y <= b);
+  return (
+    <section className="panel" id="tp-time">
+      <h2>시간 흐름</h2>
+      <p className="muted">무엇을 보나: 전환점이 시작된 해입니다. 칸 하나는 다음 전환점이 시작될 때까지이고, 겹쳐 있는 칸은 두 변화가 같은 시기에 함께 진행됐다는 뜻입니다. 누르면 그 이야기로 갑니다.</p>
+      <div className="tz-tlwrap"><svg className="tp-axis" viewBox={`0 0 ${W} ${H}`} role="img" aria-label="전환점 시간축">
+        {ticks.map((y) => <g key={y}><line x1={x(y)} x2={x(y)} y1={8} y2={H - 18} className="tick" /><text x={x(y)} y={H - 4} className="tickl" textAnchor="middle">{y}</text></g>)}
+        {t.turns.map((tu, i) => {
+          const nx = i + 1 < t.turns.length ? Math.max(t.turns[i + 1].start, tu.start + 1) : b;
+          const row = i % 2;
+          return (
+            <g key={tu.id} className="tp-seg" onClick={() => scrollTo(`turn-${tu.id}`)} role="button" tabIndex={0} onKeyDown={(e) => { if (e.key === 'Enter') scrollTo(`turn-${tu.id}`); }}>
+              <rect x={x(tu.start)} y={12 + row * 20} width={Math.max(x(nx) - x(tu.start) - 2, 6)} height={16} rx={4} className={`tpk k${i % 6}`}><title>{`${tu.years} ${tu.title}`}</title></rect>
+              <text x={x(tu.start) + 4} y={24 + row * 20} className="tp-segl">{i + 1}</text>
+            </g>
+          );
+        })}
+      </svg></div>
+      <ol className="tp-axis-list">{t.turns.map((tu) => <li key={tu.id}><button className="link" onClick={() => scrollTo(`turn-${tu.id}`)}><b>{tu.years}</b> {tu.title}</button></li>)}</ol>
+      <p className="small">읽어낼 것: 변화가 고르게 퍼져 있지 않고 몇몇 시기에 몰려 있습니다. 몰린 시기가 왜 몰렸는지가 아래 전환점 이야기의 질문입니다.</p>
+    </section>
+  );
+}
+
+function TurnCard({ tu, n }: { tu: TTurn; n: number }) {
+  const rows: [string, TLine[]][] = [['그전 상태', tu.before], ['새로 생긴 조건', tu.condition], ['사람·기업의 반응', tu.response], ['구체적인 변화', tu.change], ['다음에 남긴 것', tu.legacy]];
+  return (
+    <article className="tp-turn" id={`turn-${tu.id}`}>
+      <h3><span className="tp-n">{n}</span> <span className="tp-yr">{tu.years}</span> {tu.title}</h3>
+      <div className="tp-why"><b>왜 이 시점인가</b> <SLineView x={tu.why} /></div>
+      <ol className="tp-chain">{rows.map(([h, xs]) => <li key={h}><h4>{h}</h4><div><Lines xs={xs} /></div></li>)}</ol>
+      {tu.world && (
+        <div className="tp-world">
+          <b>세계와 이어진 지점</b> <span className="tp-mode">{MODE_KO[tu.world.mode]}</span>
+          <ol className="tp-wsteps">
+            <li><h4>세계에서 달라진 것</h4><SLineView x={tu.world.what} /></li>
+            <li><h4>들어온 경로</h4><SLineView x={tu.world.route} /></li>
+            <li><h4>국내의 대응</h4><SLineView x={tu.world.response} /></li>
+            <li><h4>결과</h4><SLineView x={tu.world.result} /></li>
+          </ol>
+        </div>
+      )}
+      {tu.gap && <p className="tp-gap small">자료 공백: {tu.gap}</p>}
+    </article>
+  );
+}
+
+/* 갈래 구조: 한 줄 = 한 선택지, 언제 생겨 지금 어떤 상태인가 */
+function Branches({ t }: { t: Topic }) {
+  const [a, b] = t.span;
+  const pct = (y: number) => ((Math.max(y, a) - a) / Math.max(1, b - a)) * 100;
+  return (
+    <section className="panel" id="tp-branch">
+      <h2>옛 선택은 어떻게 남았나</h2>
+      <p className="muted">무엇을 보나: {t.branches.intro} 막대는 그 선택지가 있던 기간입니다.</p>
+      <ul className="tp-lanes">
+        {t.branches.lanes.map((l) => (
+          <li key={l.label}>
+            <span className="tp-lane-name">{l.label}</span>
+            <span className="tp-lane-bar"><i style={{ left: `${pct(l.start)}%`, width: `${pct(l.end ?? b) - pct(l.start)}%` }} /></span>
+            <span className={`tp-state s-${l.state}`}>{l.state}</span>
+            <span className="tp-lane-note"><SLineView x={l.note} /></span>
+          </li>
+        ))}
+      </ul>
+      <div className="tp-read"><b>읽어낼 것</b> <SLineView x={t.branches.read} /></div>
+    </section>
+  );
+}
+
+function Links({ t, nav }: { t: Topic; nav: Nav }) {
+  return (
+    <section className="panel" id="tp-links">
+      <h2>다른 이야기와 만나는 곳</h2>
+      <p className="muted">아래는 이 주제의 다음 단계가 아니라, 같은 시기에 영향을 주고받은 다른 대상입니다. 새로운 설명이 있는 곳만 연결했습니다.</p>
+      <ul className="tp-links">
+        {t.links!.map((l) => {
+          const planned = l.kind === 'topic' && !topicById[l.target];
+          const name = l.kind === 'topic' ? (topicById[l.target]?.label ?? T.planned.find((p) => p.id === l.target)?.label) : l.kind === 'flow' ? (D.flows.find((f) => f.id === l.target)?.topic ?? D.tastes.flows.find((f) => f.id === l.target)?.title) : l.target;
+          return (
+            <li key={l.target + l.at}>
+              <span className="tp-at">{l.at}</span> {l.why}{' '}
+              {planned ? <span className="chip off" aria-disabled="true">{name} — 준비 중</span>
+                : <button className="chip go" onClick={() => (l.kind === 'topic' ? nav({ tab: 'topic', topic: l.target }) : goTo(nav, l.target))}>{name} →</button>}
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  );
+}
+
+/* 같은 분야 안의 주제들이 서로 영향을 준 지점(R-Q18) — 각 주제의 '만나는 곳'에서 모은다 */
+function Interplay({ domain, nav }: { domain: string; nav: Nav }) {
+  const ts = T.topics.filter((t) => t.domain === domain);
+  const rows = ts.flatMap((t) => (t.links ?? []).filter((l) => l.kind === 'topic' && topicById[l.target]?.domain === domain).map((l) => ({ from: t, to: topicById[l.target], at: l.at, why: l.why })));
+  if (!rows.length) return null;
+  return (
+    <div className="tp-inter">
+      <h3>이 분야의 이야기들이 서로 영향을 준 곳</h3>
+      <p className="muted small">각 이야기는 한 가지 대상만 따라갑니다. 대신 서로 맞물린 시점을 여기 모았습니다.</p>
+      <ul>{rows.map((r, i) => (
+        <li key={i}><span className="tp-at">{r.at}</span> <button className="link" onClick={() => nav({ tab: 'topic', topic: r.from.id })}>{r.from.label.split(' — ')[0]}</button> ↔ <button className="link" onClick={() => nav({ tab: 'topic', topic: r.to.id })}>{r.to.label.split(' — ')[0]}</button> — {r.why}</li>
+      ))}</ul>
+    </div>
+  );
+}

@@ -635,3 +635,59 @@ dl.reason dt { color: var(--ink-3); font-weight: 600; } dl.reason dd { margin: 0
 .ilk-i { display: inline-block; width: 14px; height: 10px; border-radius: 3px; vertical-align: -1px; }
 .il-name { text-decoration: underline; }
 .il-pending { margin-top: 1rem; font-size: .88rem; } .il-pending summary { cursor: pointer; color: var(--ink-2); }
+
+/* ── 18차: 주제 이야기 ───────────────────────── */
+.tp-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: .8rem; margin: .6rem 0; }
+.tp-card { text-align: left; display: flex; flex-direction: column; gap: .35rem; padding: .9rem 1rem; border: 1px solid var(--line); border-radius: 10px; background: var(--card, #fff); cursor: pointer; font: inherit; color: inherit; }
+.tp-card:hover, .tp-card:focus-visible { border-color: var(--accent, #c4512a); }
+.tp-card .tp-q { color: var(--ink-2); }
+.tp-planned { margin-top: .6rem; padding: .6rem .8rem; border: 1px dashed var(--line); border-radius: 8px; }
+.tp-planned ul { margin: .3rem 0 0; padding-left: 1.1rem; color: var(--ink-2); font-size: .9rem; }
+.tp-title { margin: .1rem 0 .2rem; }
+.tp-question { font-size: 1.15rem; font-weight: 600; margin: .2rem 0 .7rem; }
+.tp-scene { background: var(--soft, #f6f3ee); border-radius: 8px; padding: .55rem .75rem; margin-bottom: .6rem; }
+.tp-tracks { font-size: .92rem; } .tp-tracks b { margin-right: .4rem; }
+.tp-scope { margin: .4rem 0; font-size: .9rem; }
+.tp-toc { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: .7rem; }
+.tp-axis { width: 100%; min-width: 620px; height: auto; }
+.tp-axis .tick { stroke: var(--line); } .tp-axis .tickl { font-size: 11px; fill: var(--ink-2); }
+.tp-seg { cursor: pointer; } .tp-segl { font-size: 11px; fill: #fff; font-weight: 700; pointer-events: none; }
+.tpk.k0 { fill: #3c7fd0; } .tpk.k1 { fill: #1f4f8f; } .tpk.k2 { fill: #8a5bb8; } .tpk.k3 { fill: #c9772f; } .tpk.k4 { fill: #1f8a5a; } .tpk.k5 { fill: #c43b2a; }
+.tp-axis-list { columns: 2 320px; font-size: .9rem; margin: .5rem 0; }
+.tp-turn { border-top: 1px solid var(--line); padding: 1rem 0 .4rem; scroll-margin-top: 80px; }
+.tp-turn h3 { margin: 0 0 .4rem; } .tp-n { display: inline-block; min-width: 1.5rem; text-align: center; background: var(--ink, #222); color: #fff; border-radius: 50%; font-size: .85rem; }
+.tp-yr { color: var(--accent, #c4512a); font-weight: 700; margin-right: .2rem; }
+.tp-why { font-size: .92rem; margin-bottom: .5rem; } .tp-why b { margin-right: .3rem; }
+.tp-chain { list-style: none; padding: 0; margin: 0; display: grid; gap: .25rem; }
+.tp-chain li { display: grid; grid-template-columns: 9.5rem 1fr; gap: .6rem; padding: .35rem 0; border-left: 3px solid var(--line); padding-left: .6rem; position: relative; }
+.tp-chain li h4 { margin: .1rem 0; font-size: .85rem; color: var(--ink-2); }
+.tp-chain li:last-child { border-left-color: var(--accent, #c4512a); }
+.tp-world { margin-top: .6rem; padding: .6rem .8rem; background: #eef3f9; border-radius: 8px; }
+.tp-mode { font-size: .78rem; background: #fff; border: 1px solid #b9c9de; border-radius: 6px; padding: .05rem .4rem; margin-left: .3rem; }
+.tp-wsteps { list-style: none; padding: 0; margin: .4rem 0 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: .5rem; }
+.tp-wsteps h4 { margin: 0 0 .2rem; font-size: .8rem; color: var(--ink-2); }
+.tp-gap { color: var(--ink-2); font-style: italic; }
+.tp-lanes { list-style: none; padding: 0; margin: .4rem 0; }
+.tp-lanes li { display: grid; grid-template-columns: 11rem 9rem 4rem 1fr; gap: .6rem; align-items: start; padding: .4rem 0; border-bottom: 1px solid var(--line); }
+.tp-lane-bar { position: relative; height: 10px; background: var(--soft, #f2efe9); border-radius: 5px; margin-top: .45rem; }
+.tp-lane-bar i { position: absolute; top: 0; bottom: 0; background: #7a8fa8; border-radius: 5px; }
+.tp-state { font-size: .78rem; font-weight: 700; border-radius: 6px; padding: .05rem .35rem; text-align: center; background: #eee; }
+.tp-state.s-확대 { background: #e3f1e8; color: #1c6b40; } .tp-state.s-축소 { background: #fbe4df; color: #9a2b13; } .tp-state.s-교체 { background: #333; color: #fff; }
+.tp-state.s-분화 { background: #efe6f8; color: #6a3d9e; } .tp-state.s-공존 { background: #e3ecfa; color: #24589e; } .tp-state.s-재등장 { background: #fff1d6; color: #8a5a00; } .tp-state.s-혼합 { background: #e8eef2; color: #3b5566; }
+.tp-read, .tp-split { margin-top: .6rem; } .tp-read b, .tp-split b { margin-right: .3rem; }
+.tp-links { padding-left: 1.1rem; } .tp-links li { margin: .4rem 0; } .tp-at { font-weight: 700; margin-right: .3rem; }
+.chip.off { opacity: .55; cursor: default; border-style: dashed; }
+.tp-reason { border-top: 1px solid var(--line); padding-top: .6rem; } .tp-reason h4 { margin: .6rem 0 .15rem; font-size: .85rem; color: var(--ink-2); }
+.tp-kind { font-size: .75rem; background: var(--ink, #222); color: #fff; border-radius: 5px; padding: .05rem .4rem; margin-right: .3rem; vertical-align: .1em; }
+.tp-cmp { width: 100%; border-collapse: collapse; font-size: .92rem; } .tp-cmp th { text-align: left; width: 11rem; color: var(--ink-2); font-weight: 600; vertical-align: top; padding: .35rem .5rem .35rem 0; } .tp-cmp td { padding: .35rem 0; border-bottom: 1px solid var(--line); }
+.tp-cmp ul { margin: 0; padding-left: 1rem; }
+.tp-futs { display: grid; gap: 1rem; } .tp-fut { border: 1px solid var(--line); border-radius: 10px; padding: .7rem .9rem; }
+.tp-end dl { display: grid; grid-template-columns: 12rem 1fr; gap: .5rem .8rem; } .tp-end dt { font-weight: 700; } .tp-end dd { margin: 0; }
+@media (max-width: 720px) {
+  .tp-chain li, .tp-lanes li, .tp-end dl { grid-template-columns: 1fr; }
+  .tp-wsteps { grid-template-columns: 1fr 1fr; } .tp-cmp th { width: 7rem; }
+}
+@media (prefers-color-scheme: dark) { .tp-world { background: #1d2733; } .tp-card { background: transparent; } }
+.tp-state.s-판단\ 보류 { background: transparent; border: 1px dashed #aaa; color: var(--ink-2); }
+.tp-inter { margin-top: .8rem; padding: .6rem .8rem; background: var(--soft, #f6f3ee); border-radius: 8px; } .tp-inter h3 { margin: 0 0 .2rem; font-size: 1rem; } .tp-inter ul { margin: .3rem 0 0; padding-left: 1.1rem; } .tp-inter li { margin: .25rem 0; }
+@media (prefers-color-scheme: dark) { .tp-inter { background: #222; } }
