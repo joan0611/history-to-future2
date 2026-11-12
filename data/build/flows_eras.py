@@ -459,11 +459,11 @@ PATCH_STEPS = {
 
 ERA_STATES = {
     "flow-jobs": {
-        "1960s": "농업과 가족 노동이 중심, 계획에 따른 공업화가 시작",
-        "1970s": "중화학공업으로 전환, 중동 건설로 일자리가 국경을 넘음",
-        "1980s": "반도체 진입, 1987년 노동자 대투쟁과 노조 결성",
+        "1960s": "농업과 가족 노동이 중심, 공장의 저임금 노동이 늘기 시작",
+        "1970s": "공장 노동이 커지고, 중동 건설로 일자리가 국경을 넘음",
+        "1980s": "1987년 노동자 대투쟁과 노조 결성",
         "1990s": "서비스업으로 일자리 이동, 외환위기 구조조정",
-        "2000s": "비정규직 비중 정점(2004), FTA로 수출 시장 확대",
+        "2000s": "비정규직 비중 정점(2004)",
         "2010s": "앱으로 연결되는 플랫폼 노동",
         "2020s": "서비스업 70%대, 전문직 증가와 AI",
     },
@@ -925,7 +925,7 @@ DOMAINS = [
 FLOW_META = {
     "flow-politics": {"domain": "politics", "topic": "정치 참여와 권력", "econ": {"status": "context", "note": "정치 변화가 경제에 미친 경로는 이 흐름에서 검증하지 않았다. 경제 전망의 근거로 쓰지 않는다."}},
     "flow-economy": {"domain": "economy", "topic": "위기와 대응", "econ": {"status": "linked", "note": "외부 충격이 물가·외환·금리를 거쳐 가계와 기업에 전달된 경로를 시대별로 본다. 가계 소비로 이어지는 부분은 대표 분석에서 끝까지 따라간다.", "analysis": "an-consumption"}},
-    "flow-jobs": {"domain": "industry", "topic": "산업구조와 고용", "econ": {"status": "partial", "note": "산업 구조와 고용 형태의 변화는 통계로 확인했지만, 이것이 소득·소비로 이어진 크기는 연결하지 않았다."}},
+    "flow-jobs": {"domain": "industry", "topic": "일자리와 고용 형태", "econ": {"status": "partial", "note": "산업 구조와 고용 형태의 변화는 통계로 확인했지만, 이것이 소득·소비로 이어진 크기는 연결하지 않았다."}},
     "flow-tech": {"domain": "industry", "topic": "기술 보급(가정·개인 기기)", "econ": {"status": "partial", "note": "기기 보급이 유통·관계 방식을 바꾼 연결은 다른 흐름에서 일부 확인했다. 소비 지출 규모와의 관계는 연결하지 않았다."}},
     "flow-city": {"domain": "life", "topic": "교통·도시·주거", "econ": {"status": "partial", "note": "신도시·아파트 공급과 집값의 관계는 기사 정리 수준으로만 확인했다. 주거비와 소비 여력의 관계는 대표 분석에서 다룬다.", "analysis": "an-consumption"}},
     "flow-family": {"domain": "life", "topic": "가족·가구", "econ": {"status": "partial", "note": "가구 축소·고령화가 소비 성향을 낮춘다는 분석(대한상의)을 대표 분석에서 다룬다. 이 흐름 자체에서는 인과 크기를 확인하지 않았다.", "analysis": "an-consumption"}},

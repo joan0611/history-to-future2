@@ -1,4 +1,4 @@
-import { D, MODE_KO, topicById, type Topic, type TLine, type TTurn } from '../lib/data';
+import { D, MODE_KO, topicById, type Topic, type TLine, type TTurn, type TWorld, type TFuture } from '../lib/data';
 import type { Route } from '../lib/route';
 import { SLineView, goTo } from '../ui/Story';
 
@@ -175,39 +175,8 @@ function TopicDetail({ t, nav }: { t: Topic; nav: Nav }) {
         </section>
       )}
 
-      <section className="panel" id="tp-future">
-        <h2>앞으로 가능한 방향</h2>
-        <div className="tp-split"><b>왜 방향이 갈라지나</b> <SLineView x={t.futures.split} /></div>
-        <p className="muted small">확률은 붙이지 않았습니다. 시점도 근거가 있을 때만 적었습니다. 각 가능성마다 무엇을 보면 판단을 고쳐야 하는지 함께 적었습니다.</p>
-        <div className="tp-futs">
-          {t.futures.items.map((f) => (
-            <article key={f.name} className="tp-fut">
-              <h3><span className="tp-kind">{f.kind}</span> {f.name}</h3>
-              <table className="tp-cmp"><tbody>
-                <tr><th>예상 변화</th><td><SLineView x={f.change} /></td></tr>
-                <tr><th>근거</th><td><Lines xs={f.basis} /></td></tr>
-                <tr><th>연결 논리</th><td><SLineView x={f.logic} /></td></tr>
-                <tr><th>성립 조건</th><td><SLineView x={f.conditions} /></td></tr>
-                <tr><th>필요해질 상품·서비스</th><td><SLineView x={f.demand} /></td></tr>
-                <tr><th>볼 신호</th><td><ul>{f.watch.map((w) => <li key={w}>{w}</li>)}</ul></td></tr>
-                <tr><th>판단을 바꿀 신호</th><td><ul>{f.against.map((w) => <li key={w}>{w}</li>)}</ul></td></tr>
-                {f.horizon && <tr><th>시간 범위</th><td>{f.horizon}</td></tr>}
-              </tbody></table>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="panel tp-end" id="tp-end">
-        <h2>결론</h2>
-        <dl>
-          <dt>가장 중요하게 읽은 것</dt><dd><SLineView x={t.conclusion.key} /></dd>
-          <dt>지금 더 지지하는 해석과 이유</dt><dd><SLineView x={t.conclusion.favored} /></dd>
-          <dt>아직 판단할 수 없는 것</dt><dd><SLineView x={t.conclusion.undecided} /></dd>
-          <dt>다음에 주목할 가능성</dt><dd><SLineView x={t.conclusion.next} /></dd>
-          <dt>이것이 보이면 판단을 바꾼다</dt><dd><SLineView x={t.conclusion.change} /></dd>
-        </dl>
-      </section>
+      <FuturesView id="tp-future" f={t.futures} />
+      <ConclusionView id="tp-end" c={t.conclusion} />
     </div>
   );
 }
@@ -248,17 +217,7 @@ function TurnCard({ tu, n }: { tu: TTurn; n: number }) {
       <h3><span className="tp-n">{n}</span> <span className="tp-yr">{tu.years}</span> {tu.title}</h3>
       <div className="tp-why"><b>왜 이 시점인가</b> <SLineView x={tu.why} /></div>
       <ol className="tp-chain">{rows.map(([h, xs]) => <li key={h}><h4>{h}</h4><div><Lines xs={xs} /></div></li>)}</ol>
-      {tu.world && (
-        <div className="tp-world">
-          <b>세계와 이어진 지점</b> <span className="tp-mode">{MODE_KO[tu.world.mode]}</span>
-          <ol className="tp-wsteps">
-            <li><h4>세계에서 달라진 것</h4><SLineView x={tu.world.what} /></li>
-            <li><h4>들어온 경로</h4><SLineView x={tu.world.route} /></li>
-            <li><h4>국내의 대응</h4><SLineView x={tu.world.response} /></li>
-            <li><h4>결과</h4><SLineView x={tu.world.result} /></li>
-          </ol>
-        </div>
-      )}
+      {tu.world && <WorldBox w={tu.world} />}
       {tu.gap && <p className="tp-gap small">자료 공백: {tu.gap}</p>}
     </article>
   );
@@ -322,5 +281,64 @@ function Interplay({ domain, nav }: { domain: string; nav: Nav }) {
         <li key={i}><span className="tp-at">{r.at}</span> <button className="link" onClick={() => nav({ tab: 'topic', topic: r.from.id })}>{r.from.label.split(' — ')[0]}</button> ↔ <button className="link" onClick={() => nav({ tab: 'topic', topic: r.to.id })}>{r.to.label.split(' — ')[0]}</button> — {r.why}</li>
       ))}</ul>
     </div>
+  );
+}
+
+/** 세계 → 들어온 경로 → 국내 대응 → 결과(R-W2). 주제 이야기와 산업 일대기가 같이 쓴다. */
+export function WorldBox({ w, at }: { w: TWorld; at?: string }) {
+  return (
+    <div className="tp-world">
+      <b>세계와 이어진 지점{at ? ` · ${at}` : ''}</b> <span className="tp-mode">{MODE_KO[w.mode]}</span>
+      <ol className="tp-wsteps">
+        <li><h4>세계에서 달라진 것</h4><SLineView x={w.what} /></li>
+        <li><h4>들어온 경로</h4><SLineView x={w.route} /></li>
+        <li><h4>국내의 대응</h4><SLineView x={w.response} /></li>
+        <li><h4>결과</h4><SLineView x={w.result} /></li>
+      </ol>
+    </div>
+  );
+}
+
+/** 여러 갈래의 미래 가능성 — 가능성마다 7항목, 확률 없음(R-Q12·R-Q13·R-FU1). */
+export function FuturesView({ id, f, title = '앞으로 가능한 방향' }: { id: string; f: { split: TLine; items: TFuture[] }; title?: string }) {
+  return (
+    <section className="panel" id={id}>
+      <h2>{title}</h2>
+      <div className="tp-split"><b>왜 방향이 갈라지나</b> <SLineView x={f.split} /></div>
+      <p className="muted small">확률은 붙이지 않았습니다. 시점도 근거가 있을 때만 적었습니다. 각 가능성마다 무엇을 보면 판단을 고쳐야 하는지 함께 적었습니다.</p>
+      <div className="tp-futs">
+        {f.items.map((x) => (
+          <article key={x.name} className="tp-fut">
+            <h3><span className="tp-kind">{x.kind}</span> {x.name}</h3>
+            <table className="tp-cmp"><tbody>
+              <tr><th>예상 변화</th><td><SLineView x={x.change} /></td></tr>
+              <tr><th>근거</th><td><Lines xs={x.basis} /></td></tr>
+              <tr><th>연결 논리</th><td><SLineView x={x.logic} /></td></tr>
+              <tr><th>성립 조건</th><td><SLineView x={x.conditions} /></td></tr>
+              <tr><th>필요해질 상품·서비스</th><td><SLineView x={x.demand} /></td></tr>
+              <tr><th>볼 신호</th><td><ul>{x.watch.map((w) => <li key={w}>{w}</li>)}</ul></td></tr>
+              <tr><th>판단을 바꿀 신호</th><td><ul>{x.against.map((w) => <li key={w}>{w}</li>)}</ul></td></tr>
+              {x.horizon && <tr><th>시간 범위</th><td>{x.horizon}</td></tr>}
+            </tbody></table>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+/** 결론 5요소(R-Q14). */
+export function ConclusionView({ id, c }: { id: string; c: { key: TLine; favored: TLine; undecided: TLine; next: TLine; change: TLine } }) {
+  return (
+    <section className="panel tp-end" id={id}>
+      <h2>결론</h2>
+      <dl>
+        <dt>가장 중요하게 읽은 것</dt><dd><SLineView x={c.key} /></dd>
+        <dt>지금 더 지지하는 해석과 이유</dt><dd><SLineView x={c.favored} /></dd>
+        <dt>아직 판단할 수 없는 것</dt><dd><SLineView x={c.undecided} /></dd>
+        <dt>다음에 주목할 가능성</dt><dd><SLineView x={c.next} /></dd>
+        <dt>이것이 보이면 판단을 바꾼다</dt><dd><SLineView x={c.change} /></dd>
+      </dl>
+    </section>
   );
 }

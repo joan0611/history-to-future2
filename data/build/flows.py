@@ -653,13 +653,17 @@ FLOWS = [
 PHASE_KO = {"before": "변화 이전", "condition": "조건과 배경", "turn": "전환점", "spread": "확산과 참여 집단",
             "life": "행동·생활의 변화", "cross": "다른 분야로", "now": "지금 이어지는 것 · 달라진 것"}
 LINK_KO = {"causal": "자료가 뒷받침하는 인과", "condition": "배경·조건", "correlation": "함께 움직임(상관)",
-           "sequence": "시간 순서일 뿐", "interpretation": "해석", "hypothesis": "검증되지 않은 가설",
+           "sequence": "시간 순서 확인 · 이유는 AI 추론", "interpretation": "해석", "hypothesis": "검증되지 않은 가설",
            "similar": "닮은 일(비교)"}
 
 
 def validate(claims, nodes, indicators):
     """흐름이 가리키는 주장·사건·지표가 실제로 있는지, 단계 연결이 올바른지 확인한다."""
     _ex = _fe.apply(FLOWS, claims)
+    import flows_infer as _fi
+    _fi.apply(FLOWS)
+    import industries as _ix
+    _fi.apply_scope(FLOWS, {i["id"] for i in _ix.INDUSTRIES})
     cids = {c["id"] for c in claims}
     nids = {n["id"] for n in nodes}
     iids = {i["id"] for i in indicators}

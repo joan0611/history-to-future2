@@ -2,12 +2,14 @@ import { useState } from 'react';
 import { D } from '../lib/data';
 import type { Route } from '../lib/route';
 import { GoChip, SLineView } from '../ui/Story';
-import type { SLine } from '../lib/data';
+import type { SLine, TFuture, TLine, TWorld } from '../lib/data';
+import { ConclusionView, FuturesView, WorldBox } from './TopicView';
 
 /** 산업 일대기 — 한 산업을 고르면 그 산업만 시작부터 지금까지 이어진다. 다른 산업과의 관계는 따로 표시. */
 interface Stage { period: string; kind: string; what: string; why: SLine[]; from: SLine }
-interface Ind { id: string; group: string; label: string; tracks: string; question: string; span: [number, number]; stages: Stage[]; profile: Record<string, SLine[]>; links: { year: string; to: string | null; rel: string; text: string; line: SLine; goFlow?: [string, string] }[] }
-interface Inds { groups: { id: string; label: string; desc: string }[]; industries: Ind[]; pending: { group: string; label: string; note: string }[]; profile: { key: string; label: string }[] }
+interface Ind { id: string; group: string; label: string; tracks: string; question: string; span: [number, number]; stages: Stage[]; profile: Record<string, SLine[]>; worlds: { at: string; box: TWorld }[]; outward: TLine[]; futures: { split: TLine; items: TFuture[] }; conclusion: { key: TLine; favored: TLine; undecided: TLine; next: TLine; change: TLine }; links: { year: string; to: string | null; rel: string; text: string; line: SLine; goFlow?: [string, string] }[] }
+interface SelRow { label: string; status: '선정' | '후속' | '제외'; industry?: string; cells: Record<string, SLine>; note?: string }
+interface Inds { selection: { criteria: { key: string; label: string }[]; rows: SelRow[] }; groups: { id: string; label: string; desc: string }[]; industries: Ind[]; pending: { group: string; label: string; note: string }[]; profile: { key: string; label: string }[] }
 
 const X = (D as unknown as { industries: Inds }).industries;
 const KIND_CLASS: Record<string, string> = { '이전 상태': 'k0', '시작': 'k1', '성장': 'k2', '확산': 'k2', '전환점': 'k3', '기술 변화': 'k3', '위기': 'k4', '재편': 'k5', '현재': 'k6' };
@@ -20,6 +22,7 @@ export function IndustryLife({ nav, init }: { nav: (p: Partial<Route>) => void; 
   return (
     <section className="panel indlife" id="indlife">
       <h2>산업 일대기 <span className="sub">산업 하나를 골라 시작부터 지금까지 — 다른 산업은 '만나는 지점'에서만 연결</span></h2>
+      <Selection />
       <div className="il-pick">
         {X.groups.map((g) => {
           const items = X.industries.filter((i) => i.group === g.id);
@@ -49,12 +52,20 @@ export function IndustryLife({ nav, init }: { nav: (p: Partial<Route>) => void; 
             ))}
           </ol>
 
-          <h3>이 산업을 아홉 가지 질문으로</h3>
+          <h3>세계시장과 한국 — 세계에서 무엇이 들어왔나</h3>
+          <p className="small muted">무엇을 보나: 세계의 변화가 어떤 경로로 들어왔고, 한국 기업이 어떻게 대응해 어떤 결과가 났는지. 함께 움직였다는 것만으로 영향이라고 쓰지 않았습니다.</p>
+          {ind.worlds.map((w) => <WorldBox key={w.at} w={w.box} at={w.at} />)}
+          <h3>한국 산업이 밖으로 준 영향</h3>
+          <div className="il-out">{ind.outward.map((x, j) => <SLineView key={j} x={x} />)}</div>
+
+          <details className="il-profd"><summary>이 산업을 아홉 가지 항목으로 정리한 표</summary>
+          <h3 className="sr-only">이 산업을 아홉 가지 항목으로</h3>
           <div className="tablewrap"><table className="tz-table il-prof">
             <tbody>{X.profile.map((p) => (
               <tr key={p.key}><th>{p.label}</th><td>{(ind.profile[p.key] ?? []).map((x, j) => <SLineView key={j} x={x} />)}</td></tr>
             ))}</tbody>
           </table></div>
+          </details>
 
           <h3>다른 산업·생활과 만나는 지점 <span className="sub">이 산업의 단계를 대신하지 않습니다</span></h3>
           <ul className="il-links">
@@ -67,6 +78,8 @@ export function IndustryLife({ nav, init }: { nav: (p: Partial<Route>) => void; 
               </li>
             ))}
           </ul>
+          <FuturesView id="il-future" f={ind.futures} title={`${ind.label} — 앞으로 가능한 방향`} />
+          <ConclusionView id="il-end" c={ind.conclusion} />
         </div>
       )}
 
@@ -109,5 +122,27 @@ function Compare({ onPick }: { onPick: (id: string) => void }) {
       <p className="il-legend">{Object.entries({ '이전 상태': 'k0', 시작: 'k1', '성장·확산': 'k2', '전환점·기술 변화': 'k3', 위기: 'k4', 재편: 'k5', 현재: 'k6' }).map(([t, k]) => <span key={t}><i className={`ilk-i ${k}`} /> {t}</span>)}</p>
       <p className="small">같은 시간축에 놓으면 2014~2018년 조선의 위기와 2023~2025년 철강의 위기가 서로 다른 시기에, 반도체의 회복과 철강의 감산이 같은 시기에 일어났다는 것이 보입니다 — 산업마다 경기가 따로 움직입니다.</p>
     </>
+  );
+}
+
+/** 어떤 산업을 왜 골랐나(R-IN1) — 기준별 근거가 있는 칸만 채우고, 후속·제외 이유를 밝힌다. */
+function Selection() {
+  const sel = X.selection;
+  return (
+    <details className="il-sel">
+      <summary>어떤 산업을 왜 골랐나 — 선정 기준과 다음에 다룰 산업</summary>
+      <p className="small">무엇을 보나: 한국 경제의 성장과 구조 변화에 기여한 정도를 다섯 기준으로 봤습니다. 근거를 찾은 칸만 채웠고, 빈칸은 '확인 전'입니다.</p>
+      <div className="tablewrap"><table className="tz-table il-seltab">
+        <thead><tr><th>산업</th><th>판정</th>{sel.criteria.map((c) => <th key={c.key}>{c.label}</th>)}</tr></thead>
+        <tbody>{sel.rows.map((r) => (
+          <tr key={r.label} className={`sel-${r.status}`}>
+            <th>{r.label}{r.note && <p className="small muted">{r.note}</p>}</th>
+            <td><span className={`il-stat s-${r.status}`}>{r.status}</span></td>
+            {sel.criteria.map((c) => <td key={c.key}>{r.cells[c.key] ? <SLineView x={r.cells[c.key]} /> : <span className="muted small">확인 전</span>}</td>)}
+          </tr>
+        ))}</tbody>
+      </table></div>
+      <p className="small">읽어낼 것: 선정한 아홉 산업은 수출과 다른 산업으로 번진 영향이 크다는 공통점이 있습니다. 섬유·의류와 디스플레이는 수출 비중이 컸던 시기가 분명해 다음 일대기 후보이고, 경공업 일부는 지금 구조를 설명하는 비중이 작아 제외했습니다.</p>
+    </details>
   );
 }

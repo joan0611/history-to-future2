@@ -42,23 +42,32 @@ export function GoChip({ nav, flow, step, label }: { nav: Nav; flow: string; ste
   return <button className="chip go" onClick={() => goTo(nav, flow, step)}>{label ?? `${flowName(flow)}${st ? ` · ${st}` : ''}`} →</button>;
 }
 
-/** 11개 질문으로 읽는 흐름 이야기. 답은 펼친 채로 보인다. */
+/** 흐름 이야기 — 11개 질문은 내부 점검 기준으로만 쓰고, 화면에는 시간 순서로 이어지는 세 대목의 이야기로 보여 준다(R-Q6). */
+const ACTS: { id: string; title: string; keys: string[] }[] = [
+  { id: 'a1', title: '처음에는 — 무엇을 골랐고 어떻게 퍼졌나', keys: ['before', 'popular', 'spread', 'satisfy'] },
+  { id: 'a2', title: '그다음 — 무엇이 불편해졌고, 어떤 조건에서 새 선택이 자랐나', keys: ['friction', 'newchoice', 'conditions', 'suppliers', 'relation'] },
+  { id: 'a3', title: '지금과 앞으로 — 남은 불편, 그리고 갈 수 있는 방향', keys: ['unmet', 'next'] },
+];
 export function StoryQA({ id, nav }: { id: string; nav: Nav }) {
   const st = X.stories[id];
   if (!st) return null;
   return (
     <section className="panel story" id="story">
-      <h2>이 흐름을 11개 질문으로 읽기 <span className="sub">연표가 아니라 '선택 기준이 어떻게 바뀌었나'</span></h2>
+      <h2>이 흐름의 이야기 <span className="sub">연표가 아니라 선택 기준이 어떻게 바뀌었나</span></h2>
       <p className="lead">{st.lead}</p>
-      <p className="muted small">표시: <SBadge l="fact" /> <SBadge l="source" /> <SBadge l="inference" /> <SBadge l="hypothesis" /> — 'AI 추론'과 '가설'은 출처의 주장이 아닙니다. 근거를 찾지 못한 연결도 비워 두지 않고 추론으로 채워 표시했습니다.</p>
-      <ol className="story-qs">
-        {X.qs.map((q) => (
-          <li key={q.key}>
-            <h3>{q.label}</h3>
-            {(st.qs[q.key] ?? []).map((x, i) => <SLineView key={i} x={x} />)}
-          </li>
-        ))}
-      </ol>
+      <p className="muted small">표시: <SBadge l="fact" /> <SBadge l="source" /> <SBadge l="inference" /> <SBadge l="hypothesis" /> — 'AI 추론'과 '가설'은 출처의 주장이 아닙니다.</p>
+      <div className="story-acts">
+        {ACTS.map((a) => {
+          const lines = a.keys.flatMap((k) => st.qs[k] ?? []);
+          if (!lines.length) return null;
+          return (
+            <div key={a.id} className="story-act">
+              <h3>{a.title}</h3>
+              {lines.map((x, i) => <SLineView key={i} x={x} />)}
+            </div>
+          );
+        })}
+      </div>
       {st.links.length > 0 && (
         <div className="story-links">
           <h3>이어서 보기 — 연결된 흐름</h3>

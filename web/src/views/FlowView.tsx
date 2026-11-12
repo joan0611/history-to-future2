@@ -3,7 +3,7 @@ import { D, ECON_KO, STATUS_SHORT, byId, evidenceCount, flowById, type Bridge, t
 import type { Route } from '../lib/route';
 import { Chart, SourceLine } from '../ui/Chart';
 import { Claims } from '../ui/WhyPanel';
-import { StepNoteView, StoryQA } from '../ui/Story';
+import { SBadge, StepNoteView, StoryQA } from '../ui/Story';
 
 /**
  * 변화 흐름 — 질문 하나를 중심으로 '이전 → 조건 → 전환점 → 확산 → 생활 변화 → 지금'을 잇는다.
@@ -30,7 +30,7 @@ export function FlowCard({ f, nav, compact }: { f: Flow; nav: (p: Partial<Route>
 }
 
 const domainLabel = (id: string) => D.domains.find((d) => d.id === id)?.label ?? id;
-export const KIND_SHORT: Record<LinkKind, string> = { causal: '인과', condition: '조건', correlation: '상관', sequence: '순서', interpretation: '해석', hypothesis: '가설', similar: '비교' };
+export const KIND_SHORT: Record<LinkKind, string> = { causal: '인과', condition: '조건', correlation: '상관', sequence: '순서·추론', interpretation: '해석', hypothesis: '가설', similar: '비교' };
 
 /** 변화 흐름 지도 — 대분류(8) → 세부 흐름. 한 줄 = 한 주제의 일곱 시대. 칸 사이 표시 = 다음 시대로 넘어간 연결의 성격. */
 function FlowList({ nav }: { nav: (p: Partial<Route>) => void }) {
@@ -109,7 +109,7 @@ export const LINK_DESC: Record<LinkKind, string> = {
   causal: '앞의 일이 뒤의 일을 낳았다는 것을 자료가 직접 보여줌',
   condition: '앞의 일이 뒤의 일이 가능해진 배경·조건이었음(유일한 원인은 아님)',
   correlation: '두 흐름이 함께 움직였지만 원인 관계는 확인하지 않음',
-  sequence: '앞뒤 순서만 맞음 — 인과를 주장하지 않음',
+  sequence: '앞뒤 순서는 자료로 확인, 이어진 이유는 이 사이트의 추론(출처의 주장 아님)',
   interpretation: '연구자·기관·작성자의 해석',
   hypothesis: '아직 검증되지 않은 설명',
   similar: '다른 시기의 닮은 일과 비교 — 영향 관계가 아님',
@@ -128,6 +128,7 @@ function FlowDetail({ f, r, nav, why }: { f: Flow; r: Route; nav: (p: Partial<Ro
       <section className="panel hero">
         <div className="eyebrow">{domainLabel(f.domain)} · {f.topic} <span className={`econ e-${f.econ.status}`}>{ECON_KO[f.econ.status]}</span></div>
         <h2>{f.question}</h2>
+        {f.tracks && <p className="tp-tracks"><b>이 흐름이 계속 따라가는 것</b> {f.tracks}</p>}
         <p className="shape"><b>확인된 변화의 모양</b> {f.shape} <span className="muted small">(근거 문장을 묶은 작성자 정리)</span></p>
         {f.note && <p className="small muted">{f.note}</p>}
         <ol className="erabar" aria-label="시대별 모습">
@@ -157,12 +158,15 @@ function FlowDetail({ f, r, nav, why }: { f: Flow; r: Route; nav: (p: Partial<Ro
         <h2>시대별로 따라가기 <span className="sub">그 시대의 모습 → 다음 시대로 넘어간 연결고리</span></h2>
         <ol className="eras-flow">
           {D.eras.map((e, i) => {
-            const steps = f.steps.filter((s) => s.era === e.id);
+            const all = f.steps.filter((s) => s.era === e.id);
+            const steps = all.filter((s) => !s.side);
+            const sides = all.filter((s) => s.side);
             const b = f.bridges[i];
             return (
               <li key={e.id} id={`era-${e.id}`} className="era-sec">
                 <h3><span className="era-tag">{e.label.replace('~현재', '')}</span> {f.eraStates[e.id]}</h3>
                 <ol className="steps">{steps.map((s, k) => <Step key={s.id} s={s} prev={steps[k - 1]} links={f.links.filter((l) => l.to === s.id)} f={f} why={why} nav={nav} />)}</ol>
+                {sides.map((s) => <SideStep key={s.id} s={s} nav={nav} />)}
                 {b && <BridgeBox b={b} />}
               </li>
             );
@@ -196,6 +200,30 @@ function FlowDetail({ f, r, nav, why }: { f: Flow; r: Route; nav: (p: Partial<Ro
   );
 }
 
+const IND_LABEL: Record<string, string> = Object.fromEntries(((D.industries as { industries: { id: string; label: string }[] }).industries ?? []).map((i) => [i.id, i.label]));
+
+/** 같은 시기에 있었지만 이 흐름의 추적 대상이 아닌 일 — 단계로 넣지 않고 연결만 둔다(R-Q3·R-Q5). */
+function SideStep({ s, nav }: { s: FlowStep; nav: (p: Partial<Route>) => void }) {
+  if (!s.side) return null;
+  return (
+    <aside className="side-step" id={`step-${s.id}`}>
+      <p className="small"><b>같은 시기, 다른 대상</b> {s.period} {s.title}</p>
+      <p className="small muted">{s.side.why}</p>
+      <p>{s.side.go.map(([k, id]) => k === 'industry' && <button key={id} className="chip go" onClick={() => nav({ tab: 'field', cat: 'industry', ind: id, flow: undefined })}>{IND_LABEL[id] ?? id} 산업 일대기 →</button>)}</p>
+    </aside>
+  );
+}
+
+/** 직접 근거가 없는 연결의 이유 — 이 사이트의 추론임을 밝히고 다른 설명을 함께 둔다(R-A6). */
+function InferBox({ t, alt }: { t: string; alt?: string }) {
+  return (
+    <div className="infer-box">
+      <p><SBadge l="inference" /> <b>왜 이어졌다고 보나</b> {t}</p>
+      {alt && <p className="small muted"><b>다른 설명</b> {alt}</p>}
+    </div>
+  );
+}
+
 function BridgeBox({ b }: { b: Bridge }) {
   const nextLabel = D.eras.find((e) => e.id === b.to)?.label.replace('~현재', '');
   return (
@@ -204,8 +232,8 @@ function BridgeBox({ b }: { b: Bridge }) {
       <div>
         <p className="bridge-h">{nextLabel}로 넘어간 연결 <span className={`lk k-${b.kind}`}>{D.linkKo[b.kind]}</span>{b.change && <span className="chg">앞뒤 관계: {b.change}</span>}</p>
         <p>{b.note}</p>
-        {b.claimIds.length > 0 ? <details className="conn-ev"><summary>이 연결의 근거 {b.claimIds.length}</summary><Claims ids={b.claimIds} all /></details>
-          : <p className="small muted">연결을 뒷받침하는 근거를 찾지 못해 시간 순서로만 이어 두었습니다(조사 공백).</p>}
+        {b.infer && <InferBox t={b.infer} alt={b.inferAlt} />}
+        {b.claimIds.length > 0 && <details className="conn-ev"><summary>앞뒤 사실의 근거 {b.claimIds.length}</summary><Claims ids={b.claimIds} all /></details>}
       </div>
     </div>
   );
@@ -218,6 +246,7 @@ function Step({ s, prev, links, f, why, nav }: { s: FlowStep; prev?: FlowStep; l
         <div key={l.from + l.to} className={`conn k-${l.kind}`}>
           <span className="conn-arrow" aria-hidden>↓</span>
           <span><span className={`lk k-${l.kind}`}>{D.linkKo[l.kind]}</span> {l.note}</span>
+          {l.infer && <InferBox t={l.infer} alt={l.inferAlt} />}
           {l.claimIds.length > 0 && <details className="conn-ev"><summary>이 연결의 근거 {l.claimIds.length}</summary><Claims ids={l.claimIds} all /></details>}
         </div>
       ))}

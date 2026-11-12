@@ -67,7 +67,7 @@ export function App() {
       </main>
       <InstallTip />
       <footer className="foot">
-        <p>모든 문장은 출처와 확인 수준(두 곳 이상 확인 / 한 곳 확인 / 출처 미확보)을 가집니다. 같은 발표를 옮긴 기사들은 한 곳으로 셉니다. 원인·결과 연결은 인과·조건·상관·시간 순서·해석·가설로 따로 표시합니다. 자료가 없는 부분은 채우지 않고 '자료 없음'으로 둡니다 — 자료가 없다는 것과 그런 일이 없었다는 것은 다릅니다.</p>
+        <p>모든 문장은 출처와 확인 수준(두 곳 이상 확인 / 한 곳 확인 / 출처 미확보)을 가집니다. 같은 발표를 옮긴 기사들은 한 곳으로 셉니다. 원인·결과 연결은 인과·조건·상관·시간 순서·해석·가설로 따로 표시합니다. 숫자가 없는 해는 숫자를 만들지 않고 '자료 없음'으로 둡니다. 사건과 사건 사이의 연결은 직접 근거가 없더라도 비워 두지 않고, 'AI 추론'이라고 표시해 이유를 씁니다.</p>
         <p className="muted">빌드 {__BUILD_ID__} · 경제 지표: FRED(원자료 OECD·세계은행) — This product uses the FRED® API but is not endorsed or certified by the Federal Reserve Bank of St. Louis.</p>
       </footer>
       <WhyPanel r={r} nav={nav} />

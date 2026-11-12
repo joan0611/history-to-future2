@@ -327,6 +327,9 @@ from industries_more import MORE_SOURCES, MORE_CLAIMS, MORE_INDUSTRIES, MORE_STE
 
 SOURCES += MORE_SOURCES
 CLAIMS += MORE_CLAIMS
+import industries_world as _iwm  # noqa: E402
+SOURCES += _iwm.SOURCES
+CLAIMS += _iwm.CLAIMS
 INDUSTRIES += MORE_INDUSTRIES
 for _ind in INDUSTRIES:
     if _ind["id"] == "steel":
@@ -371,4 +374,6 @@ def validate(claims_all, flows):
                 raise SystemExit(f"{ind['id']}: 없는 산업 {ln['to']}")
             if ln.get("goFlow") and ln["goFlow"][1] not in fsteps.get(ln["goFlow"][0], set()):
                 raise SystemExit(f"{ind['id']}: 없는 흐름 단계 {ln['goFlow']}")
-    return {"groups": GROUPS, "industries": INDUSTRIES, "pending": PENDING, "profile": [{"key": k, "label": t} for k, t in PROFILE]}
+    import industries_world as _iw
+    sel = _iw.apply(INDUSTRIES, claims_all)
+    return {"groups": GROUPS, "industries": INDUSTRIES, "pending": PENDING, "profile": [{"key": k, "label": t} for k, t in PROFILE], "selection": sel}

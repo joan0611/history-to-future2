@@ -169,7 +169,7 @@ const LINK_HELP: Record<string, string> = {
 
 export function RelTag({ e }: { e: Edge }) {
   const k = linkKindOf(e);
-  return <><span className={`lk k-${k}`}>{D.linkKo[k]}</span>{k !== 'sequence' && <span className="rel-sub">{D.relKo[e.rel]}</span>}</>;
+  return <><span className={`lk k-${k}`}>{k === 'sequence' ? '앞뒤 순서(인과 주장 없음)' : D.linkKo[k]}</span>{k !== 'sequence' && <span className="rel-sub">{D.relKo[e.rel]}</span>}</>;
 }
 
 export function Claims({ ids, all }: { ids: string[]; all?: boolean }) {

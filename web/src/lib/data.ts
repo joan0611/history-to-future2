@@ -45,10 +45,11 @@ export interface Parallel { id: string; title: string; a: { eraId: string; label
 
 export type Phase = 'before' | 'condition' | 'turn' | 'spread' | 'life' | 'cross' | 'now';
 export type LinkKind = 'causal' | 'condition' | 'correlation' | 'sequence' | 'interpretation' | 'hypothesis' | 'similar';
-export interface FlowStep { id: string; era: string; phase: Phase; period: string; title: string; claimIds: string[]; nodeIds: string[]; empty?: string; measure?: string }
-export interface FlowLink { from: string; to: string; kind: LinkKind; note: string; claimIds: string[] }
-export interface Bridge { from: string; to: string; kind: LinkKind; note: string; claimIds: string[]; change?: string }
+export interface FlowStep { id: string; era: string; phase: Phase; period: string; title: string; claimIds: string[]; nodeIds: string[]; empty?: string; measure?: string; side?: { why: string; go: [string, string][] } }
+export interface FlowLink { from: string; to: string; kind: LinkKind; note: string; claimIds: string[]; infer?: string; inferAlt?: string }
+export interface Bridge { from: string; to: string; kind: LinkKind; note: string; claimIds: string[]; change?: string; infer?: string; inferAlt?: string }
 export interface Flow {
+  tracks?: string;
   id: string; question: string; cats: Cat[]; span: [number, number]; shape: string; lede: string[]; indicators: string[]; note?: string;
   steps: FlowStep[]; links: FlowLink[]; cross: { flow: string; note: string }[]; gaps: string[]; alternatives: string[];
   eraStates: Record<string, string>; bridges: Bridge[]; domain: string; topic: string;

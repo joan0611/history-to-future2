@@ -136,7 +136,7 @@ function Row({ c, why }: { c: Cat; why: (id: string) => void }) {
         const [n] = pickKey(D.nodes.filter((x) => x.eraId === e.id && x.lane === c), 1);
         return n
           ? <button key={e.id} className={`cmap-cell c-${c}`} onClick={() => why(n.id)} title={`${n.year} ${n.label}`}><span className="y">{n.year}{!isKR(n) && <span className="abroad">해외</span>}</span>{n.label}</button>
-          : <span key={e.id} className="cmap-cell empty">자료 없음</span>;
+          : <span key={e.id} className="cmap-cell empty">이 시대 대표 사건 없음</span>;
       })}
     </>
   );
@@ -213,7 +213,7 @@ function Decade({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) => void; w
               <div key={y} className={`yg${y === r.y ? ' on' : ''}${ns.length ? '' : ' empty'}`}>
                 <button className="yg-h" onClick={() => nav({ y, z: 'year' })}>{y}</button>
                 {ns.length ? <ul>{ns.slice(0, 3).map((n) => <li key={n.id}><button className={`c-${n.lane}`} onClick={() => why(n.id)}><span className={`cdot c-${n.lane}`} />{n.label}</button></li>)}
-                  {ns.length > 3 && <li><button className="link" onClick={() => nav({ y, z: 'year' })}>+{ns.length - 3}</button></li>}</ul> : <p className="muted">자료 없음</p>}
+                  {ns.length > 3 && <li><button className="link" onClick={() => nav({ y, z: 'year' })}>+{ns.length - 3}</button></li>}</ul> : <p className="muted">이 해로 날짜가 확인된 사건 없음</p>}
               </div>
             );
           })}

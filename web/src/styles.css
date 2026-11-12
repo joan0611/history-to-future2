@@ -701,3 +701,23 @@ dl.reason dt { color: var(--ink-3); font-weight: 600; } dl.reason dd { margin: 0
 .tp-cases { width: 100%; min-width: 860px; border-collapse: collapse; font-size: .88rem; } .tp-cases th, .tp-cases td { text-align: left; vertical-align: top; padding: .4rem .45rem; border-bottom: 1px solid var(--line); } .tp-cases thead th { font-size: .8rem; color: var(--ink-2); }
 .tp-needread { display: grid; grid-template-columns: 10rem 1fr; gap: .35rem .8rem; margin: .5rem 0; } .tp-needread dt { font-weight: 700; font-size: .9rem; } .tp-needread dd { margin: 0; }
 @media (max-width: 720px) { .tp-needread { grid-template-columns: 1fr; } }
+/* 18차: 흐름 이야기 — 질문 목록 대신 세 대목 */
+.story-acts { display: grid; gap: .2rem; margin-top: .6rem; }
+.story-act { border-top: 1px solid var(--line); padding: .7rem 0 .4rem; }
+.story-act h3 { font-size: 1rem; margin: 0 0 .4rem; }
+.story-act .tl { max-width: 86ch; }
+.infer-box { margin: .35rem 0; padding: .4rem .6rem; border-left: 3px solid var(--line); background: color-mix(in srgb, var(--ink) 4%, transparent); border-radius: 4px; }
+.infer-box p { margin: .15rem 0; }
+.side-step { margin: .4rem 0 .6rem 1.2rem; padding: .4rem .6rem; border: 1px dashed var(--line); border-radius: 6px; }
+.side-step p { margin: .15rem 0; }
+.il-sel { margin: .5rem 0 1rem; }
+.il-sel summary { cursor: pointer; font-weight: 600; }
+.il-seltab td, .il-seltab th { vertical-align: top; min-width: 9rem; }
+.il-stat { display: inline-block; padding: .05rem .45rem; border-radius: 999px; border: 1px solid var(--line); font-size: .8rem; }
+.il-stat.s-선정 { background: color-mix(in srgb, var(--ink) 10%, transparent); font-weight: 600; }
+.il-stat.s-제외 { opacity: .6; }
+.sel-제외 { opacity: .75; }
+.il-out { margin: .3rem 0 1rem; }
+.il-profd { margin: .8rem 0; }
+.il-profd summary { cursor: pointer; font-weight: 600; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
