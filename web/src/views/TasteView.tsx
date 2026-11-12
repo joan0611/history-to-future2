@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { D, flowById, type Layer, type TasteFlow, type TR } from '../lib/data';
 import type { Route } from '../lib/route';
 import { Claims } from '../ui/WhyPanel';
+import { StoryQA } from '../ui/Story';
 
 /**
  * 취향·생활 흐름 — 사람들이 무엇을 좋아하고 사다가, 어떤 조건·불편을 만나 다른 선택으로 옮겨 갔는지.
@@ -167,6 +168,8 @@ function TasteDetail({ f, nav }: { f: TasteFlow; nav: (p: Partial<Route>) => voi
         <Legend />
       </section>
 
+      <StoryQA id={f.id} nav={nav} />
+
       <section className="panel" id="tz-1">
         <h2>갈래와 시간축 <span className="sub">같은 시기에 여러 선택이 함께 있다 — 화살표는 선택이 옮겨 가거나 갈라진 지점</span></h2>
         <Timeline f={f} sel={sel} setSel={setSel} />
@@ -237,17 +240,17 @@ function TasteDetail({ f, nav }: { f: TasteFlow; nav: (p: Partial<Route>) => voi
             <div className="tablewrap"><table className="tz-table">
               <thead><tr><th>기준</th><th>{f.contrast.a}</th><th>{f.contrast.b}</th><th>층위</th></tr></thead>
               <tbody>{f.contrast.rows.map((r) => (
-                <tr key={r.dim}><th>{r.dim}</th><td>{r.a}</td><td>{r.b}</td><td><LayerBadge l={effLayer(r.layer, r.basis)} /> <Ids ids={r.basis} /></td></tr>
+                <tr key={r.dim}><th>{r.dim}</th><Cell v={r.a} ai={r.aiCells?.includes('a')} /><Cell v={r.b} ai={r.aiCells?.includes('b')} /><td><LayerBadge l={effLayer(r.layer, r.basis)} /> <Ids ids={r.basis} />{r.aiWhy && <AiWhy t={r.aiWhy} />}</td></tr>
               ))}</tbody>
             </table></div>
             <p className="muted small">{f.contrast.note}</p>
           </>}
           {f.outfits && <>
-            <h2>바지와 함께 입은 것 <span className="sub">근거가 있는 조합만 — 없는 칸은 '자료 없음'</span></h2>
+            <h2>바지와 함께 입은 것 <span className="sub">자료가 없는 칸은 AI 추론으로 채우고 표시함</span></h2>
             <div className="tablewrap"><table className="tz-table">
               <thead><tr><th>시기</th><th>바지</th><th>상의</th><th>신발</th><th>근거</th></tr></thead>
               <tbody>{f.outfits.map((o) => (
-                <tr key={o.period}><th>{o.period}</th><td>{o.pants}</td><td className={o.top === '자료 없음' ? 'muted' : ''}>{o.top}</td><td className={o.shoes === '자료 없음' ? 'muted' : ''}>{o.shoes}</td><td><Ids ids={o.basis} /></td></tr>
+                <tr key={o.period}><th>{o.period}</th><Cell v={o.pants} ai={o.aiCells?.includes('pants')} /><Cell v={o.top} ai={o.aiCells?.includes('top')} /><Cell v={o.shoes} ai={o.aiCells?.includes('shoes')} /><td><Ids ids={o.basis} />{o.aiWhy && <AiWhy t={o.aiWhy} />}</td></tr>
               ))}</tbody>
             </table></div>
           </>}
@@ -294,6 +297,14 @@ function TasteDetail({ f, nav }: { f: TasteFlow; nav: (p: Partial<Route>) => voi
       </section>
     </div>
   );
+}
+
+function Cell({ v, ai }: { v: string; ai?: boolean }) {
+  return <td className={ai ? 'ai-cell' : ''}>{ai && <LayerBadge l="inference" />} {v}</td>;
+}
+function AiWhy({ t }: { t: string }) {
+  const [open, setOpen] = useState(false);
+  return <><br /><button className="link small" onClick={() => setOpen(!open)}>{open ? '접기' : 'AI 추론의 근거'}</button>{open && <p className="small muted">{t}</p>}</>;
 }
 
 const PH = ['emerge', 'spread', 'main', 'saturate', 'transform', 'revive', 'niche'];

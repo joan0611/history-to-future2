@@ -3,6 +3,7 @@ import { D, ECON_KO, STATUS_SHORT, byId, evidenceCount, flowById, type Bridge, t
 import type { Route } from '../lib/route';
 import { Chart, SourceLine } from '../ui/Chart';
 import { Claims } from '../ui/WhyPanel';
+import { StepNoteView, StoryQA } from '../ui/Story';
 
 /**
  * 변화 흐름 — 질문 하나를 중심으로 '이전 → 조건 → 전환점 → 확산 → 생활 변화 → 지금'을 잇는다.
@@ -143,6 +144,8 @@ function FlowDetail({ f, r, nav, why }: { f: Flow; r: Route; nav: (p: Partial<Ro
         <p className="small muted">연결 {f.bridges.length}개: {Object.entries(kinds).map(([k, n]) => `${D.linkKo[k as LinkKind]} ${n}`).join(' · ')}. 근거 문장 {ev.total}개(두 곳 이상 확인 {ev.verified} · 한 곳 확인 {ev.sourced}).</p>
       </section>
 
+      <StoryQA id={f.id} nav={nav} />
+
       {inds.length > 0 && (
         <section className="panel">
           <h2>숫자로 보는 장기 흐름</h2>
@@ -159,7 +162,7 @@ function FlowDetail({ f, r, nav, why }: { f: Flow; r: Route; nav: (p: Partial<Ro
             return (
               <li key={e.id} id={`era-${e.id}`} className="era-sec">
                 <h3><span className="era-tag">{e.label.replace('~현재', '')}</span> {f.eraStates[e.id]}</h3>
-                <ol className="steps">{steps.map((s, k) => <Step key={s.id} s={s} prev={steps[k - 1]} links={f.links.filter((l) => l.to === s.id)} f={f} why={why} />)}</ol>
+                <ol className="steps">{steps.map((s, k) => <Step key={s.id} s={s} prev={steps[k - 1]} links={f.links.filter((l) => l.to === s.id)} f={f} why={why} nav={nav} />)}</ol>
                 {b && <BridgeBox b={b} />}
               </li>
             );
@@ -208,7 +211,7 @@ function BridgeBox({ b }: { b: Bridge }) {
   );
 }
 
-function Step({ s, prev, links, f, why }: { s: FlowStep; prev?: FlowStep; links: FlowLink[]; f: Flow; why: (id: string, from?: string) => void }) {
+function Step({ s, prev, links, f, why, nav }: { s: FlowStep; prev?: FlowStep; links: FlowLink[]; f: Flow; why: (id: string, from?: string) => void; nav: (p: Partial<Route>) => void }) {
   return (
     <li id={`step-${s.id}`} className={`step ph-${s.phase}`}>
       {links.filter((l) => prev && l.from === prev.id).map((l) => (
@@ -225,6 +228,7 @@ function Step({ s, prev, links, f, why }: { s: FlowStep; prev?: FlowStep; links:
         {s.nodeIds.length > 0 && (
           <p className="step-ev">사건 상세: {s.nodeIds.map((id) => byId[id] && <button key={id} className="chip" onClick={() => why(id, f.id)}>{byId[id].year} {byId[id].label} →</button>)}</p>
         )}
+        <StepNoteView flow={f.id} step={s.id} nav={nav} />
       </div>
     </li>
   );

@@ -91,8 +91,8 @@ export interface TasteFlow {
   chains: { title: string; steps: [string, string, Layer, string[]][] }[];
   segments: { group: string; choice: string; layer: Layer; claims: string[] }[];
   coexist: { q: string; a: TR }[];
-  contrast?: { title: string; a: string; b: string; rows: { dim: string; a: string; b: string; layer: Layer; basis: string[] }[]; note: string };
-  outfits?: { period: string; pants: string; top: string; shoes: string; layer: Layer; basis: string[] }[];
+  contrast?: { title: string; a: string; b: string; rows: { dim: string; a: string; b: string; layer: Layer; basis: string[]; aiCells?: string[]; aiWhy?: string }[]; note: string };
+  outfits?: { period: string; pants: string; top: string; shoes: string; layer: Layer; basis: string[]; aiCells?: string[]; aiWhy?: string }[];
   future: { satisfied: TR[]; discomforts: TR[]; unmet: TR[]; directions: { name: string; layer: Layer; condition: string; products: string; signals: string; counter: string; basis: string[] }[] };
   research: { searched: string; missing: string; check: string };
 }
@@ -103,6 +103,12 @@ export interface Tastes {
   layers: Record<Layer, string>; signals: Record<string, string>; phases: Record<string, string>; rels: Record<string, string>;
 }
 
+export type SLayer = 'fact' | 'source' | 'inference' | 'hypothesis';
+export interface SLine { layer: SLayer; text: string; ids: string[] }
+export interface Story { lead: string; qs: Record<string, SLine[]>; links: { flow: string; step?: string; why: string }[] }
+export interface StepNote { mood: SLine[]; ripple: { area: string; line: SLine; go?: [string, string] }[]; after?: SLine }
+export interface Stories { qs: { key: string; label: string }[]; stories: Record<string, Story>; stepNotes: Record<string, StepNote>; layers: Record<SLayer, string> }
+
 interface Seed {
   eras: Era[]; claims: Claim[]; sources: Source[]; transitions: Transition[]; documents: Doc[]; indicators: Indicator[];
   graph: { nodes: Node[]; edges: Edge[]; chains: Chain[]; relTypes: Record<Rel, string>; nodeTypes: Record<string, string> };
@@ -112,6 +118,7 @@ interface Seed {
   flows: { flows: Flow[]; phaseKo: Record<Phase, string>; linkKo: Record<LinkKind, string>; domains: { id: string; label: string }[] };
   studies: Study[];
   tastes: Tastes;
+  stories: Stories;
 }
 const seed = seedJson as unknown as Seed;
 
@@ -119,6 +126,7 @@ export interface NumberCheck { indicator: string; title: string; year: number; c
 
 export const D = {
   tastes: seed.tastes,
+  stories: seed.stories,
   eras: seed.eras,
   claims: Object.fromEntries(seed.claims.map((c) => [c.id, c])) as Record<string, Claim>,
   checks: (seed.numberChecks ?? {}) as Record<string, NumberCheck[]>,
