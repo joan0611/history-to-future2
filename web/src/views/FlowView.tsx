@@ -3,7 +3,8 @@ import { D, ECON_KO, STATUS_SHORT, byId, evidenceCount, flowById, type Bridge, t
 import type { Route } from '../lib/route';
 import { Chart, SourceLine } from '../ui/Chart';
 import { Claims } from '../ui/WhyPanel';
-import { SBadge, StepNoteView, StoryQA } from '../ui/Story';
+import { SBadge, StepNoteView } from '../ui/Story';
+import { ConclusionView, FuturesView, TurnCard } from './TopicView';
 
 /**
  * 변화 흐름 — 질문 하나를 중심으로 '이전 → 조건 → 전환점 → 확산 → 생활 변화 → 지금'을 잇는다.
@@ -120,7 +121,7 @@ function FlowDetail({ f, r, nav, why }: { f: Flow; r: Route; nav: (p: Partial<Ro
   const claimIds = [...new Set(f.steps.flatMap((s) => s.claimIds).concat(f.bridges.flatMap((b) => b.claimIds)))];
   const ev = evidenceCount(claimIds);
   const kinds = f.bridges.reduce((a, b) => ({ ...a, [b.kind]: (a[b.kind] ?? 0) + 1 }), {} as Record<string, number>);
-  const go = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  const go = (id: string) => { const el = document.getElementById(id); el?.closest('details')?.setAttribute('open', ''); el?.scrollIntoView({ behavior: 'smooth', block: 'start' }); };
   const startEra = D.eras.find((e) => r.y >= e.startYear && r.y <= (e.endYear ?? 2026))?.id;
   return (
     <div className="view flow">
@@ -145,7 +146,14 @@ function FlowDetail({ f, r, nav, why }: { f: Flow; r: Route; nav: (p: Partial<Ro
         <p className="small muted">연결 {f.bridges.length}개: {Object.entries(kinds).map(([k, n]) => `${D.linkKo[k as LinkKind]} ${n}`).join(' · ')}. 근거 문장 {ev.total}개(두 곳 이상 확인 {ev.verified} · 한 곳 확인 {ev.sourced}).</p>
       </section>
 
-      <StoryQA id={f.id} nav={nav} />
+      {f.turns && f.turns.length > 0 && (
+        <section className="panel" id="fl-turns">
+          <h2>전환점 이야기</h2>
+          <p className="muted">각 전환점은 <b>그전 상태 → 새로 생긴 조건 → 사람·기업의 반응 → 구체적인 변화 → 다음에 남긴 것</b> 순서로 읽습니다. 앞 전환점이 남긴 것이 다음 전환점의 조건이 됩니다. 시대를 똑같이 나누지 않고, 실제로 방향이 바뀐 시점만 골랐습니다.</p>
+          <ol className="tp-axis-list">{f.turns.map((tu) => <li key={tu.id}><button className="link" onClick={() => document.getElementById(`turn-${tu.id}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' })}><b>{tu.years}</b> {tu.title}</button></li>)}</ol>
+          {f.turns.map((tu, i) => <TurnCard key={tu.id} tu={tu} n={i + 1} />)}
+        </section>
+      )}
 
       {inds.length > 0 && (
         <section className="panel">
@@ -154,8 +162,9 @@ function FlowDetail({ f, r, nav, why }: { f: Flow; r: Route; nav: (p: Partial<Ro
         </section>
       )}
 
-      <section className="panel">
-        <h2>시대별로 따라가기 <span className="sub">그 시대의 모습 → 다음 시대로 넘어간 연결고리</span></h2>
+      <details className="panel fl-evidence" id="fl-evidence" open={!f.turns?.length}>
+        <summary><h2>근거 자료 — 시대별 단계와 연결 <span className="sub">위 이야기가 기댄 근거 문장과 시대 사이 연결의 성격(인과·조건·해석·순서)</span></h2></summary>
+        <p className="muted small">앞 시대가 남긴 것이 다음 시대의 '새로 생긴 조건'이 됩니다. 조건 칸의 연결 성격은 연결 상자에 표시했습니다.</p>
         <ol className="eras-flow">
           {D.eras.map((e, i) => {
             const all = f.steps.filter((s) => s.era === e.id);
@@ -165,20 +174,28 @@ function FlowDetail({ f, r, nav, why }: { f: Flow; r: Route; nav: (p: Partial<Ro
             return (
               <li key={e.id} id={`era-${e.id}`} className="era-sec">
                 <h3><span className="era-tag">{e.label.replace('~현재', '')}</span> {f.eraStates[e.id]}</h3>
+                <dl className="era-chain">
+                  <dt>그전 상태</dt><dd>{i === 0 ? '이 흐름의 출발점입니다.' : f.eraStates[D.eras[i - 1].id]}</dd>
+                </dl>
+                {i > 0 && f.bridges[i - 1] && <BridgeBox b={f.bridges[i - 1]} />}
+                <p className="era-ch-h">사람·기업의 반응과 구체적 변화</p>
                 <ol className="steps">{steps.map((s, k) => <Step key={s.id} s={s} prev={steps[k - 1]} links={f.links.filter((l) => l.to === s.id)} f={f} why={why} nav={nav} />)}</ol>
                 {sides.map((s) => <SideStep key={s.id} s={s} nav={nav} />)}
-                {b && <BridgeBox b={b} />}
+                {b && <p className="era-next small">다음에 남긴 것 → <a href={`#era-${b.to}`} onClick={(ev2) => { ev2.preventDefault(); go(`era-${b.to}`); }}>{D.eras.find((x) => x.id === b.to)?.label.replace('~현재', '')}의 '새로 생긴 조건'으로 이어집니다 ↓</a></p>}
               </li>
             );
           })}
         </ol>
-      </section>
+      </details>
 
       <section className="panel econbox">
         <h2>경제 판단과의 관계</h2>
         <p><span className={`econ e-${f.econ.status}`}>{ECON_KO[f.econ.status]}</span> {f.econ.note}</p>
         {f.econ.analysis && <p><button className="btn" onClick={() => nav({ tab: 'now', study: f.econ.analysis, flow: undefined })}>이 흐름을 쓰는 분석: {D.studies.find((x) => x.id === f.econ.analysis)?.short} — 현재 비교·시나리오·지표 →</button></p>}
       </section>
+
+      {f.futures && <FuturesView id="fl-future" f={f.futures} />}
+      {f.conclusion && <ConclusionView id="fl-end" c={f.conclusion} />}
 
       <section className="panel">
         <div className="two">
@@ -230,7 +247,7 @@ function BridgeBox({ b }: { b: Bridge }) {
     <div className={`ebridge k-${b.kind}`}>
       <span className="conn-arrow" aria-hidden>↓</span>
       <div>
-        <p className="bridge-h">{nextLabel}로 넘어간 연결 <span className={`lk k-${b.kind}`}>{D.linkKo[b.kind]}</span>{b.change && <span className="chg">앞뒤 관계: {b.change}</span>}</p>
+        <p className="bridge-h">새로 생긴 조건 — 앞 시대에서 {nextLabel}로 넘어온 연결 <span className={`lk k-${b.kind}`}>{D.linkKo[b.kind]}</span>{b.change && <span className="chg">앞뒤 관계: {b.change}</span>}</p>
         <p>{b.note}</p>
         {b.infer && <InferBox t={b.infer} alt={b.inferAlt} />}
         {b.claimIds.length > 0 && <details className="conn-ev"><summary>앞뒤 사실의 근거 {b.claimIds.length}</summary><Claims ids={b.claimIds} all /></details>}

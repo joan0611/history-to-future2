@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { D, flowById, type Layer, type TasteFlow, type TR } from '../lib/data';
 import type { Route } from '../lib/route';
 import { Claims } from '../ui/WhyPanel';
-import { StoryQA } from '../ui/Story';
+import { ConclusionView, FuturesView, TurnCard } from './TopicView';
 
 /**
  * 취향·생활 흐름 — 사람들이 무엇을 좋아하고 사다가, 어떤 조건·불편을 만나 다른 선택으로 옮겨 갔는지.
@@ -149,7 +149,7 @@ function TasteLanding({ nav }: { nav: (p: Partial<Route>) => void }) {
 
 const SECTIONS = [
   ['tz-1', '갈래와 시간축'], ['tz-2', '무엇이 인기였나'], ['tz-3', '무엇이 달라졌나'], ['tz-4', '조건 사슬'],
-  ['tz-5', '비교'], ['tz-6', '누가 무엇을'], ['tz-7', '다음 수요'], ['tz-8', '조사 기록'],
+  ['tz-5', '비교'], ['tz-6', '누가 무엇을'], ['tz-7', '다음 수요'], ['tz-end', '결론'], ['tz-8', '조사 기록'],
 ] as const;
 
 function TasteDetail({ f, nav }: { f: TasteFlow; nav: (p: Partial<Route>) => void }) {
@@ -168,7 +168,13 @@ function TasteDetail({ f, nav }: { f: TasteFlow; nav: (p: Partial<Route>) => voi
         <Legend />
       </section>
 
-      <StoryQA id={f.id} nav={nav} />
+      {f.turns && f.turns.length > 0 && (
+        <section className="panel" id="tz-turns">
+          <h2>전환점 이야기</h2>
+          <p className="muted">각 전환점은 <b>그전 상태 → 새로 생긴 조건 → 사람·기업의 반응 → 구체적인 변화 → 다음에 남긴 것</b> 순서로 읽습니다. 아래 갈래 시간축·조건 사슬·비교는 이 이야기의 근거를 다른 모양으로 보여 줍니다.</p>
+          {f.turns.map((tu, i) => <TurnCard key={tu.id} tu={tu} n={i + 1} />)}
+        </section>
+      )}
 
       <section className="panel" id="tz-1">
         <h2>갈래와 시간축 <span className="sub">같은 시기에 여러 선택이 함께 있다 — 화살표는 선택이 옮겨 가거나 갈라진 지점</span></h2>
@@ -271,21 +277,10 @@ function TasteDetail({ f, nav }: { f: TasteFlow; nav: (p: Partial<Route>) => voi
           <div><h3>남은 불편</h3>{f.future.discomforts.map((x, i) => <Line key={i} x={x} />)}</div>
           <div><h3>채워지지 않은 욕구</h3>{f.future.unmet.map((x, i) => <Line key={i} x={x} />)}</div>
         </div>
-        <div className="tz-dirs">
-          {f.future.directions.map((d) => (
-            <article key={d.name} className="tz-dir">
-              <p><LayerBadge l={effLayer(d.layer, d.basis)} /> <b>{d.name}</b></p>
-              <dl>
-                <dt>이럴 때</dt><dd>{d.condition}</dd>
-                <dt>나올 상품·서비스</dt><dd>{d.products}</dd>
-                <dt>맞다면 보일 신호</dt><dd>{d.signals}</dd>
-                <dt>틀렸다면 보일 신호</dt><dd>{d.counter}</dd>
-              </dl>
-              <Ids ids={d.basis} label="바탕이 된 사실" />
-            </article>
-          ))}
-        </div>
+        {f.futures && <FuturesView id="tz-7f" f={f.futures} title="조건별로 갈라지는 다음 수요" />}
       </section>
+
+      {f.conclusion && <ConclusionView id="tz-end" c={f.conclusion} />}
 
       <section className="panel" id="tz-8">
         <h2>조사 기록</h2>

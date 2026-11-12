@@ -280,12 +280,13 @@ const R_TYPES: { type: string; desc: string }[] = [
   { type: '경제·산업 순환', desc: '수요·공급·가격·재고·인력이 늘었다 줄었다 함 — 간격이 일정하다는 뜻은 아님.' },
   { type: '장기 구조 변화', desc: '되풀이가 아니라 한 방향으로 움직이는 변화 — 반복처럼 보이는 착시를 막기 위해 함께 둡니다.' },
 ];
-interface RCase { where: string; whereKind: 'topic' | 'industry'; whereId: string; rp: TRepeat }
+interface RCase { where: string; whereKind: 'topic' | 'industry' | 'flow'; whereId: string; rp: TRepeat }
 function gatherRepeats(): RCase[] {
   const out: RCase[] = [];
   for (const t of D.topics.topics) for (const rp of t.repeats ?? []) out.push({ where: t.label, whereKind: 'topic', whereId: t.id, rp });
   const inds = (D.industries as { industries: { id: string; label: string; repeats?: TRepeat[] }[] }).industries ?? [];
   for (const i of inds) for (const rp of i.repeats ?? []) out.push({ where: `${i.label} 산업 일대기`, whereKind: 'industry', whereId: i.id, rp });
+  for (const f of D.flows) for (const rp of (f as { repeats?: TRepeat[] }).repeats ?? []) out.push({ where: `${f.topic} 시대 흐름`, whereKind: 'flow', whereId: f.id, rp });
   return out;
 }
 /** 취향 흐름에서 재등장·변형으로 표시만 된 후보(비교표는 아직 없음) */
@@ -301,10 +302,14 @@ function RepeatIndex({ nav }: { nav: (p: Partial<Route>) => void }) {
     if (c.whereKind === 'topic') {
       nav({ tab: 'topic', topic: c.whereId, f: undefined });
       if (at) window.setTimeout(() => document.getElementById(`turn-${at}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 500);
+    } else if (c.whereKind === 'flow') {
+      nav({ tab: 'flow', flow: c.whereId, f: undefined });
+      if (at) window.setTimeout(() => document.getElementById(`step-${at}`)?.scrollIntoView({ behavior: 'smooth', block: 'center' }), 600);
     } else nav({ tab: 'field', cat: 'industry', ind: c.whereId, f: undefined });
   };
   const atLabel = (c: RCase, a: string) => {
     if (c.whereKind === 'topic') { const tu = D.topics.topics.find((t) => t.id === c.whereId)?.turns.find((x) => x.id === a); return tu ? `${tu.years} ${tu.title}` : a; }
+    if (c.whereKind === 'flow') { const st = D.flows.find((f) => f.id === c.whereId)?.steps.find((x) => x.id === a); return st ? `${st.period} ${st.title}` : a; }
     return a;
   };
   const Row = ({ h, x }: { h: string; x: TLine | TLine[] }) => <tr><th>{h}</th><td>{(Array.isArray(x) ? x : [x]).map((y, i) => <SLineView key={i} x={y} />)}</td></tr>;

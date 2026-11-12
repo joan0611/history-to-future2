@@ -797,8 +797,7 @@ _TIME = {
     "indicators": [],
     "steps": [
         {"id": "h1", "era": "1960s", "phase": "before", "period": "1945~", "title": "밤에는 다닐 수 없던 시대(야간통행금지)", "claimIds": ["c80-curfew"], "nodeIds": []},
-        {"id": "h2", "era": "1970s", "phase": "condition", "period": "1970년대", "title": "장시간 노동 — 근로시간 통계 미확보", "claimIds": [], "nodeIds": [],
-         "empty": "1970년대 연간 근로시간을 같은 기준으로 보여주는 자료를 확보하지 못했다. 1970년 전태일의 근로기준법 준수 요구는 '산업과 일자리' 흐름에서 다룬다."},
+        {"id": "h2", "era": "1970s", "phase": "condition", "period": "1953~1980", "title": "주 48시간 법, 주 54시간 현실 — 장시간 노동", "claimIds": ["tf-time-law", "tf-time-1980"], "nodeIds": []},
         {"id": "h3", "era": "1980s", "phase": "turn", "period": "1982~1989", "title": "통금 해제와 24시간 영업의 시작", "claimIds": ["c80-curfew", "c80-ch-24h", "er-shop-cvs"], "nodeIds": ["e80-curfew"]},
         {"id": "h4", "era": "1990s", "phase": "condition", "period": "1990~1998", "title": "줄기 시작한 근로시간과 단축 논의", "claimIds": ["er-time-90s", "er-lei-5day-why"], "nodeIds": []},
         {"id": "h5", "era": "2000s", "phase": "turn", "period": "2004~2011", "title": "주5일 근무 — 주말이 생기다", "claimIds": ["c00-5day", "er-time-2000s"], "nodeIds": ["e00-5day"]},
@@ -865,7 +864,7 @@ ERA_STATES["flow-leisure"] = {
 }
 ERA_STATES["flow-time"] = {
     "1960s": "야간통행금지 — 밤에는 다닐 수 없음",
-    "1970s": "통금 지속, 근로시간 통계 미확보",
+    "1970s": "통금 지속, 법정 주 48시간 · 1980년 실제 주 53.9시간",
     "1980s": "통금 해제(1982), 24시간 편의점(1989)",
     "1990s": "근로시간 감소 시작, 단축 논의(1998)",
     "2000s": "주5일 근무(2004~), 연 2,512→2,090시간",

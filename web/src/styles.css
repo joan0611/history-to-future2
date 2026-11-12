@@ -732,3 +732,15 @@ dl.reason dt { color: var(--ink-3); font-weight: 600; } dl.reason dd { margin: 0
 .rp-go { margin: .4rem 0; display: flex; flex-wrap: wrap; gap: .3rem; }
 .rp-cands { margin-top: .8rem; }
 .cyc-h2 { margin: 1.2rem 0 .4rem; font-size: 1.15rem; }
+.era-chain { display: grid; grid-template-columns: 7.5rem 1fr; gap: .2rem .6rem; margin: .3rem 0 .5rem; font-size: .92rem; }
+.era-chain dt { font-weight: 600; color: var(--ink-2, inherit); }
+.era-chain dd { margin: 0; }
+.era-ch-h { font-weight: 600; font-size: .9rem; margin: .4rem 0 .2rem; }
+@media (max-width: 640px) { .era-chain { grid-template-columns: 1fr; } }
+/* 시대 흐름 단계(.step/.phase)와 취향 시간축 국면 색(.ph-spread 등) 이름 충돌 방지 */
+li.step[class*="ph-"] { background: none; }
+.phase[class*="ph-"] { background: var(--surface-2); }
+.fl-evidence > summary { cursor: pointer; list-style: none; }
+.fl-evidence > summary h2 { display: inline; }
+.fl-evidence > summary::before { content: '▸ '; }
+.fl-evidence[open] > summary::before { content: '▾ '; }

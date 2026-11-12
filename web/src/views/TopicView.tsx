@@ -211,7 +211,7 @@ function TimeAxis({ t }: { t: Topic }) {
   );
 }
 
-function TurnCard({ tu, n }: { tu: TTurn; n: number }) {
+export function TurnCard({ tu, n }: { tu: TTurn; n: number }) {
   const rows: [string, TLine[]][] = [['그전 상태', tu.before], ['새로 생긴 조건', tu.condition], ['사람·기업의 반응', tu.response], ['구체적인 변화', tu.change], ['다음에 남긴 것', tu.legacy]];
   return (
     <article className="tp-turn" id={`turn-${tu.id}`}>

@@ -50,6 +50,7 @@ export interface FlowLink { from: string; to: string; kind: LinkKind; note: stri
 export interface Bridge { from: string; to: string; kind: LinkKind; note: string; claimIds: string[]; change?: string; infer?: string; inferAlt?: string }
 export interface Flow {
   tracks?: string;
+  turns?: TTurn[]; futures?: { split: TLine; items: TFuture[] }; conclusion?: { key: TLine; favored: TLine; undecided: TLine; next: TLine; change: TLine };
   id: string; question: string; cats: Cat[]; span: [number, number]; shape: string; lede: string[]; indicators: string[]; note?: string;
   steps: FlowStep[]; links: FlowLink[]; cross: { flow: string; note: string }[]; gaps: string[]; alternatives: string[];
   eraStates: Record<string, string>; bridges: Bridge[]; domain: string; topic: string;
@@ -96,7 +97,8 @@ export type Layer = 'claim' | 'fact' | 'source' | 'inference' | 'hypothesis';
 /** 취향 흐름의 한 문장 — claim(근거 문장의 종류로 사실/출처 해석 결정) 또는 AI 추론·가설(연결 논리·다른 설명·범위·신호 포함) */
 export interface TR { layer: Layer; text: string; basis: string[]; logic?: string; alt?: string; scope?: string; test?: string }
 export type Seg = [number, number, string, string];
-export interface TasteFlow {
+export interface TasteFlow { turns?: TTurn[];
+  futures?: { split: TLine; items: TFuture[] }; conclusion?: { key: TLine; favored: TLine; undecided: TLine; next: TLine; change: TLine };
   id: string; field: string; title: string; subtitle: string; question: string; span: [number, number]; status: string; scene?: TR;
   lanes: { id: string; label: string; desc: string; segs: Seg[]; claims: string[] }[];
   stages: { lane: string; period: string; title: string; items: string[]; appeal: TR; who: string; where: string; signals: [string, string, string[]][] }[];

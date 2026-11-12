@@ -664,6 +664,10 @@ def validate(claims, nodes, indicators):
     _fi.apply(FLOWS)
     import industries as _ix
     _fi.apply_scope(FLOWS, {i["id"] for i in _ix.INDUSTRIES})
+    import flows_turns as _ft
+    _ft.apply(FLOWS, claims)
+    import tastes as _tz
+    _ff.apply(FLOWS, _tz.FLOWS, claims)
     cids = {c["id"] for c in claims}
     nids = {n["id"] for n in nodes}
     iids = {i["id"] for i in indicators}
@@ -711,3 +715,6 @@ import flows_eras as _fe  # noqa: E402
 
 SOURCES += _fe.SOURCES
 CLAIMS += _fe.CLAIMS
+import flows_future as _ff  # noqa: E402
+SOURCES += _ff.SOURCES
+CLAIMS += _ff.CLAIMS

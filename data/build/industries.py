@@ -147,6 +147,7 @@ CLAIMS = [
 ]
 
 GROUPS = [
+    {"id": "light", "label": "경공업", "desc": "많은 손으로 실·옷을 만들던 산업"},
     {"id": "heavy", "label": "중공업·소재", "desc": "쇳물·배·화학처럼 큰 설비로 만드는 산업"},
     {"id": "elec", "label": "전자·반도체", "desc": "부품과 기기를 만드는 산업"},
     {"id": "net", "label": "인터넷·플랫폼", "desc": "연결과 그 위의 서비스"},
@@ -275,7 +276,7 @@ INDUSTRIES = [
             "watch": [L("hypothesis", "볼 지표: 빅테크 AI 투자, HBM 가격·점유율, 반도체 수출 비중. 반대 신호: AI 투자 둔화와 메모리 가격 하락이 함께 오면 2023년 같은 급감 가능.", ["ix-cp-cycle", "c20-chip-risk"])],
         },
         "links": [
-            {"year": "1960~70년대", "to": "tv", "rel": "바탕", "text": "가전(TV) 생산 — 전자 부품 수요와 공장 경험", "line": L("fact", "흑백TV에는 300여 종의 전자부품이 필요했다.", ["c60-kr-tv-5"])},
+            {"year": "1960~70년대", "to": "tv", "rel": "바탕", "text": "가전(TV) 생산 — 전자 부품 수요와 공장 경험", "line": L("fact", "TV 한 대를 만들려면 300여 종의 부품이 들어가, 가전 생산이 전자 부품 수요를 만들었다.", ["c60-kr-tv-5"])},
             {"year": "2009~", "to": "internet", "rel": "수요", "text": "스마트폰·데이터센터 — 인터넷 서비스가 메모리를 쓴다", "line": L("inference", "모바일 인터넷과 AI 서비스가 커질수록 서버·휴대폰용 메모리 수요가 커진다.", ["ix-cp-cycle", "c00-kr-iphone"])},
         ],
     },
@@ -327,6 +328,10 @@ from industries_more import MORE_SOURCES, MORE_CLAIMS, MORE_INDUSTRIES, MORE_STE
 
 SOURCES += MORE_SOURCES
 CLAIMS += MORE_CLAIMS
+import industries_more2 as _im2  # noqa: E402
+SOURCES += _im2.SOURCES
+CLAIMS += _im2.CLAIMS
+INDUSTRIES += _im2.INDUSTRIES
 import industries_world as _iwm  # noqa: E402
 SOURCES += _iwm.SOURCES
 CLAIMS += _iwm.CLAIMS

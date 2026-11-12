@@ -1,0 +1,182 @@
+"""18차 R-Q7: 취향 흐름 5개를 전환점 이야기로 — 그전 상태 → 새 조건 → 반응 → 구체 변화 → 남긴 것.
+갈래 시간축·조건 사슬·비교표는 그대로 두고, 이야기 본문을 앞에 둔다. 근거는 이미 검증된 ts-* 근거 문장만 쓴다."""
+from topic_helpers import F, INF, SRC, TURN
+
+T = {}
+T["taste-home"] = [
+    TURN("h1", "1993~2004", 1993, "혼수로 한 번에 — 세트로 장만하는 집",
+         why=F("1993년 예비부부들이 백화점 혼수매장에서 600만~1,500만 원대 패키지로 일괄 구매했다.", "ts-h-1993"),
+         before=[INF("집을 꾸미는 일은 결혼할 때 한 번 하는 큰 장만이었다.", "ts-h-1993")],
+         condition=[F("대형 백화점에 혼수전문매장이 생겼다.", "ts-h-1993")],
+         response=[F("2004년 살림 장만 비용 1천만~2천만 원이 많았고 가구 예산은 300만 원 정도였다.", "ts-h-2004")],
+         change=[SRC("혼수 추세는 '대형화·고급화'로 요약됐다.", "ts-h-2004")],
+         legacy=[F("2014년에는 빌트인 신혼집이 늘어 장롱·식탁 구매가 50% 이상 줄었다.", "ts-h-2014")]),
+    TURN("h2", "2012~2018", 2014, "북유럽·이케아·비우기 — 직접 골라 조립하는 집",
+         why=F("2014년 12월 이케아 광명점이 35일 만에 100만 명을 모았다.", "ts-h-ikea"),
+         before=[F("빌트인으로 큰 가구를 살 필요가 줄었다.", "ts-h-2014")],
+         condition=[F("북유럽 스타일이 2013년 '하나의 유형'으로 자리 잡았다는 소개.", "ts-h-nordic")],
+         response=[F("이케아 첫 회계연도 광명점 한 곳 매출 3,080억 원.", "ts-h-ikea")],
+         change=[F("2016~2017년 물건을 비우는 미니멀 체험기가 퍼졌다.", "ts-h-minimal")],
+         legacy=[INF("'한 번에 장만'에서 '조금씩 골라 바꾸기'로 기준이 옮겨 간 것이 코로나 시기 꾸미기 붐의 바탕이 됐다고 본다.", "ts-h-ikea", "ts-h-covid-survey")]),
+    TURN("h3", "2020~2022", 2020, "집에 머물며 꾸미기 — 온라인 집들이",
+         why=F("오늘의집 월 거래액이 2020년 300억 원대에서 1,000억 원대로 3배 넘게 늘었다.", "ts-h-ohou-covid"),
+         before=[INF("조금씩 골라 바꾸는 방식에 익숙해졌다.", "ts-h-ikea")],
+         condition=[F("코로나19 이후 53.4%가 인테리어를 바꿨고, 재택근무 공간과 겹쳤다.", "ts-h-covid-survey")],
+         response=[F("2020년 가구 판매의 43.5%가 온라인.", "ts-h-online"), F("MZ세대 94%가 집을 꾸민다고 답했다.", "ts-h-mz")],
+         change=[SRC("모두가 '국민취향'을 따라가며 개인 취향을 강조하는 모순이 나타났다는 해석.", "ts-h-uniform")],
+         legacy=[INF("비슷한 집이 많아지자 '남과 다른 하나'를 찾는 수요가 생겼다.", "ts-h-uniform", "ts-h-2022-style")]),
+    TURN("h4", "2021~2024", 2022, "남과 다른 오래된 물건 — 미드센추리·뉴트로·중고",
+         why=F("2022년 뉴트로 검색 점유율이 17.8%에서 25.3%로 올랐다.", "ts-h-2022-style"),
+         before=[SRC("국민취향의 동질화.", "ts-h-uniform")],
+         condition=[F("당근마켓 가입자 3,300만 명(2023), 번개장터 이용자 78%가 MZ세대.", "ts-h-carrot")],
+         response=[F("1980~90년대 국산 원목·하이그로시 가구를 찾는 수집가들이 생겼다.", "ts-h-kvintage")],
+         change=[SRC("구제에 대한 거부감이 줄고 살림살이도 중고로 장만한다는 보도.", "ts-h-used-why")],
+         legacy=[INF("보여 주는 집의 경쟁이 피로해지면서, 다음은 '사는 데 편한 집'으로 기준이 옮겨 갔다고 본다.", "ts-h-2025")]),
+    TURN("h5", "2025~", 2025, "원상복구할 수 있고 손이 덜 가는 집",
+         why=F("오늘의집 2025년 검색어에서 무타공·수납·자동화 제품이 두드러졌다.", "ts-h-2025"),
+         before=[INF("연출된 집과 남다른 물건 찾기.", "ts-h-uniform")],
+         condition=[INF("셋집에 사는 젊은 층은 벽을 고칠 수 없다.", "ts-h-mz")],
+         response=[F("무타공 중문, 적층 수납, 로봇청소기 검색.", "ts-h-2025")],
+         change=[SRC("해외에서도 '실제로 사는 생활감 있는 집'이 전망됐다.", "ts-h-2026-uk")],
+         legacy=[INF("집 꾸미기의 기준이 '보여 주기'에서 '내 생활에 맞추기'로 옮겨 가는 중이다.", "ts-h-2025", "ts-h-2026-uk")]),
+]
+T["taste-pants"] = [
+    TURN("p1", "1990년대", 1995, "헐렁한 바지로 또래와 같아지기",
+         why=F("힙합과 함께 헐렁한 바지·큰 신발이 퍼졌다.", "ts-f-hiphop"),
+         before=[INF("바지 모양은 연령·직업에 따라 정해진 편이었다.", "ts-f-hiphop")],
+         condition=[F("1세대 아이돌이 큰 재킷과 통 큰 바지를 입었다.", "ts-f-1stgen")],
+         response=[F("헐렁한 하의에 작은 상의를 맞추는 차림이 유행했다.", "ts-f-hiphop")],
+         change=[INF("또래와 같은 실루엣이 소속의 표시가 됐다.", "ts-f-1stgen")],
+         legacy=[INF("다음 세대는 이 헐렁함과 반대 실루엣으로 자신을 구별했다.", "ts-f-skinny-start")]),
+    TURN("p2", "2006~2017", 2006, "몸을 드러내는 스키니",
+         why=F("2006년 '스키니 진' 상품이 나와 젊은 층에 퍼졌고 진 시장이 1조 8천억 원대가 됐다.", "ts-f-skinny-start", "ts-f-jeans-mkt"),
+         before=[F("헐렁한 힙합 바지.", "ts-f-hiphop")],
+         condition=[F("꽃미남 스타의 영향 속에 남성도 스키니를 입었다.", "ts-f-skinny-men")],
+         response=[F("스파오 데님 판매 1위는 2010~2017년 슬림 핏.", "ts-f-spao")],
+         change=[SRC("연구자들은 날씬해 보이려는 욕구를 이유로 들었다.", "ts-f-skinny-why")],
+         legacy=[SRC("스키니의 불편과 몸매 부담이 다음 전환의 조건으로 꼽혔다.", "ts-f-wide-why")]),
+    TURN("p3", "2016~2022", 2016, "조이지 않는 몸에 붙는 옷 — 레깅스",
+         why=F("레깅스 시장 2016년 6,386억 → 2020년 7,620억 원, 애슬레저 3조 원 추산.", "ts-f-leggings"),
+         before=[F("몸에 붙는 실루엣이 익숙했다.", "ts-f-spao")],
+         condition=[SRC("요가·필라테스 대중화와 코로나 이후 홈트레이닝·'원 마일 웨어'.", "ts-f-leggings-why")],
+         response=[F("애슬레저 브랜드 매출이 크게 늘었다.", "ts-f-leggings")],
+         change=[SRC("여성 패션에서 레깅스가 청바지 자리를 차지했다는 분석.", "ts-f-leggings-why")],
+         legacy=[INF("'편안함'이 실루엣을 고르는 기준으로 들어왔다.", "ts-f-leggings-why")]),
+    TURN("p4", "2018~2024", 2018, "편안함과 체형 보완 — 와이드",
+         why=F("스파오 데님 판매 1위가 2018년부터 테이퍼드·와이드로 바뀌었고 2024년 절반 이상이 와이드였다.", "ts-f-spao"),
+         before=[SRC("스키니의 불편.", "ts-f-wide-why")],
+         condition=[SRC("보디 포지티브와 레트로 향수가 배경으로 꼽혔다.", "ts-f-wide-why")],
+         response=[F("2016년 G마켓 와이드 판매 23%, 부츠컷 6배 증가.", "ts-f-2016")],
+         change=[SRC("업계는 와이드를 유행이 아니라 클래식 아이템으로 본다.", "ts-f-spao-why")],
+         legacy=[F("넓은 폭이 흔해지자 Y2K·카고·로우라이즈처럼 디테일로 갈라졌다.", "ts-f-y2k")]),
+    TURN("p5", "2022~2026", 2022, "넓은 폭은 그대로, 모양과 디테일로 — 그리고 슬림의 신호",
+         why=F("2022년 Y2K 검색 61배, 2026년 하렘팬츠 검색 1,703% 증가.", "ts-f-y2k", "ts-f-harem"),
+         before=[F("와이드가 다수.", "ts-f-spao")],
+         condition=[F("뉴진스 등 아이돌이 Y2K 유행을 이끌었다는 보도.", "ts-f-y2k-idol")],
+         response=[F("카고·로우라이즈, 이어 벌룬·하렘 거래가 크게 늘었다.", "ts-f-y2k", "ts-f-harem")],
+         change=[F("2025년 스키니가 '돌아올 조짐'이란 보도가 나왔지만 발목까지 조이지 않는 형태였다.", "ts-f-slim-back")],
+         legacy=[INF("편안함이 공통 기준으로 남고, 구별은 디테일로 한다 — 반대 유행의 단순 반복이 아니다.", "ts-f-slim-back", "ts-f-harem")]),
+]
+T["taste-dining"] = [
+    TURN("d1", "2013~2023", 2020, "대접받는 코스 — 오마카세",
+         why=F("오마카세 언급량이 매년 늘어 2022년 약 50% 증가했고, 고급 레스토랑 방문 경험이 2023년 51.9%가 됐다.", "ts-d-omakase-rise", "ts-d-highend-survey"),
+         before=[INF("고급 외식은 특별한 날의 드문 경험이었다.", "ts-d-highend-survey")],
+         condition=[SRC("경제가 어려워 한편에선 아끼고 한편에선 기분을 내는 '가치소비' 해석.", "ts-d-highend-why")],
+         response=[F("20대 58%, 30대 61%가 고급 레스토랑을 경험했다.", "ts-d-highend-survey")],
+         change=[F("2023년 11월 유명 스시야가 코스를 절반 가격에 내놓는 등 할인이 나왔다.", "ts-d-omakase-discount")],
+         legacy=[F("오마카세 검색은 2023년 1월 정점 뒤 2026년 5월 15까지 떨어졌다.", "ts-d-omakase-fall")]),
+    TURN("d2", "2017~2025", 2023, "오래된 공간의 정감 — 노포와 골목",
+         why=F("을지로 노가리 골목에 MZ세대가 몰렸고(2023), 2025년 보도는 젊은 손님의 이유를 전했다.", "ts-d-euljiro", "ts-d-nopo"),
+         before=[INF("오래된 가게는 그 동네 단골의 공간이었다.", "ts-d-nopo-counter")],
+         condition=[F("SNS 맛집 검색으로 가게를 알게 됐다.", "ts-d-nopo")],
+         response=[F("정감 가는 인테리어, 북적임, 단순한 메뉴와 합리적 가격이 이유였다.", "ts-d-nopo")],
+         change=[F("젊은 손님은 SNS 유명 가게에 몰리고 다른 노포는 여전히 다른 연령대 손님이었다.", "ts-d-nopo-counter")],
+         legacy=[INF("'새로움'과 '오래됨'이 서로 다른 상황에서 함께 소비되는 구조가 생겼다.", "ts-d-nopo", "ts-d-blackwhite")]),
+    TURN("d3", "2024", 2024, "방송이 만든 셰프 식당 예약",
+         why=F("흑백요리사 공개 뒤 한 주 동안 출연 셰프 식당 검색이 74배, 예약이 148% 늘었다.", "ts-d-blackwhite"),
+         before=[F("오마카세 관심 하락.", "ts-d-omakase-fall")],
+         condition=[F("2024년 9월 넷플릭스 프로그램 공개.", "ts-d-blackwhite")],
+         response=[F("편의점·컬리가 셰프 협업 상품을 냈다.", "ts-d-blackwhite-goods")],
+         change=[INF("고급 외식의 입구가 SNS 인증에서 방송 속 셰프 이야기로 옮겨 갔다.", "ts-d-blackwhite")],
+         legacy=[INF("관심은 커졌지만 고물가 속 지출 여력은 제한돼, 특별함을 더 싸게 사는 쪽으로 이동했다.", "ts-d-tea-why")]),
+    TURN("d4", "2022~2026", 2025, "술 없는 모임과 작은 사치 — 패밀리레스토랑과 애프터눈 티",
+         why=F("애슐리퀸즈 매장이 2022년 59개에서 2025년 115개로, 호텔 애프터눈 티 매출이 2026년 최대 2배로 늘었다.", "ts-d-family", "ts-d-tea"),
+         before=[F("주점업 경기지수가 60선에 머물렀다.", "ts-d-hoesik")],
+         condition=[F("와인 수입량이 2021년 정점 뒤 줄고 위스키(하이볼)가 늘었다.", "ts-d-wine")],
+         response=[SRC("2만~3만 원대 식사, 넓은 좌석, 회식 대체가 이유로 꼽혔다.", "ts-d-family-why")],
+         change=[SRC("평소엔 아끼고 특별한 경험엔 쓰는 작은 사치(2인 11만~12만 원).", "ts-d-tea-why", "ts-d-tea")],
+         legacy=[INF("특별한 날 지출은 남았지만 가격대가 내려왔고, 모임 자리는 술집에서 식당으로 옮겨 갔다.", "ts-d-tea", "ts-d-family-why")]),
+]
+T["taste-goods"] = [
+    TURN("g1", "2017 / 2024~", 2017, "뽑아서 얻는 인형",
+         why=F("2017년 인형뽑기방이 폭발적으로 늘었고 2024년 새 업소가 2023년의 약 2.4배였다.", "ts-g-claw2017", "ts-g-claw2024"),
+         before=[INF("인형은 아이들의 장난감으로 여겨졌다.", "ts-g-claw2017")],
+         condition=[SRC("불황기의 '싼 탕진' 해석.", "ts-g-claw2017")],
+         response=[F("1회 1천 원 남짓의 무인 매장이 많다.", "ts-g-claw2024")],
+         change=[INF("작은 인형을 '얻는 재미'가 어른의 취미가 됐다.", "ts-g-claw2024")],
+         legacy=[INF("얻은 인형을 가방에 다는 '보여 주는 재미'로 이어졌다.", "ts-g-bagku")]),
+    TURN("g2", "2024~2025", 2024, "새 가방 대신 키링 — 백꾸",
+         why=F("2024년 3월 키링 거래액이 600% 늘었다.", "ts-g-bagku"),
+         before=[INF("가방을 바꾸려면 새 가방을 사야 했다.", "ts-g-bagku-why")],
+         condition=[SRC("불황기 '립스틱 효과' 해석.", "ts-g-bagku-why")],
+         response=[F("소비자들은 돈이 적게 들고 좋아하는 것으로 채울 수 있다고 말했다.", "ts-g-bagku-why")],
+         change=[F("키링 거래액이 이후에도 178% 늘었다(2024~2025 겨울).", "ts-g-29cm")],
+         legacy=[F("2025년 패션지는 키링을 주렁주렁 다는 연출을 철 지난 것으로 보고 하나로 포인트를 주자고 했다.", "ts-g-onekey")]),
+    TURN("g3", "2025", 2025, "무엇이 나올지 모르는 한정 인형 — 라부부",
+         why=F("정가 2만 1,000원 인형이 리셀에서 5만 원대, 시크릿은 32만 원대에 거래됐다.", "ts-g-labubu"),
+         before=[INF("누구나 다는 키링이 흔해졌다.", "ts-g-onekey")],
+         condition=[SRC("블라인드 판매와 수량 제한이 수집 욕구와 희소성을 키웠다는 해석.", "ts-g-labubu-why")],
+         response=[F("연예인 사진이 퍼진 뒤 품절됐고, 솔드아웃 가격 상승 1위가 됐다.", "ts-g-labubu", "ts-g-soldout")],
+         change=[F("명품 브랜드들도 백참을 냈다.", "ts-g-luxury")],
+         legacy=[F("2025년 9월 미니 라부부 가격이 24% 떨어지며 투기 수요가 줄었다.", "ts-g-fall")]),
+    TURN("g4", "2025~", 2025, "되팔기의 거품과 다음 캐릭터",
+         why=F("가격 하락 직후 영국 젤리캣이 한국 온라인 판매를 시작했다.", "ts-g-fall", "ts-g-jellycat"),
+         before=[F("한정판 되팔기로 가격이 올랐다.", "ts-g-soldout")],
+         condition=[F("중고 명품 이용자 절반 이상이 1년 안에 되팔았다(2023).", "ts-x-resell")],
+         response=[SRC("기사는 이를 '키링 전쟁' 합류로 표현했다.", "ts-g-jellycat")],
+         change=[F("키홀더·텀블러 꾸미기 검색이 늘었다.", "ts-g-search")],
+         legacy=[INF("하나의 캐릭터가 식어도 '작은 것을 달고 꾸미는' 습관은 다른 대상으로 옮겨 가는 중이다.", "ts-g-search", "ts-g-jellycat")]),
+]
+T["taste-gather"] = [
+    TURN("r1", "2018", 2018, "주52시간 — 회식이 줄다",
+         why=F("주52시간 직후 조사에서 '회식 횟수가 줄었다'가 긍정적 변화 1위(55.9%)였다.", "ts-r-2018"),
+         before=[INF("회식은 술과 2·3차까지 이어지는 것이 보통이었다.", "ts-r-hof")],
+         condition=[F("2018년 주52시간 상한.", "c10-52h")],
+         response=[F("'음주보다 식사 중심으로 끝낸다' 38.3%.", "ts-r-2018")],
+         change=[F("20·30대 61%가 회식이 필요 없다고 답했다.", "ts-r-2018")],
+         legacy=[F("회식의 다음 코스였던 노래방 신규 창업이 2016년 1,061곳에서 2022년 442곳으로 줄었다.", "ts-r-norae")]),
+    TURN("r2", "2021~2022", 2021, "고른 관계 — 취향 소모임 앱",
+         why=F("문토 가입자가 1만 8천 명에서 23만 명으로, 프립 오프라인 모임 거래가 150% 늘었다.", "ts-r-munto", "ts-r-frip"),
+         before=[F("직장 회식이 줄었다.", "ts-r-2018")],
+         condition=[SRC("코로나로 줄어든 대외 활동, 1인 가구·재택근무로 생긴 관계의 결핍.", "ts-r-why")],
+         response=[F("나이·직업·연봉을 묻지 않는 독서 모임이 운영됐다.", "ts-r-frip")],
+         change=[F("활성 사용자의 60%가 25~34세였다.", "ts-r-munto")],
+         legacy=[INF("만남이 '주어진 관계'와 '고른 관계'로 갈라졌다.", "ts-r-why")]),
+    TURN("r3", "2023~2026", 2023, "짧게, 덜 마시고",
+         why=F("주류 실질 소비가 10분기 연속 줄었고, 20대의 저음주·비음주 비율이 56.0%로 최고였다.", "ts-r-alcohol", "ts-r-20s"),
+         before=[INF("회식이 줄고 취향 모임이 늘었다.", "ts-r-munto")],
+         condition=[F("Z세대는 '1시간만 하는 간단한 회식'을 가장 선호했다.", "ts-r-zgen")],
+         response=[F("호프 주점이 1년 새 9.15% 줄고 점심 영업을 시작한 곳이 생겼다.", "ts-r-hof")],
+         change=[INF("모임 자체보다 '술·늦은 시간·강제 참석'이 빠졌다.", "ts-r-zgen")],
+         legacy=[INF("덜 만나는 것이 아니라 다르게 만난다 — 다만 전체 모임 횟수를 보여 주는 자료는 없다.", "ts-r-zgen", "ts-r-somoim")]),
+]
+
+
+def apply(flows, claims_all):
+    cids = {c["id"] for c in claims_all}
+    errs = []
+    for f in flows:
+        turns = T.get(f["id"])
+        if not turns:
+            errs.append(f"{f['id']}: 전환점 이야기 없음")
+            continue
+        for tu in turns:
+            for k in ("before", "condition", "response", "change", "legacy"):
+                if not tu[k]:
+                    errs.append(f"{f['id']}/{tu['id']}: {k} 비어 있음")
+                for x in tu[k]:
+                    errs += [f"{f['id']}/{tu['id']}: 없는 근거 {i}" for i in x["ids"] if i not in cids]
+            errs += [f"{f['id']}/{tu['id']}: 없는 근거 {i}" for i in tu["why"]["ids"] if i not in cids]
+        f["turns"] = turns
+    if errs:
+        raise SystemExit("취향 흐름 전환점 검증 실패:\n" + "\n".join(errs))

@@ -1346,6 +1346,8 @@ def validate(claims_all):
         for c in n["cases"]:
             chk(c["claims"], f"욕구 {n['id']}")
         chk_r(n["compare"], f"욕구 {n['id']}")
+    import tastes_turns as _tt
+    _tt.apply(FLOWS, claims_all)
     return {"flows": FLOWS, "fields": FIELDS, "needs": NEEDS,
             "layers": {"claim": "확인된 사실·출처 해석(근거 문장의 종류로 구분)", "fact": "확인된 사실", "source": "출처의 해석",
                        "inference": "AI 종합 추론", "hypothesis": "탐색·전망 가설"},

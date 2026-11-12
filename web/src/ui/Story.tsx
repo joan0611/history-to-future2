@@ -33,7 +33,7 @@ const stepName = (flow: string, step?: string) => (step ? flowById[flow]?.steps.
 export function goTo(nav: Nav, flow: string, step?: string) {
   if (tasteIds.has(flow)) nav({ tab: 'taste', taste: flow, flow: undefined, study: undefined });
   else nav({ tab: 'flow', flow, taste: undefined, study: undefined });
-  if (step) window.setTimeout(() => document.getElementById(`step-${step}`)?.scrollIntoView({ behavior: 'smooth', block: 'center' }), 450);
+  if (step) window.setTimeout(() => { const el = document.getElementById(`step-${step}`); el?.closest('details')?.setAttribute('open', ''); el?.scrollIntoView({ behavior: 'smooth', block: 'center' }); }, 450);
   else window.setTimeout(() => window.scrollTo({ top: 0 }), 50);
 }
 
