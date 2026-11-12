@@ -52,7 +52,7 @@ export function FieldView({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) 
         ))}
       </nav>
 
-      {c === 'industry' && <IndustryLife nav={nav} />}
+      {c === 'industry' && <IndustryLife nav={nav} init={r.ind} />}
 
       <p className="readorder">읽는 순서: <b>① 핵심 질문</b> → <b>② 장기 흐름</b> → <b>③ 시대별 전환점</b> → <b>④ 그 무렵의 사건</b> → <b>⑤ 반복·자료 공백</b> — 모든 분야가 같은 순서입니다.</p>
       <section className="panel">

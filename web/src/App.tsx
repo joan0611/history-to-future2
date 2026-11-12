@@ -21,18 +21,20 @@ import { byId, eraOf } from './lib/data';
  */
 const TABS: { id: Tab; t: string; d: string }[] = [
   { id: 'now', t: '지금 판단하기', d: '과거로 현재를 읽고 볼 지표 찾기' },
-  { id: 'topic', t: '주제 이야기', d: '한 가지를 끝까지 따라가기' },
-  { id: 'taste', t: '취향·생활 흐름', d: '무엇을 좋아하고 사다가 왜 바꿨나' },
-  { id: 'flow', t: '변화 흐름', d: '한 주제를 시대별로 끝까지' },
-  { id: 'history', t: '전체 역사', d: '시대별 사건 둘러보기' },
-  { id: 'field', t: '분야별 변화', d: '한 분야의 지표와 사건' },
-  { id: 'cycle', t: '반복·비교', d: '닮은 점·다른 점 검증' },
+  { id: 'topic', t: '주제 이야기', d: '분야 지도에서 한 가지를 끝까지' },
+  { id: 'cycle', t: '반복과 비교', d: '되풀이된 것과 달라진 것' },
+  { id: 'history', t: '시대별 사건 찾기', d: '사건에서 이야기로 가는 보조 자료' },
+  { id: 'field', t: '분야별 지표', d: '긴 시계열과 그 무렵의 사건' },
 ];
+
+const tabOn = (t: Tab): Tab => (t === 'taste' || t === 'flow' ? 'topic' : t);
 
 export function App() {
   const [r, nav] = useRoute();
   const why = (id: string, from?: string) => nav({ why: id, path: [id], rel: undefined, from: from ?? (r.tab === 'flow' ? r.flow : undefined) });
   useEffect(() => { document.body.classList.toggle('lock', !!r.why); }, [r.why]);
+  // 대상이 섞여 있던 '유통 채널과 결제' 흐름은 같은 대상을 따라가는 다섯 주제로 나눴다(R-Q18) — 옛 주소는 새 지도로 보낸다.
+  useEffect(() => { if (r.tab === 'flow' && r.flow === 'flow-shop' && !r.why) { nav({ tab: 'topic', flow: undefined, topic: undefined }); window.setTimeout(() => document.getElementById('fd-buying')?.scrollIntoView(), 120); } }, [r.tab, r.flow]);
   const sel = r.why ? byId[r.why] : undefined;
   return (
     <div className="app">
@@ -42,15 +44,13 @@ export function App() {
         </a>
         <nav className="tabs" role="tablist" aria-label="탐색">
           {TABS.map((t) => (
-            <button key={t.id} role="tab" aria-selected={r.tab === t.id} className={r.tab === t.id ? 'on' : ''} onClick={() => nav({ tab: t.id, flow: undefined, study: undefined, taste: undefined, topic: undefined, why: undefined, path: [], from: undefined })}>
+            <button key={t.id} role="tab" aria-selected={tabOn(r.tab) === t.id} className={tabOn(r.tab) === t.id ? 'on' : ''} onClick={() => nav({ tab: t.id, flow: undefined, study: undefined, taste: undefined, topic: undefined, why: undefined, path: [], from: undefined })}>
               <b>{t.t}</b><span>{t.d}</span>
             </button>
           ))}
         </nav>
       </header>
-      {r.tab === 'now' || r.tab === 'taste' || r.tab === 'topic' ? (
-        r.tab === 'topic' ? null : <p className="ctx now-ctx">{r.tab === 'taste' ? '취향 흐름은 화면 안의 자체 시간축을 씁니다.' : '현재 분석 화면입니다.'} 역사 연도 선택(시간축)은 이 화면의 내용에 영향을 주지 않아 접어 두었습니다 — <button className="link" onClick={() => nav({ tab: 'history', study: undefined })}>시대별 탐색에서 쓰기</button></p>
-      ) : (
+      {r.tab === 'now' || r.tab === 'taste' || r.tab === 'topic' || (r.tab === 'flow' && !r.flow) ? null : (
         <div className="sticky">
           <MasterTimeline r={r} nav={nav} />
           <p className="ctx">지금 보는 시점 <b>{eraOf(r.y).label} · {r.y}년</b>{sel && <> · 원인 탐색: <b>{sel.label}</b></>}</p>
@@ -59,9 +59,9 @@ export function App() {
       <main>
         {r.tab === 'now' && <NowView r={r} nav={nav} why={why} />}
         {r.tab === 'topic' && <TopicView r={r} nav={nav} />}
-        {r.tab === 'taste' && <TasteView r={r} nav={nav} />}
+        {r.tab === 'taste' && (r.taste ? <TasteView r={r} nav={nav} /> : <TopicView r={{ ...r, topic: undefined }} nav={nav} />)}
         {r.tab === 'history' && <HistoryView r={r} nav={nav} why={why} />}
-        {r.tab === 'flow' && <FlowView r={r} nav={nav} why={why} />}
+        {r.tab === 'flow' && (r.flow ? <FlowView r={r} nav={nav} why={why} /> : <TopicView r={{ ...r, topic: undefined }} nav={nav} />)}
         {r.tab === 'field' && <FieldView r={r} nav={nav} why={why} />}
         {r.tab === 'cycle' && <CycleView r={r} nav={nav} why={why} />}
       </main>

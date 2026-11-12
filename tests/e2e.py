@@ -41,12 +41,24 @@ with sync_playwright() as p:
     pg.locator('#st-4 details.bigtbl > summary').click(); pg.wait_for_timeout(200)
     pg.locator('#st-4 .cellbtn').first.click(); pg.wait_for_timeout(300)
     ok('대표 분석: 비교표 칸 클릭 → 근거 문장', pg.locator('#st-4 .mech-ev .claims li').count() >= 1)
-    # 취향·생활 흐름
+    # 주제 이야기 지도(R-Q16)와 공통 욕구(R-Q17)
+    pg.goto(U + '#/topic'); pg.wait_for_timeout(900)
+    t = pg.locator('main').inner_text()
+    ok('주제 지도: 분야 섹션 15개, 구매·소유 분야에 이야기 5개', pg.locator('.tp-dom').count() == 15 and pg.locator('#fd-buying .tp-card').count() == 5)
+    ok('주제 지도: 개발 상태 문구 없음(깊게 구현·후보·시대 흐름만)', not any(x in t for x in ('깊게 구현', '후보(조사 전)', '시대 흐름만 있음')))
+    ok('주제 지도: 준비 중은 별도 모양', pg.locator('.tp-planned').count() >= 5)
+    ok('공통 욕구: 6개, 사례마다 언제·그전·계기·달라진 선택', pg.locator('.tp-need').count() == 6 and pg.locator('.tp-cases tbody tr').count() >= 18 and pg.locator('.tp-needread dt').count() == 24)
+    for tid in ('shop-channel', 'shop-pay', 'shop-own', 'shop-items', 'shop-info'):
+        pg.goto(U + f'#/topic/{tid}'); pg.wait_for_timeout(700)
+        ok(f'주제 {tid}: 전환점 6개×5요소, 갈래, 추론 6요소, 미래 3개 이상×7항목, 결론 5요소',
+           pg.locator('.tp-turn').count() >= 5 and pg.locator('.tp-turn').first.locator('.tp-chain > li').count() == 5
+           and pg.locator('.tp-lanes li').count() >= 5 and pg.locator('.tp-reason h4').count() >= 6
+           and pg.locator('.tp-fut').count() >= 3 and pg.locator('.tp-fut').first.locator('tr').count() >= 7
+           and pg.locator('.tp-end dt').count() == 5 and pg.locator('#story').count() == 0)
+    pg.goto(U + '#/flow/flow-shop'); pg.wait_for_timeout(900)
+    ok('섞인 유통·결제 흐름 주소 → 구매·소유 분야 지도로', '#/topic' in pg.url)
     pg.goto(U + '#/taste'); pg.wait_for_timeout(900)
     t = pg.locator('main').inner_text()
-    ok('취향: 흐름 카드 5개(공간·바지·외식·굿즈·모임)', pg.locator('.tz-card').count() == 5)
-    ok('취향: 12개 분야 지도와 상태 표시', pg.locator('.tz-fd').count() == 12 and '후보(조사 전)' in t and '시대 흐름만 있음' in t)
-    ok('취향: 공통 욕구 비교(6개)', pg.locator('.tz-need').count() == 6)
     ok('취향: 층위 범례(사실·출처 해석·AI 추론·가설)', all(x in t for x in ('사실', '출처 해석', 'AI 추론', '가설')))
     for fid, n in (('taste-home', 6), ('taste-pants', 6), ('taste-dining', 5), ('taste-goods', 5), ('taste-gather', 3)):
         pg.goto(U + f'#/taste/{fid}'); pg.wait_for_timeout(700)
@@ -58,7 +70,7 @@ with sync_playwright() as p:
     pg.locator('.tz-tl .mvc').first.click(); pg.wait_for_timeout(300)
     ok('취향: 연결선 클릭 → 근거·다른 설명', pg.locator('.tz-moves li.on .reason').count() >= 1 and '다른 설명' in pg.locator('.tz-moves li.on').inner_text())
     # 11개 질문 이야기와 단계 풀이(다른 흐름으로 바로 이동)
-    for fid in ('flow-expression', 'flow-shop', 'flow-music'):
+    for fid in ('flow-expression', 'flow-music'):
         pg.goto(U + f'#/flow/{fid}'); pg.wait_for_timeout(800)
         ok(f'이야기 {fid}: 11개 질문 모두 답', pg.locator('#story .story-qs > li').count() == 11 and all(pg.locator('#story .story-qs > li').nth(i).locator('.tl').count() >= 1 for i in range(11)))
     pg.goto(U + '#/taste/taste-pants'); pg.wait_for_timeout(800)
@@ -98,7 +110,7 @@ with sync_playwright() as p:
     key = pg.locator('.keycard').count()
     ok('C 1990년대 → 핵심 변화 3~5개 + 해마다 사건', 3 <= key <= 5 and pg.locator('.yg').count() == 10 and '1990년대' in pg.locator('main h2').first.inner_text(), f'핵심 {key}')
     # B 분야별: 산업 선택 → 연도 클릭 없이 장기 흐름
-    pg.get_by_role('tab', name='분야별 변화').click(); pg.wait_for_timeout(300)
+    pg.get_by_role('tab', name='분야별 지표').click(); pg.wait_for_timeout(300)
     pg.get_by_role('tab', name='산업·기술·직업').click(); pg.wait_for_timeout(500)
     ok('B 산업 선택 → 장기 흐름(생애 막대)·시대별 단계', pg.locator('.life-row').count() >= 2 and pg.locator('.stages li').count() == 7, pg.url)
     # D 경제 그래프 전환점 클릭 → 그 해 사건 → 원인 패널
@@ -111,7 +123,7 @@ with sync_playwright() as p:
     pg.get_by_role('button', name='닫기', exact=True).click(); pg.wait_for_timeout(300)
     ok('패널 닫기 후 장기 그래프 유지(전체 기간)', pg.locator('.why').count() == 0 and pg.locator('.hero .chart svg').count() >= 1)
     # E 자동 사이클 발견
-    pg.get_by_role('tab', name='반복·비교').click(); pg.wait_for_timeout(600)
+    pg.get_by_role('tab', name='반복과 비교').click(); pg.wait_for_timeout(600)
     n = pg.locator('.cyc-list li').count(); txt = pg.locator('main').inner_text()
     ok('E 지정 없이 반복 후보 자동 계산', n >= 8 and '불규칙 반복' in txt and '구조적 유사' in txt, f'발견 {n}개')
     pg.locator('.cyc-list button', has_text='소비자물가').first.click(); pg.wait_for_timeout(500)
@@ -207,11 +219,7 @@ with sync_playwright() as p:
     ok('코로나19: 금리 인상 전환의 원인(집값·가계부채)', '가계부채' in w)
     # 변화 흐름: 질문 → 단계 → 연결의 성격 → 사건 상세 → 흐름으로 돌아가기
     pg.goto(U + '#/flow'); pg.wait_for_timeout(600)
-    ok('흐름 지도: 8개 분야 묶음', pg.locator('.fdom').count() == 8)
-    pg.get_by_role('button', name='모든 분야 펼치기').click()
-    pg.wait_for_timeout(300)
-    rows = pg.locator('.frow').count()
-    ok('흐름 지도: 한 줄 = 한 주제, 7개 시대 칸', rows >= 14 and pg.locator('.frow').first.locator('.frow-cell').count() == 7, f'줄 {rows}')
+    ok('옛 흐름 목록 주소 → 주제 지도', pg.locator('.tp-dom').count() == 15)
     pg.goto(U + '#/flow/flow-time'); pg.wait_for_timeout(600)
     t1 = pg.locator('main').inner_text()
     pg.goto(U + '#/flow/flow-sports'); pg.wait_for_timeout(600)
@@ -222,7 +230,7 @@ with sync_playwright() as p:
     t = pg.locator('main').inner_text()
     ok('음악 흐름: 단계·근거 문장·연결 성격이 클릭 없이 보임', pg.locator('.step').count() >= 8 and '노래방' in t and '시간 순서일 뿐' in t and '확인되지 않은 부분' in t)
     pg.locator('.step-ev .chip').first.click(); pg.wait_for_timeout(600)
-    ok('흐름 → 사건 상세(돌아가기 버튼·이 사건이 나오는 흐름)', 'from=flow-music' in pg.url and '돌아가기' in pg.locator('.why').inner_text() and '변화 흐름' in pg.locator('.why').inner_text())
+    ok('흐름 → 사건 상세(돌아가기 버튼·이 사건이 나오는 흐름)', 'from=flow-music' in pg.url and '돌아가기' in pg.locator('.why').inner_text() and '시대 흐름' in pg.locator('.why').inner_text())
     pg.locator('.why-nav .btn', has_text='돌아가기').click(); pg.wait_for_timeout(400)
     ok('사건 상세 → 흐름으로 복귀', '#/flow/flow-music' in pg.url and 'why=' not in pg.url)
     pg.goto(U + '#/flow/flow-relations'); pg.wait_for_timeout(600)
@@ -248,10 +256,20 @@ with sync_playwright() as p:
         pg.goto(U + f'#/history?z=year&y={yy}'); pg.wait_for_timeout(500)
         ok(f'{yy}년 사건 채움({kw})', kw in pg.locator('main').inner_text())
     pg.screenshot(path=os.path.join(SHOTS, 'e2e-field.png'))
+    # 18차: 지표 종합 판단 먼저(R-Q15), 사건 → 이야기(R-Q19)
+    pg.goto(U + '#/now/an-consumption'); pg.wait_for_timeout(900)
+    ok('지표: 함께 읽은 판단이 먼저, 개별 지표는 접힘', pg.locator('#st-6 .wread-t tbody tr').count() == 4 and pg.locator('#st-6 details.wdetails').count() == 1 and not pg.locator('#st-6 .wcard').first.is_visible())
+    pg.goto(U + '#/history'); pg.wait_for_timeout(800)
+    ht = pg.locator('main').inner_text()
+    ok('시대별 사건: 안내 문구 대신 이야기로 가는 길(시대 카드에 전환점 이야기)', '같은 줄에 놓인 사건들이 서로 이어진 흐름은 아닙니다' not in ht and pg.locator('.era-flows a[href^="#/topic/"]').count() >= 10)
+    pg.goto(U + '#/history?z=year&y=2003&why=e00-card&path=e00-card'); pg.wait_for_timeout(800)
+    ok('사건 상세 → 이 사건이 들어 있는 이야기(카드대란 → 결제 이야기)', pg.locator('.why-stories li').count() >= 1 and '값을 치르나' in pg.locator('.why-stories').inner_text())
+    pg.locator('.why-stories button').first.click(); pg.wait_for_timeout(900)
+    ok('사건 상세 → 이야기로 이동', '#/topic/' in pg.url and 'why=' not in pg.url)
     # 모바일
     m = b.new_context(viewport={'width': 390, 'height': 844}, has_touch=True, is_mobile=True).new_page()
     m.on('pageerror', lambda e: errs.append(str(e)))
-    for path in ['', '#/now/an-consumption', '#/flow', '#/flow/flow-music', '#/history', '#/history?z=decade&y=1990', '#/field/economy?y=1980', '#/cycle', '#/history?y=1973&why=d-embargo&path=d-embargo']:
+    for path in ['', '#/now/an-consumption', '#/topic', '#/topic/shop-channel', '#/topic/shop-items', '#/flow', '#/flow/flow-music', '#/history', '#/history?z=decade&y=1990', '#/field/economy?y=1980', '#/cycle', '#/history?y=1973&why=d-embargo&path=d-embargo']:
         m.goto(U + path); m.wait_for_timeout(700)
         over = m.evaluate('document.documentElement.scrollWidth > innerWidth + 1')
         ok(f'모바일 가로 넘침 없음 {path or "(첫 화면)"}', not over)

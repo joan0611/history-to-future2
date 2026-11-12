@@ -66,7 +66,9 @@ export interface Explainer {
   terms: { t: string; d: string }[]; changes: ExLine[]; unsure: ExLine[];
   compare: { intro: string; cols: string[]; rows: { q: string; common: string; cells: string[]; means: string; ids: string[] }[]; read: string; readIds: string[] };
 }
+export interface WatchRead { verdict: TLine; rows: { group: string; watch: string[]; dir: string; read: TLine }[]; decide: TLine }
 export interface Study {
+  watchRead?: WatchRead;
   explainer?: Explainer;
   id: string; title: string; subtitle: string; question: string; short: string; asOf: string;
   status: { content: string; evidence: string; data: string; backtest: string; reviewed: string };
@@ -251,6 +253,28 @@ export interface Topic {
   turns: TTurn[]; branches: { intro: string; lanes: TLane[]; read: TLine }; reasons: TReason[]; repeats?: TRepeat[]; links?: TLink[];
   futures: { split: TLine; items: TFuture[] }; conclusion: { key: TLine; favored: TLine; undecided: TLine; next: TLine; change: TLine };
 }
-export interface Topics { domains: { id: string; label: string; desc: string }[]; topics: Topic[]; planned: { domain: string; id: string; label: string }[]; check: { key: string; label: string; where: string[] }[] }
+export interface TNeed { id: string; label: string; rel: string; intro: string; cases: { kind: string; id: string; label: string; when: string; who: string; before: TLine; trigger: TLine; after: TLine; motive: TLine }[]; whyNow: TLine; common: TLine; differ: TLine; counter: TLine }
+export interface Topics { needs: TNeed[]; relKo: Record<string, string>; fieldMap: { id: string; label: string; items: { kind: string; id: string }[]; planned: string[] }[]; domains: { id: string; label: string; desc: string }[]; topics: Topic[]; planned: { domain: string; id: string; label: string }[]; check: { key: string; label: string; where: string[] }[] }
 export const topicById: Record<string, Topic> = Object.fromEntries((seed.topics?.topics ?? []).map((t) => [t.id, t]));
 export const MODE_KO: Record<string, string> = { same: '거의 그대로 들어옴', late: '늦게 확산', adapted: '국내 조건에 맞게 변형', rejected: '들어왔다가 밀려남', outbound: '한국에서 세계로' };
+
+/* 사건(근거 문장) → 그 사건이 들어 있는 이야기(R-Q19). 이야기 안에서 쓴 근거 문장 id로 잇는다(추측 없음). */
+function collectIds(x: unknown, out: Set<string>) {
+  if (Array.isArray(x)) { for (const v of x) { if (typeof v === 'string') out.add(v); else collectIds(v, out); } return; }
+  if (x && typeof x === 'object') for (const v of Object.values(x as Record<string, unknown>)) collectIds(v, out);
+}
+export interface StoryRef { kind: 'topic' | 'taste' | 'industry'; id: string; title: string; at?: string }
+const STORY_INDEX: { ref: StoryRef; ids: Set<string>; turns?: { id: string; years: string; ids: Set<string> }[] }[] = [
+  ...(seed.topics?.topics ?? []).map((t) => { const ids = new Set<string>(); collectIds(t, ids); return { ref: { kind: 'topic' as const, id: t.id, title: t.label }, ids, turns: t.turns.map((tu) => { const s2 = new Set<string>(); collectIds(tu, s2); return { id: tu.id, years: tu.years, ids: s2 }; }) }; }),
+  ...seed.tastes.flows.map((f) => { const ids = new Set<string>(); collectIds(f, ids); return { ref: { kind: 'taste' as const, id: f.id, title: f.title }, ids }; }),
+  ...((seed.industries as { industries: { id: string; label: string }[] })?.industries ?? []).map((i) => { const ids = new Set<string>(); collectIds(i, ids); return { ref: { kind: 'industry' as const, id: i.id, title: i.label }, ids }; }),
+];
+export function storiesFor(claimIds: string[]): StoryRef[] {
+  const out: StoryRef[] = [];
+  for (const s of STORY_INDEX) {
+    if (!claimIds.some((c) => s.ids.has(c))) continue;
+    const tu = s.turns?.find((t) => claimIds.some((c) => t.ids.has(c)));
+    out.push({ ...s.ref, at: tu ? `${tu.years} 전환점` : undefined });
+  }
+  return out;
+}

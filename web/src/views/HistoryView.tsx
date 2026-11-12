@@ -49,8 +49,8 @@ function Overview({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) => void;
     <>
       <section className="panel hero">
         <div className="hero-text">
-          <h2>전체 역사 — 시대별 사건 둘러보기</h2>
-          <p>이 화면은 분석을 뒷받침하는 사건과 시대 요약을 둘러보는 곳입니다. 같은 줄에 놓인 사건들이 서로 이어진 흐름은 아닙니다. 한 주제가 시대마다 어떻게 이어졌는지는 <a href="#/flow">변화 흐름</a>에서, 지금의 경제를 판단하는 데 쓰는 분석은 <a href="#/now">지금 판단하기</a>에서 봅니다.</p>
+          <h2>시대별 사건 찾기</h2>
+          <p>사건을 찾는 보조 자료입니다. 사건을 누르면 그 사건이 들어 있는 <b>이야기</b>(같은 주제를 시간 순서로 따라가는 글)로 바로 갈 수 있습니다.</p>
         </div>
       </section>
 
@@ -63,8 +63,8 @@ function Overview({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) => void;
       </section>
 
       <section className="panel">
-        <h2>시대별 사건 둘러보기 <span className="sub">분야마다 그 시대에 눈에 띈 사건 하나 — 같은 줄의 사건끼리 이어진 흐름이 아닙니다</span></h2>
-        <p className="small muted">줄은 분류일 뿐입니다. 예를 들어 ‘여러 분야’ 줄의 자동차 생활(미국 사례)·청년문화·24시간 도시는 서로 다른 주제입니다. 해외 사례에는 ‘해외’ 표시를 붙였습니다(한국 변화에 영향을 준 사례인지, 비교용인지는 사건 상세에서 확인).</p>
+        <h2>분야별 대표 사건 <span className="sub">칸을 누르면 사건 상세와 그 사건이 들어 있는 이야기</span></h2>
+        <p className="small muted">해외 사례에는 ‘해외’ 표시를 붙였습니다.</p>
         <div className="cmap" style={{ gridTemplateColumns: `6.5rem ${D.eras.map((e) => `${eraEnd(e) - e.startYear + 1}fr`).join(' ')}` }}>
           <span />
           {D.eras.map((e) => (
@@ -106,8 +106,9 @@ function Overview({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) => void;
   );
 }
 
+const turnsIn = (e: Era) => D.topics.topics.flatMap((t) => t.turns.filter((tu) => tu.start >= e.startYear && tu.start <= eraEnd(e)).map((tu) => ({ t, tu })));
+
 function EraCard({ e, prevSummary, first, on, nav }: { e: Era; prevSummary?: string; first: boolean; on: boolean; nav: (p: Partial<Route>) => void }) {
-  const steps = flowStepsIn(e);
   const go = () => nav({ y: e.id === '1970s' ? 1973 : e.startYear, z: 'decade' });
   return (
     <li className={`era-card${on ? ' on' : ''}`}>
@@ -117,9 +118,9 @@ function EraCard({ e, prevSummary, first, on, nav }: { e: Era; prevSummary?: str
         <dt>달라진 것</dt><dd>{e.glance.keyCause ?? '자료 없음'}</dd>
         {e.glance.legacy && <><dt>다음으로</dt><dd>{e.glance.legacy}</dd></>}
       </dl>
-      {steps.length > 0 && (
-        <p className="era-flows"><span className="muted">이 시대를 지나는 흐름</span> {steps.slice(0, 6).map((x) => (
-          <a key={x.f.id + x.id} className="chip" href={`#/flow/${x.f.id}?y=${e.startYear}`}>{x.title}</a>
+      {turnsIn(e).length > 0 && (
+        <p className="era-flows"><span className="muted">이 시대에 전환점이 있는 이야기</span> {turnsIn(e).map((x) => (
+          <a key={x.t.id + x.tu.id} className="chip" href={`#/topic/${x.t.id}`}>{x.t.label.split(' — ')[0]} · {x.tu.title}</a>
         ))}</p>
       )}
       <button className="link" onClick={go}>10년 보기 — 해마다의 사건과 근거 →</button>

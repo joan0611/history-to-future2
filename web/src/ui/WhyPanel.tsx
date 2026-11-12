@@ -1,3 +1,4 @@
+import { storiesFor } from '../lib/data';
 import { useEffect, useRef, useState } from 'react';
 import { CAT_KO, CLAIM_KO, COUNTRY_KO, D, STATUS_KO, STATUS_SHORT, byId, evidenceCount, flowById, inc, lead, linkKindOf, out, type Edge, type Node, type Rel } from '../lib/data';
 import type { Route } from '../lib/route';
@@ -28,6 +29,7 @@ export function WhyPanel({ r, nav }: { r: Route; nav: (p: Partial<Route>) => voi
   const related = D.findings.filter((f) => f.category === n.lane && f.periods.some(([a, b]) => n.year >= a - 1 && n.year <= b + 1) && f.type !== 'N' && f.type !== 'E'
     && f.series.some((k) => (nKR ? k.endsWith(':KR') : !k.endsWith(':KR')))).slice(0, 3);
   const flows = (n.flowIds ?? []).map((id) => flowById[id]).filter(Boolean);
+  const stories = storiesFor(n.claimIds);
   const back = r.from ? flowById[r.from] : undefined;
   const ev = evidenceCount(n.claimIds);
   const close = () => nav({ why: undefined, path: [], rel: undefined, from: undefined });
@@ -60,9 +62,17 @@ export function WhyPanel({ r, nav }: { r: Route; nav: (p: Partial<Route>) => voi
           <p className="why-lead">{lead(n, 220)}</p>
           <p className="meta">{n.countries.map((c) => COUNTRY_KO[c] ?? c).join(' · ') || '국가 정보 없음'} · 근거 문장 {ev.total}개: {STATUS_SHORT.verified} {ev.verified} · {STATUS_SHORT.sourced} {ev.sourced}{ev.missing ? ` · ${STATUS_SHORT.needs_source} ${ev.missing}` : ''}</p>
           <p className="meta small">문장의 확인 수준과 원인·결과 연결의 성격은 따로 표시합니다. 제목은 요약이며, 근거는 아래 문장 단위로 확인하세요.</p>
+          {stories.length > 0 && (
+            <div className="why-flows why-stories">
+              <b>이 사건이 들어 있는 이야기 — 같은 주제를 시간 순서로 따라가기</b>
+              <ul className="plain">{stories.map((x) => (
+                <li key={x.kind + x.id}><button className="link" onClick={() => { const clear = { why: undefined, path: [], rel: undefined, from: undefined }; if (x.kind === 'topic') nav({ ...clear, tab: 'topic', topic: x.id }); else if (x.kind === 'taste') nav({ ...clear, tab: 'taste', taste: x.id }); else nav({ ...clear, tab: 'field', cat: 'industry', ind: x.id }); window.setTimeout(() => window.scrollTo({ top: 0 }), 30); }}>{x.title} →</button>{x.at && <span className="muted small"> {x.at}</span>}</li>
+              ))}</ul>
+            </div>
+          )}
           {flows.length > 0 && (
             <div className="why-flows">
-              <b>이 사건이 나오는 변화 흐름</b>
+              <b>이 사건이 나오는 시대 흐름</b>
               <ul className="plain">{flows.map((f) => {
                 const st = f.steps.find((s) => s.nodeIds.includes(n.id))!;
                 return <li key={f.id}><a href={`#/flow/${f.id}?y=${n.year}`}>{f.question}</a> <span className="muted">— {D.phaseKo[st.phase]}: {st.title}</span></li>;

@@ -13,8 +13,8 @@ const X = (D as unknown as { industries: Inds }).industries;
 const KIND_CLASS: Record<string, string> = { '이전 상태': 'k0', '시작': 'k1', '성장': 'k2', '확산': 'k2', '전환점': 'k3', '기술 변화': 'k3', '위기': 'k4', '재편': 'k5', '현재': 'k6' };
 const startYear = (p: string) => Number((p.match(/\d{4}/) ?? ['0'])[0]);
 
-export function IndustryLife({ nav }: { nav: (p: Partial<Route>) => void }) {
-  const [sel, setSel] = useState(X.industries[0].id);
+export function IndustryLife({ nav, init }: { nav: (p: Partial<Route>) => void; init?: string }) {
+  const [sel, setSel] = useState(init && X.industries.some((i) => i.id === init) ? init : X.industries[0].id);
   const [compare, setCompare] = useState(false);
   const ind = X.industries.find((i) => i.id === sel)!;
   return (

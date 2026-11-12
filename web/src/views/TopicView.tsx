@@ -19,42 +19,93 @@ export function TopicView({ r, nav }: { r: Route; nav: Nav }) {
   return <TopicMap nav={nav} />;
 }
 
-/* ── 주제 지도: 읽을 수 있는 주제만 활성, 다룰 예정은 다른 모양(R-Q16) ── */
+/* ── 분야 지도: 읽을 수 있는 주제만 활성, 다룰 예정은 다른 모양(R-Q16). 작업 현황은 저장소 문서에만 둔다. ── */
+type MapItem = { kind: 'topic' | 'taste' | 'flow' | 'industry'; id: string };
+const IND = (D.industries as { industries: { id: string; label: string; question: string; span: [number, number] }[] }).industries;
+function itemInfo(it: MapItem): { title: string; q: string; span?: string; kindKo: string } | undefined {
+  if (it.kind === 'topic') { const t = topicById[it.id]; return t && { title: t.label, q: t.question, span: `${t.span[0]}~${t.span[1]}`, kindKo: '이야기' }; }
+  if (it.kind === 'taste') { const f = D.tastes.flows.find((x) => x.id === it.id); return f && { title: f.title, q: f.question, span: `${f.span[0]}~${f.span[1]}`, kindKo: '취향 흐름' }; }
+  if (it.kind === 'flow') { const f = D.flows.find((x) => x.id === it.id); return f && { title: f.topic, q: f.question, kindKo: '시대 흐름' }; }
+  const i = IND.find((x) => x.id === it.id); return i && { title: i.label, q: i.question, span: `${i.span[0]}~${i.span[1]}`, kindKo: '산업 일대기' };
+}
+function openItem(nav: Nav, it: MapItem) {
+  if (it.kind === 'topic') nav({ tab: 'topic', topic: it.id });
+  else if (it.kind === 'taste') nav({ tab: 'taste', taste: it.id, topic: undefined });
+  else if (it.kind === 'flow') nav({ tab: 'flow', flow: it.id, topic: undefined });
+  else nav({ tab: 'field', cat: 'industry', ind: it.id, topic: undefined });
+  window.setTimeout(() => window.scrollTo({ top: 0 }), 30);
+}
+
 export function TopicMap({ nav }: { nav: Nav }) {
   return (
     <div className="view topics">
       <section className="panel hero">
         <h2>한 가지를 끝까지 따라가는 이야기</h2>
-        <p className="lead">주제 하나를 고르면 처음에는 어땠는지, 무엇이 언제 왜 바뀌었는지, 옛 선택은 어떻게 남았는지, 지금 어디에 와 있고 앞으로 어떤 방향이 가능한지를 한 흐름으로 읽습니다. 한 주제 안에서는 같은 대상만 따라갑니다.</p>
+        <p className="lead">분야를 고르고, 그 안의 주제 하나를 고르세요. 한 주제 안에서는 같은 대상만 따라갑니다 — 처음엔 어땠는지, 무엇이 언제 왜 바뀌었는지, 옛 선택은 어떻게 남았는지, 지금 어디에 있고 앞으로 어떤 방향이 가능한지.</p>
       </section>
-      {T.domains.map((d) => {
-        const ts = T.topics.filter((t) => t.domain === d.id);
-        const pl = T.planned.filter((p) => p.domain === d.id);
+      {T.fieldMap.map((fd) => {
+        const items = fd.items.map((it) => ({ it, info: itemInfo(it as MapItem) })).filter((x) => x.info);
+        const dom = T.domains.find((d) => d.id === 'shop' && fd.id === 'buying');
         return (
-          <section key={d.id} className="panel tp-dom">
-            <h2>{d.label}</h2>
-            <p className="muted">{d.desc}</p>
-            <div className="tp-cards">
-              {ts.map((t) => (
-                <button key={t.id} className="tp-card" onClick={() => { nav({ tab: 'topic', topic: t.id }); window.scrollTo({ top: 0 }); }}>
-                  <b>{t.label}</b>
-                  <span className="tp-q">{t.question}</span>
-                  <span className="muted small">{t.span[0]}~{t.span[1]} · 전환점 {t.turns.length}개</span>
-                  <span className="fc-go">읽기 →</span>
-                </button>
-              ))}
-            </div>
-            <Interplay domain={d.id} nav={nav} />
-            {pl.length > 0 && (
+          <section key={fd.id} className="panel tp-dom" id={`fd-${fd.id}`}>
+            <h2>{fd.label}</h2>
+            {dom && <p className="muted">{dom.desc}</p>}
+            {items.length > 0 ? (
+              <div className="tp-cards">
+                {items.map(({ it, info }) => (
+                  <button key={it.id} className="tp-card" onClick={() => openItem(nav, it as MapItem)}>
+                    <span className="tp-kindko">{info!.kindKo}</span>
+                    <b>{info!.title}</b>
+                    <span className="tp-q">{info!.q}</span>
+                    {info!.span && <span className="muted small">{info!.span}</span>}
+                    <span className="fc-go">읽기 →</span>
+                  </button>
+                ))}
+              </div>
+            ) : <p className="muted small">아직 읽을 수 있는 주제가 없습니다.</p>}
+            {fd.id === 'buying' && <Interplay domain="shop" nav={nav} />}
+            {fd.planned.length > 0 && (
               <div className="tp-planned">
-                <span className="muted small">다룰 예정(아직 읽을 내용 없음)</span>
-                <ul>{pl.map((p) => <li key={p.id}>{p.label}</li>)}</ul>
+                <span className="muted small">다룰 예정 — 아직 읽을 내용 없음</span>
+                <ul>{fd.planned.map((p) => <li key={p}>{p}</li>)}</ul>
               </div>
             )}
           </section>
         );
       })}
+      <Needs nav={nav} />
     </div>
+  );
+}
+
+/* ── 분야를 가로지르는 욕구(R-Q17): 사례의 시기·과정을 먼저, 그다음 공통점·차이 ── */
+function Needs({ nav }: { nav: Nav }) {
+  return (
+    <section className="panel" id="needs">
+      <h2>분야를 가로지르는 욕구</h2>
+      <p className="muted">같은 이름의 욕구가 여러 분야에서 보일 때, 먼저 각 사례가 <b>언제 · 누구에게서 · 무엇에서 무엇으로</b> 바뀌었는지 보고, 그다음 공통점과 차이를 읽습니다. 사례끼리 원인-결과 관계라는 뜻은 아닙니다.</p>
+      {T.needs.map((n) => (
+        <article key={n.id} className="tp-need">
+          <h3>{n.label} <span className="tp-rel">{T.relKo[n.rel]}</span></h3>
+          <p className="small">{n.intro}</p>
+          <div className="tz-tlwrap"><table className="tp-cases"><thead><tr><th>사례</th><th>언제 · 누가</th><th>그전 선택</th><th>계기</th><th>달라진 선택</th><th>원한 것</th></tr></thead><tbody>
+            {n.cases.map((c) => (
+              <tr key={c.kind + c.id + c.label}>
+                <th><button className="link" onClick={() => openItem(nav, { kind: c.kind as MapItem['kind'], id: c.id })}>{c.label} →</button></th>
+                <td><b>{c.when}</b><br /><span className="small muted">{c.who}</span></td>
+                <td><SLineView x={c.before} /></td><td><SLineView x={c.trigger} /></td><td><SLineView x={c.after} /></td><td><SLineView x={c.motive} /></td>
+              </tr>
+            ))}
+          </tbody></table></div>
+          <dl className="tp-needread">
+            <dt>왜 그때, 그 모양으로</dt><dd><SLineView x={n.whyNow} /></dd>
+            <dt>공통점</dt><dd><SLineView x={n.common} /></dd>
+            <dt>차이</dt><dd><SLineView x={n.differ} /></dd>
+            <dt>이 설명이 안 맞는 곳</dt><dd><SLineView x={n.counter} /></dd>
+          </dl>
+        </article>
+      ))}
+    </section>
   );
 }
 

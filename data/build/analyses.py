@@ -819,10 +819,33 @@ def _chk_explainer(cids):
     ok(E["compare"]["readIds"], "compare")
 
 
+# 여러 지표를 함께 읽은 현재 판단(R-Q15) — 개별 지표 카드보다 먼저 보인다
+WATCH_READ = {
+    "verdict": _x("inference", "지표 여덟 개를 함께 읽으면, 나라 경제(수출·성장)는 강하고 일자리 총량도 버티지만 월급 증가는 물가보다 느리고 이자는 오르고 있다. 그래서 지금 가계 소비는 '줄어드는 중'이라기보다 '덜 늘고, 쓸 곳을 고르는 중'으로 본다. 네 가지 시나리오 가운데 '소득 확산형'을 받치는 신호와 '이자 부담 누적형'을 받치는 신호가 함께 있어, 아직 어느 쪽으로 기울었다고 판단하지 않는다.", ["an-n-gdp", "an-n-income", "an-n-loanrate", "an-n-ccsi", "an-n-emp"]),
+    "rows": [
+        {"group": "가계로 들어오는 돈", "watch": ["w-wage", "w-emp"], "dir": "누름",
+         "read": _x("inference", "고용률은 올랐지만(70.6%) 근로소득은 명목 0.8%로 물가(2.8%)보다 느리고, 청년 고용률은 1.1%p 떨어졌다 — 수출 호황이 월급으로 아직 넓게 번지지 않았다.", ["an-n-income", "an-n-emp", "an-n-cpi"])},
+        {"group": "물가", "watch": ["w-cpi"], "dir": "누름",
+         "read": _x("fact", "10월 소비자물가 2.8%, 석유류 +14.9%. 정부는 최고가격제가 없었다면 3.6%였을 것으로 추산했다.", ["an-n-cpi"])},
+        {"group": "이자와 빚", "watch": ["w-rate", "w-dsr", "w-debt"], "dir": "누름",
+         "read": _x("inference", "기준금리 3.00%, 신규 가계대출 금리 4.96%로 올랐고, 갚는 데 소득의 46% 넘게 쓰는 가구(소비가 줄기 시작하는 선)가 11.1%다. 다만 소득 대비 빚 비율은 2분기에 낮아졌다.", ["an-n-rate", "an-n-loanrate", "an-n-dsr46", "an-n-fsr"])},
+        {"group": "마음과 실제 지출", "watch": ["w-ccsi", "w-cons"], "dir": "엇갈림",
+         "read": _x("inference", "소비자심리는 105.4로 평균(100)보다 높고 지출 전망도 109인데, 실제 민간소비는 3분기에 바로 앞 분기보다 0.2% 줄었다(작년 같은 분기보다는 +1.1%). 한은은 증시 조정·파업 같은 일시 요인을 빼면 늘었을 것으로 본다 — 마음과 지갑 사이의 간격이다.", ["an-n-ccsi", "an-n-gdp", "an-n-kdi"])},
+    ],
+    "decide": _x("inference", "판단을 가를 지표는 두 가지다: 4분기 근로소득이 물가보다 빨리 오르기 시작하면 '소득 확산형' 쪽으로, 대출 금리가 더 오르고 고DSR 가구 비중이 늘면 '이자 부담 누적형' 쪽으로 옮긴다.", ["an-n-income", "an-n-dsr46"]),
+}
+
+
 def validate(claims):
     cids = {c["id"] for c in claims}
     _chk_explainer(cids)
     ANALYSES[0]["explainer"] = EXPLAINER
+    ANALYSES[0]["watchRead"] = WATCH_READ
+    cids = {c["id"] for c in claims}
+    for x in [WATCH_READ["verdict"], WATCH_READ["decide"]] + [r["read"] for r in WATCH_READ["rows"]]:
+        for i in x["ids"]:
+            if i not in cids:
+                raise SystemExit(f"지표 종합 판단: 없는 근거 {i}")
     for a in ANALYSES:
         def chk(ids, where):
             for i in ids:

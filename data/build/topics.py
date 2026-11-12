@@ -4,6 +4,7 @@
 11개 질문(R-A3)은 사용자 본문이 아니라 내부 점검표(CHECK)로 쓴다(R-Q6).
 """
 import topics_shop as tshop
+import topics_needs as tneeds
 from topic_helpers import LAYERS, MODES, FUTURE_KINDS
 
 DOMAINS = [
@@ -20,6 +21,28 @@ PLANNED = [
     {"domain": "shop", "id": "shop-own", "label": "어떻게 갖나 — 새것·중고·대여·구독"},
     {"domain": "shop", "id": "shop-items", "label": "무엇에 먼저 쓰나 — 구매 품목과 지출 우선순위"},
     {"domain": "shop", "id": "shop-info", "label": "무엇을 보고 고르나 — 구매 결정 정보와 영향력"},
+]
+
+
+# 12개 분야 지도(R-Q16) — 사용자가 실제로 읽을 수 있는 주제만 활성으로, 준비 중은 따로.
+#   kind: topic(주제 이야기) / taste(취향 흐름) / flow(같은 대상을 따라가는 시대 흐름) / industry(산업 일대기)
+#   대상이 섞여 있어 나누는 중인 흐름(산업·고용, 기술 보급, 여가 공간, 교통·도시·주거, 유통·결제)은 활성 목록에 넣지 않는다(R-Q3).
+FIELD_MAP = [
+    {"id": "buying", "label": "구매·소유·처분", "items": [("topic", "shop-channel"), ("topic", "shop-pay"), ("topic", "shop-own"), ("topic", "shop-items"), ("topic", "shop-info")], "planned": []},
+    {"id": "space", "label": "공간·인테리어·생활용품", "items": [("taste", "taste-home")], "planned": ["식기·조명·수납 단독 흐름"]},
+    {"id": "fashion", "label": "패션·미용·자기표현", "items": [("taste", "taste-pants"), ("flow", "flow-expression"), ("flow", "flow-fashion")], "planned": ["신발", "헤어·화장"]},
+    {"id": "food", "label": "음식·음료·외식", "items": [("taste", "taste-dining")], "planned": ["카페·디저트", "간편식·배달"]},
+    {"id": "goods", "label": "상품·굿즈·수집", "items": [("taste", "taste-goods")], "planned": ["피규어·캐릭터 카드"]},
+    {"id": "media", "label": "음악·영상·게임·팬덤", "items": [("flow", "flow-music")], "planned": ["영상 보는 방식(TV→OTT→숏폼)", "게임", "팬덤 지출"]},
+    {"id": "relation", "label": "관계·모임·공동체", "items": [("taste", "taste-gather"), ("flow", "flow-relations")], "planned": []},
+    {"id": "hobby", "label": "취미·운동·여가", "items": [("flow", "flow-sports"), ("flow", "flow-time")], "planned": ["운동 종목과 장비", "여가를 보내는 장소(현재 흐름은 여행·노래방·배달이 섞여 있어 나누는 중)"]},
+    {"id": "travel", "label": "여행·숙박·이동", "items": [], "planned": ["해외여행 방식(패키지→자유여행)", "숙소 고르기"]},
+    {"id": "tech", "label": "기술·기기·디지털 생활", "items": [("industry", "tv"), ("industry", "phone"), ("industry", "internet")], "planned": ["집 안 기기 보급(현재 흐름은 TV·휴대폰·메신저·AI가 섞여 있어 나누는 중)", "필기·독서 도구 — 디지털과 아날로그"]},
+    {"id": "family", "label": "가족·주거·돌봄", "items": [("flow", "flow-family")], "planned": ["사는 집의 형태(현재 흐름은 인구·교통·아파트가 섞여 있어 나누는 중)", "반려동물", "돌봄"]},
+    {"id": "work", "label": "일·학습·자기계발", "items": [], "planned": ["일하는 방식과 고용 형태(현재 흐름은 산업 사건이 섞여 있어 나누는 중)", "자격·학습 서비스"]},
+    {"id": "industry", "label": "산업(한국 경제를 키운 개별 산업)", "items": [("industry", x) for x in ["steel", "shipbuilding", "automobile", "petrochem", "construction", "semiconductor"]], "planned": ["섬유", "전자부품·디스플레이"]},
+    {"id": "society", "label": "경제 위기·정치", "items": [("flow", "flow-economy"), ("flow", "flow-politics")], "planned": []},
+    {"id": "lifestyle", "label": "라이프스타일 — 시간·공간·관계·몸·주의력을 쓰는 방식", "items": [], "planned": ["바쁨·휴식·명상", "디지털 편의와 피로, 아날로그 활동", "소유·수집·비우기", "건강·운동·회복"]},
 ]
 
 # 내부 점검표: 11개 질문 → 주제 안 어느 부분이 답하나(사용자 화면에는 본문으로 내보내지 않음)
@@ -113,5 +136,15 @@ def validate(claims_all, flows, taste_ids=()):
     if errs:
         raise SystemExit("주제 이야기 검증 실패:\n" + "\n".join(errs))
     have = {t["id"] for t in TOPICS}
-    return {"domains": DOMAINS, "topics": TOPICS, "planned": [p for p in PLANNED if p["id"] not in have],
+    for nd in tneeds.NEEDS:
+        for ln in _lines(nd):
+            for i in ln["ids"]:
+                if i not in cids:
+                    errs.append(f"욕구 {nd['id']}: 없는 근거 {i}")
+        for c in nd["cases"]:
+            if c["kind"] == "topic" and c["id"] not in topic_ids:
+                errs.append(f"욕구 {nd['id']}: 없는 주제 {c['id']}")
+    if errs:
+        raise SystemExit("욕구 검증 실패:\n" + "\n".join(errs))
+    return {"needs": tneeds.NEEDS, "relKo": tneeds.REL_KO, "fieldMap": [dict(f, items=[{"kind": k, "id": i} for k, i in f["items"]]) for f in FIELD_MAP], "domains": DOMAINS, "topics": TOPICS, "planned": [p for p in PLANNED if p["id"] not in have],
             "check": [{"key": k, "label": l, "where": wh} for k, l, wh in CHECK]}

@@ -227,7 +227,19 @@ export function StudyDetail({ s, nav }: { s: Study; nav: (p: Partial<Route>) => 
       </section>
 
       <section className="panel" id="st-6">
-        <h2><span className="stepno">6</span> 앞으로 확인할 지표</h2>
+        <h2><span className="stepno">6</span> 지표를 함께 읽은 지금의 판단</h2>
+        {s.watchRead && (
+          <div className="wread">
+            <SLineView x={s.watchRead.verdict} />
+            <p className="muted small">무엇을 보나: 여덟 지표를 가계에 미치는 방향(누르는 쪽 / 받치는 쪽 / 엇갈림)별로 묶었습니다.</p>
+            <table className="wread-t"><thead><tr><th>묶음</th><th>방향</th><th>함께 읽은 내용</th></tr></thead><tbody>
+              {s.watchRead.rows.map((r) => <tr key={r.group}><th>{r.group}<br /><span className="muted small">{r.watch.map((id) => watchById[id]?.name).join(' · ')}</span></th><td><span className={`wdir d-${r.dir}`}>{r.dir}</span></td><td><SLineView x={r.read} /></td></tr>)}
+            </tbody></table>
+            <p className="small">읽어낼 것:</p>
+            <SLineView x={s.watchRead.decide} />
+          </div>
+        )}
+        <details className="wdetails"><summary>지표 {s.watch.length}개를 하나씩 보기 — 정의, 비교 기준, 어떤 시나리오를 지지·약화하나</summary>
         <div className="watchlist">
           {s.watch.map((w) => (
             <div key={w.id} className="wcard">
@@ -246,6 +258,7 @@ export function StudyDetail({ s, nav }: { s: Study; nav: (p: Partial<Route>) => 
             </div>
           ))}
         </div>
+        </details>
         <h3>판단을 고쳐야 하는 신호</h3>
         <ul className="plain revise">{s.revise.map((x) => <li key={x}>{x}</li>)}</ul>
       </section>
