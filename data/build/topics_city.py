@@ -2,7 +2,20 @@
 - city-home: 어디에, 어떤 집에 사나(거주지와 주거 형태)
 - city-move: 넓어진 도시를 어떻게 오가나(교통)
 두 주제는 신도시·2호선처럼 만나는 지점에서만 서로 연결한다. 근거는 이미 검증된 근거 문장만 쓴다."""
-from topic_helpers import CONCLUDE, F, FUT, HYP, INF, LANE, LINK, REASON, SRC, TURN
+from topic_helpers import C, CONCLUDE, F, FUT, HYP, INF, LANE, LINK, REASON, S, SRC, TURN
+
+_D = ("society", "consumption")
+SOURCES = [
+    S("tc-s-bizwatch-gtx1", "GTX-A 개통 1년 — 구간별 이용객과 예측수요 대비", "비즈워치", "https://news.bizwatch.co.kr/article/real_estate/2025/04/01/0013", "news", "2025-04-01"),
+    S("tc-s-newsseoul-gtx1", "국토교통부, GTX-A 수서∼동탄 1주년 누적 410만명 이용 운정∼서울역은 3개월만 360만명 이용", "뉴스서울", "https://newsseoul.co.kr/news/view/1065582618959217", "news", "2025-04-01"),
+    S("tc-s-etoday-gtxfare", "편도 '4450원' GTX-A 노선 운정중앙-서울 28일 개통", "이투데이", "https://www.etoday.co.kr/news/view/2432895", "news", "2024-12-27"),
+    S("tc-s-seoul-gtx26", "최규진 경기도의원 \"GTX-A, 멈춘 경기도민과의 약속... 경기도가 책임 다해야\"", "서울신문", "https://m.go.seoul.co.kr/news/2026/09/01/20260901500292", "news", "2026-09-01"),
+]
+CLAIMS = [
+    C("tc-gtx-open", "수도권광역급행철도 GTX-A는 2024년 3월 30일 수서~동탄 구간, 같은 해 12월 28일 운정중앙~서울역 구간을 개통했다. 운정중앙~서울역 편도 요금은 4,450원(기본 3,200원+거리요금)이다.", "fact", ["tc-s-bizwatch-gtx1", "tc-s-etoday-gtxfare"], period="2024", domains=_D),
+    C("tc-gtx-riders", "국토교통부 자료에 따르면 GTX-A 평일 일평균 이용객은 2024년 4월 초 약 7,700명에서 2025년 3월 말 약 6만 2천 명으로 약 8배가 됐다. 개통 1년간 수서~동탄은 410만 명, 운정중앙~서울역은 3개월간 360만 명이 이용했고, 3월 말 평일 이용객은 예측수요 대비 각각 75.1%, 91.1%였다.", "statistical", ["tc-s-bizwatch-gtx1", "tc-s-newsseoul-gtx1"], period="2024~2025", domains=_D),
+    C("tc-gtx-split", "GTX-A는 2026년 9월에도 운정중앙~서울역과 수서~동탄 두 구간으로 나뉘어 운행했다. 2026년 중 삼성역 무정차 통과로 두 구간을 잇기로 했지만 삼성역 지하 공사에서 시공 오류가 발견돼 개통 일정이 불투명해졌고, 같은 보도는 누적 이용객을 3,300만 명으로 전했다.", "fact", ["tc-s-seoul-gtx26"], period="2026", domains=_D),
+]
 
 HOME = {
     "id": "city-home", "domain": "city", "label": "어디에, 어떤 집에 사나 — 거주지와 주거 형태",
@@ -100,8 +113,8 @@ MOVE = {
     "tracks": "도시 안과 도시 사이를 오가는 수단: 전차 → 고속도로 → 지하철 → 자가용 → 환승 체계·고속철. 사는 곳의 변화는 '어디에 사나' 주제에서 따로 본다.",
     "question": "16시간 걸리던 서울~부산이 5시간이 되고, 서울 밖에 살며 서울로 다니는 생활은 어떤 교통으로 가능해졌나?",
     "scene": F("1970년 경부고속도로 개통으로 16시간 걸리던 서울~부산이 5시간 35분이 됐다.", "fl-city-gyeongbu-life"),
-    "span": [1968, 2011],
-    "scope": [INF("2004년 이후 광역 교통(광역버스·급행철도)의 자료는 이 주제에 연결하지 않아, 이야기는 2004년 전후에서 멈춘다.", "fl-city-2004")],
+    "span": [1968, 2026],
+    "scope": [INF("2004년과 2024년 사이 광역버스·수도권 전철 연장 자료는 연결하지 않았다. 2024년 이후는 GTX-A 이용 자료로만 본다.", "fl-city-2004", "tc-gtx-riders")],
     "turns": [
         TURN("t1", "1968~1970", 1968, "경부고속도로 — 1일 생활권",
              why=F("1970년 서울~부산이 16시간에서 5시간 35분으로 줄었다.", "fl-city-gyeongbu-life"),
@@ -137,8 +150,17 @@ MOVE = {
              condition=[INF("서울 밖에 살며 서울로 다니는 사람이 늘었다.", "fl-city-newtown", "fl-city-capital")],
              response=[F("KTX 개통·대중교통 체계 개편.", "fl-city-2004")],
              change=[INF("도시 안(환승)과 도시 사이(고속철)를 함께 손질했다.", "fl-city-2004")],
-             legacy=[INF("수도권 50% 시대(2019)의 통근을 감당할 광역 교통이 다음 과제지만, 이 주제에서는 자료를 연결하지 않았다.", "fl-city-capital")],
-             gap="2004년 이후 광역 교통 자료 미연결."),
+             legacy=[INF("수도권 50% 시대(2019)의 통근을 감당할 광역 교통이 다음 과제가 됐다.", "fl-city-capital")],
+             gap="2004~2024년 광역버스·전철 연장 자료 미연결."),
+        TURN("t6", "2024~2026", 2024, "지하 깊이 달리는 급행 — GTX-A",
+             why=F("2024년 3월 수서~동탄, 12월 운정중앙~서울역 구간이 차례로 개통했다.", "tc-gtx-open"),
+             before=[F("수도권 인구가 2019년 절반을 넘었다.", "fl-city-capital")],
+             condition=[INF("서울 밖 신도시에 살며 서울로 다니는 통근이 길어졌다.", "fl-city-newtown", "fl-city-capital")],
+             response=[F("평일 이용객이 1년 새 약 7,700명에서 6만 2천 명으로 늘었다.", "tc-gtx-riders"),
+                       F("요금은 운정중앙~서울역 편도 4,450원으로 일반 전철보다 비싸다.", "tc-gtx-open")],
+             change=[F("운정중앙~서울역은 개통 3개월 만에 예측수요의 91.1%에 닿았지만 수서~동탄은 75.1%였다.", "tc-gtx-riders")],
+             legacy=[F("2026년 9월에도 두 구간은 나뉘어 달렸고, 삼성역 시공 오류로 연결 일정이 불투명해졌다.", "tc-gtx-split"),
+                     INF("빨라진 것은 '역에서 역'이고, 남북이 끊긴 채로는 신도시에서 강남·도심을 한 번에 잇는 효과가 반쪽에 그쳤다.", "tc-gtx-split", "tc-gtx-riders")]),
     ],
     "branches": {
         "intro": "한 줄은 한 가지 이동 수단입니다.",
@@ -148,6 +170,7 @@ MOVE = {
             LANE("지하철", 1974, "확대", F("1호선(1974), 2호선 순환(1984).", "fl-city-line1", "cfill-line2")),
             LANE("자가용", 1976, "확대", F("서울 300만 대(2011).", "fl-city-cars")),
             LANE("고속철·환승 체계", 2004, "확대", F("KTX·대중교통 개편.", "fl-city-2004")),
+            LANE("광역급행철도(GTX)", 2024, "확대", F("평일 이용 약 8배, 누적 3,300만 명.", "tc-gtx-riders", "tc-gtx-split")),
         ],
         "read": INF("교통은 교체(전차)보다 쌓임이 많았다. 새 수단이 생겨도 옛 수단은 대부분 남아, 넓어진 도시를 여러 수단이 나눠 맡았다.", "fl-city-tram", "fl-city-cars", "fl-city-2004"),
     },
@@ -165,15 +188,15 @@ MOVE = {
         LINK("shop-channel", "1993~", "자가용이 할인점 '주말 대량 장보기'의 조건이 됐다."),
     ],
     "futures": {
-        "split": INF("갈라지는 이유는 수도권 통근이 계속 늘어나느냐, 재택·지역 분산으로 줄어드느냐다. 이 주제는 2004년 이후 자료가 비어 있어 판단 폭이 좁다.", "fl-city-capital", "fl-city-2004"),
+        "split": INF("갈라지는 이유는 수도권 통근이 계속 늘어나느냐, 재택·지역 분산으로 줄어드느냐다. GTX-A 이용 증가는 앞쪽을 가리키지만 2004~2024년 사이 자료가 비어 있어 판단 폭이 좁다.", "fl-city-capital", "tc-gtx-riders"),
         "items": [
             FUT("계속", "광역 통근 교통이 계속 늘어난다",
-                change=HYP("수도권 50% 시대에 서울 밖 거주·서울 통근을 잇는 광역 교통 수요가 커진다.", "fl-city-capital"),
-                basis=[F("수도권 인구 50% 돌파.", "fl-city-capital")],
+                change=INF("수도권 50% 시대에 서울 밖 거주·서울 통근을 잇는 광역 교통 수요가 커진다.", "fl-city-capital", "tc-gtx-riders"),
+                basis=[F("수도권 인구 50% 돌파.", "fl-city-capital"), F("GTX-A 평일 이용 1년 새 약 8배.", "tc-gtx-riders")],
                 logic=INF("사는 곳과 일하는 곳이 떨어져 있으면 그 사이 교통이 필요하다.", "fl-city-newtown"),
                 conditions=INF("일자리가 서울에 남아 있어야 한다.", "fl-city-capital"),
                 demand=INF("광역 철도·버스.", "fl-city-2004"),
-                watch=["수도권 통근 시간", "광역 교통 이용자"], against=["재택근무 확산으로 통근이 줄면"]),
+                watch=["GTX-A 두 구간 연결 시점과 이후 이용객", "수도권 통근 시간"], against=["재택근무 확산으로 통근이 줄면"]),
             FUT("경로 변경", "통근 자체가 줄어든다",
                 change=HYP("재택·원격 근무가 늘어 출퇴근 이동이 줄어든다.", "c2020-endsd"),
                 basis=[F("코로나 시기 재택근무 공간을 꾸민 사람이 많았다(2020 조사).", "ts-h-covid-survey")],
@@ -184,10 +207,10 @@ MOVE = {
         ],
     },
     "conclusion": CONCLUDE(
-        key=INF("교통은 도시가 넓어질 때마다 새 수단이 더해지는 방식으로 변했다(고속도로 → 지하철 → 자가용 → 고속철·환승). 대부분 교체가 아니라 쌓임이다.", "fl-city-gyeongbu", "fl-city-line1", "fl-city-cars", "fl-city-2004"),
+        key=INF("교통은 도시가 넓어질 때마다 새 수단이 더해지는 방식으로 변했다(고속도로 → 지하철 → 자가용 → 고속철·환승 → 광역급행철도). 대부분 교체가 아니라 쌓임이다.", "fl-city-gyeongbu", "fl-city-line1", "fl-city-cars", "fl-city-2004", "tc-gtx-open"),
         favored=INF("'교통이 도시를 바꿨다'보다 '도시 계획이 교통을 불렀다' 해석을 조금 더 지지한다(2호선 사례).", "cfill-line2"),
-        undecided=INF("2004년 이후 광역 교통 변화는 자료를 연결하지 않아 판단할 수 없다.", "fl-city-2004"),
-        nextwatch=INF("수도권 통근 자료를 연결하는 것.", "fl-city-capital"),
+        undecided=INF("2004~2024년 사이 광역버스·전철 연장의 변화는 자료를 연결하지 않아 판단할 수 없다.", "fl-city-2004"),
+        nextwatch=INF("GTX-A 남북 구간이 이어진 뒤 이용객이 예측수요를 넘는지.", "tc-gtx-split", "tc-gtx-riders"),
         change=INF("재택근무가 늘어 통근이 줄면 '광역 교통 수요 증가' 판단을 고친다.", "ts-h-covid-survey"),
     ),
 }

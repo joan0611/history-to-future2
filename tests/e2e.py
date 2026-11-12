@@ -62,8 +62,8 @@ with sync_playwright() as p:
     ok('기록 도구: 비교표 7기준×5도구 + 질문별 답 4개(R-DA1·DA2)', pg.locator('.tp-cmpt tbody tr').count() == 7 and pg.locator('.tp-cmpt thead th').count() == 6 and pg.locator('.tp-probes dt').count() == 4)
     ok('기록 도구: 반복(과거·지금·대안·반례) + 미래 3갈래 + 결론', pg.locator('#tp-repeat').count() == 1 and pg.locator('.tp-fut').count() == 3 and len({x for x in pg.locator('.tp-fut .tp-kind').all_inner_texts()}) == 3 and pg.locator('.tp-end dt').count() == 5)
     pg.goto(U + '#/topic'); pg.wait_for_timeout(700)
-    ok('라이프스타일 분야: 주제 5개(쉼·몸·물건·자연·기록)', pg.locator('#fd-lifestyle .tp-card').count() == 5)
-    for tid in ('life-rest', 'life-health', 'life-stuff', 'life-nature'):
+    ok('라이프스타일 분야: 주제 7개(쉼·몸·물건·자연·기록·관계의 거리·도시 편의), 준비 중 0', pg.locator('#fd-lifestyle .tp-card').count() == 7)
+    for tid in ('life-rest', 'life-health', 'life-stuff', 'life-nature', 'life-alone', 'life-convenience'):
         pg.goto(U + f'#/topic/{tid}'); pg.wait_for_timeout(700)
         ok(f'라이프스타일 {tid}: 전환점 3개 이상×5요소, 갈래, 추론 6요소, 미래 2갈래, 결론', pg.locator('.tp-turn').count() >= 3 and pg.locator('.tp-turn').first.locator('.tp-chain > li').count() == 5 and pg.locator('.tp-lanes li').count() >= 4 and pg.locator('.tp-reason h4').count() >= 6 and pg.locator('.tp-fut').count() >= 2 and pg.locator('.tp-end dt').count() == 5)
     for tid in ('city-home', 'city-move'):

@@ -7,6 +7,7 @@ import topics_shop as tshop
 import topics_needs as tneeds
 import topics_record as trec
 import topics_life as tlife
+import topics_life2 as tlife2
 import topics_city as tcity
 from topic_helpers import LAYERS, MODES, FUTURE_KINDS
 
@@ -16,9 +17,9 @@ DOMAINS = [
     {"id": "lifestyle", "label": "라이프스타일", "desc": "시간·공간·관계·몸·주의력을 어떻게 쓰고 관리하는지, 무엇을 좋은 삶으로 여기는지."},
 ]
 
-TOPICS = tshop.TOPICS + trec.TOPICS + tlife.TOPICS + tcity.TOPICS
-SOURCES = tshop.SOURCES + trec.SOURCES + tlife.SOURCES
-CLAIMS = tshop.CLAIMS + trec.CLAIMS + tlife.CLAIMS
+TOPICS = tshop.TOPICS + trec.TOPICS + tlife.TOPICS + tlife2.TOPICS + tcity.TOPICS
+SOURCES = tshop.SOURCES + trec.SOURCES + tlife.SOURCES + tlife2.SOURCES + tcity.SOURCES
+CLAIMS = tshop.CLAIMS + trec.CLAIMS + tlife.CLAIMS + tlife2.CLAIMS + tcity.CLAIMS
 
 # 아직 쓰지 않은 주제(탐색 화면에서 활성 콘텐츠와 다른 모양으로 표시, R-Q16)
 PLANNED = [
@@ -43,11 +44,11 @@ FIELD_MAP = [
     {"id": "hobby", "label": "취미·운동·여가", "items": [("flow", "flow-sports"), ("flow", "flow-time")], "planned": ["운동 종목과 장비", "여가를 보내는 장소(현재 흐름은 여행·노래방·배달이 섞여 있어 나누는 중)"]},
     {"id": "travel", "label": "여행·숙박·이동", "items": [("topic", "city-move")], "planned": ["해외여행 방식(패키지→자유여행)", "숙소 고르기"]},
     {"id": "tech", "label": "기술·기기·디지털 생활", "items": [("industry", "tv"), ("industry", "phone"), ("industry", "internet")], "planned": ["집 안 기기 보급(현재 흐름은 TV·휴대폰·메신저·AI가 섞여 있어 나누는 중)", "필기·독서 도구 — 디지털과 아날로그"]},
-    {"id": "family", "label": "가족·주거·돌봄", "items": [("flow", "flow-family")], "planned": ["사는 집의 형태(현재 흐름은 인구·교통·아파트가 섞여 있어 나누는 중)", "반려동물", "돌봄"]},
+    {"id": "family", "label": "가족·주거·돌봄", "items": [("flow", "flow-family")], "planned": ["사는 집의 형태(현재 흐름은 인구·교통·아파트가 섞여 있어 나누는 중)", "돌봄"]},
     {"id": "work", "label": "일·학습·자기계발", "items": [], "planned": ["일하는 방식과 고용 형태(현재 흐름은 산업 사건이 섞여 있어 나누는 중)", "자격·학습 서비스"]},
-    {"id": "industry", "label": "산업(한국 경제를 키운 개별 산업)", "items": [("industry", x) for x in ["steel", "shipbuilding", "automobile", "petrochem", "construction", "semiconductor"]], "planned": ["섬유", "전자부품·디스플레이"]},
+    {"id": "industry", "label": "산업(한국 경제를 키운 개별 산업)", "items": [("industry", x) for x in ["steel", "shipbuilding", "automobile", "petrochem", "construction", "semiconductor", "textile", "display", "battery"]], "planned": ["기계·전자부품(후속)"]},
     {"id": "society", "label": "경제 위기·정치", "items": [("flow", "flow-economy"), ("flow", "flow-politics")], "planned": []},
-    {"id": "lifestyle", "label": "라이프스타일 — 시간·공간·관계·몸·주의력을 쓰는 방식", "items": [("topic", "life-rest"), ("topic", "life-health"), ("topic", "life-stuff"), ("topic", "life-nature"), ("topic", "life-record")], "planned": ["관계의 거리(혼자·함께)", "도시 편의와 시간 아끼기"]},
+    {"id": "lifestyle", "label": "라이프스타일 — 시간·공간·관계·몸·주의력을 쓰는 방식", "items": [("topic", "life-rest"), ("topic", "life-health"), ("topic", "life-stuff"), ("topic", "life-nature"), ("topic", "life-record"), ("topic", "life-alone"), ("topic", "life-convenience")], "planned": []},
 ]
 
 # 내부 점검표: 11개 질문 → 주제 안 어느 부분이 답하나(사용자 화면에는 본문으로 내보내지 않음)
@@ -143,6 +144,8 @@ def validate(claims_all, flows, taste_ids=()):
                     errs.append(f"{w}: 비교표 근거 {i}")
         for rp in t.get("repeats", []):
             tids = {tu["id"] for tu in t["turns"]}
+            if not isinstance(rp["counter"], list) or not isinstance(rp["alternatives"], list):
+                errs.append(f"{w}: 반복 counter/alternatives는 목록이어야 함")
             for a in rp["at"]:
                 if a not in tids:
                     errs.append(f"{w}: 반복 링크 {a} 없음")

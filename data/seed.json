@@ -18544,6 +18544,313 @@
    "aiSynthesized": false,
    "period": "2023~2024",
    "independentSources": 2
+  },
+  {
+   "id": "tl2-honbap",
+   "text": "농림축산식품부 '2016년 외식소비 행태 분석'에서 조사 대상 3천여 명 중 56.6%가 혼자 외식한 경험이 있다고 답했고, 혼밥 경험자의 월평균 혼밥 빈도는 6.5회(남성 7.3회)였다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tl2-s-nocut-honbap"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2016",
+   "independentSources": 1
+  },
+  {
+   "id": "tl2-honbap-how",
+   "text": "같은 조사에서 월 1회 이상 혼자 외식하는 1,721명의 혼밥 6.5회는 식당 방문 3.9회, 포장 1.4회, 배달 1.2회로 나뉘었다. 기사는 연령대별로 20대가 혼자 먹는 데 가장 거리낌이 없다고 전했다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tl2-s-asiae-honbap"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2016",
+   "independentSources": 1
+  },
+  {
+   "id": "tl2-solo-cgv",
+   "text": "CJ CGV에서 1인 좌석만 산 '1인 관객' 비중은 2012년 7.7%, 2015년 10.7%, 2016년 13.3%로 늘었고, 2인 관객 비중은 63.4%에서 58.9%로 줄었다. 하나투어의 2016년 상반기 1인 항공권 예약 여행객은 11만여 명으로 1년 전보다 31% 늘었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tl2-s-nocut-honbap"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2012~2016",
+   "independentSources": 1
+  },
+  {
+   "id": "tl2-solo-furn",
+   "text": "현대리바트 온라인몰의 1인용 가구 매출 증가율은 2014년 24.7%, 2015년 27.3%, 2016년 28.1%로 같은 기간 전체 품목 평균(15%)의 두 배 가까이였다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tl2-s-nocut-honbap"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2014~2016",
+   "independentSources": 1
+  },
+  {
+   "id": "tl2-cvs16",
+   "text": "여신금융협회 '2016년 2분기 카드승인실적 분석'에서 편의점 카드 이용 금액은 3조 2천억 원으로 1년 전보다 31.4% 늘었고, 백화점(9.3%)·대형할인점(2.3%)은 한 자릿수 증가에 그쳤다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tl2-s-tomato-cvs"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2016",
+   "independentSources": 1
+  },
+  {
+   "id": "tl2-lonely120",
+   "text": "서울시는 2025년 4월 1일 '외로움안녕120'을 시작했다. 다산콜센터(120)에 전화해 5번을 누르면 365일 24시간 상담원과 연결된다. 4월 1일~5월 8일 상담은 3,088건으로 한 해 목표 3,000건을 넘었고, 이 중 외로움 대화가 45.1%, 외로움·고립·복지 서비스 정보 상담이 43.3%였으며 외로움 대화 참여자는 중장년 59%, 청년 32%, 어르신 8%였다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tl2-s-seoul-lonely"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2025",
+   "independentSources": 1
+  },
+  {
+   "id": "tl2-lonely120-26",
+   "text": "외로움안녕120의 2025년 4~12월 상담은 3만 3,148건으로 목표의 약 11배였고, 2026년 4월 기준 누적 4만 건을 넘어 하루 평균 125건이다. 2025년 9월부터 심야 상담 인력을 14명에서 16명으로 늘렸다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tl2-s-seoulnews-lonely"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2025~2026",
+   "independentSources": 1
+  },
+  {
+   "id": "tl2-pet24",
+   "text": "KB경영연구소 '2025 한국 반려동물보고서'는 2024년 말 반려가구를 591만 가구(전체의 26.7%), 반려인을 1,546만 명으로 추산했다. 반려견은 546만 마리로 전년보다 10만 마리 줄어 조사 이래 처음 감소했고, 반려묘는 217만 마리로 18만 마리 늘었다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tl2-s-dailyvet-pet25"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2024",
+   "independentSources": 1
+  },
+  {
+   "id": "tl2-pet-intent",
+   "text": "같은 보고서에서 반려동물을 키우지 않는 가구 중 앞으로 키울 의향이 있다는 응답은 26.7%였고 42.3%는 계획이 없다고 했다. 반려인의 76%는 만족한다고 답했지만 남에게 양육을 추천하겠다는 응답은 49.4%였다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tl2-s-dailyvet-pet25"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2024~2025",
+   "independentSources": 1
+  },
+  {
+   "id": "tl2-kiosk",
+   "text": "과학기술정보통신부 '키오스크 접근성 현황조사'(국회 제출 자료)에서 국내 키오스크는 2019년 18만 9,951대에서 2022년 45만 4,741대로 2.4배가 됐고, 음식점 키오스크는 5,479대에서 8만 7,341대로 약 17배 늘었다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tl2-s-fn-kiosk"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2019~2022",
+   "independentSources": 1
+  },
+  {
+   "id": "tl2-kiosk-old",
+   "text": "보건복지부 '2020 노인실태조사'에서 65세 이상 1만 97명 중 64.2%가 키오스크 주문에 어려움을 느꼈다. 한국소비자원 고령소비자 조사에서는 복잡한 작동법(51.4%), 뒷사람 눈치(49%), 작은 그림·글씨(44.1%)가 불편으로 꼽혔다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tl2-s-fn-kiosk"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2020~2023",
+   "independentSources": 1
+  },
+  {
+   "id": "tl2-unmanned",
+   "text": "2021년 6월 말 편의점 4사의 무인·하이브리드 점포는 약 1,000개(CU 280, GS25 430, 세븐일레븐 130, 이마트24 150)였고, 업계는 코로나19·주52시간·최저임금 인상을 배경으로 들었다. 완전 무인 점포만 보면 2020년 53개, 2021년 88개, 2023년 130개였다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tl2-s-dailian-unmanned",
+    "tl2-s-bizwatch-unmanned"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2020~2023",
+   "independentSources": 2
+  },
+  {
+   "id": "tl2-unmanned-slow",
+   "text": "신한카드 빅데이터연구소 자료를 인용한 보도에 따르면 무인 아이스크림 매장 이용 건수는 2021년 전년보다 6배 넘게 늘었지만 2023년 증가율은 4%에 그쳤고, 첫 무인 아이스크림 브랜드의 2024년 폐업률은 13.7%였다. 편의점의 완전 무인 매장도 GS25를 빼면 줄었다는 보도가 있다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tl2-s-kbr-unmanned"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2021~2024",
+   "independentSources": 1
+  },
+  {
+   "id": "tc-gtx-open",
+   "text": "수도권광역급행철도 GTX-A는 2024년 3월 30일 수서~동탄 구간, 같은 해 12월 28일 운정중앙~서울역 구간을 개통했다. 운정중앙~서울역 편도 요금은 4,450원(기본 3,200원+거리요금)이다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tc-s-bizwatch-gtx1",
+    "tc-s-etoday-gtxfare"
+   ],
+   "domains": [
+    "society",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2024",
+   "independentSources": 2
+  },
+  {
+   "id": "tc-gtx-riders",
+   "text": "국토교통부 자료에 따르면 GTX-A 평일 일평균 이용객은 2024년 4월 초 약 7,700명에서 2025년 3월 말 약 6만 2천 명으로 약 8배가 됐다. 개통 1년간 수서~동탄은 410만 명, 운정중앙~서울역은 3개월간 360만 명이 이용했고, 3월 말 평일 이용객은 예측수요 대비 각각 75.1%, 91.1%였다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tc-s-bizwatch-gtx1",
+    "tc-s-newsseoul-gtx1"
+   ],
+   "domains": [
+    "society",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2024~2025",
+   "independentSources": 2
+  },
+  {
+   "id": "tc-gtx-split",
+   "text": "GTX-A는 2026년 9월에도 운정중앙~서울역과 수서~동탄 두 구간으로 나뉘어 운행했다. 2026년 중 삼성역 무정차 통과로 두 구간을 잇기로 했지만 삼성역 지하 공사에서 시공 오류가 발견돼 개통 일정이 불투명해졌고, 같은 보도는 누적 이용객을 3,300만 명으로 전했다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tc-s-seoul-gtx26"
+   ],
+   "domains": [
+    "society",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2026",
+   "independentSources": 1
   }
  ],
  "sources": [
@@ -27053,6 +27360,131 @@
    "sourceType": "news",
    "accessedDate": "2026-11-12",
    "publishedDate": "2023-06-23"
+  },
+  {
+   "id": "tl2-s-nocut-honbap",
+   "title": "57% 혼밥 경험, 간편식 6년만에 3배로, 1인 영화·여행 '쑥'",
+   "publisher": "노컷뉴스",
+   "url": "https://www.nocutnews.co.kr/news/4725928",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2017"
+  },
+  {
+   "id": "tl2-s-asiae-honbap",
+   "title": "여성보다 '남성', 연령대별로는 '20대'가 혼자 먹는 데에 거리낌없어",
+   "publisher": "아시아경제",
+   "url": "https://view.asiae.co.kr/article/2016122611045450692",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2016-12-26"
+  },
+  {
+   "id": "tl2-s-tomato-cvs",
+   "title": "(1인가구 500만 시대)'혼밥·혼술' 나홀로 문화도 각양각색",
+   "publisher": "뉴스토마토",
+   "url": "https://newstomato.com/ReadNews.aspx?no=679042",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2016-08-07"
+  },
+  {
+   "id": "tl2-s-seoul-lonely",
+   "title": "혼자라고 느껴지면 '외로움안녕120'에 전화하세요!",
+   "publisher": "내 손안에 서울(서울시)",
+   "url": "https://mediahub.seoul.go.kr/archives/2014445",
+   "sourceType": "gov",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-05-13"
+  },
+  {
+   "id": "tl2-s-seoulnews-lonely",
+   "title": "주수현 서울시의원 \"시민 마음 돌보는 상담사의 마음건강도 함께 살펴야\"",
+   "publisher": "서울신문",
+   "url": "https://go.seoul.co.kr/news/newsView.php?id=20260821500309",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-08-21"
+  },
+  {
+   "id": "tl2-s-dailyvet-pet25",
+   "title": "'반려견 수 처음으로 줄었다' 국내 반려견 546만·반려묘 217만 마리 추산(KB경영연구소 2025 한국 반려동물보고서)",
+   "publisher": "데일리벳",
+   "url": "https://www.dailyvet.co.kr/?p=250412",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-06-30"
+  },
+  {
+   "id": "tl2-s-fn-kiosk",
+   "title": "키오스크 접근성 현황조사·2020 노인실태조사 인용 기사",
+   "publisher": "파이낸셜뉴스",
+   "url": "https://www.fnnews.com/news/202304051607089413",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2023-04-06"
+  },
+  {
+   "id": "tl2-s-bizwatch-unmanned",
+   "title": "편의점 4사 무인 점포 수 추이",
+   "publisher": "비즈워치",
+   "url": "https://news.bizwatch.co.kr/article/consumer/2025/04/17/0032",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-04-17"
+  },
+  {
+   "id": "tl2-s-dailian-unmanned",
+   "title": "'코로나·주52시간 근무‧최저임금' 삼중고에 늘어나는 무인점포",
+   "publisher": "데일리안(다음뉴스 게재)",
+   "url": "https://v.daum.net/v/20210716071738027",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2021-07-16"
+  },
+  {
+   "id": "tl2-s-kbr-unmanned",
+   "title": "무인점포 성장 둔화와 폐업",
+   "publisher": "Korea Business Review",
+   "url": "https://www.koreabizreview.com/articles/kbr-legacy-7811",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12"
+  },
+  {
+   "id": "tc-s-bizwatch-gtx1",
+   "title": "GTX-A 개통 1년 — 구간별 이용객과 예측수요 대비",
+   "publisher": "비즈워치",
+   "url": "https://news.bizwatch.co.kr/article/real_estate/2025/04/01/0013",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-04-01"
+  },
+  {
+   "id": "tc-s-newsseoul-gtx1",
+   "title": "국토교통부, GTX-A 수서∼동탄 1주년 누적 410만명 이용 운정∼서울역은 3개월만 360만명 이용",
+   "publisher": "뉴스서울",
+   "url": "https://newsseoul.co.kr/news/view/1065582618959217",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-04-01"
+  },
+  {
+   "id": "tc-s-etoday-gtxfare",
+   "title": "편도 '4450원' GTX-A 노선 운정중앙-서울 28일 개통",
+   "publisher": "이투데이",
+   "url": "https://www.etoday.co.kr/news/view/2432895",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2024-12-27"
+  },
+  {
+   "id": "tc-s-seoul-gtx26",
+   "title": "최규진 경기도의원 \"GTX-A, 멈춘 경기도민과의 약속... 경기도가 책임 다해야\"",
+   "publisher": "서울신문",
+   "url": "https://m.go.seoul.co.kr/news/2026/09/01/20260901500292",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-09-01"
   }
  ],
  "events": [
@@ -83662,7 +84094,6 @@
     ],
     "planned": [
      "사는 집의 형태(현재 흐름은 인구·교통·아파트가 섞여 있어 나누는 중)",
-     "반려동물",
      "돌봄"
     ]
    },
@@ -83702,11 +84133,22 @@
      {
       "kind": "industry",
       "id": "semiconductor"
+     },
+     {
+      "kind": "industry",
+      "id": "textile"
+     },
+     {
+      "kind": "industry",
+      "id": "display"
+     },
+     {
+      "kind": "industry",
+      "id": "battery"
      }
     ],
     "planned": [
-     "섬유",
-     "전자부품·디스플레이"
+     "기계·전자부품(후속)"
     ]
    },
    {
@@ -83747,12 +84189,17 @@
      {
       "kind": "topic",
       "id": "life-record"
+     },
+     {
+      "kind": "topic",
+      "id": "life-alone"
+     },
+     {
+      "kind": "topic",
+      "id": "life-convenience"
      }
     ],
-    "planned": [
-     "관계의 거리(혼자·함께)",
-     "도시 편의와 시간 아끼기"
-    ]
+    "planned": []
    }
   ],
   "domains": [
@@ -92422,6 +92869,1316 @@
     }
    },
    {
+    "id": "life-alone",
+    "domain": "lifestyle",
+    "label": "관계의 거리 — 혼자와 함께 사이",
+    "tracks": "사람들이 혼자 하는 시간과 함께하는 시간을 어떻게 나누었나: 혼밥·혼영 같은 '혼자 하기', 반려동물과 사는 일, 관심사로만 만나는 느슨한 모임, 그리고 외로움을 공공이 다루기 시작한 일.",
+    "question": "혼밥이 흔해진 지 10년 만에 서울시가 '외로움 전화'를 열자 9개월 동안 3만 건이 넘게 걸려 왔다. 혼자가 편해진 것과 외로운 것은 같은 이야기일까?",
+    "scene": {
+     "layer": "fact",
+     "text": "2025년 4월 문을 연 외로움안녕120은 한 달 반 만에 한 해 목표를 넘겼고, 2025년 말까지 3만 3,148건을 받았다.",
+     "ids": [
+      "tl2-lonely120",
+      "tl2-lonely120-26"
+     ]
+    },
+    "span": [
+     2012,
+     2026
+    ],
+    "scope": [
+     {
+      "layer": "inference",
+      "text": "혼밥·1인 관객 수치는 '혼자 하는 행동'의 양이지 외로움의 양이 아니다. 외로움은 상담 이용과 조사 응답으로만 간접적으로 본다.",
+      "ids": [
+       "tl2-honbap",
+       "tl2-lonely120"
+      ]
+     }
+    ],
+    "turns": [
+     {
+      "id": "t1",
+      "years": "2012~2016",
+      "start": 2012,
+      "end": 2012,
+      "title": "혼자 하는 것이 눈치 볼 일이 아니게 — 혼밥·혼영",
+      "why": {
+       "layer": "fact",
+       "text": "2016년 조사에서 56.6%가 혼자 외식해 봤고 경험자는 한 달 평균 6.5번 혼밥했다.",
+       "ids": [
+        "tl2-honbap"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "영화관 관객은 2인이 63.4%로 다수였다(2012년).",
+        "ids": [
+         "tl2-solo-cgv"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "1인 가구가 2015년 가장 흔한 가구 유형이 됐다.",
+        "ids": [
+         "c10-1person"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "1인 관객 비중은 2016년 13.3%, 1인 항공권 예약은 31% 늘었고, 1인용 가구 매출도 해마다 20%대로 컸다.",
+        "ids": [
+         "tl2-solo-cgv",
+         "tl2-solo-furn"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "혼밥 6.5회 중 3.9회는 식당에 직접 가서 먹었다.",
+        "ids": [
+         "tl2-honbap-how"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "편의점 카드 이용액이 2016년 2분기 31.4% 늘어 백화점·대형할인점보다 훨씬 빨리 컸다.",
+        "ids": [
+         "tl2-cvs16"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "혼자 하기는 '어쩔 수 없음'에서 '선택'으로 이야기되기 시작했지만, 그 선택이 늘 자발적인지는 이 수치로 알 수 없다.",
+        "ids": [
+         "tl2-honbap"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t2",
+      "years": "2021~2023",
+      "start": 2021,
+      "end": 2021,
+      "title": "관심사로만 만나는 느슨한 함께",
+      "why": {
+       "layer": "fact",
+       "text": "소모임 앱 문토의 가입자는 2021~2022년 1만 8천 명에서 23만 명으로 늘었다.",
+       "ids": [
+        "ts-r-munto"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "코로나19 첫해 사회단체 참여율이 51.8%에서 46.4%로 떨어졌다.",
+        "ids": [
+         "fl-rel-orgrate"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "source",
+        "text": "기사들은 집합금지, 1인 가구·재택근무로 생긴 관계의 결핍을 배경으로 들었다.",
+        "ids": [
+         "ts-r-why"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "문토 활성 사용자의 60%가 25~34세였다.",
+        "ids": [
+         "ts-r-munto"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "사회단체 참여율은 2023년 58.2%로 올랐다가 2024년 52.3%로 다시 낮아졌다.",
+        "ids": [
+         "fl-rel-orgrate"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "사생활을 덜 드러내는 짧은 모임이 늘었지만, 참여율이 다시 내려간 것을 보면 '함께'의 회복은 한 방향이 아니었다.",
+        "ids": [
+         "fl-rel-orgrate",
+         "ts-r-why"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t3",
+      "years": "2022~2024",
+      "start": 2022,
+      "end": 2022,
+      "title": "혼자 살되 함께 사는 것 — 반려동물",
+      "why": {
+       "layer": "fact",
+       "text": "2024년 말 반려가구는 591만, 전체 가구의 26.7%로 추산됐다.",
+       "ids": [
+        "tl2-pet24"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "1인 가구는 2025년 800만 가구를 넘을 전망이었다.",
+        "ids": [
+         "ts-d-1p"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "평균 가구원 수가 2.2명까지 줄었다.",
+        "ids": [
+         "fl-fam-hh"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "반려묘는 1년 새 18만 마리 늘어 217만 마리가 됐다.",
+        "ids": [
+         "tl2-pet24"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "반려견은 조사 이래 처음 10만 마리 줄었다.",
+        "ids": [
+         "tl2-pet24"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "fact",
+        "text": "반려인 76%가 만족하지만 양육을 남에게 권하겠다는 사람은 49.4%였다.",
+        "ids": [
+         "tl2-pet-intent"
+        ]
+       },
+       {
+        "layer": "inference",
+        "text": "손이 덜 가는 고양이 쪽으로 옮겨 가는 것은 '함께 사는 부담'을 줄이려는 선택으로 읽을 수 있다.",
+        "ids": [
+         "tl2-pet24"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t4",
+      "years": "2025~2026",
+      "start": 2025,
+      "end": 2025,
+      "title": "외로움을 공공이 받기 시작",
+      "why": {
+       "layer": "fact",
+       "text": "서울시가 2025년 4월 365일 24시간 외로움 상담 전화를 열었다.",
+       "ids": [
+        "tl2-lonely120"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "혼자 지내는 일은 개인의 생활 방식으로만 다뤄졌다.",
+        "ids": [
+         "tl2-honbap"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "1인 가구는 2026년 836만 가구에 이를 전망이었다.",
+        "ids": [
+         "ts-d-1p"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "외로움 대화의 59%가 중장년이었고 청년이 32%였다.",
+        "ids": [
+         "tl2-lonely120"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "2026년 4월까지 누적 4만 건, 하루 125건이 걸려 와 심야 상담 인력을 늘렸다.",
+        "ids": [
+         "tl2-lonely120-26"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "'혼자가 편하다'는 2010년대 이야기와 '외로워서 전화한다'는 2020년대 기록은 같은 사람들 안에 함께 있을 수 있다. 상담을 가장 많이 건 쪽이 젊은 혼밥 세대가 아니라 중장년이었다는 점이 그 차이를 보여 준다.",
+        "ids": [
+         "tl2-lonely120",
+         "tl2-honbap"
+        ]
+       }
+      ]
+     }
+    ],
+    "branches": {
+     "intro": "한 줄은 사람 사이 거리를 정하는 한 가지 방식입니다.",
+     "lanes": [
+      {
+       "label": "혼자 하기(혼밥·혼영·혼여행)",
+       "start": 2012,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "1인 관객 7.7% → 13.3%.",
+        "ids": [
+         "tl2-solo-cgv"
+        ]
+       }
+      },
+      {
+       "label": "직장·동창 중심 모임",
+       "start": 2012,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "fact",
+        "text": "사회단체 참여율 2019년 51.8% → 2024년 52.3%, 그 사이 큰 폭으로 오르내림.",
+        "ids": [
+         "fl-rel-orgrate"
+        ]
+       }
+      },
+      {
+       "label": "관심사 소모임",
+       "start": 2021,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "문토 가입자 23만 명.",
+        "ids": [
+         "ts-r-munto"
+        ]
+       }
+      },
+      {
+       "label": "반려동물과 살기",
+       "start": 2015,
+       "end": null,
+       "state": "공존",
+       "note": {
+        "layer": "fact",
+        "text": "반려가구 26.7%, 반려견 첫 감소.",
+        "ids": [
+         "tl2-pet24"
+        ]
+       }
+      },
+      {
+       "label": "공공 외로움 상담",
+       "start": 2025,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "누적 4만 건.",
+        "ids": [
+         "tl2-lonely120-26"
+        ]
+       }
+      }
+     ],
+     "read": {
+      "layer": "inference",
+      "text": "혼자 하기가 늘면서 함께하기가 사라진 것이 아니라, 함께하는 방식이 '짧고 느슨하고 고를 수 있는' 쪽으로 옮겨 갔다. 그래도 남는 외로움은 공공 상담이라는 새 통로로 드러났다.",
+      "ids": [
+       "tl2-solo-cgv",
+       "ts-r-munto",
+       "tl2-lonely120-26"
+      ]
+     }
+    },
+    "reasons": [
+     {
+      "title": "혼자가 편해진 사회에 왜 외로움 상담이 몰리나",
+      "facts": [
+       {
+        "layer": "fact",
+        "text": "2016년 혼밥 경험 56.6%, 20대가 가장 거리낌 없었다.",
+        "ids": [
+         "tl2-honbap",
+         "tl2-honbap-how"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "2025년 4~12월 외로움안녕120 상담 3만 3,148건, 중장년 59%.",
+        "ids": [
+         "tl2-lonely120",
+         "tl2-lonely120-26"
+        ]
+       }
+      ],
+      "logic": {
+       "layer": "inference",
+       "text": "혼자 하기를 '고른' 사람과 혼자가 '된' 사람은 다르다. 상담 이용자 대부분이 중장년이라는 것은 외로움이 선택한 혼자보다 남겨진 혼자에서 더 크게 나타날 수 있음을 시사한다.",
+       "ids": [
+        "tl2-lonely120"
+       ]
+      },
+      "proposal": {
+       "layer": "inference",
+       "text": "관계의 거리는 '혼자 하기'가 늘어난 이야기와 '혼자 남는' 이야기 두 갈래로 나눠 봐야 한다.",
+       "ids": [
+        "tl2-honbap",
+        "tl2-lonely120"
+       ]
+      },
+      "rivals": [
+       {
+        "layer": "inference",
+        "text": "홍보 설명 — 120 다산콜센터라는 익숙한 번호에 붙어 있어 이용이 많았을 수 있다.",
+        "ids": [
+         "tl2-lonely120"
+        ]
+       },
+       {
+        "layer": "inference",
+        "text": "정보 상담 설명 — 초기 상담의 43.3%는 고립·복지 서비스 정보 상담이어서, 외로움 자체보다 복지 접근 통로로 쓰였을 수 있다.",
+        "ids": [
+         "tl2-lonely120"
+        ]
+       }
+      ],
+      "scope": {
+       "layer": "inference",
+       "text": "서울시 한 곳의 상담 기록이다. 전국 외로움 수준을 보여 주지 않는다.",
+       "ids": [
+        "tl2-lonely120"
+       ]
+      },
+      "check": [
+       {
+        "layer": "hypothesis",
+        "text": "확인 쪽: 다른 지자체 외로움 상담의 연령 구성도 중장년이 많은지 — 아직 자료를 연결하지 않았다.",
+        "ids": []
+       }
+      ]
+     }
+    ],
+    "links": [
+     {
+      "kind": "flow",
+      "target": "taste-gather",
+      "at": "2021~",
+      "why": "관심사 소모임이 무엇을 하며 모이는지는 모임 취향 흐름에서 이어 본다."
+     },
+     {
+      "kind": "flow",
+      "target": "flow-relations",
+      "at": "2019~2024",
+      "why": "사회단체 참여율과 직장 중심 관계의 변화는 관계 흐름에서 본다."
+     },
+     {
+      "kind": "topic",
+      "target": "life-convenience",
+      "at": "2016~",
+      "why": "혼밥·1인 가구는 배달과 무인 매장 같은 편의 서비스의 주요 수요층이다."
+     }
+    ],
+    "repeats": [
+     {
+      "type": "반작용",
+      "title": "혼자 하기의 자유 ↔ 외로움의 공공 문제화",
+      "past": {
+       "layer": "fact",
+       "text": "2016년 혼밥·혼영이 '거리낌 없는 선택'으로 보도됐다.",
+       "ids": [
+        "tl2-honbap",
+        "tl2-solo-cgv"
+       ]
+      },
+      "now": {
+       "layer": "fact",
+       "text": "2025년 서울시가 외로움 상담 전화를 열고 9개월에 3만 건 넘게 받았다.",
+       "ids": [
+        "tl2-lonely120-26"
+       ]
+      },
+      "alike": {
+       "layer": "inference",
+       "text": "둘 다 1인 가구 증가를 배경으로 한다.",
+       "ids": [
+        "c10-1person",
+        "ts-d-1p"
+       ]
+      },
+      "changed": {
+       "layer": "inference",
+       "text": "앞은 시장(편의점·영화관)이 반응했고, 뒤는 공공이 반응했다.",
+       "ids": [
+        "tl2-cvs16",
+        "tl2-lonely120"
+       ]
+      },
+      "alternatives": [
+       {
+        "layer": "inference",
+        "text": "같은 사람들이 아니라 다른 연령대의 이야기일 수 있다(혼밥은 20대, 상담은 중장년).",
+        "ids": [
+         "tl2-honbap-how",
+         "tl2-lonely120"
+        ]
+       }
+      ],
+      "counter": [
+       {
+        "layer": "inference",
+        "text": "혼밥 세대가 나이 들어 상담 이용이 젊은 층으로 옮겨 오는지 봐야 반작용인지 판단할 수 있다.",
+        "ids": [
+         "tl2-lonely120"
+        ]
+       }
+      ],
+      "at": [
+       "t1",
+       "t4"
+      ]
+     }
+    ],
+    "futures": {
+     "split": {
+      "layer": "inference",
+      "text": "갈라지는 이유는 혼자 사는 사람이 누구냐다. 젊은 1인 가구가 많으면 '골라서 혼자'가, 고령 1인 가구가 많아지면 '남겨진 혼자'가 커진다.",
+      "ids": [
+       "ts-d-1p",
+       "tl2-lonely120"
+      ]
+     },
+     "items": [
+      {
+       "kind": "계속",
+       "name": "고를 수 있는 느슨한 함께가 넓어진다",
+       "change": {
+        "layer": "inference",
+        "text": "관심사 소모임, 짧은 원데이 모임, 반려동물처럼 거리를 스스로 조절할 수 있는 관계가 늘어난다.",
+        "ids": [
+         "ts-r-munto",
+         "tl2-pet24"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "소모임 앱 가입자 증가와 반려가구 26.7%.",
+         "ids": [
+          "ts-r-munto",
+          "tl2-pet24"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "함께하되 언제든 빠질 수 있는 관계는 사생활 부담이 적다.",
+        "ids": [
+         "ts-r-why"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "모임 플랫폼이 수익을 내며 유지되어야 한다.",
+        "ids": [
+         "ts-r-munto"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "취미 모임 플랫폼, 반려동물 돌봄·용품, 1인용 공간.",
+        "ids": [
+         "tl2-pet24"
+        ]
+       },
+       "watch": [
+        "소모임 플랫폼 가입·모임 수",
+        "반려가구 비율"
+       ],
+       "against": [
+        "사회단체 참여율이 계속 낮아지면 느슨한 모임도 줄어드는 것"
+       ]
+      },
+      {
+       "kind": "분화",
+       "name": "외로움이 돌봄 정책의 한 갈래가 된다",
+       "change": {
+        "layer": "inference",
+        "text": "외로움 상담·교류 공간이 다른 지자체로 퍼지고 중장년·고령 1인 가구 지원으로 갈라진다.",
+        "ids": [
+         "tl2-lonely120-26"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "목표의 11배 상담, 심야 인력 증원.",
+         "ids": [
+          "tl2-lonely120-26"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "수요가 예상보다 컸다는 것이 확인되면 정책이 넓어지기 쉽다.",
+        "ids": [
+         "tl2-lonely120-26"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "예산과 상담 인력을 계속 확보해야 한다(상담사 마음건강 문제도 제기됐다).",
+        "ids": [
+         "tl2-lonely120-26"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "상담 인력, 고립 예방 서비스, 동네 교류 공간.",
+        "ids": [
+         "tl2-lonely120"
+        ]
+       },
+       "watch": [
+        "외로움안녕120 하루 상담 건수",
+        "다른 지자체의 비슷한 전화 개설"
+       ],
+       "against": [
+        "상담 건수가 줄면 초기 호기심 효과"
+       ]
+      }
+     ]
+    },
+    "conclusion": {
+     "key": {
+      "layer": "inference",
+      "text": "혼자 하기가 흔해진 것과 외로움이 드러난 것은 서로를 지우지 않는다. 함께하는 방식은 느슨하고 고를 수 있는 쪽으로 옮겨 갔고, 그 바깥에 남는 사람이 공공 상담으로 나타났다.",
+      "ids": [
+       "tl2-honbap",
+       "ts-r-munto",
+       "tl2-lonely120-26"
+      ]
+     },
+     "favored": {
+      "layer": "inference",
+      "text": "'혼자가 좋아졌다'보다 '혼자에도 두 종류가 있다' 해석을 더 지지한다. 근거: 혼밥은 20대가 가장 거리낌 없었고, 외로움 상담은 중장년이 많았다.",
+      "ids": [
+       "tl2-honbap-how",
+       "tl2-lonely120"
+      ]
+     },
+     "undecided": {
+      "layer": "inference",
+      "text": "전국 단위 외로움 조사와 연결하지 않아 외로움이 실제로 늘었는지는 판단할 수 없다.",
+      "ids": [
+       "tl2-lonely120"
+      ]
+     },
+     "next": {
+      "layer": "inference",
+      "text": "고령 1인 가구 증가와 상담 연령 구성의 변화.",
+      "ids": [
+       "ts-d-1p",
+       "tl2-lonely120"
+      ]
+     },
+     "change": {
+      "layer": "inference",
+      "text": "상담 이용이 청년 쪽으로 옮겨 오면 '혼밥 세대의 외로움'으로 고친다.",
+      "ids": [
+       "tl2-lonely120"
+      ]
+     }
+    }
+   },
+   {
+    "id": "life-convenience",
+    "domain": "lifestyle",
+    "label": "도시 편의와 시간 아끼기",
+    "tracks": "도시 사람들이 시간을 아끼려고 쓴 서비스: 배달앱, 새벽배송, 편의점, 키오스크와 무인 매장 — 그리고 그 편의에서 밀려난 사람들.",
+    "question": "음식점 키오스크가 3년 새 17배가 되는 동안, 65세 이상 열 명 중 여섯은 키오스크 주문이 어렵다고 했다. 시간을 아끼는 편의는 누구의 시간을 아꼈나?",
+    "scene": {
+     "layer": "fact",
+     "text": "2019년 5,479대이던 음식점 키오스크는 2022년 8만 7,341대가 됐다.",
+     "ids": [
+      "tl2-kiosk"
+     ]
+    },
+    "span": [
+     2013,
+     2026
+    ],
+    "scope": [
+     {
+      "layer": "inference",
+      "text": "편의 서비스 이용 수치는 거래액·대수로 본다. 실제로 아낀 시간의 양을 잰 자료는 연결하지 않았다.",
+      "ids": [
+       "c10-delivery",
+       "tl2-kiosk"
+      ]
+     }
+    ],
+    "turns": [
+     {
+      "id": "t1",
+      "years": "2013~2016",
+      "start": 2013,
+      "end": 2013,
+      "title": "밥을 부르는 앱과 집 앞 편의점",
+      "why": {
+       "layer": "fact",
+       "text": "배달앱 거래액은 2013년 3,647억 원에서 2015년 1조 5,065억 원으로 4배 넘게 늘었다.",
+       "ids": [
+        "c10-delivery"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "배달은 전단지를 보고 전화로 주문했다.",
+        "ids": [
+         "c10-delivery"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "국내 스마트폰 가입자가 2010년 말 약 722만 명으로 늘었다.",
+        "ids": [
+         "c00-kr-iphone"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "2015년부터 1인 가구가 가구 유형 가운데 가장 많았다.",
+        "ids": [
+         "c10-1person"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "편의점 카드 이용액이 2016년 2분기 31.4% 늘었다.",
+        "ids": [
+         "tl2-cvs16"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "혼밥 6.5회 중 배달·포장이 2.6회였다.",
+        "ids": [
+         "tl2-honbap-how"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "source",
+        "text": "1인 가구·맞벌이와 스마트폰 결제가 배달앱 수요를 키웠다는 분석이 나왔다.",
+        "ids": [
+         "c10-syn-delivery"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "fact",
+        "text": "배달앱 이용이 늘던 시기 이륜차 사고도 늘었다는 보도가 있다(인과는 별도 검증 필요).",
+        "ids": [
+         "c10-rider-risk"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t2",
+      "years": "2015~2019",
+      "start": 2015,
+      "end": 2015,
+      "title": "밤에 주문하면 아침에 — 새벽배송",
+      "why": {
+       "layer": "fact",
+       "text": "2015년 마켓컬리가 밤 11시까지 주문하면 다음날 아침 7시까지 배송하는 '샛별배송'을 시작했다.",
+       "ids": [
+        "tp-ch-kurly"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "장보기는 주말 대형마트에 몰아서 했다.",
+        "ids": [
+         "tp-ch-kurly"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "주 52시간 근무제(2018년)로 퇴근 뒤 시간의 쓰임이 다시 짜였다.",
+        "ids": [
+         "c10-52h"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "업계는 2019년 새벽배송 시장을 약 8천억 원으로 추정했다.",
+        "ids": [
+         "tp-ch-kurly"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "inference",
+        "text": "장보기가 '가는 일'에서 '자기 전에 누르는 일'이 됐다.",
+        "ids": [
+         "tp-ch-kurly"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "fact",
+        "text": "2026년에는 대형마트 의무휴업 완화와 대형마트 새벽배송 허용이 논의되기 시작했다.",
+        "ids": [
+         "tp-ch-reg26"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t3",
+      "years": "2019~2023",
+      "start": 2019,
+      "end": 2019,
+      "title": "사람 대신 기계가 받는 주문 — 키오스크와 무인 매장",
+      "why": {
+       "layer": "fact",
+       "text": "키오스크는 2019~2022년 2.4배, 음식점 키오스크는 약 17배 늘었다.",
+       "ids": [
+        "tl2-kiosk"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "주문과 계산은 점원이 받았다.",
+        "ids": [
+         "tl2-kiosk"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "업계는 코로나19·주52시간·최저임금 인상을 무인화 배경으로 들었다.",
+        "ids": [
+         "tl2-unmanned"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "배달 시장은 2021년 25조 원을 넘었다.",
+        "ids": [
+         "c20-delivery"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "편의점 4사의 무인·하이브리드 점포가 2021년 6월 약 1,000개가 됐다.",
+        "ids": [
+         "tl2-unmanned"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "완전 무인 편의점은 2020년 53개에서 2023년 130개로 늘었다.",
+        "ids": [
+         "tl2-unmanned"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "fact",
+        "text": "65세 이상의 64.2%가 키오스크 주문을 어려워했고, 고령소비자는 복잡한 작동법과 뒷사람 눈치를 불편으로 꼽았다.",
+        "ids": [
+         "tl2-kiosk-old"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t4",
+      "years": "2023~2026",
+      "start": 2023,
+      "end": 2023,
+      "title": "편의의 속도 조절 — 무인의 둔화",
+      "why": {
+       "layer": "fact",
+       "text": "무인 아이스크림 매장 이용 증가율은 2021년 6배에서 2023년 4%로 꺾였다.",
+       "ids": [
+        "tl2-unmanned-slow"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "무인 매장이 빠르게 늘었다.",
+        "ids": [
+         "tl2-unmanned"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "inference",
+        "text": "매장이 많아지자 매장당 손님이 줄었다(공급 과잉).",
+        "ids": [
+         "tl2-unmanned-slow"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "첫 무인 아이스크림 브랜드의 2024년 폐업률이 13.7%였다.",
+        "ids": [
+         "tl2-unmanned-slow"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "source",
+        "text": "편의점 완전 무인 매장도 GS25를 빼면 줄었다는 보도가 있다.",
+        "ids": [
+         "tl2-unmanned-slow"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "무인은 '사람을 빼면 싸다'만으로는 유지되지 않았다. 도난·성인 인증·고령 손님 같은 일은 여전히 사람이 필요했다.",
+        "ids": [
+         "tl2-unmanned-slow",
+         "tl2-kiosk-old"
+        ]
+       }
+      ]
+     }
+    ],
+    "branches": {
+     "intro": "한 줄은 시간을 아끼는 한 가지 방식입니다.",
+     "lanes": [
+      {
+       "label": "부르기(배달앱)",
+       "start": 2013,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "2021년 25조 원.",
+        "ids": [
+         "c20-delivery"
+        ]
+       }
+      },
+      {
+       "label": "미리 받기(새벽배송)",
+       "start": 2015,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "2019년 약 8천억 원(업계 추정).",
+        "ids": [
+         "tp-ch-kurly"
+        ]
+       }
+      },
+      {
+       "label": "가까이서 사기(편의점)",
+       "start": 2016,
+       "end": null,
+       "state": "공존",
+       "note": {
+        "layer": "fact",
+        "text": "2016년 2분기 카드 이용 31.4% 증가.",
+        "ids": [
+         "tl2-cvs16"
+        ]
+       }
+      },
+      {
+       "label": "사람 없이 사기(키오스크·무인)",
+       "start": 2019,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "fact",
+        "text": "2023년 이후 이용 증가 둔화와 폐업.",
+        "ids": [
+         "tl2-unmanned-slow"
+        ]
+       }
+      }
+     ],
+     "read": {
+      "layer": "inference",
+      "text": "부르기와 미리 받기는 계속 커졌지만, 사람을 빼는 방식은 빠르게 늘었다가 속도가 꺾였다. 시간을 아끼는 편의도 모두 같은 길을 가지 않았다.",
+      "ids": [
+       "c20-delivery",
+       "tl2-unmanned-slow"
+      ]
+     }
+    },
+    "reasons": [
+     {
+      "title": "편의가 늘수록 왜 불편을 말하는 사람이 생기나",
+      "facts": [
+       {
+        "layer": "fact",
+        "text": "음식점 키오스크 약 17배.",
+        "ids": [
+         "tl2-kiosk"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "65세 이상 64.2%가 키오스크 주문을 어려워했다.",
+        "ids": [
+         "tl2-kiosk-old"
+        ]
+       }
+      ],
+      "logic": {
+       "layer": "inference",
+       "text": "가게가 아끼는 것은 인건비이고 손님이 아끼는 것은 줄 서는 시간이다. 기계 조작에 익숙하지 않으면 손님 쪽 시간은 오히려 늘어난다.",
+       "ids": [
+        "tl2-kiosk",
+        "tl2-kiosk-old"
+       ]
+      },
+      "proposal": {
+       "layer": "inference",
+       "text": "편의 서비스는 '누구의 시간을 아끼나'에 따라 만족과 불편이 갈린다고 본다.",
+       "ids": [
+        "tl2-kiosk-old"
+       ]
+      },
+      "rivals": [
+       {
+        "layer": "inference",
+        "text": "익숙함 설명 — 시간이 지나면 고령층도 익숙해져 불편이 줄 수 있다.",
+        "ids": [
+         "tl2-kiosk-old"
+        ]
+       },
+       {
+        "layer": "inference",
+        "text": "설계 설명 — 기계 자체보다 작은 글씨·복잡한 화면 같은 설계가 불편을 만든다.",
+        "ids": [
+         "tl2-kiosk-old"
+        ]
+       }
+      ],
+      "scope": {
+       "layer": "inference",
+       "text": "2019~2023년 키오스크·무인 매장. 배달앱·새벽배송의 연령별 이용 격차는 따로 확인하지 않았다.",
+       "ids": [
+        "tl2-kiosk"
+       ]
+      },
+      "check": [
+       {
+        "layer": "hypothesis",
+        "text": "확인 쪽: 고령층 키오스크 이용 어려움 비율이 이후 조사에서 줄었는지 — 아직 자료를 연결하지 않았다.",
+        "ids": []
+       }
+      ]
+     }
+    ],
+    "links": [
+     {
+      "kind": "topic",
+      "target": "shop-channel",
+      "at": "2015~",
+      "why": "새벽배송과 배달앱은 '어디서 사나' 주제의 온라인·모바일 전환과 이어진다."
+     },
+     {
+      "kind": "topic",
+      "target": "life-alone",
+      "at": "2016~",
+      "why": "혼밥·1인 가구가 편의 서비스의 주요 수요층이었다."
+     },
+     {
+      "kind": "flow",
+      "target": "flow-time",
+      "at": "2018",
+      "why": "주52시간제가 퇴근 뒤 시간을 바꿨다 — 시간의 양은 생활시간 흐름에서 본다."
+     }
+    ],
+    "repeats": [
+     {
+      "type": "경제·산업 순환",
+      "title": "빠른 출점 → 과잉 → 정리",
+      "past": {
+       "layer": "fact",
+       "text": "무인 아이스크림 매장 이용이 2021년 6배 넘게 늘었다.",
+       "ids": [
+        "tl2-unmanned-slow"
+       ]
+      },
+      "now": {
+       "layer": "fact",
+       "text": "2023년 증가율 4%, 2024년 한 브랜드 폐업률 13.7%.",
+       "ids": [
+        "tl2-unmanned-slow"
+       ]
+      },
+      "alike": {
+       "layer": "inference",
+       "text": "진입이 쉬운 업종에 매장이 몰리면 매장당 매출이 줄어 정리가 뒤따른다.",
+       "ids": [
+        "tl2-unmanned-slow"
+       ]
+      },
+      "changed": {
+       "layer": "inference",
+       "text": "이번에는 인건비를 줄이려는 무인화가 출점을 쉽게 만들었다.",
+       "ids": [
+        "tl2-unmanned"
+       ]
+      },
+      "alternatives": [
+       {
+        "layer": "inference",
+        "text": "코로나 시기 비대면 선호가 풀린 효과일 수 있다.",
+        "ids": [
+         "tl2-unmanned"
+        ]
+       }
+      ],
+      "counter": [
+       {
+        "layer": "inference",
+        "text": "다른 무인 업종(세탁·스터디카페)에서도 같은 둔화가 나타나는지 봐야 순환인지 판단할 수 있다.",
+        "ids": [
+         "tl2-unmanned-slow"
+        ]
+       }
+      ],
+      "at": [
+       "t3",
+       "t4"
+      ]
+     }
+    ],
+    "futures": {
+     "split": {
+      "layer": "inference",
+      "text": "갈라지는 이유는 인건비와 이용자 구성이다. 인건비가 계속 오르면 무인화가, 고령 손님이 늘면 사람이 응대하는 매장이 다시 가치가 생긴다.",
+      "ids": [
+       "tl2-unmanned",
+       "tl2-kiosk-old"
+      ]
+     },
+     "items": [
+      {
+       "kind": "계속",
+       "name": "부르고 미리 받는 편의는 더 넓어진다",
+       "change": {
+        "layer": "inference",
+        "text": "배달·새벽배송이 대형마트까지 넓어진다.",
+        "ids": [
+         "tp-ch-reg26",
+         "c20-delivery"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "대형마트 새벽배송 허용 논의.",
+         "ids": [
+          "tp-ch-reg26"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "시간을 아끼려는 수요는 1인 가구·맞벌이가 늘수록 커진다.",
+        "ids": [
+         "c10-syn-delivery"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "규제 완화와 배송 인력 확보가 필요하다.",
+        "ids": [
+         "tp-ch-reg26"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "배송 물류, 소포장 식품, 라이더 안전.",
+        "ids": [
+         "c10-rider-risk"
+        ]
+       },
+       "watch": [
+        "새벽배송 규제 논의 결과",
+        "배달 시장 거래액"
+       ],
+       "against": [
+        "배달비 부담으로 포장·직접 방문이 다시 늘면 둔화"
+       ]
+      },
+      {
+       "kind": "결합",
+       "name": "사람과 기계가 섞인 매장",
+       "change": {
+        "layer": "inference",
+        "text": "완전 무인보다 낮에는 사람, 밤에는 무인인 하이브리드나 사람이 돕는 키오스크가 중심이 된다.",
+        "ids": [
+         "tl2-unmanned",
+         "tl2-unmanned-slow"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "하이브리드 점포가 완전 무인보다 훨씬 많았다.",
+         "ids": [
+          "tl2-unmanned"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "완전 무인은 둔화했고, 고령 손님의 불편은 사람이 풀어야 한다.",
+        "ids": [
+         "tl2-unmanned-slow",
+         "tl2-kiosk-old"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "키오스크 접근성(글씨·음성 안내) 개선.",
+        "ids": [
+         "tl2-kiosk-old"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "쉬운 키오스크 화면, 호출 버튼, 시간대별 인력 운영.",
+        "ids": [
+         "tl2-kiosk-old"
+        ]
+       },
+       "watch": [
+        "하이브리드·완전 무인 점포 수",
+        "고령층 키오스크 어려움 비율"
+       ],
+       "against": [
+        "완전 무인 점포가 다시 빠르게 늘면 무인화 계속"
+       ]
+      }
+     ]
+    },
+    "conclusion": {
+     "key": {
+      "layer": "inference",
+      "text": "도시 편의는 '부르기→미리 받기→사람 없이 사기'로 넓어졌지만, 마지막 단계는 고령층의 불편과 매장 과잉으로 속도가 꺾였다. 시간을 아끼는 편의는 누구의 시간을 아끼느냐에 따라 만족과 불편이 갈렸다.",
+      "ids": [
+       "c10-delivery",
+       "tp-ch-kurly",
+       "tl2-kiosk-old",
+       "tl2-unmanned-slow"
+      ]
+     },
+     "favored": {
+      "layer": "inference",
+      "text": "'무인화가 계속 간다'보다 '사람과 기계가 섞인다' 쪽을 조금 더 지지한다. 근거: 하이브리드 점포가 완전 무인보다 훨씬 많고, 완전 무인은 줄어든 곳도 있다.",
+      "ids": [
+       "tl2-unmanned",
+       "tl2-unmanned-slow"
+      ]
+     },
+     "undecided": {
+      "layer": "inference",
+      "text": "실제로 아낀 시간과 연령별 서비스 이용 격차를 잰 자료는 연결하지 않았다.",
+      "ids": [
+       "tl2-kiosk"
+      ]
+     },
+     "next": {
+      "layer": "inference",
+      "text": "대형마트 새벽배송 허용 여부와 무인 점포 수.",
+      "ids": [
+       "tp-ch-reg26",
+       "tl2-unmanned"
+      ]
+     },
+     "change": {
+      "layer": "inference",
+      "text": "완전 무인 점포가 다시 빠르게 늘면 결론을 '무인화 계속'으로 고친다.",
+      "ids": [
+       "tl2-unmanned"
+      ]
+     }
+    }
+   },
+   {
     "id": "city-home",
     "domain": "city",
     "label": "어디에, 어떤 집에 사나 — 거주지와 주거 형태",
@@ -93031,14 +94788,15 @@
     },
     "span": [
      1968,
-     2011
+     2026
     ],
     "scope": [
      {
       "layer": "inference",
-      "text": "2004년 이후 광역 교통(광역버스·급행철도)의 자료는 이 주제에 연결하지 않아, 이야기는 2004년 전후에서 멈춘다.",
+      "text": "2004년과 2024년 사이 광역버스·수도권 전철 연장 자료는 연결하지 않았다. 2024년 이후는 GTX-A 이용 자료로만 본다.",
       "ids": [
-       "fl-city-2004"
+       "fl-city-2004",
+       "tc-gtx-riders"
       ]
      }
     ],
@@ -93335,13 +95093,88 @@
       "legacy": [
        {
         "layer": "inference",
-        "text": "수도권 50% 시대(2019)의 통근을 감당할 광역 교통이 다음 과제지만, 이 주제에서는 자료를 연결하지 않았다.",
+        "text": "수도권 50% 시대(2019)의 통근을 감당할 광역 교통이 다음 과제가 됐다.",
         "ids": [
          "fl-city-capital"
         ]
        }
       ],
-      "gap": "2004년 이후 광역 교통 자료 미연결."
+      "gap": "2004~2024년 광역버스·전철 연장 자료 미연결."
+     },
+     {
+      "id": "t6",
+      "years": "2024~2026",
+      "start": 2024,
+      "end": 2024,
+      "title": "지하 깊이 달리는 급행 — GTX-A",
+      "why": {
+       "layer": "fact",
+       "text": "2024년 3월 수서~동탄, 12월 운정중앙~서울역 구간이 차례로 개통했다.",
+       "ids": [
+        "tc-gtx-open"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "수도권 인구가 2019년 절반을 넘었다.",
+        "ids": [
+         "fl-city-capital"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "inference",
+        "text": "서울 밖 신도시에 살며 서울로 다니는 통근이 길어졌다.",
+        "ids": [
+         "fl-city-newtown",
+         "fl-city-capital"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "평일 이용객이 1년 새 약 7,700명에서 6만 2천 명으로 늘었다.",
+        "ids": [
+         "tc-gtx-riders"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "요금은 운정중앙~서울역 편도 4,450원으로 일반 전철보다 비싸다.",
+        "ids": [
+         "tc-gtx-open"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "운정중앙~서울역은 개통 3개월 만에 예측수요의 91.1%에 닿았지만 수서~동탄은 75.1%였다.",
+        "ids": [
+         "tc-gtx-riders"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "fact",
+        "text": "2026년 9월에도 두 구간은 나뉘어 달렸고, 삼성역 시공 오류로 연결 일정이 불투명해졌다.",
+        "ids": [
+         "tc-gtx-split"
+        ]
+       },
+       {
+        "layer": "inference",
+        "text": "빨라진 것은 '역에서 역'이고, 남북이 끊긴 채로는 신도시에서 강남·도심을 한 번에 잇는 효과가 반쪽에 그쳤다.",
+        "ids": [
+         "tc-gtx-split",
+         "tc-gtx-riders"
+        ]
+       }
+      ]
      }
     ],
     "branches": {
@@ -93410,6 +95243,20 @@
         "text": "KTX·대중교통 개편.",
         "ids": [
          "fl-city-2004"
+        ]
+       }
+      },
+      {
+       "label": "광역급행철도(GTX)",
+       "start": 2024,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "평일 이용 약 8배, 누적 3,300만 명.",
+        "ids": [
+         "tc-gtx-riders",
+         "tc-gtx-split"
         ]
        }
       }
@@ -93499,10 +95346,10 @@
     "futures": {
      "split": {
       "layer": "inference",
-      "text": "갈라지는 이유는 수도권 통근이 계속 늘어나느냐, 재택·지역 분산으로 줄어드느냐다. 이 주제는 2004년 이후 자료가 비어 있어 판단 폭이 좁다.",
+      "text": "갈라지는 이유는 수도권 통근이 계속 늘어나느냐, 재택·지역 분산으로 줄어드느냐다. GTX-A 이용 증가는 앞쪽을 가리키지만 2004~2024년 사이 자료가 비어 있어 판단 폭이 좁다.",
       "ids": [
        "fl-city-capital",
-       "fl-city-2004"
+       "tc-gtx-riders"
       ]
      },
      "items": [
@@ -93510,10 +95357,11 @@
        "kind": "계속",
        "name": "광역 통근 교통이 계속 늘어난다",
        "change": {
-        "layer": "hypothesis",
+        "layer": "inference",
         "text": "수도권 50% 시대에 서울 밖 거주·서울 통근을 잇는 광역 교통 수요가 커진다.",
         "ids": [
-         "fl-city-capital"
+         "fl-city-capital",
+         "tc-gtx-riders"
         ]
        },
        "basis": [
@@ -93522,6 +95370,13 @@
          "text": "수도권 인구 50% 돌파.",
          "ids": [
           "fl-city-capital"
+         ]
+        },
+        {
+         "layer": "fact",
+         "text": "GTX-A 평일 이용 1년 새 약 8배.",
+         "ids": [
+          "tc-gtx-riders"
          ]
         }
        ],
@@ -93547,8 +95402,8 @@
         ]
        },
        "watch": [
-        "수도권 통근 시간",
-        "광역 교통 이용자"
+        "GTX-A 두 구간 연결 시점과 이후 이용객",
+        "수도권 통근 시간"
        ],
        "against": [
         "재택근무 확산으로 통근이 줄면"
@@ -93606,12 +95461,13 @@
     "conclusion": {
      "key": {
       "layer": "inference",
-      "text": "교통은 도시가 넓어질 때마다 새 수단이 더해지는 방식으로 변했다(고속도로 → 지하철 → 자가용 → 고속철·환승). 대부분 교체가 아니라 쌓임이다.",
+      "text": "교통은 도시가 넓어질 때마다 새 수단이 더해지는 방식으로 변했다(고속도로 → 지하철 → 자가용 → 고속철·환승 → 광역급행철도). 대부분 교체가 아니라 쌓임이다.",
       "ids": [
        "fl-city-gyeongbu",
        "fl-city-line1",
        "fl-city-cars",
-       "fl-city-2004"
+       "fl-city-2004",
+       "tc-gtx-open"
       ]
      },
      "favored": {
@@ -93623,16 +95479,17 @@
      },
      "undecided": {
       "layer": "inference",
-      "text": "2004년 이후 광역 교통 변화는 자료를 연결하지 않아 판단할 수 없다.",
+      "text": "2004~2024년 사이 광역버스·전철 연장의 변화는 자료를 연결하지 않아 판단할 수 없다.",
       "ids": [
        "fl-city-2004"
       ]
      },
      "next": {
       "layer": "inference",
-      "text": "수도권 통근 자료를 연결하는 것.",
+      "text": "GTX-A 남북 구간이 이어진 뒤 이용객이 예측수요를 넘는지.",
       "ids": [
-       "fl-city-capital"
+       "tc-gtx-split",
+       "tc-gtx-riders"
       ]
      },
      "change": {
