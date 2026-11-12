@@ -16411,6 +16411,102 @@
    "independentSources": 1
   },
   {
+   "id": "ix-bt-99",
+   "text": "LG화학은 1999년 3월 국내 처음으로 리튬이온 2차전지 양산체제를 갖췄다. 당시 2차전지는 캠코더·휴대전화·노트북 같은 전자제품 경량화로 수요가 급증하던 부품이었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "ix-s-khan-bat02"
+   ],
+   "domains": [
+    "industry",
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1999~2002",
+   "independentSources": 1
+  },
+  {
+   "id": "ix-bt-catch",
+   "text": "2007년 세계 리튬2차전지 점유율은 산요 21%, 소니 14%, 삼성SDI 13%였다. 삼성SDI와 LG화학은 외환위기 중이던 1999년 각각 5,000억 원 안팎을 공장에 투자했고, 공장을 세운 지 10년 만에 일본 기업을 따라잡았다는 평가를 받았다. 2009년 1분기 한국 업체 합산 점유율은 26.4%로 일본(32.2%)과의 격차를 좁혔고 삼성SDI가 소니를 제치고 2위가 됐다. 같은 해 LG화학은 GM 전기차 배터리 공급업체로 단독 선정됐다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "ix-s-et-bat10",
+    "ix-s-kuki-bat09"
+   ],
+   "domains": [
+    "industry",
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1999~2009",
+   "independentSources": 2
+  },
+  {
+   "id": "ix-bt-share",
+   "text": "SNE리서치 기준 중국을 제외한 세계 전기차 배터리 시장에서 한국 3사의 점유율은 2021년 56%에서 2024년 44%, 2025년 1~8월 38.3%로 줄어 중국 3사(39.1%)에 뒤졌다. 원인으로 전기차 수요 정체, 원자재 값 폭락, 중국의 저가 LFP 배터리 확산이 꼽혔다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "ix-s-nd-bat25"
+   ],
+   "domains": [
+    "industry",
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2021~2025",
+   "independentSources": 1
+  },
+  {
+   "id": "ix-bt-global",
+   "text": "중국을 포함한 세계 전기차 배터리 시장에서 2024년 1~7월 한국 3사 점유율은 21.5%였고 CATL 37.6%, BYD 16.1%였다. SNE리서치는 완성차 업체의 LFP 도입 확대를 중국 업체 점유율 확대의 이유로 들었다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "ix-s-ceo-bat24"
+   ],
+   "domains": [
+    "industry",
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2024",
+   "independentSources": 1
+  },
+  {
+   "id": "ix-bt-26",
+   "text": "2026년 상반기 세계 배터리 사용량은 608.5GWh로 20% 늘었지만 중국 7개사 점유율이 72.4%였고, SNE리서치는 한국 기업의 과제로 LFP·차세대 원통형 등 제품 다변화와 공급망 규제 대응을 들었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "ix-s-dd-bat26"
+   ],
+   "domains": [
+    "industry",
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2026",
+   "independentSources": 1
+  },
+  {
    "id": "ix-dp-04",
    "text": "한 기고에 따르면 일본이 1990년대 말 아시아 경제위기로 5세대 LCD 투자를 머뭇거릴 때 한국은 2001년 세계 처음 5세대 LCD에 투자해 2004년 세계 LCD 시장 1위에 올랐고, 8세대까지 신규 투자를 이어 갔지만 8세대를 마지막으로 멈췄다. 중국은 정부의 막대한 지원으로 2015년 세계 처음 10.5세대 LCD에 투자했다.",
    "claimType": "source",
@@ -18140,6 +18236,314 @@
    "aiSynthesized": false,
    "period": "2025",
    "independentSources": 1
+  },
+  {
+   "id": "tl-yolo",
+   "text": "서울대 소비트렌드분석센터의 트렌드 코리아는 2017년 키워드로 '욜로'와 '1코노미'를 꼽았고, 2018년 전망에서는 '워라밸'을 가장 주목할 키워드로, '소확행(작지만 확실한 행복)'과 나만의 휴식 공간 '케렌시아'를 함께 제시했다.",
+   "claimType": "source",
+   "status": "sourced",
+   "sourceIds": [
+    "tl-s-watcha-tk18",
+    "tl-s-kyobo-tk18"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2017~2018",
+   "independentSources": 2
+  },
+  {
+   "id": "tl-mung",
+   "text": "'한강 멍때리기 대회'는 아무것도 하지 않는 것이 뒤처지거나 무가치하다는 통념을 깨려는 목적으로 2014년 서울광장에서 시작했고 2016년부터 한강으로 옮겨 2024년 10년을 맞았다. 참가자는 90분 동안 말·행동 없이 멍한 상태를 유지하고 휴대전화를 보면 탈락한다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tl-s-segye-mung"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2014~2024",
+   "independentSources": 1
+  },
+  {
+   "id": "tl-mung25",
+   "text": "2025년 한강 멍때리기 대회는 57대 1의 경쟁을 거쳐 80팀이 선발됐고, 10대부터 60대까지 구급대원·군인·기관사·교도관 등이 참가했다. 심박수 그래프와 시민 투표로 심사한다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tl-s-seoul-mung25"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2025",
+   "independentSources": 1
+  },
+  {
+   "id": "tl-nospend",
+   "text": "2022년 6월 소비자물가가 6.0% 올라 24년 만에 최고가 된 가운데, 20·30세대 사이에 하루 지출 0원을 목표로 하는 '무지출 챌린지'가 퍼졌다는 보도가 나왔다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tl-s-econ-nospend"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2022",
+   "independentSources": 1
+  },
+  {
+   "id": "tl-geojibang",
+   "text": "2023년 카카오톡 오픈채팅에 자신의 소비를 공개하고 서로 절약을 독려하는 '거지방'이 우후죽순 생겼다. 2024년 기사는 무지출 챌린지와 거지방을 '짧게 유행했다 사라진' 현상으로 표현했다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tl-s-fn-geojibang",
+    "tl-s-bizwatch-short"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2023~2024",
+   "independentSources": 2
+  },
+  {
+   "id": "tl-run-survey",
+   "text": "문화체육관광부 '2024 국민 생활체육 조사'에서 최근 1년간 러닝을 한 적 있다는 응답은 2023년 0.5%에서 2024년 6.8%로 늘어 가장 가파르게 증가했고, 걷기·등산·수영 참여율은 떨어졌다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tl-s-dgmbc-run"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2023~2024",
+   "independentSources": 1
+  },
+  {
+   "id": "tl-run-market",
+   "text": "유로모니터 기준 국내 운동화 시장은 2021년 2조 7,761억 원에서 2023년 3조 4,150억 원으로 컸고, 업계는 러닝화만 1조 원 이상으로 보며 국내 러닝 인구를 1,000만 명으로 추산한다. 2024년 3대 백화점의 러닝화 매출은 평균 30% 이상 늘었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tl-s-hk-run25"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2021~2025",
+   "independentSources": 1
+  },
+  {
+   "id": "tl-run-golf",
+   "text": "현대백화점에서 2024년 9월까지 골프 카테고리 매출은 2022년보다 줄었지만 러닝 카테고리는 35% 성장했다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tl-s-hkbiz-run24"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2022~2024",
+   "independentSources": 1
+  },
+  {
+   "id": "tl-slow",
+   "text": "편의점 GS25의 잡곡 매출 증가율은 2022년 15.4%, 2023년 23.8%, 2024년 25.9%로 해마다 높아졌고, 롯데웰푸드가 2022년 5월 내놓은 무설탕 브랜드 '제로'는 누적 매출 1,000억 원을 넘었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tl-s-khan-slow"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2022~2025",
+   "independentSources": 1
+  },
+  {
+   "id": "tl-slow-why",
+   "text": "2024년 보도는 MZ세대가 마라탕·탕후루 같은 자극적인 음식에서 저속노화 식단으로 옮겨 가고 SNS에 식단을 인증한다고 전하며, 노년내과 전문의가 젊은 층의 만성질환 증가를 경고했다고 소개했다.",
+   "claimType": "source",
+   "status": "sourced",
+   "sourceIds": [
+    "tl-s-sidae-slow"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2024",
+   "independentSources": 1
+  },
+  {
+   "id": "tl-storage",
+   "text": "셀프스토리지 '다락'은 2016년 서울 강남에서 1호점으로 시작해 2024년 100호점, 2026년 4월 220호점까지 늘었고 누적 회원은 11만 5천 명이다. 2023년 보도에 따르면 다락 이용자 중 1인 가구 비중은 46%였고 20~40대가 주 수요층이었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tl-s-hello-darak",
+    "tl-s-hkmoney-storage"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2016~2026",
+   "independentSources": 2
+  },
+  {
+   "id": "tl-camp20",
+   "text": "한국관광공사 '2020년 기준 캠핑 이용자 실태조사'에서 2020년 캠핑 산업 규모는 전년보다 90.1%, 캠핑 이용자 수는 34.0% 늘었다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tl-s-newsis-camp20"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2020",
+   "independentSources": 1
+  },
+  {
+   "id": "tl-campsite",
+   "text": "한국관광협회중앙회 집계로 전국 야영장은 2019년 말 2,367개에서 2023년 말 3,747개로 늘어 사상 최대였다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tl-s-yna-campsite"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2019~2023",
+   "independentSources": 1
+  },
+  {
+   "id": "tl-camp21",
+   "text": "2021년 캠핑 이용자는 소폭 줄었지만 가구당 캠핑 1회 지출액은 46만 5천 원으로 18% 늘었고, 1인당 장비 구입비는 41만 8천 원으로 9.9% 줄었다. 조사는 이를 전문화·고급화로 봤다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tl-s-newsis-camp21"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2021",
+   "independentSources": 1
+  },
+  {
+   "id": "tl-camp-mini",
+   "text": "2023년 국내 캠핑 인구는 약 634만 명이었고, 짧고 간편한 '미니멀 캠핑', 차박, 도심 근교 '캠크닉' 수요가 늘며 캠핑의 중심이 준비·요리에서 휴식·경험으로 옮겨 간다는 보도가 있다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tl-s-segye-camp"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2023~2025",
+   "independentSources": 1
+  },
+  {
+   "id": "tl-camp-fall",
+   "text": "한국관광공사 최신 캠핑이용자 실태조사에 따르면 캠핑 이용자는 2023년 634만 명을 정점으로 1년 만에 546만 명(−13.9%)으로 줄었고 시장 규모도 11.8% 줄었다. 2023년에는 웃돈을 주던 텐트가 헐값에도 팔리지 않고 매장 폐업이 이어진다는 보도가 나왔다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tl-s-daum-camp26",
+    "tl-s-bizhk-camp23"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2023~2024",
+   "independentSources": 2
   }
  ],
  "sources": [
@@ -25405,6 +25809,60 @@
    "publishedDate": "2025-04-17"
   },
   {
+   "id": "ix-s-khan-bat02",
+   "title": "2차전지 설비투자 확대(LG화학 1999년 국내 첫 양산)",
+   "publisher": "경향신문",
+   "url": "https://www.khan.co.kr/article/200208121837311",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2002-08-12"
+  },
+  {
+   "id": "ix-s-et-bat10",
+   "title": "2차전지 글로벌 1등 노린다",
+   "publisher": "전자신문",
+   "url": "https://m.etnews.com/201001210354",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2010-01-21"
+  },
+  {
+   "id": "ix-s-kuki-bat09",
+   "title": "삼성SDI·LG화학, 일본 2차전지 아성 무너뜨린다",
+   "publisher": "국민일보(쿠키뉴스)",
+   "url": "https://www.kukinews.com/article/view/kuk200909140116",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2009-09-14"
+  },
+  {
+   "id": "ix-s-nd-bat25",
+   "title": "K-배터리 비중국 점유율 40% 붕괴",
+   "publisher": "뉴데일리 경제",
+   "url": "https://biz.newdaily.co.kr/site/data/html/2025/10/15/2025101500321.amp.html",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-10-15"
+  },
+  {
+   "id": "ix-s-ceo-bat24",
+   "title": "중국 배터리 업체에 점유율 넘어간 K-배터리",
+   "publisher": "CEO스코어데일리",
+   "url": "https://ceoscoredaily.com/page/view/2024090916134830569",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2024-09"
+  },
+  {
+   "id": "ix-s-dd-bat26",
+   "title": "상반기 글로벌 배터리 탑재량 20% 늘었지만…K-배터리 점유율 동반 하락",
+   "publisher": "디지털데일리",
+   "url": "https://www.ddaily.co.kr/page/view/2026080511173307633",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-08-05"
+  },
+  {
    "id": "ix-s-kidd-disp21",
    "title": "中 LCD에 밀린 韓 디스플레이 산업, OLED 분야 초격차 기술 확보해야",
    "publisher": "산업일보",
@@ -26417,6 +26875,184 @@
    "sourceType": "paper",
    "accessedDate": "2026-11-12",
    "publishedDate": "2023-12"
+  },
+  {
+   "id": "tl-s-watcha-tk18",
+   "title": "트렌드 코리아 2018 책 소개(워라밸·소확행·케렌시아)",
+   "publisher": "왓챠피디아(출판사 책 소개)",
+   "url": "https://pedia.watcha.com/en/contents/bovqkeb/book_description",
+   "sourceType": "book",
+   "accessedDate": "2026-11-12"
+  },
+  {
+   "id": "tl-s-kyobo-tk18",
+   "title": "트렌드 코리아 2018 eBook 소개(욜로·1코노미 2017)",
+   "publisher": "교보문고",
+   "url": "https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000003135406",
+   "sourceType": "book",
+   "accessedDate": "2026-11-12"
+  },
+  {
+   "id": "tl-s-segye-mung",
+   "title": "'생각이 너무 많아서 생각을 비우러 왔습니다' — 한강 멍때리기 대회 10년",
+   "publisher": "세계일보",
+   "url": "https://segye.com/newsView/20240512509360",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2024-05-12"
+  },
+  {
+   "id": "tl-s-seoul-mung25",
+   "title": "‘57대 1’ 경쟁 뚫은 80팀, 잠수교서 한강 멍때리기",
+   "publisher": "서울신문",
+   "url": "https://m.go.seoul.co.kr/news/2025/05/09/20250509500111",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-05-09"
+  },
+  {
+   "id": "tl-s-econ-nospend",
+   "title": "“욜로는 옛말, 하루 지출 0원”…고물가에 ‘무지출 챌린지’ 열풍",
+   "publisher": "이코노미스트",
+   "url": "https://economist.co.kr/article/view/ecn202207310008",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2022-07-31"
+  },
+  {
+   "id": "tl-s-fn-geojibang",
+   "title": "MZ에 뜨는 '거지방' 정체는",
+   "publisher": "파이낸셜뉴스",
+   "url": "https://www.fnnews.com/news/202304161428595861",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2023-04-16"
+  },
+  {
+   "id": "tl-s-bizwatch-short",
+   "title": "짧게 유행했다 사라진 무지출 챌린지·거지방",
+   "publisher": "비즈워치",
+   "url": "https://news.bizwatch.co.kr/article/consumer/2024/03/15/0032",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2024-03-15"
+  },
+  {
+   "id": "tl-s-dgmbc-run",
+   "title": "2024 국민 생활체육 조사 — 러닝 참여 급증",
+   "publisher": "대구MBC",
+   "url": "https://dgmbc.com/NewsArticle/635739",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025"
+  },
+  {
+   "id": "tl-s-hk-run25",
+   "title": "러닝크루 열풍에 올라탄 패션업계",
+   "publisher": "한국경제",
+   "url": "https://www.hankyung.com/article/202505021340g",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-05-02"
+  },
+  {
+   "id": "tl-s-hkbiz-run24",
+   "title": "우울증 약 대신 '러닝' 처방",
+   "publisher": "한경비즈니스",
+   "url": "https://magazine.hankyung.com/business/article/202410311566b",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2024-10-31"
+  },
+  {
+   "id": "tl-s-khan-slow",
+   "title": "‘마라탕후루’ 찾던 MZ세대가 ‘저속노화 식단’에 빠진 이유는",
+   "publisher": "경향신문",
+   "url": "https://www.khan.co.kr/article/202502051539001",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-02-05"
+  },
+  {
+   "id": "tl-s-sidae-slow",
+   "title": "MZ세대가 저속노화 식단에 빠진 이유",
+   "publisher": "시대일보(sidae.com)",
+   "url": "https://www.sidae.com/article/2024062513355231730",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2024-06-25"
+  },
+  {
+   "id": "tl-s-hello-darak",
+   "title": "창고가 아닌 생활물류의 일부 — 다락 셀프스토리지 현장",
+   "publisher": "헬로티",
+   "url": "https://hellot.net/mobile/article.html?no=113984",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026"
+  },
+  {
+   "id": "tl-s-hkmoney-storage",
+   "title": "'셀프 스토리지', 부동산 시장 틈새 공략",
+   "publisher": "한경 머니",
+   "url": "https://magazine.hankyung.com/money/article/202307209059c",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2023-07-20"
+  },
+  {
+   "id": "tl-s-newsis-camp20",
+   "title": "한국관광공사 '2020년 기준 캠핑 이용자 실태조사'",
+   "publisher": "뉴시스",
+   "url": "https://mobile.newsis.com/view/NISX20220214_0001758632",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2022-02-14"
+  },
+  {
+   "id": "tl-s-yna-campsite",
+   "title": "캠핑 열기 뜨겁다…전국 야영장 3천700여개로 '사상 최대'",
+   "publisher": "연합뉴스(파이낸셜뉴스 게재)",
+   "url": "https://www.fnnews.com/news/202404110601482585",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2024-04-11"
+  },
+  {
+   "id": "tl-s-newsis-camp21",
+   "title": "2021 캠핑이용자 실태조사 — 전문화·고급화",
+   "publisher": "뉴시스",
+   "url": "https://www.newsis.com/view/NISX20220906_0002004115",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2022-09-06"
+  },
+  {
+   "id": "tl-s-segye-camp",
+   "title": "미니멀 캠핑·차박·캠크닉",
+   "publisher": "세계일보",
+   "url": "https://www.segye.com/newsView/20251025500966",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-10-25"
+  },
+  {
+   "id": "tl-s-daum-camp26",
+   "title": "“10억짜리 캠핑장, 반값에도 안 팔려”…한때 7조 캠핑 제국의 몰락",
+   "publisher": "다음뉴스(언론사 기사)",
+   "url": "https://v.daum.net/v/20260717060224884",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-07-17"
+  },
+  {
+   "id": "tl-s-bizhk-camp23",
+   "title": "웃돈 주던 텐트, 헐값에도 안 팔려…캠핑업계 한숨",
+   "publisher": "비즈한국",
+   "url": "https://www.bizhankook.com/bk/article/25844",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2023-06-23"
   }
  ],
  "events": [
@@ -70584,7 +71220,7 @@
       ]
      }
     ],
-    "tracks": "서울·수도권이 넓어지는 과정 — 사람이 사는 곳과 그곳들을 잇는 교통",
+    "tracks": "서울·수도권이 넓어지는 과정의 시대 개관 — 자세한 이야기는 '어디에, 어떤 집에 사나'(거주)와 '넓어진 도시를 어떻게 오가나'(교통) 두 주제로 나눠 추적한다",
     "turns": [
      {
       "id": "ct-t1",
@@ -78307,6 +78943,518 @@
     ]
    },
    {
+    "id": "battery",
+    "group": "elec",
+    "label": "2차전지(배터리)",
+    "tracks": "충전해 다시 쓰는 리튬이온 전지 — 휴대전화·노트북용 소형에서 전기차·에너지저장용 중대형으로",
+    "question": "일본을 10년 만에 따라잡은 한국 배터리는 왜 전기차 시대에 중국에 밀리고 있나?",
+    "span": [
+     1999,
+     2026
+    ],
+    "stages": [
+     {
+      "period": "1999~2002",
+      "kind": "시작",
+      "what": "외환위기 중 첫 양산 — 휴대전화·노트북용 소형 전지",
+      "why": [
+       {
+        "layer": "fact",
+        "text": "LG화학이 1999년 국내 첫 리튬이온 전지 양산체제를 갖췄다.",
+        "ids": [
+         "ix-bt-99"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "삼성SDI와 LG화학은 외환위기 중 각각 5,000억 원 안팎을 투자했다.",
+        "ids": [
+         "ix-bt-catch"
+        ]
+       }
+      ],
+      "from": {
+       "layer": "inference",
+       "text": "휴대전화(CDMA)·노트북이 퍼지며 가볍고 오래 가는 전지가 필요해졌고, 화학·전자 기업이 이를 직접 만들려 했다.",
+       "ids": [
+        "c90-cdma",
+        "ix-bt-99"
+       ]
+      }
+     },
+     {
+      "period": "2007~2011",
+      "kind": "성장",
+      "what": "일본 추격 — 소형 전지 점유율 역전과 첫 전기차 수주",
+      "why": [
+       {
+        "layer": "fact",
+        "text": "2009년 1분기 삼성SDI가 소니를 제치고 2위, 한국 합산 26.4%.",
+        "ids": [
+         "ix-bt-catch"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "2009년 LG화학이 GM 전기차 배터리 단독 공급업체가 됐다.",
+        "ids": [
+         "ix-bt-catch"
+        ]
+       }
+      ],
+      "from": {
+       "layer": "inference",
+       "text": "스마트폰 시대(갤럭시S)와 함께 소형 전지 수요처가 국내에 있었다는 점이 추격을 도왔다고 본다.",
+       "ids": [
+        "ix-ph-gs",
+        "ix-bt-catch"
+       ]
+      }
+     },
+     {
+      "period": "2014~2021",
+      "kind": "확산",
+      "what": "전기차 배터리 — 중국 밖 시장의 절반 이상",
+      "why": [
+       {
+        "layer": "fact",
+        "text": "중국 제외 세계 전기차 배터리 시장에서 한국 3사 점유율이 2021년 56%였다.",
+        "ids": [
+         "ix-bt-share"
+        ]
+       }
+      ],
+      "from": {
+       "layer": "inference",
+       "text": "일찍 맺은 완성차 업체와의 공급 계약이 전기차 확산기에 물량으로 돌아왔다.",
+       "ids": [
+        "ix-bt-catch",
+        "ix-bt-share"
+       ]
+      }
+     },
+     {
+      "period": "2023~2025",
+      "kind": "위기",
+      "what": "캐즘과 LFP — 중국에 역전당하다",
+      "why": [
+       {
+        "layer": "fact",
+        "text": "중국 제외 시장 점유율 56%(2021) → 38.3%(2025년 1~8월), 중국 3사 39.1%.",
+        "ids": [
+         "ix-bt-share"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "중국 포함 세계 시장에서는 2024년 1~7월 21.5%, CATL 37.6%.",
+        "ids": [
+         "ix-bt-global"
+        ]
+       }
+      ],
+      "from": {
+       "layer": "inference",
+       "text": "전기차 수요가 주춤하자 완성차 업체가 값싼 LFP 배터리로 옮겨 갔고, 한국은 비싼 삼원계에 집중해 있었다 — 디스플레이에서 본 '가격 경쟁 무대를 중국이 가져가는' 길과 닮았다.",
+       "ids": [
+        "ix-bt-share",
+        "ix-bt-global",
+        "ix-dp-04"
+       ]
+      }
+     },
+     {
+      "period": "2026~",
+      "kind": "현재",
+      "what": "LFP·원통형으로 제품 넓히기",
+      "why": [
+       {
+        "layer": "fact",
+        "text": "2026년 상반기 중국 7개사 점유율 72.4%, 한국 기업 과제로 LFP·차세대 원통형·공급망 규제 대응이 꼽혔다.",
+        "ids": [
+         "ix-bt-26"
+        ]
+       }
+      ],
+      "from": {
+       "layer": "inference",
+       "text": "한 가지 기술(삼원계)에 기대던 구조에서 여러 제품으로 넓히는 재편기다.",
+       "ids": [
+        "ix-bt-26"
+       ]
+      }
+     }
+    ],
+    "profile": {
+     "start": [
+      {
+       "layer": "fact",
+       "text": "휴대전화·노트북 경량화로 수요가 급증하던 1999년 첫 양산.",
+       "ids": [
+        "ix-bt-99"
+       ]
+      }
+     ],
+     "base": [
+      {
+       "layer": "fact",
+       "text": "LG화학(현 LG에너지솔루션)·삼성SDI·SK.",
+       "ids": [
+        "ix-bt-catch",
+        "ix-bt-share"
+       ]
+      }
+     ],
+     "product": [
+      {
+       "layer": "fact",
+       "text": "소형 리튬이온 → 전기차용 중대형(삼원계) → LFP·원통형으로 다변화 모색.",
+       "ids": [
+        "ix-bt-99",
+        "ix-bt-26"
+       ]
+      }
+     ],
+     "customers": [
+      {
+       "layer": "fact",
+       "text": "휴대전화·노트북 제조사, 이후 GM·BMW 같은 완성차 업체.",
+       "ids": [
+        "ix-bt-catch"
+       ]
+      }
+     ],
+     "turns": [
+      {
+       "layer": "fact",
+       "text": "1999 양산, 2009 일본 추격·GM 수주, 2021 중국 밖 56%, 2025 중국에 역전.",
+       "ids": [
+        "ix-bt-99",
+        "ix-bt-catch",
+        "ix-bt-share"
+       ]
+      }
+     ],
+     "trade": [
+      {
+       "layer": "fact",
+       "text": "중국 CATL·BYD의 LFP 확산, 각국 정책 변화.",
+       "ids": [
+        "ix-bt-global",
+        "ix-bt-26"
+       ]
+      }
+     ],
+     "jobs": [
+      {
+       "layer": "inference",
+       "text": "국내 공장과 함께 북미·유럽 현지 공장이 늘어 일자리 일부가 해외에 생겼다(지역별 자료는 연결하지 않음).",
+       "ids": [
+        "ix-bt-26"
+       ]
+      }
+     ],
+     "now": [
+      {
+       "layer": "inference",
+       "text": "강점: 삼원계 기술과 완성차 고객. 약점: 값싼 LFP 대응 늦음, 전기차 수요 변동 의존.",
+       "ids": [
+        "ix-bt-share",
+        "ix-bt-26"
+       ]
+      }
+     ],
+     "watch": [
+      {
+       "layer": "hypothesis",
+       "text": "볼 지표: 중국 제외 시장 점유율, LFP 공급 계약, 전기차 판매. 반대 신호: LFP에서도 중국과 가격 경쟁이 안 되면 점유율 하락이 이어진다.",
+       "ids": [
+        "ix-bt-share",
+        "ix-bt-26"
+       ]
+      }
+     ]
+    },
+    "links": [
+     {
+      "year": "2009~",
+      "to": "automobile",
+      "rel": "공급",
+      "text": "전기차 배터리 — 완성차와 묶인 산업",
+      "line": {
+       "layer": "fact",
+       "text": "GM·BMW 전기차 배터리 공급 계약.",
+       "ids": [
+        "ix-bt-catch"
+       ]
+      }
+     },
+     {
+      "year": "1999~",
+      "to": "phone",
+      "rel": "수요처",
+      "text": "휴대전화가 소형 전지의 첫 수요처",
+      "line": {
+       "layer": "inference",
+       "text": "휴대전화 경량화가 소형 전지 수요를 만들었다.",
+       "ids": [
+        "ix-bt-99"
+       ]
+      }
+     },
+     {
+      "year": "2023~",
+      "to": "display",
+      "rel": "닮은 길",
+      "text": "가격 경쟁 무대를 중국이 가져간 길",
+      "line": {
+       "layer": "inference",
+       "text": "LCD처럼 값싼 제품(LFP)에서 중국이 앞섰다.",
+       "ids": [
+        "ix-bt-global",
+        "ix-dp-04"
+       ]
+      }
+     }
+    ],
+    "worlds": [
+     {
+      "at": "1999~2009",
+      "box": {
+       "what": {
+        "layer": "fact",
+        "text": "휴대전화·노트북 경량화로 2차전지 수요가 급증했고, 일본 기업이 시장을 이끌었다.",
+        "ids": [
+         "ix-bt-99",
+         "ix-bt-catch"
+        ]
+       },
+       "route": {
+        "layer": "fact",
+        "text": "한국 전자제품 수요와 대규모 설비 투자로 들어갔다.",
+        "ids": [
+         "ix-bt-catch"
+        ]
+       },
+       "response": {
+        "layer": "fact",
+        "text": "외환위기 중 5,000억 원 안팎 투자.",
+        "ids": [
+         "ix-bt-catch"
+        ]
+       },
+       "result": {
+        "layer": "fact",
+        "text": "10년 만에 일본 추격(2009년 1분기 26.4%).",
+        "ids": [
+         "ix-bt-catch"
+        ]
+       },
+       "mode": "outbound"
+      }
+     },
+     {
+      "at": "2023~2025",
+      "box": {
+       "what": {
+        "layer": "fact",
+        "text": "전기차 수요 정체와 완성차 업체의 LFP 도입 확대.",
+        "ids": [
+         "ix-bt-global",
+         "ix-bt-share"
+        ]
+       },
+       "route": {
+        "layer": "fact",
+        "text": "수주·점유율로 들어왔다.",
+        "ids": [
+         "ix-bt-share"
+        ]
+       },
+       "response": {
+        "layer": "fact",
+        "text": "LFP·원통형으로 제품 다변화 모색.",
+        "ids": [
+         "ix-bt-26"
+        ]
+       },
+       "result": {
+        "layer": "fact",
+        "text": "중국 밖 시장에서도 중국에 역전(2025).",
+        "ids": [
+         "ix-bt-share"
+        ]
+       },
+       "mode": "same"
+      }
+     }
+    ],
+    "outward": [
+     {
+      "layer": "fact",
+      "text": "2009년 LG화학이 GM 전기차 배터리 단독 공급업체가 되는 등, 한국 배터리가 미국·유럽 완성차의 전기차 전환에 공급자로 참여했다.",
+      "ids": [
+       "ix-bt-catch"
+      ]
+     },
+     {
+      "layer": "fact",
+      "text": "2021년 중국 밖 전기차 배터리 시장의 56%를 한국 3사가 공급했다.",
+      "ids": [
+       "ix-bt-share"
+      ]
+     }
+    ],
+    "futures": {
+     "split": {
+      "layer": "inference",
+      "text": "갈림길은 한국이 값싼 LFP에서도 경쟁할 수 있느냐, 아니면 고성능 삼원계·새 제품으로 좁혀 가느냐다.",
+      "ids": [
+       "ix-bt-26",
+       "ix-bt-share"
+      ]
+     },
+     "items": [
+      {
+       "kind": "반작용",
+       "name": "디스플레이의 길 — 가격 경쟁은 중국에",
+       "change": {
+        "layer": "inference",
+        "text": "범용 LFP는 중국이 맡고 한국 점유율 하락이 이어진다.",
+        "ids": [
+         "ix-bt-global"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "2026년 상반기 중국 7개사 72.4%.",
+         "ids": [
+          "ix-bt-26"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "LCD에서 본 것처럼 값으로 경쟁하는 제품은 대규모 투자를 한 쪽이 가져간다.",
+        "ids": [
+         "ix-dp-04",
+         "ix-bt-global"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "LFP 비중이 계속 커져야 한다.",
+        "ids": [
+         "ix-bt-global"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "값싼 전기차·ESS용 배터리.",
+        "ids": [
+         "ix-bt-global"
+        ]
+       },
+       "watch": [
+        "중국 제외 시장 점유율"
+       ],
+       "against": [
+        "한국 LFP 수주가 크게 늘면"
+       ]
+      },
+      {
+       "kind": "경로 변경",
+       "name": "제품을 넓혀 되찾는다",
+       "change": {
+        "layer": "inference",
+        "text": "LFP·원통형·차세대 전지로 제품을 넓혀 점유율 하락을 멈춘다.",
+        "ids": [
+         "ix-bt-26"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "source",
+         "text": "SNE리서치가 꼽은 과제: 제품 다변화·규제 대응.",
+         "ids": [
+          "ix-bt-26"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "1999년 일본을 따라잡을 때처럼, 수요처가 바뀌는 시기에 먼저 제품을 바꾸는 쪽이 앞섰다.",
+        "ids": [
+         "ix-bt-catch"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "북미·유럽의 공급망 규제가 중국산을 제한해야 한다.",
+        "ids": [
+         "ix-bt-26"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "LFP·원통형 배터리, 공급망 추적 서비스.",
+        "ids": [
+         "ix-bt-26"
+        ]
+       },
+       "watch": [
+        "LFP 공급 계약",
+        "북미·유럽 규제"
+       ],
+       "against": [
+        "규제가 완화되면"
+       ]
+      }
+     ]
+    },
+    "conclusion": {
+     "key": {
+      "layer": "inference",
+      "text": "한국 배터리는 일본이 앞서던 소형 전지에서 '먼저 크게 투자하고 국내 수요처(휴대전화)를 가진' 덕에 10년 만에 따라잡았고, 전기차 시대 초반 완성차 계약으로 중국 밖 시장의 절반을 맡았다. 지금은 값싼 제품(LFP)으로 무대가 옮겨 가며 중국에 밀린다.",
+      "ids": [
+       "ix-bt-catch",
+       "ix-bt-share",
+       "ix-bt-global"
+      ]
+     },
+     "favored": {
+      "layer": "inference",
+      "text": "'기술 열위'보다 '제품 선택(삼원계 집중)의 대가' 해석을 지지한다.",
+      "ids": [
+       "ix-bt-share"
+      ]
+     },
+     "undecided": {
+      "layer": "inference",
+      "text": "북미·유럽의 규제가 실제로 중국산을 얼마나 막을지는 판단할 수 없다.",
+      "ids": [
+       "ix-bt-26"
+      ]
+     },
+     "next": {
+      "layer": "inference",
+      "text": "한국 기업의 LFP 수주.",
+      "ids": [
+       "ix-bt-26"
+      ]
+     },
+     "change": {
+      "layer": "inference",
+      "text": "중국 밖 점유율이 반등하면 판단을 고친다.",
+      "ids": [
+       "ix-bt-share"
+      ]
+     }
+    },
+    "repeats": []
+   },
+   {
     "id": "automobile",
     "group": "heavy",
     "label": "자동차",
@@ -81394,10 +82542,40 @@
      "note": "TV·휴대폰에 화면을 대는 산업으로, 17년 1위와 중국에의 역전이 함께 있다."
     },
     {
+     "label": "2차전지(배터리)",
+     "status": "선정",
+     "industry": "battery",
+     "cells": {
+      "export": {
+       "layer": "fact",
+       "text": "중국 밖 전기차 배터리 시장 56%(2021).",
+       "ids": [
+        "ix-bt-share"
+       ]
+      },
+      "tech": {
+       "layer": "fact",
+       "text": "1999년 첫 양산, 10년 만에 일본 추격.",
+       "ids": [
+        "ix-bt-99",
+        "ix-bt-catch"
+       ]
+      },
+      "spill": {
+       "layer": "inference",
+       "text": "휴대전화·전기차와 묶인 부품 산업.",
+       "ids": [
+        "ix-bt-catch"
+       ]
+      }
+     },
+     "note": "18차에 '전자부품·기계'에서 먼저 떼어 일대기로 만들었다."
+    },
+    {
      "label": "전자부품·기계",
      "status": "후속",
      "cells": {},
-     "note": "수출 비중이 크지만 품목이 넓어 하나의 대상을 정하지 못했다. 품목을 좁힌 뒤(예: 2차전지) 다시 검토한다."
+     "note": "수출 비중이 크지만 품목이 넓어 하나의 대상을 정하지 못했다. 2차전지는 떼어 일대기로 만들었고, 나머지(기계·부품)는 품목을 좁힌 뒤 다룬다."
     },
     {
      "label": "가발·신발 등 경공업",
@@ -82328,6 +83506,10 @@
     "label": "공간·인테리어·생활용품",
     "items": [
      {
+      "kind": "topic",
+      "id": "city-home"
+     },
+     {
       "kind": "taste",
       "id": "taste-home"
      }
@@ -82436,7 +83618,12 @@
    {
     "id": "travel",
     "label": "여행·숙박·이동",
-    "items": [],
+    "items": [
+     {
+      "kind": "topic",
+      "id": "city-move"
+     }
+    ],
     "planned": [
      "해외여행 방식(패키지→자유여행)",
      "숙소 고르기"
@@ -82543,14 +83730,28 @@
     "items": [
      {
       "kind": "topic",
+      "id": "life-rest"
+     },
+     {
+      "kind": "topic",
+      "id": "life-health"
+     },
+     {
+      "kind": "topic",
+      "id": "life-stuff"
+     },
+     {
+      "kind": "topic",
+      "id": "life-nature"
+     },
+     {
+      "kind": "topic",
       "id": "life-record"
      }
     ],
     "planned": [
-     "바쁨·휴식·명상",
-     "소유·수집·비우기",
-     "건강·운동·회복",
-     "자연 지향과 도시 편의"
+     "관계의 거리(혼자·함께)",
+     "도시 편의와 시간 아끼기"
     ]
    }
   ],
@@ -82559,6 +83760,11 @@
     "id": "shop",
     "label": "소비·쇼핑",
     "desc": "어디서, 무엇으로, 어떻게 갖고, 무엇에 먼저 쓰고, 무엇을 보고 고르나 — 다섯 가지를 따로 추적합니다."
+   },
+   {
+    "id": "city",
+    "label": "도시와 주거",
+    "desc": "어디에 사나와 어떻게 오가나를 따로 추적합니다."
    },
    {
     "id": "lifestyle",
@@ -88911,6 +90117,3529 @@
       "ids": [
        "tp-rec-pilsa",
        "tp-rec-2022"
+      ]
+     }
+    }
+   },
+   {
+    "id": "life-rest",
+    "domain": "lifestyle",
+    "label": "바쁨과 쉼 — 쉬는 것을 대하는 태도",
+    "tracks": "사람들이 '쉬는 것'을 어떻게 여기고 무엇으로 쉬었나: 아무것도 하지 않기, 작은 행복, 일과 삶의 균형, 그리고 아끼며 버티기.",
+    "question": "'아무것도 안 하기' 대회에 57대 1의 경쟁이 붙는 사회에서, 사람들은 쉬는 것을 어떻게 다시 배우고 있나?",
+    "scene": {
+     "layer": "fact",
+     "text": "2025년 한강 멍때리기 대회는 57대 1의 경쟁을 거쳐 80팀을 뽑았다. 90분 동안 휴대전화를 보면 탈락한다.",
+     "ids": [
+      "tl-mung25",
+      "tl-mung"
+     ]
+    },
+    "span": [
+     2014,
+     2025
+    ],
+    "scope": [
+     {
+      "layer": "inference",
+      "text": "트렌드 키워드(욜로·소확행)는 연구소의 해석이라 실제로 얼마나 많은 사람이 그렇게 살았는지 보여 주지 않는다. 키워드는 '당시 무엇이 이야기됐나'로만 읽는다.",
+      "ids": [
+       "tl-yolo"
+      ]
+     }
+    ],
+    "turns": [
+     {
+      "id": "t1",
+      "years": "2014~2016",
+      "start": 2014,
+      "end": 2014,
+      "title": "아무것도 안 하기를 대회로 — 멍때리기",
+      "why": {
+       "layer": "fact",
+       "text": "2014년 '아무것도 하지 않는 것은 무가치하다'는 통념을 깨려는 대회가 서울광장에서 처음 열렸다.",
+       "ids": [
+        "tl-mung"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "쉬는 시간에도 휴대전화로 무언가를 하는 것이 보통이 됐다.",
+        "ids": [
+         "tl-mung"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "스마트폰이 생활 전체로 들어왔다(2010년대 초).",
+        "ids": [
+         "c00-kr-iphone"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "90분 동안 말·행동 없이, 휴대전화를 보지 않는 대회가 열렸다.",
+        "ids": [
+         "tl-mung"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "2016년부터 한강으로 옮겨 서울시 대표 행사가 됐다.",
+        "ids": [
+         "tl-mung"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "'쉼'이 저절로 오는 것이 아니라 일부러 연습하고 보여 주는 것이 됐다.",
+        "ids": [
+         "tl-mung"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t2",
+      "years": "2017~2018",
+      "start": 2017,
+      "end": 2017,
+      "title": "욜로에서 소확행·워라밸로",
+      "why": {
+       "layer": "source",
+       "text": "트렌드 코리아는 2017년 '욜로', 2018년 '워라밸'·'소확행'을 꼽았다.",
+       "ids": [
+        "tl-yolo"
+       ]
+      },
+      "before": [
+       {
+        "layer": "source",
+        "text": "'한 번 사는 인생'을 즐기자는 욜로가 이야기됐다.",
+        "ids": [
+         "tl-yolo"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "2018년 주 최대 근로시간이 52시간으로 줄었다.",
+        "ids": [
+         "c10-52h"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "source",
+        "text": "젊은 직장인이 일과 삶의 균형을 직장 선택의 기준으로 삼는다는 전망.",
+        "ids": [
+         "tl-yolo"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "inference",
+        "text": "쉼의 크기가 '큰 한 번(여행·지출)'에서 '작은 여러 번(퇴근 뒤·주말의 작은 행복)'으로 바뀌었다.",
+        "ids": [
+         "tl-yolo"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "작은 행복도 돈이 드는데, 물가가 오르자 다음 전환점이 왔다.",
+        "ids": [
+         "tl-nospend"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t3",
+      "years": "2022~2023",
+      "start": 2022,
+      "end": 2022,
+      "title": "쉬는 대신 아끼며 버티기 — 무지출 챌린지와 거지방",
+      "why": {
+       "layer": "fact",
+       "text": "2022년 6월 물가가 6.0% 올라 24년 만에 최고가 되던 때 20·30세대에 '무지출 챌린지'가 퍼졌다.",
+       "ids": [
+        "tl-nospend"
+       ]
+      },
+      "before": [
+       {
+        "layer": "source",
+        "text": "소확행·욜로처럼 쓰면서 쉬는 방식.",
+        "ids": [
+         "tl-yolo"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "고물가.",
+        "ids": [
+         "tl-nospend",
+         "c20-kr-cpi"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "2023년 오픈채팅 '거지방'에서 소비를 공개하고 서로 절약을 독려했다.",
+        "ids": [
+         "tl-geojibang"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "2024년 기사는 둘을 '짧게 유행했다 사라진' 현상으로 불렀다.",
+        "ids": [
+         "tl-geojibang"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "지출을 줄이는 놀이는 오래가지 못했지만, 돈이 덜 드는 쉼(걷기·달리기·멍때리기)에 관심이 옮겨 갈 조건이 됐다고 본다.",
+        "ids": [
+         "tl-geojibang",
+         "tl-run-survey"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t4",
+      "years": "2024~2025",
+      "start": 2024,
+      "end": 2024,
+      "title": "돈이 덜 드는 쉼 — 멍때리기 경쟁률과 달리기",
+      "why": {
+       "layer": "fact",
+       "text": "2025년 멍때리기 대회는 57대 1, 2024년 러닝 참여는 1년 새 0.5%에서 6.8%로 늘었다.",
+       "ids": [
+        "tl-mung25",
+        "tl-run-survey"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "아끼기 유행이 짧게 끝났다.",
+        "ids": [
+         "tl-geojibang"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "inference",
+        "text": "장비·장소 부담이 적은 쉼에 관심이 쏠렸다.",
+        "ids": [
+         "tl-run-market"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "멍때리기 대회에 10대부터 60대까지, 구급대원·기관사 등이 참가했다.",
+        "ids": [
+         "tl-mung25"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "러닝은 2024년 생활체육 조사에서 가장 가파르게 는 운동이었다.",
+        "ids": [
+         "tl-run-survey"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "쉼이 '소비'에서 '활동·상태'로 옮겨 가는 중이지만, 러닝화처럼 그 활동도 곧 소비로 이어진다(몸 관리 주제와 만나는 지점).",
+        "ids": [
+         "tl-run-market"
+        ]
+       }
+      ]
+     }
+    ],
+    "branches": {
+     "intro": "한 줄은 한 가지 쉬는 방식입니다. 하나가 다른 것을 대신했는지, 함께 남았는지 표시했습니다.",
+     "lanes": [
+      {
+       "label": "크게 쓰며 쉬기(욜로)",
+       "start": 2017,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "source",
+        "text": "2018년 소확행·워라밸로 이야기의 중심이 옮겨 갔다.",
+        "ids": [
+         "tl-yolo"
+        ]
+       }
+      },
+      {
+       "label": "작은 행복(소확행)",
+       "start": 2018,
+       "end": null,
+       "state": "공존",
+       "note": {
+        "layer": "source",
+        "text": "작은 지출로 쉬는 방식은 이후에도 이어졌다.",
+        "ids": [
+         "tl-yolo"
+        ]
+       }
+      },
+      {
+       "label": "아무것도 안 하기(멍때리기)",
+       "start": 2014,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "2025년 57대 1.",
+        "ids": [
+         "tl-mung25"
+        ]
+       }
+      },
+      {
+       "label": "아끼며 버티기(무지출·거지방)",
+       "start": 2022,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "fact",
+        "text": "짧게 유행했다 사라졌다는 평가.",
+        "ids": [
+         "tl-geojibang"
+        ]
+       }
+      },
+      {
+       "label": "움직이며 쉬기(달리기)",
+       "start": 2023,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "러닝 참여 0.5% → 6.8%.",
+        "ids": [
+         "tl-run-survey"
+        ]
+       }
+      }
+     ],
+     "read": {
+      "layer": "inference",
+      "text": "쉬는 방식은 한 방향으로 옮겨 가지 않았다. 돈을 쓰는 쉼과 아끼는 쉼이 경기에 따라 번갈아 이야기됐고, 그 사이 '아무것도 안 하기'와 '움직이기'처럼 돈이 덜 드는 쉼이 꾸준히 넓어졌다.",
+      "ids": [
+       "tl-yolo",
+       "tl-geojibang",
+       "tl-mung25"
+      ]
+     }
+    },
+    "reasons": [
+     {
+      "title": "왜 '아무것도 안 하기'에 경쟁이 붙나",
+      "facts": [
+       {
+        "layer": "fact",
+        "text": "2014년 시작, 2025년 57대 1.",
+        "ids": [
+         "tl-mung",
+         "tl-mung25"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "휴대전화를 보면 탈락한다.",
+        "ids": [
+         "tl-mung"
+        ]
+       }
+      ],
+      "logic": {
+       "layer": "inference",
+       "text": "쉬는 시간에도 휴대전화가 주의를 가져가면, 일부러 끊는 경험이 드물어지고 그 드문 경험이 행사가 된다.",
+       "ids": [
+        "tl-mung",
+        "c00-kr-iphone"
+       ]
+      },
+      "proposal": {
+       "layer": "inference",
+       "text": "멍때리기의 인기는 쉼 자체보다 '주의력을 되찾는 경험'에 대한 수요로 본다.",
+       "ids": [
+        "tl-mung"
+       ]
+      },
+      "rivals": [
+       {
+        "layer": "inference",
+        "text": "행사 설명 — 유명인 참가와 이색 행사로서의 재미가 경쟁률을 만들었을 수 있다.",
+        "ids": [
+         "tl-mung"
+        ]
+       },
+       {
+        "layer": "inference",
+        "text": "홍보 설명 — 서울시 대표 행사로 알려지며 참가 신청이 늘었을 수 있다.",
+        "ids": [
+         "tl-mung25"
+        ]
+       }
+      ],
+      "scope": {
+       "layer": "inference",
+       "text": "2014년 이후 도시 거주자, 10~60대 다양한 직업. 전국 단위 휴식 방식 조사와는 다르다.",
+       "ids": [
+        "tl-mung25"
+       ]
+      },
+      "check": [
+       {
+        "layer": "hypothesis",
+        "text": "확인 쪽: 디지털 디톡스 상품·서비스 이용이 함께 늘었는지 — 아직 자료를 연결하지 않았다.",
+        "ids": []
+       }
+      ]
+     }
+    ],
+    "links": [
+     {
+      "kind": "flow",
+      "target": "flow-time",
+      "at": "2004·2018",
+      "why": "주5일제와 주52시간이 쉬는 시간의 양을 정했다 — 시간의 양은 생활시간 흐름에서 본다."
+     },
+     {
+      "kind": "topic",
+      "target": "life-health",
+      "at": "2024~",
+      "why": "달리기는 쉼이자 몸 관리 — 몸 관리 주제에서 이어 본다."
+     }
+    ],
+    "futures": {
+     "split": {
+      "layer": "inference",
+      "text": "갈라지는 이유는 경기다. 물가가 안정되면 '쓰며 쉬기'가, 다시 오르면 '아끼며 버티기'가 돌아올 수 있다. 그 사이 돈이 덜 드는 쉼은 어느 쪽에서도 남는다.",
+      "ids": [
+       "tl-nospend",
+       "tl-geojibang"
+      ]
+     },
+     "items": [
+      {
+       "kind": "계속",
+       "name": "돈이 덜 드는 쉼이 넓어진다",
+       "change": {
+        "layer": "inference",
+        "text": "멍때리기·걷기·달리기처럼 장비와 비용이 적은 쉼이 계속 늘어난다.",
+        "ids": [
+         "tl-mung25",
+         "tl-run-survey"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "대회 경쟁률과 러닝 참여 증가.",
+         "ids": [
+          "tl-mung25",
+          "tl-run-survey"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "경기와 상관없이 할 수 있어 유행이 덜 흔들린다.",
+        "ids": [
+         "tl-run-survey"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "도시 공원·한강 같은 공공 공간이 유지되어야 한다.",
+        "ids": [
+         "tl-mung"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "공공 공간 행사, 걷기·달리기 코스, 휴대전화를 내려놓게 돕는 서비스.",
+        "ids": [
+         "tl-mung"
+        ]
+       },
+       "watch": [
+        "멍때리기 대회 경쟁률",
+        "생활체육 조사의 걷기·달리기 참여율"
+       ],
+       "against": [
+        "참여율이 다시 줄면 일시 유행"
+       ]
+      },
+      {
+       "kind": "반작용",
+       "name": "다시 '쓰며 쉬기'로",
+       "change": {
+        "layer": "inference",
+        "text": "물가가 안정되면 여행·호캉스 같은 '큰 쉼' 지출이 다시 는다.",
+        "ids": [
+         "tl-yolo"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "source",
+         "text": "2017년 욜로처럼 쓰며 쉬는 방식이 이야기된 시기가 있었다.",
+         "ids": [
+          "tl-yolo"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "아끼기 유행이 짧게 끝났다는 것은 참고 버티기가 오래 가기 어렵다는 뜻이다.",
+        "ids": [
+         "tl-geojibang"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "실질소득이 늘어야 한다.",
+        "ids": [
+         "tl-nospend"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "여행·숙박·경험 상품.",
+        "ids": [
+         "tl-yolo"
+        ]
+       },
+       "watch": [
+        "여행·숙박 지출",
+        "물가 상승률"
+       ],
+       "against": [
+        "물가가 다시 오르면 아끼기 쪽으로"
+       ]
+      }
+     ]
+    },
+    "conclusion": {
+     "key": {
+      "layer": "inference",
+      "text": "쉼은 '쓰며 쉬기'와 '아끼며 버티기' 사이를 경기에 따라 오갔지만, 그 밑에서 꾸준히 넓어진 것은 휴대전화를 내려놓거나 몸을 움직이는 '돈이 덜 드는 쉼'이다.",
+      "ids": [
+       "tl-yolo",
+       "tl-geojibang",
+       "tl-mung25"
+      ]
+     },
+     "favored": {
+      "layer": "inference",
+      "text": "'쉼의 소비화'보다 '주의력 되찾기' 해석을 조금 더 지지한다. 근거: 가장 오래 이어진 사례가 휴대전화를 금지하는 대회다.",
+      "ids": [
+       "tl-mung"
+      ]
+     },
+     "undecided": {
+      "layer": "inference",
+      "text": "전국 단위로 사람들이 실제로 어떻게 쉬는지(시간 사용) 자료를 연결하지 않아 크기는 판단할 수 없다.",
+      "ids": [
+       "tl-mung"
+      ]
+     },
+     "next": {
+      "layer": "inference",
+      "text": "달리기 붐이 이어지는지.",
+      "ids": [
+       "tl-run-survey"
+      ]
+     },
+     "change": {
+      "layer": "inference",
+      "text": "러닝 참여와 대회 경쟁률이 함께 줄면 '일시 유행'으로 고친다.",
+      "ids": [
+       "tl-run-survey",
+       "tl-mung25"
+      ]
+     }
+    }
+   },
+   {
+    "id": "life-health",
+    "domain": "lifestyle",
+    "label": "몸 관리 — 운동과 먹는 것",
+    "tracks": "사람들이 몸을 관리하려고 하는 운동·옷·식단: 요가·필라테스와 애슬레저, 홈트, 달리기, 저속노화 식단.",
+    "question": "마라탕·탕후루를 찾던 20대가 왜 잡곡밥을 인증하고 1,000만 명이 달리게 됐나?",
+    "scene": {
+     "layer": "fact",
+     "text": "2024년 러닝을 해 봤다는 응답은 1년 새 0.5%에서 6.8%로 늘었고, 편의점 잡곡 매출은 3년 연속 증가율이 높아졌다.",
+     "ids": [
+      "tl-run-survey",
+      "tl-slow"
+     ]
+    },
+    "span": [
+     2016,
+     2025
+    ],
+    "scope": [
+     {
+      "layer": "inference",
+      "text": "러닝 인구 1,000만 명은 업계 추산이다. 공식 조사(생활체육 조사)는 비율로만 적었다.",
+      "ids": [
+       "tl-run-market",
+       "tl-run-survey"
+      ]
+     },
+     {
+      "layer": "inference",
+      "text": "건강 상태를 바꿨는지는 다루지 않는다. 사람들이 무엇을 하고 사는지만 따라간다.",
+      "ids": [
+       "tl-slow-why"
+      ]
+     }
+    ],
+    "turns": [
+     {
+      "id": "t1",
+      "years": "2016~2020",
+      "start": 2016,
+      "end": 2016,
+      "title": "운동복이 일상복이 되다 — 요가·필라테스·레깅스",
+      "why": {
+       "layer": "fact",
+       "text": "레깅스 시장이 2016년 6,386억 원에서 2020년 7,620억 원, 애슬레저는 1조 5천억 원에서 3조 원(추산)이 됐다.",
+       "ids": [
+        "ts-f-leggings"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "운동은 헬스장·등산 같은 특정 장소의 일이었다.",
+        "ids": [
+         "ts-f-leggings-why"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "source",
+        "text": "요가·필라테스 대중화.",
+        "ids": [
+         "ts-f-leggings-why"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "애슬레저 브랜드 매출이 크게 늘었다.",
+        "ids": [
+         "ts-f-leggings"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "source",
+        "text": "레깅스가 운동할 때만이 아니라 평소에 입는 옷이 됐다는 업계 분석.",
+        "ids": [
+         "ts-f-leggings-why"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "운동하는 몸이 일상에서 보이는 것이 됐다.",
+        "ids": [
+         "ts-f-leggings"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t2",
+      "years": "2020~2022",
+      "start": 2020,
+      "end": 2020,
+      "title": "집에서 하는 운동 — 홈트",
+      "why": {
+       "layer": "source",
+       "text": "업계는 코로나19 이후 홈트레이닝과 '원 마일 웨어'를 애슬레저 성장 요인으로 들었다.",
+       "ids": [
+        "ts-f-leggings-why"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "요가·필라테스·애슬레저.",
+        "ids": [
+         "ts-f-leggings"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "거리두기로 시설 이용이 막혔다(2022년 4월 해제).",
+        "ids": [
+         "c2020-endsd"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "source",
+        "text": "홈트레이닝 확산.",
+        "ids": [
+         "ts-f-leggings-why"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "inference",
+        "text": "운동이 '어디에 가서'에서 '어디서든'으로 바뀌었다.",
+        "ids": [
+         "ts-f-leggings-why"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "해제 뒤 사람들은 다시 밖에서, 함께 움직이는 운동을 찾았다.",
+        "ids": [
+         "tl-run-survey"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t3",
+      "years": "2023~2025",
+      "start": 2023,
+      "end": 2023,
+      "title": "달리기와 러닝크루",
+      "why": {
+       "layer": "fact",
+       "text": "2024년 생활체육 조사에서 러닝이 가장 가파르게 늘었다(0.5% → 6.8%).",
+       "ids": [
+        "tl-run-survey"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "집 안 운동.",
+        "ids": [
+         "ts-f-leggings-why"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "inference",
+        "text": "장소·장비 부담이 적고 함께 뛰는 모임이 쉽게 만들어졌다.",
+        "ids": [
+         "tl-run-market"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "러닝화 시장 1조 원 이상(업계), 2024년 백화점 러닝화 매출 30% 이상 증가.",
+        "ids": [
+         "tl-run-market"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "현대백화점에서 골프 매출은 줄고 러닝은 35% 늘었다(2022 → 2024).",
+        "ids": [
+         "tl-run-golf"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "걷기·등산·수영 참여율은 떨어졌다.",
+        "ids": [
+         "tl-run-survey"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "값비싼 운동(골프)에서 싼 운동(달리기)으로 옮겨 갔지만, 그 안에서 고급 러닝화 경쟁이 새로 생겼다.",
+        "ids": [
+         "tl-run-golf",
+         "tl-run-market"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t4",
+      "years": "2022~2025",
+      "start": 2024,
+      "end": 2024,
+      "title": "먹는 것으로 — 저속노화 식단",
+      "why": {
+       "layer": "fact",
+       "text": "GS25 잡곡 매출 증가율이 2022년 15.4% → 2024년 25.9%, 무설탕 브랜드가 누적 1,000억 원.",
+       "ids": [
+        "tl-slow"
+       ]
+      },
+      "before": [
+       {
+        "layer": "source",
+        "text": "마라탕·탕후루 같은 자극적인 음식이 유행했다.",
+        "ids": [
+         "tl-slow-why"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "source",
+        "text": "젊은 층의 만성질환 증가를 경고하는 전문의의 메시지가 퍼졌다.",
+        "ids": [
+         "tl-slow-why"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "source",
+        "text": "SNS에 저속노화 식단을 인증하는 유행.",
+        "ids": [
+         "tl-slow-why"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "잡곡·무설탕 상품 매출 증가.",
+        "ids": [
+         "tl-slow"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "몸 관리가 운동(움직이기)에서 식단(먹기)까지 넓어졌다. 둘 다 SNS 인증과 함께 퍼졌다는 공통점이 있다.",
+        "ids": [
+         "tl-slow-why",
+         "tl-run-market"
+        ]
+       }
+      ]
+     }
+    ],
+    "branches": {
+     "intro": "한 줄은 한 가지 몸 관리 방식입니다.",
+     "lanes": [
+      {
+       "label": "요가·필라테스·애슬레저",
+       "start": 2016,
+       "end": null,
+       "state": "공존",
+       "note": {
+        "layer": "fact",
+        "text": "레깅스·애슬레저 시장 성장.",
+        "ids": [
+         "ts-f-leggings"
+        ]
+       }
+      },
+      {
+       "label": "홈트",
+       "start": 2020,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "inference",
+        "text": "거리두기 해제 뒤 밖으로.",
+        "ids": [
+         "c2020-endsd"
+        ]
+       }
+      },
+      {
+       "label": "골프",
+       "start": 2020,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "fact",
+        "text": "백화점 골프 매출 감소(2022 → 2024).",
+        "ids": [
+         "tl-run-golf"
+        ]
+       }
+      },
+      {
+       "label": "달리기",
+       "start": 2023,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "러닝 참여 0.5% → 6.8%.",
+        "ids": [
+         "tl-run-survey"
+        ]
+       }
+      },
+      {
+       "label": "걷기·등산·수영",
+       "start": 2023,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "fact",
+        "text": "참여율 하락(2024).",
+        "ids": [
+         "tl-run-survey"
+        ]
+       }
+      },
+      {
+       "label": "저속노화 식단",
+       "start": 2024,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "잡곡·무설탕 매출 증가.",
+        "ids": [
+         "tl-slow"
+        ]
+       }
+      }
+     ],
+     "read": {
+      "layer": "inference",
+      "text": "값비싸고 장소가 정해진 운동은 줄고, 싸고 어디서나 할 수 있으며 SNS로 인증하기 쉬운 몸 관리가 늘었다.",
+      "ids": [
+       "tl-run-golf",
+       "tl-run-survey",
+       "tl-slow"
+      ]
+     }
+    },
+    "reasons": [
+     {
+      "title": "왜 달리기인가",
+      "facts": [
+       {
+        "layer": "fact",
+        "text": "러닝 참여 급증, 걷기·등산·수영 감소.",
+        "ids": [
+         "tl-run-survey"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "골프 매출 감소, 러닝 35% 증가.",
+        "ids": [
+         "tl-run-golf"
+        ]
+       }
+      ],
+      "logic": {
+       "layer": "inference",
+       "text": "달리기는 장비(신발)만 있으면 되고 시간·장소를 고를 수 있으며 크루로 함께 할 수 있다. 고물가·짧아진 여가 속에서 가장 조건이 맞는 운동이다.",
+       "ids": [
+        "tl-run-market",
+        "tl-nospend"
+       ]
+      },
+      "proposal": {
+       "layer": "inference",
+       "text": "달리기 붐은 '건강 관심'보다 '조건에 맞는 운동'으로의 이동으로 본다.",
+       "ids": [
+        "tl-run-survey"
+       ]
+      },
+      "rivals": [
+       {
+        "layer": "inference",
+        "text": "유행 설명 — SNS 인증·인플루언서가 만든 유행일 수 있다.",
+        "ids": [
+         "tl-run-market"
+        ]
+       },
+       {
+        "layer": "inference",
+        "text": "관계 설명 — 러닝크루가 모임의 한 형태(관심사 모임)로 퍼졌을 수 있다.",
+        "ids": [
+         "ts-r-somoim"
+        ]
+       }
+      ],
+      "scope": {
+       "layer": "inference",
+       "text": "2023~2025년, 20~40대 도시 거주자 중심으로 본다.",
+       "ids": [
+        "tl-run-market"
+       ]
+      },
+      "check": [
+       {
+        "layer": "hypothesis",
+        "text": "반박 쪽: 2026년 생활체육 조사에서 러닝 참여가 꺾이면 유행 설명이 강해진다.",
+        "ids": []
+       }
+      ]
+     }
+    ],
+    "links": [
+     {
+      "kind": "flow",
+      "target": "taste-pants",
+      "at": "2016~",
+      "why": "레깅스·애슬레저는 바지 흐름과 만난다."
+     },
+     {
+      "kind": "flow",
+      "target": "taste-gather",
+      "at": "2022~",
+      "why": "러닝크루는 관심사 모임의 한 형태다."
+     }
+    ],
+    "futures": {
+     "split": {
+      "layer": "inference",
+      "text": "갈라지는 이유는 이 관리 방식이 습관이 되느냐, SNS 인증 유행으로 끝나느냐다.",
+      "ids": [
+       "tl-slow-why",
+       "tl-run-market"
+      ]
+     },
+     "items": [
+      {
+       "kind": "계속",
+       "name": "싸고 어디서나 하는 몸 관리가 굳는다",
+       "change": {
+        "layer": "inference",
+        "text": "달리기·잡곡 식단처럼 비용이 적은 관리가 생활 습관으로 남는다.",
+        "ids": [
+         "tl-run-survey",
+         "tl-slow"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "잡곡 매출 증가율이 3년 연속 올랐다.",
+         "ids": [
+          "tl-slow"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "유행이면 증가율이 한 번 튀고 꺾이는데, 해마다 높아졌다.",
+        "ids": [
+         "tl-slow"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "고물가가 이어져 비싼 운동·외식으로 돌아갈 유인이 적어야 한다.",
+        "ids": [
+         "tl-nospend"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "러닝화·기능성 옷, 잡곡·무설탕 식품.",
+        "ids": [
+         "tl-run-market",
+         "tl-slow"
+        ]
+       },
+       "watch": [
+        "생활체육 조사 러닝 참여율",
+        "잡곡·제로 상품 매출"
+       ],
+       "against": [
+        "참여율·매출이 함께 꺾이면"
+       ]
+      },
+      {
+       "kind": "분화",
+       "name": "장비 경쟁과 기본 관리로 갈라진다",
+       "change": {
+        "layer": "inference",
+        "text": "고급 러닝화·대회 참가 같은 '장비·기록 경쟁'과 가볍게 걷고 먹는 '기본 관리'로 나뉜다.",
+        "ids": [
+         "tl-run-market"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "러닝화 시장 1조 원 이상, 백화점 러닝화 매출 30% 이상 증가.",
+         "ids": [
+          "tl-run-market"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "싼 운동이 퍼지면 그 안에서 다시 구별 욕구가 생긴다(바지 흐름의 디테일 경쟁과 비슷하다).",
+        "ids": [
+         "tl-run-market"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "고급 장비 수요가 유지되어야 한다.",
+        "ids": [
+         "tl-run-market"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "카본 러닝화, 대회·기록 서비스.",
+        "ids": [
+         "tl-run-market"
+        ]
+       },
+       "watch": [
+        "러닝화 가격대별 판매"
+       ],
+       "against": [
+        "고급 러닝화 판매가 줄면"
+       ]
+      }
+     ]
+    },
+    "conclusion": {
+     "key": {
+      "layer": "inference",
+      "text": "몸 관리는 '비싼 곳에 가서 하는 운동'에서 '어디서나 싸게, 함께, 인증하며 하는 관리'로 옮겨 갔다. 달리기와 저속노화 식단은 같은 조건(고물가·SNS)에서 함께 퍼졌다.",
+      "ids": [
+       "tl-run-golf",
+       "tl-run-survey",
+       "tl-slow"
+      ]
+     },
+     "favored": {
+      "layer": "inference",
+      "text": "'건강 열풍'보다 '조건에 맞는 관리로의 이동' 해석을 지지한다.",
+      "ids": [
+       "tl-run-survey",
+       "tl-nospend"
+      ]
+     },
+     "undecided": {
+      "layer": "inference",
+      "text": "러닝 인구 1,000만은 업계 추산이라 실제 규모는 판단할 수 없다.",
+      "ids": [
+       "tl-run-market"
+      ]
+     },
+     "next": {
+      "layer": "inference",
+      "text": "다음 생활체육 조사의 러닝 참여율.",
+      "ids": [
+       "tl-run-survey"
+      ]
+     },
+     "change": {
+      "layer": "inference",
+      "text": "러닝 참여가 줄고 골프가 다시 늘면 '조건' 설명을 고친다.",
+      "ids": [
+       "tl-run-golf"
+      ]
+     }
+    }
+   },
+   {
+    "id": "life-stuff",
+    "domain": "lifestyle",
+    "label": "물건과 공간 — 비우기, 맡기기, 되팔기, 덜 사기",
+    "tracks": "좁은 집에서 물건을 다루는 방식: 비우기(미니멀), 집 밖에 맡기기(셀프스토리지), 되팔기(중고), 덜 사기(무지출).",
+    "question": "집은 좁아지는데 물건은 줄지 않을 때, 사람들은 무엇을 버리고 어디에 맡기나?",
+    "scene": {
+     "layer": "fact",
+     "text": "2016년 강남의 창고 하나로 시작한 셀프스토리지는 2026년 220호점, 회원 11만 5천 명이 됐다. 이용자의 46%가 1인 가구였다.",
+     "ids": [
+      "tl-storage"
+     ]
+    },
+    "span": [
+     2016,
+     2026
+    ],
+    "scope": [
+     {
+      "layer": "inference",
+      "text": "셀프스토리지 규모는 대표 업체 한 곳의 숫자다. 시장 전체 통계는 연결하지 않았다.",
+      "ids": [
+       "tl-storage"
+      ]
+     }
+    ],
+    "turns": [
+     {
+      "id": "t1",
+      "years": "2016~2017",
+      "start": 2016,
+      "end": 2016,
+      "title": "비우기 — 미니멀 라이프",
+      "why": {
+       "layer": "fact",
+       "text": "2016~2017년 물건을 비우는 미니멀 체험기와 도서관 추천이 퍼졌다.",
+       "ids": [
+        "ts-h-minimal"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "혼수로 한 번에 장만하던 시대의 많은 살림.",
+        "ids": [
+         "ts-h-2004"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "1인 가구가 2015년 가장 흔한 가구가 됐다.",
+        "ids": [
+         "c10-1person"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "물건을 비우고 중고서점·기증으로 처분하는 체험이 소개됐다.",
+        "ids": [
+         "ts-h-minimal"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "inference",
+        "text": "'적게 갖기'가 하나의 생활 기준으로 이야기됐다.",
+        "ids": [
+         "ts-h-minimal"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "하지만 버리기 어려운 물건(계절용품·취미 장비)은 남았다.",
+        "ids": [
+         "tl-storage"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t2",
+      "years": "2016~2026",
+      "start": 2016,
+      "end": 2016,
+      "title": "맡기기 — 셀프스토리지",
+      "why": {
+       "layer": "fact",
+       "text": "다락이 2016년 1호점에서 2026년 220호점이 됐다.",
+       "ids": [
+        "tl-storage"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "버리기 어려운 물건이 좁은 집을 차지했다.",
+        "ids": [
+         "ts-h-minimal"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "1인 가구 증가.",
+        "ids": [
+         "c10-1person"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "1인 가구가 이용자의 46%, 20~40대가 주 수요층.",
+        "ids": [
+         "tl-storage"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "누적 회원 11만 5천 명.",
+        "ids": [
+         "tl-storage"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "물건을 '버리기'와 '갖기' 사이에 '집 밖에 두기'라는 선택지가 생겼다.",
+        "ids": [
+         "tl-storage"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t3",
+      "years": "2020~2023",
+      "start": 2020,
+      "end": 2020,
+      "title": "되팔기 — 중고 거래의 일상화",
+      "why": {
+       "layer": "fact",
+       "text": "동네 중고거래 앱 가입자가 3,300만 명에 이르렀다(2023).",
+       "ids": [
+        "ts-h-carrot"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "쓰지 않는 물건은 버리거나 맡겼다.",
+        "ids": [
+         "tl-storage"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "source",
+        "text": "MZ세대가 중고거래를 '재밌는 쇼핑'으로 여긴다는 업계 설명(2020).",
+        "ids": [
+         "ts-x-used-fun"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "명품을 사고 1년 안에 되판 MZ 이용자가 절반을 넘었다는 보도(2023).",
+        "ids": [
+         "ts-x-resell"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "inference",
+        "text": "물건을 '살 때부터 되팔 것'을 생각하는 소비가 생겼다.",
+        "ids": [
+         "ts-x-resell"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "되팔기가 쉬워지자 사는 부담이 줄었지만, 물가가 오르자 아예 덜 사는 움직임도 생겼다.",
+        "ids": [
+         "tl-nospend"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t4",
+      "years": "2022~2024",
+      "start": 2022,
+      "end": 2022,
+      "title": "덜 사기 — 무지출 챌린지",
+      "why": {
+       "layer": "fact",
+       "text": "2022년 6월 물가 6.0% 속에 무지출 챌린지가 퍼졌다.",
+       "ids": [
+        "tl-nospend"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "되팔기를 전제로 한 소비.",
+        "ids": [
+         "ts-x-resell"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "고물가.",
+        "ids": [
+         "c20-kr-cpi"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "거지방에서 소비를 공개하고 서로 절약을 독려했다(2023).",
+        "ids": [
+         "tl-geojibang"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "2024년에는 '짧게 유행했다 사라진' 현상으로 불렸다.",
+        "ids": [
+         "tl-geojibang"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "덜 사기는 오래가지 못했고, 물건을 다루는 방식은 '비우기·맡기기·되팔기'가 함께 쓰이는 쪽으로 남았다.",
+        "ids": [
+         "tl-storage",
+         "ts-h-carrot"
+        ]
+       }
+      ]
+     }
+    ],
+    "branches": {
+     "intro": "한 줄은 물건을 다루는 한 방식입니다.",
+     "lanes": [
+      {
+       "label": "비우기(미니멀)",
+       "start": 2016,
+       "end": null,
+       "state": "공존",
+       "note": {
+        "layer": "fact",
+        "text": "체험기와 추천 도서.",
+        "ids": [
+         "ts-h-minimal"
+        ]
+       }
+      },
+      {
+       "label": "맡기기(셀프스토리지)",
+       "start": 2016,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "220호점(2026).",
+        "ids": [
+         "tl-storage"
+        ]
+       }
+      },
+      {
+       "label": "되팔기(중고)",
+       "start": 2020,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "가입자 3,300만 명.",
+        "ids": [
+         "ts-h-carrot"
+        ]
+       }
+      },
+      {
+       "label": "덜 사기(무지출)",
+       "start": 2022,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "fact",
+        "text": "짧게 유행.",
+        "ids": [
+         "tl-geojibang"
+        ]
+       }
+      }
+     ],
+     "read": {
+      "layer": "inference",
+      "text": "물건을 줄이는 방법은 하나로 정해지지 않고, 버리기·맡기기·되팔기가 함께 쓰인다. 오래가지 못한 것은 '아예 안 사기'다.",
+      "ids": [
+       "tl-storage",
+       "ts-h-carrot",
+       "tl-geojibang"
+      ]
+     }
+    },
+    "reasons": [
+     {
+      "title": "왜 비우기 유행 뒤에 창고 대여가 커졌나",
+      "facts": [
+       {
+        "layer": "fact",
+        "text": "미니멀 체험기 확산(2016~2017).",
+        "ids": [
+         "ts-h-minimal"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "셀프스토리지 2016년 1호점 → 2026년 220호점.",
+        "ids": [
+         "tl-storage"
+        ]
+       }
+      ],
+      "logic": {
+       "layer": "inference",
+       "text": "비우기는 '쓰지 않는 물건'만 해결한다. 계절용품·취미 장비처럼 가끔 쓰는 물건은 버릴 수 없어 집 밖에 둘 곳이 필요하다.",
+       "ids": [
+        "tl-storage"
+       ]
+      },
+      "proposal": {
+       "layer": "inference",
+       "text": "셀프스토리지는 미니멀리즘의 실패가 아니라 그 한계를 메우는 짝이라고 본다.",
+       "ids": [
+        "tl-storage",
+        "ts-h-minimal"
+       ]
+      },
+      "rivals": [
+       {
+        "layer": "inference",
+        "text": "집값 설명 — 넓은 집으로 옮기기 어려워 공간을 빌린다는 설명이 더 직접적일 수 있다.",
+        "ids": [
+         "tl-storage"
+        ]
+       },
+       {
+        "layer": "inference",
+        "text": "공급 설명 — 빈 상가를 활용하려는 건물주·창업자의 공급이 시장을 만들었을 수 있다.",
+        "ids": [
+         "tl-storage"
+        ]
+       }
+      ],
+      "scope": {
+       "layer": "inference",
+       "text": "2016년 이후 수도권 1인 가구·20~40대.",
+       "ids": [
+        "tl-storage"
+       ]
+      },
+      "check": [
+       {
+        "layer": "hypothesis",
+        "text": "확인 쪽: 이용자에게 '보관 품목'을 물은 조사가 있으면 계절용품·취미 장비 비중으로 확인할 수 있다.",
+        "ids": []
+       }
+      ]
+     }
+    ],
+    "repeats": [
+     {
+      "type": "반작용",
+      "title": "쓰기와 아끼기 — 2017년 욜로와 2022년 무지출",
+      "past": {
+       "layer": "source",
+       "text": "2017년: 한 번 사는 인생을 즐기자는 욜로가 이야기됐다.",
+       "ids": [
+        "tl-yolo"
+       ]
+      },
+      "now": {
+       "layer": "fact",
+       "text": "2022년: 물가 6.0% 속 하루 0원 지출 챌린지.",
+       "ids": [
+        "tl-nospend"
+       ]
+      },
+      "alike": {
+       "layer": "inference",
+       "text": "둘 다 20·30대의 '소비 태도'를 드러내는 말이지만, 방향은 정반대다.",
+       "ids": [
+        "tl-yolo",
+        "tl-nospend"
+       ]
+      },
+      "changed": {
+       "layer": "inference",
+       "text": "물가와 금리라는 조건이 바뀌었다. 과거 불편(돈 걱정)은 해결되지 않았다.",
+       "ids": [
+        "tl-nospend"
+       ]
+      },
+      "alternatives": [
+       {
+        "layer": "inference",
+        "text": "언론·트렌드 서적이 만든 이름일 뿐 실제 소비는 크게 바뀌지 않았을 수 있다.",
+        "ids": [
+         "tl-geojibang"
+        ]
+       }
+      ],
+      "counter": [
+       {
+        "layer": "fact",
+        "text": "무지출은 '짧게 유행했다 사라졌다' — 반작용이 오래 가지 않았다.",
+        "ids": [
+         "tl-geojibang"
+        ]
+       }
+      ],
+      "at": [
+       "t4"
+      ]
+     }
+    ],
+    "links": [
+     {
+      "kind": "topic",
+      "target": "shop-own",
+      "at": "2015~",
+      "why": "중고·대여·구독은 '어떻게 갖나' 주제에서 자세히 본다."
+     },
+     {
+      "kind": "flow",
+      "target": "taste-home",
+      "at": "2016~",
+      "why": "미니멀·북유럽 인테리어와 만난다."
+     }
+    ],
+    "futures": {
+     "split": {
+      "layer": "inference",
+      "text": "갈라지는 이유는 집의 크기와 물가다. 집이 계속 좁고 비싸면 맡기기·되팔기가 커지고, 물가가 다시 오르면 덜 사기가 돌아올 수 있다.",
+      "ids": [
+       "tl-storage",
+       "tl-nospend"
+      ]
+     },
+     "items": [
+      {
+       "kind": "계속",
+       "name": "집 밖에 두는 공간이 생활 서비스가 된다",
+       "change": {
+        "layer": "inference",
+        "text": "셀프스토리지가 택배 보관 같은 생활 편의 서비스로 넓어진다.",
+        "ids": [
+         "tl-storage"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "220호점·회원 11만 5천 명(2026).",
+         "ids": [
+          "tl-storage"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "작은 집에 사는 1인 가구가 늘수록 집 밖 공간 수요가 커진다.",
+        "ids": [
+         "c10-1person"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "1인 가구 증가와 높은 집값이 이어져야 한다.",
+        "ids": [
+         "tl-storage"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "동네 창고, 계절용품 보관, 택배 보관.",
+        "ids": [
+         "tl-storage"
+        ]
+       },
+       "watch": [
+        "셀프스토리지 지점 수"
+       ],
+       "against": [
+        "지점 수가 줄거나 공실이 생기면"
+       ]
+      },
+      {
+       "kind": "반작용",
+       "name": "다시 덜 사기로",
+       "change": {
+        "layer": "inference",
+        "text": "물가가 다시 오르면 지출을 줄이는 유행이 돌아온다.",
+        "ids": [
+         "tl-nospend"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "2022년 고물가에 무지출 챌린지.",
+         "ids": [
+          "tl-nospend"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "같은 조건이 오면 같은 반응이 나올 수 있다.",
+        "ids": [
+         "tl-nospend"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "물가 급등.",
+        "ids": [
+         "c20-kr-cpi"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "가계부 앱, 중고 거래.",
+        "ids": [
+         "ts-h-carrot"
+        ]
+       },
+       "watch": [
+        "소비자물가 상승률"
+       ],
+       "against": [
+        "물가 안정"
+       ]
+      }
+     ]
+    },
+    "conclusion": {
+     "key": {
+      "layer": "inference",
+      "text": "좁은 집에서 사람들은 물건을 하나의 방법으로 줄이지 않았다. 비우고, 맡기고, 되팔았고, '아예 안 사기'만 오래가지 못했다.",
+      "ids": [
+       "ts-h-minimal",
+       "tl-storage",
+       "ts-h-carrot",
+       "tl-geojibang"
+      ]
+     },
+     "favored": {
+      "layer": "inference",
+      "text": "'미니멀 열풍'보다 '물건을 다루는 선택지의 다양화' 해석을 지지한다.",
+      "ids": [
+       "tl-storage",
+       "ts-h-carrot"
+      ]
+     },
+     "undecided": {
+      "layer": "inference",
+      "text": "셀프스토리지 시장 전체 규모는 판단할 수 없다(업체 한 곳 자료).",
+      "ids": [
+       "tl-storage"
+      ]
+     },
+     "next": {
+      "layer": "inference",
+      "text": "셀프스토리지 지점 증가가 이어지는지.",
+      "ids": [
+       "tl-storage"
+      ]
+     },
+     "change": {
+      "layer": "inference",
+      "text": "중고 거래 이용자가 줄고 신품 구매가 늘면 판단을 고친다.",
+      "ids": [
+       "ts-h-carrot"
+      ]
+     }
+    }
+   },
+   {
+    "id": "life-nature",
+    "domain": "lifestyle",
+    "label": "자연으로 — 캠핑 붐과 그 뒤",
+    "tracks": "도시 사람이 자연에서 쉬는 방식: 캠핑·차박·캠크닉(도심 근교 피크닉형 캠핑), 그리고 그 장비와 장소.",
+    "question": "'국민 취미'가 됐던 캠핑은 왜 1년 만에 이용자가 88만 명 줄었나?",
+    "scene": {
+     "layer": "fact",
+     "text": "캠핑 이용자는 2023년 634만 명을 정점으로 1년 만에 546만 명(−13.9%)이 됐고, 웃돈 주던 텐트가 헐값에도 안 팔린다는 보도가 나왔다.",
+     "ids": [
+      "tl-camp-fall"
+     ]
+    },
+    "span": [
+     2019,
+     2025
+    ],
+    "scope": [
+     {
+      "layer": "inference",
+      "text": "'캠핑 인구 700만'은 업계 추정이고, 이 주제는 한국관광공사 실태조사 숫자를 우선한다.",
+      "ids": [
+       "tl-camp-fall"
+      ]
+     }
+    ],
+    "turns": [
+     {
+      "id": "t1",
+      "years": "2020",
+      "start": 2020,
+      "end": 2020,
+      "title": "코로나 캠핑 붐",
+      "why": {
+       "layer": "fact",
+       "text": "2020년 캠핑 산업이 90.1%, 이용자가 34.0% 늘었다.",
+       "ids": [
+        "tl-camp20"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "캠핑은 일부 마니아·동호회의 취미였다.",
+        "ids": [
+         "tl-camp20"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "거리두기와 해외여행 제한.",
+        "ids": [
+         "c2020-endsd"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "야영장이 2019년 2,367개에서 늘기 시작했다.",
+        "ids": [
+         "tl-campsite"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "산업 규모 거의 두 배.",
+        "ids": [
+         "tl-camp20"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "한꺼번에 장비를 산 초보 캠퍼가 많이 생겼다 — 이후 중고 장비 매물의 조건.",
+        "ids": [
+         "tl-camp-fall"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t2",
+      "years": "2021~2023",
+      "start": 2021,
+      "end": 2021,
+      "title": "전문화와 가벼워지기",
+      "why": {
+       "layer": "fact",
+       "text": "2021년 1회 지출액은 18% 늘고 장비 구입비는 9.9% 줄었다.",
+       "ids": [
+        "tl-camp21"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "붐.",
+        "ids": [
+         "tl-camp20"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "야영장 2023년 3,747개, 사상 최대.",
+        "ids": [
+         "tl-campsite"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "미니멀 캠핑·차박·캠크닉 수요가 늘었다.",
+        "ids": [
+         "tl-camp-mini"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "2023년 이용자 634만 명 정점.",
+        "ids": [
+         "tl-camp-mini",
+         "tl-camp-fall"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "공급(야영장)은 계속 늘었는데 수요는 정점에 닿았다.",
+        "ids": [
+         "tl-campsite",
+         "tl-camp-fall"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t3",
+      "years": "2023~2024",
+      "start": 2023,
+      "end": 2023,
+      "title": "꺾이다 — 이용자 감소와 중고 텐트",
+      "why": {
+       "layer": "fact",
+       "text": "이용자 634만 → 546만 명(−13.9%), 시장 −11.8%.",
+       "ids": [
+        "tl-camp-fall"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "야영장 사상 최대.",
+        "ids": [
+         "tl-campsite"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "거리두기 해제(2022)로 해외여행 등 다른 선택지가 돌아왔다.",
+        "ids": [
+         "c2020-endsd"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "웃돈 주던 텐트가 헐값에도 안 팔리고 매장이 문을 닫았다(2023).",
+        "ids": [
+         "tl-camp-fall"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "시장이 6조 원대 초반으로 줄었다.",
+        "ids": [
+         "tl-camp-fall"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "남은 캠퍼는 짧고 가벼운 형식(캠크닉·차박)으로 옮겨 가는 중이다.",
+        "ids": [
+         "tl-camp-mini"
+        ]
+       }
+      ]
+     }
+    ],
+    "branches": {
+     "intro": "한 줄은 자연에서 쉬는 한 방식입니다.",
+     "lanes": [
+      {
+       "label": "장비 많이 가져가는 캠핑",
+       "start": 2020,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "fact",
+        "text": "장비 구입비 감소, 중고 매물.",
+        "ids": [
+         "tl-camp21",
+         "tl-camp-fall"
+        ]
+       }
+      },
+      {
+       "label": "차박",
+       "start": 2021,
+       "end": null,
+       "state": "공존",
+       "note": {
+        "layer": "fact",
+        "text": "수요 증가 보도.",
+        "ids": [
+         "tl-camp-mini"
+        ]
+       }
+      },
+      {
+       "label": "캠크닉·미니멀 캠핑",
+       "start": 2022,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "짧고 간편한 형식.",
+        "ids": [
+         "tl-camp-mini"
+        ]
+       }
+      },
+      {
+       "label": "해외여행",
+       "start": 2022,
+       "end": null,
+       "state": "재등장",
+       "note": {
+        "layer": "inference",
+        "text": "거리두기 해제 뒤 다른 선택지로 돌아왔다.",
+        "ids": [
+         "c2020-endsd"
+        ]
+       }
+      }
+     ],
+     "read": {
+      "layer": "inference",
+      "text": "캠핑이 사라진 것이 아니라 '많이 싣고 가는 캠핑'이 줄고 짧고 가벼운 형식이 남았다.",
+      "ids": [
+       "tl-camp-mini",
+       "tl-camp-fall"
+      ]
+     }
+    },
+    "reasons": [
+     {
+      "title": "왜 1년 만에 88만 명이 줄었나",
+      "facts": [
+       {
+        "layer": "fact",
+        "text": "634만 → 546만 명.",
+        "ids": [
+         "tl-camp-fall"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "야영장은 2023년 사상 최대.",
+        "ids": [
+         "tl-campsite"
+        ]
+       }
+      ],
+      "logic": {
+       "layer": "inference",
+       "text": "코로나 시기 다른 선택지가 막혀 캠핑으로 왔던 사람들이, 선택지가 돌아오자 빠져나갔다.",
+       "ids": [
+        "tl-camp20",
+        "c2020-endsd"
+       ]
+      },
+      "proposal": {
+       "layer": "inference",
+       "text": "감소는 캠핑의 매력 하락보다 '대체 수요의 복귀'로 본다.",
+       "ids": [
+        "tl-camp-fall"
+       ]
+      },
+      "rivals": [
+       {
+        "layer": "inference",
+        "text": "경기 설명 — 고물가·고금리로 장비·여가 지출을 줄였을 수 있다.",
+        "ids": [
+         "tl-nospend"
+        ]
+       },
+       {
+        "layer": "inference",
+        "text": "공급 과잉 설명 — 야영장이 너무 늘어 경쟁이 심해졌을 수 있다(이용자 수 감소와는 다른 문제).",
+        "ids": [
+         "tl-campsite"
+        ]
+       }
+      ],
+      "scope": {
+       "layer": "inference",
+       "text": "2023~2024년, 코로나 시기 새로 들어온 초보 캠퍼 중심으로 본다.",
+       "ids": [
+        "tl-camp-fall"
+       ]
+      },
+      "check": [
+       {
+        "layer": "hypothesis",
+        "text": "확인 쪽: 캠핑 경력별 이용자 감소 자료가 있으면 '초보 이탈' 설명을 확인할 수 있다.",
+        "ids": []
+       }
+      ]
+     }
+    ],
+    "links": [
+     {
+      "kind": "flow",
+      "target": "flow-leisure",
+      "at": "2020~2022",
+      "why": "코로나 시기 여가의 이동은 여가 공간 흐름에서 본다."
+     },
+     {
+      "kind": "topic",
+      "target": "life-stuff",
+      "at": "2023~",
+      "why": "중고 캠핑 장비와 셀프스토리지(캠핑용품 보관)는 물건 주제와 만난다."
+     }
+    ],
+    "futures": {
+     "split": {
+      "layer": "inference",
+      "text": "갈라지는 이유는 남은 캠퍼가 '가벼운 형식'으로 안정되느냐, 감소가 이어지느냐다.",
+      "ids": [
+       "tl-camp-mini",
+       "tl-camp-fall"
+      ]
+     },
+     "items": [
+      {
+       "kind": "분화",
+       "name": "가볍고 짧은 자연 여가가 남는다",
+       "change": {
+        "layer": "inference",
+        "text": "차박·캠크닉 같은 짧은 형식이 남고 장비 중심 캠핑은 마니아로 돌아간다.",
+        "ids": [
+         "tl-camp-mini"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "미니멀 캠핑·캠크닉 수요 증가.",
+         "ids": [
+          "tl-camp-mini"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "시간·비용 부담이 적은 형식이 경기에 덜 흔들린다.",
+        "ids": [
+         "tl-camp-mini"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "도심 근교 장소가 유지되어야 한다.",
+        "ids": [
+         "tl-campsite"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "당일형 캠핑장, 장비 대여.",
+        "ids": [
+         "tl-camp-mini"
+        ]
+       },
+       "watch": [
+        "캠핑 이용자 수",
+        "1회 지출액"
+       ],
+       "against": [
+        "이용자가 계속 크게 줄면"
+       ]
+      },
+      {
+       "kind": "계속",
+       "name": "야영장 구조조정이 이어진다",
+       "change": {
+        "layer": "inference",
+        "text": "늘어난 야영장 일부가 문을 닫는다.",
+        "ids": [
+         "tl-camp-fall"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "야영장 사상 최대 뒤 이용자 감소.",
+         "ids": [
+          "tl-campsite",
+          "tl-camp-fall"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "공급이 수요 정점 뒤에도 늘어 과잉이 됐다.",
+        "ids": [
+         "tl-campsite"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "이용자 감소가 이어져야 한다.",
+        "ids": [
+         "tl-camp-fall"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "캠핑장 매각·용도 전환.",
+        "ids": [
+         "tl-camp-fall"
+        ]
+       },
+       "watch": [
+        "야영장 수"
+       ],
+       "against": [
+        "이용자 반등"
+       ]
+      }
+     ]
+    },
+    "conclusion": {
+     "key": {
+      "layer": "inference",
+      "text": "캠핑 붐은 코로나가 다른 여가를 막아 생긴 몫이 컸고, 막힌 것이 풀리자 그 몫이 빠졌다. 남은 것은 짧고 가벼운 자연 여가다.",
+      "ids": [
+       "tl-camp20",
+       "tl-camp-fall",
+       "tl-camp-mini"
+      ]
+     },
+     "favored": {
+      "layer": "inference",
+      "text": "'캠핑 몰락'보다 '대체 수요의 이탈 + 형식 축소' 해석을 지지한다.",
+      "ids": [
+       "tl-camp-fall",
+       "tl-camp-mini"
+      ]
+     },
+     "undecided": {
+      "layer": "inference",
+      "text": "2025년 이후 이용자가 바닥을 쳤는지는 판단할 수 없다.",
+      "ids": [
+       "tl-camp-fall"
+      ]
+     },
+     "next": {
+      "layer": "inference",
+      "text": "다음 실태조사의 이용자 수.",
+      "ids": [
+       "tl-camp-fall"
+      ]
+     },
+     "change": {
+      "layer": "inference",
+      "text": "이용자가 2019년 수준 아래로 떨어지면 '형식 축소'를 '쇠퇴'로 고친다.",
+      "ids": [
+       "tl-camp-fall"
+      ]
+     }
+    }
+   },
+   {
+    "id": "city-home",
+    "domain": "city",
+    "label": "어디에, 어떤 집에 사나 — 거주지와 주거 형태",
+    "tracks": "사람들이 사는 곳(농촌 → 서울 → 수도권 신도시)과 사는 집의 형태(단독·셋방 → 아파트, 큰 가구 → 1인 가구). 교통은 '어떻게 오가나' 주제에서 따로 본다.",
+    "question": "서울로 몰리던 사람들은 왜 서울 밖 아파트로 옮겨 갔고, 지금 가장 흔한 집은 왜 '혼자 사는 집'인가?",
+    "scene": {
+     "layer": "fact",
+     "text": "2018년 아파트에 사는 가구가 처음 절반을 넘었고, 2019년 수도권 인구가 처음 50%를 넘었다.",
+     "ids": [
+      "fl-city-apt",
+      "fl-city-capital"
+     ]
+    },
+    "span": [
+     1960,
+     2025
+    ],
+    "scope": [
+     {
+      "layer": "inference",
+      "text": "주거 형태별 가구 비중의 연도별 연속 자료는 연결하지 않아, 시점별 사실(1975년 집계 시작, 2018년 절반)만 적었다.",
+      "ids": [
+       "fl-city-apt"
+      ]
+     }
+    ],
+    "turns": [
+     {
+      "id": "t1",
+      "years": "1960~1988",
+      "start": 1960,
+      "end": 1960,
+      "title": "서울로 — 도시 인구 넷 중 하나에서 셋으로",
+      "why": {
+       "layer": "fact",
+       "text": "도시 인구 비율이 1960년 27.7%에서 1990년 74.0%로, 서울 인구가 245만에서 1988년 1천만 명이 됐다.",
+       "ids": [
+        "fl-city-urban",
+        "fl-city-seoulpop"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "1960년에는 도시 거주자가 넷 중 한 명꼴(27.7%)이었다.",
+        "ids": [
+         "fl-city-urban"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "inference",
+        "text": "일자리와 학교가 서울에 몰려 있었다.",
+        "ids": [
+         "fl-jobs-1963",
+         "fl-city-seoulpop"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "서울 인구가 1970년 543만, 1980년 836만 명으로 늘었다.",
+        "ids": [
+         "fl-city-seoulpop"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "1988년 서울 인구 1천만 명.",
+        "ids": [
+         "fl-city-seoulpop"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "fact",
+        "text": "더 개발할 땅이 부족한데 1988년 서울 집값이 24% 올랐다.",
+        "ids": [
+         "fl-city-newtown-why"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t2",
+      "years": "1988~1996",
+      "start": 1988,
+      "end": 1988,
+      "title": "주택 200만 호와 1기 신도시 — 서울 밖 아파트로",
+      "why": {
+       "layer": "fact",
+       "text": "1988년 주택 200만 호 계획, 1989~1996년 1기 신도시 29만 2천 호.",
+       "ids": [
+        "fl-city-newtown-why",
+        "fl-city-newtown"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "서울 집값 급등.",
+        "ids": [
+         "fl-city-newtown-why"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "3저 호황·올림픽 특수·베이비부머의 결혼이 겹쳤다.",
+        "ids": [
+         "fl-city-newtown-why"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "분당·일산 등에 약 117만 명이 입주했다.",
+        "ids": [
+         "fl-city-newtown"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "1991년 서울 집값이 하락세로 돌아섰고, 서울 인구는 1992년 정점을 찍었다.",
+        "ids": [
+         "fl-city-newtown",
+         "fl-city-seoulpop"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "'서울에 살기'가 '서울 밖 아파트에 살며 서울로 다니기'로 바뀌었다(교통 주제와 만나는 지점).",
+        "ids": [
+         "fl-city-newtown"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t3",
+      "years": "1996~2018",
+      "start": 2005,
+      "end": 2005,
+      "title": "아파트가 절반 — 집의 기본형이 되다",
+      "why": {
+       "layer": "fact",
+       "text": "2018년 아파트 거주 가구가 1975년 집계 이후 처음 절반을 넘었다.",
+       "ids": [
+        "fl-city-apt"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "신도시가 아파트 단지로 지어졌다.",
+        "ids": [
+         "fl-city-newtown"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "inference",
+        "text": "신도시·재건축으로 새로 짓는 집 대부분이 아파트였다.",
+        "ids": [
+         "fl-city-apt"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "1990년대 혼수는 '대형화·고급화' — 아파트 살림을 한 번에 장만했다.",
+        "ids": [
+         "ts-h-2004"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "2018년 아파트 거주 가구 절반 돌파.",
+        "ids": [
+         "fl-city-apt"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "fact",
+        "text": "같은 시기 가구는 작아지고 있었다(평균 가구원 2000년 3.1명 → 2020년 2.3명).",
+        "ids": [
+         "fl-fam-hh"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t4",
+      "years": "2015~2025",
+      "start": 2015,
+      "end": 2015,
+      "title": "혼자 사는 집, 그리고 커진 수도권",
+      "why": {
+       "layer": "fact",
+       "text": "2015년 1인 가구가 가장 흔한 가구가 됐고, 2019년 수도권 인구가 50%를 넘었다.",
+       "ids": [
+        "c10-1person",
+        "fl-city-capital"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "아파트와 4인 가구가 기본형이던 시대(1985~2005년 4인 가구가 가장 흔했다).",
+        "ids": [
+         "fl-fam-hh"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "혼인 감소.",
+        "ids": [
+         "fl-fam-marriage"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "1인 가구가 2019년 전체의 30.2%.",
+        "ids": [
+         "c10-1person"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "작은 집의 짐을 맡기는 셀프스토리지가 퍼졌다(이용자 46%가 1인 가구).",
+        "ids": [
+         "tl-storage"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "서울 인구는 2016년 1천만 아래로 줄고, 수도권은 2021년 50.4%.",
+        "ids": [
+         "fl-city-seoul-decline",
+         "fl-city-capital"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "'서울 집중'은 '수도권 집중'으로, '가족이 사는 아파트'는 '작은 집에 사는 1인 가구'와 함께 가는 구조로 바뀌었다.",
+        "ids": [
+         "fl-city-capital",
+         "c10-1person"
+        ]
+       }
+      ],
+      "gap": "지방 도시의 인구·주거 변화는 이 주제에 연결하지 않았다."
+     }
+    ],
+    "branches": {
+     "intro": "한 줄은 사는 곳·집의 한 형태입니다.",
+     "lanes": [
+      {
+       "label": "농촌",
+       "start": 1960,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "fact",
+        "text": "도시 인구 27.7% → 74.0%.",
+        "ids": [
+         "fl-city-urban"
+        ]
+       }
+      },
+      {
+       "label": "서울",
+       "start": 1960,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "fact",
+        "text": "1992년 정점 뒤 감소, 2016년 1천만 아래.",
+        "ids": [
+         "fl-city-seoul-decline"
+        ]
+       }
+      },
+      {
+       "label": "수도권 신도시 아파트",
+       "start": 1989,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "1기 신도시 29만 2천 호, 수도권 50% 돌파.",
+        "ids": [
+         "fl-city-newtown",
+         "fl-city-capital"
+        ]
+       }
+      },
+      {
+       "label": "아파트(전국)",
+       "start": 1975,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "2018년 절반.",
+        "ids": [
+         "fl-city-apt"
+        ]
+       }
+      },
+      {
+       "label": "1인 가구의 작은 집",
+       "start": 2015,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "2019년 30.2%.",
+        "ids": [
+         "c10-1person"
+        ]
+       }
+      }
+     ],
+     "read": {
+      "layer": "inference",
+      "text": "사는 곳은 '농촌 → 서울 → 수도권'으로, 집은 '아파트'로 한 방향으로 움직였다. 그 안에서 가구가 작아지며 '작은 집'이 새로 갈라져 나왔다.",
+      "ids": [
+       "fl-city-capital",
+       "fl-city-apt",
+       "c10-1person"
+      ]
+     }
+    },
+    "reasons": [
+     {
+      "title": "왜 서울 인구는 줄었는데 수도권은 커졌나",
+      "facts": [
+       {
+        "layer": "fact",
+        "text": "서울 1992년 정점 → 2016년 1천만 아래.",
+        "ids": [
+         "fl-city-seoul-decline"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "수도권 2019년 50% 돌파.",
+        "ids": [
+         "fl-city-capital"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "1기 신도시 29만 2천 호.",
+        "ids": [
+         "fl-city-newtown"
+        ]
+       }
+      ],
+      "logic": {
+       "layer": "inference",
+       "text": "서울에 땅이 부족해 새 집은 서울 밖에 지어졌고, 일자리는 서울에 남아 사람들은 서울 밖에 살며 서울로 다녔다.",
+       "ids": [
+        "fl-city-newtown-why",
+        "fl-city-newtown"
+       ]
+      },
+      "proposal": {
+       "layer": "inference",
+       "text": "서울 인구 감소는 '탈서울'이 아니라 '수도권 안에서의 이동'으로 본다.",
+       "ids": [
+        "fl-city-capital"
+       ]
+      },
+      "rivals": [
+       {
+        "layer": "source",
+        "text": "출산율 감소 설명 — 언론은 경기도 신도시와 함께 출산율 감소를 이유로 든다.",
+        "ids": [
+         "fl-city-seoul-decline"
+        ]
+       }
+      ],
+      "scope": {
+       "layer": "inference",
+       "text": "1990년대 이후 서울·경기. 지방은 다루지 않는다.",
+       "ids": [
+        "fl-city-capital"
+       ]
+      },
+      "check": [
+       {
+        "layer": "hypothesis",
+        "text": "확인 쪽: 서울에서 경기로 옮긴 사람의 통근지 자료로 확인할 수 있다 — 아직 연결하지 않았다.",
+        "ids": []
+       }
+      ]
+     }
+    ],
+    "links": [
+     {
+      "kind": "topic",
+      "target": "city-move",
+      "at": "1984·1989~",
+      "why": "강남 개발과 신도시는 2호선·광역 교통과 함께 봐야 한다."
+     },
+     {
+      "kind": "flow",
+      "target": "flow-family",
+      "at": "2015",
+      "why": "1인 가구 증가는 가족 흐름에서 본다."
+     },
+     {
+      "kind": "topic",
+      "target": "life-stuff",
+      "at": "2016~",
+      "why": "작은 집의 짐을 맡기는 셀프스토리지."
+     }
+    ],
+    "futures": {
+     "split": {
+      "layer": "inference",
+      "text": "갈라지는 이유는 수도권 집중이 계속되느냐, 1인 가구의 '작은 집' 수요가 다른 주거 형식을 만드느냐다.",
+      "ids": [
+       "fl-city-capital",
+       "c10-1person"
+      ]
+     },
+     "items": [
+      {
+       "kind": "계속",
+       "name": "수도권 집중이 이어진다",
+       "change": {
+        "layer": "inference",
+        "text": "수도권 인구 비중이 50% 위에서 유지되거나 오른다.",
+        "ids": [
+         "fl-city-capital"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "2019년 50% 돌파, 2021년 50.4%.",
+         "ids": [
+          "fl-city-capital"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "일자리가 수도권에 남아 있는 한 사는 곳도 따라간다.",
+        "ids": [
+         "fl-city-newtown"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "일자리 분포가 바뀌지 않아야 한다.",
+        "ids": [
+         "fl-city-capital"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "수도권 신규 주택, 광역 교통.",
+        "ids": [
+         "fl-city-newtown"
+        ]
+       },
+       "watch": [
+        "수도권 인구 비중"
+       ],
+       "against": [
+        "수도권 비중이 줄기 시작하면"
+       ]
+      },
+      {
+       "kind": "분화",
+       "name": "작은 집과 집 밖 공간",
+       "change": {
+        "layer": "inference",
+        "text": "1인 가구의 작은 집과 집 밖 서비스(보관·공유 공간)가 함께 커진다.",
+        "ids": [
+         "c10-1person",
+         "tl-storage"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "1인 가구 30.2%(2019), 셀프스토리지 이용자 46%가 1인 가구.",
+         "ids": [
+          "c10-1person",
+          "tl-storage"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "집이 좁으면 집이 하던 일 일부가 밖으로 나간다(보관·세탁·식사).",
+        "ids": [
+         "tl-storage"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "1인 가구 증가가 이어져야 한다.",
+        "ids": [
+         "c10-1person"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "소형 주택, 보관·공유 공간.",
+        "ids": [
+         "tl-storage"
+        ]
+       },
+       "watch": [
+        "1인 가구 비중"
+       ],
+       "against": [
+        "1인 가구 증가가 멈추면"
+       ]
+      }
+     ]
+    },
+    "conclusion": {
+     "key": {
+      "layer": "inference",
+      "text": "사는 곳은 서울로 모였다가 서울 밖 수도권 아파트로 퍼졌고, 지금은 가구가 작아지며 '혼자 사는 작은 집'이 가장 흔한 집이 됐다.",
+      "ids": [
+       "fl-city-seoulpop",
+       "fl-city-newtown",
+       "c10-1person"
+      ]
+     },
+     "favored": {
+      "layer": "inference",
+      "text": "'탈서울'보다 '수도권 안 이동' 해석을 지지한다.",
+      "ids": [
+       "fl-city-capital"
+      ]
+     },
+     "undecided": {
+      "layer": "inference",
+      "text": "지방과의 격차는 이 주제에서 판단하지 않았다.",
+      "ids": [
+       "fl-city-capital"
+      ]
+     },
+     "next": {
+      "layer": "inference",
+      "text": "수도권 인구 비중과 1인 가구 비중.",
+      "ids": [
+       "fl-city-capital",
+       "c10-1person"
+      ]
+     },
+     "change": {
+      "layer": "inference",
+      "text": "수도권 비중이 줄면 '집중 지속' 판단을 고친다.",
+      "ids": [
+       "fl-city-capital"
+      ]
+     }
+    }
+   },
+   {
+    "id": "city-move",
+    "domain": "city",
+    "label": "넓어진 도시를 어떻게 오가나 — 교통",
+    "tracks": "도시 안과 도시 사이를 오가는 수단: 전차 → 고속도로 → 지하철 → 자가용 → 환승 체계·고속철. 사는 곳의 변화는 '어디에 사나' 주제에서 따로 본다.",
+    "question": "16시간 걸리던 서울~부산이 5시간이 되고, 서울 밖에 살며 서울로 다니는 생활은 어떤 교통으로 가능해졌나?",
+    "scene": {
+     "layer": "fact",
+     "text": "1970년 경부고속도로 개통으로 16시간 걸리던 서울~부산이 5시간 35분이 됐다.",
+     "ids": [
+      "fl-city-gyeongbu-life"
+     ]
+    },
+    "span": [
+     1968,
+     2011
+    ],
+    "scope": [
+     {
+      "layer": "inference",
+      "text": "2004년 이후 광역 교통(광역버스·급행철도)의 자료는 이 주제에 연결하지 않아, 이야기는 2004년 전후에서 멈춘다.",
+      "ids": [
+       "fl-city-2004"
+      ]
+     }
+    ],
+    "turns": [
+     {
+      "id": "t1",
+      "years": "1968~1970",
+      "start": 1968,
+      "end": 1968,
+      "title": "경부고속도로 — 1일 생활권",
+      "why": {
+       "layer": "fact",
+       "text": "1970년 서울~부산이 16시간에서 5시간 35분으로 줄었다.",
+       "ids": [
+        "fl-city-gyeongbu-life"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "도시 사이 이동은 철도에 기대 오래 걸렸다.",
+        "ids": [
+         "fl-city-gyeongbu-life"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "정부는 '국토 대동맥'을 통한 산업화를 목적으로 내걸었다.",
+        "ids": [
+         "fl-city-gyeongbu"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "공사비 429억 원은 1967년 국가 예산의 24%였다.",
+        "ids": [
+         "fl-city-gyeongbu-life"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "경부축이 1일 생활권으로 연결됐다.",
+        "ids": [
+         "fl-city-gyeongbu-life"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "도로가 생기자 자동차가 늘 조건이 됐다.",
+        "ids": [
+         "fl-city-cars"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t2",
+      "years": "1968~1974",
+      "start": 1971,
+      "end": 1971,
+      "title": "전차를 걷어내고 지하철 1호선",
+      "why": {
+       "layer": "fact",
+       "text": "1974년 서울역~청량리 7.8km 첫 지하철이 개통했다.",
+       "ids": [
+        "fl-city-line1"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "인구와 자동차가 늘어 전차가 길을 막았다고 서울시는 설명한다.",
+        "ids": [
+         "fl-city-tram"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "전차 철거와 도로교통법 마련.",
+        "ids": [
+         "fl-city-tram"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "1971년 기공, 1974년 개통.",
+        "ids": [
+         "fl-city-line1"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "inference",
+        "text": "도심 교통이 땅 위에서 땅 밑으로 갈라졌다.",
+        "ids": [
+         "fl-city-line1"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "fact",
+        "text": "도시가 강남으로 넓어지자 순환선이 필요해졌다.",
+        "ids": [
+         "cfill-line2"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t3",
+      "years": "1976~2011",
+      "start": 1976,
+      "end": 1976,
+      "title": "자동차가 생활 속으로 — 마이카",
+      "why": {
+       "layer": "fact",
+       "text": "1976년 첫 고유모델 포니, 서울 자동차 1960년 1만 1천 대 → 2011년 300만 대.",
+       "ids": [
+        "c70-pony-1",
+        "fl-city-cars"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "고속도로가 생겼다.",
+        "ids": [
+         "fl-city-gyeongbu"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "자동차 등록이 1985년 100만 대에서 1992년 500만 대를 넘었다.",
+        "ids": [
+         "sx-cars"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "inference",
+        "text": "차로 주말에 대량 장보기(할인점)가 가능해졌다.",
+        "ids": [
+         "fl-shop-emart",
+         "sx-cars"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "서울 도로 길이가 6.1배가 됐다.",
+        "ids": [
+         "fl-city-cars"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "자가용이 신도시에서 서울로 다니는 한 수단이 됐지만, 도로만으로는 감당하기 어려웠다.",
+        "ids": [
+         "fl-city-cars",
+         "fl-city-newtown"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t4",
+      "years": "1984",
+      "start": 1984,
+      "end": 1984,
+      "title": "2호선 순환선 — 강남과 강북을 한 바퀴",
+      "why": {
+       "layer": "fact",
+       "text": "1984년 2호선 전 구간이 개통해 강남·강북을 도는 순환선이 됐다.",
+       "ids": [
+        "cfill-line2"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "도심 중심의 1호선.",
+        "ids": [
+         "fl-city-line1"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "도심 기능을 강남으로 옮기는 과정에서 구체화됐다(처음 계획에 없던 노선).",
+        "ids": [
+         "cfill-line2"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "inference",
+        "text": "강남이 새 도심이 됐다.",
+        "ids": [
+         "cfill-line2"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "inference",
+        "text": "서울이 여러 중심을 가진 도시가 됐다.",
+        "ids": [
+         "cfill-line2"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "서울 밖 신도시까지 잇는 교통이 다음 과제가 됐다.",
+        "ids": [
+         "fl-city-newtown"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t5",
+      "years": "2004",
+      "start": 2004,
+      "end": 2004,
+      "title": "환승 체계와 KTX — 도시 안과 도시 사이를 다시 짜다",
+      "why": {
+       "layer": "fact",
+       "text": "2004년 KTX 개통과 서울 대중교통 개편이 같은 해 시작됐다.",
+       "ids": [
+        "fl-city-2004"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "신도시로 수도권이 넓어졌다.",
+        "ids": [
+         "fl-city-newtown"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "inference",
+        "text": "서울 밖에 살며 서울로 다니는 사람이 늘었다.",
+        "ids": [
+         "fl-city-newtown",
+         "fl-city-capital"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "KTX 개통·대중교통 체계 개편.",
+        "ids": [
+         "fl-city-2004"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "inference",
+        "text": "도시 안(환승)과 도시 사이(고속철)를 함께 손질했다.",
+        "ids": [
+         "fl-city-2004"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "수도권 50% 시대(2019)의 통근을 감당할 광역 교통이 다음 과제지만, 이 주제에서는 자료를 연결하지 않았다.",
+        "ids": [
+         "fl-city-capital"
+        ]
+       }
+      ],
+      "gap": "2004년 이후 광역 교통 자료 미연결."
+     }
+    ],
+    "branches": {
+     "intro": "한 줄은 한 가지 이동 수단입니다.",
+     "lanes": [
+      {
+       "label": "전차",
+       "start": 1960,
+       "end": 1968,
+       "state": "교체",
+       "note": {
+        "layer": "fact",
+        "text": "1960년대 말 철거.",
+        "ids": [
+         "fl-city-tram"
+        ]
+       }
+      },
+      {
+       "label": "고속도로",
+       "start": 1970,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "경부고속도로.",
+        "ids": [
+         "fl-city-gyeongbu"
+        ]
+       }
+      },
+      {
+       "label": "지하철",
+       "start": 1974,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "1호선(1974), 2호선 순환(1984).",
+        "ids": [
+         "fl-city-line1",
+         "cfill-line2"
+        ]
+       }
+      },
+      {
+       "label": "자가용",
+       "start": 1976,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "서울 300만 대(2011).",
+        "ids": [
+         "fl-city-cars"
+        ]
+       }
+      },
+      {
+       "label": "고속철·환승 체계",
+       "start": 2004,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "KTX·대중교통 개편.",
+        "ids": [
+         "fl-city-2004"
+        ]
+       }
+      }
+     ],
+     "read": {
+      "layer": "inference",
+      "text": "교통은 교체(전차)보다 쌓임이 많았다. 새 수단이 생겨도 옛 수단은 대부분 남아, 넓어진 도시를 여러 수단이 나눠 맡았다.",
+      "ids": [
+       "fl-city-tram",
+       "fl-city-cars",
+       "fl-city-2004"
+      ]
+     }
+    },
+    "reasons": [
+     {
+      "title": "왜 2호선은 '처음 계획에 없던' 순환선이 됐나",
+      "facts": [
+       {
+        "layer": "fact",
+        "text": "2호선은 처음 계획에 없던 노선으로, 도심 기능을 강남으로 옮기는 과정에서 구체화됐다.",
+        "ids": [
+         "cfill-line2"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "서울 인구 1980년 836만 → 1988년 1천만.",
+        "ids": [
+         "fl-city-seoulpop"
+        ]
+       }
+      ],
+      "logic": {
+       "layer": "inference",
+       "text": "도시가 한 중심에서 여러 중심으로 바뀌면, 중심을 한 방향으로 잇는 노선보다 여러 중심을 도는 노선이 필요해진다.",
+       "ids": [
+        "cfill-line2"
+       ]
+      },
+      "proposal": {
+       "layer": "inference",
+       "text": "교통이 도시를 바꿨다기보다, 도시 계획(강남 개발)이 교통을 바꿨다고 본다.",
+       "ids": [
+        "cfill-line2"
+       ]
+      },
+      "rivals": [
+       {
+        "layer": "inference",
+        "text": "반대 방향 설명 — 2호선이 먼저 생겨 강남 개발을 끌어냈을 수 있다(서로 영향).",
+        "ids": [
+         "cfill-line2"
+        ]
+       }
+      ],
+      "scope": {
+       "layer": "inference",
+       "text": "1970~80년대 서울.",
+       "ids": [
+        "cfill-line2"
+       ]
+      },
+      "check": [
+       {
+        "layer": "hypothesis",
+        "text": "확인 쪽: 2호선 개통 전후 강남 인구·사업체 수 변화 자료 — 아직 연결하지 않았다.",
+        "ids": []
+       }
+      ]
+     }
+    ],
+    "links": [
+     {
+      "kind": "topic",
+      "target": "city-home",
+      "at": "1989~",
+      "why": "신도시 입주가 광역 통근을 만들었다."
+     },
+     {
+      "kind": "topic",
+      "target": "shop-channel",
+      "at": "1993~",
+      "why": "자가용이 할인점 '주말 대량 장보기'의 조건이 됐다."
+     }
+    ],
+    "futures": {
+     "split": {
+      "layer": "inference",
+      "text": "갈라지는 이유는 수도권 통근이 계속 늘어나느냐, 재택·지역 분산으로 줄어드느냐다. 이 주제는 2004년 이후 자료가 비어 있어 판단 폭이 좁다.",
+      "ids": [
+       "fl-city-capital",
+       "fl-city-2004"
+      ]
+     },
+     "items": [
+      {
+       "kind": "계속",
+       "name": "광역 통근 교통이 계속 늘어난다",
+       "change": {
+        "layer": "hypothesis",
+        "text": "수도권 50% 시대에 서울 밖 거주·서울 통근을 잇는 광역 교통 수요가 커진다.",
+        "ids": [
+         "fl-city-capital"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "수도권 인구 50% 돌파.",
+         "ids": [
+          "fl-city-capital"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "사는 곳과 일하는 곳이 떨어져 있으면 그 사이 교통이 필요하다.",
+        "ids": [
+         "fl-city-newtown"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "일자리가 서울에 남아 있어야 한다.",
+        "ids": [
+         "fl-city-capital"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "광역 철도·버스.",
+        "ids": [
+         "fl-city-2004"
+        ]
+       },
+       "watch": [
+        "수도권 통근 시간",
+        "광역 교통 이용자"
+       ],
+       "against": [
+        "재택근무 확산으로 통근이 줄면"
+       ]
+      },
+      {
+       "kind": "경로 변경",
+       "name": "통근 자체가 줄어든다",
+       "change": {
+        "layer": "hypothesis",
+        "text": "재택·원격 근무가 늘어 출퇴근 이동이 줄어든다.",
+        "ids": [
+         "c2020-endsd"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "코로나 시기 재택근무 공간을 꾸민 사람이 많았다(2020 조사).",
+         "ids": [
+          "ts-h-covid-survey"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "일하는 장소가 집으로 옮겨 오면 교통 수요가 준다.",
+        "ids": [
+         "ts-h-covid-survey"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "재택근무가 거리두기 해제 뒤에도 유지되어야 한다.",
+        "ids": [
+         "c2020-endsd"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "동네 업무 공간, 생활권 교통.",
+        "ids": [
+         "ts-h-covid-survey"
+        ]
+       },
+       "watch": [
+        "재택근무 비율"
+       ],
+       "against": [
+        "출근 복귀가 일반화되면"
+       ]
+      }
+     ]
+    },
+    "conclusion": {
+     "key": {
+      "layer": "inference",
+      "text": "교통은 도시가 넓어질 때마다 새 수단이 더해지는 방식으로 변했다(고속도로 → 지하철 → 자가용 → 고속철·환승). 대부분 교체가 아니라 쌓임이다.",
+      "ids": [
+       "fl-city-gyeongbu",
+       "fl-city-line1",
+       "fl-city-cars",
+       "fl-city-2004"
+      ]
+     },
+     "favored": {
+      "layer": "inference",
+      "text": "'교통이 도시를 바꿨다'보다 '도시 계획이 교통을 불렀다' 해석을 조금 더 지지한다(2호선 사례).",
+      "ids": [
+       "cfill-line2"
+      ]
+     },
+     "undecided": {
+      "layer": "inference",
+      "text": "2004년 이후 광역 교통 변화는 자료를 연결하지 않아 판단할 수 없다.",
+      "ids": [
+       "fl-city-2004"
+      ]
+     },
+     "next": {
+      "layer": "inference",
+      "text": "수도권 통근 자료를 연결하는 것.",
+      "ids": [
+       "fl-city-capital"
+      ]
+     },
+     "change": {
+      "layer": "inference",
+      "text": "재택근무가 늘어 통근이 줄면 '광역 교통 수요 증가' 판단을 고친다.",
+      "ids": [
+       "ts-h-covid-survey"
       ]
      }
     }
