@@ -253,6 +253,8 @@ export interface Topic {
   id: string; domain: string; label: string; tracks: string; question: string; scene: TLine; span: [number, number]; scope?: TLine[];
   turns: TTurn[]; branches: { intro: string; lanes: TLane[]; read: TLine }; reasons: TReason[]; repeats?: TRepeat[]; links?: TLink[];
   futures: { split: TLine; items: TFuture[] }; conclusion: { key: TLine; favored: TLine; undecided: TLine; next: TLine; change: TLine };
+  compare?: { intro: string; cols: string[]; rows: { label: string; cells: string[] }[]; ids: string[]; read: TLine };
+  probes?: { q: string; a: TLine[] }[];
 }
 export interface TNeed { id: string; label: string; rel: string; intro: string; cases: { kind: string; id: string; label: string; when: string; who: string; before: TLine; trigger: TLine; after: TLine; motive: TLine }[]; whyNow: TLine; common: TLine; differ: TLine; counter: TLine }
 export interface Topics { needs: TNeed[]; relKo: Record<string, string>; fieldMap: { id: string; label: string; items: { kind: string; id: string }[]; planned: string[] }[]; domains: { id: string; label: string; desc: string }[]; topics: Topic[]; planned: { domain: string; id: string; label: string }[]; check: { key: string; label: string; where: string[] }[] }

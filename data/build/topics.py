@@ -5,15 +5,17 @@
 """
 import topics_shop as tshop
 import topics_needs as tneeds
+import topics_record as trec
 from topic_helpers import LAYERS, MODES, FUTURE_KINDS
 
 DOMAINS = [
     {"id": "shop", "label": "소비·쇼핑", "desc": "어디서, 무엇으로, 어떻게 갖고, 무엇에 먼저 쓰고, 무엇을 보고 고르나 — 다섯 가지를 따로 추적합니다."},
+    {"id": "lifestyle", "label": "라이프스타일", "desc": "시간·공간·관계·몸·주의력을 어떻게 쓰고 관리하는지, 무엇을 좋은 삶으로 여기는지."},
 ]
 
-TOPICS = tshop.TOPICS
-SOURCES = tshop.SOURCES
-CLAIMS = tshop.CLAIMS
+TOPICS = tshop.TOPICS + trec.TOPICS
+SOURCES = tshop.SOURCES + trec.SOURCES
+CLAIMS = tshop.CLAIMS + trec.CLAIMS
 
 # 아직 쓰지 않은 주제(탐색 화면에서 활성 콘텐츠와 다른 모양으로 표시, R-Q16)
 PLANNED = [
@@ -42,7 +44,7 @@ FIELD_MAP = [
     {"id": "work", "label": "일·학습·자기계발", "items": [], "planned": ["일하는 방식과 고용 형태(현재 흐름은 산업 사건이 섞여 있어 나누는 중)", "자격·학습 서비스"]},
     {"id": "industry", "label": "산업(한국 경제를 키운 개별 산업)", "items": [("industry", x) for x in ["steel", "shipbuilding", "automobile", "petrochem", "construction", "semiconductor"]], "planned": ["섬유", "전자부품·디스플레이"]},
     {"id": "society", "label": "경제 위기·정치", "items": [("flow", "flow-economy"), ("flow", "flow-politics")], "planned": []},
-    {"id": "lifestyle", "label": "라이프스타일 — 시간·공간·관계·몸·주의력을 쓰는 방식", "items": [], "planned": ["바쁨·휴식·명상", "디지털 편의와 피로, 아날로그 활동", "소유·수집·비우기", "건강·운동·회복"]},
+    {"id": "lifestyle", "label": "라이프스타일 — 시간·공간·관계·몸·주의력을 쓰는 방식", "items": [("topic", "life-record")], "planned": ["바쁨·휴식·명상", "소유·수집·비우기", "건강·운동·회복", "자연 지향과 도시 편의"]},
 ]
 
 # 내부 점검표: 11개 질문 → 주제 안 어느 부분이 답하나(사용자 화면에는 본문으로 내보내지 않음)
@@ -128,6 +130,14 @@ def validate(claims_all, flows, taste_ids=()):
                 errs.append(f"{w}: 없는 주제 {ln['target']}")
             if ln["kind"] == "flow" and ln["target"] not in flow_ids:
                 errs.append(f"{w}: 없는 흐름 {ln['target']}")
+        if t.get("compare"):
+            cp = t["compare"]
+            for row in cp["rows"]:
+                if len(row["cells"]) != len(cp["cols"]):
+                    errs.append(f"{w}: 비교표 칸 수 {row['label']}")
+            for i in cp.get("ids", []):
+                if i not in cids:
+                    errs.append(f"{w}: 비교표 근거 {i}")
         for rp in t.get("repeats", []):
             tids = {tu["id"] for tu in t["turns"]}
             for a in rp["at"]:

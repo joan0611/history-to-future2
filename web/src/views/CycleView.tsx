@@ -3,6 +3,8 @@ import { CATS, CAT_SHORT, D, isKR, nodesIn, type Analysis, type Finding, type No
 import type { Route } from '../lib/route';
 import { Chart, SourceLine, type Band } from '../ui/Chart';
 import { TYPE_SHORT } from './FieldView';
+import { SLineView } from '../ui/Story';
+import type { TLine, TRepeat } from '../lib/data';
 
 /**
  * ④ 반복·비교 — 엔진(data/build/cycles.py)이 사람의 지정 없이 모든 연간 지표를 분석한 결과.
@@ -31,6 +33,7 @@ export function CycleView({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) 
     <div className="view">
       <section className="panel hero">
         <h2>반복과 비교 — 닮은 점, 다른 점, 그리고 한계</h2>
+        <p>이 화면은 두 종류의 반복을 따로 봅니다. 위쪽은 <b>이야기 속에서 찾은 반복</b>(재등장·반작용·반복되는 긴장 같은 문화·생활의 되풀이)이고, 아래쪽은 <b>숫자 모양의 반복</b>(통계 검정)입니다. 문화적 재등장을 통계적 주기로 읽지 않도록 섞지 않았습니다.</p>
         <p className="lead">두 가지를 구분해 보여줍니다. <b>데이터 모양의 유사성</b>은 엔진이 연간 지표 {analyzed}개를 사람이 비교 대상을 정하지 않은 채 계산한 결과이고({usable}개는 계산 가능), <b>역사적 상황의 유사성</b>은 사람이 근거 문장을 대조해 정리한 비교입니다. 숫자의 모양이 닮았다고 원인이 같거나, 일정한 주기로 되풀이되거나, 다음 일을 예측할 수 있다는 뜻은 아닙니다.</p>
         <p className="small muted">‘판정 안정성’은 통계 판단이 자료 길이·검정 결과로 볼 때 얼마나 흔들리지 않는지를 뜻합니다(사건의 확실성이 아님). 검정 일부만 통과한 결과는 ‘판정 보류’로만 표시합니다. 그 결과가 역사적으로 얼마나 중요한지를 뜻하지 않습니다.</p>
         <div className="chips" role="group" aria-label="유형">
@@ -42,6 +45,9 @@ export function CycleView({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) 
         </div>
       </section>
 
+      <RepeatIndex nav={nav} />
+
+      <h2 className="cyc-h2" id="cyc-stats">숫자 모양의 반복 — 연간 지표 통계 검정</h2>
       <div className="cyc">
         <ol className="cyc-list" aria-label="발견 목록">
           {list.map((x, i) => (
@@ -264,3 +270,77 @@ function Sensitivity({ a }: { a: Analysis }) {
 }
 
 const fmtP = (p?: number) => p == null ? '—' : p < 0.001 ? '<0.001' : p < 0.1 ? String(Number(p.toFixed(3))) : p.toFixed(2);
+
+/* ── 이야기 속 반복(R-CY1~CY6) ─────────────────────────────── */
+const R_TYPES: { type: string; desc: string }[] = [
+  { type: '재등장', desc: '사라졌던 선택이 다시 나타남 — 겉모양만인지 기능·동기도 같은지 따로 봅니다.' },
+  { type: '반작용', desc: '앞의 유행·방식이 만든 불편에 맞서는 움직임.' },
+  { type: '반복되는 긴장', desc: '같은 두 가치(예: 편리함과 비용)가 수단만 바꿔 계속 부딪힘.' },
+  { type: '결합·변형', desc: '옛 형식이 새 기술·서비스와 섞여 다른 것이 됨.' },
+  { type: '경제·산업 순환', desc: '수요·공급·가격·재고·인력이 늘었다 줄었다 함 — 간격이 일정하다는 뜻은 아님.' },
+  { type: '장기 구조 변화', desc: '되풀이가 아니라 한 방향으로 움직이는 변화 — 반복처럼 보이는 착시를 막기 위해 함께 둡니다.' },
+];
+interface RCase { where: string; whereKind: 'topic' | 'industry'; whereId: string; rp: TRepeat }
+function gatherRepeats(): RCase[] {
+  const out: RCase[] = [];
+  for (const t of D.topics.topics) for (const rp of t.repeats ?? []) out.push({ where: t.label, whereKind: 'topic', whereId: t.id, rp });
+  const inds = (D.industries as { industries: { id: string; label: string; repeats?: TRepeat[] }[] }).industries ?? [];
+  for (const i of inds) for (const rp of i.repeats ?? []) out.push({ where: `${i.label} 산업 일대기`, whereKind: 'industry', whereId: i.id, rp });
+  return out;
+}
+/** 취향 흐름에서 재등장·변형으로 표시만 된 후보(비교표는 아직 없음) */
+function gatherCandidates() {
+  const lane = (f: { lanes: { id: string; label: string }[] }, id: string) => f.lanes.find((l) => l.id === id)?.label ?? id;
+  return D.tastes.flows.flatMap((f) => f.moves.filter((m) => m.rel === 'revive' || m.rel === 'transform').map((m) => ({ flow: f.id, title: f.title, text: `${lane(f, m.from)} → ${lane(f, m.to)}`, rel: m.rel === 'revive' ? '재등장' : '결합·변형', year: m.year })));
+}
+
+function RepeatIndex({ nav }: { nav: (p: Partial<Route>) => void }) {
+  const cases = gatherRepeats();
+  const cands = gatherCandidates();
+  const go = (c: RCase, at?: string) => {
+    if (c.whereKind === 'topic') {
+      nav({ tab: 'topic', topic: c.whereId, f: undefined });
+      if (at) window.setTimeout(() => document.getElementById(`turn-${at}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 500);
+    } else nav({ tab: 'field', cat: 'industry', ind: c.whereId, f: undefined });
+  };
+  const atLabel = (c: RCase, a: string) => {
+    if (c.whereKind === 'topic') { const tu = D.topics.topics.find((t) => t.id === c.whereId)?.turns.find((x) => x.id === a); return tu ? `${tu.years} ${tu.title}` : a; }
+    return a;
+  };
+  const Row = ({ h, x }: { h: string; x: TLine | TLine[] }) => <tr><th>{h}</th><td>{(Array.isArray(x) ? x : [x]).map((y, i) => <SLineView key={i} x={y} />)}</td></tr>;
+  return (
+    <section className="panel" id="cyc-story">
+      <h2>이야기 속에서 찾은 반복 — 여섯 유형</h2>
+      <p className="muted">무엇을 보나: 각 주제·산업 이야기를 쓰면서 발견한 되풀이를 유형별로 모았습니다. 사례마다 과거와 지금 <b>누가 왜</b> 골랐는지, 겉모양만 닮았는지 동기까지 같은지, 무엇이 바뀌었는지, '싫증 나서 반대가 유행'이 아닌 다른 설명, 그리고 반례를 함께 둡니다. 구간 버튼을 누르면 그 이야기의 해당 전환점으로 갑니다.</p>
+      {R_TYPES.map(({ type, desc }) => {
+        const xs = cases.filter((c) => c.rp.type === type);
+        return (
+          <div key={type} className="rp-type" id={`rp-${type}`}>
+            <h3>{type} <span className="sub">{desc}</span></h3>
+            {xs.length === 0 && <p className="small muted">이 유형으로 비교까지 정리한 사례는 아직 없습니다. 찾은 자료에서 이 유형이 확인되지 않았다는 뜻이며, 없다고 단정하는 것은 아닙니다.</p>}
+            {xs.map((c) => (
+              <details key={c.whereId + c.rp.title} className="rp-case">
+                <summary><b>{c.rp.title}</b> <span className="muted small">· {c.where}{c.rp.interval ? ` · 간격 ${c.rp.interval}` : ''}</span></summary>
+                <p className="rp-go">{c.rp.at.map((a, i) => <button key={a} className="chip go" onClick={() => go(c, a)}>{c.rp.at.length > 1 ? (i === 0 ? '과거 구간: ' : '지금 구간: ') : '해당 구간: '}{atLabel(c, a)} →</button>)}</p>
+                <table className="tp-cmp"><tbody>
+                  <Row h="과거 — 누가 왜" x={c.rp.past} />
+                  <Row h="지금 — 누가 왜" x={c.rp.now} />
+                  <Row h="겉모양만인가, 동기도 같은가" x={c.rp.alike} />
+                  <Row h="무엇이 바뀌었나(가격·기술·매체·의미, 과거 불편의 해결)" x={c.rp.changed} />
+                  <Row h="다른 설명" x={c.rp.alternatives} />
+                  <Row h="반례·설명이 안 맞는 곳" x={c.rp.counter} />
+                </tbody></table>
+              </details>
+            ))}
+          </div>
+        );
+      })}
+      {cands.length > 0 && (
+        <details className="rp-cands">
+          <summary>탐색 중인 후보 {cands.length}개 — 취향 흐름에서 재등장·변형으로 표시만 하고 아직 비교표를 만들지 않은 것</summary>
+          <ul>{cands.map((c, i) => <li key={i}><span className="il-stat">{c.rel}</span> {c.title}: {c.text} <span className="muted small">{c.year}년 무렵</span> <button className="link small" onClick={() => nav({ tab: 'taste', taste: c.flow, f: undefined })}>그 흐름 보기 →</button></li>)}</ul>
+        </details>
+      )}
+    </section>
+  );
+}

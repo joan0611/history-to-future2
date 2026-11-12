@@ -4,7 +4,7 @@
 - 사실(fact)·출처 해석(source)은 이미 검증된 근거 문장(ix-*, fl-*, c*)이나 이 파일의 새 근거 문장에만 기댄다.
 - 추론(inference)·가설(hypothesis)은 이 사이트가 이어 붙인 설명이다. 확률·시점 단정은 쓰지 않는다.
 """
-from topic_helpers import C, F, FUT, HYP, INF, S, SRC, WORLD, CONCLUDE
+from topic_helpers import C, F, FUT, HYP, INF, S, SRC, WORLD, CONCLUDE, REPEAT, REPEAT_TYPES
 
 SOURCES = [
     S("iw-kidd-textile", "한국 섬유 및 가발산업과 우리 수출(한국무역협회 국제무역연구원 보고서 보도)", "산업일보(kidd.co.kr)",
@@ -125,6 +125,14 @@ EXTRA = {
         ],
         "outward": [F("1999년 한국 조선소가 세계 1~3위를 처음 차지했고 2000년 수주 점유율 35.8%로 세계 1위 — 세계 선박 공급의 큰 몫을 한국이 맡게 됐다.", "ix-sh-timeline"),
                     F("2025년 한·미 조선 협력(MASGA)은 미국 함정 정비를 한국 조선사가 맡는 방향으로 논의됐다.", "ix-sh-masga")],
+        "repeats": [REPEAT("경제·산업 순환", "호황 → 인력 감축 → 다음 호황의 인력 부족",
+            past=F("2014~2016년 수주 절벽 뒤 2015~2018년 하청 포함 인력 절반 감축.", "ix-sh-crash"),
+            now=F("2021년 이후 발주가 몰리자 숙련공이 없어 이주노동자가 4배로 늘었다.", "ix-sh-skill"),
+            alike=INF("사이클에 맞춰 인력을 줄였다 늘리는 방식은 같다.", "ix-sh-crash", "ix-sh-skill"),
+            changed=INF("다시 늘린 인력이 숙련공이 아니라 비숙련 이주노동자라는 점이 다르다 — 과거 불편(인력 부족)은 해결되지 않고 형태만 바뀌었다.", "ix-sh-skill"),
+            alternatives=[INF("인력 구조는 사이클보다 하청 중심 고용 구조 때문일 수 있다.", "ix-sh-skill")],
+            counter=[F("LNG선 같은 고부가 선종은 호황 중에도 중국과 점유율이 엇갈렸다 — 사이클만으로 순위를 설명할 수 없다.", "ix-sh-china")],
+            at=["2014~2018", "2021~2025"])],
         "split": INF("선박 수요는 해운·에너지 사이클에 따라 반드시 출렁인다. 갈림길은 다음 하강기에 한국 조선이 무엇(LNG선·정비·함정)으로 버티느냐다.", "ix-sh-crash", "ix-sh-lng"),
         "futures": [
             FUT("경로 변경", "선박 판매에서 정비·함정으로 일감을 넓힌다",
@@ -160,6 +168,14 @@ EXTRA = {
         ],
         "outward": [F("1992년 D램 세계 1위 이후 한국 기업은 세계 메모리 공급의 중심이 됐고, 2024년 HBM 점유율은 SK하이닉스·삼성전자가 합쳐 9할을 넘었다.", "ix-cp-92", "ix-cp-hbm"),
                     INF("메모리 공급이 한국에 몰려 있어서, 한국 기업의 증설·감산 결정이 세계 메모리 가격에 영향을 준다.", "ix-cp-08", "ix-cp-hbm")],
+        "repeats": [REPEAT("경제·산업 순환", "메모리 가격의 폭락과 회복 — 2007~2009년과 2023~2025년",
+            past=F("2007년 이후 업계 증설 경쟁과 금융위기로 D램 값이 85% 떨어졌고, 버틴 기업과 파산한 기업(키몬다)이 갈렸다.", "ix-cp-08"),
+            now=F("2023년 반도체 수출 −23.7% 뒤 AI 서버 수요로 2025년 +17.8%.", "ix-cp-cycle"),
+            alike=INF("공급(증설)과 수요(새 기기)의 어긋남이 가격을 크게 흔드는 구조는 같다.", "ix-cp-08", "ix-cp-cycle"),
+            changed=INF("수요처가 PC → 스마트폰 → AI 서버로 바뀌었고, 지금은 한 수요처 비중이 더 크다. 수출에서 반도체 비중도 커져 같은 순환이 나라 경제에 주는 충격이 커졌다.", "ix-cp-cycle", "ix-cp-share"),
+            alternatives=[INF("'주기'라기보다 매번 다른 외부 충격(금융위기, 코로나 뒤 재고, AI)이 만든 변동일 수 있다 — 간격이 일정하다는 근거는 없다.", "ix-cp-08", "ix-cp-cycle")],
+            counter=[F("HBM처럼 공급이 몇 회사에 몰린 제품은 범용 D램과 다르게 움직일 수 있다.", "ix-cp-hbm")],
+            at=["2007~2009", "2013~2025"])],
         "split": INF("갈림길은 AI 투자가 계속되느냐보다, 메모리 수요처가 AI 한 곳에 몰린 상태가 얼마나 오래 가느냐다.", "ix-cp-cycle", "ix-cp-share"),
         "futures": [
             FUT("계속", "AI 수요가 이어지며 수출 쏠림이 깊어진다",
@@ -436,6 +452,17 @@ def apply(industries, claims_all):
         ind["worlds"], ind["outward"] = ex["worlds"], ex["outward"]
         ind["futures"] = {"split": ex["split"], "items": ex["futures"]}
         ind["conclusion"] = ex["conclusion"]
+        for rp in ex.get("repeats", []):
+            assert rp["type"] in REPEAT_TYPES
+            for part in ("past", "now", "alike", "changed"):
+                chk(rp[part], f"{k} 반복")
+            for x in rp["alternatives"] + rp["counter"]:
+                chk(x, f"{k} 반복")
+            periods = {st["period"] for st in ind["stages"]}
+            for a in rp["at"]:
+                if a not in periods:
+                    raise SystemExit(f"{k}: 반복 링크 단계 {a} 없음")
+        ind["repeats"] = ex.get("repeats", [])
     miss = ids - set(EXTRA)
     if miss:
         raise SystemExit(f"세계·미래·결론이 없는 산업 {miss}")

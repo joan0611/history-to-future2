@@ -721,3 +721,14 @@ dl.reason dt { color: var(--ink-3); font-weight: 600; } dl.reason dd { margin: 0
 .il-profd { margin: .8rem 0; }
 .il-profd summary { cursor: pointer; font-weight: 600; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.tp-cmpt th, .tp-cmpt td { vertical-align: top; font-size: .9rem; min-width: 8rem; }
+.tp-probes dl > div { border-top: 1px solid var(--line); padding: .5rem 0; }
+.tp-probes dt { font-weight: 600; }
+.tp-probes dd { margin: .25rem 0 0; }
+.rp-type { border-top: 1px solid var(--line); padding: .6rem 0; }
+.rp-type h3 { margin: 0 0 .4rem; }
+.rp-case { margin: .35rem 0; }
+.rp-case summary { cursor: pointer; }
+.rp-go { margin: .4rem 0; display: flex; flex-wrap: wrap; gap: .3rem; }
+.rp-cands { margin-top: .8rem; }
+.cyc-h2 { margin: 1.2rem 0 .4rem; font-size: 1.15rem; }

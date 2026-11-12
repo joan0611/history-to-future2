@@ -123,7 +123,7 @@ function TopicDetail({ t, nav }: { t: Topic; nav: Nav }) {
         <p className="tp-tracks"><b>이 이야기가 계속 따라가는 것</b> {t.tracks}</p>
         {t.scope && t.scope.length > 0 && <details className="tp-scope"><summary>시작 시점과 자료가 비는 곳</summary><Lines xs={t.scope} /></details>}
         <nav className="tp-toc" aria-label="이 주제의 순서">
-          {[['tp-time', '시간 흐름'], ['tp-turns', '전환점 이야기'], ['tp-branch', '옛 선택은 어떻게 남았나'], ['tp-reason', '왜 그렇게 봤나'], ...(t.repeats?.length ? [['tp-repeat', '되풀이되는 것']] : []), ['tp-future', '앞으로 가능한 방향'], ['tp-end', '결론']].map(([id, l]) => <button key={id} className="chip" onClick={() => scrollTo(id)}>{l}</button>)}
+          {[['tp-time', '시간 흐름'], ['tp-turns', '전환점 이야기'], ['tp-branch', '옛 선택은 어떻게 남았나'], ...(t.compare ? [['tp-compare', '도구별 비교']] : []), ['tp-reason', '왜 그렇게 봤나'], ...(t.repeats?.length ? [['tp-repeat', '되풀이되는 것']] : []), ['tp-future', '앞으로 가능한 방향'], ['tp-end', '결론']].map(([id, l]) => <button key={id} className="chip" onClick={() => scrollTo(id)}>{l}</button>)}
         </nav>
       </section>
 
@@ -136,6 +136,7 @@ function TopicDetail({ t, nav }: { t: Topic; nav: Nav }) {
       </section>
 
       <Branches t={t} />
+      {t.compare && <CompareTable t={t} />}
       {t.links && t.links.length > 0 && <Links t={t} nav={nav} />}
 
       <section className="panel" id="tp-reason">
@@ -339,6 +340,28 @@ export function ConclusionView({ id, c }: { id: string; c: { key: TLine; favored
         <dt>다음에 주목할 가능성</dt><dd><SLineView x={c.next} /></dd>
         <dt>이것이 보이면 판단을 바꾼다</dt><dd><SLineView x={c.change} /></dd>
       </dl>
+    </section>
+  );
+}
+
+/** 작은 비교표(R-Q21·R-DA1) — 앞: 무엇을 보나, 뒤: 무엇을 읽나. 이어서 질문별 답(R-DA2). */
+function CompareTable({ t }: { t: Topic }) {
+  const c = t.compare!;
+  return (
+    <section className="panel" id="tp-compare">
+      <h2>도구별로 나란히 보기</h2>
+      <p className="muted">무엇을 보나: {c.intro}</p>
+      <div className="tablewrap"><table className="tz-table tp-cmpt">
+        <thead><tr><th></th>{c.cols.map((x) => <th key={x}>{x}</th>)}</tr></thead>
+        <tbody>{c.rows.map((r) => <tr key={r.label}><th>{r.label}</th>{r.cells.map((x, i) => <td key={i}>{x}</td>)}</tr>)}</tbody>
+      </table></div>
+      <div className="tp-split"><b>읽어낼 것</b> <SLineView x={c.read} /></div>
+      {t.probes && t.probes.length > 0 && (
+        <div className="tp-probes">
+          <h3>서로의 불편이 서로를 불렀나</h3>
+          <dl>{t.probes.map((p) => <div key={p.q}><dt>{p.q}</dt><dd><Lines xs={p.a} /></dd></div>)}</dl>
+        </div>
+      )}
     </section>
   );
 }
