@@ -1,7 +1,6 @@
 import { CATS, CAT_KO, CAT_SHORT, D, MAX_Y, byId, eraEnd, eraOf, inc, isKR, lead, nodesIn, out, pickKey, type Cat } from '../lib/data';
 import type { Route } from '../lib/route';
 import { Chart } from '../ui/Chart';
-import { FlowCard } from './FlowView';
 import type { Era, Flow } from '../lib/data';
 
 /**
@@ -50,10 +49,9 @@ function Overview({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) => void;
     <>
       <section className="panel hero">
         <div className="hero-text">
-          <h2>1960년부터 지금까지, 한국 사람들의 일·소비·문화·관계는 어떻게 달라졌나</h2>
-          <p>정치·경제의 큰 사건뿐 아니라 사람들이 일하고, 사고, 즐기고, 만나고, 자신을 드러내는 방식의 변화를 근거와 함께 따라갑니다. 먼저 질문 하나를 골라 끝까지 읽거나, 아래에서 시대마다 무엇이 달라졌는지 훑어보세요.</p>
+          <h2>전체 역사 — 시대별 사건 둘러보기</h2>
+          <p>이 화면은 분석을 뒷받침하는 사건과 시대 요약을 둘러보는 곳입니다. 같은 줄에 놓인 사건들이 서로 이어진 흐름은 아닙니다. 한 주제가 시대마다 어떻게 이어졌는지는 <a href="#/flow">변화 흐름</a>에서, 지금의 경제를 판단하는 데 쓰는 분석은 <a href="#/now">지금 판단하기</a>에서 봅니다.</p>
         </div>
-        <div className="flowgrid compact">{D.flows.map((f) => <FlowCard key={f.id} f={f} nav={nav} compact />)}</div>
       </section>
 
       <section className="panel">
@@ -65,7 +63,8 @@ function Overview({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) => void;
       </section>
 
       <section className="panel">
-        <h2>변화의 지도 <span className="sub">분야마다 시대를 대표하는 사건 하나 — 누르면 사건의 근거와 원인·결과</span></h2>
+        <h2>시대별 사건 둘러보기 <span className="sub">분야마다 그 시대에 눈에 띈 사건 하나 — 같은 줄의 사건끼리 이어진 흐름이 아닙니다</span></h2>
+        <p className="small muted">줄은 분류일 뿐입니다. 예를 들어 ‘여러 분야’ 줄의 자동차 생활(미국 사례)·청년문화·24시간 도시는 서로 다른 주제입니다. 해외 사례에는 ‘해외’ 표시를 붙였습니다(한국 변화에 영향을 준 사례인지, 비교용인지는 사건 상세에서 확인).</p>
         <div className="cmap" style={{ gridTemplateColumns: `6.5rem ${D.eras.map((e) => `${eraEnd(e) - e.startYear + 1}fr`).join(' ')}` }}>
           <span />
           {D.eras.map((e) => (
@@ -131,11 +130,11 @@ function EraCard({ e, prevSummary, first, on, nav }: { e: Era; prevSummary?: str
 function Row({ c, why }: { c: Cat; why: (id: string) => void }) {
   return (
     <>
-      <span className={`cmap-c c-${c}`}><span className={`cdot c-${c}`} />{CAT_SHORT[c]}</span>
+      <span className={`cmap-c c-${c}`}><span className={`cdot c-${c}`} />{c === 'flow' ? '여러 분야' : CAT_SHORT[c]}</span>
       {D.eras.map((e) => {
         const [n] = pickKey(D.nodes.filter((x) => x.eraId === e.id && x.lane === c), 1);
         return n
-          ? <button key={e.id} className={`cmap-cell c-${c}`} onClick={() => why(n.id)} title={`${n.year} ${n.label}`}><span className="y">{n.year}</span>{n.label}</button>
+          ? <button key={e.id} className={`cmap-cell c-${c}`} onClick={() => why(n.id)} title={`${n.year} ${n.label}`}><span className="y">{n.year}{!isKR(n) && <span className="abroad">해외</span>}</span>{n.label}</button>
           : <span key={e.id} className="cmap-cell empty">자료 없음</span>;
       })}
     </>

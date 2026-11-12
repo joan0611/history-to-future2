@@ -25,6 +25,7 @@ import deep_2020 as d20c  # noqa: E402
 import fill_years as fy  # noqa: E402
 import corroborate as cor  # noqa: E402
 import flows as fl  # noqa: E402
+import analyses as an  # noqa: E402
 import links_extra as lx  # noqa: E402
 import verify_numbers as vn  # noqa: E402
 import cycles as cyc  # noqa: E402
@@ -33,7 +34,7 @@ ERA_ORDER = ["1960s", "1970s", "1980s", "1990s", "2000s", "2010s", "2020s"]
 
 
 def main():
-    claims = e60.CLAIMS + eo.CLAIMS + e70.CLAIMS + e80.CLAIMS + e90.CLAIMS + e00.CLAIMS + e10.CLAIMS + e20.CLAIMS + d73.CLAIMS + d97.CLAIMS + d08.CLAIMS + d20c.CLAIMS + fy.CLAIMS + cor.CLAIMS + fl.CLAIMS
+    claims = e60.CLAIMS + eo.CLAIMS + e70.CLAIMS + e80.CLAIMS + e90.CLAIMS + e00.CLAIMS + e10.CLAIMS + e20.CLAIMS + d73.CLAIMS + d97.CLAIMS + d08.CLAIMS + d20c.CLAIMS + fy.CLAIMS + cor.CLAIMS + fl.CLAIMS + an.CLAIMS
     cor.apply(claims)
     eras = [e60.ERA, e70.ERA, e80.ERA, e90.ERA, e00.ERA, e10.ERA, e20.ERA] + [e for e in eo.ERAS if e["id"] not in ("1970s", "1980s", "1990s", "2000s", "2010s", "2020s")]
     events = e60.EVENTS + eo.EVENTS + e70.EVENTS + e80.EVENTS + e90.EVENTS + e00.EVENTS + e10.EVENTS + e20.EVENTS + fy.EVENTS
@@ -42,7 +43,7 @@ def main():
         "generatedNote": "실제 출처 기반 시드. 모든 문장은 claims에 있으며 출처·검증 상태를 가진다.",
         "eras": sorted(eras, key=lambda e: ERA_ORDER.index(e["id"])),
         "claims": claims,
-        "sources": SOURCES + e70.SOURCES + e80.SOURCES + e90.SOURCES + e00.SOURCES + e10.SOURCES + e20.SOURCES + ind.SOURCES + d73.SOURCES + d97.SOURCES + d08.SOURCES + d20c.SOURCES + fy.SOURCES + cor.SOURCES + fl.SOURCES,
+        "sources": SOURCES + e70.SOURCES + e80.SOURCES + e90.SOURCES + e00.SOURCES + e10.SOURCES + e20.SOURCES + ind.SOURCES + d73.SOURCES + d97.SOURCES + d08.SOURCES + d20c.SOURCES + fy.SOURCES + cor.SOURCES + fl.SOURCES + an.SOURCES,
         "events": events,
         "transitions": eo.TRANSITIONS,
         "caseStudies": [e70.CASE, e90.CASE],
@@ -67,6 +68,7 @@ def main():
             c["statusNote"] = "출처가 여럿이지만 같은 원자료나 같은 발행처라 한 곳으로 셈"
             downgraded.append(c["id"])
     seed["independenceCheck"] = {"downgraded": downgraded}
+    seed["studies"] = an.validate(seed["claims"])
     seed["flows"] = fl.validate(seed["claims"], seed["graph"]["nodes"], seed["indicators"])
     nodes_by = {n["id"]: n for n in seed["graph"]["nodes"]}
     for f in fl.FLOWS:

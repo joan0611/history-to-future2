@@ -9,7 +9,8 @@ import { TYPE_SHORT } from './FieldView';
  * 흥미도 순으로 정렬하되 신뢰도는 따로 표시(둘을 섞지 않음). 반복이 없다는 결과도 그대로 보여준다.
  */
 const TYPE_DESC: Record<string, string> = {
-  A: '여러 시차·주파수를 함께 본 순열 검정을 통과하고 관측 기간 안에 3번 이상 반복된 경우만',
+  A: '여러 시차·주파수를 함께 본 두 검정(적색잡음 대조)을 모두 통과하고 관측 기간 안에 3번 이상 반복된 경우만',
+  W: '검정 하나만 통과했거나 추정 주기가 관측 기간 안에 3번 미만 — 주기로 판정하지 않고 보류',
   B: '같은 종류의 급변이 3번 이상 나타났지만 간격이 일정하지 않음 — 주기가 아님',
   C: '서로 다른 시기의 지표 궤적이 숫자상 닮음 — 원인이 같다는 뜻은 아님',
   D: '등장·확산·쇠퇴·재등장이 기록으로 확인됨 — 수치가 부족해 정성적 유사성',
@@ -31,7 +32,7 @@ export function CycleView({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) 
       <section className="panel hero">
         <h2>반복과 비교 — 닮은 점, 다른 점, 그리고 한계</h2>
         <p className="lead">두 가지를 구분해 보여줍니다. <b>데이터 모양의 유사성</b>은 엔진이 연간 지표 {analyzed}개를 사람이 비교 대상을 정하지 않은 채 계산한 결과이고({usable}개는 계산 가능), <b>역사적 상황의 유사성</b>은 사람이 근거 문장을 대조해 정리한 비교입니다. 숫자의 모양이 닮았다고 원인이 같거나, 일정한 주기로 되풀이되거나, 다음 일을 예측할 수 있다는 뜻은 아닙니다.</p>
-        <p className="small muted">신뢰도는 통계 판단이 얼마나 안정적인지를 뜻합니다. 그 결과가 역사적으로 얼마나 중요한지를 뜻하지 않습니다.</p>
+        <p className="small muted">‘판정 안정성’은 통계 판단이 자료 길이·검정 결과로 볼 때 얼마나 흔들리지 않는지를 뜻합니다(사건의 확실성이 아님). 검정 일부만 통과한 결과는 ‘판정 보류’로만 표시합니다. 그 결과가 역사적으로 얼마나 중요한지를 뜻하지 않습니다.</p>
         <div className="chips" role="group" aria-label="유형">
           <button className={`chip${type === 'all' ? ' on' : ''}`} onClick={() => setType('all')}>전체 {D.findings.length}</button>
           {Object.keys(TYPE_SHORT).filter((t) => D.findings.some((x) => x.type === t)).map((t) => (
@@ -49,7 +50,7 @@ export function CycleView({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) 
                 <span className="rank">{i + 1}</span>
                 <span className={`ftype t-${x.type}`}>{TYPE_SHORT[x.type]}</span>
                 <b>{x.title}</b>
-                <span className="cmeta"><span className={`conf k-${x.confidence.level}`}>신뢰도 {x.confidence.level}</span><span className={`cdot c-${x.category}`} />{CAT_SHORT[x.category]}{x.current && <span className="now">지금과 관련</span>}</span>
+                <span className="cmeta"><span className={`conf k-${x.confidence.level}`}>{x.type === 'W' ? '판정 보류' : `판정 안정성 ${x.confidence.level}`}</span><span className={`cdot c-${x.category}`} />{CAT_SHORT[x.category]}{x.current && <span className="now">지금과 관련</span>}</span>
               </button>
             </li>
           ))}
@@ -58,14 +59,16 @@ export function CycleView({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) 
       </div>
 
       <section className="panel">
-        <h2>역사적 상황 비교 <span className="sub">사람이 근거 문장을 대조해 정리 — 측면마다 닮음·일부 닮음·다름</span></h2>
+        <h2>역사적 상황 비교 <span className="sub">같은 측면으로 여러 과거 사례를 대조 — 닮음·다름 판정은 처음 두 사례에 대해서만</span></h2>
+        <p className="small muted">두 사례만 맞대면 ‘닮았다’는 판단이 쉽게 과장됩니다. 그래서 같은 측면으로 다른 사례(예: 2차 석유파동, 2026년 중동 사태)를 함께 놓았습니다. 빈칸은 자료를 연결하지 않은 곳입니다. 가계 소비를 기준으로 여섯 국면을 비교한 분석은 <a href="#/now/an-consumption">지금 판단하기</a>에 있습니다.</p>
         {D.parallels.map((p) => (
           <details key={p.id} className="par">
             <summary><b>{p.title}</b> — {p.a.label}({p.a.years}) ↔ {p.b.label}({p.b.years}) <span className="muted">· 닮음 {p.rows.filter((x) => x.verdict === 'similar' || x.verdict === 'same').length} · 일부 {p.rows.filter((x) => x.verdict === 'partial').length} · 다름 {p.rows.filter((x) => x.verdict === 'different').length}</span></summary>
             <div className="tbl-wrap"><table className="tbl">
-              <thead><tr><th>측면</th><th>{p.a.label}</th><th>{p.b.label}</th><th>판단</th></tr></thead>
+              <thead><tr><th>측면</th><th>{p.a.label}<br /><span className="muted small">{p.a.years}</span></th><th>{p.b.label}<br /><span className="muted small">{p.b.years}</span></th><th>판단(앞 두 사례)</th>{(p.more ?? []).map((m) => <th key={m.label} className="more">{m.label}<br /><span className="muted small">{m.years} · 추가 사례</span></th>)}</tr></thead>
               <tbody>{p.rows.map((x) => (
-                <tr key={x.aspect}><td>{x.aspect}</td><td>{x.a.text}</td><td>{x.b.text}</td><td><b>{PV[x.verdict] ?? x.verdict}</b><br /><span className="muted small">{x.note}</span></td></tr>
+                <tr key={x.aspect}><td>{x.aspect}</td><td>{x.a.text}</td><td>{x.b.text}</td><td><b>{PV[x.verdict] ?? x.verdict}</b><br /><span className="muted small">{x.note}</span></td>
+                  {(p.more ?? []).map((m) => { const c = m.cells[x.aspect]; return <td key={m.label} className="more">{c && c[0] ? c[0] : <span className="muted small">자료 연결 안 함</span>}</td>; })}</tr>
               ))}</tbody>
             </table></div>
           </details>
@@ -73,21 +76,23 @@ export function CycleView({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) 
       </section>
 
       <section className="panel">
-        <h2>엔진이 본 모든 지표 <span className="sub">반복이 없거나 계산할 수 없는 결과도 숨기지 않습니다</span></h2>
+        <details className="aux"><summary><b>보조 자료 — 엔진이 본 모든 지표</b> <span className="sub">반복이 없거나 계산할 수 없는 결과도 숨기지 않습니다</span></summary>
         <div className="tbl-wrap"><table className="tbl">
           <thead><tr><th>지표</th><th>기간</th><th>관측</th><th>판정</th><th>근거</th></tr></thead>
           <tbody>{D.analyses.map((a) => (
             <tr key={a.key}><td>{a.title} ({a.country})</td><td>{a.from}–{a.to}</td><td>{a.n}</td><td>{VERDICT[a.verdict]}</td><td className="muted">{a.why}</td></tr>
           ))}</tbody>
         </table></div>
-        <p className="small muted">방법: 직선 추세를 먼저 분리 → 시차 1~20년 자기상관과 주기도(푸리에)를 무작위로 섞은 자료 {String(D.cycleParams.permutations)}개와 비교(시드 {String(D.cycleParams.seed)}, 여러 시차를 한꺼번에 본 검정) → 급변 구간({String(D.cycleParams.episodeRule)}) → 간격의 변동계수 → 5년 구간 궤적 비교. 인공 사인파·흰잡음·직선 추세로 엔진 자체를 검사합니다(tests/test_cycles.py).</p>
+        <p className="small muted">방법: 직선 추세를 먼저 분리 → 시차 2~20년 자기상관과 주기도(푸리에)를 ‘같은 1차 자기상관을 가진 적색잡음’ 대조 {String(D.cycleParams.permutations)}개와 비교(시드 {String(D.cycleParams.seed)}, 여러 시차를 한꺼번에 본 검정, p=(넘은 수+1)/(대조 수+1)) → 두 검정을 모두 통과하고 관측 기간 안에 3회 이상 반복될 때만 ‘주기 후보’ → 하나만 통과하거나 반복이 3회 미만이면 ‘판정 보류’ → 급변 구간({String(D.cycleParams.episodeRule)}) → 간격의 변동계수 → 5년 구간 궤적 비교. 인공 사인파·흰잡음·적색잡음·직선 추세로 엔진 자체를 검사합니다(tests/test_cycles.py).</p>
+        <p className="small muted">고친 점(2026-11-12): 이전에는 자료 순서를 무작위로 섞은 대조를 써서, 서서히 움직이는 수준 지표(예: 1975~2025 실질 주택가격 지수)가 p≈0으로 나오는데도 ‘우연 범위’라고 적히는 모순이 있었습니다. 대조를 적색잡음으로 바꾸고, 판정과 설명 문구가 어긋나지 않는지 자동 검사를 추가했습니다.</p>
+        </details>
       </section>
     </div>
   );
 }
 
 const PV: Record<string, string> = { similar: '닮음', same: '닮음', partial: '일부 닮음', different: '다름', unknown: '확인 안 됨' };
-const VERDICT: Record<string, string> = { A: '통계적 주기 후보', E: '장기 구조 변화', none: '주기 없음', insufficient: '자료 부족 — 계산 안 함' };
+const VERDICT: Record<string, string> = { A: '통계적 주기 후보', E: '장기 구조 변화', none: '주기 없음', weak: '주기 후보 — 판정 보류', insufficient: '자료 부족 — 계산 안 함' };
 
 function Detail({ f, r, nav, why }: { f: Finding; r: Route; nav: (p: Partial<Route>) => void; why: (id: string) => void }) {
   const ser = f.series.map((k) => D.analyses.find((a) => a.key === k)).filter(Boolean) as Analysis[];
@@ -97,10 +102,10 @@ function Detail({ f, r, nav, why }: { f: Finding; r: Route; nav: (p: Partial<Rou
   const ind = main ? D.indicators.find((i) => i.id === main.indicator) : undefined;
   return (
     <article className="panel">
-      <div className="eyebrow"><span className={`ftype t-${f.type}`}>{f.type} · {TYPE_SHORT[f.type]}</span> <span className={`conf k-${f.confidence.level}`}>신뢰도 {f.confidence.level}</span></div>
+      <div className="eyebrow"><span className={`ftype t-${f.type}`}>{f.type} · {TYPE_SHORT[f.type]}</span> <span className={`conf k-${f.confidence.level}`}>{f.type === 'W' ? '판정 보류' : `판정 안정성 ${f.confidence.level}`}</span></div>
       <h2>{f.title}</h2>
       <p className="lead">{f.summary}</p>
-      <p className="note">이 유형의 뜻: {TYPE_DESC[f.type]}. 신뢰도 근거: {f.confidence.why}.</p>
+      <p className="note">이 유형의 뜻: {TYPE_DESC[f.type]}. 판정 근거: {f.confidence.why}.</p>
       <Guide f={f} main={main} />
 
       {ser.map((a, i) => a.points && (
@@ -250,10 +255,12 @@ function Sensitivity({ a }: { a: Analysis }) {
       <div className="tbl-wrap"><table className="tbl">
         <thead><tr><th>구간</th><th>방법</th><th>관측</th><th>판정</th><th>p(시차)</th><th>p(주기도)</th></tr></thead>
         <tbody>{a.sensitivity!.map((s, i) => (
-          <tr key={i}><td>{s.range[0]}–{s.range[1]}</td><td>{s.method ?? '직선 추세 제거'}</td><td>{s.n}</td><td>{VERDICT[s.verdict] ?? s.verdict}</td><td>{s.pAcf ?? '—'}</td><td>{s.pSpectral ?? '—'}</td></tr>
+          <tr key={i}><td>{s.range[0]}–{s.range[1]}</td><td>{s.method ?? '직선 추세 제거'}</td><td>{s.n}</td><td>{VERDICT[s.verdict] ?? s.verdict}</td><td>{fmtP(s.pAcf)}</td><td>{fmtP(s.pSpectral)}</td></tr>
         ))}</tbody>
       </table></div>
       {a.periodicity && <p className="small muted">전체 기간: 가장 강한 시차 {a.periodicity.bestLag}년(|r|={a.periodicity.maxAbsAcf}, 기준선 ±{a.periodicity.band}), 주기도 최대 봉우리 약 {a.periodicity.spectralPeriod}년.</p>}
     </details>
   );
 }
+
+const fmtP = (p?: number) => p == null ? '—' : p < 0.001 ? '<0.001' : p < 0.1 ? String(Number(p.toFixed(3))) : p.toFixed(2);

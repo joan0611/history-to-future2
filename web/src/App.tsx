@@ -6,20 +6,23 @@ import { HistoryView } from './views/HistoryView';
 import { FieldView } from './views/FieldView';
 import { CycleView } from './views/CycleView';
 import { FlowView } from './views/FlowView';
+import { NowView } from './views/NowView';
 import { WhyPanel } from './ui/WhyPanel';
 import { byId, eraOf } from './lib/data';
 
 /**
- * HISTORY TO FUTURE 2.0 — 화면마다 역할이 다르다.
+ * HISTORY TO FUTURE 2.0 — 목적: 과거 변화의 조건과 전달 과정을 근거로 확인하고, 현재와 비교해 앞으로 볼 지표를 찾는다.
+ *   지금 판단하기: 판단 질문 → 과거 흐름 → 연결 근거 → 현재 비교 → 조건별 시나리오 → 관찰 지표(첫 화면)
  *   전체 역사: 시대 전체의 의미(이전 → 달라진 것 → 다음으로) / 변화 흐름: 질문 하나를 근거와 함께 깊게
  *   분야별 변화: 한 분야의 장기 흐름과 그 안에서의 역할 / 반복·비교: 닮은 점·다른 점·한계
  *   사건 상세(원인·결과 패널): 구체적인 내용과 근거 — 어디서든 열리고, 들어온 흐름으로 돌아갈 수 있다.
  */
 const TABS: { id: Tab; t: string; d: string }[] = [
-  { id: 'history', t: '전체 역사', d: '시대마다 무엇이 달라졌나' },
-  { id: 'flow', t: '변화 흐름', d: '질문 하나를 끝까지' },
-  { id: 'field', t: '분야별 변화', d: '한 분야의 장기 흐름' },
-  { id: 'cycle', t: '반복·비교', d: '닮은 점과 다른 점' },
+  { id: 'now', t: '지금 판단하기', d: '과거로 현재를 읽고 볼 지표 찾기' },
+  { id: 'flow', t: '변화 흐름', d: '한 주제를 시대별로 끝까지' },
+  { id: 'history', t: '전체 역사', d: '시대별 사건 둘러보기' },
+  { id: 'field', t: '분야별 변화', d: '한 분야의 지표와 사건' },
+  { id: 'cycle', t: '반복·비교', d: '닮은 점·다른 점 검증' },
 ];
 
 export function App() {
@@ -30,12 +33,12 @@ export function App() {
   return (
     <div className="app">
       <header className="top">
-        <a className="brand" href="#/history" aria-label="HISTORY TO FUTURE 2.0 처음으로">
+        <a className="brand" href="#/now" aria-label="HISTORY TO FUTURE 2.0 처음으로">
           <span className="logo" aria-hidden /> HISTORY <em>TO</em> FUTURE <sup>2.0</sup>
         </a>
         <nav className="tabs" role="tablist" aria-label="탐색">
           {TABS.map((t) => (
-            <button key={t.id} role="tab" aria-selected={r.tab === t.id} className={r.tab === t.id ? 'on' : ''} onClick={() => nav({ tab: t.id, flow: undefined, why: undefined, path: [], from: undefined })}>
+            <button key={t.id} role="tab" aria-selected={r.tab === t.id} className={r.tab === t.id ? 'on' : ''} onClick={() => nav({ tab: t.id, flow: undefined, study: undefined, why: undefined, path: [], from: undefined })}>
               <b>{t.t}</b><span>{t.d}</span>
             </button>
           ))}
@@ -46,6 +49,7 @@ export function App() {
         <p className="ctx">지금 보는 시점 <b>{eraOf(r.y).label} · {r.y}년</b>{sel && <> · 원인 탐색: <b>{sel.label}</b></>}</p>
       </div>
       <main>
+        {r.tab === 'now' && <NowView r={r} nav={nav} why={why} />}
         {r.tab === 'history' && <HistoryView r={r} nav={nav} why={why} />}
         {r.tab === 'flow' && <FlowView r={r} nav={nav} why={why} />}
         {r.tab === 'field' && <FieldView r={r} nav={nav} why={why} />}

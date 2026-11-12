@@ -90,3 +90,30 @@ def test_number_checks_and_deep_1997():
     assert {"d97-rollover", "d97-shortdebt", "d97-tripartite"} <= ids
     e97 = [e for e in d["graph"]["edges"] if e["chainId"] == "deep-1997"]
     assert len(e97) >= 20 and any(e["verification"] == "hypothesis" for e in e97)
+
+
+def test_red_noise_not_cycle():  # 음성 대조: 서서히 움직이는 적색잡음(AR(1) 0.8)은 주기로 판정하지 않아야
+    false = 0
+    for s in range(20):
+        g = np.random.default_rng(200 + s)
+        y = np.zeros(len(T))
+        for i in range(1, len(T)):
+            y[i] = 0.8 * y[i - 1] + g.normal()
+        if cy.classify_series(T, y, np.random.default_rng(s))["verdict"] == "A":
+            false += 1
+    assert false <= 2, false
+
+
+def test_verdict_matches_text():  # 판정과 설명 문구가 어긋나지 않아야(실질 주택가격 'p=0.0인데 우연 범위' 모순 재발 방지)
+    for s in range(30):
+        g = np.random.default_rng(300 + s)
+        y = np.cumsum(g.normal(0, 1, 51))
+        c = cy.classify_series(T[:51], y, np.random.default_rng(s))
+        per = c.get("periodicity", {})
+        if c["verdict"] == "none":
+            assert per["pAcf"] >= 0.05 and per["pSpectral"] >= 0.05, c["why"]
+            assert "우연 범위" in c["why"]
+        if c["verdict"] == "weak":
+            assert "판정하지 않음" in c["why"]
+        if per:
+            assert per["pAcf"] > 0 and per["pSpectral"] > 0  # p=0.0 표시가 나오지 않음

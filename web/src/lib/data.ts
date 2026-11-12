@@ -29,26 +29,43 @@ export interface Indicator {
 export interface Doc { id: string; publication: string; title: string; publishedDate: string; url: string; verification: { accessLevel: string; whatWasViewed?: string } }
 export interface Transition { fromEra: string; toEra: string; summary: string }
 export interface Analysis {
-  key: string; indicator: string; country: string; title: string; unit: string; verdict: 'A' | 'E' | 'none' | 'insufficient'; why: string; n: number; from: number; to: number;
+  key: string; indicator: string; country: string; title: string; unit: string; verdict: 'A' | 'E' | 'none' | 'weak' | 'insufficient'; why: string; n: number; from: number; to: number;
   points?: [number, number][]; residual?: [number, number][]; trend?: [number, number][]; turningPoints?: { year: number; kind: 'peak' | 'trough'; value: number }[];
   highEpisodes?: [number, number][]; lowEpisodes?: [number, number][]; episodeBasis?: string; trendR2?: number; changePoint?: { year: number; before: number; after: number; explained: number } | null;
   periodicity?: { acf: number[]; band: number; bestLag: number; maxAbsAcf: number; pAcf: number; spectralPeriod: number; pSpectral: number };
   sensitivity?: { range: [number, number]; n: number; verdict: string; method?: string; pAcf?: number; pSpectral?: number; period?: number; trendR2?: number }[];
 }
 export interface Finding {
-  id: string; type: 'A' | 'B' | 'C' | 'D' | 'E' | 'N' | 'R'; series: string[]; category: Cat; title: string; summary: string;
+  id: string; type: 'A' | 'B' | 'C' | 'D' | 'E' | 'N' | 'R' | 'W'; series: string[]; category: Cat; title: string; summary: string;
   periods: [number, number][]; intervals?: number[]; evidence: Record<string, unknown>; confidence: { level: '높음' | '보통' | '낮음'; why: string };
   interest: number; current?: boolean; signal?: string;
 }
-export interface Parallel { id: string; title: string; a: { eraId: string; label: string; years: string }; b: { eraId: string; label: string; years: string }; rows: { aspect: string; a: { text: string; claimIds: string[] }; b: { text: string; claimIds: string[] }; verdict: string; note: string }[] }
+export interface Parallel { id: string; title: string; a: { eraId: string; label: string; years: string }; b: { eraId: string; label: string; years: string }; rows: { aspect: string; a: { text: string; claimIds: string[] }; b: { text: string; claimIds: string[] }; verdict: string; note: string }[];
+  more?: { label: string; years: string; cells: Record<string, [string, string[]]> }[] }
 
 export type Phase = 'before' | 'condition' | 'turn' | 'spread' | 'life' | 'cross' | 'now';
-export type LinkKind = 'causal' | 'condition' | 'correlation' | 'sequence' | 'interpretation' | 'hypothesis';
-export interface FlowStep { id: string; phase: Phase; period: string; title: string; claimIds: string[]; nodeIds: string[]; empty?: string }
+export type LinkKind = 'causal' | 'condition' | 'correlation' | 'sequence' | 'interpretation' | 'hypothesis' | 'similar';
+export interface FlowStep { id: string; era: string; phase: Phase; period: string; title: string; claimIds: string[]; nodeIds: string[]; empty?: string; measure?: string }
 export interface FlowLink { from: string; to: string; kind: LinkKind; note: string; claimIds: string[] }
+export interface Bridge { from: string; to: string; kind: LinkKind; note: string; claimIds: string[]; change?: string }
 export interface Flow {
-  id: string; question: string; cats: Cat[]; span: [number, number]; shape: string; lede: string[]; indicators: string[];
+  id: string; question: string; cats: Cat[]; span: [number, number]; shape: string; lede: string[]; indicators: string[]; note?: string;
   steps: FlowStep[]; links: FlowLink[]; cross: { flow: string; note: string }[]; gaps: string[]; alternatives: string[];
+  eraStates: Record<string, string>; bridges: Bridge[]; domain: string; topic: string;
+  econ: { status: 'linked' | 'partial' | 'context'; note: string; analysis?: string };
+}
+export interface Synth { text: string; claimIds: string[]; kind: 'synthesis' }
+export interface Study {
+  id: string; question: string; short: string; asOf: string; status: string;
+  scope: { target: string; period: string; variable: string; notIncluded: string };
+  findings: Synth[]; whyNow: Synth;
+  mechanism: { nodes: { id: string; label: string; sub: string }[]; edges: { from: string; to: string; kind: LinkKind; note: string; claimIds: string[] }[] };
+  episodes: { id: string; label: string; years: string; current?: boolean }[];
+  rows: { item: string; cells: Record<string, [string, string[]]> }[];
+  same: Synth[]; different: Synth[];
+  scenarios: { id: string; name: string; conditions: string; path: string; affected: string; timing: string; breaks: string; basis: string[] }[];
+  watch: { name: string; source: string; supports: string; weakens: string; claimIds: string[] }[];
+  revise: string[]; alternatives: string[]; limits: string[]; flows: string[]; indicators: string[]; chartNotes: { year: number; label: string }[];
 }
 
 interface Seed {
@@ -57,7 +74,8 @@ interface Seed {
   cycles: { analyses: Analysis[]; findings: Finding[]; params: Record<string, unknown> };
   numberChecks: Record<string, NumberCheck[]>;
   patterns: { parallels: Parallel[] };
-  flows: { flows: Flow[]; phaseKo: Record<Phase, string>; linkKo: Record<LinkKind, string> };
+  flows: { flows: Flow[]; phaseKo: Record<Phase, string>; linkKo: Record<LinkKind, string>; domains: { id: string; label: string }[] };
+  studies: Study[];
 }
 const seed = seedJson as unknown as Seed;
 
@@ -83,7 +101,12 @@ export const D = {
   flows: seed.flows.flows,
   phaseKo: seed.flows.phaseKo,
   linkKo: seed.flows.linkKo,
+  domains: seed.flows.domains,
+  studies: seed.studies,
 };
+export const studyById: Record<string, Study> = Object.fromEntries(seed.studies.map((s) => [s.id, s]));
+export const ECON_KO = { linked: '경제 판단과 연결 확인', partial: '일부만 연결 확인', context: '문화·역사적 맥락(경제 전망 근거로 쓰지 않음)' } as const;
+export const ERA_LABEL: Record<string, string> = { '1960s': '1960년대', '1970s': '1970년대', '1980s': '1980년대', '1990s': '1990년대', '2000s': '2000년대', '2010s': '2010년대', '2020s': '2020년대' };
 export const flowById: Record<string, Flow> = Object.fromEntries(seed.flows.flows.map((f) => [f.id, f]));
 
 export const byId: Record<string, Node> = Object.fromEntries(D.nodes.map((n) => [n.id, n]));
@@ -96,7 +119,8 @@ export const MIN_Y = 1960, MAX_Y = 2026;
 export const YEARS = Array.from({ length: MAX_Y - MIN_Y + 1 }, (_, i) => MIN_Y + i);
 export const eraOf = (y: number) => D.eras.find((e) => y >= e.startYear && y <= (e.endYear ?? MAX_Y)) ?? D.eras[0];
 export const eraEnd = (e: Era) => Math.min(e.endYear ?? MAX_Y, MAX_Y);
-export const isKR = (n: Node) => n.countries.includes('KR') || n.countries.length === 0;
+/** 한국 사건인가 — 국가 표시가 없더라도 이름에 '(미국)' 등 해외 표시가 있으면 해외 사례로 본다 */
+export const isKR = (n: Node) => n.countries.includes('KR') || (n.countries.length === 0 && !/\((미국|일본|중국|영국|세계|유럽)\)/.test(n.label));
 export const COUNTRY_KO: Record<string, string> = { KR: '한국', US: '미국', JP: '일본', CN: '중국', MIDEAST: '중동', WORLD: '세계', GB: '영국', DE: '독일', FR: '프랑스' };
 export const VERIF_KO: Record<Verif, string> = { evidenced: '근거 있는 인과', interpretation: '해석', statistical: '통계적 연관', hypothesis: '가설' };
 export const CLAIM_KO = { fact: '사실', statistical: '통계', interpretation: '해석', hypothesis: '가설' } as const;

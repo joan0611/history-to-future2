@@ -333,3 +333,102 @@ main { padding: 1rem clamp(1rem, 3vw, 2rem) 3rem; max-width: 1360px; margin: 0 a
   .guide, .era-card dl { grid-template-columns: 1fr; } .guide dt, .era-card dt { margin-top: .2rem; }
   .phasebar a { width: 8rem; }
 }
+
+/* ── 지금 판단하기 · 대표 분석 ── */
+.readorder { list-style: none; padding: 0; margin: .9rem 0 .2rem; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: .4rem; counter-reset: none; }
+.readorder li { background: var(--surface-2); border: 1px solid var(--line); border-radius: 10px; padding: .45rem .55rem; font-size: .84rem; line-height: 1.35; }
+.readorder li b { display: block; color: var(--accent); font-size: .78rem; }
+.readorder.mini li a { text-decoration: none; color: var(--ink); display: block; }
+.studycard { display: flex; flex-direction: column; gap: .45rem; width: 100%; text-align: left; border: 2px solid var(--accent); background: var(--surface); border-radius: var(--r); padding: 1rem 1.1rem; cursor: pointer; margin-bottom: 1rem; }
+.studycard:hover { background: var(--accent-soft); }
+.sc-meta { font-size: .8rem; color: var(--ink-3); display: flex; gap: .5rem; align-items: center; }
+.sc-q { font-size: 1.15rem; line-height: 1.4; }
+.sc-find, .sc-now { font-size: .92rem; line-height: 1.5; color: var(--ink-2); } .sc-find b, .sc-now b { color: var(--ink); margin-right: .3rem; }
+.tag-done, .tag-pending { font-size: .72rem; font-weight: 800; border-radius: 6px; padding: .08rem .45rem; }
+.tag-done { background: var(--c-industry); color: #fff; } .tag-pending { border: 1px dashed var(--ink-3); color: var(--ink-3); }
+.pending-h { margin-top: 1rem; } .pending { list-style: none; padding: 0; display: grid; gap: .5rem; }
+.pending li { border: 1px dashed var(--line-2); border-radius: 10px; padding: .6rem .75rem; display: flex; flex-direction: column; gap: .25rem; }
+.pend-flows { display: flex; flex-wrap: wrap; gap: .3rem; align-items: center; font-size: .82rem; color: var(--ink-3); }
+.domgrid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .6rem; }
+.domcard { border: 1px solid var(--line); border-radius: 10px; padding: .6rem .7rem; display: flex; flex-direction: column; gap: .3rem; align-items: flex-start; }
+.domcard .link { text-align: left; }
+.econ { font-size: .7rem; font-weight: 800; border-radius: 6px; padding: .02rem .4rem; margin-left: .25rem; white-space: nowrap; }
+.econ.e-linked { background: var(--c-industry); color: #fff; } .econ.e-partial { border: 1px solid var(--c-industry); color: var(--c-industry); } .econ.e-context { border: 1px dashed var(--ink-3); color: var(--ink-3); }
+.btn.ghost { background: transparent; color: var(--ink); border: 1px solid var(--line-2); }
+.study h2 .stepno { display: inline-flex; width: 1.6rem; height: 1.6rem; border-radius: 50%; background: var(--accent); color: #fff; font-size: .85rem; align-items: center; justify-content: center; margin-right: .3rem; vertical-align: middle; }
+.synths { display: grid; gap: .45rem; } .synth p { margin: 0; line-height: 1.55; }
+.ct.t-synthesis { color: var(--warn); font-size: .7rem; }
+.whynow { margin-top: .6rem; padding: .6rem .8rem; border-left: 4px solid var(--accent); background: var(--surface-2); border-radius: 8px; }
+.whynow h3 { margin: 0 0 .3rem; }
+.scope { margin-top: .6rem; font-size: .9rem; } .scope summary { cursor: pointer; color: var(--accent); }
+.scope dl { display: grid; grid-template-columns: 7rem 1fr; gap: .3rem .6rem; } .scope dt { font-weight: 800; }
+.lg-band.cmp { display: inline-block; width: 12px; height: 12px; background: var(--surface-2); border: 1px dashed var(--ink-3); vertical-align: middle; margin-right: .3rem; }
+.mech { display: grid; gap: .35rem; }
+.mech-row { display: grid; grid-template-columns: 9rem 6.5rem 9rem 1fr; gap: .5rem; align-items: center; text-align: left; border: 1px solid var(--line); background: var(--surface); border-radius: 10px; padding: .45rem .6rem; cursor: pointer; }
+.mech-row.on, .mech-row:hover { border-color: var(--ink-2); }
+.mech-n { font-weight: 800; font-size: .9rem; display: flex; flex-direction: column; } .mech-n small { font-weight: 400; color: var(--ink-3); font-size: .74rem; }
+.mech-a { font-weight: 800; color: var(--ink-3); white-space: nowrap; }
+.mech-note { font-size: .85rem; color: var(--ink-2); line-height: 1.45; }
+.mech-row.k-sequence, .mech-row.k-hypothesis { border-style: dashed; }
+.mech-ev { margin-top: .5rem; padding: .6rem .8rem; background: var(--surface-2); border-radius: 10px; }
+.tbl.cmp th.cur, .tbl.cmp td.cur { background: var(--accent-soft); }
+.tbl.cmp td { vertical-align: top; font-size: .84rem; min-width: 8.5rem; }
+.cellbtn { border: 0; background: transparent; text-align: left; color: var(--ink); cursor: pointer; padding: 0; font: inherit; text-decoration: underline dotted var(--ink-3); }
+.scen { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem; }
+.scen-card { border: 1px solid var(--line-2); border-radius: var(--r); padding: .8rem .9rem; }
+.scen-card h3 { margin: 0 0 .4rem; }
+.scen-card dl { display: grid; grid-template-columns: 7.5rem 1fr; gap: .35rem .6rem; margin: 0 0 .4rem; font-size: .88rem; line-height: 1.45; }
+.scen-card dt { font-weight: 800; color: var(--ink-2); }
+.nowval { display: block; } .revise li { border-left: 3px solid var(--warn); padding-left: .6rem; margin-bottom: .4rem; }
+/* ── 변화 흐름 지도 ── */
+.fmap-head { display: grid; grid-template-columns: 14rem repeat(7, minmax(0, 1fr)); gap: .3rem; font-size: .76rem; font-weight: 800; color: var(--ink-3); padding: 0 0 .3rem; }
+.fdom { border-top: 1px solid var(--line); }
+.fdom-h { width: 100%; text-align: left; background: transparent; border: 0; padding: .6rem .2rem; cursor: pointer; font-size: .98rem; min-height: 44px; }
+.frow { display: grid; grid-template-columns: 14rem 1fr; gap: .3rem; padding: .3rem 0 .6rem; }
+.frow-q { display: flex; flex-direction: column; gap: .15rem; text-align: left; border: 1px solid var(--line); background: var(--surface-2); border-radius: 10px; padding: .45rem .55rem; cursor: pointer; font-size: .8rem; color: var(--ink-2); }
+.frow-q b { color: var(--ink); font-size: .9rem; } .frow-q .econ { align-self: flex-start; margin: 0; }
+.frow-cells { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: .3rem; }
+.frow-cell { position: relative; display: flex; }
+.fcell { flex: 1; text-align: left; border: 1px solid var(--line); background: var(--surface); border-radius: 8px; padding: .4rem .45rem; font-size: .78rem; line-height: 1.35; cursor: pointer; }
+.fcell:hover { border-color: var(--ink-2); }
+.fcell-e { display: none; font-weight: 800; color: var(--ink-3); font-size: .7rem; }
+.frow-cell { flex-direction: column; gap: .2rem; }
+.fbr { align-self: flex-start; font-size: .64rem; font-weight: 800; background: var(--surface); border: 1px solid currentColor; border-radius: 6px; padding: 0 .3rem; line-height: 1.4; white-space: nowrap; }
+.fbr.none { visibility: hidden; }
+.fbr.k-causal { color: #c43b2a; } .fbr.k-condition { color: var(--c-politics); } .fbr.k-correlation { color: var(--c-industry); }
+.fbr.k-sequence { color: var(--ink-3); border-style: dotted; } .fbr.k-interpretation { color: var(--warn); } .fbr.k-hypothesis { color: var(--ink-3); border-style: dashed; } .fbr.k-similar { color: var(--c-flow); }
+.lk.k-similar { color: var(--c-flow); }
+.fc-dom { font-weight: 800; color: var(--ink-2); }
+/* 흐름 상세: 시대 막대와 시대별 섹션 */
+.erabar { list-style: none; padding: 0; margin: .9rem 0 .3rem; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: .45rem; }
+.erabar li { position: relative; display: flex; }
+.erabar li { flex-direction: column; gap: .2rem; }
+.erabar a { flex: 1; display: flex; flex-direction: column; gap: .15rem; text-decoration: none; color: var(--ink); background: var(--surface-2); border: 1px solid var(--line); border-radius: 10px; padding: .45rem .55rem; min-height: 44px; font-size: .8rem; line-height: 1.35; }
+.erabar li.on a { border-color: var(--accent); }
+.eras-flow { list-style: none; padding: 0; margin: 0; }
+.era-sec { padding: .4rem 0 .2rem; } .era-sec > h3 { margin: .4rem 0; font-size: 1.02rem; }
+.era-tag { display: inline-block; background: var(--ink); color: var(--surface); border-radius: 6px; padding: .05rem .5rem; font-size: .8rem; margin-right: .4rem; }
+.step-card h4 { margin: .2rem 0 .4rem; font-size: 1rem; }
+.measure { font-size: .72rem; color: var(--ink-3); border: 1px dashed var(--line-2); border-radius: 6px; padding: 0 .35rem; margin-left: auto; }
+.ebridge { display: grid; grid-template-columns: 1.4rem 1fr; gap: .1rem .4rem; margin: .5rem 0 .8rem; padding: .6rem .7rem; border-radius: 10px; background: var(--surface-2); border-left: 4px solid var(--ink-3); font-size: .9rem; }
+.ebridge p { margin: .15rem 0; line-height: 1.5; }
+.ebridge.k-causal { border-left-color: #c43b2a; } .ebridge.k-condition { border-left-color: var(--c-politics); } .ebridge.k-correlation { border-left-color: var(--c-industry); }
+.ebridge.k-interpretation { border-left-color: var(--warn); } .ebridge.k-sequence { border-left-style: dotted; } .ebridge.k-similar { border-left-color: var(--c-flow); }
+.bridge-h { font-weight: 800; } .chg { font-size: .74rem; font-weight: 700; color: var(--ink-3); margin-left: .3rem; }
+.econbox p { line-height: 1.55; }
+.abroad { font-size: .62rem; font-weight: 800; color: var(--c-society); border: 1px solid currentColor; border-radius: 4px; padding: 0 .2rem; margin-left: .3rem; }
+th.more, td.more { background: var(--surface-2); }
+details.aux > summary { cursor: pointer; padding: .3rem 0; }
+@media (max-width: 900px) {
+  .readorder { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .domgrid, .scen { grid-template-columns: 1fr; }
+  .mech-row { grid-template-columns: 1fr 5.5rem 1fr; } .mech-note { grid-column: 1 / -1; }
+  .fmap-head { display: none; }
+  .frow { grid-template-columns: 1fr; }
+  .frow-cells { grid-template-columns: 1fr; }
+  .fcell-e { display: block; } .fbr.none { display: none; }
+  .erabar { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .scen-card dl, .scope dl { grid-template-columns: 1fr; }
+}
+.study .tbl-wrap { max-height: none; }
+.tbl.cmp td:first-child, .tbl.cmp th:first-child { position: sticky; left: 0; background: var(--surface); z-index: 1; min-width: 6.5rem; }

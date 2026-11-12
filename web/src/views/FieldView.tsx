@@ -30,7 +30,7 @@ const GROUPS: Record<Cat, Group[]> = {
   politics: [], culture: [['문화 산업·음악', ['content-exp-mix-kr', 'music-exp-kr', 'album-kr']], ['문화 소비', ['cons-culture-kr']]], flow: [],
 };
 const NUMERIC: Record<Cat, string[]> = Object.fromEntries(Object.entries(GROUPS).map(([k, g]) => [k, g.flatMap((x) => x[1])])) as Record<Cat, string[]>;
-const SIGNALS: Record<Cat, string[]> = { economy: ['ch-sg-debt'], industry: ['ch-sg-chip', 'ch-sg-connect'], society: ['ch-sg-household'], politics: ['ch-sg-china'], culture: ['ch-sg-folk', 'ch-sg-kculture'], flow: [] };
+const SIGNALS: Record<Cat, string[]> = { economy: [], industry: ['ch-sg-chip', 'ch-sg-connect'], society: ['ch-sg-household'], politics: ['ch-sg-china'], culture: ['ch-sg-folk', 'ch-sg-kculture'], flow: [] };
 
 export function FieldView({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) => void; why: (id: string) => void }) {
   const c = r.cat;
@@ -102,7 +102,7 @@ export function FieldView({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) 
         {findings.length ? (
           <ul className="flist">
             {findings.map((f) => (
-              <li key={f.id}><a href={`#/cycle?f=${f.id}&y=${r.y}`}><span className={`ftype t-${f.type}`}>{TYPE_SHORT[f.type]}</span><b>{f.title}</b><span className="muted">신뢰도 {f.confidence.level}</span></a></li>
+              <li key={f.id}><a href={`#/cycle?f=${f.id}&y=${r.y}`}><span className={`ftype t-${f.type}`}>{TYPE_SHORT[f.type]}</span><b>{f.title}</b><span className="muted">{f.type === 'W' ? '판정 보류' : `판정 안정성 ${f.confidence.level}`}</span></a></li>
             ))}
           </ul>
         ) : <p className="empty">이 분야는 연속된 수치 자료가 부족해 엔진이 분석할 대상이 아직 없습니다.</p>}
@@ -113,7 +113,7 @@ export function FieldView({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) 
   );
 }
 
-export const TYPE_SHORT: Record<string, string> = { A: '통계적 주기', B: '불규칙 반복', C: '구조적 유사', D: '문화 재유행', E: '장기 구조 변화', N: '주기 없음', R: '지표 간 관계' };
+export const TYPE_SHORT: Record<string, string> = { A: '통계적 주기', B: '불규칙 반복', C: '구조적 유사', D: '문화 재유행', E: '장기 구조 변화', N: '주기 없음', R: '지표 간 관계', W: '주기 후보(판정 보류)' };
 
 function NumericMain({ ind, inds, r, nav }: { ind: Indicator; inds: Indicator[]; r: Route; nav: (p: Partial<Route>) => void }) {
   const [showEp, setShowEp] = useState(true);
@@ -148,7 +148,7 @@ function NumericMain({ ind, inds, r, nav }: { ind: Indicator; inds: Indicator[];
       )}
       <p className="lead"><b>{ind.title}</b> ({ind.unit}) — {ind.description}</p>
       {a && a.verdict !== 'insufficient' && (
-        <p className="auto">자동 분석: {a.verdict === 'E' ? '장기 구조 변화(주기 아님)' : a.verdict === 'A' ? '통계적 주기 후보' : '일정한 주기 없음'} — {a.why}.
+        <p className="auto">자동 분석: {a.verdict === 'E' ? '장기 구조 변화(주기 아님)' : a.verdict === 'A' ? '통계적 주기 후보' : a.verdict === 'weak' ? '주기 후보이지만 판정 보류' : '일정한 주기 없음'} — {a.why}.
           {a.changePoint && ` 평균이 바뀐 해: ${a.changePoint.year}년(${a.changePoint.before}→${a.changePoint.after}${ind.unit}).`}</p>
       )}
       {a?.verdict === 'insufficient' && <p className="auto muted">자동 분석: {a.why}</p>}

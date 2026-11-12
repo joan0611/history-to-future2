@@ -653,11 +653,13 @@ FLOWS = [
 PHASE_KO = {"before": "변화 이전", "condition": "조건과 배경", "turn": "전환점", "spread": "확산과 참여 집단",
             "life": "행동·생활의 변화", "cross": "다른 분야로", "now": "지금 이어지는 것 · 달라진 것"}
 LINK_KO = {"causal": "자료가 뒷받침하는 인과", "condition": "배경·조건", "correlation": "함께 움직임(상관)",
-           "sequence": "시간 순서일 뿐", "interpretation": "해석", "hypothesis": "검증되지 않은 가설"}
+           "sequence": "시간 순서일 뿐", "interpretation": "해석", "hypothesis": "검증되지 않은 가설",
+           "similar": "닮은 일(비교)"}
 
 
 def validate(claims, nodes, indicators):
     """흐름이 가리키는 주장·사건·지표가 실제로 있는지, 단계 연결이 올바른지 확인한다."""
+    _ex = _fe.apply(FLOWS, claims)
     cids = {c["id"] for c in claims}
     nids = {n["id"] for n in nodes}
     iids = {i["id"] for i in indicators}
@@ -690,7 +692,7 @@ def validate(claims, nodes, indicators):
         for c in f["lede"]:
             if c not in cids:
                 raise SystemExit(f"{f['id']}: 요약 근거 없음 {c}")
-    return {"flows": FLOWS, "phaseKo": PHASE_KO, "linkKo": LINK_KO}
+    return {"flows": FLOWS, "phaseKo": PHASE_KO, "linkKo": LINK_KO, "domains": _ex["domains"]}
 
 
 # 추가 흐름: 가족과 제도, 도시와 교통
@@ -699,3 +701,9 @@ import flows_family_city as _ffc  # noqa: E402
 SOURCES += _ffc.SOURCES
 CLAIMS += _ffc.CLAIMS
 FLOWS += _ffc.FLOWS
+
+# 모든 흐름이 일곱 시대를 지나가도록: 시대별 모습·시대 사이 다리, 새 흐름(정치·경제·기기·여가)
+import flows_eras as _fe  # noqa: E402
+
+SOURCES += _fe.SOURCES
+CLAIMS += _fe.CLAIMS

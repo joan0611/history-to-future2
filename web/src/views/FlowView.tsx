@@ -1,4 +1,5 @@
-import { CAT_SHORT, D, STATUS_SHORT, byId, evidenceCount, flowById, type Flow, type FlowLink, type FlowStep, type Indicator, type LinkKind } from '../lib/data';
+import { useState } from 'react';
+import { D, ECON_KO, STATUS_SHORT, byId, evidenceCount, flowById, type Bridge, type Flow, type FlowLink, type FlowStep, type Indicator, type LinkKind } from '../lib/data';
 import type { Route } from '../lib/route';
 import { Chart, SourceLine } from '../ui/Chart';
 import { Claims } from '../ui/WhyPanel';
@@ -17,27 +18,63 @@ export function FlowView({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) =
 }
 
 export function FlowCard({ f, nav, compact }: { f: Flow; nav: (p: Partial<Route>) => void; compact?: boolean }) {
-  const claimIds = [...new Set(f.steps.flatMap((s) => s.claimIds))];
-  const ev = evidenceCount(claimIds);
   return (
     <button className="flowcard" onClick={() => nav({ tab: 'flow', flow: f.id, why: undefined, path: [] })}>
-      <span className="fc-meta">{f.cats.map((c) => <span key={c} className={`fc-cat c-${c}`}><span className={`cdot c-${c}`} />{CAT_SHORT[c]}</span>)}<span>{f.span[0]}–{f.span[1]}</span></span>
+      <span className="fc-meta"><span className="fc-dom">{domainLabel(f.domain)} · {f.topic}</span><span className={`econ e-${f.econ.status}`}>{f.econ.status === 'linked' ? '경제 연결' : f.econ.status === 'partial' ? '일부 연결' : '맥락'}</span></span>
       <b className="fc-q">{f.question}</b>
       {!compact && <span className="fc-shape">{f.shape}</span>}
-      <span className="fc-foot">단계 {f.steps.length}개 · 근거 문장 {ev.total}개(두 곳 이상 확인 {ev.verified}) · 미확인 {f.gaps.length}건 <span className="fc-go">읽기 →</span></span>
+      <span className="fc-go">시대별로 읽기 →</span>
     </button>
   );
 }
 
+const domainLabel = (id: string) => D.domains.find((d) => d.id === id)?.label ?? id;
+export const KIND_SHORT: Record<LinkKind, string> = { causal: '인과', condition: '조건', correlation: '상관', sequence: '순서', interpretation: '해석', hypothesis: '가설', similar: '비교' };
+
+/** 변화 흐름 지도 — 대분류(8) → 세부 흐름. 한 줄 = 한 주제의 일곱 시대. 칸 사이 표시 = 다음 시대로 넘어간 연결의 성격. */
 function FlowList({ nav }: { nav: (p: Partial<Route>) => void }) {
+  const [open, setOpen] = useState<string | null>(null);
   return (
     <div className="view">
       <section className="panel hero">
-        <h2>질문으로 읽는 변화</h2>
-        <p className="lead">사건을 시간순으로 늘어놓는 대신, 질문 하나를 놓고 <b>이전에는 어땠고 → 어떤 조건에서 → 무엇이 계기가 되어 → 누구에게 퍼졌고 → 생활이 어떻게 달라졌으며 → 지금 무엇이 이어지는지</b>를 근거와 함께 따라갑니다.</p>
-        <div className="flowgrid">{D.flows.map((f) => <FlowCard key={f.id} f={f} nav={nav} />)}</div>
+        <h2>변화 흐름 — 한 주제를 시대별로 끝까지</h2>
+        <p className="lead">한 줄은 <b>같은 대상</b>을 1960년대부터 2020년대까지 따라갑니다. 칸 사이의 표시는 다음 시대로 <b>왜 넘어갔는지</b>의 성격입니다(인과·조건·상관·순서·해석). ‘순서’는 근거가 없어 시간 순서로만 이어 놓은 곳입니다.</p>
+        <p className="small muted">분야를 누르면 그 안의 흐름이 펼쳐집니다. 줄을 누르면 시대별 근거와 연결고리를 읽습니다.</p>
+      </section>
+      <section className="panel">
+        <div className="fmap-head"><span /> {D.eras.map((e) => <span key={e.id}>{e.label.replace('~현재', '')}</span>)}</div>
+        {D.domains.map((d) => {
+          const fs = D.flows.filter((f) => f.domain === d.id);
+          const on = open === d.id || open === 'all';
+          return (
+            <div key={d.id} className={`fdom${on ? ' on' : ''}`}>
+              <button className="fdom-h" aria-expanded={on} onClick={() => setOpen(on ? null : d.id)}><b>{d.label}</b> <span className="muted small">흐름 {fs.length}개 {on ? '▴' : '▾'}</span></button>
+              {on && fs.map((f) => <FlowRow key={f.id} f={f} nav={nav} />)}
+            </div>
+          );
+        })}
+        <p><button className="link" onClick={() => setOpen(open === 'all' ? null : 'all')}>{open === 'all' ? '모두 접기' : '모든 분야 펼치기'}</button></p>
       </section>
       <HowToRead />
+    </div>
+  );
+}
+
+function FlowRow({ f, nav }: { f: Flow; nav: (p: Partial<Route>) => void }) {
+  return (
+    <div className="frow">
+      <button className="frow-q" onClick={() => nav({ tab: 'flow', flow: f.id })}><b>{f.topic}</b><span>{f.question}</span><span className={`econ e-${f.econ.status}`}>{f.econ.status === 'linked' ? '경제 연결' : f.econ.status === 'partial' ? '일부 연결' : '맥락'}</span></button>
+      <div className="frow-cells">
+        {D.eras.map((e, i) => {
+          const b = f.bridges[i - 1];
+          return (
+            <div key={e.id} className="frow-cell">
+              {b ? <span className={`fbr k-${b.kind}`} title={`${D.linkKo[b.kind]} — ${b.note}`}>← {KIND_SHORT[b.kind]}</span> : <span className="fbr none" aria-hidden>시작</span>}
+              <button className="fcell" onClick={() => nav({ tab: 'flow', flow: f.id, y: e.startYear })}><span className="fcell-e">{e.label.replace('~현재', '')}</span>{f.eraStates[e.id]}</button>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
@@ -74,27 +111,36 @@ export const LINK_DESC: Record<LinkKind, string> = {
   sequence: '앞뒤 순서만 맞음 — 인과를 주장하지 않음',
   interpretation: '연구자·기관·작성자의 해석',
   hypothesis: '아직 검증되지 않은 설명',
+  similar: '다른 시기의 닮은 일과 비교 — 영향 관계가 아님',
 };
 
 function FlowDetail({ f, r, nav, why }: { f: Flow; r: Route; nav: (p: Partial<Route>) => void; why: (id: string, from?: string) => void }) {
-  const stepById = Object.fromEntries(f.steps.map((s) => [s.id, s]));
   const inds = f.indicators.map((id) => D.indicators.find((i) => i.id === id)).filter(Boolean) as Indicator[];
-  const phases = [...new Set(f.steps.map((s) => s.phase))];
+  const claimIds = [...new Set(f.steps.flatMap((s) => s.claimIds).concat(f.bridges.flatMap((b) => b.claimIds)))];
+  const ev = evidenceCount(claimIds);
+  const kinds = f.bridges.reduce((a, b) => ({ ...a, [b.kind]: (a[b.kind] ?? 0) + 1 }), {} as Record<string, number>);
+  const go = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  const startEra = D.eras.find((e) => r.y >= e.startYear && r.y <= (e.endYear ?? 2026))?.id;
   return (
     <div className="view flow">
-      <nav className="crumbline"><button className="link" onClick={() => nav({ flow: undefined })}>← 모든 질문</button></nav>
+      <nav className="crumbline"><button className="link" onClick={() => nav({ flow: undefined })}>← 모든 흐름</button></nav>
       <section className="panel hero">
-        <div className="eyebrow">{f.cats.map((c) => <span key={c} className={`fc-cat c-${c}`}><span className={`cdot c-${c}`} />{CAT_SHORT[c]}</span>)} {f.span[0]}–{f.span[1]}</div>
+        <div className="eyebrow">{domainLabel(f.domain)} · {f.topic} <span className={`econ e-${f.econ.status}`}>{ECON_KO[f.econ.status]}</span></div>
         <h2>{f.question}</h2>
-        <p className="shape"><b>변화의 모양</b> {f.shape} <span className="muted small">(여러 근거를 묶은 작성자 정리)</span></p>
-        <div className="lede"><h3>먼저 보는 근거</h3><Claims ids={f.lede} all /></div>
-        <ol className="phasebar" aria-label="이 흐름의 단계">
-          {f.steps.map((s) => (
-            <li key={s.id} className={`ph-${s.phase}`}><a href={`#step-${s.id}`} onClick={(e) => { e.preventDefault(); document.getElementById(`step-${s.id}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }}>
-              <span className="pb-ph">{D.phaseKo[s.phase]}</span><span className="pb-y">{s.period}</span><span className="pb-t">{s.title}</span></a></li>
-          ))}
+        <p className="shape"><b>확인된 변화의 모양</b> {f.shape} <span className="muted small">(근거 문장을 묶은 작성자 정리)</span></p>
+        {f.note && <p className="small muted">{f.note}</p>}
+        <ol className="erabar" aria-label="시대별 모습">
+          {D.eras.map((e, i) => {
+            const b = f.bridges[i - 1];
+            return (
+              <li key={e.id} className={startEra === e.id ? 'on' : ''}>
+                {b ? <span className={`fbr k-${b.kind}`} title={D.linkKo[b.kind]}>← {KIND_SHORT[b.kind]}</span> : <span className="fbr none" aria-hidden>시작</span>}
+                <a href={`#era-${e.id}`} onClick={(ev2) => { ev2.preventDefault(); go(`era-${e.id}`); }}><span className="pb-ph">{e.label.replace('~현재', '')}</span><span className="pb-t">{f.eraStates[e.id]}</span></a>
+              </li>
+            );
+          })}
         </ol>
-        <p className="small muted">이 흐름에 있는 단계: {phases.map((p) => D.phaseKo[p]).join(' · ')}. 모든 흐름에 같은 단계를 억지로 채우지 않습니다.</p>
+        <p className="small muted">연결 {f.bridges.length}개: {Object.entries(kinds).map(([k, n]) => `${D.linkKo[k as LinkKind]} ${n}`).join(' · ')}. 근거 문장 {ev.total}개(두 곳 이상 확인 {ev.verified} · 한 곳 확인 {ev.sourced}).</p>
       </section>
 
       {inds.length > 0 && (
@@ -105,10 +151,26 @@ function FlowDetail({ f, r, nav, why }: { f: Flow; r: Route; nav: (p: Partial<Ro
       )}
 
       <section className="panel">
-        <h2>단계별로 따라가기</h2>
-        <ol className="steps">
-          {f.steps.map((s, i) => <Step key={s.id} s={s} prev={f.steps[i - 1]} links={f.links.filter((l) => l.to === s.id)} stepById={stepById} f={f} why={why} />)}
+        <h2>시대별로 따라가기 <span className="sub">그 시대의 모습 → 다음 시대로 넘어간 연결고리</span></h2>
+        <ol className="eras-flow">
+          {D.eras.map((e, i) => {
+            const steps = f.steps.filter((s) => s.era === e.id);
+            const b = f.bridges[i];
+            return (
+              <li key={e.id} id={`era-${e.id}`} className="era-sec">
+                <h3><span className="era-tag">{e.label.replace('~현재', '')}</span> {f.eraStates[e.id]}</h3>
+                <ol className="steps">{steps.map((s, k) => <Step key={s.id} s={s} prev={steps[k - 1]} links={f.links.filter((l) => l.to === s.id)} f={f} why={why} />)}</ol>
+                {b && <BridgeBox b={b} />}
+              </li>
+            );
+          })}
         </ol>
+      </section>
+
+      <section className="panel econbox">
+        <h2>경제 판단과의 관계</h2>
+        <p><span className={`econ e-${f.econ.status}`}>{ECON_KO[f.econ.status]}</span> {f.econ.note}</p>
+        {f.econ.analysis && <p><button className="btn" onClick={() => nav({ tab: 'now', study: f.econ.analysis, flow: undefined })}>이 흐름을 쓰는 분석: {D.studies.find((x) => x.id === f.econ.analysis)?.short} — 현재 비교·시나리오·지표 →</button></p>}
       </section>
 
       <section className="panel">
@@ -121,7 +183,7 @@ function FlowDetail({ f, r, nav, why }: { f: Flow; r: Route; nav: (p: Partial<Ro
           <div>
             <h2>다른 설명 가능성</h2>
             <ul className="plain">{f.alternatives.map((a) => <li key={a}>{a}</li>)}</ul>
-            <h2>다른 흐름과의 연결</h2>
+            <h2>다른 흐름과 만나는 곳</h2>
             <ul className="plain">{f.cross.map((x) => <li key={x.flow}><button className="link" onClick={() => nav({ flow: x.flow })}>{flowById[x.flow].question}</button> <span className="muted">— {x.note}</span></li>)}</ul>
           </div>
         </div>
@@ -131,23 +193,34 @@ function FlowDetail({ f, r, nav, why }: { f: Flow; r: Route; nav: (p: Partial<Ro
   );
 }
 
-function Step({ s, prev, links, stepById, f, why }: { s: FlowStep; prev?: FlowStep; links: FlowLink[]; stepById: Record<string, FlowStep>; f: Flow; why: (id: string, from?: string) => void }) {
-  const fromPrev = links.some((l) => prev && l.from === prev.id);
+function BridgeBox({ b }: { b: Bridge }) {
+  const nextLabel = D.eras.find((e) => e.id === b.to)?.label.replace('~현재', '');
+  return (
+    <div className={`ebridge k-${b.kind}`}>
+      <span className="conn-arrow" aria-hidden>↓</span>
+      <div>
+        <p className="bridge-h">{nextLabel}로 넘어간 연결 <span className={`lk k-${b.kind}`}>{D.linkKo[b.kind]}</span>{b.change && <span className="chg">앞뒤 관계: {b.change}</span>}</p>
+        <p>{b.note}</p>
+        {b.claimIds.length > 0 ? <details className="conn-ev"><summary>이 연결의 근거 {b.claimIds.length}</summary><Claims ids={b.claimIds} all /></details>
+          : <p className="small muted">연결을 뒷받침하는 근거를 찾지 못해 시간 순서로만 이어 두었습니다(조사 공백).</p>}
+      </div>
+    </div>
+  );
+}
+
+function Step({ s, prev, links, f, why }: { s: FlowStep; prev?: FlowStep; links: FlowLink[]; f: Flow; why: (id: string, from?: string) => void }) {
   return (
     <li id={`step-${s.id}`} className={`step ph-${s.phase}`}>
-      {links.map((l) => (
+      {links.filter((l) => prev && l.from === prev.id).map((l) => (
         <div key={l.from + l.to} className={`conn k-${l.kind}`}>
           <span className="conn-arrow" aria-hidden>↓</span>
-          <span><span className={`lk k-${l.kind}`}>{D.linkKo[l.kind]}</span>{prev && l.from !== prev.id && <span className="muted"> ‘{stepById[l.from].title}’에서</span>} {l.note}</span>
+          <span><span className={`lk k-${l.kind}`}>{D.linkKo[l.kind]}</span> {l.note}</span>
           {l.claimIds.length > 0 && <details className="conn-ev"><summary>이 연결의 근거 {l.claimIds.length}</summary><Claims ids={l.claimIds} all /></details>}
         </div>
       ))}
-      {prev && !fromPrev && links.length === 0 && (
-        <div className="conn k-none"><span className="conn-arrow" aria-hidden>↓</span><span className="muted small">앞 단계와의 연결은 확인된 근거가 없어 시간 순서로만 놓았습니다.</span></div>
-      )}
       <div className="step-card">
-        <div className="step-h"><span className={`phase ph-${s.phase}`}>{D.phaseKo[s.phase]}</span><span className="step-y">{s.period}</span></div>
-        <h3>{s.title}</h3>
+        <div className="step-h"><span className={`phase ph-${s.phase}`}>{D.phaseKo[s.phase]}</span><span className="step-y">{s.period}</span>{s.measure && <span className="measure" title="이 자료가 실제로 재는 것">자료가 재는 것: {s.measure}</span>}</div>
+        <h4>{s.title}</h4>
         {s.claimIds.length ? <Claims ids={s.claimIds} all /> : <p className="empty">자료 없음 — {s.empty}</p>}
         {s.nodeIds.length > 0 && (
           <p className="step-ev">사건 상세: {s.nodeIds.map((id) => byId[id] && <button key={id} className="chip" onClick={() => why(id, f.id)}>{byId[id].year} {byId[id].label} →</button>)}</p>

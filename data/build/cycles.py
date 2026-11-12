@@ -38,15 +38,41 @@ def acf(r, k):
     return float(np.corrcoef(r[:-k], r[k:])[0, 1])
 
 
+def ar1_surrogates(r, rng, n_sur):
+    """귀무가설용 '적색잡음' 대조 시계열: 같은 길이·같은 분산·같은 1차 자기상관(AR(1))을 가진 무작위 시계열.
+    순서를 뒤섞는(순열) 대조는 '서서히 움직이는 수준 지표'라면 무엇이든 주기처럼 보이게 만든다(1975~2025 실질 주택가격 지수가 p≈0으로 나온 원인).
+    AR(1) 대조와 비교해야 '서서히 움직임'이 아니라 '되풀이'를 시험할 수 있다."""
+    n = len(r)
+    phi = float(np.clip(acf(r, 1), -0.95, 0.95)) if n > 3 else 0.0
+    sd = float(np.std(r)) or 1.0
+    eps_sd = sd * np.sqrt(1 - phi ** 2)
+    out = []
+    for _ in range(n_sur):
+        e = rng.normal(0, eps_sd, n)
+        x = np.empty(n)
+        x[0] = rng.normal(0, sd)
+        for i in range(1, n):
+            x[i] = phi * x[i - 1] + e[i]
+        out.append(x)
+    return out, phi
+
+
+def _p(null, obs):
+    # (넘은 횟수+1)/(대조 수+1) — 0이 나오지 않게 하는 표준 방식. 최소값은 약 0.0005
+    return float(((null >= obs).sum() + 1) / (len(null) + 1))
+
+
 def periodicity(r, rng, max_lag=None, n_perm=N_PERM):
-    """여러 시차·주파수를 한꺼번에 본 순열 검정. 반환: 가장 강한 시차/주기와 p값."""
+    """여러 시차·주파수를 한꺼번에 본 검정. 대조군은 같은 1차 자기상관을 가진 적색잡음(AR(1)).
+    반환: 가장 강한 시차/주기와 p값(대조군 가운데 관측값 이상인 비율)."""
     n = len(r)
     L = max_lag or max(2, min(20, n // 2 - 1))
-    ac = [acf(r, k) for k in range(1, L + 1)]
+    ac = [acf(r, k) for k in range(2, L + 1)]  # 시차 1은 AR(1) 대조와 같게 맞춰지므로 2부터 본다
     obs = max(abs(a) for a in ac)
-    best_lag = int(np.argmax([abs(a) for a in ac]) + 1)
-    null = np.array([max(abs(acf(p, k)) for k in range(1, L + 1)) for p in (rng.permutation(r) for _ in range(n_perm))])
-    p_acf = float((null >= obs).mean())
+    best_lag = int(np.argmax([abs(a) for a in ac]) + 2)
+    sur, phi = ar1_surrogates(r, rng, n_perm)
+    null = np.array([max(abs(acf(p, k)) for k in range(2, L + 1)) for p in sur])
+    p_acf = _p(null, obs)
 
     def share(x):
         P = np.abs(np.fft.rfft(x - x.mean())) ** 2
@@ -55,10 +81,15 @@ def periodicity(r, rng, max_lag=None, n_perm=N_PERM):
     P, sh = share(r)
     f = np.fft.rfftfreq(n)[1:]
     period = float(1 / f[int(P.argmax())])
-    null_s = np.array([share(rng.permutation(r))[1] for _ in range(n_perm)])
-    p_spec = float((null_s >= sh).mean())
-    return {"acf": [round(a, 3) for a in ac], "bestLag": best_lag, "maxAbsAcf": round(obs, 3), "pAcf": round(p_acf, 3),
-            "band": round(1.96 / np.sqrt(n), 3), "spectralPeriod": round(period, 1), "spectralShare": round(float(sh), 3), "pSpectral": round(p_spec, 3)}
+    null_s = np.array([share(p)[1] for p in sur])
+    p_spec = _p(null_s, sh)
+    return {"acf": [round(a, 3) for a in ac], "bestLag": best_lag, "maxAbsAcf": round(obs, 3), "pAcf": round(p_acf, 4),
+            "band": round(1.96 / np.sqrt(n), 3), "spectralPeriod": round(period, 1), "spectralShare": round(float(sh), 3),
+            "pSpectral": round(p_spec, 4), "ar1": round(phi, 3), "null": "AR(1) 적색잡음 대조 2,000개"}
+
+
+def fmt_p(p):
+    return "<0.001" if p < 0.001 else f"{p:.3f}".rstrip("0").rstrip(".") if p < 0.1 else f"{p:.2f}"
 
 
 def change_point(t, y):
@@ -148,15 +179,26 @@ def classify_series(t, y, rng):
     per = periodicity(r, rng)
     res.update({"trendR2": round(r2, 3), "slopePerDecade": round(float(b[0]) * 10, 2), "changePoint": cp, "periodicity": per})
     cycles_seen = n / per["spectralPeriod"] if per["spectralPeriod"] else 0
-    if per["pAcf"] < 0.05 and per["pSpectral"] < 0.05 and cycles_seen >= 3:
+    span = f"{int(t[0])}~{int(t[-1])}년 {n}개"
+    pa, ps = per["pAcf"], per["pSpectral"]
+    ptxt = f"시차 검정 p={fmt_p(pa)}, 주기도 검정 p={fmt_p(ps)}(대조: 같은 자기상관의 적색잡음)"
+    if pa < 0.05 and ps < 0.05 and cycles_seen >= 3:
         res["verdict"] = "A"
-        res["why"] = f"추세 제거 후 약 {per['spectralPeriod']}년 주기, 두 검정 모두 p<0.05, 관측 기간 안 {cycles_seen:.1f}회"
+        res["why"] = f"{span}: 추세 제거 후 약 {per['spectralPeriod']}년 주기, {ptxt}, 관측 기간 안 {cycles_seen:.1f}회 반복"
     elif r2 >= 0.3 or (cp and cp["explained"] >= 0.3):
         res["verdict"] = "E"
-        res["why"] = (f"직선 추세가 변동의 {round(r2 * 100)}% 설명" if r2 >= 0.3 else f"{cp['year']}년 전후 평균이 {cp['before']}→{cp['after']}로 바뀜(변동의 {round(cp['explained'] * 100)}%)")
+        res["why"] = f"{span}: " + (f"직선 추세가 변동의 {round(r2 * 100)}% 설명" if r2 >= 0.3 else f"{cp['year']}년 전후 평균이 {cp['before']}→{cp['after']}로 바뀜(변동의 {round(cp['explained'] * 100)}%)")
+    elif pa < 0.05 or ps < 0.05:
+        res["verdict"] = "weak"
+        lacking = []
+        if not (pa < 0.05 and ps < 0.05):
+            lacking.append("두 검정 중 하나만 통과")
+        if cycles_seen < 3:
+            lacking.append(f"추정 주기 약 {per['spectralPeriod']}년이 관측 기간 안에 {cycles_seen:.1f}회뿐(3회 미만)")
+        res["why"] = f"{span}: {ptxt}. 주기 후보이지만 " + "·".join(lacking) + " — 주기로 판정하지 않음"
     else:
         res["verdict"] = "none"
-        res["why"] = f"주기 검정 p={per['pAcf']}(시차)·{per['pSpectral']}(주기도) — 우연 범위, 뚜렷한 장기 추세도 없음"
+        res["why"] = f"{span}: {ptxt} — 두 검정 모두 우연 범위(p≥0.05), 뚜렷한 장기 추세도 없음"
     return res
 
 
@@ -213,8 +255,11 @@ def lag_corr(t1, y1, t2, y2, rng, lags=range(-3, 4)):
         return float(np.corrcoef(x, z)[0, 1])
     vals = [{"lag": L, "r": round(cc(a, b, L), 3)} for L in lags]
     obs = max(abs(v["r"]) for v in vals)
-    null = np.array([max(abs(cc(a, rng.permutation(b), L)) for L in lags) for _ in range(N_PERM)])
-    return {"from": int(lo), "to": int(hi), "values": vals, "maxAbs": round(obs, 3), "p": round(float((null >= obs).mean()), 3)}
+    # 대조: b와 같은 자기상관을 가진 적색잡음(순열은 자기상관이 큰 두 지표 사이에 가짜 상관을 쉽게 '유의'로 만든다)
+    sur, _ = ar1_surrogates(b, rng, N_PERM)
+    null = np.array([max(abs(cc(a, s, L)) for L in lags) for s in sur])
+    return {"from": int(lo), "to": int(hi), "values": vals, "maxAbs": round(obs, 3), "p": round(_p(null, obs), 4),
+            "null": "b와 같은 1차 자기상관의 적색잡음 대조"}
 
 
 def sensitivity(t, y, rng, windows):
@@ -231,7 +276,7 @@ def sensitivity(t, y, rng, windows):
     # 추세 제거 방식을 바꾸면? (직선 대신 1차 차분)
     d = np.diff(y)
     per = periodicity(d - d.mean(), rng)
-    out.append({"range": [int(t[1]), int(t[-1])], "n": len(d), "method": "1차 차분(전년 대비 변화)", "verdict": "A" if per["pAcf"] < 0.05 and per["pSpectral"] < 0.05 else "none",
+    out.append({"range": [int(t[1]), int(t[-1])], "n": len(d), "method": "1차 차분(전년 대비 변화)", "verdict": "A" if per["pAcf"] < 0.05 and per["pSpectral"] < 0.05 and len(d) / per["spectralPeriod"] >= 3 else ("weak" if min(per["pAcf"], per["pSpectral"]) < 0.05 else "none"),
                 "pAcf": per["pAcf"], "pSpectral": per["pSpectral"], "period": per["spectralPeriod"]})
     return out
 
@@ -321,10 +366,15 @@ def run(indicators, signals, graph_nodes):
                  "title": (f"{x['title']}({country_ko(x['country'])}): " + ("장기 구조 변화 — 주기가 아님" if x["verdict"] == "E" else "통계적 주기")),
                  "summary": x["why"], "periods": [[x["changePoint"]["year"], x["to"]]] if x["verdict"] == "E" and x["changePoint"] else [],
                  "evidence": {"trendR2": x["trendR2"], "changePoint": x["changePoint"], "pAcf": x["periodicity"]["pAcf"], "pSpectral": x["periodicity"]["pSpectral"]}})
+        elif x["verdict"] == "weak":
+            add({"id": f"f-{x['key']}-weak", "type": "W", "series": [x["key"]], "category": x_cat(x),
+                 "title": f"{x['title']}({country_ko(x['country'])}): 주기 후보 — 판정 보류", "summary": x["why"], "periods": [],
+                 "evidence": {"pAcf": x["periodicity"]["pAcf"], "pSpectral": x["periodicity"]["pSpectral"], "n": x["n"],
+                              "period": x["periodicity"]["spectralPeriod"]}})
         elif x["verdict"] == "none" and x["n"] >= 30:
             add({"id": f"f-{x['key']}-nocycle", "type": "N", "series": [x["key"]], "category": x_cat(x),
                  "title": f"{x['title']}({country_ko(x['country'])}): 일정한 주기 없음", "summary": x["why"], "periods": [],
-                 "evidence": {"pAcf": x["periodicity"]["pAcf"], "pSpectral": x["periodicity"]["pSpectral"], "bestLag": x["periodicity"]["bestLag"]}})
+                 "evidence": {"pAcf": x["periodicity"]["pAcf"], "pSpectral": x["periodicity"]["pSpectral"], "bestLag": x["periodicity"]["bestLag"], "n": x["n"]}})
 
     # 2) 급변 구간의 반복(B): 높은 쪽·낮은 쪽 각각
     for x in analyses:
@@ -368,7 +418,7 @@ def run(indicators, signals, graph_nodes):
         best = max(lc["values"], key=lambda v: abs(v["r"]))
         add({"id": "f-lag-gdp-cpi", "type": "R", "series": ["gdp-growth:KR", "cpi-kr:KR"], "category": "economy",
              "title": "성장률과 물가: 시차 관계" + (" — 우연 범위" if lc["p"] >= 0.05 else ""),
-             "summary": f"추세를 뺀 두 지표의 상관이 가장 큰 시차는 {best['lag']}년(r={best['r']}). 시차 7개를 함께 본 순열 검정 p={lc['p']}. 상관이 있어도 인과를 뜻하지 않음",
+             "summary": f"추세를 뺀 두 지표의 상관이 가장 큰 시차는 {best['lag']}년(r={best['r']}). {lc['from']}~{lc['to']}년 자료, 시차 7개를 함께 본 검정 p={fmt_p(lc['p'])}(대조: 적색잡음). 상관이 있어도 인과를 뜻하지 않음",
              "periods": [], "evidence": lc})
 
     # 4) 문화적 재유행(D): 근거로 확인된 단계 흐름에서 '재등장'이 있는 것
@@ -407,7 +457,10 @@ def confidence(f, A):
         return {"level": "높음" if (e.get("trendR2") or 0) >= 0.4 or (e.get("changePoint") or {}).get("explained", 0) >= 0.4 else "보통",
                 "why": "추세·변화점의 설명력 기준"}
     if t == "N":
-        return {"level": "높음", "why": "주기가 '없다'는 판단은 순열 검정 결과가 직접 뒷받침"}
+        n = (f["evidence"] or {}).get("n", 0)
+        return {"level": "보통" if n >= 50 else "낮음", "why": f"관측 {n}개로 적색잡음 대조와 구별되지 않음 — 주기가 없다는 것을 증명하지는 못하며, 더 긴 주기는 볼 수 없음"}
+    if t == "W":
+        return {"level": "낮음", "why": "검정 일부만 통과했거나 반복 횟수가 3회 미만 — 후보일 뿐"}
     if t == "B":
         c = (f["evidence"] or {}).get("count", 0)
         return {"level": "보통" if c >= 4 else "낮음", "why": f"급변 구간 {c}회 — 횟수가 적을수록 간격 판단이 불안정"}
@@ -416,12 +469,12 @@ def confidence(f, A):
         return {"level": "보통" if pc <= 1 else "낮음", "why": f"닮은 정도가 무작위 구간 쌍의 하위 {pc}% — 지표 2개·5년 구간만 사용"}
     if t == "R":
         p = f["evidence"]["p"]
-        return {"level": "보통" if p < 0.01 else "낮음", "why": f"시차 7개를 함께 본 순열 검정 p={p}. 상관일 뿐 인과가 아님"}
+        return {"level": "보통" if p < 0.01 else "낮음", "why": f"시차 7개를 함께 본 검정 p={fmt_p(p)}(적색잡음 대조). 상관일 뿐 인과가 아님"}
     return {"level": "낮음", "why": "수치가 아닌 기록(단계)만 있어 정성적 유사성"}
 
 
 def interest(f):
-    base = {"C": 3, "B": 3, "D": 2.5, "E": 2, "A": 4, "N": 1, "R": 1.5}[f["type"]]
+    base = {"C": 3, "B": 3, "D": 2.5, "E": 2, "A": 4, "N": 1, "R": 1.5, "W": 1.5}[f["type"]]
     if f.get("current"):
         base += 1.5
     if "급등" in f["title"] and "물가" in f["title"]:
