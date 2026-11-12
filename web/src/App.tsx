@@ -2,6 +2,7 @@ import { InstallTip } from './ui/InstallTip';
 import { useEffect } from 'react';
 import { useRoute, type Tab } from './lib/route';
 import { MasterTimeline } from './views/MasterTimeline';
+import { TasteView } from './views/TasteView';
 import { HistoryView } from './views/HistoryView';
 import { FieldView } from './views/FieldView';
 import { CycleView } from './views/CycleView';
@@ -19,6 +20,7 @@ import { byId, eraOf } from './lib/data';
  */
 const TABS: { id: Tab; t: string; d: string }[] = [
   { id: 'now', t: '지금 판단하기', d: '과거로 현재를 읽고 볼 지표 찾기' },
+  { id: 'taste', t: '취향·생활 흐름', d: '무엇을 좋아하고 사다가 왜 바꿨나' },
   { id: 'flow', t: '변화 흐름', d: '한 주제를 시대별로 끝까지' },
   { id: 'history', t: '전체 역사', d: '시대별 사건 둘러보기' },
   { id: 'field', t: '분야별 변화', d: '한 분야의 지표와 사건' },
@@ -38,18 +40,23 @@ export function App() {
         </a>
         <nav className="tabs" role="tablist" aria-label="탐색">
           {TABS.map((t) => (
-            <button key={t.id} role="tab" aria-selected={r.tab === t.id} className={r.tab === t.id ? 'on' : ''} onClick={() => nav({ tab: t.id, flow: undefined, study: undefined, why: undefined, path: [], from: undefined })}>
+            <button key={t.id} role="tab" aria-selected={r.tab === t.id} className={r.tab === t.id ? 'on' : ''} onClick={() => nav({ tab: t.id, flow: undefined, study: undefined, taste: undefined, why: undefined, path: [], from: undefined })}>
               <b>{t.t}</b><span>{t.d}</span>
             </button>
           ))}
         </nav>
       </header>
-      <div className="sticky">
-        <MasterTimeline r={r} nav={nav} />
-        <p className="ctx">지금 보는 시점 <b>{eraOf(r.y).label} · {r.y}년</b>{sel && <> · 원인 탐색: <b>{sel.label}</b></>}</p>
-      </div>
+      {r.tab === 'now' || r.tab === 'taste' ? (
+        <p className="ctx now-ctx">{r.tab === 'taste' ? '취향 흐름은 화면 안의 자체 시간축을 씁니다.' : '현재 분석 화면입니다.'} 역사 연도 선택(시간축)은 이 화면의 내용에 영향을 주지 않아 접어 두었습니다 — <button className="link" onClick={() => nav({ tab: 'history', study: undefined })}>시대별 탐색에서 쓰기</button></p>
+      ) : (
+        <div className="sticky">
+          <MasterTimeline r={r} nav={nav} />
+          <p className="ctx">지금 보는 시점 <b>{eraOf(r.y).label} · {r.y}년</b>{sel && <> · 원인 탐색: <b>{sel.label}</b></>}</p>
+        </div>
+      )}
       <main>
         {r.tab === 'now' && <NowView r={r} nav={nav} why={why} />}
+        {r.tab === 'taste' && <TasteView r={r} nav={nav} />}
         {r.tab === 'history' && <HistoryView r={r} nav={nav} why={why} />}
         {r.tab === 'flow' && <FlowView r={r} nav={nav} why={why} />}
         {r.tab === 'field' && <FieldView r={r} nav={nav} why={why} />}

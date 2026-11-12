@@ -55,17 +55,52 @@ export interface Flow {
   econ: { status: 'linked' | 'partial' | 'context'; note: string; analysis?: string };
 }
 export interface Synth { text: string; claimIds: string[]; kind: 'synthesis' }
+export type MechKind = 'effect' | 'channel' | 'condition' | 'correlation' | 'sequence' | 'interpretation' | 'hypothesis';
+export interface WatchItem { id: string; name: string; def: string; latest: string; unit: string; source: string; threshold?: string; supports: [string, string][]; weakens: [string, string][]; caution: string; claimIds: string[] }
 export interface Study {
-  id: string; question: string; short: string; asOf: string; status: string;
+  id: string; title: string; subtitle: string; question: string; short: string; asOf: string;
+  status: { content: string; evidence: string; data: string; backtest: string; reviewed: string };
+  statusRules: { axis: string; levels: string; rule: string }[];
+  timeframe: { asOf: string; observed: string; past: string; history: string };
   scope: { target: string; period: string; variable: string; notIncluded: string };
+  summary: { state: Synth; basis: Synth[]; uncertain: Synth[]; watchFirst: string[] };
   findings: Synth[]; whyNow: Synth;
-  mechanism: { nodes: { id: string; label: string; sub: string }[]; edges: { from: string; to: string; kind: LinkKind; note: string; claimIds: string[] }[] };
+  consSeries: { total: [number, number][]; perCapita: [number, number][]; sourceIds: string[]; periods: [number, number, number][] };
+  explain: string[];
+  periodTest: { rows: { period: string; reported: number; geo: number; arith: number; exCrisis: number; perCapita: number; gdp: number | null }[]; fixed: { period: string; arith: number; gdp: number | null }[] };
+  periodTestNote: string[];
+  mechanism: { kinds: Record<MechKind, string>; nodes: { id: string; col: number; label: string; sub: string; bg?: boolean }[]; edges: { from: string; to: string; kind: MechKind; eps: string[]; note: string; claimIds: string[] }[] };
   episodes: { id: string; label: string; years: string; current?: boolean }[];
-  rows: { item: string; cells: Record<string, [string, string[]]> }[];
+  rows: { item: string; basis: string; gap?: string; cells: Record<string, [string, string[]]> }[];
   same: Synth[]; different: Synth[];
   scenarios: { id: string; name: string; conditions: string; path: string; affected: string; timing: string; breaks: string; basis: string[] }[];
-  watch: { name: string; source: string; supports: string; weakens: string; claimIds: string[] }[];
-  revise: string[]; alternatives: string[]; limits: string[]; flows: string[]; indicators: string[]; chartNotes: { year: number; label: string }[];
+  watch: WatchItem[];
+  revise: string[]; alternatives: string[]; limits: string[]; flows: string[]; chartNotes: { year: number; label: string }[];
+  audit: { claim: string; check: string; result: string; change: string }[];
+}
+
+export type Layer = 'claim' | 'fact' | 'source' | 'inference' | 'hypothesis';
+/** 취향 흐름의 한 문장 — claim(근거 문장의 종류로 사실/출처 해석 결정) 또는 AI 추론·가설(연결 논리·다른 설명·범위·신호 포함) */
+export interface TR { layer: Layer; text: string; basis: string[]; logic?: string; alt?: string; scope?: string; test?: string }
+export type Seg = [number, number, string, string];
+export interface TasteFlow {
+  id: string; field: string; title: string; subtitle: string; question: string; span: [number, number]; status: string; scene?: TR;
+  lanes: { id: string; label: string; desc: string; segs: Seg[]; claims: string[] }[];
+  stages: { lane: string; period: string; title: string; items: string[]; appeal: TR; who: string; where: string; signals: [string, string, string[]][] }[];
+  moves: { from: string; to: string; year: number; rel: string; why: string; reason: TR }[];
+  chains: { title: string; steps: [string, string, Layer, string[]][] }[];
+  segments: { group: string; choice: string; layer: Layer; claims: string[] }[];
+  coexist: { q: string; a: TR }[];
+  contrast?: { title: string; a: string; b: string; rows: { dim: string; a: string; b: string; layer: Layer; basis: string[] }[]; note: string };
+  outfits?: { period: string; pants: string; top: string; shoes: string; layer: Layer; basis: string[] }[];
+  future: { satisfied: TR[]; discomforts: TR[]; unmet: TR[]; directions: { name: string; layer: Layer; condition: string; products: string; signals: string; counter: string; basis: string[] }[] };
+  research: { searched: string; missing: string; check: string };
+}
+export interface TasteField { id: string; label: string; topics: string[]; state: 'deep' | 'scoped' | 'eras' | 'candidate'; flows: string[]; note: string; eraFlows?: string[] }
+export interface Tastes {
+  flows: TasteFlow[]; fields: TasteField[];
+  needs: { id: string; label: string; cases: { flow: string; how: string; claims: string[] }[]; compare: TR }[];
+  layers: Record<Layer, string>; signals: Record<string, string>; phases: Record<string, string>; rels: Record<string, string>;
 }
 
 interface Seed {
@@ -76,12 +111,14 @@ interface Seed {
   patterns: { parallels: Parallel[] };
   flows: { flows: Flow[]; phaseKo: Record<Phase, string>; linkKo: Record<LinkKind, string>; domains: { id: string; label: string }[] };
   studies: Study[];
+  tastes: Tastes;
 }
 const seed = seedJson as unknown as Seed;
 
 export interface NumberCheck { indicator: string; title: string; year: number; claimed: number; data: number | null; unit: string; memo: string; ok: boolean | null; verdict: string }
 
 export const D = {
+  tastes: seed.tastes,
   eras: seed.eras,
   claims: Object.fromEntries(seed.claims.map((c) => [c.id, c])) as Record<string, Claim>,
   checks: (seed.numberChecks ?? {}) as Record<string, NumberCheck[]>,
