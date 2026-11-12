@@ -275,7 +275,7 @@ INDUSTRIES = [
             "watch": [L("hypothesis", "볼 지표: 빅테크 AI 투자, HBM 가격·점유율, 반도체 수출 비중. 반대 신호: AI 투자 둔화와 메모리 가격 하락이 함께 오면 2023년 같은 급감 가능.", ["ix-cp-cycle", "c20-chip-risk"])],
         },
         "links": [
-            {"year": "1960~70년대", "to": None, "rel": "바탕", "text": "가전(TV) 생산 — 전자 부품 수요와 공장 경험", "line": L("fact", "흑백TV에는 300여 종의 전자부품이 필요했다.", ["c60-kr-tv-5"])},
+            {"year": "1960~70년대", "to": "tv", "rel": "바탕", "text": "가전(TV) 생산 — 전자 부품 수요와 공장 경험", "line": L("fact", "흑백TV에는 300여 종의 전자부품이 필요했다.", ["c60-kr-tv-5"])},
             {"year": "2009~", "to": "internet", "rel": "수요", "text": "스마트폰·데이터센터 — 인터넷 서비스가 메모리를 쓴다", "line": L("inference", "모바일 인터넷과 AI 서비스가 커질수록 서버·휴대폰용 메모리 수요가 커진다.", ["ix-cp-cycle", "c00-kr-iphone"])},
         ],
     },
@@ -323,13 +323,18 @@ INDUSTRIES = [
     },
 ]
 
-PENDING = [
-    {"group": "heavy", "label": "석유화학", "note": "울산 단지(1972)와 1970년대 석유파동 자료는 있으나 일대기는 아직 작성하지 않음"},
-    {"group": "heavy", "label": "자동차", "note": "포니(1976)·자동차 등록 자료는 있으나 일대기는 아직 작성하지 않음"},
-    {"group": "elec", "label": "가전·TV", "note": "국산 흑백TV(1966)·컬러TV(1980) 자료는 있으나 일대기는 아직 작성하지 않음"},
-    {"group": "elec", "label": "휴대폰·통신기기", "note": "CDMA(1996)·스마트폰 자료는 있으나 일대기는 아직 작성하지 않음"},
-    {"group": "heavy", "label": "건설", "note": "중동 건설·신도시 자료는 있으나 일대기는 아직 작성하지 않음"},
-]
+from industries_more import MORE_SOURCES, MORE_CLAIMS, MORE_INDUSTRIES, MORE_STEEL_LINKS, MORE_SEMI_LINKS  # noqa: E402
+
+SOURCES += MORE_SOURCES
+CLAIMS += MORE_CLAIMS
+INDUSTRIES += MORE_INDUSTRIES
+for _ind in INDUSTRIES:
+    if _ind["id"] == "steel":
+        _ind["links"] += MORE_STEEL_LINKS
+    if _ind["id"] == "semiconductor":
+        _ind["links"] += MORE_SEMI_LINKS
+
+PENDING = []
 
 KINDS = ["이전 상태", "시작", "성장", "확산", "전환점", "기술 변화", "위기", "재편", "현재"]
 PROFILE = [("start", "시작 조건과 수요"), ("base", "생산 기반과 주요 기업"), ("product", "제품과 기술의 변화"), ("customers", "고객과 수요처"),

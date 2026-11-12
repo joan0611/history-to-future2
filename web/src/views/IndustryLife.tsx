@@ -70,10 +70,12 @@ export function IndustryLife({ nav }: { nav: (p: Partial<Route>) => void }) {
         </div>
       )}
 
-      <details className="il-pending">
-        <summary>작업 현황 — 아직 일대기를 쓰지 않은 산업 {X.pending.length}개</summary>
-        <ul>{X.pending.map((p) => <li key={p.label}><b>{p.label}</b> — {p.note}</li>)}</ul>
-      </details>
+      {X.pending.length > 0 && (
+        <details className="il-pending">
+          <summary>작업 현황 — 아직 일대기를 쓰지 않은 산업 {X.pending.length}개</summary>
+          <ul>{X.pending.map((p) => <li key={p.label}><b>{p.label}</b> — {p.note}</li>)}</ul>
+        </details>
+      )}
     </section>
   );
 }
@@ -104,7 +106,7 @@ function Compare({ onPick }: { onPick: (id: string) => void }) {
           );
         })}
       </svg></div>
-      <p className="il-legend">{Object.entries({ 시작: 'k1', '성장·확산': 'k2', '전환점·기술 변화': 'k3', 위기: 'k4', 재편: 'k5', 현재: 'k6' }).map(([t, k]) => <span key={t}><i className={`ilk-i ${k}`} /> {t}</span>)}</p>
+      <p className="il-legend">{Object.entries({ '이전 상태': 'k0', 시작: 'k1', '성장·확산': 'k2', '전환점·기술 변화': 'k3', 위기: 'k4', 재편: 'k5', 현재: 'k6' }).map(([t, k]) => <span key={t}><i className={`ilk-i ${k}`} /> {t}</span>)}</p>
       <p className="small">같은 시간축에 놓으면 2014~2018년 조선의 위기와 2023~2025년 철강의 위기가 서로 다른 시기에, 반도체의 회복과 철강의 감산이 같은 시기에 일어났다는 것이 보입니다 — 산업마다 경기가 따로 움직입니다.</p>
     </>
   );

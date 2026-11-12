@@ -622,7 +622,7 @@ dl.reason dt { color: var(--ink-3); font-weight: 600; } dl.reason dd { margin: 0
 .il-st.k1::before, .ilk.k1, .ilk-i.k1 { background: #3c7fd0; fill: #3c7fd0; } .il-st.k2::before, .ilk.k2, .ilk-i.k2 { background: #1f4f8f; fill: #1f4f8f; }
 .il-st.k3::before, .ilk.k3, .ilk-i.k3 { background: #8a5bb8; fill: #8a5bb8; } .il-st.k4::before, .ilk.k4, .ilk-i.k4 { background: #c43b2a; fill: #c43b2a; }
 .il-st.k5::before, .ilk.k5, .ilk-i.k5 { background: #c9772f; fill: #c9772f; } .il-st.k6::before, .ilk.k6, .ilk-i.k6 { background: #1f8a5a; fill: #1f8a5a; }
-.ilk.k0 { fill: #9aa0a8; }
+.ilk.k0, .ilk-i.k0, .il-st.k0::before { fill: #9aa0a8; background: #9aa0a8; }
 .il-h { margin: 0; } .il-kind { font-size: .75rem; font-weight: 800; color: var(--accent); } .il-per { font-size: .8rem; color: var(--ink-3); font-weight: 700; }
 .il-what { margin: .15rem 0 .3rem; font-size: 1rem; } .il-what b { font-size: .78rem; color: var(--ink-3); margin-right: .3rem; }
 .il-why, .il-from { margin: .2rem 0; } .il-why > b, .il-from > b { display: block; color: var(--ink-3); }
