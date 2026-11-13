@@ -33,6 +33,7 @@ import tastes as tz  # noqa: E402
 import links_extra as lx  # noqa: E402
 import verify_numbers as vn  # noqa: E402
 import cycles as cyc  # noqa: E402
+import future_risks as frk  # noqa: E402
 
 ERA_ORDER = ["1960s", "1970s", "1980s", "1990s", "2000s", "2010s", "2020s"]
 
@@ -87,6 +88,7 @@ def main():
                     ids.append(f["id"])
     seed["cycles"] = cyc.run(ind.INDICATORS, pat.SIGNALS, {n["id"]: n for n in seed["graph"]["nodes"]})
     import events_shared as evs
+    frk.apply(seed)
     seed["eventShare"] = evs.build(seed)
     import spec_fields as sfx
     seed["specFields"] = sfx.build(seed)
