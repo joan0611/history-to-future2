@@ -116,6 +116,9 @@ for _i in INDICATORS:
 import indicators_long as _L
 SOURCES += _L.SOURCES
 INDICATORS += _L.INDICATORS
+import indicators_energy as _E
+SOURCES += _E.SOURCES
+INDICATORS += _E.INDICATORS
 for _i in INDICATORS:
     if _i["id"] == "tfr-kr":
         _L.merge_tfr(_i)

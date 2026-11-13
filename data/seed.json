@@ -15556,6 +15556,27 @@
    "independentSources": 1
   },
   {
+   "id": "ix-nt-kornet",
+   "text": "한국통신(지금의 KT)은 1994년 6월 20일 '코넷'으로 국내 첫 인터넷 상용 서비스를 시작했다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "ix-imaeil-040619",
+    "ix-etoday-140619",
+    "ix-seoul-940617"
+   ],
+   "domains": [
+    "industry",
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1994",
+   "independentSources": 3
+  },
+  {
    "id": "ix-nt-adsl",
    "text": "초고속 인터넷은 두루넷이 1998년 케이블 모뎀으로 처음 시작했지만, 이후 ADSL 시장을 놓고 KT와 하나로통신이 벌인 경쟁 속에서 커졌다는 평가가 일반적이다(2002년 보도). 가입자는 1998년 1만 3,800가구, 1999년 말 37만, 2000년 말 400만, 2001년 말 약 800만이었다.",
    "claimType": "fact",
@@ -15573,6 +15594,26 @@
    ],
    "aiSynthesized": false,
    "period": "1998~2001",
+   "independentSources": 2
+  },
+  {
+   "id": "ix-nt-duru",
+   "text": "국내 초고속 인터넷 서비스는 1998년 두루넷이 케이블TV망을 이용해 가장 먼저 시작했다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "ix-seoul-021107",
+    "ix-etri-2002"
+   ],
+   "domains": [
+    "industry",
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1998",
    "independentSources": 2
   },
   {
@@ -17973,7 +18014,7 @@
   },
   {
    "id": "tp-if-blog11",
-   "text": "공정위는 2011년 11월 공동구매를 알선하고 업체에서 수수료를 몰래 받은 카페·블로그 운영자 47곳을 제재했고, 수수료가 큰 4곳에 각 500만 원의 과태료를 매겼다. 이들은 2010년 7월~2011년 6월 수수료로 각각 8억 8천만 원, 7억 6,600만 원 등을 받았다. 한 파워블로거가 공동구매한 36만 원짜리 오존 세척기는 3천 대가 팔렸다.",
+   "text": "공정위는 2011년 11월 공동구매를 알선하고 업체에서 수수료를 몰래 받은 파워블로거 7명과 카페·블로그형 쇼핑몰 40곳(합하면 47곳)을 제재했고, 수수료가 큰 4명에게 각 500만 원의 과태료를 매겼다. 이들은 2010년 7월~2011년 6월 수수료로 각각 8억 8천만 원, 7억 6,600만 원 등을 받았다. 한 파워블로거가 공동구매한 36만 원짜리 오존 세척기는 3천 대가 팔렸다.",
    "claimType": "fact",
    "status": "sourced",
    "sourceIds": [
@@ -17990,6 +18031,25 @@
    "aiSynthesized": false,
    "period": "2010~2011",
    "independentSources": 3
+  },
+  {
+   "id": "tp-if-blog11c",
+   "text": "공정위는 2011년 11월 공동구매를 알선하며 수수료를 받은 파워블로거 가운데 수수료가 큰 4명에게 각 500만 원의 과태료를 매겼다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "tp-khan-111113",
+    "tp-etnews-111113"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2011",
+   "independentSources": 2
   },
   {
    "id": "tp-if-blogwhy",
@@ -21985,6 +22045,349 @@
    "aiSynthesized": false,
    "period": "2025~2026",
    "independentSources": 1
+  },
+  {
+   "id": "tw-en-kori",
+   "text": "국내 첫 원전인 고리 1호기는 미국 정부의 차관과 기술을 지원받아 1971년 착공해 1978년 상업운전에 들어갔다. 공사비 3억달러는 1970년 한 해 국가 예산의 4분의1에 해당했고, 가동 첫해인 1978년 전체 발전설비 용량의 9%를 감당했다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tw-s-mt-kori",
+    "tw-s-sidae-kori"
+   ],
+   "domains": [
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1971~1978",
+   "independentSources": 2
+  },
+  {
+   "id": "tw-en-stop",
+   "text": "고리 1호기는 2007년 30년 설계수명이 끝난 뒤 10년 연장 운전했고, 2011년 후쿠시마 원전 사고 이후 정부가 2015년 6월 국가에너지위원회에서 가동 중단을 권고했다. 2017년 6월 19일 0시 영구정지됐으며 당시 대통령은 이를 '탈핵 국가로 가는 출발'이라고 말했다. 2025년 6월 원자력안전위원회가 해체를 승인했다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tw-s-mt-kori",
+    "tw-s-khan-kori",
+    "tw-s-hk-kori25"
+   ],
+   "domains": [
+    "politics",
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2007~2025",
+   "independentSources": 3
+  },
+  {
+   "id": "tw-en-mix",
+   "text": "세계은행 WDI에 따르면 한국 발전량 가운데 원자력 비중은 1990년 48.44%에서 2018년 22.27%로 낮아졌다가 2025년 28.72%였고, 석탄 비중은 1990년 19.59%에서 2009년 47.51%로 올랐다가 2025년 32.02%였다. 재생에너지(수력 포함) 비중은 1990년 5.83%, 2005년 1.44%, 2021년 6.65%였다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tw-s-wb-nucl",
+    "tw-s-wb-coal",
+    "tw-s-wb-rnew"
+   ],
+   "domains": [
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1990~2025",
+   "independentSources": 1
+  },
+  {
+   "id": "tw-en-imp",
+   "text": "세계은행 WDI에 따르면 한국이 쓰는 에너지 가운데 순수입 비중은 1990년 76.63%에서 1997년 93.39%로 정점을 찍었고 2024년 83.24%였다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tw-s-wb-eimp"
+   ],
+   "domains": [
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1990~2024",
+   "independentSources": 1
+  },
+  {
+   "id": "tw-wf-nhi",
+   "text": "1977년 7월 500인 이상 사업장 근로자를 대상으로 직장 의료보험이 처음 시행됐고, 1989년 7월 12년 만에 전 국민 의료보험이 완성됐다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "tw-s-nara-nhi",
+    "tw-s-korea-nhi"
+   ],
+   "domains": [
+    "society",
+    "politics"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1977~1989",
+   "independentSources": 2
+  },
+  {
+   "id": "tw-wf-nhi0",
+   "text": "1963년 12월 「의료보험법」이 제정됐지만 시범사업 형태로 운영됐다. 1988년 1월 농어촌 주민을 지역조합으로 가입시켰고, 1989년 7월 도시지역 자영업자까지 포함했다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tw-s-nara-nhi"
+   ],
+   "domains": [
+    "society",
+    "politics"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1963~1989",
+   "independentSources": 1
+  },
+  {
+   "id": "tw-wf-nhi2",
+   "text": "1977년에는 500인 이상 상시 근로 사업장만 적용 대상이어서 전 국민의 8.8%만 의료보험 혜택을 받았지만, 1990년에는 94%까지 보장을 받았다. 전 국민 의료보장에 독일은 127년, 일본은 36년이 걸렸다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tw-s-ks-nhi40"
+   ],
+   "domains": [
+    "society",
+    "politics"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1977~1990",
+   "independentSources": 1
+  },
+  {
+   "id": "tw-wf-nps",
+   "text": "1986년 12월 「국민복지연금법」을 「국민연금법」으로 전문 개정해 1988년 1월부터 상시근로자 10인 이상 사업장에 국민연금을 시행했고, 1992년 5인 이상 사업장, 1995년 7월 농어촌 주민, 1999년 4월 도시지역 주민까지 넓혀 전국민 연금시대가 열렸다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tw-s-nara-nps"
+   ],
+   "domains": [
+    "society",
+    "politics"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1986~1999",
+   "independentSources": 1
+  },
+  {
+   "id": "tw-wf-ei",
+   "text": "1995년 7월 고용보험이 시행되면서 한국은 1964년 산업재해보상보험, 1977년 의료보험, 1988년 국민연금과 함께 4대 사회보험을 갖추게 됐다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tw-s-seoul-ei95"
+   ],
+   "domains": [
+    "society",
+    "politics"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1964~1995",
+   "independentSources": 1
+  },
+  {
+   "id": "tw-wf-blsa",
+   "text": "30인 이상 사업장에만 적용되던 고용보험은 1998년 10월 전 사업장으로 확대됐다. 2000년 10월 시행된 국민기초생활보장제도는 근로능력이 없을 때만 보호하던 생활보호법과 달리, 근로능력과 상관없이 최저생계비 이하 가구의 생계를 국가가 보장했다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tw-s-pp21-02"
+   ],
+   "domains": [
+    "society",
+    "politics"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1998~2000",
+   "independentSources": 1
+  },
+  {
+   "id": "tw-wf-rate",
+   "text": "국민연금 보험료율은 1988년 3%로 시작했고, 두 차례의 연금개혁은 '얼마를 낼 것인가'인 보험료율을 건드리지 않았다는 보도가 있다.",
+   "claimType": "source",
+   "status": "sourced",
+   "sourceIds": [
+    "tw-s-khanw-nps"
+   ],
+   "domains": [
+    "society",
+    "politics"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1988~2022",
+   "independentSources": 1
+  },
+  {
+   "id": "tw-wf-govc",
+   "text": "세계은행 WDI에 따르면 한국 정부의 최종 소비 지출은 GDP 대비 1987년 9.65%였고 2008년 13.37%, 2025년 17.65%였다. 이 지표에는 연금·수당 같은 이전지출이 들어 있지 않다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tw-s-wb-govc"
+   ],
+   "domains": [
+    "politics",
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1987~2025",
+   "independentSources": 1
+  },
+  {
+   "id": "tw-tr-gatt",
+   "text": "한국은 1967년 4월 14일 GATT의 71번째 체약국이 됐다. 수출주도 성장 정책을 위해 1966년 가입을 신청해 5개월 만에 협상을 마쳤고, 일본은 약 3년, 중국은 WTO 가입에 약 15년이 걸렸다. 가입 원년 세계 66위 수출국이던 한국은 1972년 44위가 됐다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tw-s-motir-gatt",
+    "tw-s-wto-kr"
+   ],
+   "domains": [
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1966~1972",
+   "independentSources": 2
+  },
+  {
+   "id": "tw-tr-wto",
+   "text": "1994년 4월 우루과이라운드가 종결되고 1995년 WTO가 출범하면서 쌀 최소시장접근 1%와 보리·옥수수 등의 관세화, 쇠고기 수입 쿼터 확대 등 단계적 시장 개방 일정이 정해졌다. 한국은 1995년 1월 1일 WTO 회원국이 됐고, 1996년 12월 12일 OECD의 29번째 회원국이 됐다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tw-s-seoul-ur",
+    "tw-s-wto-kr",
+    "tw-s-nara-oecd"
+   ],
+   "domains": [
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1994~1996",
+   "independentSources": 3
+  },
+  {
+   "id": "tw-tr-chile",
+   "text": "한국의 첫 FTA인 한·칠레 FTA는 1999년 9월 협상 개시를 선언해 4년여 협상 끝에 2004년 4월 1일 발효됐다. 국회 비준 과정에서 큰 국론 분열이 있었고 특별법과 기금으로 피해 보상 제도를 마련한 뒤에야 발효됐다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tw-s-krei-chile"
+   ],
+   "domains": [
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1999~2004",
+   "independentSources": 1
+  },
+  {
+   "id": "tw-tr-fta",
+   "text": "한·미 FTA는 2012년 3월 15일, 한·중 FTA는 2015년 12월 발효됐다. 2004년 칠레를 시작으로 2015년 말까지 52개국과 15건의 FTA 체결을 마무리했다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tw-s-mohw-fta",
+    "tw-s-seoul-fta16"
+   ],
+   "domains": [
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2004~2015",
+   "independentSources": 2
+  },
+  {
+   "id": "tw-tr-share",
+   "text": "대외경제정책연구원 분석에 따르면 2004년부터 2018년까지 FTA 체결국으로의 수출은 연평균 약 7% 늘어 미체결국(5%)보다 빨랐고, 전체 수출에서 FTA 체결국 비중은 67%에서 73%로 커졌다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tw-s-kiep-fta15"
+   ],
+   "domains": [
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2004~2018",
+   "independentSources": 1
+  },
+  {
+   "id": "tw-tr-20y",
+   "text": "FTA 20년을 정리한 보도에 따르면 한·미 FTA 이후 양국 무역은 연평균 5.3%, 한·중 FTA 이후 양국 무역은 연평균 2.1% 늘었고, FTA 파트너 국가로의 수출이 전체 수출의 84%를 차지했다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tw-s-fn-fta24"
+   ],
+   "domains": [
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2012~2023",
+   "independentSources": 1
   }
  ],
  "sources": [
@@ -24410,6 +24813,51 @@
    "sourceType": "institution",
    "accessedDate": "2026-11-11",
    "note": "1960~1983년은 0(서비스 없음), 1984·1985년 값 없음 → 1986년부터 표시"
+  },
+  {
+   "id": "wb-kr-nucl",
+   "title": "Electricity production from nuclear sources (% of total) (EG.ELC.NUCL.ZS)",
+   "publisher": "세계은행 세계개발지표(WDI)",
+   "url": "https://data.worldbank.org/indicator/EG.ELC.NUCL.ZS?locations=KR",
+   "sourceType": "institution",
+   "accessedDate": "2026-11-13",
+   "note": "API 최종 갱신 2026-11-11."
+  },
+  {
+   "id": "wb-kr-coal",
+   "title": "Electricity production from coal sources (% of total) (EG.ELC.COAL.ZS)",
+   "publisher": "세계은행 세계개발지표(WDI)",
+   "url": "https://data.worldbank.org/indicator/EG.ELC.COAL.ZS?locations=KR",
+   "sourceType": "institution",
+   "accessedDate": "2026-11-13",
+   "note": "API 최종 갱신 2026-11-11."
+  },
+  {
+   "id": "wb-kr-rnew",
+   "title": "Renewable electricity output (% of total electricity output) (EG.ELC.RNEW.ZS)",
+   "publisher": "세계은행 세계개발지표(WDI)",
+   "url": "https://data.worldbank.org/indicator/EG.ELC.RNEW.ZS?locations=KR",
+   "sourceType": "institution",
+   "accessedDate": "2026-11-13",
+   "note": "API 최종 갱신 2026-11-11. 수력 포함. 2021년까지"
+  },
+  {
+   "id": "wb-kr-eimp",
+   "title": "Energy imports, net (% of energy use) (EG.IMP.CONS.ZS)",
+   "publisher": "세계은행 세계개발지표(WDI)",
+   "url": "https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=KR",
+   "sourceType": "institution",
+   "accessedDate": "2026-11-13",
+   "note": "API 최종 갱신 2026-11-11."
+  },
+  {
+   "id": "wb-kr-govc",
+   "title": "General government final consumption expenditure (% of GDP) (NE.CON.GOVT.ZS)",
+   "publisher": "세계은행 세계개발지표(WDI)",
+   "url": "https://data.worldbank.org/indicator/NE.CON.GOVT.ZS?locations=KR",
+   "sourceType": "institution",
+   "accessedDate": "2026-11-13",
+   "note": "API 최종 갱신 2026-11-11."
   },
   {
    "id": "wb-kr-va-agr",
@@ -28679,6 +29127,24 @@
    "origin": "가트너"
   },
   {
+   "id": "ix-etoday-140619",
+   "title": "KT, 인터넷 상용 20주년…미래는 '기가토피아'로 연다",
+   "publisher": "이투데이",
+   "url": "https://www.etoday.co.kr/news/view/934465",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2014-06-19"
+  },
+  {
+   "id": "ix-seoul-940617",
+   "title": "「코네트」 가동… 서울지역 가입자에 혜택",
+   "publisher": "서울신문",
+   "url": "https://www.seoul.co.kr/news/1994/06/17/19940617017001",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "1994-06-17"
+  },
+  {
    "id": "ix-imaeil-040619",
    "title": "'인터넷, 세상을 바꾸었다' — 코넷 10년",
    "publisher": "매일신문",
@@ -32337,6 +32803,225 @@
    "sourceType": "news",
    "accessedDate": "2026-11-12",
    "publishedDate": "2026-06-11"
+  },
+  {
+   "id": "tw-s-mt-kori",
+   "title": "고리 1호기 39년 만에 퇴역…'탈원전' 방아쇠 당기나",
+   "publisher": "머니투데이",
+   "url": "https://www.mt.co.kr/economy/2017/06/09/2017060912505551541",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2017-06-09"
+  },
+  {
+   "id": "tw-s-sidae-kori",
+   "title": "고리원전 1호기 가동 40년 만에 영구정지",
+   "publisher": "시대에듀(시사상식)",
+   "url": "https://www.sidae.com/article/2017061908108098669",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2017-06-19"
+  },
+  {
+   "id": "tw-s-khan-kori",
+   "title": "고리1호기 영구정지 기념사",
+   "publisher": "경향신문",
+   "url": "https://www.khan.co.kr/article/201706191048001/amp",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2017-06-19"
+  },
+  {
+   "id": "tw-s-hk-kori25",
+   "title": "원안위, 고리 1호기 해체 승인",
+   "publisher": "한국경제",
+   "url": "https://www.hankyung.com/article/202506262800i",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-06-26"
+  },
+  {
+   "id": "tw-s-wb-nucl",
+   "title": "Electricity production from nuclear sources (% of total) (EG.ELC.NUCL.ZS)",
+   "publisher": "세계은행 세계개발지표(WDI)",
+   "url": "https://data.worldbank.org/indicator/EG.ELC.NUCL.ZS?locations=KR",
+   "sourceType": "institution",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-11-13"
+  },
+  {
+   "id": "tw-s-wb-coal",
+   "title": "Electricity production from coal sources (% of total) (EG.ELC.COAL.ZS)",
+   "publisher": "세계은행 세계개발지표(WDI)",
+   "url": "https://data.worldbank.org/indicator/EG.ELC.COAL.ZS?locations=KR",
+   "sourceType": "institution",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-11-13"
+  },
+  {
+   "id": "tw-s-wb-rnew",
+   "title": "Renewable electricity output (% of total electricity output) (EG.ELC.RNEW.ZS)",
+   "publisher": "세계은행 세계개발지표(WDI)",
+   "url": "https://data.worldbank.org/indicator/EG.ELC.RNEW.ZS?locations=KR",
+   "sourceType": "institution",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-11-13"
+  },
+  {
+   "id": "tw-s-wb-eimp",
+   "title": "Energy imports, net (% of energy use) (EG.IMP.CONS.ZS)",
+   "publisher": "세계은행 세계개발지표(WDI)",
+   "url": "https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=KR",
+   "sourceType": "institution",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-11-13"
+  },
+  {
+   "id": "tw-s-wb-govc",
+   "title": "General government final consumption expenditure (% of GDP) (NE.CON.GOVT.ZS)",
+   "publisher": "세계은행 세계개발지표(WDI)",
+   "url": "https://data.worldbank.org/indicator/NE.CON.GOVT.ZS?locations=KR",
+   "sourceType": "institution",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-11-13"
+  },
+  {
+   "id": "tw-s-nara-nhi",
+   "title": "전국민의료보험제도 실시(정책 기록)",
+   "publisher": "국가기록원",
+   "url": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=213",
+   "sourceType": "government",
+   "accessedDate": "2026-11-12"
+  },
+  {
+   "id": "tw-s-ks-nhi40",
+   "title": "건강보험 40년 — 적용 인구와 사업장(학술지)",
+   "publisher": "한국과학기술정보연구원 KoreaScience",
+   "url": "https://koreascience.kr/article/JAKO201732060956016.pdf",
+   "sourceType": "paper",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2017"
+  },
+  {
+   "id": "tw-s-korea-nhi",
+   "title": "전국민 건강보험 30년",
+   "publisher": "대한민국 정책브리핑",
+   "url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=148627387",
+   "sourceType": "government",
+   "accessedDate": "2026-11-12"
+  },
+  {
+   "id": "tw-s-nara-nps",
+   "title": "국민연금 제도 시행(정책 기록)",
+   "publisher": "국가기록원",
+   "url": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=211",
+   "sourceType": "government",
+   "accessedDate": "2026-11-12"
+  },
+  {
+   "id": "tw-s-seoul-ei95",
+   "title": "실업자 최소생계 보장… 새달 시행 「고용보험」의 의미",
+   "publisher": "서울신문",
+   "url": "https://www.seoul.co.kr/news/1995/06/14/19950614019001",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "1995-06-14"
+  },
+  {
+   "id": "tw-s-pp21-02",
+   "title": "사회안전망 확충 — 국민연금 확대와 기초생활보장 시행",
+   "publisher": "참여연대 월간복지동향",
+   "url": "https://peoplepower21.org/welfarenow/648785",
+   "sourceType": "report",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2002-01-15"
+  },
+  {
+   "id": "tw-s-khanw-nps",
+   "title": "보험료율은 24년째 그대로",
+   "publisher": "주간경향",
+   "url": "https://weekly.khan.co.kr/article/202202041549341",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2022-02-04"
+  },
+  {
+   "id": "tw-s-motir-gatt",
+   "title": "한국무역 GATT 가입 50년의 성과와 도전",
+   "publisher": "산업통상자원부",
+   "url": "https://www.motir.go.kr/attach/down/aa4abe331409819421ff269b271f06a6/8c330fc668cb84c6a06d0f0d1f9fd8aa",
+   "sourceType": "government",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2017"
+  },
+  {
+   "id": "tw-s-wto-kr",
+   "title": "Republic of Korea and the WTO",
+   "publisher": "WTO",
+   "url": "https://www.wto.org/English/thewto_e/countries_e/korea_republic_e.htm",
+   "sourceType": "institution",
+   "accessedDate": "2026-11-12"
+  },
+  {
+   "id": "tw-s-nara-oecd",
+   "title": "OECD 가입(정책 기록)",
+   "publisher": "국가기록원",
+   "url": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=321",
+   "sourceType": "government",
+   "accessedDate": "2026-11-12"
+  },
+  {
+   "id": "tw-s-seoul-ur",
+   "title": "가트 막내려… 적자생존 새질서 시동",
+   "publisher": "서울신문",
+   "url": "https://www.seoul.co.kr/news/1994/04/16/19940416008001",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "1994-04-16"
+  },
+  {
+   "id": "tw-s-krei-chile",
+   "title": "한·칠레 FTA 발효 이후 농산물 교역 동향",
+   "publisher": "한국농촌경제연구원",
+   "url": "https://repository.krei.re.kr/bitstream/2018.oak/18190/1/%ed%95%9c%c2%b7%ec%b9%a0%eb%a0%88%20FTA%ed%98%91%ec%a0%95%20%eb%b0%9c%ed%9a%a8%20%ec%9d%b4%ed%9b%84%20%ec%9a%b0%eb%a6%ac%eb%82%98%eb%9d%bc%ec%9d%98%20%eb%86%8d%ec%82%b0%eb%ac%bc%20%ea%b5%90%ec%97%ad%20%eb%8f%99%ed%96%a5%ea%b3%bc%20%ec%8b%9c%ec%82%ac%ec%a0%90.pdf",
+   "sourceType": "report",
+   "accessedDate": "2026-11-12"
+  },
+  {
+   "id": "tw-s-mohw-fta",
+   "title": "발효된 FTA 현황",
+   "publisher": "보건복지부",
+   "url": "https://mohw.go.kr/menu.es?mid=a10407020000",
+   "sourceType": "government",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2021-01"
+  },
+  {
+   "id": "tw-s-kiep-fta15",
+   "title": "한국의 FTA 15년 성과와 정책 시사점",
+   "publisher": "대외경제정책연구원(EconBiz 서지)",
+   "url": "https://www.econbiz.de/Record/%ED%95%9C%EA%B5%AD%EC%9D%98-fta-15%EB%85%84-%EC%84%B1%EA%B3%BC%EC%99%80-%EC%A0%95%EC%B1%85-%EC%8B%9C%EC%82%AC%EC%A0%90-fifteen-years-of-korea-s-fta-achievements-and-policy-implications/10014092868",
+   "sourceType": "paper",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2019"
+  },
+  {
+   "id": "tw-s-seoul-fta16",
+   "title": "한국 경제영토 새해 더 넓어진다…RCEP 등 협상 박차",
+   "publisher": "서울신문",
+   "url": "https://m.seoul.co.kr/news/2016/01/01/20160101800056",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2016-01-01"
+  },
+  {
+   "id": "tw-s-fn-fta24",
+   "title": "FTA 20년, 수출 2.3배",
+   "publisher": "파이낸셜뉴스",
+   "url": "https://www.fnnews.com/news/202404081552265615",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2024-04-08"
   }
  ],
  "events": [
@@ -39005,6 +39690,956 @@
     "2020s"
    ],
    "note": "1984~1985년 값 없음, 그 이전은 서비스 이전(0)"
+  },
+  {
+   "id": "elec-nucl-kr",
+   "title": "에너지 — 원자력 발전 비중",
+   "unit": "%",
+   "frequency": "annual",
+   "description": "전체 발전량 가운데 원자력이 만든 몫.",
+   "category": "economy",
+   "series": [
+    {
+     "country": "KR",
+     "label": "한국",
+     "sourceIds": [
+      "wb-kr-nucl"
+     ],
+     "points": [
+      [
+       "1990",
+       48.44
+      ],
+      [
+       "1991",
+       46.95
+      ],
+      [
+       "1992",
+       42.04
+      ],
+      [
+       "1993",
+       38.64
+      ],
+      [
+       "1994",
+       34.4
+      ],
+      [
+       "1995",
+       35.79
+      ],
+      [
+       "1996",
+       35.49
+      ],
+      [
+       "1997",
+       34.01
+      ],
+      [
+       "1998",
+       40.98
+      ],
+      [
+       "1999",
+       42.73
+      ],
+      [
+       "2000",
+       37.69
+      ],
+      [
+       "2001",
+       36.16
+      ],
+      [
+       "2002",
+       36.41
+      ],
+      [
+       "2003",
+       37.47
+      ],
+      [
+       "2004",
+       35.29
+      ],
+      [
+       "2005",
+       37.9
+      ],
+      [
+       "2006",
+       36.66
+      ],
+      [
+       "2007",
+       35.21
+      ],
+      [
+       "2008",
+       35.67
+      ],
+      [
+       "2009",
+       33.86
+      ],
+      [
+       "2010",
+       29.88
+      ],
+      [
+       "2011",
+       29.64
+      ],
+      [
+       "2012",
+       28.06
+      ],
+      [
+       "2013",
+       25.65
+      ],
+      [
+       "2014",
+       28.5
+      ],
+      [
+       "2015",
+       30.07
+      ],
+      [
+       "2016",
+       28.68
+      ],
+      [
+       "2017",
+       25.44
+      ],
+      [
+       "2018",
+       22.27
+      ],
+      [
+       "2019",
+       24.52
+      ],
+      [
+       "2020",
+       27.14
+      ],
+      [
+       "2021",
+       25.46
+      ],
+      [
+       "2022",
+       27.66
+      ],
+      [
+       "2023",
+       28.62
+      ],
+      [
+       "2024",
+       28.9
+      ],
+      [
+       "2025",
+       28.72
+      ]
+     ]
+    }
+   ],
+   "eraIds": [
+    "1990s",
+    "2000s",
+    "2010s",
+    "2020s"
+   ]
+  },
+  {
+   "id": "elec-coal-kr",
+   "title": "에너지 — 석탄 발전 비중",
+   "unit": "%",
+   "frequency": "annual",
+   "description": "전체 발전량 가운데 석탄 화력이 만든 몫.",
+   "category": "economy",
+   "series": [
+    {
+     "country": "KR",
+     "label": "한국",
+     "sourceIds": [
+      "wb-kr-coal"
+     ],
+     "points": [
+      [
+       "1990",
+       19.59
+      ],
+      [
+       "1991",
+       17.82
+      ],
+      [
+       "1992",
+       17.99
+      ],
+      [
+       "1993",
+       23.52
+      ],
+      [
+       "1994",
+       26.53
+      ],
+      [
+       "1995",
+       28.09
+      ],
+      [
+       "1996",
+       28.88
+      ],
+      [
+       "1997",
+       31.35
+      ],
+      [
+       "1998",
+       37.09
+      ],
+      [
+       "1999",
+       36.5
+      ],
+      [
+       "2000",
+       38.15
+      ],
+      [
+       "2001",
+       39.56
+      ],
+      [
+       "2002",
+       39.41
+      ],
+      [
+       "2003",
+       39.02
+      ],
+      [
+       "2004",
+       39.06
+      ],
+      [
+       "2005",
+       38.04
+      ],
+      [
+       "2006",
+       37.67
+      ],
+      [
+       "2007",
+       41.59
+      ],
+      [
+       "2008",
+       44.37
+      ],
+      [
+       "2009",
+       47.51
+      ],
+      [
+       "2010",
+       43.61
+      ],
+      [
+       "2011",
+       42.93
+      ],
+      [
+       "2012",
+       41.77
+      ],
+      [
+       "2013",
+       41.58
+      ],
+      [
+       "2014",
+       41.15
+      ],
+      [
+       "2015",
+       42.19
+      ],
+      [
+       "2016",
+       41.57
+      ],
+      [
+       "2017",
+       45.26
+      ],
+      [
+       "2018",
+       43.89
+      ],
+      [
+       "2019",
+       42.56
+      ],
+      [
+       "2020",
+       37.67
+      ],
+      [
+       "2021",
+       36.52
+      ],
+      [
+       "2022",
+       34.94
+      ],
+      [
+       "2023",
+       33.84
+      ],
+      [
+       "2024",
+       31.16
+      ],
+      [
+       "2025",
+       32.02
+      ]
+     ]
+    }
+   ],
+   "eraIds": [
+    "1990s",
+    "2000s",
+    "2010s",
+    "2020s"
+   ]
+  },
+  {
+   "id": "elec-rnew-kr",
+   "title": "에너지 — 재생에너지 발전 비중",
+   "unit": "%",
+   "frequency": "annual",
+   "description": "전체 발전량 가운데 수력·태양광·풍력 등 재생에너지의 몫(수력 포함).",
+   "category": "economy",
+   "series": [
+    {
+     "country": "KR",
+     "label": "한국",
+     "sourceIds": [
+      "wb-kr-rnew"
+     ],
+     "points": [
+      [
+       "1990",
+       5.83
+      ],
+      [
+       "1991",
+       2.91
+      ],
+      [
+       "1992",
+       2.3
+      ],
+      [
+       "1993",
+       2.81
+      ],
+      [
+       "1994",
+       1.38
+      ],
+      [
+       "1995",
+       1.61
+      ],
+      [
+       "1996",
+       1.36
+      ],
+      [
+       "1997",
+       1.28
+      ],
+      [
+       "1998",
+       1.98
+      ],
+      [
+       "1999",
+       1.77
+      ],
+      [
+       "2000",
+       1.98
+      ],
+      [
+       "2001",
+       1.96
+      ],
+      [
+       "2002",
+       1.68
+      ],
+      [
+       "2003",
+       2.06
+      ],
+      [
+       "2004",
+       1.67
+      ],
+      [
+       "2005",
+       1.44
+      ],
+      [
+       "2006",
+       1.42
+      ],
+      [
+       "2007",
+       1.47
+      ],
+      [
+       "2008",
+       1.62
+      ],
+      [
+       "2009",
+       1.72
+      ],
+      [
+       "2010",
+       1.81
+      ],
+      [
+       "2011",
+       2.06
+      ],
+      [
+       "2012",
+       2.1
+      ],
+      [
+       "2013",
+       2.38
+      ],
+      [
+       "2014",
+       2.48
+      ],
+      [
+       "2015",
+       2.61
+      ],
+      [
+       "2016",
+       3.5
+      ],
+      [
+       "2017",
+       3.91
+      ],
+      [
+       "2018",
+       4.5
+      ],
+      [
+       "2019",
+       5.19
+      ],
+      [
+       "2020",
+       6.27
+      ],
+      [
+       "2021",
+       6.65
+      ]
+     ]
+    }
+   ],
+   "eraIds": [
+    "1990s",
+    "2000s",
+    "2010s",
+    "2020s"
+   ],
+   "note": "세계은행 계열이 2021년에서 끝남 → 이후는 자료 없음"
+  },
+  {
+   "id": "energy-imp-kr",
+   "title": "에너지 — 순수입 의존도",
+   "unit": "%",
+   "frequency": "annual",
+   "description": "쓰는 에너지 가운데 수입에 기대는 몫(수입−수출 ÷ 사용량).",
+   "category": "economy",
+   "series": [
+    {
+     "country": "KR",
+     "label": "한국",
+     "sourceIds": [
+      "wb-kr-eimp"
+     ],
+     "points": [
+      [
+       "1990",
+       76.63
+      ],
+      [
+       "1991",
+       81.26
+      ],
+      [
+       "1992",
+       85.96
+      ],
+      [
+       "1993",
+       87.87
+      ],
+      [
+       "1994",
+       92.42
+      ],
+      [
+       "1995",
+       90.71
+      ],
+      [
+       "1996",
+       92.7
+      ],
+      [
+       "1997",
+       93.39
+      ],
+      [
+       "1998",
+       89.38
+      ],
+      [
+       "1999",
+       88.45
+      ],
+      [
+       "2000",
+       88.86
+      ],
+      [
+       "2001",
+       87.87
+      ],
+      [
+       "2002",
+       86.5
+      ],
+      [
+       "2003",
+       87.34
+      ],
+      [
+       "2004",
+       87.72
+      ],
+      [
+       "2005",
+       83.44
+      ],
+      [
+       "2006",
+       86.81
+      ],
+      [
+       "2007",
+       85.36
+      ],
+      [
+       "2008",
+       85.6
+      ],
+      [
+       "2009",
+       86.27
+      ],
+      [
+       "2010",
+       88.37
+      ],
+      [
+       "2011",
+       87.44
+      ],
+      [
+       "2012",
+       86.78
+      ],
+      [
+       "2013",
+       88.32
+      ],
+      [
+       "2014",
+       87.13
+      ],
+      [
+       "2015",
+       86.9
+      ],
+      [
+       "2016",
+       87.18
+      ],
+      [
+       "2017",
+       88.57
+      ],
+      [
+       "2018",
+       89.38
+      ],
+      [
+       "2019",
+       88.12
+      ],
+      [
+       "2020",
+       84.51
+      ],
+      [
+       "2021",
+       84.72
+      ],
+      [
+       "2022",
+       85.2
+      ],
+      [
+       "2023",
+       84.03
+      ],
+      [
+       "2024",
+       83.24
+      ]
+     ]
+    }
+   ],
+   "eraIds": [
+    "1990s",
+    "2000s",
+    "2010s",
+    "2020s"
+   ]
+  },
+  {
+   "id": "govc-kr",
+   "title": "정부 소비 지출 비중 (GDP 대비)",
+   "unit": "%",
+   "frequency": "annual",
+   "description": "정부가 공공서비스·인건비 등으로 쓴 돈이 나라 전체 생산에서 차지하는 몫. 복지 확대·국가 역할의 대리 지표.",
+   "category": "politics",
+   "series": [
+    {
+     "country": "KR",
+     "label": "한국",
+     "sourceIds": [
+      "wb-kr-govc"
+     ],
+     "points": [
+      [
+       "1960",
+       14.19
+      ],
+      [
+       "1961",
+       13.24
+      ],
+      [
+       "1962",
+       13.5
+      ],
+      [
+       "1963",
+       10.48
+      ],
+      [
+       "1964",
+       8.16
+      ],
+      [
+       "1965",
+       8.89
+      ],
+      [
+       "1966",
+       9.61
+      ],
+      [
+       "1967",
+       9.79
+      ],
+      [
+       "1968",
+       10.08
+      ],
+      [
+       "1969",
+       9.84
+      ],
+      [
+       "1970",
+       9.81
+      ],
+      [
+       "1971",
+       10.08
+      ],
+      [
+       "1972",
+       10.35
+      ],
+      [
+       "1973",
+       8.76
+      ],
+      [
+       "1974",
+       9.45
+      ],
+      [
+       "1975",
+       10.92
+      ],
+      [
+       "1976",
+       10.65
+      ],
+      [
+       "1977",
+       10.54
+      ],
+      [
+       "1978",
+       9.75
+      ],
+      [
+       "1979",
+       9.63
+      ],
+      [
+       "1980",
+       11.63
+      ],
+      [
+       "1981",
+       11.73
+      ],
+      [
+       "1982",
+       11.46
+      ],
+      [
+       "1983",
+       10.81
+      ],
+      [
+       "1984",
+       10.23
+      ],
+      [
+       "1985",
+       10.27
+      ],
+      [
+       "1986",
+       9.92
+      ],
+      [
+       "1987",
+       9.65
+      ],
+      [
+       "1988",
+       9.59
+      ],
+      [
+       "1989",
+       10.4
+      ],
+      [
+       "1990",
+       10.61
+      ],
+      [
+       "1991",
+       10.37
+      ],
+      [
+       "1992",
+       10.68
+      ],
+      [
+       "1993",
+       10.39
+      ],
+      [
+       "1994",
+       9.95
+      ],
+      [
+       "1995",
+       9.74
+      ],
+      [
+       "1996",
+       10.11
+      ],
+      [
+       "1997",
+       9.96
+      ],
+      [
+       "1998",
+       11.11
+      ],
+      [
+       "1999",
+       10.78
+      ],
+      [
+       "2000",
+       10.57
+      ],
+      [
+       "2001",
+       11.35
+      ],
+      [
+       "2002",
+       11.32
+      ],
+      [
+       "2003",
+       11.69
+      ],
+      [
+       "2004",
+       11.89
+      ],
+      [
+       "2005",
+       12.33
+      ],
+      [
+       "2006",
+       12.81
+      ],
+      [
+       "2007",
+       12.83
+      ],
+      [
+       "2008",
+       13.37
+      ],
+      [
+       "2009",
+       13.96
+      ],
+      [
+       "2010",
+       13.5
+      ],
+      [
+       "2011",
+       13.71
+      ],
+      [
+       "2012",
+       14.0
+      ],
+      [
+       "2013",
+       14.26
+      ],
+      [
+       "2014",
+       14.49
+      ],
+      [
+       "2015",
+       14.35
+      ],
+      [
+       "2016",
+       14.44
+      ],
+      [
+       "2017",
+       14.57
+      ],
+      [
+       "2018",
+       15.14
+      ],
+      [
+       "2019",
+       16.06
+      ],
+      [
+       "2020",
+       16.98
+      ],
+      [
+       "2021",
+       17.02
+      ],
+      [
+       "2022",
+       17.64
+      ],
+      [
+       "2023",
+       17.78
+      ],
+      [
+       "2024",
+       17.48
+      ],
+      [
+       "2025",
+       17.65
+      ]
+     ]
+    }
+   ],
+   "eraIds": [
+    "1960s",
+    "1970s",
+    "1980s",
+    "1990s",
+    "2000s",
+    "2010s",
+    "2020s"
+   ],
+   "note": "이전지출(연금·수당 지급)은 들어 있지 않아 복지 지출 전체가 아님"
   },
   {
    "id": "va-agr-kr",
@@ -83541,6 +85176,7 @@
         "text": "두루넷이 1998년 시작하고 KT·하나로가 ADSL로 경쟁하며 가입자가 1998년 1만 3,800가구에서 2002년 1천만 명이 됐다. 정부는 1994년부터 망 구축을 국가 과제로 삼았다.",
         "ids": [
          "ix-nt-adsl",
+         "ix-nt-duru",
          "ix-nt-policy"
         ]
        },
@@ -83687,7 +85323,8 @@
        "text": "1994년 정부 종합계획과 KT 코넷.",
        "ids": [
         "ix-nt-policy",
-        "ix-nt-94"
+        "ix-nt-94",
+        "ix-nt-kornet"
        ]
       }
      ],
@@ -90923,6 +92560,48 @@
      {
       "kind": "flow",
       "id": "flow-politics"
+     },
+     {
+      "kind": "topic",
+      "id": "policy-welfare"
+     }
+    ],
+    "planned": []
+   },
+   {
+    "id": "energy",
+    "label": "에너지·환경",
+    "items": [
+     {
+      "kind": "topic",
+      "id": "energy-power"
+     },
+     {
+      "kind": "topic",
+      "id": "space-tableware"
+     },
+     {
+      "kind": "industry",
+      "id": "petrochem"
+     },
+     {
+      "kind": "industry",
+      "id": "battery"
+     }
+    ],
+    "planned": []
+   },
+   {
+    "id": "world",
+    "label": "외교·국제관계·무역",
+    "items": [
+     {
+      "kind": "topic",
+      "id": "world-trade"
+     },
+     {
+      "kind": "topic",
+      "id": "travel-abroad"
      }
     ],
     "planned": []
@@ -91028,6 +92707,21 @@
     "id": "home",
     "label": "집 안 물건",
     "desc": "집안일을 맡는 기계와 밥상·천장을 채우는 흔한 물건."
+   },
+   {
+    "id": "energy",
+    "label": "에너지·환경",
+    "desc": "전기를 무엇으로 만들고 에너지를 어디서 가져오는지."
+   },
+   {
+    "id": "policy",
+    "label": "정치·정책·제도",
+    "desc": "국가가 어떤 위험을 맡고 어떤 제도를 만들었는지."
+   },
+   {
+    "id": "world",
+    "label": "외교·국제관계",
+    "desc": "한국이 어떤 국제 규칙 안에서 교역하고 협상했는지."
    }
   ],
   "topics": [
@@ -95668,6 +97362,13 @@
         "text": "2011년 11월 공정위가 47곳을 제재하고 대가성 표시 기준을 만들겠다고 했다.",
         "ids": [
          "tp-if-blog11"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "수수료가 큰 파워블로거 4명에게는 각 500만 원의 과태료를 매겼다.",
+        "ids": [
+         "tp-if-blog11c"
         ]
        }
       ],
@@ -116808,6 +118509,1703 @@
       ]
      }
     }
+   },
+   {
+    "id": "energy-power",
+    "domain": "energy",
+    "label": "전기를 무엇으로 만드나 — 원전 1호기에서 석탄의 시대, 그리고 전환",
+    "tracks": "한국이 전기를 만드는 방식: 첫 원전(1978) → 석탄 비중 상승과 수입 의존 정점(1990~2009) → 원전 영구정지·석탄 감소·재생에너지(2017~2025).",
+    "question": "에너지의 80% 이상을 수입하는 나라가 전기를 무엇으로 만들지는 어떻게 정해졌을까? 그리고 왜 그 선택이 정권마다 흔들렸을까?",
+    "scene": {
+     "layer": "fact",
+     "text": "고리 1호기 공사비 3억달러는 1970년 한 해 국가 예산의 4분의1이었다.",
+     "ids": [
+      "tw-en-kori"
+     ]
+    },
+    "span": [
+     1971,
+     2025
+    ],
+    "scope": [
+     {
+      "layer": "inference",
+      "text": "발전원 구성 비중은 세계은행 WDI 계열이 1990년부터라 그 이전은 사건으로만 본다. 재생에너지 비중은 2021년까지만 있다.",
+      "ids": [
+       "tw-en-mix"
+      ]
+     }
+    ],
+    "turns": [
+     {
+      "id": "t1",
+      "years": "1971~1978",
+      "start": 1978,
+      "end": 1978,
+      "title": "빌린 돈과 기술로 지은 첫 원전",
+      "why": {
+       "layer": "fact",
+       "text": "국내 첫 원전인 고리 1호기는 1978년 상업운전에 들어갔다.",
+       "ids": [
+        "tw-en-kori"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "고리 1호기는 미국 정부의 차관과 기술을 지원받아 1971년 착공했다.",
+        "ids": [
+         "tw-en-kori"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "inference",
+        "text": "석유를 거의 수입하던 나라에서 석유 의존을 줄일 대안이 필요했다.",
+        "ids": [
+         "tw-en-imp"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "가동 첫해 전체 발전설비 용량의 9%를 감당했다.",
+        "ids": [
+         "tw-en-kori"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "inference",
+        "text": "원전이 국가가 주도하는 대형 전력 사업의 중심이 됐다.",
+        "ids": [
+         "tw-en-kori"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "fact",
+        "text": "1990년 원자력 발전 비중은 48.44%였다.",
+        "ids": [
+         "tw-en-mix"
+        ]
+       }
+      ],
+      "events": []
+     },
+     {
+      "id": "t2",
+      "years": "1990~2009",
+      "start": 1990,
+      "end": 1990,
+      "title": "석탄이 커지고, 수입 의존은 정점으로",
+      "why": {
+       "layer": "fact",
+       "text": "석탄 발전 비중은 1990년 19.59%에서 2009년 47.51%로 올랐다.",
+       "ids": [
+        "tw-en-mix"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "1990년 에너지 순수입 비중은 76.63%였다.",
+        "ids": [
+         "tw-en-imp"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "순수입 비중은 1997년 93.39%로 정점을 찍었다.",
+        "ids": [
+         "tw-en-imp"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "inference",
+        "text": "늘어나는 전력 수요를 값싼 수입 석탄 화력이 메웠다.",
+        "ids": [
+         "tw-en-mix"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "같은 기간 재생에너지 비중은 2005년 1.44%까지 낮아졌다.",
+        "ids": [
+         "tw-en-mix"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "값싼 전기와 탄소 배출이 함께 커지는 구조가 굳었다.",
+        "ids": [
+         "tw-en-mix"
+        ]
+       }
+      ],
+      "events": []
+     },
+     {
+      "id": "t3",
+      "years": "2011~2025",
+      "start": 2017,
+      "end": 2017,
+      "title": "원전 1호기가 멈추고, 석탄이 줄다",
+      "why": {
+       "layer": "fact",
+       "text": "고리 1호기는 2017년 6월 19일 0시 영구정지됐다.",
+       "ids": [
+        "tw-en-stop"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "2011년 후쿠시마 원전 사고 이후 2015년 6월 정부가 가동 중단을 권고했다.",
+        "ids": [
+         "tw-en-stop"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "원자력 비중은 2018년 22.27%까지 낮아졌다.",
+        "ids": [
+         "tw-en-mix"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "석탄 비중은 2025년 32.02%, 재생에너지 비중은 2021년 6.65%였다.",
+        "ids": [
+         "tw-en-mix"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "원자력 비중은 2025년 28.72%로 다시 높아졌다.",
+        "ids": [
+         "tw-en-mix"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "fact",
+        "text": "2025년 6월 원자력안전위원회가 고리 1호기 해체를 승인했다.",
+        "ids": [
+         "tw-en-stop"
+        ]
+       }
+      ],
+      "events": []
+     }
+    ],
+    "branches": {
+     "intro": "한 줄은 전기를 만드는 한 가지 방식입니다.",
+     "lanes": [
+      {
+       "label": "원자력",
+       "start": 1978,
+       "end": null,
+       "state": "공존",
+       "note": {
+        "layer": "fact",
+        "text": "48.44%(1990) → 22.27%(2018) → 28.72%(2025).",
+        "ids": [
+         "tw-en-mix"
+        ]
+       }
+      },
+      {
+       "label": "석탄 화력",
+       "start": 1960,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "fact",
+        "text": "47.51%(2009) → 32.02%(2025).",
+        "ids": [
+         "tw-en-mix"
+        ]
+       }
+      },
+      {
+       "label": "재생에너지(수력 포함)",
+       "start": 1960,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "1.44%(2005) → 6.65%(2021).",
+        "ids": [
+         "tw-en-mix"
+        ]
+       }
+      },
+      {
+       "label": "수입 에너지 의존",
+       "start": 1960,
+       "end": null,
+       "state": "공존",
+       "note": {
+        "layer": "fact",
+        "text": "93.39%(1997) → 83.24%(2024).",
+        "ids": [
+         "tw-en-imp"
+        ]
+       }
+      }
+     ],
+     "read": {
+      "layer": "inference",
+      "text": "수입 의존은 크게 바뀌지 않은 채, 그 안에서 원자력·석탄·재생에너지의 비중이 정책과 사고에 따라 오르내렸다.",
+      "ids": [
+       "tw-en-mix",
+       "tw-en-imp"
+      ]
+     }
+    },
+    "reasons": [
+     {
+      "title": "왜 원자력 비중은 정권과 사고에 따라 크게 흔들렸나",
+      "facts": [
+       {
+        "layer": "fact",
+        "text": "2015년 6월 가동 중단 권고, 2017년 6월 영구정지.",
+        "ids": [
+         "tw-en-stop"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "원자력 비중 22.27%(2018) → 28.72%(2025).",
+        "ids": [
+         "tw-en-mix"
+        ]
+       }
+      ],
+      "logic": {
+       "layer": "inference",
+       "text": "발전소는 한 번 지으면 수십 년을 쓰지만 짓고 멈추는 결정은 정부가 내리므로, 사고 뒤 안전 여론과 정권의 에너지 정책이 바뀔 때마다 비중의 방향이 달라졌다.",
+       "ids": [
+        "tw-en-stop",
+        "tw-en-mix"
+       ]
+      },
+      "proposal": {
+       "layer": "inference",
+       "text": "발전원 구성은 기술·가격보다 '누가 언제 결정했나'에 크게 좌우됐다.",
+       "ids": [
+        "tw-en-stop"
+       ]
+      },
+      "rivals": [
+       {
+        "layer": "inference",
+        "text": "수요 설명 — 전력 수요 증가와 발전소 정비 일정이 비중 변동을 만들었다.",
+        "ids": [
+         "tw-en-mix"
+        ]
+       },
+       {
+        "layer": "inference",
+        "text": "가격 설명 — 석탄·가스 국제 가격이 발전 순서를 바꿨다.",
+        "ids": [
+         "tw-en-imp"
+        ]
+       }
+      ],
+      "scope": {
+       "layer": "inference",
+       "text": "1990~2025년 발전량 비중.",
+       "ids": [
+        "tw-en-mix"
+       ]
+      },
+      "check": [
+       {
+        "layer": "hypothesis",
+        "text": "확인 쪽: 원전 가동률·정비 일수 자료로 정책 효과와 정비 효과를 나눠 보기 — 연결하지 않았다.",
+        "ids": []
+       }
+      ]
+     }
+    ],
+    "links": [
+     {
+      "kind": "topic",
+      "target": "space-tableware",
+      "at": "2023~",
+      "why": "형광등 퇴출 같은 효율 규제는 식기·조명 주제에서 본다."
+     },
+     {
+      "kind": "topic",
+      "target": "tech-home",
+      "at": "1965~",
+      "why": "전기를 쓰는 집 안 기기는 집 안 기기 주제에서 본다."
+     },
+     {
+      "kind": "topic",
+      "target": "world-trade",
+      "at": "1967~",
+      "why": "에너지를 사 오는 길인 무역 질서는 무역의 규칙 주제에서 본다."
+     }
+    ],
+    "repeats": [
+     {
+      "type": "반복되는 긴장",
+      "title": "수입 에너지에 기대면서 자립을 꿈꾼다",
+      "past": {
+       "layer": "fact",
+       "text": "1970년대 첫 원전도 미국의 차관과 기술로 지었다.",
+       "ids": [
+        "tw-en-kori"
+       ]
+      },
+      "now": {
+       "layer": "fact",
+       "text": "2024년에도 에너지의 83.24%를 수입했다.",
+       "ids": [
+        "tw-en-imp"
+       ]
+      },
+      "alike": {
+       "layer": "inference",
+       "text": "에너지 자립을 내세우지만 연료와 기술의 상당 부분은 밖에서 온다.",
+       "ids": [
+        "tw-en-kori",
+        "tw-en-imp"
+       ]
+      },
+      "changed": {
+       "layer": "inference",
+       "text": "원전 기술은 국산화했지만 화석연료 수입 의존은 크게 줄지 않았다.",
+       "ids": [
+        "tw-en-imp"
+       ]
+      },
+      "alternatives": [
+       {
+        "layer": "inference",
+        "text": "수입 의존이 높아도 공급처를 넓히면 위험은 줄 수 있다.",
+        "ids": [
+         "tw-en-imp"
+        ]
+       }
+      ],
+      "counter": [
+       {
+        "layer": "inference",
+        "text": "재생에너지 비중이 커지면 수입 의존이 구조적으로 낮아질 수 있다 — 아직 수치로는 크지 않다.",
+        "ids": [
+         "tw-en-mix"
+        ]
+       }
+      ],
+      "at": [
+       "t1",
+       "t3"
+      ]
+     }
+    ],
+    "futures": {
+     "split": {
+      "layer": "inference",
+      "text": "갈라지는 이유는 정권의 원전 정책, 재생에너지 설치 속도, 국제 연료 가격이다.",
+      "ids": [
+       "tw-en-stop",
+       "tw-en-mix"
+      ]
+     },
+     "items": [
+      {
+       "kind": "계속",
+       "name": "원자력·석탄·가스의 혼합 유지",
+       "change": {
+        "layer": "inference",
+        "text": "석탄은 천천히 줄고 원자력과 가스가 그 자리를 나눈다.",
+        "ids": [
+         "tw-en-mix"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "석탄 32.02%, 원자력 28.72%(2025).",
+         "ids": [
+          "tw-en-mix"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "대형 발전소의 교체는 수십 년이 걸린다.",
+        "ids": [
+         "tw-en-kori"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "원전 계속운전 허가, 연료 가격 안정.",
+        "ids": [
+         "tw-en-stop"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "원전 유지·해체 산업, 가스 발전.",
+        "ids": [
+         "tw-en-stop"
+        ]
+       },
+       "watch": [
+        "발전원별 비중",
+        "원전 계속운전 결정"
+       ],
+       "against": [
+        "재생에너지 설치가 크게 빨라지면 약화"
+       ]
+      },
+      {
+       "kind": "경로 변경",
+       "name": "재생에너지 중심 전환",
+       "change": {
+        "layer": "inference",
+        "text": "재생에너지 비중이 빠르게 커지고 수입 의존이 낮아진다.",
+        "ids": [
+         "tw-en-mix",
+         "tw-en-imp"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "재생에너지 1.44%(2005) → 6.65%(2021).",
+         "ids": [
+          "tw-en-mix"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "국내에서 얻는 에너지가 늘면 수입 의존 구조가 바뀐다.",
+        "ids": [
+         "tw-en-imp"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "송전망 확충, 설치 비용 하락.",
+        "ids": [
+         "tw-en-mix"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "태양광·풍력 설비, 전력 저장 장치.",
+        "ids": [
+         "tw-en-mix"
+        ]
+       },
+       "watch": [
+        "재생에너지 비중",
+        "에너지 순수입 비중"
+       ],
+       "against": [
+        "송전망·입지 갈등으로 설치가 정체되면 약화"
+       ]
+      }
+     ]
+    },
+    "conclusion": {
+     "key": {
+      "layer": "inference",
+      "text": "한국은 에너지 대부분을 수입하는 조건 위에서 원자력(1978~)과 석탄(1990~2009 상승)으로 전기를 만들어 왔고, 2017년 이후 원전 정책과 석탄 감축, 재생에너지 확대가 엇갈리며 비중이 오르내렸다.",
+      "ids": [
+       "tw-en-kori",
+       "tw-en-mix",
+       "tw-en-stop"
+      ]
+     },
+     "favored": {
+      "layer": "inference",
+      "text": "'정책 결정이 발전원 구성을 좌우했다'는 해석을 지지하되, 연료 가격과 정비 일정의 영향은 분리하지 못했다.",
+      "ids": [
+       "tw-en-stop"
+      ]
+     },
+     "undecided": {
+      "layer": "inference",
+      "text": "재생에너지 비중은 이 자료(세계은행)에 2021년까지만 있다.",
+      "ids": [
+       "tw-en-mix"
+      ]
+     },
+     "next": {
+      "layer": "inference",
+      "text": "발전원별 비중과 원전 계속운전 결정.",
+      "ids": [
+       "tw-en-mix"
+      ]
+     },
+     "change": {
+      "layer": "inference",
+      "text": "에너지 순수입 비중이 크게 내려가면 결론을 고친다.",
+      "ids": [
+       "tw-en-imp"
+      ]
+     }
+    }
+   },
+   {
+    "id": "policy-welfare",
+    "domain": "policy",
+    "label": "국가가 맡는 몫 — 의료보험에서 4대 보험, 기초생활보장까지",
+    "tracks": "아플 때·늙을 때·일자리를 잃을 때 국가가 무엇을 맡는지: 의료보험(1977~1989) → 국민연금·고용보험(1988~1999) → 기초생활보장과 정부 지출 확대(2000~2025).",
+    "question": "1977년 의료보험 혜택을 받는 국민은 8.8%였다. 12년 뒤 94%가 됐다. 성장 우선이던 나라는 왜, 어떤 순서로 사회보험을 늘렸을까?",
+    "scene": {
+     "layer": "fact",
+     "text": "전 국민 의료보장에 독일은 127년, 일본은 36년이 걸렸다.",
+     "ids": [
+      "tw-wf-nhi2"
+     ]
+    },
+    "span": [
+     1963,
+     2025
+    ],
+    "scope": [
+     {
+      "layer": "inference",
+      "text": "사회보험·공공부조 제도의 도입과 적용 범위를 본다. 정부 소비 지출 비중은 이전지출(연금·수당)이 빠진 대리 지표다.",
+      "ids": [
+       "tw-wf-govc"
+      ]
+     }
+    ],
+    "turns": [
+     {
+      "id": "t1",
+      "years": "1963~1989",
+      "start": 1977,
+      "end": 1977,
+      "title": "큰 공장부터, 12년 만에 전 국민으로",
+      "why": {
+       "layer": "fact",
+       "text": "1977년 7월 500인 이상 사업장 근로자를 대상으로 직장 의료보험이 처음 시행됐다.",
+       "ids": [
+        "tw-wf-nhi"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "1963년 「의료보험법」이 제정됐지만 시범사업 형태로 운영됐다.",
+        "ids": [
+         "tw-wf-nhi0"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "1977년에는 전 국민의 8.8%만 의료보험 혜택을 받았다.",
+        "ids": [
+         "tw-wf-nhi2"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "1988년 1월 농어촌 주민, 1989년 7월 도시지역 자영업자로 넓혔다.",
+        "ids": [
+         "tw-wf-nhi0"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "1990년에는 94%까지 보장을 받았다.",
+        "ids": [
+         "tw-wf-nhi2"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "일하는 곳(직장)을 기준으로 시작해 지역으로 넓히는 방식이 이후 사회보험의 기본 경로가 됐다.",
+        "ids": [
+         "tw-wf-nhi",
+         "tw-wf-nps"
+        ]
+       }
+      ],
+      "events": []
+     },
+     {
+      "id": "t2",
+      "years": "1988~1999",
+      "start": 1988,
+      "end": 1988,
+      "title": "연금과 고용보험 — 4대 보험의 완성",
+      "why": {
+       "layer": "fact",
+       "text": "1988년 1월부터 상시근로자 10인 이상 사업장에 국민연금을 시행했다.",
+       "ids": [
+        "tw-wf-nps"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "1964년 산업재해보상보험, 1977년 의료보험이 먼저 있었다.",
+        "ids": [
+         "tw-wf-ei"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "source",
+        "text": "국민연금 보험료율은 1988년 3%로 시작했다는 보도가 있다.",
+        "ids": [
+         "tw-wf-rate"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "1995년 7월 고용보험 시행으로 4대 사회보험을 갖췄다.",
+        "ids": [
+         "tw-wf-ei"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "1999년 4월 도시지역 주민까지 넓혀 전국민 연금시대가 열렸다.",
+        "ids": [
+         "tw-wf-nps"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "fact",
+        "text": "1998년 10월 고용보험은 전 사업장으로 확대됐다.",
+        "ids": [
+         "tw-wf-blsa"
+        ]
+       }
+      ],
+      "events": []
+     },
+     {
+      "id": "t3",
+      "years": "2000~2025",
+      "start": 2000,
+      "end": 2000,
+      "title": "일할 수 있어도 지키는 최저선",
+      "why": {
+       "layer": "fact",
+       "text": "2000년 10월 국민기초생활보장제도가 시행됐다.",
+       "ids": [
+        "tw-wf-blsa"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "생활보호법은 근로능력이 없을 때만 보호했다.",
+        "ids": [
+         "tw-wf-blsa"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "inference",
+        "text": "외환위기로 일할 수 있는데 일자리가 없는 사람이 크게 늘었다.",
+        "ids": [
+         "tw-wf-blsa"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "근로능력과 상관없이 최저생계비 이하 가구의 생계를 국가가 보장했다.",
+        "ids": [
+         "tw-wf-blsa"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "정부 최종 소비 지출은 GDP 대비 2008년 13.37%, 2025년 17.65%였다.",
+        "ids": [
+         "tw-wf-govc"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "source",
+        "text": "두 차례 연금개혁은 보험료율을 건드리지 않았다는 보도가 있다.",
+        "ids": [
+         "tw-wf-rate"
+        ]
+       }
+      ],
+      "events": []
+     }
+    ],
+    "branches": {
+     "intro": "한 줄은 국가가 위험을 나눠 지는 한 가지 방식입니다.",
+     "lanes": [
+      {
+       "label": "가족·기업이 떠안던 위험",
+       "start": 1960,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "fact",
+        "text": "의료보험 적용 8.8%(1977).",
+        "ids": [
+         "tw-wf-nhi2"
+        ]
+       }
+      },
+      {
+       "label": "직장 기준 사회보험",
+       "start": 1977,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "500인 이상 → 전 국민(1977~1989).",
+        "ids": [
+         "tw-wf-nhi"
+        ]
+       }
+      },
+      {
+       "label": "국민연금",
+       "start": 1988,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "10인 이상(1988) → 도시지역 주민(1999).",
+        "ids": [
+         "tw-wf-nps"
+        ]
+       }
+      },
+      {
+       "label": "근로능력과 무관한 최저 보장",
+       "start": 2000,
+       "end": null,
+       "state": "공존",
+       "note": {
+        "layer": "fact",
+        "text": "국민기초생활보장(2000).",
+        "ids": [
+         "tw-wf-blsa"
+        ]
+       }
+      }
+     ],
+     "read": {
+      "layer": "inference",
+      "text": "위험을 나눠 지는 주체가 가족·기업에서 국가가 운영하는 보험과 공공부조로 옮겨 갔고, 그 순서는 '큰 직장 → 작은 직장 → 지역 → 일할 수 있는 빈곤층'이었다.",
+      "ids": [
+       "tw-wf-nhi",
+       "tw-wf-nps",
+       "tw-wf-blsa"
+      ]
+     }
+    },
+    "reasons": [
+     {
+      "title": "왜 한국은 12년 만에 전 국민 의료보험을 이뤘나",
+      "facts": [
+       {
+        "layer": "fact",
+        "text": "8.8%(1977) → 94%(1990).",
+        "ids": [
+         "tw-wf-nhi2"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "독일 127년, 일본 36년.",
+        "ids": [
+         "tw-wf-nhi2"
+        ]
+       }
+      ],
+      "logic": {
+       "layer": "inference",
+       "text": "보험료를 낼 수 있는 큰 사업장부터 강제 가입시켜 제도를 먼저 돌리고, 이후 작은 사업장·농어촌·도시 자영업자로 범위를 넓히는 단계적 방식이 짧은 기간에 적용 인구를 늘렸다.",
+       "ids": [
+        "tw-wf-nhi",
+        "tw-wf-nhi0"
+       ]
+      },
+      "proposal": {
+       "layer": "inference",
+       "text": "빠른 확대는 '고성장으로 늘어난 임금 근로자 + 강제 가입 + 단계적 확대'가 결합한 결과다.",
+       "ids": [
+        "tw-wf-nhi",
+        "tw-wf-nhi2"
+       ]
+      },
+      "rivals": [
+       {
+        "layer": "inference",
+        "text": "정치 설명 — 민주화 이후 선거 경쟁이 1988·1989년 확대를 앞당겼다.",
+        "ids": [
+         "tw-wf-nhi0"
+        ]
+       },
+       {
+        "layer": "inference",
+        "text": "재정 설명 — 저부담·저급여로 시작해 확대 비용이 작았다.",
+        "ids": [
+         "tw-wf-nhi2"
+        ]
+       }
+      ],
+      "scope": {
+       "layer": "inference",
+       "text": "1977~1990년 의료보험.",
+       "ids": [
+        "tw-wf-nhi2"
+       ]
+      },
+      "check": [
+       {
+        "layer": "hypothesis",
+        "text": "확인 쪽: 확대 시점과 선거 일정, 보험료 수준을 함께 놓고 보기 — 연결하지 않았다.",
+        "ids": []
+       }
+      ]
+     }
+    ],
+    "links": [
+     {
+      "kind": "topic",
+      "target": "money-insure",
+      "at": "2009~",
+      "why": "국가 보험 밖에서 개인이 드는 실손보험은 보험 주제에서 본다."
+     },
+     {
+      "kind": "topic",
+      "target": "work-cert",
+      "at": "1998~",
+      "why": "외환위기 때 실업 대책으로서의 직업훈련은 자격증 주제에서 본다."
+     },
+     {
+      "kind": "topic",
+      "target": "family-care",
+      "at": "2000~",
+      "why": "가족이 맡던 돌봄이 어떻게 바뀌었는지는 돌봄 주제에서 본다."
+     }
+    ],
+    "repeats": [
+     {
+      "type": "반복되는 긴장",
+      "title": "넓히기는 쉽고 부담 늘리기는 어렵다",
+      "past": {
+       "layer": "fact",
+       "text": "국민연금은 1988년 10인 이상 사업장에서 1999년 전 국민으로 넓혔다.",
+       "ids": [
+        "tw-wf-nps"
+       ]
+      },
+      "now": {
+       "layer": "source",
+       "text": "두 차례 연금개혁 모두 보험료율은 건드리지 않았다는 보도가 있다.",
+       "ids": [
+        "tw-wf-rate"
+       ]
+      },
+      "alike": {
+       "layer": "inference",
+       "text": "적용 범위는 빠르게 넓어지지만 비용을 누가 더 내느냐는 계속 미뤄진다.",
+       "ids": [
+        "tw-wf-nps",
+        "tw-wf-rate"
+       ]
+      },
+      "changed": {
+       "layer": "inference",
+       "text": "과거엔 가입자가 늘어 재정이 버텼지만, 고령화로 받는 사람이 늘면서 미룬 비용이 커진다.",
+       "ids": [
+        "tw-wf-rate"
+       ]
+      },
+      "alternatives": [
+       {
+        "layer": "inference",
+        "text": "부담을 미룬 것은 정치보다 저성장기 가계 부담을 고려한 선택일 수 있다.",
+        "ids": [
+         "tw-wf-rate"
+        ]
+       }
+      ],
+      "counter": [
+       {
+        "layer": "inference",
+        "text": "이후 보험료율 조정 논의가 실제 개정으로 이어졌는지는 이 주제에서 확인하지 않았다.",
+        "ids": [
+         "tw-wf-rate"
+        ]
+       }
+      ],
+      "at": [
+       "t2",
+       "t3"
+      ]
+     }
+    ],
+    "futures": {
+     "split": {
+      "layer": "inference",
+      "text": "갈라지는 이유는 고령화 속도와, 늘어나는 비용을 보험료·세금·급여 축소 중 무엇으로 감당하느냐다.",
+      "ids": [
+       "tw-wf-rate",
+       "tw-wf-govc"
+      ]
+     },
+     "items": [
+      {
+       "kind": "계속",
+       "name": "정부 지출 비중의 계속 상승",
+       "change": {
+        "layer": "inference",
+        "text": "정부가 쓰는 몫이 계속 커지고 사회보험의 적용 대상도 넓어진다.",
+        "ids": [
+         "tw-wf-govc"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "정부 소비 지출 13.37%(2008) → 17.65%(2025).",
+         "ids": [
+          "tw-wf-govc"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "고령화로 의료·돌봄 수요가 늘면 공공 지출도 늘어난다.",
+        "ids": [
+         "tw-wf-govc"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "조세·보험료 수입 확대가 받아들여져야 한다.",
+        "ids": [
+         "tw-wf-rate"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "돌봄·요양 서비스, 공공 의료.",
+        "ids": [
+         "tw-wf-nhi"
+        ]
+       },
+       "watch": [
+        "정부 소비 지출 비중",
+        "사회보험 보험료율"
+       ],
+       "against": [
+        "재정 건전성을 이유로 지출을 크게 줄이면 약화"
+       ]
+      },
+      {
+       "kind": "분화",
+       "name": "보편 보장과 선별 보장의 갈림",
+       "change": {
+        "layer": "inference",
+        "text": "모든 사람에게 같은 혜택을 주는 쪽과 필요한 사람에게 몰아주는 쪽으로 제도가 나뉜다.",
+        "ids": [
+         "tw-wf-blsa"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "근로능력과 상관없이 최저생계비 이하 가구를 보장(2000).",
+         "ids": [
+          "tw-wf-blsa"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "재원이 한정되면 누구에게 먼저 줄지를 정해야 한다.",
+        "ids": [
+         "tw-wf-rate"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "저성장·고령화로 재원이 빠듯해야 한다.",
+        "ids": [
+         "tw-wf-govc"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "소득·자산 파악 행정 시스템.",
+        "ids": [
+         "tw-wf-blsa"
+        ]
+       },
+       "watch": [
+        "기초생활보장 수급자 수",
+        "보편 수당 도입 여부"
+       ],
+       "against": [
+        "보편 수당이 크게 늘면 약화"
+       ]
+      }
+     ]
+    },
+    "conclusion": {
+     "key": {
+      "layer": "inference",
+      "text": "한국의 사회보장은 큰 직장부터 강제 가입시키는 의료보험(1977)에서 출발해 12년 만에 전 국민으로 넓혔고, 국민연금·고용보험으로 4대 보험을 갖춘 뒤 2000년 일할 수 있는 빈곤층까지 최저선을 넓혔다.",
+      "ids": [
+       "tw-wf-nhi",
+       "tw-wf-ei",
+       "tw-wf-blsa"
+      ]
+     },
+     "favored": {
+      "layer": "inference",
+      "text": "'고성장 + 강제 가입 + 단계적 확대' 해석을 지지하되, 민주화의 정치적 영향은 따로 확인하지 못했다.",
+      "ids": [
+       "tw-wf-nhi2"
+      ]
+     },
+     "undecided": {
+      "layer": "inference",
+      "text": "이전지출을 포함한 사회복지 지출 전체 비중의 장기 계열은 아직 앱에 없다.",
+      "ids": [
+       "tw-wf-govc"
+      ]
+     },
+     "next": {
+      "layer": "inference",
+      "text": "보험료율 개정과 정부 지출 비중.",
+      "ids": [
+       "tw-wf-govc"
+      ]
+     },
+     "change": {
+      "layer": "inference",
+      "text": "사회보험 적용 범위가 다시 좁아지면 결론을 고친다.",
+      "ids": [
+       "tw-wf-nps"
+      ]
+     }
+    }
+   },
+   {
+    "id": "world-trade",
+    "domain": "world",
+    "label": "무역의 규칙 — GATT 가입에서 WTO·OECD, FTA 52개국까지",
+    "tracks": "한국이 어떤 국제 규칙 안에서 물건을 팔고 샀는지: GATT 가입(1967) → 우루과이라운드·WTO·OECD(1994~1996) → 양자 FTA의 시대(2004~).",
+    "question": "수출로 성장한 나라에게 '어떤 규칙으로 팔 수 있느냐'는 공장만큼 중요했다. 한국은 언제, 왜 그 규칙을 바꿔 왔을까?",
+    "scene": {
+     "layer": "fact",
+     "text": "1967년 4월 14일 한국은 GATT의 71번째 체약국이 됐다.",
+     "ids": [
+      "tw-tr-gatt"
+     ]
+    },
+    "span": [
+     1966,
+     2024
+    ],
+    "scope": [
+     {
+      "layer": "inference",
+      "text": "무역 협정과 다자 체제 가입을 본다. 일본 수출규제 같은 공급망 갈등은 기계·부품 산업 일대기에서 다룬다.",
+      "ids": [
+       "tw-tr-gatt"
+      ]
+     }
+    ],
+    "turns": [
+     {
+      "id": "t1",
+      "years": "1966~1972",
+      "start": 1967,
+      "end": 1967,
+      "title": "남의 관세 혜택을 한꺼번에 받다",
+      "why": {
+       "layer": "fact",
+       "text": "한국은 1967년 4월 14일 GATT의 71번째 체약국이 됐다.",
+       "ids": [
+        "tw-tr-gatt"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "수출주도 성장 정책을 위해 1966년 가입을 신청했다.",
+        "ids": [
+         "tw-tr-gatt"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "5개월 만에 협상을 마쳤고, 일본은 약 3년이 걸렸다.",
+        "ids": [
+         "tw-tr-gatt"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "inference",
+        "text": "기존 체약국들의 관세 인하 혜택을 한꺼번에 받으며 수출 시장이 넓어졌다.",
+        "ids": [
+         "tw-tr-gatt"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "가입 원년 세계 66위 수출국이던 한국은 1972년 44위가 됐다.",
+        "ids": [
+         "tw-tr-gatt"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "다자 규칙 안에서 수출하는 구조가 이후 수십 년의 기본 틀이 됐다.",
+        "ids": [
+         "tw-tr-gatt"
+        ]
+       }
+      ],
+      "events": []
+     },
+     {
+      "id": "t2",
+      "years": "1994~1996",
+      "start": 1995,
+      "end": 1995,
+      "title": "받던 나라에서 열어야 하는 나라로",
+      "why": {
+       "layer": "fact",
+       "text": "1994년 4월 우루과이라운드가 종결되고 1995년 WTO가 출범했다.",
+       "ids": [
+        "tw-tr-wto"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "그때까지 한국은 개발도상국으로서 시장 개방 의무가 상대적으로 가벼웠다.",
+        "ids": [
+         "tw-tr-gatt"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "쌀 최소시장접근 1%, 보리·옥수수 관세화 등 단계적 개방 일정이 정해졌다.",
+        "ids": [
+         "tw-tr-wto"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "한국은 1995년 1월 1일 WTO 회원국이 됐다.",
+        "ids": [
+         "tw-tr-wto"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "1996년 12월 12일 OECD의 29번째 회원국이 됐다.",
+        "ids": [
+         "tw-tr-wto"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "수출 시장의 문을 여는 대가로 농산물·서비스·금융의 문을 함께 여는 관계가 시작됐다.",
+        "ids": [
+         "tw-tr-wto"
+        ]
+       }
+      ],
+      "events": []
+     },
+     {
+      "id": "t3",
+      "years": "1999~2024",
+      "start": 2004,
+      "end": 2004,
+      "title": "다자에서 양자로 — FTA의 시대",
+      "why": {
+       "layer": "fact",
+       "text": "한국의 첫 FTA인 한·칠레 FTA가 2004년 4월 1일 발효됐다.",
+       "ids": [
+        "tw-tr-chile"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "1999년 9월 협상 개시를 선언해 4년여 협상했다.",
+        "ids": [
+         "tw-tr-chile"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "국회 비준 과정에서 큰 국론 분열이 있었고 피해 보상 제도를 마련한 뒤에야 발효됐다.",
+        "ids": [
+         "tw-tr-chile"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "한·미 FTA는 2012년 3월 15일, 한·중 FTA는 2015년 12월 발효됐다.",
+        "ids": [
+         "tw-tr-fta"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "전체 수출에서 FTA 체결국 비중은 67%에서 73%로 커졌다(2004~2018).",
+        "ids": [
+         "tw-tr-share"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "fact",
+        "text": "FTA 파트너 국가로의 수출이 전체 수출의 84%를 차지했다는 보도가 있다.",
+        "ids": [
+         "tw-tr-20y"
+        ]
+       }
+      ],
+      "events": []
+     }
+    ],
+    "branches": {
+     "intro": "한 줄은 한국이 교역하는 한 가지 규칙입니다.",
+     "lanes": [
+      {
+       "label": "GATT 다자 관세 혜택",
+       "start": 1967,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "fact",
+        "text": "71번째 체약국(1967).",
+        "ids": [
+         "tw-tr-gatt"
+        ]
+       }
+      },
+      {
+       "label": "WTO 다자 규칙",
+       "start": 1995,
+       "end": null,
+       "state": "공존",
+       "note": {
+        "layer": "fact",
+        "text": "1995년 1월 1일 회원국.",
+        "ids": [
+         "tw-tr-wto"
+        ]
+       }
+      },
+      {
+       "label": "양자 FTA",
+       "start": 2004,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "2015년 말 52개국 15건.",
+        "ids": [
+         "tw-tr-fta"
+        ]
+       }
+      },
+      {
+       "label": "시장 개방 갈등",
+       "start": 1994,
+       "end": null,
+       "state": "공존",
+       "note": {
+        "layer": "fact",
+        "text": "한·칠레 FTA 비준의 국론 분열.",
+        "ids": [
+         "tw-tr-chile"
+        ]
+       }
+      }
+     ],
+     "read": {
+      "layer": "inference",
+      "text": "한국은 다자 규칙의 혜택을 받는 쪽에서 출발해, 시장을 여는 의무를 지는 쪽을 거쳐, 직접 상대를 골라 협정을 맺는 쪽으로 옮겨 갔다.",
+      "ids": [
+       "tw-tr-gatt",
+       "tw-tr-wto",
+       "tw-tr-fta"
+      ]
+     }
+    },
+    "reasons": [
+     {
+      "title": "왜 한국은 2000년대에 FTA를 한꺼번에 맺었나",
+      "facts": [
+       {
+        "layer": "fact",
+        "text": "2004년 첫 FTA 이후 2015년 말까지 52개국 15건.",
+        "ids": [
+         "tw-tr-fta"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "FTA 체결국 수출 연평균 약 7% vs 미체결국 5%.",
+        "ids": [
+         "tw-tr-share"
+        ]
+       }
+      ],
+      "logic": {
+       "layer": "inference",
+       "text": "다자 협상이 더디게 움직이는 사이 경쟁국들이 FTA로 관세 혜택을 먼저 얻자, 수출 의존이 큰 한국은 뒤처지지 않으려 여러 나라와 동시에 협정을 서둘렀다.",
+       "ids": [
+        "tw-tr-fta",
+        "tw-tr-share"
+       ]
+      },
+      "proposal": {
+       "layer": "inference",
+       "text": "FTA 확산은 '다자 체제의 정체'와 '수출 의존 경제의 시장 선점 압력'이 만난 결과다.",
+       "ids": [
+        "tw-tr-fta"
+       ]
+      },
+      "rivals": [
+       {
+        "layer": "inference",
+        "text": "국내 개혁 설명 — 정부가 개방을 국내 구조개혁의 지렛대로 썼다.",
+        "ids": [
+         "tw-tr-wto"
+        ]
+       },
+       {
+        "layer": "inference",
+        "text": "안보 설명 — 한·미 FTA는 경제뿐 아니라 동맹 관계를 강화하려는 목적이 있었다.",
+        "ids": [
+         "tw-tr-fta"
+        ]
+       }
+      ],
+      "scope": {
+       "layer": "inference",
+       "text": "2004~2018년 FTA.",
+       "ids": [
+        "tw-tr-share"
+       ]
+      },
+      "check": [
+       {
+        "layer": "hypothesis",
+        "text": "확인 쪽: FTA 발효 전후 같은 상대국 수출 증가율을 미체결 비교국과 대조(이중차분) — 하지 않았다.",
+        "ids": []
+       }
+      ]
+     }
+    ],
+    "links": [
+     {
+      "kind": "topic",
+      "target": "travel-abroad",
+      "at": "1989~",
+      "why": "사람이 국경을 넘는 방식은 해외여행 주제에서 본다."
+     },
+     {
+      "kind": "topic",
+      "target": "energy-power",
+      "at": "1990~",
+      "why": "에너지를 수입하는 구조는 전기 주제에서 본다."
+     },
+     {
+      "kind": "topic",
+      "target": "shop-items",
+      "at": "2004~",
+      "why": "수입 농산물과 식품 값은 무엇을 사는지 주제에서 본다."
+     }
+    ],
+    "repeats": [
+     {
+      "type": "반복되는 긴장",
+      "title": "수출 시장을 얻는 대가로 안방을 연다",
+      "past": {
+       "layer": "fact",
+       "text": "1995년 WTO 출범과 함께 쌀 최소시장접근 1% 등 개방 일정이 정해졌다.",
+       "ids": [
+        "tw-tr-wto"
+       ]
+      },
+      "now": {
+       "layer": "fact",
+       "text": "한·칠레 FTA는 피해 보상 제도를 마련한 뒤에야 발효됐다.",
+       "ids": [
+        "tw-tr-chile"
+       ]
+      },
+      "alike": {
+       "layer": "inference",
+       "text": "수출 산업이 얻는 이익과 농업 등 개방 피해 산업의 반발이 매번 부딪친다.",
+       "ids": [
+        "tw-tr-wto",
+        "tw-tr-chile"
+       ]
+      },
+      "changed": {
+       "layer": "inference",
+       "text": "다자 협상 땐 정해진 일정을 따랐고, FTA에선 상대를 골라 피해 품목을 따로 협상했다.",
+       "ids": [
+        "tw-tr-chile"
+       ]
+      },
+      "alternatives": [
+       {
+        "layer": "inference",
+        "text": "갈등의 크기는 개방 품목보다 국내 정치 상황에 더 좌우됐을 수 있다.",
+        "ids": [
+         "tw-tr-chile"
+        ]
+       }
+      ],
+      "counter": [
+       {
+        "layer": "inference",
+        "text": "모든 FTA가 큰 갈등을 낳은 것은 아니다 — 개별 FTA의 갈등 규모는 비교하지 않았다.",
+        "ids": [
+         "tw-tr-fta"
+        ]
+       }
+      ],
+      "at": [
+       "t2",
+       "t3"
+      ]
+     }
+    ],
+    "futures": {
+     "split": {
+      "layer": "inference",
+      "text": "갈라지는 이유는 미국·중국의 보호무역과 공급망 재편이 계속되느냐다.",
+      "ids": [
+       "tw-tr-20y"
+      ]
+     },
+     "items": [
+      {
+       "kind": "계속",
+       "name": "FTA 네트워크의 확장",
+       "change": {
+        "layer": "inference",
+        "text": "새 FTA와 경제동반자협정이 계속 늘어난다.",
+        "ids": [
+         "tw-tr-fta"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "FTA 파트너 수출 비중 84%.",
+         "ids": [
+          "tw-tr-20y"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "수출 의존 경제는 시장을 계속 넓혀야 한다.",
+        "ids": [
+         "tw-tr-share"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "다자 체제가 유지되고 상대국이 개방에 응해야 한다.",
+        "ids": [
+         "tw-tr-wto"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "원산지 관리, 통상 법률 서비스.",
+        "ids": [
+         "tw-tr-fta"
+        ]
+       },
+       "watch": [
+        "새 FTA 발효 수",
+        "FTA 활용률"
+       ],
+       "against": [
+        "주요국이 기존 FTA를 재협상·중단하면 약화"
+       ]
+      },
+      {
+       "kind": "경로 변경",
+       "name": "규칙보다 공급망 블록",
+       "change": {
+        "layer": "inference",
+        "text": "관세 협정보다 동맹국 중심 공급망과 산업 보조금이 교역을 좌우한다.",
+        "ids": [
+         "tw-tr-20y"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "한·미 FTA 이후 무역 연평균 5.3%, 한·중 FTA 이후 2.1% 증가.",
+         "ids": [
+          "tw-tr-20y"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "안보와 기술 경쟁이 커지면 관세 혜택보다 공급망 안정이 중요해진다.",
+        "ids": [
+         "tw-tr-20y"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "미·중 기술 갈등 지속.",
+        "ids": [
+         "tw-tr-20y"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "공급망 다변화 컨설팅, 현지 생산 투자.",
+        "ids": [
+         "tw-tr-20y"
+        ]
+       },
+       "watch": [
+        "대미·대중 수출 비중",
+        "해외 직접투자 지역 분포"
+       ],
+       "against": [
+        "다자 협상이 다시 힘을 얻으면 약화"
+       ]
+      }
+     ]
+    },
+    "conclusion": {
+     "key": {
+      "layer": "inference",
+      "text": "한국은 1967년 GATT 가입으로 남의 관세 혜택을 받으며 수출을 키웠고, 1995년 WTO 이후엔 시장을 여는 의무를 졌으며, 2004년 이후엔 FTA로 상대를 골라 시장을 넓혔다. 매 단계마다 수출 이익과 개방 피해가 부딪쳤다.",
+      "ids": [
+       "tw-tr-gatt",
+       "tw-tr-wto",
+       "tw-tr-chile"
+      ]
+     },
+     "favored": {
+      "layer": "inference",
+      "text": "'다자 체제 정체 + 수출 의존 경제의 선점 압력' 해석을 지지한다.",
+      "ids": [
+       "tw-tr-fta",
+       "tw-tr-share"
+      ]
+     },
+     "undecided": {
+      "layer": "inference",
+      "text": "FTA가 수출을 얼마나 늘렸는지 인과 효과는 확인하지 못했다 — 체결국 비중 증가는 상관 관계다.",
+      "ids": [
+       "tw-tr-share"
+      ]
+     },
+     "next": {
+      "layer": "inference",
+      "text": "대미·대중 수출 비중과 보호무역 조치.",
+      "ids": [
+       "tw-tr-20y"
+      ]
+     },
+     "change": {
+      "layer": "inference",
+      "text": "FTA 체결국 수출 비중이 크게 줄면 결론을 고친다.",
+      "ids": [
+       "tw-tr-20y"
+      ]
+     }
+    }
    }
   ],
   "planned": [],
@@ -127878,6 +131276,2471 @@
     },
     "verdict": "E",
     "why": "1986~2024년 39개: 직선 추세가 변동의 97% 설명"
+   },
+   {
+    "key": "elec-nucl-kr:KR",
+    "indicator": "elec-nucl-kr",
+    "country": "KR",
+    "title": "에너지 — 원자력 발전 비중",
+    "unit": "%",
+    "from": 1990,
+    "to": 2025,
+    "points": [
+     [
+      1990,
+      48.44
+     ],
+     [
+      1991,
+      46.95
+     ],
+     [
+      1992,
+      42.04
+     ],
+     [
+      1993,
+      38.64
+     ],
+     [
+      1994,
+      34.4
+     ],
+     [
+      1995,
+      35.79
+     ],
+     [
+      1996,
+      35.49
+     ],
+     [
+      1997,
+      34.01
+     ],
+     [
+      1998,
+      40.98
+     ],
+     [
+      1999,
+      42.73
+     ],
+     [
+      2000,
+      37.69
+     ],
+     [
+      2001,
+      36.16
+     ],
+     [
+      2002,
+      36.41
+     ],
+     [
+      2003,
+      37.47
+     ],
+     [
+      2004,
+      35.29
+     ],
+     [
+      2005,
+      37.9
+     ],
+     [
+      2006,
+      36.66
+     ],
+     [
+      2007,
+      35.21
+     ],
+     [
+      2008,
+      35.67
+     ],
+     [
+      2009,
+      33.86
+     ],
+     [
+      2010,
+      29.88
+     ],
+     [
+      2011,
+      29.64
+     ],
+     [
+      2012,
+      28.06
+     ],
+     [
+      2013,
+      25.65
+     ],
+     [
+      2014,
+      28.5
+     ],
+     [
+      2015,
+      30.07
+     ],
+     [
+      2016,
+      28.68
+     ],
+     [
+      2017,
+      25.44
+     ],
+     [
+      2018,
+      22.27
+     ],
+     [
+      2019,
+      24.52
+     ],
+     [
+      2020,
+      27.14
+     ],
+     [
+      2021,
+      25.46
+     ],
+     [
+      2022,
+      27.66
+     ],
+     [
+      2023,
+      28.62
+     ],
+     [
+      2024,
+      28.9
+     ],
+     [
+      2025,
+      28.72
+     ]
+    ],
+    "trend": [
+     [
+      1990,
+      42.4
+     ],
+     [
+      2025,
+      24.32
+     ]
+    ],
+    "turningPoints": [],
+    "highThreshold": 1.98,
+    "lowThreshold": -3.11,
+    "episodeBasis": "전년 대비 변화",
+    "episodeUnit": "%",
+    "residual": [
+     [
+      1990,
+      6.04
+     ],
+     [
+      1991,
+      5.06
+     ],
+     [
+      1992,
+      0.67
+     ],
+     [
+      1993,
+      -2.21
+     ],
+     [
+      1994,
+      -5.94
+     ],
+     [
+      1995,
+      -4.03
+     ],
+     [
+      1996,
+      -3.81
+     ],
+     [
+      1997,
+      -4.78
+     ],
+     [
+      1998,
+      2.71
+     ],
+     [
+      1999,
+      4.98
+     ],
+     [
+      2000,
+      0.45
+     ],
+     [
+      2001,
+      -0.56
+     ],
+     [
+      2002,
+      0.21
+     ],
+     [
+      2003,
+      1.78
+     ],
+     [
+      2004,
+      0.12
+     ],
+     [
+      2005,
+      3.25
+     ],
+     [
+      2006,
+      2.52
+     ],
+     [
+      2007,
+      1.59
+     ],
+     [
+      2008,
+      2.57
+     ],
+     [
+      2009,
+      1.27
+     ],
+     [
+      2010,
+      -2.19
+     ],
+     [
+      2011,
+      -1.91
+     ],
+     [
+      2012,
+      -2.98
+     ],
+     [
+      2013,
+      -4.87
+     ],
+     [
+      2014,
+      -1.5
+     ],
+     [
+      2015,
+      0.58
+     ],
+     [
+      2016,
+      -0.29
+     ],
+     [
+      2017,
+      -3.01
+     ],
+     [
+      2018,
+      -5.66
+     ],
+     [
+      2019,
+      -2.9
+     ],
+     [
+      2020,
+      0.24
+     ],
+     [
+      2021,
+      -0.92
+     ],
+     [
+      2022,
+      1.79
+     ],
+     [
+      2023,
+      3.27
+     ],
+     [
+      2024,
+      4.07
+     ],
+     [
+      2025,
+      4.4
+     ]
+    ],
+    "highEpisodes": [
+     [
+      1998,
+      1998
+     ],
+     [
+      2005,
+      2005
+     ],
+     [
+      2014,
+      2014
+     ],
+     [
+      2019,
+      2022
+     ]
+    ],
+    "lowEpisodes": [
+     [
+      1992,
+      1994
+     ],
+     [
+      2000,
+      2000
+     ],
+     [
+      2010,
+      2010
+     ],
+     [
+      2017,
+      2018
+     ]
+    ],
+    "highIntervals": {
+     "starts": [
+      1998,
+      2005,
+      2014,
+      2019
+     ],
+     "gaps": [
+      7,
+      9,
+      5
+     ],
+     "cv": 0.23,
+     "regular": false
+    },
+    "lowIntervals": {
+     "starts": [
+      1992,
+      2000,
+      2010,
+      2017
+     ],
+     "gaps": [
+      8,
+      10,
+      7
+     ],
+     "cv": 0.15,
+     "regular": true
+    },
+    "sensitivity": [
+     {
+      "range": [
+       1960,
+       1992
+      ],
+      "n": 3,
+      "verdict": "insufficient"
+     },
+     {
+      "range": [
+       1993,
+       2025
+      ],
+      "n": 33,
+      "verdict": "E",
+      "trendR2": 0.677,
+      "pAcf": 0.0325,
+      "pSpectral": 0.5307,
+      "period": 8.2
+     },
+     {
+      "range": [
+       1980,
+       2025
+      ],
+      "n": 36,
+      "verdict": "E",
+      "trendR2": 0.74,
+      "pAcf": 0.1554,
+      "pSpectral": 0.2899,
+      "period": 18.0
+     },
+     {
+      "range": [
+       1991,
+       2025
+      ],
+      "n": 35,
+      "method": "1차 차분(전년 대비 변화)",
+      "verdict": "none",
+      "pAcf": 0.4953,
+      "pSpectral": 0.4348,
+      "period": 8.8
+     }
+    ],
+    "n": 36,
+    "trendR2": 0.74,
+    "slopePerDecade": -5.17,
+    "changePoint": {
+     "year": 2010,
+     "before": 38.09,
+     "after": 27.45,
+     "explained": 0.718
+    },
+    "periodicity": {
+     "acf": [
+      0.189,
+      -0.069,
+      -0.299,
+      -0.35,
+      -0.295,
+      -0.127,
+      0.061,
+      -0.06,
+      -0.355,
+      -0.567,
+      -0.564,
+      -0.404,
+      -0.232,
+      0.127,
+      0.524,
+      0.636
+     ],
+     "bestLag": 17,
+     "maxAbsAcf": 0.636,
+     "pAcf": 0.1494,
+     "band": 0.327,
+     "spectralPeriod": 18.0,
+     "spectralShare": 0.395,
+     "pSpectral": 0.2919,
+     "ar1": 0.663,
+     "null": "AR(1) 적색잡음 대조 2,000개"
+    },
+    "verdict": "E",
+    "why": "1990~2025년 36개: 직선 추세가 변동의 74% 설명"
+   },
+   {
+    "key": "elec-coal-kr:KR",
+    "indicator": "elec-coal-kr",
+    "country": "KR",
+    "title": "에너지 — 석탄 발전 비중",
+    "unit": "%",
+    "from": 1990,
+    "to": 2025,
+    "points": [
+     [
+      1990,
+      19.59
+     ],
+     [
+      1991,
+      17.82
+     ],
+     [
+      1992,
+      17.99
+     ],
+     [
+      1993,
+      23.52
+     ],
+     [
+      1994,
+      26.53
+     ],
+     [
+      1995,
+      28.09
+     ],
+     [
+      1996,
+      28.88
+     ],
+     [
+      1997,
+      31.35
+     ],
+     [
+      1998,
+      37.09
+     ],
+     [
+      1999,
+      36.5
+     ],
+     [
+      2000,
+      38.15
+     ],
+     [
+      2001,
+      39.56
+     ],
+     [
+      2002,
+      39.41
+     ],
+     [
+      2003,
+      39.02
+     ],
+     [
+      2004,
+      39.06
+     ],
+     [
+      2005,
+      38.04
+     ],
+     [
+      2006,
+      37.67
+     ],
+     [
+      2007,
+      41.59
+     ],
+     [
+      2008,
+      44.37
+     ],
+     [
+      2009,
+      47.51
+     ],
+     [
+      2010,
+      43.61
+     ],
+     [
+      2011,
+      42.93
+     ],
+     [
+      2012,
+      41.77
+     ],
+     [
+      2013,
+      41.58
+     ],
+     [
+      2014,
+      41.15
+     ],
+     [
+      2015,
+      42.19
+     ],
+     [
+      2016,
+      41.57
+     ],
+     [
+      2017,
+      45.26
+     ],
+     [
+      2018,
+      43.89
+     ],
+     [
+      2019,
+      42.56
+     ],
+     [
+      2020,
+      37.67
+     ],
+     [
+      2021,
+      36.52
+     ],
+     [
+      2022,
+      34.94
+     ],
+     [
+      2023,
+      33.84
+     ],
+     [
+      2024,
+      31.16
+     ],
+     [
+      2025,
+      32.02
+     ]
+    ],
+    "trend": [
+     [
+      1990,
+      28.93
+     ],
+     [
+      2025,
+      43.54
+     ]
+    ],
+    "turningPoints": [
+     {
+      "year": 1991,
+      "kind": "trough",
+      "value": 17.82
+     },
+     {
+      "year": 2009,
+      "kind": "peak",
+      "value": 47.51
+     }
+    ],
+    "highThreshold": 6.28,
+    "lowThreshold": -6.28,
+    "episodeBasis": "추세 대비",
+    "episodeUnit": "%p",
+    "residual": [
+     [
+      1990,
+      -9.34
+     ],
+     [
+      1991,
+      -11.53
+     ],
+     [
+      1992,
+      -11.77
+     ],
+     [
+      1993,
+      -6.66
+     ],
+     [
+      1994,
+      -4.07
+     ],
+     [
+      1995,
+      -2.93
+     ],
+     [
+      1996,
+      -2.55
+     ],
+     [
+      1997,
+      -0.5
+     ],
+     [
+      1998,
+      4.82
+     ],
+     [
+      1999,
+      3.81
+     ],
+     [
+      2000,
+      5.05
+     ],
+     [
+      2001,
+      6.04
+     ],
+     [
+      2002,
+      5.47
+     ],
+     [
+      2003,
+      4.67
+     ],
+     [
+      2004,
+      4.29
+     ],
+     [
+      2005,
+      2.85
+     ],
+     [
+      2006,
+      2.06
+     ],
+     [
+      2007,
+      5.57
+     ],
+     [
+      2008,
+      7.93
+     ],
+     [
+      2009,
+      10.65
+     ],
+     [
+      2010,
+      6.33
+     ],
+     [
+      2011,
+      5.24
+     ],
+     [
+      2012,
+      3.66
+     ],
+     [
+      2013,
+      3.05
+     ],
+     [
+      2014,
+      2.2
+     ],
+     [
+      2015,
+      2.83
+     ],
+     [
+      2016,
+      1.79
+     ],
+     [
+      2017,
+      5.06
+     ],
+     [
+      2018,
+      3.27
+     ],
+     [
+      2019,
+      1.53
+     ],
+     [
+      2020,
+      -3.78
+     ],
+     [
+      2021,
+      -5.35
+     ],
+     [
+      2022,
+      -7.35
+     ],
+     [
+      2023,
+      -8.86
+     ],
+     [
+      2024,
+      -11.96
+     ],
+     [
+      2025,
+      -11.52
+     ]
+    ],
+    "highEpisodes": [
+     [
+      2008,
+      2010
+     ]
+    ],
+    "lowEpisodes": [
+     [
+      1990,
+      1993
+     ],
+     [
+      2022,
+      2025
+     ]
+    ],
+    "highIntervals": {
+     "starts": [
+      2008
+     ],
+     "gaps": [],
+     "cv": null,
+     "regular": null
+    },
+    "lowIntervals": {
+     "starts": [
+      1990,
+      2022
+     ],
+     "gaps": [
+      32
+     ],
+     "cv": null,
+     "regular": null
+    },
+    "sensitivity": [
+     {
+      "range": [
+       1960,
+       1992
+      ],
+      "n": 3,
+      "verdict": "insufficient"
+     },
+     {
+      "range": [
+       1993,
+       2025
+      ],
+      "n": 33,
+      "verdict": "E",
+      "trendR2": 0.139,
+      "pAcf": 0.3008,
+      "pSpectral": 0.1454,
+      "period": 33.0
+     },
+     {
+      "range": [
+       1980,
+       2025
+      ],
+      "n": 36,
+      "verdict": "E",
+      "trendR2": 0.323,
+      "pAcf": 0.2854,
+      "pSpectral": 0.079,
+      "period": 36.0
+     },
+     {
+      "range": [
+       1991,
+       2025
+      ],
+      "n": 35,
+      "method": "1차 차분(전년 대비 변화)",
+      "verdict": "none",
+      "pAcf": 0.5287,
+      "pSpectral": 0.8131,
+      "period": 35.0
+     }
+    ],
+    "n": 36,
+    "trendR2": 0.323,
+    "slopePerDecade": 4.17,
+    "changePoint": {
+     "year": 1998,
+     "before": 24.22,
+     "after": 39.67,
+     "explained": 0.708
+    },
+    "periodicity": {
+     "acf": [
+      0.791,
+      0.598,
+      0.41,
+      0.207,
+      0.018,
+      -0.099,
+      -0.145,
+      -0.144,
+      -0.228,
+      -0.328,
+      -0.434,
+      -0.499,
+      -0.543,
+      -0.601,
+      -0.663,
+      -0.687
+     ],
+     "bestLag": 2,
+     "maxAbsAcf": 0.791,
+     "pAcf": 0.2864,
+     "band": 0.327,
+     "spectralPeriod": 36.0,
+     "spectralShare": 0.784,
+     "pSpectral": 0.0895,
+     "ar1": 0.926,
+     "null": "AR(1) 적색잡음 대조 2,000개"
+    },
+    "verdict": "E",
+    "why": "1990~2025년 36개: 직선 추세가 변동의 32% 설명"
+   },
+   {
+    "key": "elec-rnew-kr:KR",
+    "indicator": "elec-rnew-kr",
+    "country": "KR",
+    "title": "에너지 — 재생에너지 발전 비중",
+    "unit": "%",
+    "from": 1990,
+    "to": 2021,
+    "points": [
+     [
+      1990,
+      5.83
+     ],
+     [
+      1991,
+      2.91
+     ],
+     [
+      1992,
+      2.3
+     ],
+     [
+      1993,
+      2.81
+     ],
+     [
+      1994,
+      1.38
+     ],
+     [
+      1995,
+      1.61
+     ],
+     [
+      1996,
+      1.36
+     ],
+     [
+      1997,
+      1.28
+     ],
+     [
+      1998,
+      1.98
+     ],
+     [
+      1999,
+      1.77
+     ],
+     [
+      2000,
+      1.98
+     ],
+     [
+      2001,
+      1.96
+     ],
+     [
+      2002,
+      1.68
+     ],
+     [
+      2003,
+      2.06
+     ],
+     [
+      2004,
+      1.67
+     ],
+     [
+      2005,
+      1.44
+     ],
+     [
+      2006,
+      1.42
+     ],
+     [
+      2007,
+      1.47
+     ],
+     [
+      2008,
+      1.62
+     ],
+     [
+      2009,
+      1.72
+     ],
+     [
+      2010,
+      1.81
+     ],
+     [
+      2011,
+      2.06
+     ],
+     [
+      2012,
+      2.1
+     ],
+     [
+      2013,
+      2.38
+     ],
+     [
+      2014,
+      2.48
+     ],
+     [
+      2015,
+      2.61
+     ],
+     [
+      2016,
+      3.5
+     ],
+     [
+      2017,
+      3.91
+     ],
+     [
+      2018,
+      4.5
+     ],
+     [
+      2019,
+      5.19
+     ],
+     [
+      2020,
+      6.27
+     ],
+     [
+      2021,
+      6.65
+     ]
+    ],
+    "trend": [
+     [
+      1990,
+      1.5
+     ],
+     [
+      2021,
+      3.73
+     ]
+    ],
+    "turningPoints": [
+     {
+      "year": 1996,
+      "kind": "trough",
+      "value": 1.36
+     }
+    ],
+    "highThreshold": 4.09,
+    "lowThreshold": 1.14,
+    "episodeBasis": "평균 대비",
+    "episodeUnit": "%",
+    "residual": [
+     [
+      1990,
+      4.33
+     ],
+     [
+      1991,
+      1.34
+     ],
+     [
+      1992,
+      0.66
+     ],
+     [
+      1993,
+      1.09
+     ],
+     [
+      1994,
+      -0.41
+     ],
+     [
+      1995,
+      -0.25
+     ],
+     [
+      1996,
+      -0.57
+     ],
+     [
+      1997,
+      -0.72
+     ],
+     [
+      1998,
+      -0.1
+     ],
+     [
+      1999,
+      -0.38
+     ],
+     [
+      2000,
+      -0.24
+     ],
+     [
+      2001,
+      -0.33
+     ],
+     [
+      2002,
+      -0.68
+     ],
+     [
+      2003,
+      -0.38
+     ],
+     [
+      2004,
+      -0.84
+     ],
+     [
+      2005,
+      -1.14
+     ],
+     [
+      2006,
+      -1.23
+     ],
+     [
+      2007,
+      -1.25
+     ],
+     [
+      2008,
+      -1.18
+     ],
+     [
+      2009,
+      -1.15
+     ],
+     [
+      2010,
+      -1.13
+     ],
+     [
+      2011,
+      -0.95
+     ],
+     [
+      2012,
+      -0.98
+     ],
+     [
+      2013,
+      -0.78
+     ],
+     [
+      2014,
+      -0.75
+     ],
+     [
+      2015,
+      -0.69
+     ],
+     [
+      2016,
+      0.13
+     ],
+     [
+      2017,
+      0.47
+     ],
+     [
+      2018,
+      0.98
+     ],
+     [
+      2019,
+      1.6
+     ],
+     [
+      2020,
+      2.61
+     ],
+     [
+      2021,
+      2.92
+     ]
+    ],
+    "highEpisodes": [
+     [
+      1990,
+      1990
+     ],
+     [
+      2018,
+      2021
+     ]
+    ],
+    "lowEpisodes": [],
+    "highIntervals": {
+     "starts": [
+      1990,
+      2018
+     ],
+     "gaps": [
+      28
+     ],
+     "cv": null,
+     "regular": null
+    },
+    "lowIntervals": {
+     "starts": [],
+     "gaps": [],
+     "cv": null,
+     "regular": null
+    },
+    "sensitivity": [
+     {
+      "range": [
+       1960,
+       1992
+      ],
+      "n": 3,
+      "verdict": "insufficient"
+     },
+     {
+      "range": [
+       1993,
+       2025
+      ],
+      "n": 29,
+      "verdict": "E",
+      "trendR2": 0.524,
+      "pAcf": 0.2049,
+      "pSpectral": 0.1244,
+      "period": 29.0
+     },
+     {
+      "range": [
+       1980,
+       2025
+      ],
+      "n": 32,
+      "verdict": "E",
+      "trendR2": 0.202,
+      "pAcf": 0.4193,
+      "pSpectral": 0.2029,
+      "period": 32.0
+     },
+     {
+      "range": [
+       1991,
+       2021
+      ],
+      "n": 31,
+      "method": "1차 차분(전년 대비 변화)",
+      "verdict": "weak",
+      "pAcf": 0.0125,
+      "pSpectral": 0.8431,
+      "period": 2.6
+     }
+    ],
+    "n": 32,
+    "trendR2": 0.202,
+    "slopePerDecade": 0.72,
+    "changePoint": {
+     "year": 2016,
+     "before": 2.06,
+     "after": 5.0,
+     "explained": 0.602
+    },
+    "periodicity": {
+     "acf": [
+      0.639,
+      0.498,
+      0.15,
+      0.055,
+      -0.115,
+      -0.151,
+      -0.114,
+      -0.215,
+      -0.228,
+      -0.31,
+      -0.391,
+      -0.387,
+      -0.479,
+      -0.508
+     ],
+     "bestLag": 2,
+     "maxAbsAcf": 0.639,
+     "pAcf": 0.4208,
+     "band": 0.346,
+     "spectralPeriod": 32.0,
+     "spectralShare": 0.604,
+     "pSpectral": 0.2044,
+     "ar1": 0.82,
+     "null": "AR(1) 적색잡음 대조 2,000개"
+    },
+    "verdict": "E",
+    "why": "1990~2021년 32개: 2016년 전후 평균이 2.06→5.0로 바뀜(변동의 60%)"
+   },
+   {
+    "key": "energy-imp-kr:KR",
+    "indicator": "energy-imp-kr",
+    "country": "KR",
+    "title": "에너지 — 순수입 의존도",
+    "unit": "%",
+    "from": 1990,
+    "to": 2024,
+    "points": [
+     [
+      1990,
+      76.63
+     ],
+     [
+      1991,
+      81.26
+     ],
+     [
+      1992,
+      85.96
+     ],
+     [
+      1993,
+      87.87
+     ],
+     [
+      1994,
+      92.42
+     ],
+     [
+      1995,
+      90.71
+     ],
+     [
+      1996,
+      92.7
+     ],
+     [
+      1997,
+      93.39
+     ],
+     [
+      1998,
+      89.38
+     ],
+     [
+      1999,
+      88.45
+     ],
+     [
+      2000,
+      88.86
+     ],
+     [
+      2001,
+      87.87
+     ],
+     [
+      2002,
+      86.5
+     ],
+     [
+      2003,
+      87.34
+     ],
+     [
+      2004,
+      87.72
+     ],
+     [
+      2005,
+      83.44
+     ],
+     [
+      2006,
+      86.81
+     ],
+     [
+      2007,
+      85.36
+     ],
+     [
+      2008,
+      85.6
+     ],
+     [
+      2009,
+      86.27
+     ],
+     [
+      2010,
+      88.37
+     ],
+     [
+      2011,
+      87.44
+     ],
+     [
+      2012,
+      86.78
+     ],
+     [
+      2013,
+      88.32
+     ],
+     [
+      2014,
+      87.13
+     ],
+     [
+      2015,
+      86.9
+     ],
+     [
+      2016,
+      87.18
+     ],
+     [
+      2017,
+      88.57
+     ],
+     [
+      2018,
+      89.38
+     ],
+     [
+      2019,
+      88.12
+     ],
+     [
+      2020,
+      84.51
+     ],
+     [
+      2021,
+      84.72
+     ],
+     [
+      2022,
+      85.2
+     ],
+     [
+      2023,
+      84.03
+     ],
+     [
+      2024,
+      83.24
+     ]
+    ],
+    "trend": [
+     [
+      1990,
+      87.7
+     ],
+     [
+      2024,
+      86.27
+     ]
+    ],
+    "turningPoints": [
+     {
+      "year": 1996,
+      "kind": "peak",
+      "value": 92.7
+     },
+     {
+      "year": 2006,
+      "kind": "trough",
+      "value": 86.81
+     },
+     {
+      "year": 2018,
+      "kind": "peak",
+      "value": 89.38
+     }
+    ],
+    "highThreshold": 90.1,
+    "lowThreshold": 83.86,
+    "episodeBasis": "평균 대비",
+    "episodeUnit": "%",
+    "residual": [
+     [
+      1990,
+      -11.07
+     ],
+     [
+      1991,
+      -6.4
+     ],
+     [
+      1992,
+      -1.66
+     ],
+     [
+      1993,
+      0.29
+     ],
+     [
+      1994,
+      4.89
+     ],
+     [
+      1995,
+      3.22
+     ],
+     [
+      1996,
+      5.25
+     ],
+     [
+      1997,
+      5.98
+     ],
+     [
+      1998,
+      2.02
+     ],
+     [
+      1999,
+      1.13
+     ],
+     [
+      2000,
+      1.58
+     ],
+     [
+      2001,
+      0.63
+     ],
+     [
+      2002,
+      -0.69
+     ],
+     [
+      2003,
+      0.19
+     ],
+     [
+      2004,
+      0.61
+     ],
+     [
+      2005,
+      -3.63
+     ],
+     [
+      2006,
+      -0.22
+     ],
+     [
+      2007,
+      -1.62
+     ],
+     [
+      2008,
+      -1.34
+     ],
+     [
+      2009,
+      -0.63
+     ],
+     [
+      2010,
+      1.51
+     ],
+     [
+      2011,
+      0.63
+     ],
+     [
+      2012,
+      0.01
+     ],
+     [
+      2013,
+      1.59
+     ],
+     [
+      2014,
+      0.44
+     ],
+     [
+      2015,
+      0.25
+     ],
+     [
+      2016,
+      0.58
+     ],
+     [
+      2017,
+      2.01
+     ],
+     [
+      2018,
+      2.86
+     ],
+     [
+      2019,
+      1.64
+     ],
+     [
+      2020,
+      -1.92
+     ],
+     [
+      2021,
+      -1.67
+     ],
+     [
+      2022,
+      -1.15
+     ],
+     [
+      2023,
+      -2.28
+     ],
+     [
+      2024,
+      -3.03
+     ]
+    ],
+    "highEpisodes": [
+     [
+      1994,
+      1997
+     ]
+    ],
+    "lowEpisodes": [
+     [
+      1990,
+      1991
+     ],
+     [
+      2005,
+      2005
+     ],
+     [
+      2024,
+      2024
+     ]
+    ],
+    "highIntervals": {
+     "starts": [
+      1994
+     ],
+     "gaps": [],
+     "cv": null,
+     "regular": null
+    },
+    "lowIntervals": {
+     "starts": [
+      1990,
+      2005,
+      2024
+     ],
+     "gaps": [
+      15,
+      19
+     ],
+     "cv": 0.12,
+     "regular": true
+    },
+    "sensitivity": [
+     {
+      "range": [
+       1960,
+       1992
+      ],
+      "n": 3,
+      "verdict": "insufficient"
+     },
+     {
+      "range": [
+       1993,
+       2025
+      ],
+      "n": 32,
+      "verdict": "E",
+      "trendR2": 0.407,
+      "pAcf": 0.018,
+      "pSpectral": 0.4258,
+      "period": 16.0
+     },
+     {
+      "range": [
+       1980,
+       2025
+      ],
+      "n": 35,
+      "verdict": "none",
+      "trendR2": 0.019,
+      "pAcf": 0.3653,
+      "pSpectral": 0.2679,
+      "period": 17.5
+     },
+     {
+      "range": [
+       1991,
+       2024
+      ],
+      "n": 34,
+      "method": "1차 차분(전년 대비 변화)",
+      "verdict": "none",
+      "pAcf": 0.5597,
+      "pSpectral": 0.5217,
+      "period": 3.1
+     }
+    ],
+    "n": 35,
+    "trendR2": 0.019,
+    "slopePerDecade": -0.42,
+    "changePoint": {
+     "year": 2019,
+     "before": 87.4,
+     "after": 84.97,
+     "explained": 0.086
+    },
+    "periodicity": {
+     "acf": [
+      0.369,
+      0.082,
+      -0.292,
+      -0.462,
+      -0.571,
+      -0.533,
+      -0.468,
+      -0.392,
+      -0.418,
+      -0.393,
+      -0.133,
+      -0.084,
+      0.146,
+      0.513,
+      0.411
+     ],
+     "bestLag": 6,
+     "maxAbsAcf": 0.571,
+     "pAcf": 0.3683,
+     "band": 0.331,
+     "spectralPeriod": 17.5,
+     "spectralShare": 0.46,
+     "pSpectral": 0.2464,
+     "ar1": 0.724,
+     "null": "AR(1) 적색잡음 대조 2,000개"
+    },
+    "verdict": "none",
+    "why": "1990~2024년 35개: 시차 검정 p=0.37, 주기도 검정 p=0.25(대조: 같은 자기상관의 적색잡음) — 두 검정 모두 우연 범위(p≥0.05), 뚜렷한 장기 추세도 없음"
+   },
+   {
+    "key": "govc-kr:KR",
+    "indicator": "govc-kr",
+    "country": "KR",
+    "title": "정부 소비 지출 비중 (GDP 대비)",
+    "unit": "%",
+    "from": 1960,
+    "to": 2025,
+    "points": [
+     [
+      1960,
+      14.19
+     ],
+     [
+      1961,
+      13.24
+     ],
+     [
+      1962,
+      13.5
+     ],
+     [
+      1963,
+      10.48
+     ],
+     [
+      1964,
+      8.16
+     ],
+     [
+      1965,
+      8.89
+     ],
+     [
+      1966,
+      9.61
+     ],
+     [
+      1967,
+      9.79
+     ],
+     [
+      1968,
+      10.08
+     ],
+     [
+      1969,
+      9.84
+     ],
+     [
+      1970,
+      9.81
+     ],
+     [
+      1971,
+      10.08
+     ],
+     [
+      1972,
+      10.35
+     ],
+     [
+      1973,
+      8.76
+     ],
+     [
+      1974,
+      9.45
+     ],
+     [
+      1975,
+      10.92
+     ],
+     [
+      1976,
+      10.65
+     ],
+     [
+      1977,
+      10.54
+     ],
+     [
+      1978,
+      9.75
+     ],
+     [
+      1979,
+      9.63
+     ],
+     [
+      1980,
+      11.63
+     ],
+     [
+      1981,
+      11.73
+     ],
+     [
+      1982,
+      11.46
+     ],
+     [
+      1983,
+      10.81
+     ],
+     [
+      1984,
+      10.23
+     ],
+     [
+      1985,
+      10.27
+     ],
+     [
+      1986,
+      9.92
+     ],
+     [
+      1987,
+      9.65
+     ],
+     [
+      1988,
+      9.59
+     ],
+     [
+      1989,
+      10.4
+     ],
+     [
+      1990,
+      10.61
+     ],
+     [
+      1991,
+      10.37
+     ],
+     [
+      1992,
+      10.68
+     ],
+     [
+      1993,
+      10.39
+     ],
+     [
+      1994,
+      9.95
+     ],
+     [
+      1995,
+      9.74
+     ],
+     [
+      1996,
+      10.11
+     ],
+     [
+      1997,
+      9.96
+     ],
+     [
+      1998,
+      11.11
+     ],
+     [
+      1999,
+      10.78
+     ],
+     [
+      2000,
+      10.57
+     ],
+     [
+      2001,
+      11.35
+     ],
+     [
+      2002,
+      11.32
+     ],
+     [
+      2003,
+      11.69
+     ],
+     [
+      2004,
+      11.89
+     ],
+     [
+      2005,
+      12.33
+     ],
+     [
+      2006,
+      12.81
+     ],
+     [
+      2007,
+      12.83
+     ],
+     [
+      2008,
+      13.37
+     ],
+     [
+      2009,
+      13.96
+     ],
+     [
+      2010,
+      13.5
+     ],
+     [
+      2011,
+      13.71
+     ],
+     [
+      2012,
+      14.0
+     ],
+     [
+      2013,
+      14.26
+     ],
+     [
+      2014,
+      14.49
+     ],
+     [
+      2015,
+      14.35
+     ],
+     [
+      2016,
+      14.44
+     ],
+     [
+      2017,
+      14.57
+     ],
+     [
+      2018,
+      15.14
+     ],
+     [
+      2019,
+      16.06
+     ],
+     [
+      2020,
+      16.98
+     ],
+     [
+      2021,
+      17.02
+     ],
+     [
+      2022,
+      17.64
+     ],
+     [
+      2023,
+      17.78
+     ],
+     [
+      2024,
+      17.48
+     ],
+     [
+      2025,
+      17.65
+     ]
+    ],
+    "trend": [
+     [
+      1960,
+      8.8
+     ],
+     [
+      2025,
+      15.09
+     ]
+    ],
+    "turningPoints": [
+     {
+      "year": 1965,
+      "kind": "trough",
+      "value": 8.89
+     }
+    ],
+    "highThreshold": 1.65,
+    "lowThreshold": -1.65,
+    "episodeBasis": "추세 대비",
+    "episodeUnit": "%p",
+    "residual": [
+     [
+      1960,
+      5.39
+     ],
+     [
+      1961,
+      4.35
+     ],
+     [
+      1962,
+      4.51
+     ],
+     [
+      1963,
+      1.39
+     ],
+     [
+      1964,
+      -1.03
+     ],
+     [
+      1965,
+      -0.39
+     ],
+     [
+      1966,
+      0.23
+     ],
+     [
+      1967,
+      0.31
+     ],
+     [
+      1968,
+      0.51
+     ],
+     [
+      1969,
+      0.17
+     ],
+     [
+      1970,
+      0.04
+     ],
+     [
+      1971,
+      0.22
+     ],
+     [
+      1972,
+      0.39
+     ],
+     [
+      1973,
+      -1.3
+     ],
+     [
+      1974,
+      -0.7
+     ],
+     [
+      1975,
+      0.67
+     ],
+     [
+      1976,
+      0.3
+     ],
+     [
+      1977,
+      0.1
+     ],
+     [
+      1978,
+      -0.79
+     ],
+     [
+      1979,
+      -1.01
+     ],
+     [
+      1980,
+      0.9
+     ],
+     [
+      1981,
+      0.9
+     ],
+     [
+      1982,
+      0.53
+     ],
+     [
+      1983,
+      -0.21
+     ],
+     [
+      1984,
+      -0.89
+     ],
+     [
+      1985,
+      -0.95
+     ],
+     [
+      1986,
+      -1.39
+     ],
+     [
+      1987,
+      -1.76
+     ],
+     [
+      1988,
+      -1.92
+     ],
+     [
+      1989,
+      -1.21
+     ],
+     [
+      1990,
+      -1.09
+     ],
+     [
+      1991,
+      -1.43
+     ],
+     [
+      1992,
+      -1.22
+     ],
+     [
+      1993,
+      -1.6
+     ],
+     [
+      1994,
+      -2.14
+     ],
+     [
+      1995,
+      -2.45
+     ],
+     [
+      1996,
+      -2.17
+     ],
+     [
+      1997,
+      -2.42
+     ],
+     [
+      1998,
+      -1.37
+     ],
+     [
+      1999,
+      -1.79
+     ],
+     [
+      2000,
+      -2.1
+     ],
+     [
+      2001,
+      -1.42
+     ],
+     [
+      2002,
+      -1.54
+     ],
+     [
+      2003,
+      -1.27
+     ],
+     [
+      2004,
+      -1.17
+     ],
+     [
+      2005,
+      -0.82
+     ],
+     [
+      2006,
+      -0.44
+     ],
+     [
+      2007,
+      -0.52
+     ],
+     [
+      2008,
+      -0.07
+     ],
+     [
+      2009,
+      0.42
+     ],
+     [
+      2010,
+      -0.14
+     ],
+     [
+      2011,
+      -0.02
+     ],
+     [
+      2012,
+      0.17
+     ],
+     [
+      2013,
+      0.33
+     ],
+     [
+      2014,
+      0.46
+     ],
+     [
+      2015,
+      0.23
+     ],
+     [
+      2016,
+      0.22
+     ],
+     [
+      2017,
+      0.25
+     ],
+     [
+      2018,
+      0.73
+     ],
+     [
+      2019,
+      1.55
+     ],
+     [
+      2020,
+      2.37
+     ],
+     [
+      2021,
+      2.32
+     ],
+     [
+      2022,
+      2.84
+     ],
+     [
+      2023,
+      2.88
+     ],
+     [
+      2024,
+      2.49
+     ],
+     [
+      2025,
+      2.56
+     ]
+    ],
+    "highEpisodes": [
+     [
+      1960,
+      1962
+     ],
+     [
+      2020,
+      2025
+     ]
+    ],
+    "lowEpisodes": [
+     [
+      1987,
+      1988
+     ],
+     [
+      1994,
+      2000
+     ]
+    ],
+    "highIntervals": {
+     "starts": [
+      1960,
+      2020
+     ],
+     "gaps": [
+      60
+     ],
+     "cv": null,
+     "regular": null
+    },
+    "lowIntervals": {
+     "starts": [
+      1987,
+      1994
+     ],
+     "gaps": [
+      7
+     ],
+     "cv": null,
+     "regular": null
+    },
+    "sensitivity": [
+     {
+      "range": [
+       1960,
+       1992
+      ],
+      "n": 33,
+      "verdict": "none",
+      "trendR2": 0.035,
+      "pAcf": 0.7306,
+      "pSpectral": 0.8286,
+      "period": 11.0
+     },
+     {
+      "range": [
+       1993,
+       2025
+      ],
+      "n": 33,
+      "verdict": "E",
+      "trendR2": 0.965,
+      "pAcf": 0.4063,
+      "pSpectral": 0.3173,
+      "period": 16.5
+     },
+     {
+      "range": [
+       1980,
+       2025
+      ],
+      "n": 46,
+      "verdict": "E",
+      "trendR2": 0.799,
+      "pAcf": 0.2354,
+      "pSpectral": 0.1584,
+      "period": 46.0
+     },
+     {
+      "range": [
+       1961,
+       2025
+      ],
+      "n": 65,
+      "method": "1차 차분(전년 대비 변화)",
+      "verdict": "none",
+      "pAcf": 0.4008,
+      "pSpectral": 0.7931,
+      "period": 4.6
+     }
+    ],
+    "n": 66,
+    "trendR2": 0.554,
+    "slopePerDecade": 0.97,
+    "changePoint": {
+     "year": 2008,
+     "before": 10.66,
+     "after": 15.36,
+     "explained": 0.712
+    },
+    "periodicity": {
+     "acf": [
+      0.732,
+      0.568,
+      0.456,
+      0.475,
+      0.436,
+      0.361,
+      0.334,
+      0.313,
+      0.248,
+      0.143,
+      0.074,
+      0.025,
+      0.052,
+      0.029,
+      -0.104,
+      -0.201,
+      -0.23,
+      -0.221,
+      -0.187
+     ],
+     "bestLag": 2,
+     "maxAbsAcf": 0.732,
+     "pAcf": 0.4058,
+     "band": 0.241,
+     "spectralPeriod": 66.0,
+     "spectralShare": 0.614,
+     "pSpectral": 0.1439,
+     "ar1": 0.894,
+     "null": "AR(1) 적색잡음 대조 2,000개"
+    },
+    "verdict": "E",
+    "why": "1960~2025년 66개: 직선 추세가 변동의 55% 설명"
    },
    {
     "key": "va-agr-kr:KR",
@@ -140393,6 +146256,45 @@
     "interest": 3.3
    },
    {
+    "id": "f-energy-imp-kr:KR-low",
+    "type": "B",
+    "series": [
+     "energy-imp-kr:KR"
+    ],
+    "category": "economy",
+    "title": "에너지 — 순수입 의존도(한국) 급락 구간 3회",
+    "summary": "평균±1표준편차 밖(아래, 경계 83.86%)으로 나간 구간: 1990~1991, 2005, 2024. 간격 15, 19년 — 변동계수 0.12 (간격이 비교적 일정하지만 횟수가 적어 주기로 확정하지 않음)",
+    "periods": [
+     [
+      1990,
+      1991
+     ],
+     [
+      2005,
+      2005
+     ],
+     [
+      2024,
+      2024
+     ]
+    ],
+    "intervals": [
+     15,
+     19
+    ],
+    "evidence": {
+     "threshold": 83.86,
+     "basis": "평균 대비",
+     "cv": 0.12,
+     "count": 3
+    },
+    "confidence": {
+     "level": "낮음",
+     "why": "급변 구간 3회 — 횟수가 적을수록 간격 판단이 불안정"
+    },
+    "interest": 3.3
+   },
+   {
     "id": "f-house-kr:KR-low",
     "type": "B",
     "series": [
@@ -141067,6 +146969,134 @@
      },
      "pAcf": 0.4678,
      "pSpectral": 0.3433
+    },
+    "confidence": {
+     "level": "높음",
+     "why": "추세·변화점의 설명력 기준"
+    },
+    "interest": 2.1
+   },
+   {
+    "id": "f-elec-nucl-kr:KR-shape",
+    "type": "E",
+    "series": [
+     "elec-nucl-kr:KR"
+    ],
+    "category": "economy",
+    "title": "에너지 — 원자력 발전 비중(한국): 장기 구조 변화 — 주기가 아님",
+    "summary": "1990~2025년 36개: 직선 추세가 변동의 74% 설명",
+    "periods": [
+     [
+      2010,
+      2025
+     ]
+    ],
+    "evidence": {
+     "trendR2": 0.74,
+     "changePoint": {
+      "year": 2010,
+      "before": 38.09,
+      "after": 27.45,
+      "explained": 0.718
+     },
+     "pAcf": 0.1494,
+     "pSpectral": 0.2919
+    },
+    "confidence": {
+     "level": "높음",
+     "why": "추세·변화점의 설명력 기준"
+    },
+    "interest": 2.1
+   },
+   {
+    "id": "f-elec-coal-kr:KR-shape",
+    "type": "E",
+    "series": [
+     "elec-coal-kr:KR"
+    ],
+    "category": "economy",
+    "title": "에너지 — 석탄 발전 비중(한국): 장기 구조 변화 — 주기가 아님",
+    "summary": "1990~2025년 36개: 직선 추세가 변동의 32% 설명",
+    "periods": [
+     [
+      1998,
+      2025
+     ]
+    ],
+    "evidence": {
+     "trendR2": 0.323,
+     "changePoint": {
+      "year": 1998,
+      "before": 24.22,
+      "after": 39.67,
+      "explained": 0.708
+     },
+     "pAcf": 0.2864,
+     "pSpectral": 0.0895
+    },
+    "confidence": {
+     "level": "높음",
+     "why": "추세·변화점의 설명력 기준"
+    },
+    "interest": 2.1
+   },
+   {
+    "id": "f-elec-rnew-kr:KR-shape",
+    "type": "E",
+    "series": [
+     "elec-rnew-kr:KR"
+    ],
+    "category": "economy",
+    "title": "에너지 — 재생에너지 발전 비중(한국): 장기 구조 변화 — 주기가 아님",
+    "summary": "1990~2021년 32개: 2016년 전후 평균이 2.06→5.0로 바뀜(변동의 60%)",
+    "periods": [
+     [
+      2016,
+      2021
+     ]
+    ],
+    "evidence": {
+     "trendR2": 0.202,
+     "changePoint": {
+      "year": 2016,
+      "before": 2.06,
+      "after": 5.0,
+      "explained": 0.602
+     },
+     "pAcf": 0.4208,
+     "pSpectral": 0.2044
+    },
+    "confidence": {
+     "level": "높음",
+     "why": "추세·변화점의 설명력 기준"
+    },
+    "interest": 2.1
+   },
+   {
+    "id": "f-govc-kr:KR-shape",
+    "type": "E",
+    "series": [
+     "govc-kr:KR"
+    ],
+    "category": "politics",
+    "title": "정부 소비 지출 비중 (GDP 대비)(한국): 장기 구조 변화 — 주기가 아님",
+    "summary": "1960~2025년 66개: 직선 추세가 변동의 55% 설명",
+    "periods": [
+     [
+      2008,
+      2025
+     ]
+    ],
+    "evidence": {
+     "trendR2": 0.554,
+     "changePoint": {
+      "year": 2008,
+      "before": 10.66,
+      "after": 15.36,
+      "explained": 0.712
+     },
+     "pAcf": 0.4058,
+     "pSpectral": 0.1439
     },
     "confidence": {
      "level": "높음",
@@ -141863,6 +147893,28 @@
     "confidence": {
      "level": "보통",
      "why": "관측 51개로 적색잡음 대조와 구별되지 않음 — 주기가 없다는 것을 증명하지는 못하며, 더 긴 주기는 볼 수 없음"
+    },
+    "interest": 1.0
+   },
+   {
+    "id": "f-energy-imp-kr:KR-nocycle",
+    "type": "N",
+    "series": [
+     "energy-imp-kr:KR"
+    ],
+    "category": "economy",
+    "title": "에너지 — 순수입 의존도(한국): 일정한 주기 없음",
+    "summary": "1990~2024년 35개: 시차 검정 p=0.37, 주기도 검정 p=0.25(대조: 같은 자기상관의 적색잡음) — 두 검정 모두 우연 범위(p≥0.05), 뚜렷한 장기 추세도 없음",
+    "periods": [],
+    "evidence": {
+     "pAcf": 0.3683,
+     "pSpectral": 0.2464,
+     "bestLag": 6,
+     "n": 35
+    },
+    "confidence": {
+     "level": "낮음",
+     "why": "관측 35개로 적색잡음 대조와 구별되지 않음 — 주기가 없다는 것을 증명하지는 못하며, 더 긴 주기는 볼 수 없음"
     },
     "interest": 1.0
    }
@@ -143258,7 +149310,7 @@
      "events": 59
     },
     "counts": {
-     "claims": 194,
+     "claims": 195,
      "verified": 40,
      "edges": 73,
      "evidencedEdges": 26,
@@ -143274,12 +149326,12 @@
      {
       "name": "데이터 확보",
       "ok": true,
-      "basis": "연도별 지표 6개, 관련 근거 문장 194개"
+      "basis": "연도별 지표 6개, 관련 근거 문장 195개"
      },
      {
       "name": "출처 검증",
       "ok": true,
-      "basis": "두 곳 이상 확인 40/194문장(21%) — 15% 이상이면 통과"
+      "basis": "두 곳 이상 확인 40/195문장(21%) — 15% 이상이면 통과"
      },
      {
       "name": "기본 분석 완료",
@@ -143328,6 +149380,7 @@
     ],
     "members": {
      "topics": [
+      "energy-power",
       "space-tableware"
      ],
      "industries": [
@@ -143337,17 +149390,21 @@
      "flows": [],
      "tastes": [],
      "indicators": [
-      "oil-dep-kr"
+      "oil-dep-kr",
+      "elec-nucl-kr",
+      "elec-coal-kr",
+      "elec-rnew-kr",
+      "energy-imp-kr"
      ],
      "events": 19
     },
     "counts": {
-     "claims": 77,
+     "claims": 81,
      "verified": 14,
      "edges": 29,
      "evidencedEdges": 13,
-     "indicators": 1,
-     "annual": 1
+     "indicators": 5,
+     "annual": 5
     },
     "stages": [
      {
@@ -143358,22 +149415,22 @@
      {
       "name": "데이터 확보",
       "ok": true,
-      "basis": "연도별 지표 1개, 관련 근거 문장 77개"
+      "basis": "연도별 지표 5개, 관련 근거 문장 81개"
      },
      {
       "name": "출처 검증",
       "ok": true,
-      "basis": "두 곳 이상 확인 14/77문장(18%) — 15% 이상이면 통과"
+      "basis": "두 곳 이상 확인 14/81문장(17%) — 15% 이상이면 통과"
      },
      {
       "name": "기본 분석 완료",
       "ok": true,
-      "basis": "주제 이야기 1·산업 일대기 2·흐름 0"
+      "basis": "주제 이야기 2·산업 일대기 2·흐름 0"
      },
      {
       "name": "심층 인과 분석 완료",
       "ok": true,
-      "basis": "원인 추론 3건·다른 설명 2개·8단계 심층 사례 사건 6개"
+      "basis": "원인 추론 4건·다른 설명 4개·8단계 심층 사례 사건 6개"
      },
      {
       "name": "분야 간 연결 완료",
@@ -143382,26 +149439,23 @@
      },
      {
       "name": "추론·가설 검토 가능",
-      "ok": false,
-      "basis": "직접 검정 가능한 연도 지표 1개(2개 이상 필요), 질문 분석은 모든 분야 공통"
+      "ok": true,
+      "basis": "직접 검정 가능한 연도 지표 5개(2개 이상 필요), 질문 분석은 모든 분야 공통"
      },
      {
       "name": "미래 시나리오 연결 완료",
       "ok": true,
-      "basis": "미래 갈래 6개"
+      "basis": "미래 갈래 8개"
      },
      {
       "name": "실제 화면·기능 테스트 완료",
-      "ok": false,
-      "basis": "자동 화면 테스트가 다루는 구성원 1개"
+      "ok": true,
+      "basis": "자동 화면 테스트가 다루는 구성원 3개"
      }
     ],
-    "level": 6,
-    "passed": 7,
-    "gaps": [
-     "추론·가설 검토 가능: 직접 검정 가능한 연도 지표 1개(2개 이상 필요), 질문 분석은 모든 분야 공통",
-     "실제 화면·기능 테스트 완료: 자동 화면 테스트가 다루는 구성원 1개"
-    ]
+    "level": 9,
+    "passed": 9,
+    "gaps": []
    },
    {
     "id": "D",
@@ -143437,8 +149491,8 @@
      "events": 26
     },
     "counts": {
-     "claims": 144,
-     "verified": 20,
+     "claims": 146,
+     "verified": 22,
      "edges": 31,
      "evidencedEdges": 11,
      "indicators": 3,
@@ -143453,12 +149507,12 @@
      {
       "name": "데이터 확보",
       "ok": true,
-      "basis": "연도별 지표 3개, 관련 근거 문장 144개"
+      "basis": "연도별 지표 3개, 관련 근거 문장 146개"
      },
      {
       "name": "출처 검증",
-      "ok": false,
-      "basis": "두 곳 이상 확인 20/144문장(14%) — 15% 이상이면 통과"
+      "ok": true,
+      "basis": "두 곳 이상 확인 22/146문장(15%) — 15% 이상이면 통과"
      },
      {
       "name": "기본 분석 완료",
@@ -143491,11 +149545,9 @@
       "basis": "자동 화면 테스트가 다루는 구성원 3개"
      }
     ],
-    "level": 2,
-    "passed": 8,
-    "gaps": [
-     "출처 검증: 두 곳 이상 확인 20/144문장(14%) — 15% 이상이면 통과"
-    ]
+    "level": 9,
+    "passed": 9,
+    "gaps": []
    },
    {
     "id": "E",
@@ -143532,8 +149584,8 @@
      "events": 15
     },
     "counts": {
-     "claims": 81,
-     "verified": 12,
+     "claims": 86,
+     "verified": 13,
      "edges": 19,
      "evidencedEdges": 6,
      "indicators": 9,
@@ -143548,12 +149600,12 @@
      {
       "name": "데이터 확보",
       "ok": true,
-      "basis": "연도별 지표 9개, 관련 근거 문장 81개"
+      "basis": "연도별 지표 9개, 관련 근거 문장 86개"
      },
      {
       "name": "출처 검증",
-      "ok": false,
-      "basis": "두 곳 이상 확인 12/81문장(15%) — 15% 이상이면 통과"
+      "ok": true,
+      "basis": "두 곳 이상 확인 13/86문장(15%) — 15% 이상이면 통과"
      },
      {
       "name": "기본 분석 완료",
@@ -143586,11 +149638,9 @@
       "basis": "자동 화면 테스트가 다루는 구성원 7개"
      }
     ],
-    "level": 2,
-    "passed": 8,
-    "gaps": [
-     "출처 검증: 두 곳 이상 확인 12/81문장(15%) — 15% 이상이면 통과"
-    ]
+    "level": 9,
+    "passed": 9,
+    "gaps": []
    },
    {
     "id": "F",
@@ -143603,107 +149653,26 @@
      "규제·조세"
     ],
     "members": {
-     "topics": [],
+     "topics": [
+      "policy-welfare"
+     ],
      "industries": [],
      "flows": [
       "flow-politics"
      ],
      "tastes": [],
-     "indicators": [],
+     "indicators": [
+      "govc-kr",
+      "baserate-kr",
+      "disc-kr"
+     ],
      "events": 43
     },
     "counts": {
-     "claims": 158,
+     "claims": 167,
      "verified": 50,
      "edges": 64,
      "evidencedEdges": 32,
-     "indicators": 0,
-     "annual": 0
-    },
-    "stages": [
-     {
-      "name": "시스템 구현",
-      "ok": true,
-      "basis": "공통 구조(주제·산업·흐름·원인 연결·질문 분석)를 이 분야에도 적용"
-     },
-     {
-      "name": "데이터 확보",
-      "ok": true,
-      "basis": "연도별 지표 0개, 관련 근거 문장 158개"
-     },
-     {
-      "name": "출처 검증",
-      "ok": true,
-      "basis": "두 곳 이상 확인 50/158문장(32%) — 15% 이상이면 통과"
-     },
-     {
-      "name": "기본 분석 완료",
-      "ok": false,
-      "basis": "주제 이야기 0·산업 일대기 0·흐름 1"
-     },
-     {
-      "name": "심층 인과 분석 완료",
-      "ok": true,
-      "basis": "원인 추론 0건·다른 설명 0개·8단계 심층 사례 사건 19개"
-     },
-     {
-      "name": "분야 간 연결 완료",
-      "ok": true,
-      "basis": "다른 분야로 이어진 곳: A, B, C, D, E, G, H, I, J"
-     },
-     {
-      "name": "추론·가설 검토 가능",
-      "ok": false,
-      "basis": "직접 검정 가능한 연도 지표 0개(2개 이상 필요), 질문 분석은 모든 분야 공통"
-     },
-     {
-      "name": "미래 시나리오 연결 완료",
-      "ok": true,
-      "basis": "미래 갈래 2개"
-     },
-     {
-      "name": "실제 화면·기능 테스트 완료",
-      "ok": false,
-      "basis": "자동 화면 테스트가 다루는 구성원 1개"
-     }
-    ],
-    "level": 3,
-    "passed": 6,
-    "gaps": [
-     "기본 분석 완료: 주제 이야기 0·산업 일대기 0·흐름 1",
-     "추론·가설 검토 가능: 직접 검정 가능한 연도 지표 0개(2개 이상 필요), 질문 분석은 모든 분야 공통",
-     "실제 화면·기능 테스트 완료: 자동 화면 테스트가 다루는 구성원 1개"
-    ]
-   },
-   {
-    "id": "G",
-    "key": "world",
-    "label": "외교·국제관계",
-    "subs": [
-     "미국·일본·중국",
-     "무역질서",
-     "냉전·안보",
-     "공급망"
-    ],
-    "members": {
-     "topics": [
-      "travel-abroad"
-     ],
-     "industries": [],
-     "flows": [],
-     "tastes": [],
-     "indicators": [
-      "exports-kr",
-      "exp-gdp-kr",
-      "fx-kr"
-     ],
-     "events": 41
-    },
-    "counts": {
-     "claims": 167,
-     "verified": 48,
-     "edges": 52,
-     "evidencedEdges": 24,
      "indicators": 3,
      "annual": 3
     },
@@ -143721,17 +149690,101 @@
      {
       "name": "출처 검증",
       "ok": true,
-      "basis": "두 곳 이상 확인 48/167문장(29%) — 15% 이상이면 통과"
+      "basis": "두 곳 이상 확인 50/167문장(30%) — 15% 이상이면 통과"
      },
      {
       "name": "기본 분석 완료",
-      "ok": false,
-      "basis": "주제 이야기 1·산업 일대기 0·흐름 0"
+      "ok": true,
+      "basis": "주제 이야기 1·산업 일대기 0·흐름 1"
      },
      {
       "name": "심층 인과 분석 완료",
       "ok": true,
-      "basis": "원인 추론 1건·다른 설명 2개·8단계 심층 사례 사건 9개"
+      "basis": "원인 추론 1건·다른 설명 2개·8단계 심층 사례 사건 19개"
+     },
+     {
+      "name": "분야 간 연결 완료",
+      "ok": true,
+      "basis": "다른 분야로 이어진 곳: A, B, C, D, E, G, H, I, J"
+     },
+     {
+      "name": "추론·가설 검토 가능",
+      "ok": true,
+      "basis": "직접 검정 가능한 연도 지표 3개(2개 이상 필요), 질문 분석은 모든 분야 공통"
+     },
+     {
+      "name": "미래 시나리오 연결 완료",
+      "ok": true,
+      "basis": "미래 갈래 4개"
+     },
+     {
+      "name": "실제 화면·기능 테스트 완료",
+      "ok": true,
+      "basis": "자동 화면 테스트가 다루는 구성원 5개"
+     }
+    ],
+    "level": 9,
+    "passed": 9,
+    "gaps": []
+   },
+   {
+    "id": "G",
+    "key": "world",
+    "label": "외교·국제관계",
+    "subs": [
+     "미국·일본·중국",
+     "무역질서",
+     "냉전·안보",
+     "공급망"
+    ],
+    "members": {
+     "topics": [
+      "world-trade",
+      "travel-abroad"
+     ],
+     "industries": [],
+     "flows": [],
+     "tastes": [],
+     "indicators": [
+      "exports-kr",
+      "exp-gdp-kr",
+      "fx-kr"
+     ],
+     "events": 41
+    },
+    "counts": {
+     "claims": 175,
+     "verified": 48,
+     "edges": 52,
+     "evidencedEdges": 24,
+     "indicators": 3,
+     "annual": 3
+    },
+    "stages": [
+     {
+      "name": "시스템 구현",
+      "ok": true,
+      "basis": "공통 구조(주제·산업·흐름·원인 연결·질문 분석)를 이 분야에도 적용"
+     },
+     {
+      "name": "데이터 확보",
+      "ok": true,
+      "basis": "연도별 지표 3개, 관련 근거 문장 175개"
+     },
+     {
+      "name": "출처 검증",
+      "ok": true,
+      "basis": "두 곳 이상 확인 48/175문장(27%) — 15% 이상이면 통과"
+     },
+     {
+      "name": "기본 분석 완료",
+      "ok": true,
+      "basis": "주제 이야기 2·산업 일대기 0·흐름 0"
+     },
+     {
+      "name": "심층 인과 분석 완료",
+      "ok": true,
+      "basis": "원인 추론 2건·다른 설명 4개·8단계 심층 사례 사건 9개"
      },
      {
       "name": "분야 간 연결 완료",
@@ -143746,19 +149799,17 @@
      {
       "name": "미래 시나리오 연결 완료",
       "ok": true,
-      "basis": "미래 갈래 2개"
+      "basis": "미래 갈래 4개"
      },
      {
       "name": "실제 화면·기능 테스트 완료",
       "ok": true,
-      "basis": "자동 화면 테스트가 다루는 구성원 2개"
+      "basis": "자동 화면 테스트가 다루는 구성원 3개"
      }
     ],
-    "level": 3,
-    "passed": 8,
-    "gaps": [
-     "기본 분석 완료: 주제 이야기 1·산업 일대기 0·흐름 0"
-    ]
+    "level": 9,
+    "passed": 9,
+    "gaps": []
    },
    {
     "id": "H",
@@ -143798,7 +149849,7 @@
      "events": 57
     },
     "counts": {
-     "claims": 182,
+     "claims": 185,
      "verified": 37,
      "edges": 70,
      "evidencedEdges": 33,
@@ -143814,12 +149865,12 @@
      {
       "name": "데이터 확보",
       "ok": true,
-      "basis": "연도별 지표 7개, 관련 근거 문장 182개"
+      "basis": "연도별 지표 7개, 관련 근거 문장 185개"
      },
      {
       "name": "출처 검증",
       "ok": true,
-      "basis": "두 곳 이상 확인 37/182문장(20%) — 15% 이상이면 통과"
+      "basis": "두 곳 이상 확인 37/185문장(20%) — 15% 이상이면 통과"
      },
      {
       "name": "기본 분석 완료",
@@ -143911,8 +149962,8 @@
      "events": 20
     },
     "counts": {
-     "claims": 190,
-     "verified": 22,
+     "claims": 193,
+     "verified": 23,
      "edges": 24,
      "evidencedEdges": 11,
      "indicators": 7,
@@ -143927,12 +149978,12 @@
      {
       "name": "데이터 확보",
       "ok": true,
-      "basis": "연도별 지표 7개, 관련 근거 문장 190개"
+      "basis": "연도별 지표 7개, 관련 근거 문장 193개"
      },
      {
       "name": "출처 검증",
       "ok": false,
-      "basis": "두 곳 이상 확인 22/190문장(12%) — 15% 이상이면 통과"
+      "basis": "두 곳 이상 확인 23/193문장(12%) — 15% 이상이면 통과"
      },
      {
       "name": "기본 분석 완료",
@@ -143968,7 +150019,7 @@
     "level": 2,
     "passed": 8,
     "gaps": [
-     "출처 검증: 두 곳 이상 확인 22/190문장(12%) — 15% 이상이면 통과"
+     "출처 검증: 두 곳 이상 확인 23/193문장(12%) — 15% 이상이면 통과"
     ]
    },
    {

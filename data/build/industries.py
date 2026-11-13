@@ -68,6 +68,8 @@ SOURCES = [
     S("ix-kiwoom-share", "반도체 수출 비중 확대(리포트)", "키움증권", "https://bbn.kiwoom.com/rfSI1262", "report", published="2026-02"),
     S("ix-tomato-gartner", "삼전·하닉 글로벌 매출 2·3위…메모리 의존도 가중(가트너)", "뉴스토마토", "https://newstomato.com/ReadNews.aspx?no=1287805", "news", published="2026", origin="가트너"),
     # 인터넷
+    S("ix-etoday-140619", "KT, 인터넷 상용 20주년…미래는 '기가토피아'로 연다", "이투데이", "https://www.etoday.co.kr/news/view/934465", "news", published="2014-06-19"),
+    S("ix-seoul-940617", "「코네트」 가동… 서울지역 가입자에 혜택", "서울신문", "https://www.seoul.co.kr/news/1994/06/17/19940617017001", "news", published="1994-06-17"),
     S("ix-imaeil-040619", "'인터넷, 세상을 바꾸었다' — 코넷 10년", "매일신문", "https://www.imaeil.com/page/view/2004061910160092187", "news", published="2004-06-19"),
     S("ix-seoul-021107", "초고속인터넷 1천만시대 — ADSL·PC방이 고속성장 견인", "서울신문", "https://www.seoul.co.kr/news/2002/11/07/20021107010005", "news", published="2002-11-07"),
     S("ix-etri-2002", "초고속 인터넷 서비스 가입자 추정(전자통신동향분석)", "ETRI(KoreaScience)", "https://koreascience.kr/article/JAKO200265349329421.pdf", "academic", published="2002-12"),
@@ -134,8 +136,12 @@ CLAIMS = [
     # ── 인터넷
     C("ix-nt-94", "1994년 6월 20일 KT는 아시아 최초의 상용 인터넷 서비스 '코넷'을 열었다. 대중화를 이끈 것은 1999년부터 기존 전화선으로 최고 10Mbps가 넘는 속도를 낸 ADSL이었고, 2002년 초고속 인터넷 가입자가 1천만 명을 넘었다. 인터넷 매출은 1999년 364억 원에서 2003년 3조 7천억 원이 됐다.",
       "fact", ["ix-imaeil-040619"], period="1994~2003"),
+    # 매일신문·이투데이(1994년 6월 20일)와 당시 서울신문(20일부터 서울지역 상용서비스 예고)이 함께 적은 부분 — 두 곳 이상 확인(2026-11-13 검색 결과 대조)
+    dict(C("ix-nt-kornet", "한국통신(지금의 KT)은 1994년 6월 20일 '코넷'으로 국내 첫 인터넷 상용 서비스를 시작했다.", "fact", ["ix-imaeil-040619", "ix-etoday-140619", "ix-seoul-940617"], period="1994"), status="verified"),
     C("ix-nt-adsl", "초고속 인터넷은 두루넷이 1998년 케이블 모뎀으로 처음 시작했지만, 이후 ADSL 시장을 놓고 KT와 하나로통신이 벌인 경쟁 속에서 커졌다는 평가가 일반적이다(2002년 보도). 가입자는 1998년 1만 3,800가구, 1999년 말 37만, 2000년 말 400만, 2001년 말 약 800만이었다.",
       "fact", ["ix-seoul-021107", "ix-etri-2002"], period="1998~2001"),
+    # 두 출처(서울신문·ETRI 논문)가 모두 직접 적은 부분만 따로 — 두 곳 이상 확인(2026-11-13 원문 대조)
+    dict(C("ix-nt-duru", "국내 초고속 인터넷 서비스는 1998년 두루넷이 케이블TV망을 이용해 가장 먼저 시작했다.", "fact", ["ix-seoul-021107", "ix-etri-2002"], period="1998"), status="verified"),
     C("ix-nt-policy", "정부는 1994년 4월 '초고속정보통신기반구축 종합계획'을 세우고 망 구축과 PC 보급을 국가 과제로 삼았으며, 2001년 10월 초고속 인터넷 보급률 세계 1위, 2002년 11월 가입자 1천만 명을 기록했다.",
       "fact", ["ix-archives-net"], period="1994~2002"),
     C("ix-nt-price", "1999년 기사에 따르면 전화선 모뎀은 평균 60시간 쓰는 데 7만 원가량 들었고 PC방은 시간당 1,500~2,000원이었지만, ADSL·케이블 모뎀은 월 3만~4만 원에 전화요금 부담 없이 1~10Mbps로 쓸 수 있어 가정용 가입이 늘었다.",
@@ -291,7 +297,7 @@ INDUSTRIES = [
                      L("fact", "모뎀은 60시간에 7만 원가량 들었다.", ["ix-nt-price"])],
              "from": L("inference", "쓴 만큼 돈을 내는 전화선 접속이라 '오래 머무는' 이용이 어려웠다.", ["ix-nt-price"])},
             {"period": "1998~2002", "kind": "확산", "what": "[접속] 케이블·ADSL 정액제, 가입자 1만 → 1천만 / [이용] PC방",
-             "why": [L("fact", "두루넷이 1998년 시작하고 KT·하나로가 ADSL로 경쟁하며 가입자가 1998년 1만 3,800가구에서 2002년 1천만 명이 됐다. 정부는 1994년부터 망 구축을 국가 과제로 삼았다.", ["ix-nt-adsl", "ix-nt-policy"]),
+             "why": [L("fact", "두루넷이 1998년 시작하고 KT·하나로가 ADSL로 경쟁하며 가입자가 1998년 1만 3,800가구에서 2002년 1천만 명이 됐다. 정부는 1994년부터 망 구축을 국가 과제로 삼았다.", ["ix-nt-adsl", "ix-nt-duru", "ix-nt-policy"]),
                      L("fact", "ADSL은 월 3만~4만 원 정액에 전화요금 부담이 없었다.", ["ix-nt-price"])],
              "from": L("inference", "정액제가 '켜 두는 인터넷'을 가능하게 해, 게임(PC방)·커뮤니티·검색처럼 오래 머무는 서비스의 바탕이 됐다.", ["ix-nt-price", "c90-pcbang"])},
             {"period": "2002~2009", "kind": "전환점", "what": "[서비스] 검색 포털 경쟁 — 지식iN으로 네이버 1위, 무료 커뮤니티 경쟁",
@@ -306,7 +312,7 @@ INDUSTRIES = [
              "from": L("hypothesis", "검색 광고로 벌던 포털이 AI 답변으로 바뀌는 시기다. 입구가 바뀔 때마다 1위가 바뀌었던 역사(야후 → 네이버, 포털 → 메신저)가 반복될지가 관전 지점이다.", ["ix-nt-portal", "er-tech-ai"])},
         ],
         "profile": {
-            "start": [L("fact", "1994년 정부 종합계획과 KT 코넷.", ["ix-nt-policy", "ix-nt-94"])],
+            "start": [L("fact", "1994년 정부 종합계획과 KT 코넷.", ["ix-nt-policy", "ix-nt-94", "ix-nt-kornet"])],
             "base": [L("fact", "통신사(KT·하나로·두루넷) 경쟁, 공공 망 투자.", ["ix-nt-adsl", "ix-nt-policy"])],
             "product": [L("fact", "모뎀 → ADSL·케이블 → 스마트폰 / PC통신 → 포털 → 메신저·앱 → AI.", ["ix-nt-94", "ix-nt-portal", "c10-kakao", "er-tech-ai"])],
             "customers": [L("inference", "처음엔 학생·직장인 중심의 PC 이용자, 지금은 전 연령의 모바일 이용자. 돈을 내는 쪽은 이용자보다 광고주·판매자가 많다.", ["ix-nt-portal", "fl-shop-mobile"])],

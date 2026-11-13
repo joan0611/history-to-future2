@@ -2,13 +2,39 @@ import { D, topicById } from '../lib/data';
 
 /** 지시서 3장 분야 A~J × 15장 9단계 상태. 값은 빌드 때 spec_fields.py가 실제 자료를 세어 계산한 것. */
 const IND = (D.industries as unknown as { industries: { id: string; label: string }[] }).industries ?? [];
+const HUE = ['#e5532d', '#2f8f6b', '#d39a1d', '#3b74d6', '#9a5bd6', '#c2414b', '#1f9bb3', '#6c8a2b', '#d0632d', '#c4479a'];
+/** 분야 카드: 링은 9단계 중 통과한 비율, 아래 점 9개는 단계 순서. 누르면 아래 상세가 열린다. */
+export function SpecCards({ compact = false }: { compact?: boolean }) {
+  const S = D.spec;
+  if (!S) return null;
+  const open = (id: string) => {
+    const el = document.getElementById(`specd-${id}`) as HTMLDetailsElement | null;
+    if (el) { el.open = true; el.scrollIntoView({ behavior: 'smooth', block: 'center' }); return; }
+    location.hash = '#/topic';
+    window.setTimeout(() => { const d = document.getElementById(`specd-${id}`) as HTMLDetailsElement | null; if (d) { d.open = true; d.scrollIntoView({ block: 'center' }); } }, 300);
+  };
+  return (
+    <div className={`spec-cards${compact ? ' compact' : ''}`} id={compact ? 'spec-cards-home' : 'spec-cards'}>
+      {S.fields.map((f, k) => (
+        <button key={f.id} type="button" className={`spec-card${f.passed === 9 ? ' full' : ''}`} style={{ ['--h' as string]: HUE[k % HUE.length], ['--p' as string]: `${(f.passed / 9) * 360}deg` }} onClick={() => open(f.id)} aria-label={`${f.id} ${f.label}: 9단계 중 ${f.passed}단계 통과`}>
+          <span className="spec-ring"><b>{f.id}</b></span>
+          <span className="spec-cl"><b>{f.label}</b><small>{f.passed === 9 ? '9단계 모두 통과' : `${f.passed}/9 · 남은 것: ${f.stages.filter((x) => !x.ok).map((x) => x.name).join(', ')}`}</small></span>
+          {!compact && <span className="spec-dots" aria-hidden>{f.stages.map((x) => <i key={x.name} className={x.ok ? 'on' : ''} title={x.name} />)}</span>}
+        </button>
+      ))}
+    </div>
+  );
+}
+
 export function SpecStatus() {
   const S = D.spec;
   if (!S) return null;
   return (
     <section className="panel spec" id="spec-status">
       <h2>분야별 진행 상태 <span className="sub">경제·산업·에너지·기술·노동·정치·외교·사회·소비·문화 10개 분야 × 9단계 — 자료를 세어 자동 판정</span></h2>
-      <p className="small muted">{S.note} 칸에 마우스를 올리거나 행을 열면 판정 근거가 보입니다.</p>
+      <p className="small muted">{S.note} 카드를 누르면 그 분야의 판정 근거와 읽을거리가 열립니다.</p>
+      <SpecCards />
+      <details className="spec-tabbox"><summary>9단계 표로 보기</summary>
       <div className="spec-wrap">
         <table className="spec-tab">
           <thead><tr><th>분야</th>{S.stages.map((s, k) => <th key={s} title={s}><span className="spec-n">{k + 1}</span><span className="spec-sn">{s}</span></th>)}<th>통과</th></tr></thead>
@@ -21,6 +47,7 @@ export function SpecStatus() {
           </tbody>
         </table>
       </div>
+      </details>
       <div className="spec-detail">{S.fields.map((f) => (
         <details key={f.id} className="spec-f" id={`specd-${f.id}`}>
           <summary><b>{f.id}. {f.label}</b> — 하위: {f.subs.join(' · ')} <span className="muted">(근거 문장 {f.counts.claims} · 사건 {f.members.events} · 지표 {f.counts.indicators})</span></summary>

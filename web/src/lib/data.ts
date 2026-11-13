@@ -189,7 +189,8 @@ export const inc: Record<string, Edge[]> = {};
 for (const n of D.nodes) { out[n.id] = []; inc[n.id] = []; }
 for (const e of D.edges) { out[e.from]?.push(e); inc[e.to]?.push(e); }
 
-export const MIN_Y = 1960, MAX_Y = 2026;
+// 해가 바뀌면 시간축 끝도 함께 늘어난다(지시서 4: 연도 자동 갱신). 자료가 없는 해는 '자료 없음'으로 둔다.
+export const MIN_Y = 1960, MAX_Y = Math.max(2026, new Date().getFullYear());
 export const YEARS = Array.from({ length: MAX_Y - MIN_Y + 1 }, (_, i) => MIN_Y + i);
 export const eraOf = (y: number) => D.eras.find((e) => y >= e.startYear && y <= (e.endYear ?? MAX_Y)) ?? D.eras[0];
 export const eraEnd = (e: Era) => Math.min(e.endYear ?? MAX_Y, MAX_Y);

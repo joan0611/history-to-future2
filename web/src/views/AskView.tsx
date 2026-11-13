@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { ask, ALAYER_KO, type ALine } from '../lib/ask';
+import { ask, ALAYER_KO, REASON_KO, reasoningTypes, type ALine } from '../lib/ask';
 import { D } from '../lib/data';
 import { pairTest, testable } from '../lib/pairtest';
 import type { Route } from '../lib/route';
@@ -95,6 +95,7 @@ export function AskView({ r, nav }: { r: Route; nav: (p: Partial<Route>) => void
             <summary>엔진이 한 일</summary>
             <ol>{a.trace.map((t, k) => <li key={k}>{t}</li>)}</ol>
           </details>
+          {reasoningTypes(a).length > 0 && <p className="ak-reason" id="ak-reason"><b>이 답에 쓰인 추론</b> {reasoningTypes(a).map((t) => <span key={t} className={`rt rt-${t}`} title={REASON_KO[t]}>{t}<small>{REASON_KO[t]}</small></span>)}</p>}
           {!a.enough && <p className="ak-warn">근거 부족 — 이 질문에 답할 자료가 앱 안에 충분하지 않습니다. 아래 '추가 검증에 필요한 자료'를 확인하세요.</p>}
           {a.sections.map((s) => (
             <div key={s.key} className={`ak-sec ak-sec-${s.key}`}>

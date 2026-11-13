@@ -13,6 +13,7 @@ import topics_more2 as tmore2
 import topics_more3 as tmore3
 import topics_more4 as tmore4
 import topics_more5 as tmore5
+import topics_more6 as tmore6
 import topics_city as tcity
 from topic_helpers import LAYERS, MODES, FUTURE_KINDS
 
@@ -20,11 +21,11 @@ DOMAINS = [
     {"id": "shop", "label": "소비·쇼핑", "desc": "어디서, 무엇으로, 어떻게 갖고, 무엇에 먼저 쓰고, 무엇을 보고 고르나 — 다섯 가지를 따로 추적합니다."},
     {"id": "city", "label": "도시와 주거", "desc": "어디에 사나와 어떻게 오가나를 따로 추적합니다."},
     {"id": "lifestyle", "label": "라이프스타일", "desc": "시간·공간·관계·몸·주의력을 어떻게 쓰고 관리하는지, 무엇을 좋은 삶으로 여기는지."},
-] + tmore.DOMAINS + tmore2.DOMAINS + tmore5.DOMAINS
+] + tmore.DOMAINS + tmore2.DOMAINS + tmore5.DOMAINS + tmore6.DOMAINS
 
-TOPICS = tshop.TOPICS + trec.TOPICS + tlife.TOPICS + tlife2.TOPICS + tcity.TOPICS + tmore.TOPICS + tmore2.TOPICS + tmore3.TOPICS + tmore4.TOPICS + tmore5.TOPICS
-SOURCES = tshop.SOURCES + trec.SOURCES + tlife.SOURCES + tlife2.SOURCES + tcity.SOURCES + tmore.SOURCES + tmore2.SOURCES + tmore3.SOURCES + tmore4.SOURCES + tmore5.SOURCES
-CLAIMS = tshop.CLAIMS + trec.CLAIMS + tlife.CLAIMS + tlife2.CLAIMS + tcity.CLAIMS + tmore.CLAIMS + tmore2.CLAIMS + tmore3.CLAIMS + tmore4.CLAIMS + tmore5.CLAIMS
+TOPICS = tshop.TOPICS + trec.TOPICS + tlife.TOPICS + tlife2.TOPICS + tcity.TOPICS + tmore.TOPICS + tmore2.TOPICS + tmore3.TOPICS + tmore4.TOPICS + tmore5.TOPICS + tmore6.TOPICS
+SOURCES = tshop.SOURCES + trec.SOURCES + tlife.SOURCES + tlife2.SOURCES + tcity.SOURCES + tmore.SOURCES + tmore2.SOURCES + tmore3.SOURCES + tmore4.SOURCES + tmore5.SOURCES + tmore6.SOURCES
+CLAIMS = tshop.CLAIMS + trec.CLAIMS + tlife.CLAIMS + tlife2.CLAIMS + tcity.CLAIMS + tmore.CLAIMS + tmore2.CLAIMS + tmore3.CLAIMS + tmore4.CLAIMS + tmore5.CLAIMS + tmore6.CLAIMS
 
 # 아직 쓰지 않은 주제(탐색 화면에서 활성 콘텐츠와 다른 모양으로 표시, R-Q16)
 PLANNED = [
@@ -53,7 +54,9 @@ FIELD_MAP = [
     {"id": "work", "label": "일·학습·자기계발", "items": [("topic", "work-style"), ("topic", "work-learn"), ("flow", "flow-jobs"), ("topic", "work-cert")], "planned": []},
     {"id": "industry", "label": "산업(한국 경제를 키운 개별 산업)", "items": [("industry", x) for x in ["steel", "shipbuilding", "automobile", "petrochem", "construction", "semiconductor", "textile", "display", "battery", "machinery"]], "planned": []},
     {"id": "money", "label": "돈·투자·금융 생활", "items": [("topic", "money-invest"), ("topic", "money-save"), ("topic", "money-home"), ("topic", "shop-pay"), ("topic", "money-insure")], "planned": []},
-    {"id": "society", "label": "경제 위기·정치", "items": [("flow", "flow-economy"), ("flow", "flow-politics")], "planned": []},
+    {"id": "society", "label": "경제 위기·정치", "items": [("flow", "flow-economy"), ("flow", "flow-politics"), ("topic", "policy-welfare")], "planned": []},
+    {"id": "energy", "label": "에너지·환경", "items": [("topic", "energy-power"), ("topic", "space-tableware"), ("industry", "petrochem"), ("industry", "battery")], "planned": []},
+    {"id": "world", "label": "외교·국제관계·무역", "items": [("topic", "world-trade"), ("topic", "travel-abroad")], "planned": []},
     {"id": "lifestyle", "label": "라이프스타일 — 시간·공간·관계·몸·주의력을 쓰는 방식", "items": [("topic", "life-rest"), ("topic", "life-health"), ("topic", "life-stuff"), ("topic", "life-nature"), ("topic", "life-record"), ("topic", "life-alone"), ("topic", "life-convenience")], "planned": []},
 ]
 

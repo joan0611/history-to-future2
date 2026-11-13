@@ -1,6 +1,7 @@
 import { D, ERA_LABEL, flowById, studyById, type Study } from '../lib/data';
 import type { Route } from '../lib/route';
 import { StatusChips, StudyDetail } from './StudyView';
+import { SpecCards } from '../ui/SpecStatus';
 
 /**
  * 지금 판단하기 — 사이트의 출발점.
@@ -30,6 +31,18 @@ function Landing({ nav }: { nav: (p: Partial<Route>) => void }) {
         <h2>과거의 변화 원리로 지금의 경제를 읽는다</h2>
         <p className="lead">이 사이트는 사건과 유행을 모아 두는 곳이 아닙니다. 과거에 사회와 경제가 <b>어떤 조건에서, 어떤 경로로</b> 변했는지 근거로 확인하고, 그 원리가 <b>지금도 작동하는지</b> 비교해 <b>앞으로 무엇을 지켜봐야 하는지</b> 찾는 데 씁니다.</p>
         <ol className="readorder">{STEPS.map((x, i) => <li key={x}><b>{i + 1}</b>{x}</li>)}</ol>
+      </section>
+
+      <section className="doors" id="doors" aria-label="어디서부터 볼까">
+        <button className="door d-hist" onClick={() => nav({ tab: 'history' })}><i aria-hidden>⟶</i><b>전체 역사</b><span>1960년부터 지금까지, 시대마다 무엇이 달라졌나</span></button>
+        <button className="door d-field" onClick={() => nav({ tab: 'topic' })}><i aria-hidden>▦</i><b>분야별 변화</b><span>10개 분야에서 한 가지를 끝까지 따라가기</span></button>
+        <button className="door d-cycle" onClick={() => nav({ tab: 'cycle' })}><i aria-hidden>↻</i><b>사이클 발견</b><span>되풀이된 것과 이번엔 다른 것</span></button>
+        <button className="door d-ask" onClick={() => nav({ tab: 'ask' })}><i aria-hidden>?</i><b>직접 물어보기</b><span>질문을 자료로 분석하고 두 지표를 검정</span></button>
+      </section>
+
+      <section className="panel">
+        <h2>10개 분야 한눈에 <span className="sub">링이 꽉 찰수록 근거·추론·미래·화면 시험까지 갖춘 분야</span></h2>
+        <SpecCards compact />
       </section>
 
       <section className="panel">

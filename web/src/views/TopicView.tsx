@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { SpecStatus } from '../ui/SpecStatus';
 import { D, MODE_KO, topicById, type Topic, type TLine, type TTurn, type TWorld, type TFuture } from '../lib/data';
 import type { Route } from '../lib/route';
@@ -328,7 +329,49 @@ export function FuturesView({ id, f, title = '앞으로 가능한 방향' }: { i
           </article>
         ))}
       </div>
+      <CondCompare id={id} items={f.items} />
     </section>
+  );
+}
+
+/** 미래 조건 비교하기(지시서 12-G): '이 신호가 나타났다면'을 켜고 끄며 어느 가능성 쪽 조건이 더 갖춰지는지 본다.
+ *  예측이 아니라 조건 비교다 — 확률을 만들지 않고, 켠 신호의 수만 센다. */
+export function CondCompare({ id, items }: { id: string; items: TFuture[] }) {
+  const [on, setOn] = useState<Record<string, boolean>>({});
+  const sigs: { key: string; text: string; fut: number; dir: 1 | -1 }[] = [];
+  items.forEach((x, i) => {
+    x.watch.forEach((w) => sigs.push({ key: `${i}+${w}`, text: w, fut: i, dir: 1 }));
+    x.against.forEach((w) => sigs.push({ key: `${i}-${w}`, text: w, fut: i, dir: -1 }));
+  });
+  const score = items.map((_, i) => sigs.filter((s) => s.fut === i && on[s.key]).reduce((a, s) => a + s.dir, 0));
+  const any = Object.values(on).some(Boolean);
+  const best = Math.max(...score);
+  return (
+    <div className="cond" id={`${id}-cond`}>
+      <h3>미래 조건 비교하기 <span className="lyr l-scenario">시나리오</span></h3>
+      <p className="muted small">아래 신호 중 "이미 나타났다"고 보는 것을 눌러 보세요. 어느 가능성의 조건이 더 갖춰지는지 셉니다. 확률이 아니라 조건 비교입니다.</p>
+      <div className="cond-grid">
+        {items.map((x, i) => (
+          <div key={x.name} className={`cond-col${any && score[i] === best && best > 0 ? ' lead' : ''}`}>
+            <b><span className="tp-kind">{x.kind}</span> {x.name}</b>
+            <div className="cond-meter" aria-label={`조건 점수 ${score[i]}`}>
+              <i style={{ width: `${Math.min(100, Math.max(0, 50 + score[i] * 25))}%` }} className={score[i] < 0 ? 'neg' : ''} />
+            </div>
+            <ul>
+              {sigs.filter((s) => s.fut === i).map((s) => (
+                <li key={s.key}>
+                  <button type="button" className={`cond-sig ${s.dir > 0 ? 'up' : 'down'}${on[s.key] ? ' on' : ''}`} aria-pressed={!!on[s.key]} onClick={() => setOn({ ...on, [s.key]: !on[s.key] })}>
+                    <span aria-hidden>{s.dir > 0 ? '▲' : '▼'}</span> {s.text}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+      <p className="cond-read" aria-live="polite">{!any ? '아직 켠 신호가 없습니다.' : best <= 0 ? '켠 신호로는 어느 가능성도 조건이 더 갖춰졌다고 보기 어렵습니다.' : `지금 켠 신호로는 "${items[score.indexOf(best)].name}" 쪽 조건이 더 갖춰졌습니다${score.filter((v) => v === best).length > 1 ? ' (동률 있음)' : ''}. 실제 신호는 위 '볼 신호' 지표로 확인해야 합니다.`}</p>
+      {any && <button type="button" className="link small" onClick={() => setOn({})}>모두 끄기</button>}
+    </div>
   );
 }
 

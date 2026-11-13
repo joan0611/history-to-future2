@@ -15,20 +15,20 @@ import { IndustryLife } from './IndustryLife';
 const MULTI_COLOR = ['#c2410c', '#1d4ed8', '#047857', '#a21caf', '#b45309', '#0e7490', '#4d7c0f', '#6b7280', '#be123c'];
 const SERIES_COLOR: Record<string, string> = { KR: 'var(--c-economy)', US: 'var(--ink-3)', JP: 'var(--c-industry)' };
 const MISSING: Record<Cat, string[]> = {
-  economy: ['금리: 재할인율(1964~1998)·콜금리(1991~)·기준금리(1999~)를 따로 표시(정책금리 체계가 바뀌어 하나의 선으로 잇지 않음). 1960~63년 금리 자료 없음', '1989년 이전 실업률', '에너지 소비량 연속 자료 — 석유의존도는 1973·2010년 두 시점만'],
+  economy: ['금리: 재할인율(1964~1998)·콜금리(1991~)·기준금리(1999~)를 따로 표시(정책금리 체계가 바뀌어 하나의 선으로 잇지 않음). 1960~63년 금리 자료 없음', '1989년 이전 실업률', '1990년 이전 발전원 구성·에너지 수입 의존도(세계은행 계열이 1990년부터), 재생에너지 비중은 2022년 이후 없음, 석유의존도는 1973·2010년 두 시점만'],
   industry: ['1983년 이전 산업별 취업자 비중(제조업은 1989년 이전) — 통계청 공개 API에도 1983년부터만 있음', '2013년 이전 직업별 취업자(직업분류 개정으로 이어 붙이지 않음)', '1975년 이전 유선전화 연도별 값'],
   society: ['1992년 이전 임금', '자동차 보급률(1,000명당 보유 대수) — 신규 등록 대수(1993~2022)만 있음', '가계 소비 구성은 1970년부터(그 이전 자료 없음)', '1인 가구 2015년 이전 연속 자료'],
-  politics: ['정치는 수치 지표 대신 시대별 흐름도로 표시합니다. 정권·제도를 숫자로 바꾼 지표는 만들지 않습니다.'],
+  politics: ['정권·제도 자체를 숫자로 바꾼 지표는 만들지 않습니다. 정부 소비 지출 비중은 국가 역할의 대리 지표일 뿐이며, 연금·수당 같은 이전지출은 들어 있지 않습니다.'],
   culture: ['2005년 이전 콘텐츠 수출, 2019년 이전·2022년 앨범 판매량', '음원 이용량·공연 관객 장기 통계', '패션 시장 규모 연속 자료(보도된 값이 2000년 21조 원·2022년 47조 원 등 띄엄띄엄뿐)'],
   flow: ['재등장 사례가 아직 적어 반복 간격을 계산할 수 없습니다.'],
 };
 // 세부 지표를 주제별로 묶어 보여준다(탭이 15개 넘게 한 줄로 늘어서지 않게)
 type Group = [string, string[]];
 const GROUPS: Record<Cat, Group[]> = {
-  economy: [['성장·물가', ['gdp-growth', 'gdppc-kr', 'cpi-kr']], ['돈·금리·환율', ['fx-kr', 'disc-kr', 'call-kr', 'baserate-kr']], ['일자리', ['unemp-kr', 'emprate-kr']], ['에너지', ['oil-dep-kr']]],
+  economy: [['성장·물가', ['gdp-growth', 'gdppc-kr', 'cpi-kr']], ['돈·금리·환율', ['fx-kr', 'disc-kr', 'call-kr', 'baserate-kr']], ['일자리', ['unemp-kr', 'emprate-kr']], ['에너지·환경', ['elec-coal-kr', 'elec-nucl-kr', 'elec-rnew-kr', 'energy-imp-kr', 'oil-dep-kr']]],
   industry: [['수출과 생산 구조', ['exports-kr', 'exp-gdp-kr', 'va-agr-kr', 'va-mfg-kr', 'va-srv-kr']], ['일하는 방식·직업', ['empstatus-mix-kr', 'wage-share-kr', 'unpaid-fam-kr', 'occ-mix-kr', 'emp-ag-kr', 'emp-mfg-kr', 'emp-svc-kr']], ['기술 보급', ['tel-kr', 'mobile-kr', 'internet-kr', 'pcbang-kr']]],
   society: [['인구', ['tfr-kr', 'aged-kr', 'life-kr', 'urban-kr', 'one-person-kr']], ['집·임금', ['house-kr', 'hsupply-kr', 'wage-kr', 'realwage-kr']], ['소비', ['cons-mix-kr', 'engel-kr', 'cons-house-kr', 'hhcons-kr', 'carreg-kr', 'online-kr']]],
-  politics: [], culture: [['문화 산업·음악', ['content-exp-mix-kr', 'music-exp-kr', 'album-kr']], ['문화 소비', ['cons-culture-kr']]], flow: [],
+  politics: [['국가의 역할·정책', ['govc-kr', 'baserate-kr']]], culture: [['문화 산업·음악', ['content-exp-mix-kr', 'music-exp-kr', 'album-kr']], ['문화 소비', ['cons-culture-kr']]], flow: [],
 };
 const NUMERIC: Record<Cat, string[]> = Object.fromEntries(Object.entries(GROUPS).map(([k, g]) => [k, g.flatMap((x) => x[1])])) as Record<Cat, string[]>;
 const SIGNALS: Record<Cat, string[]> = { economy: [], industry: ['ch-sg-chip', 'ch-sg-connect'], society: ['ch-sg-household'], politics: ['ch-sg-china'], culture: ['ch-sg-folk', 'ch-sg-kculture'], flow: [] };

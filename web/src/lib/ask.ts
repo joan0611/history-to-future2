@@ -329,3 +329,22 @@ export function ask(q: string): Answer {
     ],
   };
 }
+
+/** 지시서 9-2: 이 답이 어떤 추론 유형으로 만들어졌는지 — 답의 층위와 질문 유형에서 센다(꾸며 넣지 않는다). */
+export const REASON_KO: Record<string, string> = {
+  인과: '원인→결과 연결을 따라감', 귀납: '여러 해의 수치·사례에서 경향을 셈', 연역: '이미 정리된 규칙(주제의 핵심 추론)을 이 질문에 적용',
+  유추: '닮은 두 대상·시기를 나란히 놓음', 가설: '확인되지 않은 설명을 가설로 표시', 반사실: '일어나지 않은 전개를 조건으로만 다룸', 시나리오: '조건별로 갈라지는 가능성',
+};
+export function reasoningTypes(a: Answer): string[] {
+  const ls = a.sections.flatMap((s) => s.lines);
+  const has = (l: ALayer) => ls.some((x) => x.layer === l);
+  const out: string[] = [];
+  if (ls.some((x) => x.text.startsWith('원인 후보'))) out.push('인과');
+  if (a.calcs.length || has('observed')) out.push('귀납');
+  if (ls.some((x) => /^\[.+\] /.test(x.text) && x.layer !== 'fact')) out.push('연역');
+  if (a.intents.includes('비교') || a.intents.includes('반복')) out.push('유추');
+  if (has('hypothesis')) out.push('가설');
+  if (a.intents.includes('반사실')) out.push('반사실');
+  if (has('scenario')) out.push('시나리오');
+  return out;
+}

@@ -11,6 +11,7 @@ import { NowView } from './views/NowView';
 import { TopicView } from './views/TopicView';
 import { AskView } from './views/AskView';
 import { WhyPanel } from './ui/WhyPanel';
+import { Crumbs } from './ui/Crumbs';
 import { byId, eraOf } from './lib/data';
 
 /**
@@ -61,6 +62,7 @@ export function App() {
           <p className="ctx">지금 보는 시점 <b>{eraOf(r.y).label} · {r.y}년</b>{sel && <> · 원인 탐색: <b>{sel.label}</b></>}</p>
         </div>
       )}
+      <Crumbs r={r} nav={nav} />
       <main>
         {r.tab === 'now' && <NowView r={r} nav={nav} why={why} />}
         {r.tab === 'topic' && <TopicView r={r} nav={nav} />}

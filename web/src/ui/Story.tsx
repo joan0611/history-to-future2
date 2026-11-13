@@ -20,7 +20,7 @@ export function SBadge({ l }: { l: Layer7 }) {
   return <span className={`lyr l-${l}`} title={HELP[l]}>{(X.layers as Record<string, string>)[l] ?? L7_KO[l]}</span>;
 }
 export function LayerLegend() {
-  return <p className="muted small lyr-legend">정보의 층: {(['fact', 'observed', 'source', 'inference', 'hypothesis', 'scenario', 'unknown'] as Layer7[]).map((l) => <SBadge key={l} l={l} />)} — 마우스를 올리면 뜻이 나옵니다.</p>;
+  return <p className="muted small lyr-legend lyr-key"><span className="lyr-k">정보의 층 <i>확실 → 불확실</i></span>{(['fact', 'observed', 'source', 'inference', 'hypothesis', 'scenario', 'unknown'] as Layer7[]).map((l) => <SBadge key={l} l={l} />)} — 마우스를 올리면 뜻이 나옵니다.</p>;
 }
 
 export function SLineView({ x, as }: { x: SLine; as?: 'scenario' | 'unknown' }) {
