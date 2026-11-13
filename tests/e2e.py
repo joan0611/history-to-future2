@@ -66,7 +66,7 @@ with sync_playwright() as p:
     for tid in ('life-rest', 'life-health', 'life-stuff', 'life-nature', 'life-alone', 'life-convenience'):
         pg.goto(U + f'#/topic/{tid}'); pg.wait_for_timeout(700)
         ok(f'라이프스타일 {tid}: 전환점 3개 이상×5요소, 갈래, 추론 6요소, 미래 2갈래, 결론', pg.locator('.tp-turn').count() >= 3 and pg.locator('.tp-turn').first.locator('.tp-chain > li').count() == 5 and pg.locator('.tp-lanes li').count() >= 4 and pg.locator('.tp-reason h4').count() >= 6 and pg.locator('.tp-fut').count() >= 2 and pg.locator('.tp-end dt').count() == 5)
-    for tid, fd in (('media-fandom', 'media'), ('media-screen', 'media'), ('media-game', 'media'), ('travel-abroad', 'travel'), ('work-style', 'work'), ('money-invest', 'money'), ('food-cafe', 'food'), ('fashion-beauty', 'fashion'), ('family-care', 'family')):
+    for tid, fd in (('media-fandom', 'media'), ('media-screen', 'media'), ('media-game', 'media'), ('travel-abroad', 'travel'), ('work-style', 'work'), ('money-invest', 'money'), ('food-cafe', 'food'), ('fashion-beauty', 'fashion'), ('family-care', 'family'), ('food-hmr', 'food'), ('work-learn', 'work')):
         pg.goto(U + f'#/topic/{tid}'); pg.wait_for_timeout(700)
         ok(f'분야 확장 {tid}: 전환점 3~4개×5요소, 갈래, 추론 6요소, 반복, 미래 2갈래, 결론', pg.locator('.tp-turn').count() in (3, 4) and pg.locator('.tp-turn').first.locator('.tp-chain > li').count() == 5 and pg.locator('.tp-lanes li').count() >= 4 and pg.locator('.tp-reason h4').count() >= 6 and pg.locator('#tp-repeat').count() == 1 and pg.locator('.tp-fut').count() == 2 and pg.locator('.tp-end dt').count() == 5)
     pg.goto(U + '#/topic'); pg.wait_for_timeout(700)

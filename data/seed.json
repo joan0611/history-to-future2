@@ -19888,6 +19888,215 @@
    "aiSynthesized": false,
    "period": "2023~2026",
    "independentSources": 1
+  },
+  {
+   "id": "tr-hetbahn",
+   "text": "CJ제일제당은 1996년 12월 즉석밥 햇반을 내놓으며 무균포장 설비에 당시 영업이익의 10% 수준인 100억 원 이상을 들였다. 출시 당시에는 맨밥을 만들어 판다는 것 자체가 뉴스였고, 햇반 연간 판매량은 2011년 1억 개, 2015년 2억 개, 2017년 3억 개를 넘었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tr-s-hk-hetbahn"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1996~2017",
+   "independentSources": 1
+  },
+  {
+   "id": "tr-hmr16",
+   "text": "국내 가정간편식 시장은 2010년 7,747억 원에서 2016년 약 2조 원으로 커졌다. 한 연구는 1인 가구·저출산·고령화, 맞벌이 증가와 외부 음식에 대한 거부감 감소를 성장 요인으로 들었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tr-s-kosci-hmr"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2010~2016",
+   "independentSources": 1
+  },
+  {
+   "id": "tr-hmr5060",
+   "text": "칸타월드패널 조사에 따르면 자녀가 독립한 55세 이상 가구는 1년 동안 즉석밥 소비를 49.5% 늘렸고, 대학생 자녀를 둔 가구는 즉석밥·컵반 소비를 84% 늘렸다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tr-s-sgsg-hmr"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2017~2018",
+   "independentSources": 1
+  },
+  {
+   "id": "tr-hmr25",
+   "text": "한국농촌경제연구원에 따르면 국내 간편식 시장은 2015년 이후 연평균 14.1% 커져 2025년 약 6조 8천억 원이었고, 2026년 7조 원을 넘을 전망이다. 팬데믹 때 급증했던 밀키트는 경기 불황으로 가성비를 찾는 소비자가 늘며 수요가 줄고 있다는 보도가 나왔다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tr-s-mtn-hmr26",
+    "tr-s-newsis-hmr26"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2015~2026",
+   "independentSources": 2
+  },
+  {
+   "id": "tr-tutor80",
+   "text": "1980년 7월 30일 '7·30 교육개혁 조치'로 과외가 전면 금지됐고, 문교부는 적발된 교사와 학부모의 명단을 공개하고 면직도 불사하겠다고 했다. 37개 과외특별단속반이 전국 단속에 나섰다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tr-s-nara-tutor"
+   ],
+   "domains": [
+    "society",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1980",
+   "independentSources": 1
+  },
+  {
+   "id": "tr-tutor00",
+   "text": "헌법재판소는 2000년 4월 학원법의 과외금지 조항이 부모의 자녀교육권과 직업선택의 자유를 과도하게 침해한다며 위헌 결정했고(재판관 9명 중 6명), 1980년 이후 금지됐던 과외가 전면 허용됐다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tr-s-law-tutor00"
+   ],
+   "domains": [
+    "society",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2000",
+   "independentSources": 1
+  },
+  {
+   "id": "tr-tutor-rate",
+   "text": "한 연구는 과외금지가 1991년 학기 중 학원 수강 허용, 1996년 대학원생 과외 허용을 거쳐 2000년 위헌 결정으로 풀리며 사교육이 크게 확산했다고 정리했다. 학생 사교육 참여율은 2000년 50%를 넘었고 2003년 조사에서는 75.3%였다.",
+   "claimType": "source",
+   "status": "sourced",
+   "sourceIds": [
+    "tr-s-kli-tutor",
+    "tr-s-kli-tutor04"
+   ],
+   "domains": [
+    "society",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1991~2003",
+   "independentSources": 1
+  },
+  {
+   "id": "tr-mega",
+   "text": "메가스터디는 2000년 7월 설립돼 9월 고등 온라인 강의 사이트를 열었고, 6년 만에 매출 1,000억 원을 넘었다. 2007년 회사 측은 강좌의 58%가 5만 원 이하, 학생 1인당 연간 평균 수업료가 21만 원 선이라고 밝혔다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tr-s-et-mega07"
+   ],
+   "domains": [
+    "society",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2000~2007",
+   "independentSources": 1
+  },
+  {
+   "id": "tr-ebs70",
+   "text": "교육과학기술부 장관은 2010년 3월 EBS 수능강의 내용의 수능 반영 비율을 30% 안팎에서 70% 이상으로 높이겠다고 밝혔고, 증권가는 온라인 교육업체의 매출 성장률 전망을 낮췄다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tr-s-khan-ebs10",
+    "tr-s-hangyo-ebs10"
+   ],
+   "domains": [
+    "society",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2010",
+   "independentSources": 2
+  },
+  {
+   "id": "tr-priv24",
+   "text": "교육부·통계청 '2024년 초중고 사교육비 조사'에서 사교육비 총액은 29조 2천억 원으로 2007년 조사 시작 이래 최대였고 4년 연속 최고였다. 학생 수는 1.5% 줄었지만 총액은 7.7% 늘었고, 참여율은 처음 80%를 넘었으며 1인당 월평균은 47만 4천 원이었다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tr-s-ytn-priv24"
+   ],
+   "domains": [
+    "society",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2024",
+   "independentSources": 1
+  },
+  {
+   "id": "tr-priv-trend",
+   "text": "사교육비 총액은 코로나19 첫해인 2020년 19조 4천억 원대로 줄었다가 2021년 23조 4천억 원, 2022년 26조 원, 2023년 27조 1천억 원, 2024년 29조 2천억 원으로 늘었다. 같은 해 처음 조사한 6세 미만 아동의 1인당 월평균 사교육비는 33만 2천 원이었고, 고교학점제와 의대 증원 같은 입시 변화가 영향을 줬다는 분석이 나왔다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tr-s-ytn-priv24b",
+    "tr-s-nocut-priv24"
+   ],
+   "domains": [
+    "society",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2020~2024",
+   "independentSources": 2
   }
  ],
  "sources": [
@@ -29131,6 +29340,140 @@
    "sourceType": "report",
    "accessedDate": "2026-11-12",
    "publishedDate": "2025-03-01"
+  },
+  {
+   "id": "tr-s-hk-hetbahn",
+   "title": "[비즈니스 포커스] 햇반 20여 년",
+   "publisher": "한경비즈니스",
+   "url": "https://magazine.hankyung.com/business/article/201810056774b",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2018-10-05"
+  },
+  {
+   "id": "tr-s-kosci-hmr",
+   "title": "가정간편식(HMR) 시장 규모와 성장 요인",
+   "publisher": "한국식품과학회지 계열 논문(KoreaScience)",
+   "url": "https://koreascience.kr/article/JAKO201730475990109.pdf",
+   "sourceType": "paper",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2017"
+  },
+  {
+   "id": "tr-s-sgsg-hmr",
+   "title": "HMR 시장을 5060이 주도 — 칸타월드패널",
+   "publisher": "한국경제 생글생글",
+   "url": "https://sgsg.hankyung.com/article/2018092848781",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2018-09-28"
+  },
+  {
+   "id": "tr-s-mtn-hmr26",
+   "title": "\"밀키트 가고 간편식으로\"…7조 육박한 간편식 시장",
+   "publisher": "MTN",
+   "url": "https://news.mtn.co.kr/news-detail/2026041712250526685",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-04-17"
+  },
+  {
+   "id": "tr-s-newsis-hmr26",
+   "title": "1000만 '나혼산' 시대·7조 육박 간편식 시장",
+   "publisher": "뉴시스",
+   "url": "https://mobile.newsis.com/view/NISX20260415_0003592169",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-04-15"
+  },
+  {
+   "id": "tr-s-nara-tutor",
+   "title": "기록으로 보는 대한민국 — 과외",
+   "publisher": "국가기록원",
+   "url": "https://theme.archives.go.kr/next/koreaOfRecord/privateLesson.do",
+   "sourceType": "government",
+   "accessedDate": "2026-11-12"
+  },
+  {
+   "id": "tr-s-law-tutor00",
+   "title": "헌재, 과외금지 위헌결정",
+   "publisher": "법률신문",
+   "url": "https://www.lawtimes.co.kr/news/articleViewAmp.html?idxno=1811",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2000-04-28"
+  },
+  {
+   "id": "tr-s-kli-tutor",
+   "title": "사교육 참여와 사교육비 변화 추이(한국노동패널 학술대회 논문)",
+   "publisher": "한국노동연구원",
+   "url": "https://repository.kli.re.kr/bitstream/2021.oak/10237/2/%282006%29%ed%95%9c%ea%b5%ad%eb%85%b8%eb%8f%99%ed%8c%a8%eb%84%90%20%ed%95%99%ec%88%a0%eb%8c%80%ed%9a%8c_19.pdf",
+   "sourceType": "paper",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2006"
+  },
+  {
+   "id": "tr-s-kli-tutor04",
+   "title": "가구별 사교육비 지출 분석(한국노동패널 학술대회 논문)",
+   "publisher": "한국노동연구원",
+   "url": "https://repository.kli.re.kr/bitstream/2021.oak/10172/2/%282004%29%ed%95%9c%ea%b5%ad%eb%85%b8%eb%8f%99%ed%8c%a8%eb%84%90%20%ed%95%99%ec%88%a0%eb%8c%80%ed%9a%8c_17.pdf",
+   "sourceType": "paper",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2004"
+  },
+  {
+   "id": "tr-s-et-mega07",
+   "title": "[파워 성장엔진, 중핵기업](10) 메가스터디",
+   "publisher": "전자신문",
+   "url": "https://m.etnews.com/200703160052",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2007-03-16"
+  },
+  {
+   "id": "tr-s-hangyo-ebs10",
+   "title": "EBS 전방위 공세…사교육시장 초긴장",
+   "publisher": "한국교육신문",
+   "url": "https://hangyo.com/mobile/article.html?no=32752",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2010-03-23"
+  },
+  {
+   "id": "tr-s-khan-ebs10",
+   "title": "안병만 \"EBS강의서 수능 70% 이상 낸다\"",
+   "publisher": "경향신문(연합)",
+   "url": "https://www.khan.co.kr/article/20100310123015A/",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2010-03-10"
+  },
+  {
+   "id": "tr-s-ytn-priv24",
+   "title": "2024년 초중고 사교육비 조사 결과 보도",
+   "publisher": "YTN",
+   "url": "https://www.ytn.co.kr/_ln/0102_202503131843248572",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-03-13"
+  },
+  {
+   "id": "tr-s-nocut-priv24",
+   "title": "사교육비 4년 연속 최고 — 영유아 사교육비 첫 조사",
+   "publisher": "노컷뉴스",
+   "url": "https://www.nocutnews.co.kr/news/6307794",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-03"
+  },
+  {
+   "id": "tr-s-ytn-priv24b",
+   "title": "사교육비 29조 2천억…고1 지출 증가율",
+   "publisher": "YTN",
+   "url": "https://www.ytn.co.kr/_ln/0102_202503131505299952",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-03-13"
   }
  ],
  "events": [
@@ -85641,11 +85984,14 @@
      {
       "kind": "topic",
       "id": "food-cafe"
+     },
+     {
+      "kind": "topic",
+      "id": "food-hmr"
      }
     ],
     "planned": [
-     "디저트",
-     "간편식(가정간편식·밀키트)"
+     "디저트"
     ]
    },
    {
@@ -85810,12 +86156,16 @@
       "id": "work-style"
      },
      {
+      "kind": "topic",
+      "id": "work-learn"
+     },
+     {
       "kind": "flow",
       "id": "flow-jobs"
      }
     ],
     "planned": [
-     "자격·학습 서비스"
+     "성인 자격증·직무 교육"
     ]
    },
    {
@@ -102853,6 +103203,1185 @@
       "text": "노인 시설 정원이 빠르게 늘면 '부족' 부분을 고친다.",
       "ids": [
        "tq-caregap"
+      ]
+     }
+    }
+   },
+   {
+    "id": "food-hmr",
+    "domain": "food",
+    "label": "간편식 — 사서 데우는 한 끼",
+    "tracks": "집에서 먹는 밥을 직접 짓는 대신 사서 데우는 방식: 즉석밥(1996) → 가정간편식 시장 형성 → 코로나 밀키트 → 고물가 속 간편식.",
+    "question": "1996년엔 '맨밥을 사 먹는다'는 것 자체가 뉴스였는데, 30년 뒤 간편식 시장은 7조 원을 바라본다. 누가, 왜 밥을 사기 시작했을까?",
+    "scene": {
+     "layer": "fact",
+     "text": "간편식 시장은 2025년 약 6조 8천억 원으로 2026년 7조 원을 넘을 전망이다.",
+     "ids": [
+      "tr-hmr25"
+     ]
+    },
+    "span": [
+     1996,
+     2026
+    ],
+    "scope": [
+     {
+      "layer": "inference",
+      "text": "간편식의 범위(즉석밥·라면·밀키트 포함 여부)가 자료마다 달라 시장 규모는 같은 기관 계열 안에서만 비교한다.",
+      "ids": [
+       "tr-hmr16",
+       "tr-hmr25"
+      ]
+     }
+    ],
+    "turns": [
+     {
+      "id": "t1",
+      "years": "1996~2011",
+      "start": 1996,
+      "end": 1996,
+      "title": "밥을 사다 — 즉석밥",
+      "why": {
+       "layer": "fact",
+       "text": "1996년 12월 햇반이 나왔다.",
+       "ids": [
+        "tr-hetbahn"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "당시에는 맨밥을 만들어 판다는 것이 뉴스였다.",
+        "ids": [
+         "tr-hetbahn"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "source",
+        "text": "회사는 소득 증가와 전자레인지 보급을 출시 배경으로 들었다.",
+        "ids": [
+         "tr-hetbahn"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "햇반 연간 판매량이 2011년 1억 개를 넘었다.",
+        "ids": [
+         "tr-hetbahn"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "inference",
+        "text": "밥은 '지어야 하는 것'에서 '사 둘 수 있는 것'이 됐다.",
+        "ids": [
+         "tr-hetbahn"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "즉석밥이 다른 반찬·국 간편식이 붙을 바탕이 됐다.",
+        "ids": [
+         "tr-hetbahn"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t2",
+      "years": "2010~2018",
+      "start": 2010,
+      "end": 2010,
+      "title": "1인 가구와 간편식 시장",
+      "why": {
+       "layer": "fact",
+       "text": "가정간편식 시장이 2010년 7,747억 원에서 2016년 약 2조 원이 됐다.",
+       "ids": [
+        "tr-hmr16"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "2015년 1인 가구가 가장 흔한 가구 유형이 됐다.",
+        "ids": [
+         "c10-1person"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "source",
+        "text": "연구는 맞벌이 증가와 외부 음식에 대한 거부감 감소를 함께 들었다.",
+        "ids": [
+         "tr-hmr16"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "자녀가 독립한 55세 이상 가구의 즉석밥 소비가 49.5% 늘었다.",
+        "ids": [
+         "tr-hmr5060"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "햇반 판매가 2015년 2억 개, 2017년 3억 개를 넘었다.",
+        "ids": [
+         "tr-hetbahn"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "간편식은 젊은 1인 가구만의 것이 아니라 자녀가 떠난 중장년 가구의 것이기도 했다.",
+        "ids": [
+         "tr-hmr5060"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t3",
+      "years": "2020~2026",
+      "start": 2020,
+      "end": 2020,
+      "title": "밀키트의 부침, 간편식의 지속",
+      "why": {
+       "layer": "fact",
+       "text": "간편식 시장이 2015년 이후 연평균 14.1% 커졌다.",
+       "ids": [
+        "tr-hmr25"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "코로나19로 외식 대신 집밥이 늘었다.",
+        "ids": [
+         "tr-hmr25"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "source",
+        "text": "팬데믹 때 밀키트 수요가 급증했다는 보도가 있다.",
+        "ids": [
+         "tr-hmr25"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "source",
+        "text": "불황으로 가성비를 찾으며 밀키트 수요는 줄었다는 보도가 이어졌다.",
+        "ids": [
+         "tr-hmr25"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "간편식 시장은 2025년 약 6조 8천억 원이 됐다.",
+        "ids": [
+         "tr-hmr25"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "손질은 줄이되 조리는 하는 밀키트보다 '데우기만 하는' 간편식이 오래 남았다.",
+        "ids": [
+         "tr-hmr25"
+        ]
+       }
+      ]
+     }
+    ],
+    "branches": {
+     "intro": "한 줄은 집밥을 차리는 한 가지 방식입니다.",
+     "lanes": [
+      {
+       "label": "직접 짓고 차리기",
+       "start": 1960,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "inference",
+        "text": "간편식 시장 확대로 비중이 줄었다.",
+        "ids": [
+         "tr-hmr25"
+        ]
+       }
+      },
+      {
+       "label": "즉석밥",
+       "start": 1996,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "햇반 연 3억 개(2017).",
+        "ids": [
+         "tr-hetbahn"
+        ]
+       }
+      },
+      {
+       "label": "밀키트",
+       "start": 2018,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "source",
+        "text": "팬데믹 뒤 수요 감소 보도.",
+        "ids": [
+         "tr-hmr25"
+        ]
+       }
+      },
+      {
+       "label": "데우는 간편식(국·반찬·냉동)",
+       "start": 2010,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "약 6조 8천억 원(2025).",
+        "ids": [
+         "tr-hmr25"
+        ]
+       }
+      }
+     ],
+     "read": {
+      "layer": "inference",
+      "text": "집밥은 사라지지 않았지만 '짓기'는 '데우기'로 바뀌었다.",
+      "ids": [
+       "tr-hetbahn",
+       "tr-hmr25"
+      ]
+     }
+    },
+    "reasons": [
+     {
+      "title": "왜 밀키트는 꺾이고 간편식은 계속 컸나",
+      "facts": [
+       {
+        "layer": "fact",
+        "text": "간편식 연평균 14.1% 성장.",
+        "ids": [
+         "tr-hmr25"
+        ]
+       },
+       {
+        "layer": "source",
+        "text": "밀키트 수요 감소 보도.",
+        "ids": [
+         "tr-hmr25"
+        ]
+       }
+      ],
+      "logic": {
+       "layer": "inference",
+       "text": "밀키트는 외식을 대신할 때 값어치가 있었고, 간편식은 '시간'을 아끼는 데 값어치가 있다. 외식이 돌아오자 밀키트의 자리는 줄었지만 시간을 아끼려는 수요는 그대로였다.",
+       "ids": [
+        "tr-hmr25"
+       ]
+      },
+      "proposal": {
+       "layer": "inference",
+       "text": "간편식의 핵심은 가격이 아니라 조리 시간이다.",
+       "ids": [
+        "tr-hmr16",
+        "tr-hmr25"
+       ]
+      },
+      "rivals": [
+       {
+        "layer": "inference",
+        "text": "가격 설명 — 밀키트가 1인분 기준으로 비싸 고물가에 밀렸다.",
+        "ids": [
+         "tr-hmr25"
+        ]
+       }
+      ],
+      "scope": {
+       "layer": "inference",
+       "text": "2020~2026년 국내 간편식.",
+       "ids": [
+        "tr-hmr25"
+       ]
+      },
+      "check": [
+       {
+        "layer": "hypothesis",
+        "text": "확인 쪽: 밀키트 시장 규모 공식 추정치 — 아직 연결하지 않았다.",
+        "ids": []
+       }
+      ]
+     }
+    ],
+    "links": [
+     {
+      "kind": "topic",
+      "target": "life-convenience",
+      "at": "2015~",
+      "why": "새벽배송이 간편식을 집 앞까지 가져왔다."
+     },
+     {
+      "kind": "topic",
+      "target": "life-alone",
+      "at": "2016~",
+      "why": "혼밥과 1인 가구는 간편식의 주요 수요층이다."
+     },
+     {
+      "kind": "flow",
+      "target": "taste-dining",
+      "at": "2016~",
+      "why": "밖에서 먹는 외식 취향은 외식 흐름에서 본다."
+     }
+    ],
+    "repeats": [
+     {
+      "type": "반복되는 긴장",
+      "title": "시간을 아끼기 ↔ 직접 만든 밥",
+      "past": {
+       "layer": "fact",
+       "text": "1996년 맨밥을 판다는 것이 뉴스였다.",
+       "ids": [
+        "tr-hetbahn"
+       ]
+      },
+      "now": {
+       "layer": "fact",
+       "text": "2025년 간편식 시장 약 6조 8천억 원.",
+       "ids": [
+        "tr-hmr25"
+       ]
+      },
+      "alike": {
+       "layer": "inference",
+       "text": "사서 먹는 밥에 대한 거부감과 편리함 사이의 줄다리기가 계속된다.",
+       "ids": [
+        "tr-hmr16"
+       ]
+      },
+      "changed": {
+       "layer": "inference",
+       "text": "거부감은 줄었고, 이제는 '얼마나 집밥 같은가'가 경쟁 기준이 됐다.",
+       "ids": [
+        "tr-hmr16"
+       ]
+      },
+      "alternatives": [
+       {
+        "layer": "inference",
+        "text": "1인 가구 증가만으로 설명될 수 있다.",
+        "ids": [
+         "c10-1person"
+        ]
+       }
+      ],
+      "counter": [
+       {
+        "layer": "inference",
+        "text": "밀키트의 부침은 '직접 조리'에 대한 욕구가 여전히 있다는 반대 신호다.",
+        "ids": [
+         "tr-hmr25"
+        ]
+       }
+      ],
+      "at": [
+       "t1",
+       "t3"
+      ]
+     }
+    ],
+    "futures": {
+     "split": {
+      "layer": "inference",
+      "text": "갈라지는 이유는 외식비와 가구 구성이다.",
+      "ids": [
+       "tr-hmr25",
+       "c10-1person"
+      ]
+     },
+     "items": [
+      {
+       "kind": "계속",
+       "name": "간편식이 집밥의 기본이 된다",
+       "change": {
+        "layer": "inference",
+        "text": "국·반찬·메인 요리까지 데우는 간편식으로 채우는 가구가 늘어난다.",
+        "ids": [
+         "tr-hmr25"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "연평균 14.1% 성장.",
+         "ids": [
+          "tr-hmr25"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "1인 가구·고령 가구가 늘면 조리 부담을 줄이려는 수요가 커진다.",
+        "ids": [
+         "tr-hmr5060"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "외식비가 높게 유지돼야 한다.",
+        "ids": [
+         "tr-hmr25"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "냉동·상온 간편식, 소포장.",
+        "ids": [
+         "tr-hmr25"
+        ]
+       },
+       "watch": [
+        "간편식 시장 규모"
+       ],
+       "against": [
+        "외식비가 내려가면 성장 둔화"
+       ]
+      },
+      {
+       "kind": "분화",
+       "name": "값싼 간편식과 프리미엄 간편식",
+       "change": {
+        "layer": "inference",
+        "text": "가성비 제품과 맛집·호텔 이름을 단 고가 제품으로 갈라진다.",
+        "ids": [
+         "tr-hmr25"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "source",
+         "text": "업계가 전문점 수준의 맛과 가성비를 함께 내세운다는 보도.",
+         "ids": [
+          "tr-hmr25"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "같은 간편식도 '때우는 한 끼'와 '대접하는 한 끼'로 나뉜다.",
+        "ids": [
+         "tr-hmr25"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "소득 양극화.",
+        "ids": [
+         "tr-hmr25"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "프리미엄 원료, 브랜드 협업.",
+        "ids": [
+         "tr-hmr25"
+        ]
+       },
+       "watch": [
+        "고가 간편식 비중"
+       ],
+       "against": [
+        "가격대가 한쪽으로 몰리면 분화 약함"
+       ]
+      }
+     ]
+    },
+    "conclusion": {
+     "key": {
+      "layer": "inference",
+      "text": "즉석밥으로 시작한 간편식은 1인 가구와 자녀가 떠난 중장년 가구를 따라 커졌고, 코로나 밀키트의 부침을 지나서도 '데우기만 하는 한 끼'로 계속 자랐다.",
+      "ids": [
+       "tr-hetbahn",
+       "tr-hmr16",
+       "tr-hmr5060",
+       "tr-hmr25"
+      ]
+     },
+     "favored": {
+      "layer": "inference",
+      "text": "'시간을 아끼는 수요' 해석을 지지한다.",
+      "ids": [
+       "tr-hmr25"
+      ]
+     },
+     "undecided": {
+      "layer": "inference",
+      "text": "밀키트 시장 크기는 공식 수치로 확인하지 못했다.",
+      "ids": [
+       "tr-hmr25"
+      ]
+     },
+     "next": {
+      "layer": "inference",
+      "text": "간편식 시장 7조 원 돌파 여부.",
+      "ids": [
+       "tr-hmr25"
+      ]
+     },
+     "change": {
+      "layer": "inference",
+      "text": "간편식 성장률이 크게 꺾이면 결론을 고친다.",
+      "ids": [
+       "tr-hmr25"
+      ]
+     }
+    }
+   },
+   {
+    "id": "work-learn",
+    "domain": "work",
+    "label": "공부를 사는 방식 — 과외 금지에서 인강, 사교육 29조까지",
+    "tracks": "학교 밖에서 돈을 내고 공부를 사는 방식: 과외 전면 금지(1980) → 위헌 결정과 사교육 확산(2000) → 인터넷 강의와 EBS 연계 → 학생은 줄어도 늘어나는 사교육비.",
+    "question": "2024년 학생 수는 8만 명 줄었는데 사교육비는 2조 원 늘었다. 나라가 과외를 금지해도, 무료 강의를 풀어도 왜 사교육은 줄지 않았을까?",
+    "scene": {
+     "layer": "fact",
+     "text": "2024년 사교육비 총액은 29조 2천억 원으로 조사 이래 최대였고 참여율이 처음 80%를 넘었다.",
+     "ids": [
+      "tr-priv24"
+     ]
+    },
+    "span": [
+     1980,
+     2025
+    ],
+    "scope": [
+     {
+      "layer": "inference",
+      "text": "사교육비 공식 조사는 2007년부터라 그 이전은 연구 논문의 참여율로만 본다.",
+      "ids": [
+       "tr-tutor-rate",
+       "tr-priv24"
+      ]
+     }
+    ],
+    "turns": [
+     {
+      "id": "t1",
+      "years": "1980",
+      "start": 1980,
+      "end": 1980,
+      "title": "나라가 과외를 금지하다",
+      "why": {
+       "layer": "fact",
+       "text": "1980년 7·30 교육개혁 조치로 과외가 전면 금지됐다.",
+       "ids": [
+        "tr-tutor80"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "입시 과외가 성행해 가계 부담과 계층 차이가 문제로 떠올랐다.",
+        "ids": [
+         "tr-tutor80"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "37개 과외특별단속반이 전국 단속에 나섰다.",
+        "ids": [
+         "tr-tutor80"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "적발 시 교사·학부모 명단 공개와 면직까지 내걸었다.",
+        "ids": [
+         "tr-tutor80"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "source",
+        "text": "국가기록원은 초기 반응이 '성공적'이었다고 기록한다.",
+        "ids": [
+         "tr-tutor80"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "source",
+        "text": "한 연구는 이후 학원 수강 허용(1991)·대학원생 과외 허용(1996)으로 금지가 차례로 풀렸다고 정리했다.",
+        "ids": [
+         "tr-tutor-rate"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t2",
+      "years": "2000~2003",
+      "start": 2000,
+      "end": 2000,
+      "title": "금지가 풀리고 사교육이 퍼지다",
+      "why": {
+       "layer": "fact",
+       "text": "2000년 4월 헌법재판소가 과외금지를 위헌으로 결정했다.",
+       "ids": [
+        "tr-tutor00"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "금지 아래에서도 과외는 음성적으로 이어졌다.",
+        "ids": [
+         "tr-tutor-rate"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "헌재는 부모의 자녀교육권 침해를 위헌 이유로 들었다.",
+        "ids": [
+         "tr-tutor00"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "source",
+        "text": "연구는 이를 계기로 대도시를 시작으로 사교육이 전국에 퍼졌다고 봤다.",
+        "ids": [
+         "tr-tutor-rate"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "source",
+        "text": "학생 사교육 참여율은 2003년 조사에서 75.3%였다.",
+        "ids": [
+         "tr-tutor-rate"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "사교육은 '숨어서 하는 것'에서 '대부분이 하는 것'이 됐다.",
+        "ids": [
+         "tr-tutor-rate"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t3",
+      "years": "2000~2010",
+      "start": 2000,
+      "end": 2000,
+      "title": "화면으로 듣는 강의 — 인강과 EBS",
+      "why": {
+       "layer": "fact",
+       "text": "메가스터디가 2000년 9월 고등 온라인 강의를 열고 6년 만에 매출 1,000억 원을 넘었다.",
+       "ids": [
+        "tr-mega"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "이름난 강사의 수업은 대치동 같은 학원가에 가야 들을 수 있었다.",
+        "ids": [
+         "tr-mega"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "초고속 인터넷이 빠르게 보급됐다.",
+        "ids": [
+         "c90-pcbang"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "회사는 강좌의 58%가 5만 원 이하라고 밝혔다.",
+        "ids": [
+         "tr-mega"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "2010년 정부는 EBS 강의의 수능 반영 비율을 70% 이상으로 높이겠다고 했다.",
+        "ids": [
+         "tr-ebs70"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "값싼 온라인 강의와 무료 EBS가 지역 간 격차를 줄일 거라는 기대가 있었지만, 오프라인 학원은 사라지지 않았다.",
+        "ids": [
+         "tr-ebs70",
+         "tr-priv24"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t4",
+      "years": "2020~2024",
+      "start": 2021,
+      "end": 2021,
+      "title": "학생은 줄고 사교육비는 늘다",
+      "why": {
+       "layer": "fact",
+       "text": "사교육비가 2021~2024년 4년 연속 최고를 찍었다.",
+       "ids": [
+        "tr-priv-trend"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "2020년 코로나로 19조 4천억 원대로 줄었다.",
+        "ids": [
+         "tr-priv-trend"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "source",
+        "text": "고교학점제·의대 증원 같은 입시 변화가 영향을 줬다는 분석이 나왔다.",
+        "ids": [
+         "tr-priv-trend"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "1인당 월평균 47만 4천 원, 참여율 80% 돌파(2024).",
+        "ids": [
+         "tr-priv24"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "학생 수는 1.5% 줄었지만 총액은 7.7% 늘었다.",
+        "ids": [
+         "tr-priv24"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "fact",
+        "text": "6세 미만 아동도 1인당 월평균 33만 2천 원을 썼다는 첫 조사가 나왔다.",
+        "ids": [
+         "tr-priv-trend"
+        ]
+       }
+      ]
+     }
+    ],
+    "branches": {
+     "intro": "한 줄은 공부를 사는 한 가지 방식입니다.",
+     "lanes": [
+      {
+       "label": "개인 과외",
+       "start": 1980,
+       "end": null,
+       "state": "공존",
+       "note": {
+        "layer": "fact",
+        "text": "1980년 금지 → 2000년 위헌으로 전면 허용.",
+        "ids": [
+         "tr-tutor00"
+        ]
+       }
+      },
+      {
+       "label": "학원",
+       "start": 1991,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "사교육비 29조 2천억 원(2024).",
+        "ids": [
+         "tr-priv24"
+        ]
+       }
+      },
+      {
+       "label": "인터넷 강의",
+       "start": 2000,
+       "end": null,
+       "state": "공존",
+       "note": {
+        "layer": "fact",
+        "text": "강좌 58%가 5만 원 이하(2007).",
+        "ids": [
+         "tr-mega"
+        ]
+       }
+      },
+      {
+       "label": "무료 공영 강의(EBS)",
+       "start": 2004,
+       "end": null,
+       "state": "공존",
+       "note": {
+        "layer": "fact",
+        "text": "수능 연계 70% 이상(2010).",
+        "ids": [
+         "tr-ebs70"
+        ]
+       }
+      }
+     ],
+     "read": {
+      "layer": "inference",
+      "text": "금지·무료 강의·연계 정책이 차례로 나왔지만, 공부를 사는 방식은 줄지 않고 하나씩 더해졌다.",
+      "ids": [
+       "tr-tutor80",
+       "tr-ebs70",
+       "tr-priv24"
+      ]
+     }
+    },
+    "reasons": [
+     {
+      "title": "왜 어떤 정책도 사교육을 줄이지 못했나",
+      "facts": [
+       {
+        "layer": "fact",
+        "text": "1980년 금지, 2010년 EBS 70% 연계.",
+        "ids": [
+         "tr-tutor80",
+         "tr-ebs70"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "2024년 사교육비 최대.",
+        "ids": [
+         "tr-priv24"
+        ]
+       }
+      ],
+      "logic": {
+       "layer": "inference",
+       "text": "입시가 상대평가로 남아 있는 한, 남보다 조금이라도 앞서려는 지출은 다른 정책이 비용을 낮춰도 그만큼 다른 곳으로 옮겨 간다. 무료 강의가 늘면 '남은 30%'를 위한 사교육이 생긴다.",
+       "ids": [
+        "tr-ebs70",
+        "tr-priv24"
+       ]
+      },
+      "proposal": {
+       "layer": "inference",
+       "text": "사교육은 공부의 '양'이 아니라 '순위'를 사는 지출이다.",
+       "ids": [
+        "tr-priv24"
+       ]
+      },
+      "rivals": [
+       {
+        "layer": "inference",
+        "text": "돌봄 설명 — 초등 사교육의 일부는 공부보다 돌봄 목적이다.",
+        "ids": [
+         "tq-neulbom"
+        ]
+       },
+       {
+        "layer": "inference",
+        "text": "입시 변화 설명 — 제도 변화 직후의 불안이 일시적으로 지출을 키웠다.",
+        "ids": [
+         "tr-priv-trend"
+        ]
+       }
+      ],
+      "scope": {
+       "layer": "inference",
+       "text": "1980~2024년 초중고 사교육.",
+       "ids": [
+        "tr-priv24"
+       ]
+      },
+      "check": [
+       {
+        "layer": "hypothesis",
+        "text": "확인 쪽: 입시 변화가 없던 해의 사교육비 증가율 — 연도별로 다시 맞춰 보지 않았다.",
+        "ids": []
+       }
+      ]
+     }
+    ],
+    "links": [
+     {
+      "kind": "topic",
+      "target": "family-care",
+      "at": "2023~",
+      "why": "초등 사교육 일부는 돌봄 목적이다 — 돌봄 주제에서 본다."
+     },
+     {
+      "kind": "topic",
+      "target": "work-style",
+      "at": "2024~",
+      "why": "늦어지는 첫 취업과 시험 준비는 일하는 방식 주제와 만난다."
+     },
+     {
+      "kind": "industry",
+      "target": "internet",
+      "at": "2000~",
+      "why": "인터넷 강의는 초고속 인터넷 보급 위에 섰다."
+     }
+    ],
+    "repeats": [
+     {
+      "type": "반작용",
+      "title": "막으면 숨고, 풀면 퍼진다",
+      "past": {
+       "layer": "fact",
+       "text": "1980년 과외 전면 금지.",
+       "ids": [
+        "tr-tutor80"
+       ]
+      },
+      "now": {
+       "layer": "fact",
+       "text": "2010년 EBS 70% 연계에도 사교육비는 이후 최대를 거듭했다.",
+       "ids": [
+        "tr-ebs70",
+        "tr-priv24"
+       ]
+      },
+      "alike": {
+       "layer": "inference",
+       "text": "정책이 사교육을 줄이려 할 때마다 사교육은 형태를 바꿔 남았다.",
+       "ids": [
+        "tr-tutor-rate"
+       ]
+      },
+      "changed": {
+       "layer": "inference",
+       "text": "과거엔 '금지', 지금은 '대체재 제공'으로 정책 방식이 바뀌었다.",
+       "ids": [
+        "tr-ebs70"
+       ]
+      },
+      "alternatives": [
+       {
+        "layer": "inference",
+        "text": "소득 증가와 자녀 수 감소로 한 명에게 더 많이 쓰게 된 결과일 수 있다.",
+        "ids": [
+         "tr-priv24"
+        ]
+       }
+      ],
+      "counter": [
+       {
+        "layer": "fact",
+        "text": "2020년 코로나 때는 사교육비가 실제로 줄었다.",
+        "ids": [
+         "tr-priv-trend"
+        ]
+       }
+      ],
+      "at": [
+       "t1",
+       "t4"
+      ]
+     }
+    ],
+    "futures": {
+     "split": {
+      "layer": "inference",
+      "text": "갈라지는 이유는 입시 제도와 학생 수다.",
+      "ids": [
+       "tr-priv24",
+       "tr-priv-trend"
+      ]
+     },
+     "items": [
+      {
+       "kind": "계속",
+       "name": "학생이 줄어도 1인당 사교육비는 늘어난다",
+       "change": {
+        "layer": "inference",
+        "text": "자녀 수가 적어질수록 한 명에게 더 많이 쓴다.",
+        "ids": [
+         "tr-priv24"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "학생 1.5% 감소에도 총액 7.7% 증가.",
+         "ids": [
+          "tr-priv24"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "상대평가 경쟁은 학생 수가 줄어도 사라지지 않는다.",
+        "ids": [
+         "tr-priv24"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "입시 경쟁 구조 유지.",
+        "ids": [
+         "tr-priv-trend"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "소규모 학원, 1:1 관리, 영유아 교육.",
+        "ids": [
+         "tr-priv-trend"
+        ]
+       },
+       "watch": [
+        "1인당 월평균 사교육비",
+        "참여율"
+       ],
+       "against": [
+        "참여율이 떨어지기 시작하면 정점"
+       ]
+      },
+      {
+       "kind": "경로 변경",
+       "name": "AI 학습 도구가 학원 일부를 대신한다",
+       "change": {
+        "layer": "inference",
+        "text": "값싼 AI 튜터가 인강처럼 학원 수요 일부를 가져간다.",
+        "ids": [
+         "tr-mega"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "2000년대 인강이 학원보다 싼 대안으로 성장한 전례.",
+         "ids": [
+          "tr-mega"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "새 기술이 강의 비용을 낮추면 일부 수요가 옮겨 간다.",
+        "ids": [
+         "tr-mega"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "입시 성과로 효과가 확인돼야 한다.",
+        "ids": [
+         "tr-ebs70"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "AI 학습 서비스.",
+        "ids": [
+         "tr-mega"
+        ]
+       },
+       "watch": [
+        "온라인·AI 학습 지출 비중"
+       ],
+       "against": [
+        "인강 때처럼 학원이 그대로 남으면 대체 효과 작음"
+       ]
+      }
+     ]
+    },
+    "conclusion": {
+     "key": {
+      "layer": "inference",
+      "text": "사교육은 1980년 금지되고 2000년 풀린 뒤 대부분의 학생이 받는 것이 됐다. 인강과 EBS가 값싼 대안을 만들었지만, 학생이 줄어드는 지금도 사교육비는 사상 최대다.",
+      "ids": [
+       "tr-tutor80",
+       "tr-tutor00",
+       "tr-mega",
+       "tr-priv24"
+      ]
+     },
+     "favored": {
+      "layer": "inference",
+      "text": "'순위 경쟁' 해석을 지지한다. 근거: 어떤 정책 뒤에도 지출이 다른 형태로 옮겨 갔다.",
+      "ids": [
+       "tr-tutor-rate",
+       "tr-ebs70",
+       "tr-priv24"
+      ]
+     },
+     "undecided": {
+      "layer": "inference",
+      "text": "소득 증가 효과를 뺀 순수 증가는 계산하지 않았다.",
+      "ids": [
+       "tr-priv24"
+      ]
+     },
+     "next": {
+      "layer": "inference",
+      "text": "2025년 사교육비 조사와 참여율.",
+      "ids": [
+       "tr-priv24"
+      ]
+     },
+     "change": {
+      "layer": "inference",
+      "text": "참여율이 뚜렷하게 떨어지면 결론을 고친다.",
+      "ids": [
+       "tr-priv24"
       ]
      }
     }
