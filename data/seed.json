@@ -20097,6 +20097,198 @@
    "aiSynthesized": false,
    "period": "2020~2024",
    "independentSources": 2
+  },
+  {
+   "id": "tu-save88",
+   "text": "한국은행 조사통계월보 보도에 따르면 가계저축률은 1988년 23.9%로 정점을 찍은 뒤 소비지출 구조 변화와 연금제도 확대 등으로 2000년대 중반까지 급격히 내려가 2002년 0.1%가 됐다. 외환위기 때는 1997년 13.1%에서 1998년 20.4%로 일시적으로 크게 올랐다. 같은 분석은 2019년 6.0%였던 저축률이 코로나19로 2020년 10% 안팎까지 올라 1999년 이후 가장 높아질 수 있다고 봤다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tu-s-munhwa-save"
+   ],
+   "domains": [
+    "economy",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1988~2002",
+   "independentSources": 1
+  },
+  {
+   "id": "tu-save-oecd",
+   "text": "1988년 한국의 저축률은 3저 호황과 올림픽 특수 속에 처음 OECD 비교 1위에 올랐고, 2001년 6.4%로 20년 만에 10% 아래로 내려갔으며 카드대란이 있던 2002년 세계 최하위 수준이 됐다는 보도가 있다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tu-s-jjan-save"
+   ],
+   "domains": [
+    "economy",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1988~2002",
+   "independentSources": 1
+  },
+  {
+   "id": "tu-save-welfare",
+   "text": "한 은퇴연구소 연구자는 1970~90년대 높은 저축률의 이유 하나로 복지정책의 미비를 들었다. 국민연금은 1988년, 전 국민 건강보험은 1989년에 시작돼, 그 전에는 노후·의료비를 스스로 저축으로 대비해야 했다는 설명이다.",
+   "claimType": "source",
+   "status": "sourced",
+   "sourceIds": [
+    "tu-s-value-save"
+   ],
+   "domains": [
+    "economy",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1970~2018",
+   "independentSources": 1
+  },
+  {
+   "id": "tu-pension",
+   "text": "국민연금은 1988년 1월 상시근로자 10인 이상 사업장부터 시행돼 1992년 5인 이상, 1995년 농어촌 지역, 1999년 4월 도시 지역 주민으로 넓어져 '전 국민 연금시대'가 열렸다. 기금 적립금은 1988년 0.5조 원, 1999년 47.2조 원, 2007년 219.5조 원, 2019년 736.6조 원, 2025년 12월 1,458조 원이었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tu-s-nara-pension",
+    "tu-s-nps-fund"
+   ],
+   "domains": [
+    "economy",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1988~2025",
+   "independentSources": 2
+  },
+  {
+   "id": "tu-pension-layers",
+   "text": "한국은 1988년 국민연금, 1994년 개인연금, 2005년 퇴직연금, 2007년 기초노령연금, 2014년 기초연금으로 여러 층의 노후소득보장 체계를 만들었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tu-s-biz-pension"
+   ],
+   "domains": [
+    "economy",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1988~2014",
+   "independentSources": 1
+  },
+  {
+   "id": "tu-retire24",
+   "text": "금융감독원 퇴직연금 백서에 따르면 퇴직연금 적립금은 2024년 말 431조 7천억 원으로 2005년 제도 도입 뒤 처음 400조 원을 넘었고, 펀드·ETF 같은 실적배당형 상품 투자가 빠르게 늘었다. 다만 최근 5년 연 환산 수익률은 2%대로 국민연금(8%대)의 4분의 1 수준이었고, 대부분 예금 같은 원리금 보장형에 묻어 두기 때문이라는 지적이 나왔다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tu-s-deal-retire",
+    "tu-s-sbs-retire"
+   ],
+   "domains": [
+    "economy",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2005~2024",
+   "independentSources": 2
+  },
+  {
+   "id": "tu-debt04",
+   "text": "2004년 이후 가계부채는 연평균 8.8% 늘어 가계 가처분소득 증가율(3.2%)의 두 배를 넘었다는 보도가 있다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tu-s-asiatoday-debt"
+   ],
+   "domains": [
+    "economy",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2004~2013",
+   "independentSources": 1
+  },
+  {
+   "id": "tu-2030loan",
+   "text": "한국은행 자료에 따르면 2021년 1분기 말 2030세대의 전체 금융권 가계대출은 446조 5천억 원으로 1년 새 55조 3천억 원 늘었고, 은행권 대출 증가율(20.5%)은 전체 세대(10.3%)의 약 두 배였다. 은행 관계자들은 수도권 아파트값 급등에 따른 '패닉바잉'과 DSR 규제를 앞둔 신용대출 가수요를 이유로 들었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tu-s-sgsg-2030"
+   ],
+   "domains": [
+    "economy",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2020~2021",
+   "independentSources": 1
+  },
+  {
+   "id": "tu-dsr21",
+   "text": "금융당국은 2022년부터 소득과 관계없이 총대출액이 1억 원을 넘으면 차주별 DSR 40%를 적용하기로 했다(DSR 2단계).",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tu-s-mtn-dsr21"
+   ],
+   "domains": [
+    "economy",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2021~2022",
+   "independentSources": 1
+  },
+  {
+   "id": "tu-jeonse22",
+   "text": "2022년 4월 말 17개 은행의 전세자금 대출은 133만 5,090명, 167조 510억 원이었고 잔액 기준 2030세대 비중이 58%였다. 전세대출은 DSR 규제에서 빠져 매매 대출이 줄어도 계속 늘었다는 분석이다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tu-s-econ-jeonse"
+   ],
+   "domains": [
+    "economy",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2022",
+   "independentSources": 1
   }
  ],
  "sources": [
@@ -29474,6 +29666,111 @@
    "sourceType": "news",
    "accessedDate": "2026-11-12",
    "publishedDate": "2025-03-13"
+  },
+  {
+   "id": "tu-s-munhwa-save",
+   "title": "높은 저축률 고착화시 소비부진 우려(한은 조사통계월보 보도)",
+   "publisher": "문화일보",
+   "url": "https://www.munhwa.com/article/11215095",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2020-09-29"
+  },
+  {
+   "id": "tu-s-jjan-save",
+   "title": "韓 가계저축, OECD 최하위로 추락",
+   "publisher": "전북일보",
+   "url": "https://www.jjan.kr/articleAmp/20090705316869",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2009-07-05"
+  },
+  {
+   "id": "tu-s-value-save",
+   "title": "[이상건의 투자단상] 쪼들리는 가계, 그냥 흘려 보내는 저축의 미래",
+   "publisher": "더밸류뉴스",
+   "url": "https://thevaluenews.co.kr/news/16990",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2018-04-25"
+  },
+  {
+   "id": "tu-s-nara-pension",
+   "title": "국민연금제도(정책 기록)",
+   "publisher": "국가기록원",
+   "url": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=211",
+   "sourceType": "government",
+   "accessedDate": "2026-11-12"
+  },
+  {
+   "id": "tu-s-nps-fund",
+   "title": "국민연금기금 적립금 추이",
+   "publisher": "국민연금기금운용본부",
+   "url": "https://fund.nps.or.kr/eng/main.do",
+   "sourceType": "government",
+   "accessedDate": "2026-11-12"
+  },
+  {
+   "id": "tu-s-biz-pension",
+   "title": "다층적 노후소득보장체계(국민연금·개인연금·퇴직연금·기초연금)",
+   "publisher": "비즈워치",
+   "url": "https://news.bizwatch.co.kr/article/policy/2019/03/25/0012",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2019-03-25"
+  },
+  {
+   "id": "tu-s-deal-retire",
+   "title": "퇴직연금 적립금 431.7조…제도 도입 후 첫 400조 돌파(금감원 백서)",
+   "publisher": "딜사이트",
+   "url": "https://dealsite.co.kr/articles/142717",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-06-09"
+  },
+  {
+   "id": "tu-s-sbs-retire",
+   "title": "퇴직연금 볼 때마다 한숨…내 노후 괜찮을까?",
+   "publisher": "SBS Biz",
+   "url": "https://biz.sbs.co.kr/amp/article/20000239158",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-06-09"
+  },
+  {
+   "id": "tu-s-asiatoday-debt",
+   "title": "가계부채 증가율과 가처분소득 증가율",
+   "publisher": "아시아투데이",
+   "url": "https://www.asiatoday.co.kr/kn/view.php?key=596106",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12"
+  },
+  {
+   "id": "tu-s-sgsg-2030",
+   "title": "2030세대 가계대출 446조…'패닉바잉'",
+   "publisher": "한국경제 생글생글",
+   "url": "https://sgsg.hankyung.com/article/2021082622121",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2021-08-26"
+  },
+  {
+   "id": "tu-s-econ-jeonse",
+   "title": "DSR서 빠진 전세대출, 증가 심화…'2030세대' 비중 절반 넘어",
+   "publisher": "이코노미스트",
+   "url": "https://economist.co.kr/article/view/ecn202206100060",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2022-06-10"
+  },
+  {
+   "id": "tu-s-mtn-dsr21",
+   "title": "'영끌' 급제동…DSR 2단계",
+   "publisher": "MTN",
+   "url": "https://news.mtn.co.kr/news-detail/2021102710485179705",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2021-10-27"
   }
  ],
  "events": [
@@ -86223,12 +86520,19 @@
      },
      {
       "kind": "topic",
+      "id": "money-save"
+     },
+     {
+      "kind": "topic",
+      "id": "money-home"
+     },
+     {
+      "kind": "topic",
       "id": "shop-pay"
      }
     ],
     "planned": [
-     "저축·보험·연금",
-     "대출과 집 마련 자금"
+     "보험"
     ]
    },
    {
@@ -104382,6 +104686,1258 @@
       "text": "참여율이 뚜렷하게 떨어지면 결론을 고친다.",
       "ids": [
        "tr-priv24"
+      ]
+     }
+    }
+   },
+   {
+    "id": "money-save",
+    "domain": "money",
+    "label": "저축과 연금 — 스스로 모으던 노후에서 제도가 모으는 노후로",
+    "tracks": "가계가 미래를 위해 돈을 어떻게 남겼는지: 저축률 24% 시대(1988) → 국민연금·건강보험 → 저축률 0%대(2002) → 퇴직연금과 국민연금 기금 1,400조.",
+    "question": "1988년 한국 가계는 번 돈의 4분의 1을 저축했는데, 14년 뒤엔 거의 저축하지 않았다. 사람들이 미래를 대비하지 않게 된 걸까, 대비하는 방식이 바뀐 걸까?",
+    "scene": {
+     "layer": "fact",
+     "text": "가계저축률은 1988년 23.9%에서 2002년 0.1%로 내려갔다.",
+     "ids": [
+      "tu-save88"
+     ]
+    },
+    "span": [
+     1988,
+     2025
+    ],
+    "scope": [
+     {
+      "layer": "inference",
+      "text": "저축률은 기준(가계순저축률·개인저축률)에 따라 수치가 조금씩 달라 같은 출처 안에서 비교한다.",
+      "ids": [
+       "tu-save88",
+       "tu-save-oecd"
+      ]
+     }
+    ],
+    "turns": [
+     {
+      "id": "t1",
+      "years": "1988~1989",
+      "start": 1988,
+      "end": 1988,
+      "title": "저축률 정점, 그리고 연금의 시작",
+      "why": {
+       "layer": "fact",
+       "text": "1988년 가계저축률이 23.9%로 정점을 찍었고 같은 해 국민연금이 시작됐다.",
+       "ids": [
+        "tu-save88",
+        "tu-pension"
+       ]
+      },
+      "before": [
+       {
+        "layer": "source",
+        "text": "1970~90년대에는 복지 제도가 부족해 노후·의료비를 스스로 저축으로 대비했다는 설명이 있다.",
+        "ids": [
+         "tu-save-welfare"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "3저 호황과 올림픽 특수가 겹쳤다.",
+        "ids": [
+         "tu-save-oecd"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "국민연금은 10인 이상 사업장부터 시작했다.",
+        "ids": [
+         "tu-pension"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "1989년 전 국민 건강보험이 시작됐다.",
+        "ids": [
+         "tu-save-welfare"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "노후와 의료를 '개인 저축'이 아닌 '사회 보험'으로 대비하는 길이 열렸다.",
+        "ids": [
+         "tu-save-welfare",
+         "tu-pension"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t2",
+      "years": "1997~2002",
+      "start": 1998,
+      "end": 1998,
+      "title": "위기에 모으고, 카드로 쓰다",
+      "why": {
+       "layer": "fact",
+       "text": "외환위기 때 저축률이 1997년 13.1%에서 1998년 20.4%로 뛰었다.",
+       "ids": [
+        "tu-save88"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "1999년 4월 국민연금이 도시 지역 주민까지 넓어졌다.",
+        "ids": [
+         "tu-pension"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "카드대란의 원인으로 무분별한 카드 발급과 현금서비스 한도 폐지가 꼽힌다.",
+        "ids": [
+         "c00-card-why"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "2001년 저축률이 6.4%로 20년 만에 10% 아래로 내려갔다는 보도가 있다.",
+        "ids": [
+         "tu-save-oecd"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "2002년 저축률은 0.1%였다.",
+        "ids": [
+         "tu-save88"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "위기 때 저축을 늘리고 곧 소비·빚으로 돌아서는 모양이 처음 크게 나타났다.",
+        "ids": [
+         "tu-save88",
+         "c00-card-why"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t3",
+      "years": "2005~2014",
+      "start": 2005,
+      "end": 2005,
+      "title": "여러 층의 연금",
+      "why": {
+       "layer": "fact",
+       "text": "2005년 퇴직연금이 도입됐다.",
+       "ids": [
+        "tu-pension-layers"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "국민연금(1988)과 개인연금(1994)이 있었다.",
+        "ids": [
+         "tu-pension-layers"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "2004년 이후 가계부채가 소득보다 두 배 넘게 빠르게 늘었다는 보도가 있다.",
+        "ids": [
+         "tu-debt04"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "2007년 기초노령연금, 2014년 기초연금이 더해졌다.",
+        "ids": [
+         "tu-pension-layers"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "국민연금 기금은 2007년 219.5조 원이 됐다.",
+        "ids": [
+         "tu-pension"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "가계가 직접 하던 저축의 일부를 연금 제도가 대신 모으게 됐다.",
+        "ids": [
+         "tu-pension",
+         "tu-save88"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t4",
+      "years": "2024~2025",
+      "start": 2024,
+      "end": 2024,
+      "title": "제도가 모은 돈 — 1,400조와 430조",
+      "why": {
+       "layer": "fact",
+       "text": "국민연금 기금은 2025년 12월 1,458조 원이었다.",
+       "ids": [
+        "tu-pension"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "2019년 736.6조 원이었다.",
+        "ids": [
+         "tu-pension"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "퇴직연금 적립금이 2024년 431조 7천억 원으로 처음 400조 원을 넘었다.",
+        "ids": [
+         "tu-retire24"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "퇴직연금에서 펀드·ETF 같은 실적배당형 투자가 빠르게 늘었다.",
+        "ids": [
+         "tu-retire24"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "그래도 퇴직연금 최근 5년 수익률은 2%대로 국민연금의 4분의 1이었다.",
+        "ids": [
+         "tu-retire24"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "'얼마나 모으나'보다 '모인 돈을 어떻게 굴리나'가 노후의 질을 가르는 문제로 바뀌었다.",
+        "ids": [
+         "tu-retire24"
+        ]
+       }
+      ]
+     }
+    ],
+    "branches": {
+     "intro": "한 줄은 미래를 대비하는 한 가지 방식입니다.",
+     "lanes": [
+      {
+       "label": "가계 저축(예금·적금)",
+       "start": 1960,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "fact",
+        "text": "저축률 23.9% → 0.1%(1988~2002).",
+        "ids": [
+         "tu-save88"
+        ]
+       }
+      },
+      {
+       "label": "국민연금",
+       "start": 1988,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "기금 1,458조 원(2025).",
+        "ids": [
+         "tu-pension"
+        ]
+       }
+      },
+      {
+       "label": "퇴직연금",
+       "start": 2005,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "431조 7천억 원(2024).",
+        "ids": [
+         "tu-retire24"
+        ]
+       }
+      },
+      {
+       "label": "직접 투자",
+       "start": 2020,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "개인 순매수 역대 최대(2020).",
+        "ids": [
+         "tm-ant20"
+        ]
+       }
+      }
+     ],
+     "read": {
+      "layer": "inference",
+      "text": "가계가 직접 쌓던 저축은 줄었지만, 연금 제도가 모으는 돈은 크게 늘었다. 대비가 사라진 게 아니라 '개인 통장'에서 '제도와 투자'로 옮겨 갔다.",
+      "ids": [
+       "tu-save88",
+       "tu-pension",
+       "tu-retire24"
+      ]
+     }
+    },
+    "reasons": [
+     {
+      "title": "저축률은 왜 24%에서 0%대로 떨어졌나",
+      "facts": [
+       {
+        "layer": "fact",
+        "text": "23.9%(1988) → 0.1%(2002).",
+        "ids": [
+         "tu-save88"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "1988년 국민연금, 1989년 건강보험.",
+        "ids": [
+         "tu-save-welfare"
+        ]
+       }
+      ],
+      "logic": {
+       "layer": "inference",
+       "text": "노후·의료를 사회보험이 일부 맡자 스스로 저축할 이유가 줄었고, 카드·대출로 소비가 쉬워졌다.",
+       "ids": [
+        "tu-save-welfare",
+        "c00-card-why"
+       ]
+      },
+      "proposal": {
+       "layer": "inference",
+       "text": "저축률 하락은 '대비하지 않음'보다 '대비 방식의 이동'과 '빚으로 당긴 소비'가 겹친 결과다.",
+       "ids": [
+        "tu-save88",
+        "tu-pension"
+       ]
+      },
+      "rivals": [
+       {
+        "layer": "inference",
+        "text": "소득 설명 — 가처분소득이 성장률만큼 늘지 않아 저축 여력 자체가 줄었다.",
+        "ids": [
+         "tu-save-oecd"
+        ]
+       },
+       {
+        "layer": "inference",
+        "text": "부채 설명 — 집 마련 빚이 늘며 저축 대신 원리금을 갚았다.",
+        "ids": [
+         "tu-debt04"
+        ]
+       }
+      ],
+      "scope": {
+       "layer": "inference",
+       "text": "1988~2002년 가계 부문.",
+       "ids": [
+        "tu-save88"
+       ]
+      },
+      "check": [
+       {
+        "layer": "hypothesis",
+        "text": "확인 쪽: 연금 보험료를 저축에 더한 '넓은 저축률' 계산 — 아직 하지 않았다.",
+        "ids": []
+       }
+      ]
+     }
+    ],
+    "links": [
+     {
+      "kind": "topic",
+      "target": "money-invest",
+      "at": "2005~",
+      "why": "적금·펀드·주식으로 옮겨 간 '굴리는 돈'은 돈을 굴리는 방식 주제에서 본다."
+     },
+     {
+      "kind": "topic",
+      "target": "money-home",
+      "at": "2004~",
+      "why": "저축 대신 늘어난 빚은 집 마련 주제에서 본다."
+     },
+     {
+      "kind": "flow",
+      "target": "flow-economy",
+      "at": "1997~",
+      "why": "외환위기와 카드대란의 경과는 경제 흐름에서 본다."
+     }
+    ],
+    "repeats": [
+     {
+      "type": "반복되는 긴장",
+      "title": "위기에 모으고, 지나면 쓴다",
+      "past": {
+       "layer": "fact",
+       "text": "1998년 저축률이 20.4%로 뛰었다.",
+       "ids": [
+        "tu-save88"
+       ]
+      },
+      "now": {
+       "layer": "source",
+       "text": "2020년 코로나 때도 저축률이 1999년 이후 가장 높아질 것이란 한은 분석이 나왔다.",
+       "ids": [
+        "tu-save88"
+       ]
+      },
+      "alike": {
+       "layer": "inference",
+       "text": "불확실할 때 소비를 줄여 저축이 일시적으로 오른다.",
+       "ids": [
+        "tu-save88"
+       ]
+      },
+      "changed": {
+       "layer": "inference",
+       "text": "2020년에는 대면 서비스 소비가 막혀 '못 써서' 모인 면이 컸다.",
+       "ids": [
+        "tu-save88"
+       ]
+      },
+      "alternatives": [
+       {
+        "layer": "inference",
+        "text": "정부 지원금이 쓰이지 않고 쌓인 효과일 수 있다.",
+        "ids": [
+         "tu-save88"
+        ]
+       }
+      ],
+      "counter": [
+       {
+        "layer": "inference",
+        "text": "2020년 실제 저축률 확정치는 연결하지 않았다.",
+        "ids": [
+         "tu-save88"
+        ]
+       }
+      ],
+      "at": [
+       "t2",
+       "t4"
+      ]
+     }
+    ],
+    "futures": {
+     "split": {
+      "layer": "inference",
+      "text": "갈라지는 이유는 연금 운용 성과다. 퇴직연금이 계속 2%대에 머물면 개인이 다시 직접 투자·저축으로 대비하고, 수익률이 오르면 제도가 노후의 중심이 된다.",
+      "ids": [
+       "tu-retire24"
+      ]
+     },
+     "items": [
+      {
+       "kind": "계속",
+       "name": "제도가 모으는 노후",
+       "change": {
+        "layer": "inference",
+        "text": "국민연금·퇴직연금 적립금이 계속 늘어 노후 대비의 중심이 된다.",
+        "ids": [
+         "tu-pension",
+         "tu-retire24"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "국민연금 1,458조, 퇴직연금 431조.",
+         "ids": [
+          "tu-pension",
+          "tu-retire24"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "의무 가입 제도는 개인 의지와 상관없이 쌓인다.",
+        "ids": [
+         "tu-pension"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "연금 재정 개혁과 수익률 개선.",
+        "ids": [
+         "tu-retire24"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "연금 운용, 디폴트옵션 상품.",
+        "ids": [
+         "tu-retire24"
+        ]
+       },
+       "watch": [
+        "퇴직연금 수익률",
+        "국민연금 기금 규모"
+       ],
+       "against": [
+        "퇴직연금 중도 인출이 늘면 약화"
+       ]
+      },
+      {
+       "kind": "결합",
+       "name": "저축과 투자가 섞인 연금 계좌",
+       "change": {
+        "layer": "inference",
+        "text": "연금 계좌 안에서 예금 대신 ETF·펀드에 투자하는 사람이 늘어난다.",
+        "ids": [
+         "tu-retire24",
+         "tm-west25"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "실적배당형 투자 증가.",
+         "ids": [
+          "tu-retire24"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "직접 투자에 익숙해진 세대가 연금도 같은 방식으로 굴린다.",
+        "ids": [
+         "tm-ant20"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "세제 혜택 유지.",
+        "ids": [
+         "tu-retire24"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "연금 전용 ETF, 투자 교육.",
+        "ids": [
+         "tu-retire24"
+        ]
+       },
+       "watch": [
+        "퇴직연금 실적배당형 비중"
+       ],
+       "against": [
+        "큰 하락장 뒤 원리금 보장형으로 되돌아가면 약화"
+       ]
+      }
+     ]
+    },
+    "conclusion": {
+     "key": {
+      "layer": "inference",
+      "text": "한국 가계의 저축률은 1988년 정점에서 2002년 0%대로 떨어졌지만, 같은 시기 국민연금·건강보험·퇴직연금이 생겨 노후 대비가 개인 통장에서 제도로 옮겨 갔다. 지금 문제는 모인 돈을 어떻게 굴리느냐다.",
+      "ids": [
+       "tu-save88",
+       "tu-pension",
+       "tu-retire24"
+      ]
+     },
+     "favored": {
+      "layer": "inference",
+      "text": "'대비 방식의 이동' 해석을 지지하되, 카드·대출로 당긴 소비가 함께 작용했다.",
+      "ids": [
+       "tu-save-welfare",
+       "c00-card-why"
+      ]
+     },
+     "undecided": {
+      "layer": "inference",
+      "text": "2002년 이후 저축률 시계열은 연결하지 않았다.",
+      "ids": [
+       "tu-save88"
+      ]
+     },
+     "next": {
+      "layer": "inference",
+      "text": "퇴직연금 수익률과 국민연금 개혁.",
+      "ids": [
+       "tu-retire24"
+      ]
+     },
+     "change": {
+      "layer": "inference",
+      "text": "가계저축률이 다시 크게 오르면 결론을 고친다.",
+      "ids": [
+       "tu-save88"
+      ]
+     }
+    }
+   },
+   {
+    "id": "money-home",
+    "domain": "money",
+    "label": "빚내서 집 사기 — 영끌과 전세대출, 가계빚 2천조",
+    "tracks": "집을 사거나 빌릴 때 돈을 어떻게 마련했는지: 소득보다 빠른 가계부채(2004~) → 저금리와 영끌(2020~2021) → 규제와 금리 인상 → 전세대출 → 가계신용 2천조.",
+    "question": "2021년 2030세대의 은행 대출은 1년 새 20% 넘게 늘었다. 집값이 오를 때 빚을 내지 않은 사람과 낸 사람, 누가 더 위험했을까?",
+    "scene": {
+     "layer": "fact",
+     "text": "2026년 2분기 말 가계신용은 2,019조 8천억 원으로 통계 공표 이후 처음 2천조 원을 넘었다.",
+     "ids": [
+      "an-n-debt"
+     ]
+    },
+    "span": [
+     2004,
+     2026
+    ],
+    "scope": [
+     {
+      "layer": "inference",
+      "text": "이 주제는 집 마련 자금의 방식 변화를 다룬다. 투자·대출 권유가 아니다.",
+      "ids": [
+       "tu-2030loan"
+      ]
+     }
+    ],
+    "turns": [
+     {
+      "id": "t1",
+      "years": "2004~2016",
+      "start": 2004,
+      "end": 2004,
+      "title": "소득보다 빨리 느는 빚",
+      "why": {
+       "layer": "fact",
+       "text": "2004년 이후 가계부채가 연평균 8.8% 늘어 소득 증가율(3.2%)의 두 배를 넘었다는 보도가 있다.",
+       "ids": [
+        "tu-debt04"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "2002년 카드대란으로 가계 빚 문제가 처음 크게 드러났다.",
+        "ids": [
+         "c00-card-why"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "2016년 기준금리가 사상 최저인 1.25%가 됐다.",
+        "ids": [
+         "c10-rate"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "2016년 2분기 말 가계신용은 1,257조 원으로 1년 새 126조 원 늘었다.",
+        "ids": [
+         "c10-debt"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "inference",
+        "text": "집을 사는 일이 '모아서'에서 '빌려서'가 기본이 됐다.",
+        "ids": [
+         "tu-debt04"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "가계 빚의 대부분이 집과 묶이면서 집값과 금리가 가계 살림을 좌우하게 됐다.",
+        "ids": [
+         "c10-debt"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t2",
+      "years": "2020~2021",
+      "start": 2020,
+      "end": 2020,
+      "title": "영끌 — 늦으면 못 산다는 불안",
+      "why": {
+       "layer": "fact",
+       "text": "2021년 1분기 2030세대 대출은 446조 5천억 원으로 1년 새 55조 원 늘었다.",
+       "ids": [
+        "tu-2030loan"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "2020년 3월 기준금리가 사상 첫 0%대(0.75%)로 내려갔다.",
+        "ids": [
+         "c2020-bigcut"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "전국 아파트값이 2020년 13.46%, 2021년 18.32% 올랐다.",
+        "ids": [
+         "c20-house"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "2030 은행 대출 증가율 20.5%는 전체 세대의 두 배였다.",
+        "ids": [
+         "tu-2030loan"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "2022년부터 총대출 1억 원이 넘으면 DSR 40%를 적용하기로 했다.",
+        "ids": [
+         "tu-dsr21"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "fact",
+        "text": "한국은행은 2021년 8월 가계부채와 집값을 이유로 금리를 올리기 시작했다.",
+        "ids": [
+         "c2020-hike"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t3",
+      "years": "2022~2023",
+      "start": 2022,
+      "end": 2022,
+      "title": "금리가 오르고, 전세대출은 남다",
+      "why": {
+       "layer": "fact",
+       "text": "한국은행이 2022~2023년 일곱 차례 연속 금리를 올려 3.50%가 됐다.",
+       "ids": [
+        "c20-kr-rate"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "2021년 아파트값이 18.32% 올랐다.",
+        "ids": [
+         "c20-house"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "2022년 아파트값이 7.22% 떨어졌다.",
+        "ids": [
+         "c20-house"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "2022년 4월 전세자금 대출은 167조 원, 2030 비중이 58%였다.",
+        "ids": [
+         "tu-jeonse22"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "전세대출은 DSR에서 빠져 매매 대출이 줄어도 늘었다는 분석이다.",
+        "ids": [
+         "tu-jeonse22"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "사지 못한 사람도 전세대출로 빚을 지는 구조가 이어졌다.",
+        "ids": [
+         "tu-jeonse22"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t4",
+      "years": "2025~2026",
+      "start": 2026,
+      "end": 2026,
+      "title": "가계빚 2천조, 그러나 비율은 내려가다",
+      "why": {
+       "layer": "fact",
+       "text": "2026년 2분기 말 가계신용이 2,019조 8천억 원이 됐다.",
+       "ids": [
+        "an-n-debt"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "GDP 대비 가계부채 비율은 2021년 3분기 99.1%로 정점이었다.",
+        "ids": [
+         "an-n-debtratio"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "한은은 2026년 7~8월 금리를 다시 올려 3.00%로 했다.",
+        "ids": [
+         "an-n-rate"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "한 분기 25조 9천억 원 증가는 2021년 이후 가장 컸고 주식 투자 자금도 영향을 줬다.",
+        "ids": [
+         "an-n-debt"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "GDP 대비 비율은 2026년 1분기 85.1%로 2018년 이후 가장 낮았다.",
+        "ids": [
+         "an-n-debtratio"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "빚의 크기는 사상 최대지만 경제 규모에 비한 무게는 줄었다 — 같은 숫자를 두고 위험 판단이 갈린다.",
+        "ids": [
+         "an-n-debt",
+         "an-n-debtratio"
+        ]
+       }
+      ]
+     }
+    ],
+    "branches": {
+     "intro": "한 줄은 집 마련 자금을 구하는 한 가지 방식입니다.",
+     "lanes": [
+      {
+       "label": "모아서 사기",
+       "start": 1988,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "fact",
+        "text": "저축률 하락.",
+        "ids": [
+         "tu-save88"
+        ]
+       }
+      },
+      {
+       "label": "주택담보대출",
+       "start": 2004,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "가계신용 2,019조 원(2026).",
+        "ids": [
+         "an-n-debt"
+        ]
+       }
+      },
+      {
+       "label": "신용대출까지 끌어오기(영끌)",
+       "start": 2020,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "fact",
+        "text": "DSR 2단계(2022).",
+        "ids": [
+         "tu-dsr21"
+        ]
+       }
+      },
+      {
+       "label": "전세대출",
+       "start": 2010,
+       "end": null,
+       "state": "공존",
+       "note": {
+        "layer": "fact",
+        "text": "167조 원, 2030 비중 58%(2022).",
+        "ids": [
+         "tu-jeonse22"
+        ]
+       }
+      }
+     ],
+     "read": {
+      "layer": "inference",
+      "text": "집 마련 자금은 저축에서 대출로 옮겨 갔고, 규제가 한 통로를 막으면 다른 통로(신용대출·전세대출)로 빚이 옮겨 갔다.",
+      "ids": [
+       "tu-2030loan",
+       "tu-jeonse22"
+      ]
+     }
+    },
+    "reasons": [
+     {
+      "title": "왜 2030이 가장 빠르게 빚을 늘렸나",
+      "facts": [
+       {
+        "layer": "fact",
+        "text": "2030 은행 대출 증가율 20.5%.",
+        "ids": [
+         "tu-2030loan"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "아파트값 2년간 30% 넘게 상승.",
+        "ids": [
+         "c20-house"
+        ]
+       }
+      ],
+      "logic": {
+       "layer": "inference",
+       "text": "집값이 소득보다 훨씬 빨리 오르자 '지금 사지 않으면 영영 못 산다'는 판단이 빚을 정당화했다. 저금리가 그 판단의 비용을 낮췄다.",
+       "ids": [
+        "tu-2030loan",
+        "c2020-bigcut"
+       ]
+      },
+      "proposal": {
+       "layer": "inference",
+       "text": "영끌은 투기보다 '늦을까 봐'의 불안에서 나왔다.",
+       "ids": [
+        "tu-2030loan"
+       ]
+      },
+      "rivals": [
+       {
+        "layer": "inference",
+        "text": "규제 회피 설명 — DSR 규제 직전 신용대출을 미리 받아 두려는 가수요가 컸다.",
+        "ids": [
+         "tu-2030loan"
+        ]
+       },
+       {
+        "layer": "inference",
+        "text": "정책 대출 설명 — 청년 전세 지원 프로그램이 대출을 늘렸다.",
+        "ids": [
+         "tu-jeonse22"
+        ]
+       }
+      ],
+      "scope": {
+       "layer": "inference",
+       "text": "2020~2022년 2030세대.",
+       "ids": [
+        "tu-2030loan"
+       ]
+      },
+      "check": [
+       {
+        "layer": "hypothesis",
+        "text": "확인 쪽: 2030 차주의 연체율 변화 — 연결하지 않았다.",
+        "ids": []
+       }
+      ]
+     }
+    ],
+    "links": [
+     {
+      "kind": "topic",
+      "target": "city-home",
+      "at": "2020~",
+      "why": "어디에, 어떤 집에 사나는 거주 주제에서 본다."
+     },
+     {
+      "kind": "topic",
+      "target": "money-save",
+      "at": "1988~",
+      "why": "저축률이 떨어지며 집은 빌려서 사는 것이 됐다."
+     },
+     {
+      "kind": "topic",
+      "target": "money-invest",
+      "at": "2020~",
+      "why": "같은 시기 빚투로 주식에 들어간 돈은 투자 주제에서 본다."
+     }
+    ],
+    "repeats": [
+     {
+      "type": "경제·산업 순환",
+      "title": "저금리 → 빚 → 집값 → 규제·금리 인상",
+      "past": {
+       "layer": "fact",
+       "text": "2016년 사상 최저 금리와 가계신용 급증.",
+       "ids": [
+        "c10-rate",
+        "c10-debt"
+       ]
+      },
+      "now": {
+       "layer": "fact",
+       "text": "2020~2021년 0%대 금리와 영끌, 2022년 금리 인상과 집값 하락.",
+       "ids": [
+        "c2020-bigcut",
+        "c20-house"
+       ]
+      },
+      "alike": {
+       "layer": "inference",
+       "text": "금리가 낮을 때 빚이 늘고, 늦게 오르는 금리가 그 빚을 무겁게 만든다.",
+       "ids": [
+        "c20-kr-rate"
+       ]
+      },
+      "changed": {
+       "layer": "inference",
+       "text": "2020년대에는 2030세대가 빚 증가의 중심이었다.",
+       "ids": [
+        "tu-2030loan"
+       ]
+      },
+      "alternatives": [
+       {
+        "layer": "inference",
+        "text": "공급 부족이 집값을 올렸고 빚은 결과일 뿐일 수 있다.",
+        "ids": [
+         "c20-house"
+        ]
+       }
+      ],
+      "counter": [
+       {
+        "layer": "fact",
+        "text": "2026년에는 빚이 늘어도 GDP 대비 비율은 떨어졌다.",
+        "ids": [
+         "an-n-debtratio"
+        ]
+       }
+      ],
+      "at": [
+       "t1",
+       "t3"
+      ]
+     }
+    ],
+    "futures": {
+     "split": {
+      "layer": "inference",
+      "text": "갈라지는 이유는 금리와 집값이다.",
+      "ids": [
+       "an-n-rate",
+       "c20-house"
+      ]
+     },
+     "items": [
+      {
+       "kind": "계속",
+       "name": "집은 빌려서 사는 것이 기본으로 남는다",
+       "change": {
+        "layer": "inference",
+        "text": "대출 없이 집을 사는 경우는 계속 드물다.",
+        "ids": [
+         "an-n-debt"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "가계신용 2천조 돌파.",
+         "ids": [
+          "an-n-debt"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "집값 대비 소득이 크게 나아지지 않는 한 빚이 필요하다.",
+        "ids": [
+         "tu-debt04"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "금리가 감당 가능한 수준이어야 한다.",
+        "ids": [
+         "an-n-rate"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "주택금융, 정책 대출, 상환 상담.",
+        "ids": [
+         "tu-jeonse22"
+        ]
+       },
+       "watch": [
+        "가계신용",
+        "주택담보대출 금리"
+       ],
+       "against": [
+        "가계신용이 줄기 시작하면 디레버리징"
+       ]
+      },
+      {
+       "kind": "반작용",
+       "name": "빚을 줄이고 버티는 쪽으로",
+       "change": {
+        "layer": "inference",
+        "text": "금리 부담을 겪은 세대가 대출을 줄이고 전·월세로 버틴다.",
+        "ids": [
+         "c20-kr-rate",
+         "an-n-debtratio"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "GDP 대비 가계부채 비율 하락.",
+         "ids": [
+          "an-n-debtratio"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "2022년 금리 충격의 기억이 빚 결정을 보수적으로 만든다.",
+        "ids": [
+         "c20-kr-rate"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "금리가 높게 유지돼야 한다.",
+        "ids": [
+         "an-n-rate"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "임대 주택, 월세 관리.",
+        "ids": [
+         "tu-jeonse22"
+        ]
+       },
+       "watch": [
+        "GDP 대비 가계부채 비율"
+       ],
+       "against": [
+        "금리 인하 뒤 대출이 다시 급증하면 반작용 약함"
+       ]
+      }
+     ]
+    },
+    "conclusion": {
+     "key": {
+      "layer": "inference",
+      "text": "2004년 이후 집 마련은 저축이 아니라 대출이 기본이 됐고, 2020~2021년 저금리 속 2030 영끌이 그 정점이었다. 규제와 금리 인상 뒤에도 빚은 전세대출 같은 다른 통로로 옮겨 가며 2천조를 넘었다.",
+      "ids": [
+       "tu-debt04",
+       "tu-2030loan",
+       "tu-jeonse22",
+       "an-n-debt"
+      ]
+     },
+     "favored": {
+      "layer": "inference",
+      "text": "'늦을까 봐'의 불안 해석을 지지하되, 규제 직전 가수요도 함께 작용했다.",
+      "ids": [
+       "tu-2030loan"
+      ]
+     },
+     "undecided": {
+      "layer": "inference",
+      "text": "영끌 차주의 실제 상환 상황은 확인하지 못했다.",
+      "ids": [
+       "tu-2030loan"
+      ]
+     },
+     "next": {
+      "layer": "inference",
+      "text": "가계신용 증가 속도와 GDP 대비 비율.",
+      "ids": [
+       "an-n-debt",
+       "an-n-debtratio"
+      ]
+     },
+     "change": {
+      "layer": "inference",
+      "text": "가계신용이 줄어들기 시작하면 결론을 고친다.",
+      "ids": [
+       "an-n-debt"
       ]
      }
     }

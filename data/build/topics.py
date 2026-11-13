@@ -11,6 +11,7 @@ import topics_life2 as tlife2
 import topics_more as tmore
 import topics_more2 as tmore2
 import topics_more3 as tmore3
+import topics_more4 as tmore4
 import topics_city as tcity
 from topic_helpers import LAYERS, MODES, FUTURE_KINDS
 
@@ -20,9 +21,9 @@ DOMAINS = [
     {"id": "lifestyle", "label": "라이프스타일", "desc": "시간·공간·관계·몸·주의력을 어떻게 쓰고 관리하는지, 무엇을 좋은 삶으로 여기는지."},
 ] + tmore.DOMAINS + tmore2.DOMAINS
 
-TOPICS = tshop.TOPICS + trec.TOPICS + tlife.TOPICS + tlife2.TOPICS + tcity.TOPICS + tmore.TOPICS + tmore2.TOPICS + tmore3.TOPICS
-SOURCES = tshop.SOURCES + trec.SOURCES + tlife.SOURCES + tlife2.SOURCES + tcity.SOURCES + tmore.SOURCES + tmore2.SOURCES + tmore3.SOURCES
-CLAIMS = tshop.CLAIMS + trec.CLAIMS + tlife.CLAIMS + tlife2.CLAIMS + tcity.CLAIMS + tmore.CLAIMS + tmore2.CLAIMS + tmore3.CLAIMS
+TOPICS = tshop.TOPICS + trec.TOPICS + tlife.TOPICS + tlife2.TOPICS + tcity.TOPICS + tmore.TOPICS + tmore2.TOPICS + tmore3.TOPICS + tmore4.TOPICS
+SOURCES = tshop.SOURCES + trec.SOURCES + tlife.SOURCES + tlife2.SOURCES + tcity.SOURCES + tmore.SOURCES + tmore2.SOURCES + tmore3.SOURCES + tmore4.SOURCES
+CLAIMS = tshop.CLAIMS + trec.CLAIMS + tlife.CLAIMS + tlife2.CLAIMS + tcity.CLAIMS + tmore.CLAIMS + tmore2.CLAIMS + tmore3.CLAIMS + tmore4.CLAIMS
 
 # 아직 쓰지 않은 주제(탐색 화면에서 활성 콘텐츠와 다른 모양으로 표시, R-Q16)
 PLANNED = [
@@ -50,7 +51,7 @@ FIELD_MAP = [
     {"id": "family", "label": "가족·주거·돌봄", "items": [("flow", "flow-family"), ("topic", "city-home"), ("topic", "life-alone"), ("topic", "family-care")], "planned": []},
     {"id": "work", "label": "일·학습·자기계발", "items": [("topic", "work-style"), ("topic", "work-learn"), ("flow", "flow-jobs")], "planned": ["성인 자격증·직무 교육"]},
     {"id": "industry", "label": "산업(한국 경제를 키운 개별 산업)", "items": [("industry", x) for x in ["steel", "shipbuilding", "automobile", "petrochem", "construction", "semiconductor", "textile", "display", "battery"]], "planned": ["기계·전자부품(후속)"]},
-    {"id": "money", "label": "돈·투자·금융 생활", "items": [("topic", "money-invest"), ("topic", "shop-pay")], "planned": ["저축·보험·연금", "대출과 집 마련 자금"]},
+    {"id": "money", "label": "돈·투자·금융 생활", "items": [("topic", "money-invest"), ("topic", "money-save"), ("topic", "money-home"), ("topic", "shop-pay")], "planned": ["보험"]},
     {"id": "society", "label": "경제 위기·정치", "items": [("flow", "flow-economy"), ("flow", "flow-politics")], "planned": []},
     {"id": "lifestyle", "label": "라이프스타일 — 시간·공간·관계·몸·주의력을 쓰는 방식", "items": [("topic", "life-rest"), ("topic", "life-health"), ("topic", "life-stuff"), ("topic", "life-nature"), ("topic", "life-record"), ("topic", "life-alone"), ("topic", "life-convenience")], "planned": []},
 ]
