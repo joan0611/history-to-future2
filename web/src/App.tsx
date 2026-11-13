@@ -9,6 +9,7 @@ import { CycleView } from './views/CycleView';
 import { FlowView } from './views/FlowView';
 import { NowView } from './views/NowView';
 import { TopicView } from './views/TopicView';
+import { AskView } from './views/AskView';
 import { WhyPanel } from './ui/WhyPanel';
 import { byId, eraOf } from './lib/data';
 
@@ -49,8 +50,12 @@ export function App() {
             </button>
           ))}
         </nav>
+        <form className="askbox" role="search" onSubmit={(e) => { e.preventDefault(); const q = String(new FormData(e.currentTarget).get('q') ?? '').trim(); if (q) nav({ tab: 'ask', q, why: undefined, path: [], flow: undefined, topic: undefined }); }}>
+          <input name="q" aria-label="질문하기" placeholder="궁금한 것을 물어보세요 (예: 물가와 실업률은 함께 움직였을까?)" />
+          <button type="submit">질문</button>
+        </form>
       </header>
-      {r.tab === 'now' || r.tab === 'taste' || r.tab === 'topic' || (r.tab === 'flow' && !r.flow) ? null : (
+      {r.tab === 'now' || r.tab === 'ask' || r.tab === 'taste' || r.tab === 'topic' || (r.tab === 'flow' && !r.flow) ? null : (
         <div className="sticky">
           <MasterTimeline r={r} nav={nav} />
           <p className="ctx">지금 보는 시점 <b>{eraOf(r.y).label} · {r.y}년</b>{sel && <> · 원인 탐색: <b>{sel.label}</b></>}</p>
@@ -63,6 +68,7 @@ export function App() {
         {r.tab === 'history' && <HistoryView r={r} nav={nav} why={why} />}
         {r.tab === 'flow' && (r.flow ? <FlowView r={r} nav={nav} why={why} /> : <TopicView r={{ ...r, topic: undefined }} nav={nav} />)}
         {r.tab === 'field' && <FieldView r={r} nav={nav} why={why} />}
+        {r.tab === 'ask' && <AskView key={r.q} r={r} nav={nav} />}
         {r.tab === 'cycle' && <CycleView r={r} nav={nav} why={why} />}
       </main>
       <InstallTip />

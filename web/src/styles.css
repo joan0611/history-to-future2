@@ -744,3 +744,25 @@ li.step[class*="ph-"] { background: none; }
 .fl-evidence > summary h2 { display: inline; }
 .fl-evidence > summary::before { content: '▸ '; }
 .fl-evidence[open] > summary::before { content: '▾ '; }
+
+/* 질문 분석 */
+.askbox { display: flex; gap: .4rem; margin-top: .5rem; }
+.askbox input { flex: 1; min-width: 0; padding: .45rem .6rem; border: 1px solid var(--line); border-radius: 8px; font: inherit; }
+.askbox button, .ak-form button { padding: .45rem .9rem; border-radius: 8px; border: 1px solid var(--line); background: var(--ink, #222); color: #fff; font: inherit; cursor: pointer; }
+.ak-form { display: flex; gap: .5rem; align-items: stretch; margin: .8rem 0; }
+.ak-form textarea { flex: 1; padding: .5rem .6rem; border: 1px solid var(--line); border-radius: 8px; font: inherit; }
+.ak-ex .chip { display: block; text-align: left; margin: .3rem 0; }
+.ak-trace { background: var(--bg-2, #f6f6f3); padding: .5rem .8rem; border-radius: 8px; margin: .6rem 0; }
+.ak-warn { padding: .6rem .8rem; border: 1px solid #c77; border-radius: 8px; background: #fff4f2; }
+.ak-sec h3 { margin: 1.1rem 0 .3rem; font-size: 1rem; }
+.ak-sec ul { margin: 0; padding-left: 1.1rem; }
+.ak-line { margin: .25rem 0; line-height: 1.55; }
+.ak-tag { display: inline-block; font-size: .75rem; padding: 0 .4rem; border-radius: 4px; border: 1px solid var(--line); margin-right: .2rem; white-space: nowrap; }
+.ak-fact .ak-tag { background: #e8f3ea; } .ak-observed .ak-tag { background: #e7eefb; } .ak-interpretation .ak-tag { background: #f3eee4; }
+.ak-inference .ak-tag { background: #f1e9f7; } .ak-hypothesis .ak-tag { background: #fde9cf; border-style: dashed; } .ak-scenario .ak-tag { background: #e5f4f4; } .ak-unknown .ak-tag { background: #eee; color: #555; }
+.ak-src { color: var(--ink-2); font-size: .85rem; }
+.ak-calcs { display: grid; gap: .6rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); margin: .3rem 0 .6rem; }
+.ak-calc { border-collapse: collapse; width: 100%; font-size: .88rem; }
+.ak-calc caption { text-align: left; font-weight: 600; padding-bottom: .2rem; }
+.ak-calc th, .ak-calc td { border-top: 1px solid var(--line); padding: .2rem .4rem; text-align: left; vertical-align: top; }
+.ak-calc th { color: var(--ink-2); font-weight: 400; width: 45%; }
