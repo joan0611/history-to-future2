@@ -103,6 +103,7 @@ with sync_playwright() as p:
     ok('정책 지표: 정부 최종 소비 지출(GDP 대비) 그래프', '정부' in pg.locator('main').inner_text() and pg.locator('main svg').count() >= 1)
     pg.goto(U + '#/topic/energy-power'); pg.wait_for_timeout(900)
     ok('지금 위치: 처음 › 주제 이야기 › 분야 › 주제', pg.locator('.where li').count() == 4 and '에너지' in pg.locator('.where').inner_text())
+    ok('미래 위험 칸: 가능성마다 손해를 보거나 부담이 커지는 쪽(지시서 10)', pg.locator('#tp-future .tp-risk').count() == 2)
     ok('미래 조건 비교하기: 신호 버튼, 아직 켠 신호 없음', pg.locator('#tp-future-cond .cond-sig').count() >= 4 and '켠 신호가 없습니다' in pg.locator('#tp-future-cond .cond-read').inner_text())
     pg.locator('#tp-future-cond .cond-col').nth(1).locator('.cond-sig.up').first.click(); pg.wait_for_timeout(300)
     ok('미래 조건 비교하기: 신호를 켜면 그 가능성 쪽 조건이 앞섬(확률 아님)', pg.locator('#tp-future-cond .cond-col.lead').count() == 1 and '재생에너지' in pg.locator('#tp-future-cond .cond-read').inner_text())
@@ -117,6 +118,7 @@ with sync_playwright() as p:
     ok('분야 A~J 10개 × 9단계 상태표, 부족한 분야는 ○로 표시', pg.locator('#spec-status tbody tr').count() == 10 and pg.locator('#spec-status thead th').count() == 11 and pg.locator('#spec-status td.spec-ok').count() + pg.locator('#spec-status td.spec-no').count() == 90 and pg.locator('#spec-cards .spec-card').count() == 10)
     pg.locator('#specd-C summary').click(); pg.wait_for_timeout(300)
     ok('분야 상세: 판정 근거와 구성원 바로가기', '통과' in pg.locator('#specd-C').inner_text() and pg.locator('#specd-C .chip').count() >= 2)
+    ok('분야 카드: 10개 분야 모두 9단계 통과', pg.locator('#spec-cards .spec-card.full').count() == 10)
     pg.locator('#spec-cards .spec-card').nth(3).click(); pg.wait_for_timeout(500)
     ok('분야 카드: 누르면 그 분야 상세가 열림', pg.evaluate("document.getElementById('specd-D').open"))
     # 분야를 넘는 구조(T2-2): 공통 원인·피드백 자동 계산

@@ -259,7 +259,7 @@ export interface TWorld { what: TLine; route: TLine; response: TLine; result: TL
 export interface TTurn { id: string; years: string; start: number; end: number; title: string; why: TLine; before: TLine[]; condition: TLine[]; response: TLine[]; change: TLine[]; legacy: TLine[]; world?: TWorld; gap?: string; events?: EvRef[] }
 export interface TLane { label: string; start: number; end: number | null; state: string; note: TLine }
 export interface TReason { title: string; facts: TLine[]; logic: TLine; proposal: TLine; rivals: TLine[]; scope: TLine; check: TLine[] }
-export interface TFuture { kind: string; name: string; change: TLine; basis: TLine[]; logic: TLine; conditions: TLine; demand: TLine; watch: string[]; against: string[]; horizon?: string }
+export interface TFuture { kind: string; name: string; change: TLine; basis: TLine[]; logic: TLine; conditions: TLine; demand: TLine; watch: string[]; against: string[]; horizon?: string; risk?: TLine }
 export interface TRepeat { type: string; title: string; past: TLine; now: TLine; alike: TLine; changed: TLine; alternatives: TLine[]; counter: TLine[]; at: string[]; interval?: string }
 export interface TLink { kind: 'topic' | 'flow' | 'industry'; target: string; at: string; why: string }
 export interface Topic {

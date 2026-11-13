@@ -263,7 +263,7 @@ STUFF = {
              change=[INF("물건을 '살 때부터 되팔 것'을 생각하는 소비가 생겼다.", "ts-x-resell")],
              legacy=[INF("되팔기가 쉬워지자 사는 부담이 줄었지만, 물가가 오르자 아예 덜 사는 움직임도 생겼다.", "tl-nospend")]),
         TURN("t4", "2022~2024", 2022, "덜 사기 — 무지출 챌린지",
-             why=F("2022년 6월 물가 6.0% 속에 무지출 챌린지가 퍼졌다.", "tl-nospend"),
+             why=F("2022년 6월 물가 6.0% 속에 무지출 챌린지가 퍼졌다.", "tl-nospend", "tl-nospend-c"),
              before=[INF("되팔기를 전제로 한 소비.", "ts-x-resell")],
              condition=[F("고물가.", "c20-kr-cpi")],
              response=[F("거지방에서 소비를 공개하고 서로 절약을 독려했다(2023).", "tl-geojibang")],

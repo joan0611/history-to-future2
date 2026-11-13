@@ -261,7 +261,7 @@ export function ask(q: string): Answer {
     if (intents.includes('반복')) for (const rp of t.repeats ?? []) { support.push(tl(rp.alike, go)); against.push(...rp.counter.map((l) => tl(l, go))); }
     if (intents.includes('미래') || intents.includes('반사실')) {
       expl.push({ ...tl(t.futures.split, go), layer: 'scenario' });
-      for (const f of t.futures.items) expl.push({ layer: 'scenario', text: `${f.kind} — ${f.name}: ${f.change.text} 볼 지표: ${f.watch.join(', ')}. 약해지는 조건: ${f.against.join(', ')}.`, ids: f.change.ids, go });
+      for (const f of t.futures.items) expl.push({ layer: 'scenario', text: `${f.kind} — ${f.name}: ${f.change.text} 볼 지표: ${f.watch.join(', ')}. 약해지는 조건: ${f.against.join(', ')}.${f.risk ? ` 위험: ${f.risk.text}` : ''}`, ids: f.change.ids, go });
     }
     if (t.conclusion.undecided) limits.push({ ...tl(t.conclusion.undecided, go), layer: 'unknown' });
     for (const l of (t.links ?? []).slice(0, 2)) next.push({ layer: 'inference', text: `${l.why}`, ids: [], go: l.kind === 'topic' ? `#/topic/${l.target}` : undefined });

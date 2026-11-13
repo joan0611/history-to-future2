@@ -849,3 +849,4 @@ td.spec-ok { color: var(--ink); } td.spec-no { color: var(--ink-2); }
 .lyr-key .lyr-k { font-weight: 700; color: var(--ink-2); margin-right: .2rem; } .lyr-key .lyr-k i { font-style: normal; font-weight: 500; color: var(--ink-3); margin-left: .2rem; font-size: .75rem; }
 .lyr-key .lyr { font-size: .74rem; padding: .12rem .45rem; }
 .where { max-width: 1360px; padding: 0 clamp(1rem, 3vw, 2rem); }
+.tp-risk th { color: var(--warn); } .tp-risk td { background: color-mix(in srgb, var(--warn) 6%, transparent); }

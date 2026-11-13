@@ -14,6 +14,7 @@ import topics_more3 as tmore3
 import topics_more4 as tmore4
 import topics_more5 as tmore5
 import topics_more6 as tmore6
+import claims_verified2 as cv2
 import topics_city as tcity
 from topic_helpers import LAYERS, MODES, FUTURE_KINDS
 
@@ -24,8 +25,8 @@ DOMAINS = [
 ] + tmore.DOMAINS + tmore2.DOMAINS + tmore5.DOMAINS + tmore6.DOMAINS
 
 TOPICS = tshop.TOPICS + trec.TOPICS + tlife.TOPICS + tlife2.TOPICS + tcity.TOPICS + tmore.TOPICS + tmore2.TOPICS + tmore3.TOPICS + tmore4.TOPICS + tmore5.TOPICS + tmore6.TOPICS
-SOURCES = tshop.SOURCES + trec.SOURCES + tlife.SOURCES + tlife2.SOURCES + tcity.SOURCES + tmore.SOURCES + tmore2.SOURCES + tmore3.SOURCES + tmore4.SOURCES + tmore5.SOURCES + tmore6.SOURCES
-CLAIMS = tshop.CLAIMS + trec.CLAIMS + tlife.CLAIMS + tlife2.CLAIMS + tcity.CLAIMS + tmore.CLAIMS + tmore2.CLAIMS + tmore3.CLAIMS + tmore4.CLAIMS + tmore5.CLAIMS + tmore6.CLAIMS
+SOURCES = tshop.SOURCES + trec.SOURCES + tlife.SOURCES + tlife2.SOURCES + tcity.SOURCES + tmore.SOURCES + tmore2.SOURCES + tmore3.SOURCES + tmore4.SOURCES + tmore5.SOURCES + tmore6.SOURCES + cv2.SOURCES
+CLAIMS = tshop.CLAIMS + trec.CLAIMS + tlife.CLAIMS + tlife2.CLAIMS + tcity.CLAIMS + tmore.CLAIMS + tmore2.CLAIMS + tmore3.CLAIMS + tmore4.CLAIMS + tmore5.CLAIMS + tmore6.CLAIMS + cv2.CLAIMS
 
 # 아직 쓰지 않은 주제(탐색 화면에서 활성 콘텐츠와 다른 모양으로 표시, R-Q16)
 PLANNED = [

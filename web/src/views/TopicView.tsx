@@ -321,7 +321,8 @@ export function FuturesView({ id, f, title = '앞으로 가능한 방향' }: { i
               <tr><th>근거</th><td><Lines xs={x.basis} /></td></tr>
               <tr><th>연결 논리</th><td><SLineView x={x.logic} /></td></tr>
               <tr><th>성립 조건</th><td><SLineView x={x.conditions} as="scenario" /></td></tr>
-              <tr><th>필요해질 상품·서비스</th><td><SLineView x={x.demand} /></td></tr>
+              <tr><th>필요해질 상품·서비스(기회)</th><td><SLineView x={x.demand} /></td></tr>
+              {x.risk && <tr className="tp-risk"><th>위험 — 손해를 보거나 부담이 커지는 쪽</th><td><SLineView x={x.risk} as="scenario" /></td></tr>}
               <tr><th>볼 신호</th><td><ul>{x.watch.map((w) => <li key={w}>{w}</li>)}</ul></td></tr>
               <tr><th>판단을 바꿀 신호</th><td><ul>{x.against.map((w) => <li key={w}>{w}</li>)}</ul></td></tr>
               {x.horizon && <tr><th>시간 범위</th><td>{x.horizon}</td></tr>}

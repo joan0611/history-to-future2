@@ -86,13 +86,16 @@ def REASON(title, facts, logic, proposal, rivals, scope, check):
 FUTURE_KINDS = ("계속", "반작용", "결합", "분화", "경로 변경")
 
 
-def FUT(kind, name, change, basis, logic, conditions, demand, watch, against, horizon=None):
-    """미래 가능성 7항목(R-Q12, R-FU1). horizon은 근거가 있을 때만."""
+def FUT(kind, name, change, basis, logic, conditions, demand, watch, against, horizon=None, risk=None):
+    """미래 가능성 7항목(R-Q12, R-FU1). horizon은 근거가 있을 때만.
+    risk(지시서 10: 시나리오별 위험) — 이 가능성이 현실이 되면 손해를 보거나 부담이 커지는 쪽. 근거 문장 id를 단 INF로."""
     assert kind in FUTURE_KINDS
     d = {"kind": kind, "name": name, "change": change, "basis": basis, "logic": logic, "conditions": conditions,
          "demand": demand, "watch": watch, "against": against}
     if horizon:
         d["horizon"] = horizon
+    if risk:
+        d["risk"] = risk
     return d
 
 

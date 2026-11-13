@@ -18108,13 +18108,12 @@
   },
   {
    "id": "tp-if-live",
-   "text": "라이브커머스(실시간 방송으로 파는 쇼핑)는 중국에서 먼저 퍼졌고, 국내에서는 코로나19가 확산한 2020년이 원년으로 꼽힌다. 2020년 시장 규모는 출처마다 크게 달라 교보증권은 약 4천억 원, 한국인터넷진흥원은 약 3조 원으로 추산했다. 한국인터넷진흥원은 2023년 약 10조 원으로 추산했다.",
+   "text": "라이브커머스(실시간 방송으로 파는 쇼핑)는 중국에서 먼저 퍼졌고, 국내에서는 코로나19가 확산한 2020년이 원년으로 꼽힌다. 2020년 시장 규모는 출처마다 크게 달라 교보증권은 약 4천억 원, 이베스트투자증권은 약 3조 원으로 추산했다. 2023년 전망도 교보증권은 10조 원대, 이베스트투자증권은 약 8조 원으로 달랐다.",
    "claimType": "fact",
    "status": "sourced",
    "sourceIds": [
     "tp-ditoday-live",
-    "tp-bizhankook-22310",
-    "tp-daum-live"
+    "tp-bizhankook-22310"
    ],
    "domains": [
     "consumption"
@@ -18125,7 +18124,7 @@
    "aiSynthesized": false,
    "period": "2020~2023",
    "scope": "시장 규모는 추정치, 출처 간 차이 큼",
-   "independentSources": 3
+   "independentSources": 2
   },
   {
    "id": "tp-if-age",
@@ -22388,6 +22387,141 @@
    "aiSynthesized": false,
    "period": "2012~2023",
    "independentSources": 1
+  },
+  {
+   "id": "tl2-unmanned-c",
+   "text": "편의점 무인 점포가 늘어난 배경으로 업계와 보도는 코로나19와 최저임금 인상(인건비 부담)을 꼽았다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "tl2-s-dailian-unmanned",
+    "tl2-s-bizwatch-unmanned"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2020~2025",
+   "independentSources": 2
+  },
+  {
+   "id": "tv-g-jn-c",
+   "text": "중고나라는 2003년 12월 네이버 카페로 시작한 중고거래 커뮤니티다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "tv-s-sidae-jn13",
+    "tv-s-zdnet-jn"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2003",
+   "independentSources": 2
+  },
+  {
+   "id": "tp-if-live-c",
+   "text": "2020년 코로나19로 비대면 쇼핑이 늘면서 국내 라이브커머스가 빠르게 커졌고, 네이버·카카오 같은 플랫폼이 잇따라 뛰어들었다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "tp-bizhankook-22310",
+    "tp-newdaily-201028"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2020",
+   "independentSources": 2
+  },
+  {
+   "id": "tm-travel-fit-c",
+   "text": "2025~2026년 보도들은 해외여행에서 개별 자유여행을 고르는 사람이 늘고 있다고 전했다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "tm-s-news1-pkg",
+    "tm-s-hk-fit26b"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2025~2026",
+   "independentSources": 2
+  },
+  {
+   "id": "tq-road-c",
+   "text": "화장품 로드숍은 2000년 설립된 미샤가 '3,300원' 저가 제품으로 소비자를 끌어모으며 시작됐고, 2003년 더페이스샵, 2004년 스킨푸드가 뒤따랐다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "tq-s-bizwatch-road",
+    "tq-s-newsis-missha",
+    "tq-s-seoul-tfs05",
+    "tq-s-khanw-road18"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2000~2004",
+   "independentSources": 4
+  },
+  {
+   "id": "tp-pay-bnpl21-c",
+   "text": "2021년 네이버는 쇼핑 결제수단으로, 카카오는 교통 결제에 한해 소액 후불결제(먼저 사고 나중에 내는 결제)를 시작했다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "tp-econ-210814",
+    "tp-sbsbiz-bnpl"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2021",
+   "independentSources": 2
+  },
+  {
+   "id": "tl-nospend-c",
+   "text": "2022년 고물가 속에 하루 지출 0원을 목표로 소비를 줄이는 '무지출 챌린지'가 SNS를 중심으로 퍼졌다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "tl-s-econ-nospend",
+    "tl-s-fn-nospend"
+   ],
+   "domains": [
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2022",
+   "independentSources": 2
   }
  ],
  "sources": [
@@ -33022,6 +33156,69 @@
    "sourceType": "news",
    "accessedDate": "2026-11-12",
    "publishedDate": "2024-04-08"
+  },
+  {
+   "id": "tv-s-zdnet-jn",
+   "title": "중고나라, 카페에서 웹·앱 플랫폼으로",
+   "publisher": "지디넷코리아",
+   "url": "https://zdnet.co.kr/view/?no=20200413180108",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2020-04-13"
+  },
+  {
+   "id": "tp-newdaily-201028",
+   "title": "배민, 3조원 라이브커머스 시장 진출 박차",
+   "publisher": "뉴데일리경제",
+   "url": "https://biz.newdaily.co.kr/site/data/html/2020/10/28/2020102800167.amp.html",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2020-10-28"
+  },
+  {
+   "id": "tq-s-newsis-missha",
+   "title": "[장수브랜드 탄생비화] 3300원 화장품 '미샤', K뷰티 아이콘 되기까지",
+   "publisher": "뉴시스",
+   "url": "https://mobile.newsis.com/view/NISX20230120_0002166698",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2023-01-20"
+  },
+  {
+   "id": "tq-s-seoul-tfs05",
+   "title": "중저가 화장품 브랜드숍 — 미샤·코스메틱넷·더페이스숍",
+   "publisher": "서울신문",
+   "url": "https://go.seoul.co.kr/news/newsView.php?id=20050624216001",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2005-06-24"
+  },
+  {
+   "id": "tq-s-khanw-road18",
+   "title": "로드숍 화장품업계 '봄날'은 갔나",
+   "publisher": "주간경향",
+   "url": "https://weekly.khan.co.kr/article/201807101337541",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2018-07-10"
+  },
+  {
+   "id": "tp-sbsbiz-bnpl",
+   "title": "신사업 꼽히던 '선구매 후결제'…카드사 떠나고 빅테크만 남았다",
+   "publisher": "SBS Biz",
+   "url": "https://biz.sbs.co.kr/amp/article/20000128524",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2023"
+  },
+  {
+   "id": "tl-s-fn-nospend",
+   "title": "무지출 챌린지 직접 해보니",
+   "publisher": "파이낸셜뉴스",
+   "url": "https://www.fnnews.com/news/202208141040394243",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2022-08-14"
   }
  ],
  "events": [
@@ -94466,7 +94663,8 @@
         "layer": "fact",
         "text": "네이버·쿠팡·카카오가 2021년 후불결제 시범 서비스를 냈다.",
         "ids": [
-         "tp-pay-bnpl21"
+         "tp-pay-bnpl21",
+         "tp-pay-bnpl21-c"
         ]
        }
       ],
@@ -95228,9 +95426,10 @@
        },
        {
         "layer": "fact",
-        "text": "중고나라 카페 회원은 2013년 5월 1074만명, 2017년 2000만명이었다.",
+        "text": "2003년 12월 네이버 카페로 시작한 중고나라 회원은 2013년 5월 1074만명, 2017년 2000만명이었다.",
         "ids": [
-         "tv-g-jn"
+         "tv-g-jn",
+         "tv-g-jn-c"
         ]
        },
        {
@@ -97499,16 +97698,16 @@
       "response": [
        {
         "layer": "fact",
-        "text": "네이버·카카오 등이 라이브 쇼핑을 열었다.",
+        "text": "코로나19로 비대면 쇼핑이 늘던 2020년 네이버·카카오 등이 라이브 쇼핑에 뛰어들었다.",
         "ids": [
-         "tp-if-live"
+         "tp-if-live-c"
         ]
        }
       ],
       "change": [
        {
         "layer": "fact",
-        "text": "시장 규모는 2023년 약 10조 원으로 추산됐지만, 2020년 규모는 출처에 따라 4천억~3조 원으로 크게 달랐다.",
+        "text": "2020년 규모는 출처에 따라 4천억~3조 원, 2023년 전망은 8조~10조 원대로 크게 달랐다.",
         "ids": [
          "tp-if-live"
         ]
@@ -100811,7 +101010,8 @@
        "layer": "fact",
        "text": "2022년 6월 물가 6.0% 속에 무지출 챌린지가 퍼졌다.",
        "ids": [
-        "tl-nospend"
+        "tl-nospend",
+        "tl-nospend-c"
        ]
       },
       "before": [
@@ -102633,7 +102833,8 @@
         "layer": "fact",
         "text": "업계는 코로나19·주52시간·최저임금 인상을 무인화 배경으로 들었다.",
         "ids": [
-         "tl2-unmanned"
+         "tl2-unmanned",
+         "tl2-unmanned-c"
         ]
        },
        {
@@ -106117,6 +106318,13 @@
         "ids": [
          "tm-travel-pkg"
         ]
+       },
+       {
+        "layer": "fact",
+        "text": "보도들은 개별 자유여행을 고르는 사람이 늘고 있다고 전했다.",
+        "ids": [
+         "tm-travel-fit-c"
+        ]
        }
       ],
       "events": []
@@ -108464,7 +108672,8 @@
        "layer": "fact",
        "text": "2000년 설립된 미샤가 '3,300원 제품'으로 시장을 파고들었다.",
        "ids": [
-        "tq-road"
+        "tq-road",
+        "tq-road-c"
        ]
       },
       "before": [
@@ -108481,7 +108690,8 @@
         "layer": "fact",
         "text": "2003년 더페이스샵, 2004년 스킨푸드가 비슷한 방식으로 뒤따랐다.",
         "ids": [
-         "tq-road"
+         "tq-road",
+         "tq-road-c"
         ]
        }
       ],
@@ -118982,7 +119192,15 @@
        ],
        "against": [
         "재생에너지 설치가 크게 빨라지면 약화"
-       ]
+       ],
+       "risk": {
+        "layer": "inference",
+        "text": "석탄이 천천히 줄면 탄소 배출 감축이 늦어지고, 연료 대부분을 수입하는 구조라 국제 연료값이 오르면 전기요금 부담이 커진다.",
+        "ids": [
+         "tw-en-mix",
+         "tw-en-imp"
+        ]
+       }
       },
       {
        "kind": "경로 변경",
@@ -119031,7 +119249,15 @@
        ],
        "against": [
         "송전망·입지 갈등으로 설치가 정체되면 약화"
-       ]
+       ],
+       "risk": {
+        "layer": "inference",
+        "text": "설치 속도를 송전망이 따라가지 못하면 전력 공급이 불안해지고, 원전·석탄 발전 지역의 일자리와 지역 경제가 타격을 받는다.",
+        "ids": [
+         "tw-en-mix",
+         "tw-en-stop"
+        ]
+       }
       }
      ]
     },
@@ -119550,7 +119776,15 @@
        ],
        "against": [
         "재정 건전성을 이유로 지출을 크게 줄이면 약화"
-       ]
+       ],
+       "risk": {
+        "layer": "inference",
+        "text": "보험료율 인상을 계속 미루면 늘어난 비용이 다음 세대의 보험료·세금으로 넘어간다.",
+        "ids": [
+         "tw-wf-rate",
+         "tw-wf-govc"
+        ]
+       }
       },
       {
        "kind": "분화",
@@ -119598,7 +119832,14 @@
        ],
        "against": [
         "보편 수당이 크게 늘면 약화"
-       ]
+       ],
+       "risk": {
+        "layer": "inference",
+        "text": "선별 기준선 바로 위에 있는 가구가 보장에서 빠지고, 소득·자산 조사가 까다로워져 받을 자격이 있어도 신청하지 못하는 사람이 생길 수 있다.",
+        "ids": [
+         "tw-wf-blsa"
+        ]
+       }
       }
      ]
     },
@@ -120114,7 +120355,15 @@
        ],
        "against": [
         "주요국이 기존 FTA를 재협상·중단하면 약화"
-       ]
+       ],
+       "risk": {
+        "layer": "inference",
+        "text": "시장을 열 때마다 농업 같은 개방 피해 산업의 반발과 보상 비용이 되풀이된다.",
+        "ids": [
+         "tw-tr-chile",
+         "tw-tr-wto"
+        ]
+       }
       },
       {
        "kind": "경로 변경",
@@ -120162,7 +120411,14 @@
        ],
        "against": [
         "다자 협상이 다시 힘을 얻으면 약화"
-       ]
+       ],
+       "risk": {
+        "layer": "inference",
+        "text": "두 큰 시장 사이에서 한쪽을 고르라는 압박을 받고, 관세 혜택만 믿고 짠 수출 계획이 흔들릴 수 있다.",
+        "ids": [
+         "tw-tr-20y"
+        ]
+       }
       }
      ]
     },
@@ -149209,8 +149465,8 @@
      "events": 79
     },
     "counts": {
-     "claims": 199,
-     "verified": 63,
+     "claims": 200,
+     "verified": 64,
      "edges": 110,
      "evidencedEdges": 51,
      "indicators": 8,
@@ -149225,12 +149481,12 @@
      {
       "name": "데이터 확보",
       "ok": true,
-      "basis": "연도별 지표 8개, 관련 근거 문장 199개"
+      "basis": "연도별 지표 8개, 관련 근거 문장 200개"
      },
      {
       "name": "출처 검증",
       "ok": true,
-      "basis": "두 곳 이상 확인 63/199문장(32%) — 15% 이상이면 통과"
+      "basis": "두 곳 이상 확인 64/200문장(32%) — 15% 이상이면 통과"
      },
      {
       "name": "기본 분석 완료",
@@ -149492,7 +149748,7 @@
     },
     "counts": {
      "claims": 146,
-     "verified": 22,
+     "verified": 23,
      "edges": 31,
      "evidencedEdges": 11,
      "indicators": 3,
@@ -149512,7 +149768,7 @@
      {
       "name": "출처 검증",
       "ok": true,
-      "basis": "두 곳 이상 확인 22/146문장(15%) — 15% 이상이면 통과"
+      "basis": "두 곳 이상 확인 23/146문장(16%) — 15% 이상이면 통과"
      },
      {
       "name": "기본 분석 완료",
@@ -149584,8 +149840,8 @@
      "events": 15
     },
     "counts": {
-     "claims": 86,
-     "verified": 13,
+     "claims": 87,
+     "verified": 14,
      "edges": 19,
      "evidencedEdges": 6,
      "indicators": 9,
@@ -149600,12 +149856,12 @@
      {
       "name": "데이터 확보",
       "ok": true,
-      "basis": "연도별 지표 9개, 관련 근거 문장 86개"
+      "basis": "연도별 지표 9개, 관련 근거 문장 87개"
      },
      {
       "name": "출처 검증",
       "ok": true,
-      "basis": "두 곳 이상 확인 13/86문장(15%) — 15% 이상이면 통과"
+      "basis": "두 곳 이상 확인 14/87문장(16%) — 15% 이상이면 통과"
      },
      {
       "name": "기본 분석 완료",
@@ -149962,8 +150218,8 @@
      "events": 20
     },
     "counts": {
-     "claims": 193,
-     "verified": 23,
+     "claims": 200,
+     "verified": 30,
      "edges": 24,
      "evidencedEdges": 11,
      "indicators": 7,
@@ -149978,12 +150234,12 @@
      {
       "name": "데이터 확보",
       "ok": true,
-      "basis": "연도별 지표 7개, 관련 근거 문장 193개"
+      "basis": "연도별 지표 7개, 관련 근거 문장 200개"
      },
      {
       "name": "출처 검증",
-      "ok": false,
-      "basis": "두 곳 이상 확인 23/193문장(12%) — 15% 이상이면 통과"
+      "ok": true,
+      "basis": "두 곳 이상 확인 30/200문장(15%) — 15% 이상이면 통과"
      },
      {
       "name": "기본 분석 완료",
@@ -150016,11 +150272,9 @@
       "basis": "자동 화면 테스트가 다루는 구성원 25개"
      }
     ],
-    "level": 2,
-    "passed": 8,
-    "gaps": [
-     "출처 검증: 두 곳 이상 확인 23/193문장(12%) — 15% 이상이면 통과"
-    ]
+    "level": 9,
+    "passed": 9,
+    "gaps": []
    },
    {
     "id": "J",
