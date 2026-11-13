@@ -850,3 +850,5 @@ td.spec-ok { color: var(--ink); } td.spec-no { color: var(--ink-2); }
 .lyr-key .lyr { font-size: .74rem; padding: .12rem .45rem; }
 .where { max-width: 1360px; padding: 0 clamp(1rem, 3vw, 2rem); }
 .tp-risk th { color: var(--warn); } .tp-risk td { background: color-mix(in srgb, var(--warn) 6%, transparent); }
+.tp-term { display: inline-block; margin-left: .4rem; font-size: .7rem; font-weight: 700; border-radius: 999px; padding: .08rem .5rem; vertical-align: .15em; }
+.tp-term.long { background: #e6eefc; color: #2c4f96; } .tp-term.short { background: #fdf0dc; color: #8a5a10; border: 1px dashed #d9a85a; }

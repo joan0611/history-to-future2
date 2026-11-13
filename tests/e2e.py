@@ -106,6 +106,7 @@ with sync_playwright() as p:
     ok('미래 위험 칸: 가능성마다 손해를 보거나 부담이 커지는 쪽(지시서 10)', pg.locator('#tp-future .tp-risk').count() == 2)
     pg.goto(U + '#/field/industry?ind=steel'); pg.wait_for_timeout(900)
     ok('미래 위험 칸: 산업 일대기(철강)에도 위험', pg.locator('#il-future .tp-risk').count() >= 2)
+    ok('장기 구조·단기 현상 구분: 미래마다 표시(지시서 10)', pg.locator('#il-future .tp-fut .tp-term').count() == pg.locator('#il-future .tp-fut').count() >= 2)
     pg.goto(U + '#/flow/flow-economy'); pg.wait_for_timeout(900)
     ok('미래 위험 칸: 시대 흐름(경제 위기)에도 위험', pg.locator('#fl-future .tp-risk').count() >= 2)
     pg.goto(U + '#/topic/energy-power'); pg.wait_for_timeout(900)

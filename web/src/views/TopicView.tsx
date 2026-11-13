@@ -311,11 +311,12 @@ export function FuturesView({ id, f, title = '앞으로 가능한 방향' }: { i
     <section className="panel" id={id}>
       <h2>{title}</h2>
       <div className="tp-split"><b>왜 방향이 갈라지나</b> <SLineView x={f.split} as="scenario" /></div>
+      <p className="muted small"><span className="tp-term long">장기 구조</span> 쉽게 되돌아가지 않는 변화(인구·기술·제도) · <span className="tp-term short">단기 현상</span> 조건이 바뀌면 되돌아갈 수 있는 변화(물가·유행·규제 결정) — 이 구분은 AI 판단입니다.</p>
       <p className="muted small">확률은 붙이지 않았습니다. 시점도 근거가 있을 때만 적었습니다. 각 가능성마다 무엇을 보면 판단을 고쳐야 하는지 함께 적었습니다.</p>
       <div className="tp-futs">
         {f.items.map((x) => (
           <article key={x.name} className="tp-fut">
-            <h3><span className="tp-kind">{x.kind}</span> {x.name}</h3>
+            <h3><span className="tp-kind">{x.kind}</span> {x.name}{x.term && <span className={`tp-term ${x.term === '장기 구조' ? 'long' : 'short'}`} title={x.term === '장기 구조' ? '인구·기술·제도·산업 구조처럼 쉽게 되돌아가지 않는 변화(AI 판단)' : '물가·금리·유행·개별 규제 결정처럼 조건이 바뀌면 되돌아갈 수 있는 변화(AI 판단)'}>{x.term}</span>}</h3>
             <table className="tp-cmp"><tbody>
               <tr><th>예상 변화</th><td><SLineView x={x.change} as="scenario" /></td></tr>
               <tr><th>근거</th><td><Lines xs={x.basis} /></td></tr>
