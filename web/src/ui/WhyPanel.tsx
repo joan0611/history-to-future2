@@ -60,6 +60,8 @@ export function WhyPanel({ r, nav }: { r: Route; nav: (p: Partial<Route>) => voi
           <div className="eyebrow"><span className={`cdot c-${n.lane}`} />{CAT_KO[n.lane]} · {D.typeKo[n.nodeType] ?? '현상'} · {n.yearPrecision === 'era' ? `${n.eraId.replace('s', '년대')}(연도 불명확)` : n.year < 1960 ? `${n.year} — 1960년 이전 배경` : `${n.year}년`}</div>
           <h2>{n.label}</h2>
           <p className="why-lead">{lead(n, 220)}</p>
+          {(D.eventUses[n.id] ?? []).length > 0 && <p className="small why-uses"><b>이 사건이 나오는 이야기</b> {(D.eventUses[n.id] ?? []).slice(0, 6).map((u) => <a key={u.kind + u.id + u.turn} className="chip" href={u.kind === 'topic' ? `#/topic/${u.id}` : `#/field/industry?ind=${u.id}`}>{u.label} · {u.at}</a>)}</p>}
+          <p className="small"><a className="ak-ask" href={`#/ask?q=${encodeURIComponent(`${n.label}${n.year >= 1900 ? ` (${n.year}년)` : ""}은 왜 일어났고 무엇을 바꿨을까?`)}`}>이 사건에 대해 질문 분석하기</a></p>
           <p className="meta">{n.countries.map((c) => COUNTRY_KO[c] ?? c).join(' · ') || '국가 정보 없음'} · 근거 문장 {ev.total}개: {STATUS_SHORT.verified} {ev.verified} · {STATUS_SHORT.sourced} {ev.sourced}{ev.missing ? ` · ${STATUS_SHORT.needs_source} ${ev.missing}` : ''}</p>
           <p className="meta small">문장의 확인 수준과 원인·결과 연결의 성격은 따로 표시합니다. 제목은 요약이며, 근거는 아래 문장 단위로 확인하세요.</p>
           {stories.length > 0 && (
@@ -91,6 +93,7 @@ export function WhyPanel({ r, nav }: { r: Route; nav: (p: Partial<Route>) => voi
           <section className="why-rel" aria-live="polite">
             <h3>{byId[sel.from]?.label} → {byId[sel.to]?.label}</h3>
             <p><RelTag e={sel} /> <span className="muted">{LINK_HELP[linkKindOf(sel)]}</span></p>
+            {sel.kind7 && <p className="small why-k7"><b>관계 유형</b> {sel.kind7}{sel.lag != null && ` · 시차 ${sel.lag}년`}</p>}
             {sel.note && <p><b>작동 원리</b> {sel.note}</p>}
             <Claims ids={sel.claimIds} />
           </section>

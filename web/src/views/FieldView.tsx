@@ -151,6 +151,7 @@ function NumericMain({ ind, inds, r, nav }: { ind: Indicator; inds: Indicator[];
         </div>
       )}
       <p className="lead"><b>{ind.title}</b> ({ind.unit}) — {ind.description}</p>
+      {!ind.multi && <p className="small fv-test"><a className="ak-ask" href={`#/ask?ta=${ind.id}&tb=${ind.id === "gdp-growth" ? "cpi-kr" : "gdp-growth"}`}>이 지표를 다른 지표와 검정하기</a></p>}
       {a && a.verdict !== 'insufficient' && (
         <p className="auto">자동 분석: {a.verdict === 'E' ? '장기 구조 변화(주기 아님)' : a.verdict === 'A' ? '통계적 주기 후보' : a.verdict === 'weak' ? '주기 후보이지만 판정 보류' : '일정한 주기 없음'} — {a.why}.
           {a.changePoint && ` 평균이 바뀐 해: ${a.changePoint.year}년(${a.changePoint.before}→${a.changePoint.after}${ind.unit}).`}</p>

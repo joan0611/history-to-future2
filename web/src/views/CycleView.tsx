@@ -93,7 +93,26 @@ export function CycleView({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) 
         <p className="small muted">고친 점(2026-11-12): 이전에는 자료 순서를 무작위로 섞은 대조를 써서, 서서히 움직이는 수준 지표(예: 1975~2025 실질 주택가격 지수)가 p≈0으로 나오는데도 ‘우연 범위’라고 적히는 모순이 있었습니다. 대조를 적색잡음으로 바꾸고, 판정과 설명 문구가 어긋나지 않는지 자동 검사를 추가했습니다.</p>
         </details>
       </section>
+      <CrossStructures why={why} />
     </div>
+  );
+}
+
+/** 분야를 넘는 구조(지시서 7장·8-E): 원인 지도 연결에서 빌드 때 계산한 공통 원인·피드백. 새 연결을 만들지 않는다. */
+function CrossStructures({ why }: { why: (id: string) => void }) {
+  const G = (D as unknown as { graphX: { commonCauses: { cause: string; label: string; year: number; lanes: string[]; effects: { id: string; label: string; year: number; lane: string }[] }[]; feedbacks: { loop: string[]; labels: string[] }[]; kind7Counts: Record<string, number> } }).graphX;
+  if (!G) return null;
+  const LANE: Record<string, string> = { economy: '경제', industry: '산업', society: '사회', politics: '정치', culture: '문화', flow: '흐름' };
+  return (
+    <section className="panel" id="cyc-cross">
+      <h2>분야를 넘는 구조 <span className="sub">원인 지도의 연결에서 자동 계산 — 공통 원인에 의한 동시 변화 · 서로 되먹이는 고리</span></h2>
+      <p className="small muted">계산 규칙: 한 사건에서 2년 안에 서로 다른 분야의 사건 둘 이상으로 이어진 경우를 '공통 원인 후보'로, A→B와 B→A(또는 세 사건의 고리)가 함께 있는 경우를 '피드백'으로 셉니다. 연결 자체의 근거 수준은 사건 상세에서 확인하세요. 관계 유형 분포: {Object.entries(G.kind7Counts).map(([k, v]) => `${k} ${v}`).join(' · ')}</p>
+      <h3>공통 원인 후보 {G.commonCauses.length}개</h3>
+      <ul className="cyc-common">{G.commonCauses.map((c) => (
+        <li key={c.cause}><button className="link" onClick={() => why(c.cause)}>{c.label} ({c.year})</button> → {c.effects.map((e, k) => <span key={e.id}>{k ? ', ' : ''}<button className="link" onClick={() => why(e.id)}>{e.label}</button> <span className="muted">[{LANE[e.lane] ?? e.lane} {e.year}]</span></span>)}</li>))}</ul>
+      <h3>피드백 고리 {G.feedbacks.length}개</h3>
+      <ul className="cyc-fb">{G.feedbacks.map((f) => <li key={f.loop.join()}>{f.labels.join(' ⇄ ')}</li>)}</ul>
+    </section>
   );
 }
 

@@ -73,3 +73,6 @@ export function useRoute(): [Route, (patch: Partial<Route>) => void] {
   const r = parse(h);
   return [r, (patch) => { location.hash = hashOf({ ...r, ...patch }); }];
 }
+
+/** 어느 화면에서든 원인 지도의 사건 상세를 연다(현재 위치는 그대로 두고 why만 붙임). */
+export function openWhy(id: string) { location.hash = hashOf({ ...parse(location.hash), why: id, path: [id], rel: undefined }); }

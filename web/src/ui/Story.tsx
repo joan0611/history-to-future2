@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { D, flowById, type SLine, type StepNote } from '../lib/data';
-import type { Route } from '../lib/route';
+import { D, flowById, type EvRef, type SLine, type StepNote } from '../lib/data';
+import { openWhy, type Route } from '../lib/route';
 import { Claims } from './WhyPanel';
 
 /** 흐름 이야기(11개 질문)와 단계 풀이(그때 분위기 → 이어진 변화) — 시대별 흐름과 취향 흐름이 같이 쓴다. */
@@ -10,15 +10,25 @@ const HELP: Record<string, string> = {
   inference: 'AI 종합 추론 — 이 사이트가 사실을 이어 붙인 설명(출처의 주장이 아님)', hypothesis: '탐색·전망 가설 — 확인이 필요',
 };
 
-export function SBadge({ l }: { l: SLine['layer'] }) {
-  return <span className={`lyr l-${l}`} title={HELP[l]}>{X.layers[l]}</span>;
+/** 지시서 11장 7층: 사실 · 관찰된 관계 · 학술·출처 해석 · AI 추론 · 미검증 가설 · 조건부 시나리오 · 확인 안 됨 */
+export type Layer7 = SLine['layer'] | 'observed' | 'scenario' | 'unknown';
+export const L7_KO: Record<string, string> = { observed: '관찰된 관계(계산)', scenario: '조건부 시나리오', unknown: '확인 안 됨' };
+HELP.observed = '실제 데이터를 계산해 관찰한 관계·패턴(인과 아님)';
+HELP.scenario = '명시한 조건이 맞을 때의 가능한 미래 전개 — 예측이 아님';
+HELP.unknown = '자료가 부족하거나 확인하지 못한 부분';
+export function SBadge({ l }: { l: Layer7 }) {
+  return <span className={`lyr l-${l}`} title={HELP[l]}>{(X.layers as Record<string, string>)[l] ?? L7_KO[l]}</span>;
+}
+export function LayerLegend() {
+  return <p className="muted small lyr-legend">정보의 층: {(['fact', 'observed', 'source', 'inference', 'hypothesis', 'scenario', 'unknown'] as Layer7[]).map((l) => <SBadge key={l} l={l} />)} — 마우스를 올리면 뜻이 나옵니다.</p>;
 }
 
-export function SLineView({ x }: { x: SLine }) {
+export function SLineView({ x, as }: { x: SLine; as?: 'scenario' | 'unknown' }) {
   const [open, setOpen] = useState(false);
+  const lay: Layer7 = as && x.layer !== 'fact' && x.layer !== 'source' ? as : x.layer;
   return (
-    <div className={`tl l-${x.layer}`}>
-      <span className="tl-t"><SBadge l={x.layer} /> {x.text} {x.ids.length > 0 && <button className="link small" onClick={() => setOpen(!open)}>{open ? '접기' : x.layer === 'inference' || x.layer === 'hypothesis' ? `바탕이 된 사실 ${x.ids.length}` : `근거 ${x.ids.length}`}</button>}</span>
+    <div className={`tl l-${lay}`}>
+      <span className="tl-t"><SBadge l={lay} /> {x.text} {x.ids.length > 0 && <button className="link small" onClick={() => setOpen(!open)}>{open ? '접기' : x.layer === 'inference' || x.layer === 'hypothesis' ? `바탕이 된 사실 ${x.ids.length}` : `근거 ${x.ids.length}`}</button>}</span>
       {open && <Claims ids={x.ids} all />}
     </div>
   );
@@ -95,4 +105,10 @@ export function StepNoteView({ flow, step, nav }: { flow: string; step: string; 
       {n.after && <><p className="sn-h">반대편</p><SLineView x={n.after} /></>}
     </div>
   );
+}
+
+/** 같은 근거 문장을 쓰는 원인 지도 사건 — 주제·산업·사건이 한 사건을 공유(지시서 14) */
+export function SharedEvents({ evs }: { evs?: EvRef[] }) {
+  if (!evs || !evs.length) return null;
+  return <p className="tp-ev small"><b>같은 사건(원인 지도)</b> {evs.map((e) => <button key={e.id} className="chip" title={`근거 문장 ${e.shared}개 공유`} onClick={() => openWhy(e.id)}>{e.label} ({e.year})</button>)}</p>;
 }

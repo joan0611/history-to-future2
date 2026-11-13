@@ -86,6 +86,10 @@ def main():
                 if f["id"] not in ids:
                     ids.append(f["id"])
     seed["cycles"] = cyc.run(ind.INDICATORS, pat.SIGNALS, {n["id"]: n for n in seed["graph"]["nodes"]})
+    import events_shared as evs
+    seed["eventShare"] = evs.build(seed)
+    import spec_fields as sfx
+    seed["specFields"] = sfx.build(seed)
     errors = validate(seed) + gr.validate(seed["graph"], seed)
     if errors:
         print("\n".join(errors))

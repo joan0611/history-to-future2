@@ -18,7 +18,9 @@ export interface Node {
   id: string; kind: string; nodeType: string; label: string; year: number; yearPrecision: 'year' | 'era'; eraId: string; lane: Cat;
   countries: string[]; importance: 1 | 2 | 3; degree: number; claimIds: string[]; eventIds: string[]; docIds?: string[]; flowIds?: string[];
 }
-export interface Edge { id: string; from: string; to: string; rel: Rel; verification: Verif; chainId: string; note: string; claimIds: string[] }
+export interface Edge { id: string; from: string; to: string; rel: Rel; verification: Verif; chainId: string; note: string; claimIds: string[]; kind7?: string; lag?: number | null }
+export interface EvRef { id: string; label: string; year: number; shared: number }
+export interface EvUse { kind: 'topic' | 'industry'; id: string; label: string; at: string; turn: string; shared: number }
 export type Rel = 'cause' | 'background' | 'trigger' | 'influence' | 'sequence' | 'similar';
 export type Verif = 'evidenced' | 'interpretation' | 'statistical' | 'hypothesis';
 export interface Chain { id: string; kind: string; title: string; steps: { nodeId: string; stage: string; stageLabel: string }[]; countryResponses?: { country: string; situation: string }[] }
@@ -128,6 +130,8 @@ interface Seed {
   eras: Era[]; claims: Claim[]; sources: Source[]; transitions: Transition[]; documents: Doc[]; indicators: Indicator[];
   graph: { nodes: Node[]; edges: Edge[]; chains: Chain[]; relTypes: Record<Rel, string>; nodeTypes: Record<string, string> };
   cycles: { analyses: Analysis[]; findings: Finding[]; params: Record<string, unknown> };
+  specFields?: SpecFields;
+  eventUses?: Record<string, EvUse[]>;
   numberChecks: Record<string, NumberCheck[]>;
   patterns: { parallels: Parallel[] };
   flows: { flows: Flow[]; phaseKo: Record<Phase, string>; linkKo: Record<LinkKind, string>; domains: { id: string; label: string }[] };
@@ -141,6 +145,9 @@ const seed = seedJson as unknown as Seed;
 
 export interface NumberCheck { indicator: string; title: string; year: number; claimed: number; data: number | null; unit: string; memo: string; ok: boolean | null; verdict: string }
 
+export interface SpecStage { name: string; ok: boolean; basis: string }
+export interface SpecField { id: string; key: string; label: string; subs: string[]; members: { topics: string[]; industries: string[]; flows: string[]; tastes: string[]; indicators: string[]; events: number }; counts: Record<string, number>; stages: SpecStage[]; level: number; passed: number; gaps: string[] }
+export interface SpecFields { stages: string[]; fields: SpecField[]; note: string }
 export const D = {
   tastes: seed.tastes,
   stories: seed.stories,
@@ -155,12 +162,15 @@ export const D = {
   indicators: seed.indicators,
   nodes: seed.graph.nodes,
   edges: seed.graph.edges,
+  graphX: seed.graph as unknown as Record<string, unknown>,
   chains: seed.graph.chains,
   relKo: seed.graph.relTypes,
   typeKo: seed.graph.nodeTypes,
   analyses: seed.cycles.analyses,
   findings: seed.cycles.findings,
   cycleParams: seed.cycles.params,
+  spec: seed.specFields,
+  eventUses: seed.eventUses ?? {},
   parallels: seed.patterns.parallels,
   flows: seed.flows.flows,
   phaseKo: seed.flows.phaseKo,
@@ -245,7 +255,7 @@ export const yearCount = (() => {
 /* ── 주제 이야기(R-Q) ───────────────────────────────── */
 export interface TLine { layer: 'fact' | 'source' | 'inference' | 'hypothesis'; text: string; ids: string[] }
 export interface TWorld { what: TLine; route: TLine; response: TLine; result: TLine; mode: string }
-export interface TTurn { id: string; years: string; start: number; end: number; title: string; why: TLine; before: TLine[]; condition: TLine[]; response: TLine[]; change: TLine[]; legacy: TLine[]; world?: TWorld; gap?: string }
+export interface TTurn { id: string; years: string; start: number; end: number; title: string; why: TLine; before: TLine[]; condition: TLine[]; response: TLine[]; change: TLine[]; legacy: TLine[]; world?: TWorld; gap?: string; events?: EvRef[] }
 export interface TLane { label: string; start: number; end: number | null; state: string; note: TLine }
 export interface TReason { title: string; facts: TLine[]; logic: TLine; proposal: TLine; rivals: TLine[]; scope: TLine; check: TLine[] }
 export interface TFuture { kind: string; name: string; change: TLine; basis: TLine[]; logic: TLine; conditions: TLine; demand: TLine; watch: string[]; against: string[]; horizon?: string }

@@ -776,3 +776,19 @@ li.step[class*="ph-"] { background: none; }
 .ak-again { margin: .5rem 0; }
 .ak-ask { font-size: .85rem; margin-left: .4rem; white-space: nowrap; }
 @media (max-width: 640px) { .ak-pform label { width: 100%; } .ak-pform select { max-width: 100%; flex: 1; } }
+/* 분야 A~J × 9단계 상태 */
+.spec-wrap { overflow-x: auto; }
+.spec-tab { border-collapse: collapse; font-size: .85rem; min-width: 640px; }
+.spec-tab th, .spec-tab td { border-bottom: 1px solid var(--line); padding: .3rem .4rem; text-align: center; }
+.spec-tab tbody th { text-align: left; white-space: nowrap; }
+.spec-tab thead th { vertical-align: bottom; font-weight: 500; }
+.spec-n { display: block; font-weight: 700; }
+.spec-sn { display: block; font-size: .7rem; color: var(--ink-2); max-width: 5.5rem; line-height: 1.2; }
+td.spec-ok { color: var(--ink); } td.spec-no { color: var(--ink-2); }
+.spec-basis li.spec-no { color: var(--ink-2); }
+.spec-f { margin: .35rem 0; } .spec-f .chip { margin: .15rem; }
+@media (max-width: 640px) { .spec-sn { display: none; } }
+.lyr.l-observed { background: #e6f4f4; color: #1f6464; }
+.lyr.l-scenario { background: #efe9fb; color: #5a3a9a; border-color: #d6c8f0; }
+.lyr.l-unknown { background: #eeeeee; color: #555; border-style: dashed; border-color: #bbb; }
+.lyr-legend .lyr { margin-right: .3rem; }

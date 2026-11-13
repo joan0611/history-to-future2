@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { D } from '../lib/data';
 import type { Route } from '../lib/route';
-import { GoChip, SLineView } from '../ui/Story';
-import type { SLine, TFuture, TLine, TWorld } from '../lib/data';
+import { GoChip, SLineView, SharedEvents } from '../ui/Story';
+import type { EvRef, SLine, TFuture, TLine, TWorld } from '../lib/data';
 import { ConclusionView, FuturesView, WorldBox } from './TopicView';
 
 /** 산업 일대기 — 한 산업을 고르면 그 산업만 시작부터 지금까지 이어진다. 다른 산업과의 관계는 따로 표시. */
-interface Stage { period: string; kind: string; what: string; why: SLine[]; from: SLine }
+interface Stage { period: string; kind: string; what: string; why: SLine[]; from: SLine; events?: EvRef[] }
 interface Ind { id: string; group: string; label: string; tracks: string; question: string; span: [number, number]; stages: Stage[]; profile: Record<string, SLine[]>; worlds: { at: string; box: TWorld }[]; outward: TLine[]; futures: { split: TLine; items: TFuture[] }; conclusion: { key: TLine; favored: TLine; undecided: TLine; next: TLine; change: TLine }; links: { year: string; to: string | null; rel: string; text: string; line: SLine; goFlow?: [string, string] }[] }
 interface SelRow { label: string; status: '선정' | '후속' | '제외'; industry?: string; cells: Record<string, SLine>; note?: string }
 interface Inds { selection: { criteria: { key: string; label: string }[]; rows: SelRow[] }; groups: { id: string; label: string; desc: string }[]; industries: Ind[]; pending: { group: string; label: string; note: string }[]; profile: { key: string; label: string }[] }
@@ -49,6 +49,7 @@ export function IndustryLife({ nav, init }: { nav: (p: Partial<Route>) => void; 
                 <p className="il-what"><b>무엇이 달라졌나</b> {s.what}</p>
                 <div className="il-why"><b className="small">왜</b>{s.why.map((x, j) => <SLineView key={j} x={x} />)}</div>
                 <div className="il-from"><b className="small">앞 단계와의 연결</b><SLineView x={s.from} /></div>
+                <SharedEvents evs={s.events} />
               </li>
             ))}
           </ol>
