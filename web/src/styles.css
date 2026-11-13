@@ -766,3 +766,13 @@ li.step[class*="ph-"] { background: none; }
 .ak-calc caption { text-align: left; font-weight: 600; padding-bottom: .2rem; }
 .ak-calc th, .ak-calc td { border-top: 1px solid var(--line); padding: .2rem .4rem; text-align: left; vertical-align: top; }
 .ak-calc th { color: var(--ink-2); font-weight: 400; width: 45%; }
+/* 두 지표 직접 검정 · 최근 질문 · 다시 묻기 */
+.ak-pair { margin-top: 1rem; padding: .7rem .9rem; border: 1px solid var(--line); border-radius: 8px; }
+.ak-pair summary { font-weight: 600; cursor: pointer; }
+.ak-pform { display: flex; flex-wrap: wrap; gap: .5rem .9rem; align-items: center; margin: .6rem 0; }
+.ak-pform label { display: flex; gap: .35rem; align-items: center; font-size: .9rem; }
+.ak-pform select { max-width: 15rem; }
+.ak-hist ul { margin: .3rem 0 0; padding-left: 1.1rem; }
+.ak-again { margin: .5rem 0; }
+.ak-ask { font-size: .85rem; margin-left: .4rem; white-space: nowrap; }
+@media (max-width: 640px) { .ak-pform label { width: 100%; } .ak-pform select { max-width: 100%; flex: 1; } }

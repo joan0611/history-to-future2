@@ -1,6 +1,6 @@
 """HISTORY TO FUTURE 2.0 브라우저 시나리오 테스트(지시서 13장 A~G + 모바일 + 주소 유지).
 사용: python3 tests/e2e.py <사이트 주소>   예) http://localhost:8766/history-to-future2/"""
-import os, sys
+import os, sys, urllib.parse
 from playwright.sync_api import sync_playwright
 
 U = sys.argv[1].rstrip('/') + '/'
@@ -57,6 +57,26 @@ with sync_playwright() as p:
     pg.goto(U + '#/now'); pg.wait_for_timeout(700)
     pg.fill('.askbox input', '앞으로 보험은 어떻게 바뀔까?'); pg.press('.askbox input', 'Enter'); pg.wait_for_timeout(1000)
     ok('질문 분석: 머리글 질문 칸 → 미래 질문은 조건부 시나리오로', '#/ask' in pg.url and pg.locator('.ak-sec-expl .ak-scenario').count() >= 2)
+    # 두 지표 직접 검정(T7-2·T7-3): 화면 계산 = 파이썬 독립 계산(cpi↔실업률: 수준 -0.29, 변화 0.15, 성장률 통제 -0.07)
+    pg.goto(U + '#/ask?ta=cpi-kr&tb=unemp-kr&tc=gdp-growth'); pg.wait_for_timeout(1500)
+    pt = pg.locator('#ak-pair').inner_text()
+    ok('직접 검정: 상관·변화 상관·부분상관이 독립 계산과 일치', '-0.29' in pt and '0.15' in pt and '-0.07' in pg.locator('.ak-partial').inner_text())
+    ok('직접 검정: p값·신뢰구간·시차·한계 표시, 층위 구분', pg.locator('.ak-p').inner_text().startswith('0.') and '신뢰구간' in pt and '+3년' in pt and pg.locator('#ak-pair .ak-unknown').count() >= 1)
+    pg.goto(U + '#/ask?ta=cpi-kr&tb=unemp-kr&tc=gdp-growth&tf=1995'); pg.wait_for_timeout(1200)
+    ok('직접 검정: 기간을 바꾸면 결과가 계산으로 달라짐', pg.locator('#ak-pair').inner_text() != pt and '1995~' in pg.locator('#ak-pair caption').inner_text())
+    pg.goto(U + '#/ask?ta=cpi-kr&tb=cpi-kr'); pg.wait_for_timeout(800)
+    ok('직접 검정: 같은 지표 둘은 계산하지 않고 안내', '서로 다른' in pg.locator('#ak-pair').inner_text())
+    # 말 바꾸기(T7-4)·최근 질문(T7-6)·다시 묻기
+    pg.goto(U + '#/ask?q=' + urllib.parse.quote('집값과 월급은 함께 움직였을까?')); pg.wait_for_timeout(1500)
+    ok('질문 분석: 일상어를 자료의 말로 바꿔 지표 계산(집값→주택가격, 월급→임금)', '말 바꾸기' in pg.locator('.ak-trace').inner_text() and '주택가격' in pg.locator('.ak-calcs').inner_text() and '임금' in pg.locator('.ak-calcs').inner_text())
+    pg.locator('.ak-again .chip', has_text='1980~1999년').click(); pg.wait_for_timeout(1200)
+    ok('질문 분석: 기간을 좁혀 다시 묻기 → 그 기간으로 재계산', '1980~1999년' in pg.locator('.ak-trace').inner_text())
+    pg.goto(U + '#/ask'); pg.wait_for_timeout(800)
+    ok('질문 분석: 최근 질문 기록(브라우저 저장)에서 다시 열기', '집값과 월급' in pg.locator('.ak-hist').inner_text())
+    # 주제·산업에서 '이 질문으로 분석하기'(T10-2)
+    pg.goto(U + '#/topic/money-insure'); pg.wait_for_timeout(900)
+    pg.locator('#tp-q .ak-ask').click(); pg.wait_for_timeout(1500)
+    ok('주제 → 이 질문으로 분석하기: 주제 질문이 채워진 분석', '#/ask' in pg.url and '보험' in pg.locator('#ak-q').input_value() and pg.locator('.ak-sec').count() == 10)
     # 주제 이야기 지도(R-Q16)와 공통 욕구(R-Q17)
     pg.goto(U + '#/topic'); pg.wait_for_timeout(900)
     t = pg.locator('main').inner_text()

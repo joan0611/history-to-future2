@@ -68,7 +68,7 @@ export function App() {
         {r.tab === 'history' && <HistoryView r={r} nav={nav} why={why} />}
         {r.tab === 'flow' && (r.flow ? <FlowView r={r} nav={nav} why={why} /> : <TopicView r={{ ...r, topic: undefined }} nav={nav} />)}
         {r.tab === 'field' && <FieldView r={r} nav={nav} why={why} />}
-        {r.tab === 'ask' && <AskView key={r.q} r={r} nav={nav} />}
+        {r.tab === 'ask' && <AskView key={r.q ?? ''} r={r} nav={nav} />}
         {r.tab === 'cycle' && <CycleView r={r} nav={nav} why={why} />}
       </main>
       <InstallTip />

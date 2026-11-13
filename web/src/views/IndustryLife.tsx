@@ -40,6 +40,7 @@ export function IndustryLife({ nav, init }: { nav: (p: Partial<Route>) => void; 
       {compare ? <Compare onPick={(id) => { setSel(id); setCompare(false); }} /> : (
         <div className="il-one">
           <h3 className="il-q">{ind.question}</h3>
+          <p className="small"><a className="ak-ask" href={`#/ask?q=${encodeURIComponent(ind.question)}`}>이 질문으로 분석하기</a></p>
           <p className="small muted">추적 대상: {ind.tracks}</p>
           <ol className="il-stages">
             {ind.stages.map((s, i) => (

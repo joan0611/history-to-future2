@@ -118,7 +118,7 @@ function TopicDetail({ t, nav }: { t: Topic; nav: Nav }) {
       <section className="panel" id="tp-q">
         <p className="muted small">{dom?.label}</p>
         <h2 className="tp-title">{t.label}</h2>
-        <p className="tp-question">{t.question}</p>
+        <p className="tp-question">{t.question} <a className="ak-ask" href={`#/ask?q=${encodeURIComponent(t.question)}`}>이 질문으로 분석하기</a></p>
         <div className="tp-scene"><SLineView x={t.scene} /></div>
         <p className="tp-tracks"><b>이 이야기가 계속 따라가는 것</b> {t.tracks}</p>
         {t.scope && t.scope.length > 0 && <details className="tp-scope"><summary>시작 시점과 자료가 비는 곳</summary><Lines xs={t.scope} /></details>}
