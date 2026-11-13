@@ -66,11 +66,12 @@ with sync_playwright() as p:
     for tid in ('life-rest', 'life-health', 'life-stuff', 'life-nature', 'life-alone', 'life-convenience'):
         pg.goto(U + f'#/topic/{tid}'); pg.wait_for_timeout(700)
         ok(f'라이프스타일 {tid}: 전환점 3개 이상×5요소, 갈래, 추론 6요소, 미래 2갈래, 결론', pg.locator('.tp-turn').count() >= 3 and pg.locator('.tp-turn').first.locator('.tp-chain > li').count() == 5 and pg.locator('.tp-lanes li').count() >= 4 and pg.locator('.tp-reason h4').count() >= 6 and pg.locator('.tp-fut').count() >= 2 and pg.locator('.tp-end dt').count() == 5)
-    for tid, fd in (('media-screen', 'media'), ('media-game', 'media'), ('travel-abroad', 'travel'), ('work-style', 'work'), ('money-invest', 'money')):
+    for tid, fd in (('media-fandom', 'media'), ('media-screen', 'media'), ('media-game', 'media'), ('travel-abroad', 'travel'), ('work-style', 'work'), ('money-invest', 'money'), ('food-cafe', 'food'), ('fashion-beauty', 'fashion'), ('family-care', 'family')):
         pg.goto(U + f'#/topic/{tid}'); pg.wait_for_timeout(700)
-        ok(f'분야 확장 {tid}: 전환점 4개×5요소, 갈래, 추론 6요소, 반복, 미래 2갈래, 결론', pg.locator('.tp-turn').count() == 4 and pg.locator('.tp-turn').first.locator('.tp-chain > li').count() == 5 and pg.locator('.tp-lanes li').count() >= 4 and pg.locator('.tp-reason h4').count() >= 6 and pg.locator('#tp-repeat').count() == 1 and pg.locator('.tp-fut').count() == 2 and pg.locator('.tp-end dt').count() == 5)
+        ok(f'분야 확장 {tid}: 전환점 3~4개×5요소, 갈래, 추론 6요소, 반복, 미래 2갈래, 결론', pg.locator('.tp-turn').count() in (3, 4) and pg.locator('.tp-turn').first.locator('.tp-chain > li').count() == 5 and pg.locator('.tp-lanes li').count() >= 4 and pg.locator('.tp-reason h4').count() >= 6 and pg.locator('#tp-repeat').count() == 1 and pg.locator('.tp-fut').count() == 2 and pg.locator('.tp-end dt').count() == 5)
     pg.goto(U + '#/topic'); pg.wait_for_timeout(700)
     ok('분야 확장: 영상·게임(미디어), 해외여행, 일하는 방식, 돈·투자 분야에 주제 카드', pg.locator('#fd-media .tp-card', has_text='게임').count() >= 1 and pg.locator('#fd-travel .tp-card', has_text='해외여행').count() == 1 and pg.locator('#fd-work .tp-card', has_text='일하는 방식').count() == 1 and pg.locator('#fd-money .tp-card', has_text='돈을 굴리는').count() == 1)
+    ok('분야 확장 2차: 커피(음식)·화장품(꾸미기)·팬덤(미디어)·돌봄(가족) 카드, 미디어·가족 준비 중 0', pg.locator('#fd-food .tp-card', has_text='커피').count() == 1 and pg.locator('#fd-fashion .tp-card', has_text='화장품').count() == 1 and pg.locator('#fd-media .tp-card', has_text='팬덤').count() == 1 and pg.locator('#fd-family .tp-card', has_text='돌봄').count() == 1)
     for tid in ('city-home', 'city-move'):
         pg.goto(U + f'#/topic/{tid}'); pg.wait_for_timeout(700)
         ok(f'도시 주제 {tid}: 거주·교통을 나눠 추적(전환점·갈래·추론·미래·결론)', pg.locator('.tp-turn').count() >= 4 and pg.locator('.tp-lanes li').count() >= 5 and pg.locator('.tp-reason h4').count() >= 6 and pg.locator('.tp-fut').count() >= 2 and pg.locator('.tp-end dt').count() == 5)

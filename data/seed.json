@@ -19524,6 +19524,370 @@
    "aiSynthesized": false,
    "period": "2025",
    "independentSources": 1
+  },
+  {
+   "id": "tq-mix",
+   "text": "동서식품은 1970년 인스턴트 커피를 내놓고 1974년 크리머 '프리마'를 개발한 뒤, 1976년 12월 커피·크림·설탕을 한 봉지에 담은 커피믹스를 세계 처음으로 선보였고 1987년 스틱형 믹스를 처음 개발했다. 회사는 '빨리빨리' 문화를 개발 배경으로 들었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tq-s-inews-maxim",
+    "tq-s-kn-mix"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1970~1987",
+   "independentSources": 2
+  },
+  {
+   "id": "tq-sbux99",
+   "text": "스타벅스는 1999년 7월 27일 서울 이화여대 앞에 국내 1호점을 열었고, 당시 아메리카노 톨 사이즈는 3,000원으로 시간당 최저임금(1,525원)의 두 배였다. 매장은 2004년 100개, 2016년 1,000개, 2024년 2,000개를 넘었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tq-s-herald-sbux",
+    "tq-s-hk-sbux25"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1999~2024",
+   "independentSources": 2
+  },
+  {
+   "id": "tq-cafe10",
+   "text": "국내 커피전문점은 2022년 말 10만 729개로 처음 10만 개를 넘었고, 약 84%가 종사자 1~4명의 소형 점포였다. 국내 1인당 연간 커피 소비량은 2023년 405잔으로 세계 평균(152잔)의 두 배를 넘었다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tq-s-daum-cafe10"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2022~2023",
+   "independentSources": 1
+  },
+  {
+   "id": "tq-cafe-trend",
+   "text": "커피전문점은 2016년 5만 1,551개에서 2024년 10만 7,055개가 됐고, 외식업에서 커피전문점 비중은 2018년 9.3%에서 2023년 13.4%로 커졌다. 원두 등 볶은 커피 시장은 6년간 연평균 15.8% 커진 반면 믹스커피 같은 조제 커피는 연평균 0.5% 줄었다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tq-s-kbr-coffee26"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2016~2024",
+   "independentSources": 1
+  },
+  {
+   "id": "tq-lowcost",
+   "text": "공정거래위원회 가맹사업 자료 등에 따르면 메가MGC커피 매장은 2022년 2,173개에서 2025년 3,998개로 84% 늘었고, 컴포즈커피는 1,901개에서 2,844개, 빽다방은 1,231개에서 1,844개가 됐다. 같은 기간 스타벅스는 1,700개에서 2,076개, 투썸플레이스는 1,558개에서 1,725개로 늘었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tq-s-aju-lowcost"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2022~2025",
+   "independentSources": 1
+  },
+  {
+   "id": "tq-cafe-down",
+   "text": "국세통계 기준 전국 커피·음료점은 2025년 1분기 9만 5,337개로 1년 전보다 743개 줄어, 2018년 집계 이후 처음 감소했다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tq-s-segye-cafe25"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2025",
+   "independentSources": 1
+  },
+  {
+   "id": "tq-road",
+   "text": "로드숍의 시초는 2000년 설립돼 '3,300원 제품'으로 시장을 파고든 미샤였고, 2003년 더페이스샵, 2004년 스킨푸드가 뒤따랐다. 2010년대 중반 중국인 단체 관광객이 몰리며 로드숍이 크게 성장했지만 2017년 사드 사태로 단체 관광이 중단됐고, 올리브영 같은 H&B스토어로 소비자가 옮겨 가며 큰 타격을 입었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tq-s-bizwatch-road"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2000~2023",
+   "independentSources": 1
+  },
+  {
+   "id": "tq-road-close",
+   "text": "가맹사업 정보에 따르면 2019년 화장품 업종 신규 개점률은 1.8%, 폐점률은 28.8%였고, 2020년 화장품 오프라인 소매판매액은 18% 줄었다. 업계 분석가는 H&B스토어가 중저가 화장품을 흡수해 로드숍의 가격 장점이 사라졌다고 봤다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tq-s-inews-road21",
+    "tq-s-sidae-road22"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2019~2022",
+   "independentSources": 2
+  },
+  {
+   "id": "tq-road26",
+   "text": "국세통계 기준 전국 화장품 가게는 4월 기준 2023년 3만 9,193개에서 2026년 3만 4,766개로 줄었다. 반면 CJ올리브영의 2025년 별도 매출은 5조 8,335억 원으로 21.8% 늘었고, 화장품 온라인 거래액은 2023년 11조 9,791억 원에서 2025년 13조 8,153억 원으로 늘었다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tq-s-herald-road26",
+    "tq-s-herald-oy26"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2023~2026",
+   "independentSources": 1
+  },
+  {
+   "id": "tq-kbeauty",
+   "text": "한국 화장품 수출은 2024년 약 102억 달러로 프랑스·미국에 이어 세계 3위였고, 기초화장품이 75.2%를 차지했다. 중소기업 화장품 수출은 2024년 약 59억 달러로 10.8% 늘었고, 상위 10개 인디 브랜드의 합산 매출은 약 3조 원이었다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tq-s-pwc-kbeauty"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2024",
+   "independentSources": 1
+  },
+  {
+   "id": "tq-fan-90s",
+   "text": "H.O.T. 공식 팬클럽 '클럽 H.O.T.'(1997년 결성)는 연회비 2만 원에 2만 명 넘게 가입했다는 정리가 있다. 당시 기획사 관계자는 멤버 사진 한 장이 300~400원이던 시절 1주일에 5~6천만 원을 벌었고 향수·음료수·로션 같은 상품도 냈다고 회고했다.",
+   "claimType": "source",
+   "status": "sourced",
+   "sourceIds": [
+    "tq-s-brunch-fan",
+    "tq-s-daum-1997"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1997~1998",
+   "independentSources": 2
+  },
+  {
+   "id": "tq-fan-1st",
+   "text": "한 평론가는 1세대 팬덤의 특징으로 10대, 풍선, 또래 문화, 오프라인 일정과 지역 팬클럽 회장 중심의 단결을 꼽았고, 1세대 팬클럽 문화가 2·3세대로 이어진 원형이 됐다는 평가가 있다.",
+   "claimType": "source",
+   "status": "sourced",
+   "sourceIds": [
+    "tq-s-newsis-hot18"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1996~2018",
+   "independentSources": 1
+  },
+  {
+   "id": "tq-hybe25",
+   "text": "하이브의 2025년 연결 매출은 2조 6,499억 원으로 17.5% 늘었다. 공연 매출은 279회 공연으로 69.4% 늘어 7,639억 원, MD·라이선싱은 35.8% 늘어 5,705억 원이었고, 음반·음원 매출은 10.2% 줄었다. 팬 플랫폼 위버스는 월간 이용자 1,200만 명을 넘기고 연간 흑자로 돌아섰다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tq-s-byline-hybe25",
+    "tq-s-mtn-hybe25",
+    "tq-s-daum-kpop25"
+   ],
+   "domains": [
+    "consumption",
+    "culture"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2025",
+   "independentSources": 3
+  },
+  {
+   "id": "tq-ltc",
+   "text": "노인장기요양보험은 2008년 7월 시행됐다. 장기요양인정자는 2008년 21만 명에서 2024년 12월 116만 5천여 명이 됐고, 장기요양기관은 2008년 8,318곳에서 2021년 2만 6,536곳으로 늘었다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tq-s-kihasa-ltc2",
+    "tq-s-ytn-ltc24",
+    "tq-s-kihasa-ltc"
+   ],
+   "domains": [
+    "society"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2008~2024",
+   "independentSources": 2
+  },
+  {
+   "id": "tq-caregap",
+   "text": "민간 돌봄 업체 케어닥이 2008년을 100으로 잡아 만든 '노인돌봄공백지수'는 2021년 166, 2025년 197이었다. 같은 보고서는 2024년 노인 관련 시설이 6,557곳으로 2008년의 약 5배가 됐지만 입소 정원은 전체 노인의 2.7%(약 27만 명)라고 밝혔다.",
+   "claimType": "source",
+   "status": "sourced",
+   "sourceIds": [
+    "tq-s-hk-caregap"
+   ],
+   "domains": [
+    "society"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2008~2025",
+   "independentSources": 1
+  },
+  {
+   "id": "tq-childcare13",
+   "text": "2012년 만 5세, 2013년 만 3~4세로 무상 보육·교육이 넓어지며 만 0~5세 전면 무상보육이 시작됐고, 같은 해 가정양육수당도 전 계층으로 확대됐다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tq-s-kihasa-child"
+   ],
+   "domains": [
+    "society"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2012~2013",
+   "independentSources": 1
+  },
+  {
+   "id": "tq-infant",
+   "text": "한국보건사회연구원 보고서에 따르면 전국 영유아 수는 2016년 약 267만 명에서 2024년 약 183만 명으로 31% 줄었다. 보육 공백 지역에서는 어린이집 차량이 하루 100~130㎞를 달리기도 했다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tq-s-newsis-infant"
+   ],
+   "domains": [
+    "society"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2016~2024",
+   "independentSources": 1
+  },
+  {
+   "id": "tq-daycare-close",
+   "text": "2022년부터 2026년 6월까지 전국에서 문을 닫은 어린이집은 1만 1,093곳이었다(2022년 3,041곳, 2023년 2,679곳, 2024년 2,240곳, 2025년 1,939곳, 2026년 상반기 1,194곳). 보도는 연쇄 폐원으로 영아 입소 대기가 늘었다고 전했다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tq-s-segye-daycare"
+   ],
+   "domains": [
+    "society"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2022~2026",
+   "independentSources": 1
+  },
+  {
+   "id": "tq-neulbom",
+   "text": "초등 방과후와 돌봄을 합친 늘봄학교는 2025년 희망하는 초등 1~2학년 전체, 2026년 희망하는 초등학생 전체로 확대될 예정이었다. 2023년 초등학생 예체능 사교육의 25.3%는 돌봄 목적이었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tq-s-pp21-neulbom"
+   ],
+   "domains": [
+    "society"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2023~2026",
+   "independentSources": 1
   }
  ],
  "sources": [
@@ -28518,6 +28882,255 @@
    "sourceType": "news",
    "accessedDate": "2026-11-12",
    "publishedDate": "2025-08-26"
+  },
+  {
+   "id": "tq-s-inews-maxim",
+   "title": "[1등 브랜드] '세계 최초'의 맛 동서식품 '맥심'",
+   "publisher": "아이뉴스24",
+   "url": "https://www.inews24.com/view/800798",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2014"
+  },
+  {
+   "id": "tq-s-kn-mix",
+   "title": "동서식품 커피믹스 — 1976년 세계 최초, 1987년 스틱형",
+   "publisher": "경남신문",
+   "url": "https://knnews.co.kr/news/articleView.php?idxno=990286",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12"
+  },
+  {
+   "id": "tq-s-herald-sbux",
+   "title": "불황에도 \"못 모셔 안달\"…스타벅스는 어떻게 성공했을까",
+   "publisher": "헤럴드경제",
+   "url": "https://heraldk.com/?p=2513877",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2024"
+  },
+  {
+   "id": "tq-s-hk-sbux25",
+   "title": "스타벅스 25년 만에 매장 2000개",
+   "publisher": "한국경제",
+   "url": "https://www.hankyung.com/article/2025013036137",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-01-30"
+  },
+  {
+   "id": "tq-s-daum-cafe10",
+   "title": "\"퇴사하면 치킨집? 이제는 카페\" 커피전문점 첫 10만개 돌파",
+   "publisher": "다음뉴스(헤럴드경제)",
+   "url": "https://v.daum.net/v/20240701000236462",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2024-07-01"
+  },
+  {
+   "id": "tq-s-kbr-coffee26",
+   "title": "한국인 커피 소비량, 1인당 연간 416잔… 3.7조원 시장의 2026년 관전 포인트",
+   "publisher": "Korea Business Review",
+   "url": "https://www.koreabizreview.com/articles/kbr-analysis-kbr-special-reports-416-2026-20260813-4qn3",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-08-13"
+  },
+  {
+   "id": "tq-s-aju-lowcost",
+   "title": "커피 시장 '가성비' vs '프리미엄' 재편…중저가 브랜드 성장 정체",
+   "publisher": "아주경제",
+   "url": "https://www.ajunews.com/view/20251113235704349",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-11-13"
+  },
+  {
+   "id": "tq-s-segye-cafe25",
+   "title": "전국 커피·음료점 수 7년 만에 첫 감소(국세통계)",
+   "publisher": "세계일보",
+   "url": "https://www.segye.com/newsView/20260124501099",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-01-24"
+  },
+  {
+   "id": "tq-s-bizwatch-road",
+   "title": "'반전 성공' 화장품 로드숍, 해외서 기회 찾았다",
+   "publisher": "비즈워치",
+   "url": "https://news.bizwatch.co.kr/article/consumer/2024/03/07/0027",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2024-03-08"
+  },
+  {
+   "id": "tq-s-inews-road21",
+   "title": "날개 없는 추락 '화장품 로드숍'…해외공략·사업 다각화로 '반전 카드'",
+   "publisher": "아이뉴스24",
+   "url": "https://www.inews24.com/view/1360203",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2021"
+  },
+  {
+   "id": "tq-s-sidae-road22",
+   "title": "고사직전의 1세대 화장품 로드숍… 볕들 날 올까",
+   "publisher": "머니S",
+   "url": "https://www.sidae.com/article/2022072915001149507",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2022-07-29"
+  },
+  {
+   "id": "tq-s-herald-road26",
+   "title": "뷰티 로드샵, 1년새 2000곳 감소",
+   "publisher": "헤럴드경제",
+   "url": "https://www.heraldk.com/article/2026062518153580594",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-06-26"
+  },
+  {
+   "id": "tq-s-herald-oy26",
+   "title": "뷰티 로드샵, 1년새 2000개 사라졌다…편집숍·온라인 중심 재편",
+   "publisher": "헤럴드경제",
+   "url": "https://www.heraldk.com/article/2026062419150080152",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-06-24"
+  },
+  {
+   "id": "tq-s-pwc-kbeauty",
+   "title": "K-뷰티, 글로벌 트렌드를 재정의하다",
+   "publisher": "삼일PwC경영연구원",
+   "url": "https://www.pwc.com/kr/ko/insights/industry-focus/samilpwc_k-beauty-redefining-global-trends.pdf",
+   "sourceType": "report",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025"
+  },
+  {
+   "id": "tq-s-brunch-fan",
+   "title": "K-pop — 팬덤을 설계한 산업(클럽 H.O.T. 회비)",
+   "publisher": "브런치(whtdrgon)",
+   "url": "https://brunch.co.kr/@whtdrgon/659",
+   "sourceType": "blog",
+   "accessedDate": "2026-11-12"
+  },
+  {
+   "id": "tq-s-daum-1997",
+   "title": "[기억하라 1997①] 우리들의 맹세, 기억해 줄래?",
+   "publisher": "오마이스타(다음뉴스 게재)",
+   "url": "https://v.daum.net/v/20120905101706687",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2012-09-05"
+  },
+  {
+   "id": "tq-s-newsis-hot18",
+   "title": "H.O.T. 17년만의 콘서트 — 1세대 아이돌 팬클럽 문화",
+   "publisher": "뉴시스",
+   "url": "https://mobile.newsis.com/view/NISX20181014_0000441981",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2018-10-14"
+  },
+  {
+   "id": "tq-s-byline-hybe25",
+   "title": "'역대 최대' 매출 달성한 하이브, 2026년에도 글로벌 확대",
+   "publisher": "바이라인네트워크",
+   "url": "https://byline.network/?p=9004111222592838",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-02-12"
+  },
+  {
+   "id": "tq-s-mtn-hybe25",
+   "title": "하이브 지난해 영업익 뚝...BTS 봄날 직전 꽃샘추위 [엔터코노미]",
+   "publisher": "MTN",
+   "url": "https://news.mtn.co.kr/news-detail/2026021310013964257",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-02-13"
+  },
+  {
+   "id": "tq-s-daum-kpop25",
+   "title": "K팝 매출 경신 또 경신...앨범 대신 따먹을 과실 많다 [엔터코노미]",
+   "publisher": "MTN(다음뉴스 게재)",
+   "url": "https://v.daum.net/v/87F2N2Lxhc",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026"
+  },
+  {
+   "id": "tq-s-kihasa-ltc",
+   "title": "장기요양실태조사 — 장기요양기관 변화",
+   "publisher": "한국보건사회연구원 보건복지포럼",
+   "url": "https://kihasa.re.kr/api/kihasa/file/download?seq=26096",
+   "sourceType": "paper",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2024-02"
+  },
+  {
+   "id": "tq-s-kihasa-ltc2",
+   "title": "장기요양서비스 12년 — 장기요양인정자 2008년 21만 명",
+   "publisher": "한국보건사회연구원 보건복지포럼",
+   "url": "https://kihasa.re.kr/api/kihasa/file/download?seq=26092",
+   "sourceType": "paper",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2024-02"
+  },
+  {
+   "id": "tq-s-ytn-ltc24",
+   "title": "외국인 장기요양 인정자 — 전체 인정자 116만5천여명(2024년 12월)",
+   "publisher": "YTN",
+   "url": "https://www.ytn.co.kr/_ln/0102_202608141014318905",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-08-14"
+  },
+  {
+   "id": "tq-s-hk-caregap",
+   "title": "노인돌봄공백지수 2025(케어닥)",
+   "publisher": "한경 잡앤조이",
+   "url": "https://magazine.hankyung.com/job-joy/article/202512166728d",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-12-16"
+  },
+  {
+   "id": "tq-s-kihasa-child",
+   "title": "자녀 양육 지원 정책 현황과 추진 과제",
+   "publisher": "한국보건사회연구원 보건복지포럼",
+   "url": "https://www.kihasa.re.kr/api/kihasa/file/download?seq=6748",
+   "sourceType": "paper",
+   "accessedDate": "2026-11-12"
+  },
+  {
+   "id": "tq-s-newsis-infant",
+   "title": "한국보건사회연구원 '영유아 인구 감소와 보육 공백' 보고서",
+   "publisher": "뉴시스",
+   "url": "https://mobile.newsis.com/view/NISX20260721_0003717565",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-07-22"
+  },
+  {
+   "id": "tq-s-segye-daycare",
+   "title": "어린이집 연쇄 폐원과 입소 대기",
+   "publisher": "세계일보",
+   "url": "https://segye.com/newsView/20261020504191",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-10-20"
+  },
+  {
+   "id": "tq-s-pp21-neulbom",
+   "title": "늘봄학교와 초등 돌봄 공백",
+   "publisher": "참여연대 월간복지동향",
+   "url": "https://peoplepower21.org/welfarenow/1987456",
+   "sourceType": "report",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-03-01"
   }
  ],
  "events": [
@@ -85002,11 +85615,15 @@
      {
       "kind": "flow",
       "id": "flow-fashion"
+     },
+     {
+      "kind": "topic",
+      "id": "fashion-beauty"
      }
     ],
     "planned": [
      "신발",
-     "헤어·화장"
+     "헤어·화장법 유행"
     ]
    },
    {
@@ -85020,10 +85637,14 @@
      {
       "kind": "topic",
       "id": "life-convenience"
+     },
+     {
+      "kind": "topic",
+      "id": "food-cafe"
      }
     ],
     "planned": [
-     "카페·디저트",
+     "디저트",
      "간편식(가정간편식·밀키트)"
     ]
    },
@@ -85055,11 +85676,13 @@
      {
       "kind": "topic",
       "id": "media-game"
+     },
+     {
+      "kind": "topic",
+      "id": "media-fandom"
      }
     ],
-    "planned": [
-     "팬덤 지출"
-    ]
+    "planned": []
    },
    {
     "id": "relation",
@@ -85170,11 +85793,13 @@
      {
       "kind": "topic",
       "id": "life-alone"
+     },
+     {
+      "kind": "topic",
+      "id": "family-care"
      }
     ],
-    "planned": [
-     "돌봄"
-    ]
+    "planned": []
    },
    {
     "id": "work",
@@ -85342,6 +85967,21 @@
     "id": "money",
     "label": "돈과 투자",
     "desc": "남는 돈을 어디에 두고 불리는지 — 투자 권유가 아니라 방식의 변화를 봅니다."
+   },
+   {
+    "id": "food",
+    "label": "음식과 음료",
+    "desc": "무엇을 어디서 마시고 먹는지."
+   },
+   {
+    "id": "fashion",
+    "label": "꾸미기",
+    "desc": "화장품과 옷을 어디서 어떻게 사는지."
+   },
+   {
+    "id": "family",
+    "label": "가족과 돌봄",
+    "desc": "아이와 노인을 누가 돌보는지."
    }
   ],
   "topics": [
@@ -99769,6 +100409,2450 @@
       "text": "개인이 직접 투자에서 대거 빠져나가면 '반작용' 쪽으로 고친다.",
       "ids": [
        "tm-ant20"
+      ]
+     }
+    }
+   },
+   {
+    "id": "food-cafe",
+    "domain": "food",
+    "label": "커피와 카페 — 다방·믹스커피에서 저가 아메리카노까지",
+    "tracks": "사람들이 커피를 어디서, 어떤 방식으로, 얼마에 마셨는지: 다방 → 믹스커피·자판기 → 스타벅스와 테이크아웃 → 카페 10만 개 → 저가 커피와 첫 감소.",
+    "question": "1999년 스타벅스 아메리카노 한 잔은 최저임금 두 시간어치였다. 25년 뒤 카페는 10만 개가 넘었고 아메리카노는 1,500원짜리도 생겼다. 커피는 사치품에서 무엇이 됐나?",
+    "scene": {
+     "layer": "fact",
+     "text": "2022년 말 커피전문점이 처음 10만 개를 넘었다.",
+     "ids": [
+      "tq-cafe10"
+     ]
+    },
+    "span": [
+     1970,
+     2026
+    ],
+    "scope": [
+     {
+      "layer": "inference",
+      "text": "카페 수는 통계마다 기준(통계청 사업체·국세청 사업자)이 달라 같은 해에도 숫자가 다르다.",
+      "ids": [
+       "tq-cafe-trend",
+       "tq-cafe-down"
+      ]
+     }
+    ],
+    "turns": [
+     {
+      "id": "t1",
+      "years": "1970~1987",
+      "start": 1976,
+      "end": 1976,
+      "title": "봉지 하나에 다 넣다 — 믹스커피",
+      "why": {
+       "layer": "fact",
+       "text": "1976년 12월 동서식품이 세계 처음으로 커피믹스를 내놓았다.",
+       "ids": [
+        "tq-mix"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "1970년대 커피는 주로 다방에서 마셨다.",
+        "ids": [
+         "er-rel-dabang70"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "1974년 크리머 '프리마' 국산 개발이 믹스를 가능하게 했다.",
+        "ids": [
+         "tq-mix"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "1987년 스틱형 믹스가 나왔다.",
+        "ids": [
+         "tq-mix"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "source",
+        "text": "1970년대 후반부터 커피믹스와 자판기가 퍼지며 다방 문화가 쇠퇴했다는 설명이 있다.",
+        "ids": [
+         "er-rel-dabang-decline"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "커피는 '다방에 가서 마시는 것'에서 '사무실·집에서 물만 부으면 되는 것'이 됐다.",
+        "ids": [
+         "tq-mix"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t2",
+      "years": "1999~2016",
+      "start": 1999,
+      "end": 1999,
+      "title": "공간을 파는 커피 — 스타벅스와 테이크아웃",
+      "why": {
+       "layer": "fact",
+       "text": "1999년 7월 스타벅스가 이화여대 앞에 1호점을 열었다.",
+       "ids": [
+        "tq-sbux99"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "커피는 달고 싼 믹스커피가 기본이었다.",
+        "ids": [
+         "tq-mix"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "아메리카노 톨은 3,000원으로 시간당 최저임금의 두 배였다.",
+        "ids": [
+         "tq-sbux99"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "스타벅스 매장은 2004년 100개, 2016년 1,000개를 넘었다.",
+        "ids": [
+         "tq-sbux99"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "커피전문점은 2016년 5만 1,551개가 됐다.",
+        "ids": [
+         "tq-cafe-trend"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "카페는 커피값에 '머무는 자리'를 함께 파는 곳이 됐다.",
+        "ids": [
+         "tq-sbux99"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t3",
+      "years": "2016~2024",
+      "start": 2016,
+      "end": 2016,
+      "title": "한 집 건너 카페 — 10만 개",
+      "why": {
+       "layer": "fact",
+       "text": "커피전문점이 2022년 말 10만 개를 넘었다.",
+       "ids": [
+        "tq-cafe10"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "2016년 5만 1,551개였다.",
+        "ids": [
+         "tq-cafe-trend"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "1인당 연간 커피 소비량이 405잔으로 세계 평균의 두 배를 넘었다.",
+        "ids": [
+         "tq-cafe10"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "약 84%가 종사자 1~4명의 작은 가게였다.",
+        "ids": [
+         "tq-cafe10"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "볶은 커피 시장은 연평균 15.8% 컸고 믹스커피 시장은 줄었다.",
+        "ids": [
+         "tq-cafe-trend"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "적은 자본으로 열 수 있는 카페가 자영업의 대표 업종이 되면서 경쟁도 함께 커졌다.",
+        "ids": [
+         "tq-cafe10"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t4",
+      "years": "2022~2025",
+      "start": 2022,
+      "end": 2022,
+      "title": "가성비와 프리미엄으로 갈라지다",
+      "why": {
+       "layer": "fact",
+       "text": "메가MGC커피 매장이 2022~2025년 84% 늘어 3,998개가 됐다.",
+       "ids": [
+        "tq-lowcost"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "스타벅스가 2024년 2,000개를 넘었다.",
+        "ids": [
+         "tq-sbux99"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "inference",
+        "text": "고물가로 매일 마시는 커피는 싼 곳을 찾게 됐다.",
+        "ids": [
+         "tq-lowcost"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "스타벅스·투썸도 매장을 늘려 '머무는 카페' 수요를 지켰다.",
+        "ids": [
+         "tq-lowcost"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "전국 커피·음료점이 2025년 1분기 처음 줄었다.",
+        "ids": [
+         "tq-cafe-down"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "커피는 '들고 가는 연료'와 '머무는 공간' 두 상품으로 갈라졌고, 그 사이의 중간 가격 카페가 가장 압박을 받는다.",
+        "ids": [
+         "tq-lowcost",
+         "tq-cafe-down"
+        ]
+       }
+      ]
+     }
+    ],
+    "branches": {
+     "intro": "한 줄은 커피를 마시는 한 가지 방식입니다.",
+     "lanes": [
+      {
+       "label": "다방",
+       "start": 1960,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "fact",
+        "text": "1970년대 후반부터 쇠퇴.",
+        "ids": [
+         "er-rel-dabang-decline"
+        ]
+       }
+      },
+      {
+       "label": "믹스커피",
+       "start": 1976,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "fact",
+        "text": "조제 커피 시장 연평균 −0.5%.",
+        "ids": [
+         "tq-cafe-trend"
+        ]
+       }
+      },
+      {
+       "label": "머무는 카페(프리미엄)",
+       "start": 1999,
+       "end": null,
+       "state": "공존",
+       "note": {
+        "layer": "fact",
+        "text": "스타벅스 2,076개(2025).",
+        "ids": [
+         "tq-lowcost"
+        ]
+       }
+      },
+      {
+       "label": "들고 가는 저가 커피",
+       "start": 2015,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "메가 3,998개(2025).",
+        "ids": [
+         "tq-lowcost"
+        ]
+       }
+      }
+     ],
+     "read": {
+      "layer": "inference",
+      "text": "커피 마시는 곳은 다방 → 집·사무실(믹스) → 카페로 옮겨 갔고, 카페는 다시 '머무는 곳'과 '사서 나가는 곳'으로 나뉘었다.",
+      "ids": [
+       "tq-mix",
+       "tq-lowcost"
+      ]
+     }
+    },
+    "reasons": [
+     {
+      "title": "카페가 10만 개를 넘은 뒤 왜 처음 줄었나",
+      "facts": [
+       {
+        "layer": "fact",
+        "text": "10만 729개(2022) → 전국 커피·음료점 첫 감소(2025년 1분기).",
+        "ids": [
+         "tq-cafe10",
+         "tq-cafe-down"
+        ]
+       }
+      ],
+      "logic": {
+       "layer": "inference",
+       "text": "작은 자본으로 쉽게 열 수 있어 공급이 빠르게 늘었고, 저가 브랜드가 커지자 비슷한 가격대의 개인 카페가 밀려났다.",
+       "ids": [
+        "tq-cafe10",
+        "tq-lowcost"
+       ]
+      },
+      "proposal": {
+       "layer": "inference",
+       "text": "감소는 커피 수요가 준 것이 아니라 가게 사이의 정리다.",
+       "ids": [
+        "tq-cafe-trend",
+        "tq-cafe-down"
+       ]
+      },
+      "rivals": [
+       {
+        "layer": "inference",
+        "text": "원두값 설명 — 원재료 가격 상승이 작은 가게를 먼저 밀어냈을 수 있다.",
+        "ids": [
+         "tq-cafe-down"
+        ]
+       },
+       {
+        "layer": "inference",
+        "text": "통계 설명 — 국세청 기준 한 분기 변화라 일시적일 수 있다.",
+        "ids": [
+         "tq-cafe-down"
+        ]
+       }
+      ],
+      "scope": {
+       "layer": "inference",
+       "text": "2022~2025년 국내 커피전문점.",
+       "ids": [
+        "tq-cafe-down"
+       ]
+      },
+      "check": [
+       {
+        "layer": "hypothesis",
+        "text": "확인 쪽: 1인당 커피 소비량이 계속 늘었는지 — 2024년 416잔이라는 집계가 있지만 기관이 달라 비교에 주의.",
+        "ids": []
+       }
+      ]
+     }
+    ],
+    "links": [
+     {
+      "kind": "flow",
+      "target": "taste-dining",
+      "at": "2016~",
+      "why": "외식 취향(맛집·오마카세)은 외식 취향 흐름에서 본다."
+     },
+     {
+      "kind": "topic",
+      "target": "life-convenience",
+      "at": "2019~",
+      "why": "키오스크·무인 매장은 저가 커피 매장에도 빠르게 들어왔다."
+     },
+     {
+      "kind": "topic",
+      "target": "work-style",
+      "at": "1998~",
+      "why": "카페 창업이 '퇴사 뒤 선택지'가 된 배경은 일하는 방식 주제와 만난다."
+     }
+    ],
+    "repeats": [
+     {
+      "type": "반복되는 긴장",
+      "title": "편리한 싼 커피와 머무는 비싼 커피",
+      "past": {
+       "layer": "fact",
+       "text": "1976년 믹스커피가 다방 커피를 대신하기 시작했다.",
+       "ids": [
+        "tq-mix",
+        "er-rel-dabang-decline"
+       ]
+      },
+      "now": {
+       "layer": "fact",
+       "text": "2022~2025년 저가 커피 매장이 빠르게 늘었다.",
+       "ids": [
+        "tq-lowcost"
+       ]
+      },
+      "alike": {
+       "layer": "inference",
+       "text": "두 번 모두 '빠르고 싼 커피'가 '앉아서 마시는 커피'의 몫을 가져갔다.",
+       "ids": [
+        "tq-mix",
+        "tq-lowcost"
+       ]
+      },
+      "changed": {
+       "layer": "inference",
+       "text": "이번에는 머무는 카페(스타벅스)도 함께 늘었다 — 대체가 아니라 양극화다.",
+       "ids": [
+        "tq-lowcost"
+       ]
+      },
+      "alternatives": [
+       {
+        "layer": "inference",
+        "text": "커피 총소비가 늘어 두 쪽 모두 자란 것일 수 있다.",
+        "ids": [
+         "tq-cafe-trend"
+        ]
+       }
+      ],
+      "counter": [
+       {
+        "layer": "inference",
+        "text": "다방은 사라졌지만 프리미엄 카페는 늘었으므로 같은 결말이라고 볼 수 없다.",
+        "ids": [
+         "tq-lowcost"
+        ]
+       }
+      ],
+      "at": [
+       "t1",
+       "t4"
+      ]
+     }
+    ],
+    "futures": {
+     "split": {
+      "layer": "inference",
+      "text": "갈라지는 이유는 원두값과 임대료다. 둘이 오르면 중간 가격 카페가 줄고 저가·프리미엄 양 끝만 남는다.",
+      "ids": [
+       "tq-cafe-down",
+       "tq-lowcost"
+      ]
+     },
+     "items": [
+      {
+       "kind": "분화",
+       "name": "양 끝만 남는다",
+       "change": {
+        "layer": "inference",
+        "text": "저가 테이크아웃과 공간형 프리미엄 카페가 커지고 중간 가격 개인 카페가 줄어든다.",
+        "ids": [
+         "tq-lowcost"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "저가·프리미엄 브랜드 동시 확장.",
+         "ids": [
+          "tq-lowcost"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "매일 마시는 커피는 싸게, 머무는 시간은 돈을 내고 산다.",
+        "ids": [
+         "tq-lowcost"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "원두값이 높게 유지돼야 한다.",
+        "ids": [
+         "tq-cafe-down"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "가맹 물류, 키오스크, 공간 설계.",
+        "ids": [
+         "tq-lowcost"
+        ]
+       },
+       "watch": [
+        "커피·음료점 수(국세통계)",
+        "저가 브랜드 매장 수"
+       ],
+       "against": [
+        "개인 카페 수가 다시 늘면 분화가 약함"
+       ]
+      },
+      {
+       "kind": "계속",
+       "name": "집·사무실 커피가 고급화한다",
+       "change": {
+        "layer": "inference",
+        "text": "원두·캡슐 같은 볶은 커피 소비가 늘어 밖에서 사 마시는 일부를 대신한다.",
+        "ids": [
+         "tq-cafe-trend"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "볶은 커피 시장 연평균 15.8% 성장.",
+         "ids": [
+          "tq-cafe-trend"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "카페값이 오르면 집에서 내려 마시는 비용이 상대적으로 싸진다.",
+        "ids": [
+         "tq-cafe-trend"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "가정용 커피 기기 보급.",
+        "ids": [
+         "tq-cafe-trend"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "원두 유통, 커피 기기.",
+        "ids": [
+         "tq-cafe-trend"
+        ]
+       },
+       "watch": [
+        "볶은 커피 시장 규모"
+       ],
+       "against": [
+        "볶은 커피 성장률이 꺾이면 둔화"
+       ]
+      }
+     ]
+    },
+    "conclusion": {
+     "key": {
+      "layer": "inference",
+      "text": "커피는 다방의 사치품에서 믹스커피로 일상이 됐고, 스타벅스 이후 '공간을 사는 상품'이 됐다. 카페가 10만 개를 넘은 뒤에는 싼 커피와 머무는 커피로 갈라지며 처음 줄기 시작했다.",
+      "ids": [
+       "tq-mix",
+       "tq-sbux99",
+       "tq-cafe10",
+       "tq-cafe-down"
+      ]
+     },
+     "favored": {
+      "layer": "inference",
+      "text": "'수요 감소'보다 '가게 사이 정리' 해석을 지지한다. 근거: 소비량은 늘고 저가·프리미엄 모두 매장을 늘렸다.",
+      "ids": [
+       "tq-cafe-trend",
+       "tq-lowcost"
+      ]
+     },
+     "undecided": {
+      "layer": "inference",
+      "text": "한 분기 감소라 추세인지는 아직 판단하기 이르다.",
+      "ids": [
+       "tq-cafe-down"
+      ]
+     },
+     "next": {
+      "layer": "inference",
+      "text": "2026년 커피·음료점 수와 원두 수입 가격.",
+      "ids": [
+       "tq-cafe-down"
+      ]
+     },
+     "change": {
+      "layer": "inference",
+      "text": "커피·음료점이 다시 늘면 '정리' 결론을 거둔다.",
+      "ids": [
+       "tq-cafe-down"
+      ]
+     }
+    }
+   },
+   {
+    "id": "fashion-beauty",
+    "domain": "fashion",
+    "label": "화장품을 어디서 사나 — 로드숍에서 올리브영, 그리고 수출",
+    "tracks": "사람들이 화장품을 어디서 어떻게 샀는지: 3,300원 로드숍 → 중국 관광객 특수 → 사드와 H&B스토어 → 온라인·편집숍, 그리고 해외로 나간 K뷰티.",
+    "question": "명동을 채웠던 화장품 로드숍은 3년 새 4천 곳 넘게 사라졌는데, 한국 화장품 수출은 세계 3위가 됐다. 화장품은 덜 팔린 걸까, 파는 곳이 바뀐 걸까?",
+    "scene": {
+     "layer": "fact",
+     "text": "2026년 4월 전국 화장품 가게는 3만 4,766개로 3년 전보다 4천 곳 넘게 줄었지만, 올리브영 매출은 5조 8,335억 원으로 역대 최대였다.",
+     "ids": [
+      "tq-road26"
+     ]
+    },
+    "span": [
+     2000,
+     2026
+    ],
+    "scope": [
+     {
+      "layer": "inference",
+      "text": "이 주제는 화장품을 사는 '장소'의 변화를 다룬다. 화장법·헤어 유행은 아직 따로 다루지 않았다.",
+      "ids": [
+       "tq-road"
+      ]
+     }
+    ],
+    "turns": [
+     {
+      "id": "t1",
+      "years": "2000~2009",
+      "start": 2000,
+      "end": 2000,
+      "title": "3,300원 화장품 — 로드숍의 등장",
+      "why": {
+       "layer": "fact",
+       "text": "2000년 설립된 미샤가 '3,300원 제품'으로 시장을 파고들었다.",
+       "ids": [
+        "tq-road"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "화장품은 백화점·방문판매의 비싼 브랜드가 중심이었다.",
+        "ids": [
+         "tq-road"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "2003년 더페이스샵, 2004년 스킨푸드가 비슷한 방식으로 뒤따랐다.",
+        "ids": [
+         "tq-road"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "2009년 LG생활건강이 더페이스샵을 인수할 만큼 대기업도 뛰어들었다.",
+        "ids": [
+         "tq-road"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "inference",
+        "text": "길거리 단독 매장에서 한 브랜드만 파는 '원브랜드숍'이 기본 형태가 됐다.",
+        "ids": [
+         "tq-road"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "화장품이 10~20대가 가볍게 사는 물건이 됐다.",
+        "ids": [
+         "tq-road"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t2",
+      "years": "2014~2017",
+      "start": 2014,
+      "end": 2014,
+      "title": "중국 관광객과 K뷰티, 그리고 사드",
+      "why": {
+       "layer": "fact",
+       "text": "2010년대 중반 중국인 단체 관광객이 로드숍 제품을 대량으로 사며 '폭발적 성장'이 일어났다.",
+       "ids": [
+        "tq-road"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "로드숍은 국내 젊은 층 중심이었다.",
+        "ids": [
+         "tq-road"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "'K뷰티'라는 말이 생겼고 여러 로드숍이 상장했다.",
+        "ids": [
+         "tq-road"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "inference",
+        "text": "명동 같은 관광 상권에 매장이 몰렸다.",
+        "ids": [
+         "tq-road-close"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "2017년 사드 사태로 중국인 단체 관광이 중단됐다.",
+        "ids": [
+         "tq-road"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "관광객에 기대던 매출 구조의 약점이 한꺼번에 드러났다.",
+        "ids": [
+         "tq-road",
+         "tq-road-close"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t3",
+      "years": "2017~2022",
+      "start": 2017,
+      "end": 2017,
+      "title": "여러 브랜드를 한곳에서 — H&B스토어",
+      "why": {
+       "layer": "fact",
+       "text": "2019년 화장품 업종 신규 개점률은 1.8%, 폐점률은 28.8%였다.",
+       "ids": [
+        "tq-road-close"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "로드숍은 자기 브랜드만 팔았다.",
+        "ids": [
+         "tq-road"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "올리브영 같은 H&B스토어가 여러 브랜드를 한자리에서 팔았다.",
+        "ids": [
+         "tq-road"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "2020년 화장품 오프라인 판매가 18% 줄었다.",
+        "ids": [
+         "tq-road-close"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "source",
+        "text": "분석가는 H&B스토어가 중저가 화장품을 흡수해 로드숍의 가격 장점이 사라졌다고 봤다.",
+        "ids": [
+         "tq-road-close"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "소비자는 '브랜드 매장'이 아니라 '고르는 매장'을 찾게 됐다.",
+        "ids": [
+         "tq-road-close"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t4",
+      "years": "2023~2026",
+      "start": 2023,
+      "end": 2023,
+      "title": "가게는 줄고 수출은 늘다",
+      "why": {
+       "layer": "fact",
+       "text": "한국 화장품 수출이 2024년 약 102억 달러로 세계 3위가 됐다.",
+       "ids": [
+        "tq-kbeauty"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "2023년 4월 화장품 가게는 3만 9,193개였다.",
+        "ids": [
+         "tq-road26"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "인디 브랜드 상위 10곳의 합산 매출이 약 3조 원에 이르렀다.",
+        "ids": [
+         "tq-kbeauty"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "화장품 온라인 거래액은 2025년 13조 8,153억 원으로 늘었다.",
+        "ids": [
+         "tq-road26"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "올리브영 2025년 매출이 21.8% 늘었고 화장품 가게는 2026년 3만 4,766개로 줄었다.",
+        "ids": [
+         "tq-road26"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "fact",
+        "text": "로드숍들도 국내 매장을 줄이고 해외·온라인으로 옮겨 2023년 실적을 회복했다.",
+        "ids": [
+         "tq-road"
+        ]
+       }
+      ]
+     }
+    ],
+    "branches": {
+     "intro": "한 줄은 화장품을 사는 한 가지 장소입니다.",
+     "lanes": [
+      {
+       "label": "백화점·방문판매",
+       "start": 1990,
+       "end": null,
+       "state": "공존",
+       "note": {
+        "layer": "inference",
+        "text": "고가 브랜드 중심으로 남았다.",
+        "ids": [
+         "tq-road"
+        ]
+       }
+      },
+      {
+       "label": "원브랜드 로드숍",
+       "start": 2000,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "fact",
+        "text": "가맹점 폐점률 28.8%(2019).",
+        "ids": [
+         "tq-road-close"
+        ]
+       }
+      },
+      {
+       "label": "H&B 편집숍",
+       "start": 2010,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "올리브영 5조 8,335억 원(2025).",
+        "ids": [
+         "tq-road26"
+        ]
+       }
+      },
+      {
+       "label": "온라인",
+       "start": 2015,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "13조 8,153억 원(2025).",
+        "ids": [
+         "tq-road26"
+        ]
+       }
+      },
+      {
+       "label": "해외 수출(인디 브랜드)",
+       "start": 2019,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "102억 달러, 세계 3위(2024).",
+        "ids": [
+         "tq-kbeauty"
+        ]
+       }
+      }
+     ],
+     "read": {
+      "layer": "inference",
+      "text": "화장품 수요가 줄어든 것이 아니라 파는 자리가 '브랜드 단독 매장'에서 '여러 브랜드를 고르는 곳·온라인·해외'로 옮겨 갔다.",
+      "ids": [
+       "tq-road26",
+       "tq-kbeauty"
+      ]
+     }
+    },
+    "reasons": [
+     {
+      "title": "왜 로드숍은 무너지고 올리브영은 커졌나",
+      "facts": [
+       {
+        "layer": "fact",
+        "text": "폐점률 28.8%(2019).",
+        "ids": [
+         "tq-road-close"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "올리브영 매출 21.8% 증가(2025).",
+        "ids": [
+         "tq-road26"
+        ]
+       }
+      ],
+      "logic": {
+       "layer": "inference",
+       "text": "소비자는 비교해서 고르고 싶어 했고, 로드숍은 자기 제품만 보여 줬다. 관광객 매출이 사드로 끊기자 그 약점이 한꺼번에 드러났다.",
+       "ids": [
+        "tq-road",
+        "tq-road-close"
+       ]
+      },
+      "proposal": {
+       "layer": "inference",
+       "text": "'싼 가격'보다 '고를 수 있는 곳'이 화장품 구매의 기준이 됐다.",
+       "ids": [
+        "tq-road-close"
+       ]
+      },
+      "rivals": [
+       {
+        "layer": "inference",
+        "text": "외부 충격 설명 — 사드와 코로나가 아니었다면 로드숍이 버텼을 수 있다.",
+        "ids": [
+         "tq-road"
+        ]
+       }
+      ],
+      "scope": {
+       "layer": "inference",
+       "text": "2017~2026년 국내 화장품 유통.",
+       "ids": [
+        "tq-road26"
+       ]
+      },
+      "check": [
+       {
+        "layer": "hypothesis",
+        "text": "확인 쪽: 사드 이전부터 로드숍 가맹점 매출이 줄고 있었는지 — 2016년 이전 가맹 자료는 연결하지 않았다.",
+        "ids": []
+       }
+      ]
+     }
+    ],
+    "links": [
+     {
+      "kind": "flow",
+      "target": "flow-fashion",
+      "at": "2000~",
+      "why": "옷 유행은 패션 흐름에서 본다."
+     },
+     {
+      "kind": "topic",
+      "target": "travel-abroad",
+      "at": "2014~",
+      "why": "중국 관광객 감소(사드)는 여행·관광 흐름과 같은 사건이다."
+     },
+     {
+      "kind": "topic",
+      "target": "shop-channel",
+      "at": "2015~",
+      "why": "온라인으로 옮겨 간 구매 장소의 큰 흐름은 '어디서 사나' 주제에서 본다."
+     }
+    ],
+    "repeats": [
+     {
+      "type": "결합·변형",
+      "title": "여러 브랜드를 한곳에 — 백화점에서 편집숍으로",
+      "past": {
+       "layer": "inference",
+       "text": "2000년대 이전 화장품은 여러 브랜드가 모인 백화점 1층에서 비교해 샀다.",
+       "ids": [
+        "tq-road"
+       ]
+      },
+      "now": {
+       "layer": "fact",
+       "text": "2020년대 올리브영이 여러 브랜드를 한곳에서 판다.",
+       "ids": [
+        "tq-road26"
+       ]
+      },
+      "alike": {
+       "layer": "inference",
+       "text": "비교해서 고르는 자리라는 점이 같다.",
+       "ids": [
+        "tq-road-close"
+       ]
+      },
+      "changed": {
+       "layer": "inference",
+       "text": "가격대가 중저가로 내려왔고, 온라인과 오프라인이 섞였다.",
+       "ids": [
+        "tq-road26"
+       ]
+      },
+      "alternatives": [
+       {
+        "layer": "inference",
+        "text": "올리브영의 성장은 비교 기능보다 매장 수와 입지 효과일 수 있다.",
+        "ids": [
+         "tq-road26"
+        ]
+       }
+      ],
+      "counter": [
+       {
+        "layer": "inference",
+        "text": "백화점 화장품의 매출 변화는 연결하지 않아 '되돌아왔다'고 단정할 수 없다.",
+        "ids": [
+         "tq-road"
+        ]
+       }
+      ],
+      "at": [
+       "t1",
+       "t3"
+      ]
+     }
+    ],
+    "futures": {
+     "split": {
+      "layer": "inference",
+      "text": "갈라지는 이유는 해외 판로와 국내 편집숍 집중이다.",
+      "ids": [
+       "tq-kbeauty",
+       "tq-road26"
+      ]
+     },
+     "items": [
+      {
+       "kind": "계속",
+       "name": "국내는 편집숍·온라인, 브랜드는 해외로",
+       "change": {
+        "layer": "inference",
+        "text": "국내 단독 매장은 더 줄고, 작은 브랜드는 편집숍 입점과 수출로 큰다.",
+        "ids": [
+         "tq-kbeauty",
+         "tq-road26"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "인디 브랜드 수출 증가, 화장품 가게 감소.",
+         "ids": [
+          "tq-kbeauty",
+          "tq-road26"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "작은 브랜드는 자기 매장 없이도 편집숍·온라인·해외에서 팔 수 있다.",
+        "ids": [
+         "tq-kbeauty"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "해외 수요가 유지돼야 한다.",
+        "ids": [
+         "tq-kbeauty"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "ODM 제조, 수출 물류, 편집숍 입점 컨설팅.",
+        "ids": [
+         "tq-kbeauty"
+        ]
+       },
+       "watch": [
+        "화장품 수출액",
+        "화장품 가게 수"
+       ],
+       "against": [
+        "수출이 꺾이면 인디 브랜드 정리"
+       ]
+      },
+      {
+       "kind": "분화",
+       "name": "편집숍도 갈라진다",
+       "change": {
+        "layer": "inference",
+        "text": "올리브영 외에 다이소·편의점·패션 플랫폼 뷰티관 같은 초저가·특화 매장이 늘어난다.",
+        "ids": [
+         "tq-road26"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "편집매장과 이커머스의 성장.",
+         "ids": [
+          "tq-road26"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "한 편집숍에 몰리면 다른 유통이 가격·전문성으로 틈을 찾는다.",
+        "ids": [
+         "tq-road26"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "입점 경쟁과 규제.",
+        "ids": [
+         "tq-road26"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "초저가 기획 상품, 특화 매장.",
+        "ids": [
+         "tq-road26"
+        ]
+       },
+       "watch": [
+        "편집숍 매장 수 다변화"
+       ],
+       "against": [
+        "올리브영 점유가 계속 커지면 분화보다 집중"
+       ]
+      }
+     ]
+    },
+    "conclusion": {
+     "key": {
+      "layer": "inference",
+      "text": "화장품은 3,300원 로드숍으로 가까워졌고, 중국 관광객 특수와 사드를 거쳐 여러 브랜드를 고르는 편집숍·온라인으로 옮겨 갔다. 가게는 줄었지만 한국 화장품은 수출 세계 3위가 됐다.",
+      "ids": [
+       "tq-road",
+       "tq-road-close",
+       "tq-road26",
+       "tq-kbeauty"
+      ]
+     },
+     "favored": {
+      "layer": "inference",
+      "text": "'덜 팔린 것'이 아니라 '파는 곳이 바뀐 것'이라는 해석을 지지한다.",
+      "ids": [
+       "tq-road26",
+       "tq-kbeauty"
+      ]
+     },
+     "undecided": {
+      "layer": "inference",
+      "text": "화장법·헤어 유행 자체의 변화는 아직 다루지 않았다.",
+      "ids": [
+       "tq-road"
+      ]
+     },
+     "next": {
+      "layer": "inference",
+      "text": "화장품 수출과 편집숍 매출.",
+      "ids": [
+       "tq-kbeauty",
+       "tq-road26"
+      ]
+     },
+     "change": {
+      "layer": "inference",
+      "text": "단독 브랜드 매장이 다시 늘면 결론을 고친다.",
+      "ids": [
+       "tq-road26"
+      ]
+     }
+    }
+   },
+   {
+    "id": "media-fandom",
+    "domain": "media",
+    "label": "팬덤 지출 — 회비와 사진에서 앨범, 공연·굿즈·플랫폼으로",
+    "tracks": "팬이 좋아하는 가수에게 어디에 돈을 썼는지: 팬클럽 회비·사진 → 실물 앨범 대량 구매 → 공연·굿즈·팬 플랫폼 구독.",
+    "question": "앨범 판매가 2년 연속 1억 장 아래로 내려갔는데, 가장 큰 기획사의 매출은 역대 최대였다. 팬들은 지갑을 닫은 걸까, 다른 곳을 연 걸까?",
+    "scene": {
+     "layer": "fact",
+     "text": "하이브는 2025년 음반·음원 매출이 10.2% 줄었지만 공연(+69.4%)과 굿즈(+35.8%)로 역대 최대 매출을 냈다.",
+     "ids": [
+      "tq-hybe25"
+     ]
+    },
+    "span": [
+     1996,
+     2026
+    ],
+    "scope": [
+     {
+      "layer": "inference",
+      "text": "기업 실적은 대형 기획사 한 곳의 사례라 팬 전체 지출을 대표하지 않는다.",
+      "ids": [
+       "tq-hybe25"
+      ]
+     }
+    ],
+    "turns": [
+     {
+      "id": "t1",
+      "years": "1996~1998",
+      "start": 1997,
+      "end": 1997,
+      "title": "팬클럽에 소속되다 — 회비와 사진",
+      "why": {
+       "layer": "source",
+       "text": "클럽 H.O.T.(1997)는 연회비 2만 원에 2만 명 넘게 가입했다는 정리가 있다.",
+       "ids": [
+        "tq-fan-90s"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "가수를 좋아하는 일은 음반·카세트를 사고 방송을 보는 것이 중심이었다.",
+        "ids": [
+         "tq-fan-1st"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "source",
+        "text": "평론가는 10대·풍선·또래 문화·지역 팬클럽 단결을 1세대 팬덤의 특징으로 꼽았다.",
+        "ids": [
+         "tq-fan-1st"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "source",
+        "text": "기획사 관계자는 멤버 사진 판매로 1주일에 5~6천만 원을 벌었다고 회고했다.",
+        "ids": [
+         "tq-fan-90s"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "inference",
+        "text": "좋아하는 마음이 '소속비'와 '기념품'이라는 지출 형태를 얻었다.",
+        "ids": [
+         "tq-fan-90s"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "source",
+        "text": "1세대 팬클럽 문화가 이후 세대 팬클럽의 원형이 됐다는 평가가 있다.",
+        "ids": [
+         "tq-fan-1st"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t2",
+      "years": "2018~2023",
+      "start": 2018,
+      "end": 2018,
+      "title": "앨범을 사서 응원하다 — 1억 장",
+      "why": {
+       "layer": "fact",
+       "text": "실물 앨범 판매가 2017년 1,379만 장에서 2023년 1억 장을 넘었다.",
+       "ids": [
+        "sx-album-hanteo"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "방탄소년단이 2018년 SNS로 쌓은 세계 팬덤으로 빌보드 200 1위에 올랐다.",
+        "ids": [
+         "c10-bts"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "코로나19로 공연이 멈추며 팬들의 지출이 앨범으로 몰렸다.",
+        "ids": [
+         "sx-album-hanteo"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "앨범 평균 출고가가 2023년 1만 1,315원에서 2026년 1만 3,285원으로 올랐다.",
+        "ids": [
+         "sx-album-26"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "source",
+        "text": "골드만삭스는 2024년 보고서에서 팬데믹 동안 앨범 판매가 급증해 지표가 왜곡됐다고 지적했다.",
+        "ids": [
+         "sx-goldman"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "앨범은 음악을 듣는 매체가 아니라 응원·수집의 수단이 됐다.",
+        "ids": [
+         "sx-album-hanteo"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t3",
+      "years": "2024~2025",
+      "start": 2024,
+      "end": 2024,
+      "title": "공연·굿즈·플랫폼으로",
+      "why": {
+       "layer": "fact",
+       "text": "앨범 판매가 2024년 약 9,890만 장, 2025년 약 9,350만 장으로 줄었다.",
+       "ids": [
+        "sx-album-26"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "2023년 앨범 판매 약 1억 2천만 장.",
+        "ids": [
+         "sx-album-26"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "공연이 재개돼 하이브는 2025년 279회 공연을 열었다.",
+        "ids": [
+         "tq-hybe25"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "공연 매출 7,639억 원(+69.4%), MD·라이선싱 5,705억 원(+35.8%).",
+        "ids": [
+         "tq-hybe25"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "팬 플랫폼 위버스는 월간 이용자 1,200만 명을 넘기고 흑자로 돌아섰다.",
+        "ids": [
+         "tq-hybe25"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "팬 지출의 중심이 '물건(앨범)'에서 '경험(공연)'과 '관계(플랫폼 구독)'로 옮겨 갔다.",
+        "ids": [
+         "tq-hybe25",
+         "sx-album-26"
+        ]
+       }
+      ]
+     }
+    ],
+    "branches": {
+     "intro": "한 줄은 팬이 돈을 쓰는 한 가지 자리입니다.",
+     "lanes": [
+      {
+       "label": "팬클럽 회비",
+       "start": 1997,
+       "end": null,
+       "state": "공존",
+       "note": {
+        "layer": "source",
+        "text": "연회비 2만 원(1세대).",
+        "ids": [
+         "tq-fan-90s"
+        ]
+       }
+      },
+      {
+       "label": "실물 앨범 다량 구매",
+       "start": 2017,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "fact",
+        "text": "1억 장 → 9,350만 장(2025).",
+        "ids": [
+         "sx-album-26"
+        ]
+       }
+      },
+      {
+       "label": "공연·투어",
+       "start": 2000,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "하이브 공연 매출 +69.4%(2025).",
+        "ids": [
+         "tq-hybe25"
+        ]
+       }
+      },
+      {
+       "label": "굿즈(MD)",
+       "start": 1997,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "MD·라이선싱 +35.8%(2025).",
+        "ids": [
+         "tq-hybe25"
+        ]
+       }
+      },
+      {
+       "label": "팬 플랫폼 구독",
+       "start": 2019,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "위버스 월간 이용자 1,200만.",
+        "ids": [
+         "tq-hybe25"
+        ]
+       }
+      }
+     ],
+     "read": {
+      "layer": "inference",
+      "text": "팬 지출은 사라지지 않고 자리를 옮겼다. 앨범이 줄어든 만큼 공연·굿즈·플랫폼이 커졌다.",
+      "ids": [
+       "tq-hybe25",
+       "sx-album-26"
+      ]
+     }
+    },
+    "reasons": [
+     {
+      "title": "앨범이 줄었는데 왜 기획사 매출은 최대인가",
+      "facts": [
+       {
+        "layer": "fact",
+        "text": "앨범 판매 2년 연속 1억 장 미만.",
+        "ids": [
+         "sx-album-26"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "공연·MD 급증.",
+        "ids": [
+         "tq-hybe25"
+        ]
+       }
+      ],
+      "logic": {
+       "layer": "inference",
+       "text": "코로나 때 공연 대신 앨범으로 몰렸던 지출이 공연 재개 뒤 원래 자리로 돌아갔다.",
+       "ids": [
+        "sx-album-hanteo",
+        "tq-hybe25"
+       ]
+      },
+      "proposal": {
+       "layer": "inference",
+       "text": "앨범 감소는 팬 지출의 축소가 아니라 이동이다.",
+       "ids": [
+        "tq-hybe25"
+       ]
+      },
+      "rivals": [
+       {
+        "layer": "inference",
+        "text": "피로 설명 — 같은 앨범을 여러 장 사는 방식에 대한 피로가 쌓였다.",
+        "ids": [
+         "sx-goldman"
+        ]
+       },
+       {
+        "layer": "inference",
+        "text": "집중 설명 — 대형 기획사만 커지고 중소 기획사는 줄었을 수 있다.",
+        "ids": [
+         "tq-hybe25"
+        ]
+       }
+      ],
+      "scope": {
+       "layer": "inference",
+       "text": "2023~2025년, 대형 기획사 실적 중심.",
+       "ids": [
+        "tq-hybe25"
+       ]
+      },
+      "check": [
+       {
+        "layer": "hypothesis",
+        "text": "확인 쪽: 중소 기획사의 공연·MD 매출 변화 — 아직 연결하지 않았다.",
+        "ids": []
+       }
+      ]
+     }
+    ],
+    "links": [
+     {
+      "kind": "flow",
+      "target": "flow-music",
+      "at": "1996~",
+      "why": "음악을 듣는 방식(음반 → 스트리밍)은 음악 흐름에서 본다."
+     },
+     {
+      "kind": "flow",
+      "target": "taste-goods",
+      "at": "2017~",
+      "why": "포토카드·굿즈 수집은 굿즈 취향 흐름에서 본다."
+     },
+     {
+      "kind": "topic",
+      "target": "media-screen",
+      "at": "2020~",
+      "why": "팬 플랫폼 라이브와 숏폼은 영상 보는 방식과 겹친다."
+     }
+    ],
+    "repeats": [
+     {
+      "type": "재등장",
+      "title": "기념품을 사는 팬",
+      "past": {
+       "layer": "source",
+       "text": "1990년대 후반 멤버 사진·향수·음료수 같은 상품이 팔렸다.",
+       "ids": [
+        "tq-fan-90s"
+       ]
+      },
+      "now": {
+       "layer": "fact",
+       "text": "2025년 MD·라이선싱 매출이 35.8% 늘었다.",
+       "ids": [
+        "tq-hybe25"
+       ]
+      },
+      "alike": {
+       "layer": "inference",
+       "text": "좋아하는 사람을 떠올리게 하는 물건을 갖고 싶어 한다.",
+       "ids": [
+        "tq-fan-90s",
+        "tq-hybe25"
+       ]
+      },
+      "changed": {
+       "layer": "inference",
+       "text": "규모가 세계 시장으로 커졌고 캐릭터 IP처럼 상품이 독립했다.",
+       "ids": [
+        "tq-hybe25"
+       ]
+      },
+      "alternatives": [
+       {
+        "layer": "inference",
+        "text": "공연이 늘며 투어 현장 판매가 늘었을 뿐일 수 있다.",
+        "ids": [
+         "tq-hybe25"
+        ]
+       }
+      ],
+      "counter": [
+       {
+        "layer": "inference",
+        "text": "1세대 사진 판매 규모는 회고로만 전해져 직접 비교할 수 없다.",
+        "ids": [
+         "tq-fan-90s"
+        ]
+       }
+      ],
+      "at": [
+       "t1",
+       "t3"
+      ]
+     }
+    ],
+    "futures": {
+     "split": {
+      "layer": "inference",
+      "text": "갈라지는 이유는 공연을 볼 수 있느냐다. 세계 투어가 계속되면 경험 지출이, 투어가 줄면 다시 앨범·온라인 지출이 커진다.",
+      "ids": [
+       "tq-hybe25",
+       "sx-album-hanteo"
+      ]
+     },
+     "items": [
+      {
+       "kind": "계속",
+       "name": "경험과 관계에 쓰는 팬",
+       "change": {
+        "layer": "inference",
+        "text": "공연·팬미팅·플랫폼 구독이 팬 지출의 중심이 된다.",
+        "ids": [
+         "tq-hybe25"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "공연·MD·플랫폼 동시 성장.",
+         "ids": [
+          "tq-hybe25"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "직접 보는 경험은 복제할 수 없다.",
+        "ids": [
+         "tq-hybe25"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "투어 공연장과 비용이 감당 가능해야 한다.",
+        "ids": [
+         "tq-hybe25"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "공연 제작, 투어 MD, 팬 플랫폼.",
+        "ids": [
+         "tq-hybe25"
+        ]
+       },
+       "watch": [
+        "기획사 공연 매출",
+        "앨범 판매량"
+       ],
+       "against": [
+        "앨범 판매가 다시 1억 장을 크게 넘으면 되돌림"
+       ]
+      },
+      {
+       "kind": "반작용",
+       "name": "덜 사고 더 듣는 팬",
+       "change": {
+        "layer": "inference",
+        "text": "다량 구매 피로로 앨범을 적게 사고 스트리밍·무료 콘텐츠로 즐기는 팬이 늘어난다.",
+        "ids": [
+         "sx-goldman",
+         "sx-album-26"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "앨범 판매 2년 연속 감소.",
+         "ids": [
+          "sx-album-26"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "같은 앨범을 여러 장 사는 동기가 약해졌다.",
+        "ids": [
+         "sx-goldman"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "랜덤 포토카드 같은 구매 유인이 줄어야 한다.",
+        "ids": [
+         "sx-album-26"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "스트리밍 기반 팬 서비스.",
+        "ids": [
+         "sx-album-26"
+        ]
+       },
+       "watch": [
+        "1인당 앨범 구매량"
+       ],
+       "against": [
+        "2026년 앨범 판매 반등이 이어지면 반작용 약함"
+       ]
+      }
+     ]
+    },
+    "conclusion": {
+     "key": {
+      "layer": "inference",
+      "text": "팬 지출은 팬클럽 회비와 사진에서 시작해 코로나 때 실물 앨범으로 몰렸고, 공연이 돌아오자 공연·굿즈·플랫폼으로 옮겨 갔다.",
+      "ids": [
+       "tq-fan-90s",
+       "sx-album-hanteo",
+       "tq-hybe25"
+      ]
+     },
+     "favored": {
+      "layer": "inference",
+      "text": "'축소'가 아니라 '이동' 해석을 지지한다. 근거: 앨범 감소에도 공연·MD가 더 크게 늘었다.",
+      "ids": [
+       "tq-hybe25"
+      ]
+     },
+     "undecided": {
+      "layer": "inference",
+      "text": "중소 기획사와 팬 개인의 지출 총액은 확인하지 못했다.",
+      "ids": [
+       "tq-hybe25"
+      ]
+     },
+     "next": {
+      "layer": "inference",
+      "text": "2026년 앨범 반등이 이어지는지.",
+      "ids": [
+       "sx-album-26"
+      ]
+     },
+     "change": {
+      "layer": "inference",
+      "text": "앨범이 크게 반등하고 공연이 줄면 결론을 고친다.",
+      "ids": [
+       "sx-album-26"
+      ]
+     }
+    }
+   },
+   {
+    "id": "family-care",
+    "domain": "family",
+    "label": "돌봄 — 가족이 하던 일을 사회가 나눠 맡기까지",
+    "tracks": "아이와 노인을 누가 돌보는지: 가족 돌봄 → 장기요양보험(2008) → 전면 무상보육(2013) → 영유아 감소와 어린이집 폐원 → 초등 늘봄과 노인 돌봄 공백.",
+    "question": "어린이집은 4년 반 동안 1만 1천 곳이 문을 닫았는데, 노인 돌봄 시설은 들어갈 자리가 모자란다. 돌봄은 어디가 남고 어디가 모자랄까?",
+    "scene": {
+     "layer": "fact",
+     "text": "2022년부터 2026년 6월까지 문을 닫은 어린이집은 1만 1,093곳이었다.",
+     "ids": [
+      "tq-daycare-close"
+     ]
+    },
+    "span": [
+     2008,
+     2026
+    ],
+    "scope": [
+     {
+      "layer": "inference",
+      "text": "노인돌봄공백지수는 민간 업체가 만든 지표라 공식 통계와 구분해 읽는다.",
+      "ids": [
+       "tq-caregap"
+      ]
+     }
+    ],
+    "turns": [
+     {
+      "id": "t1",
+      "years": "2008",
+      "start": 2008,
+      "end": 2008,
+      "title": "노인 돌봄을 보험으로 — 장기요양보험",
+      "why": {
+       "layer": "fact",
+       "text": "2008년 7월 노인장기요양보험이 시행됐다.",
+       "ids": [
+        "tq-ltc"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "노인 돌봄은 대부분 가족, 특히 여성 가족의 몫이었다.",
+        "ids": [
+         "tq-ltc"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "평균 가구원 수가 줄어 가족 안 돌봄 인력이 적어졌다.",
+        "ids": [
+         "fl-fam-hh"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "2008년 장기요양인정자는 21만 명이었다.",
+        "ids": [
+         "tq-ltc"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "장기요양기관이 2008년 8,318곳에서 2021년 2만 6,536곳으로 늘었다.",
+        "ids": [
+         "tq-ltc"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "방문요양·요양시설이 생기며 '돌봄 노동'이 하나의 일자리가 됐다.",
+        "ids": [
+         "tq-ltc"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t2",
+      "years": "2012~2013",
+      "start": 2013,
+      "end": 2013,
+      "title": "아이 돌봄을 국가가 — 전면 무상보육",
+      "why": {
+       "layer": "fact",
+       "text": "2013년 만 0~5세 전면 무상보육이 시작됐다.",
+       "ids": [
+        "tq-childcare13"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "2012년 만 5세부터 무상 보육·교육이 시작됐다.",
+        "ids": [
+         "tq-childcare13"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "inference",
+        "text": "저출산 대응이 정책의 명분이 됐다.",
+        "ids": [
+         "tq-childcare13"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "가정양육수당도 전 계층으로 넓어졌다.",
+        "ids": [
+         "tq-childcare13"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "inference",
+        "text": "어린이집에 아이를 맡기는 것이 소득과 관계없는 기본 선택이 됐다.",
+        "ids": [
+         "tq-childcare13"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "어린이집이 크게 늘었고, 이 시설 규모가 이후 영유아 감소 때 그대로 부담이 됐다.",
+        "ids": [
+         "tq-daycare-close"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t3",
+      "years": "2016~2026",
+      "start": 2016,
+      "end": 2016,
+      "title": "아이는 줄고 어린이집은 문을 닫다",
+      "why": {
+       "layer": "fact",
+       "text": "영유아가 2016년 약 267만 명에서 2024년 약 183만 명으로 31% 줄었다.",
+       "ids": [
+        "tq-infant"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "합계출산율이 계속 떨어졌다.",
+        "ids": [
+         "fl-fam-tfr"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "2022년부터 해마다 2천~3천 곳의 어린이집이 문을 닫았다.",
+        "ids": [
+         "tq-daycare-close"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "보육 공백 지역에서는 어린이집 차량이 하루 100~130㎞를 달렸다.",
+        "ids": [
+         "tq-infant"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "연쇄 폐원으로 영아 입소 대기가 오히려 늘었다는 보도가 나왔다.",
+        "ids": [
+         "tq-daycare-close"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "fact",
+        "text": "초등 돌봄은 늘봄학교로 넓어졌지만 예체능 사교육의 25.3%가 돌봄 목적이었다.",
+        "ids": [
+         "tq-neulbom"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t4",
+      "years": "2021~2025",
+      "start": 2021,
+      "end": 2021,
+      "title": "노인 돌봄은 자리가 모자라다",
+      "why": {
+       "layer": "fact",
+       "text": "장기요양인정자가 2024년 116만 5천여 명이 됐다.",
+       "ids": [
+        "tq-ltc"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "2008년 21만 명이었다.",
+        "ids": [
+         "tq-ltc"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "inference",
+        "text": "베이비붐 세대가 노년층에 들어서며 수요가 빠르게 늘었다.",
+        "ids": [
+         "tq-ltc"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "source",
+        "text": "민간 지표는 노인 시설이 2008년의 약 5배가 됐지만 입소 정원은 전체 노인의 2.7%라고 했다.",
+        "ids": [
+         "tq-caregap"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "source",
+        "text": "같은 업체의 노인돌봄공백지수는 2021년 166에서 2025년 197로 올랐다.",
+        "ids": [
+         "tq-caregap"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "아이 돌봄은 시설이 남고 노인 돌봄은 시설이 모자란 '거꾸로 된 수급'이 생겼다.",
+        "ids": [
+         "tq-daycare-close",
+         "tq-caregap"
+        ]
+       }
+      ]
+     }
+    ],
+    "branches": {
+     "intro": "한 줄은 돌봄을 맡는 한 가지 주체입니다.",
+     "lanes": [
+      {
+       "label": "가족 돌봄",
+       "start": 1960,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "fact",
+        "text": "가구원 수 감소.",
+        "ids": [
+         "fl-fam-hh"
+        ]
+       }
+      },
+      {
+       "label": "장기요양(방문·시설)",
+       "start": 2008,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "인정자 116만 5천여 명(2024).",
+        "ids": [
+         "tq-ltc"
+        ]
+       }
+      },
+      {
+       "label": "어린이집",
+       "start": 2013,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "fact",
+        "text": "4년 반 동안 1만 1,093곳 폐원.",
+        "ids": [
+         "tq-daycare-close"
+        ]
+       }
+      },
+      {
+       "label": "초등 늘봄",
+       "start": 2024,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "2026년 희망 초등학생 전체로 확대 예정.",
+        "ids": [
+         "tq-neulbom"
+        ]
+       }
+      }
+     ],
+     "read": {
+      "layer": "inference",
+      "text": "돌봄은 가족에서 사회 제도로 옮겨 왔지만, 인구 구조가 바뀌며 아이 쪽은 남고 노인 쪽은 모자라게 됐다.",
+      "ids": [
+       "tq-ltc",
+       "tq-daycare-close",
+       "tq-caregap"
+      ]
+     }
+    },
+    "reasons": [
+     {
+      "title": "아이 돌봄 시설은 남는데 왜 입소 대기가 생기나",
+      "facts": [
+       {
+        "layer": "fact",
+        "text": "어린이집 1만 1,093곳 폐원.",
+        "ids": [
+         "tq-daycare-close"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "영유아 31% 감소.",
+        "ids": [
+         "tq-infant"
+        ]
+       }
+      ],
+      "logic": {
+       "layer": "inference",
+       "text": "아이가 줄면 영아반처럼 손이 많이 가는 반부터 문을 닫는다. 남은 곳은 멀어지고, 특정 연령반은 오히려 자리가 모자란다.",
+       "ids": [
+        "tq-daycare-close",
+        "tq-infant"
+       ]
+      },
+      "proposal": {
+       "layer": "inference",
+       "text": "돌봄의 문제는 총량보다 '가까운 곳에 맞는 연령의 자리'가 있느냐다.",
+       "ids": [
+        "tq-infant"
+       ]
+      },
+      "rivals": [
+       {
+        "layer": "inference",
+        "text": "인력 설명 — 보육교사 처우 때문에 반을 열 사람이 없을 수 있다.",
+        "ids": [
+         "tq-daycare-close"
+        ]
+       }
+      ],
+      "scope": {
+       "layer": "inference",
+       "text": "2016~2026년 영유아 보육.",
+       "ids": [
+        "tq-infant"
+       ]
+      },
+      "check": [
+       {
+        "layer": "hypothesis",
+        "text": "확인 쪽: 연령반별 입소 대기 통계 — 아직 연결하지 않았다.",
+        "ids": []
+       }
+      ]
+     }
+    ],
+    "links": [
+     {
+      "kind": "flow",
+      "target": "flow-family",
+      "at": "1960~",
+      "why": "가족 형태(가구원 수·출산율)는 가족 흐름에서 본다."
+     },
+     {
+      "kind": "topic",
+      "target": "life-alone",
+      "at": "2025~",
+      "why": "혼자 사는 고령층의 외로움은 '관계의 거리' 주제와 만난다."
+     },
+     {
+      "kind": "topic",
+      "target": "work-style",
+      "at": "2020~",
+      "why": "돌봄 노동자의 일하는 방식은 일하는 방식 주제와 이어진다."
+     }
+    ],
+    "repeats": [
+     {
+      "type": "장기 구조 변화",
+      "title": "가족에서 제도로 넘어가는 돌봄",
+      "past": {
+       "layer": "fact",
+       "text": "2008년 장기요양보험 시행.",
+       "ids": [
+        "tq-ltc"
+       ]
+      },
+      "now": {
+       "layer": "fact",
+       "text": "2025~2026년 늘봄학교 전 학년 확대.",
+       "ids": [
+        "tq-neulbom"
+       ]
+      },
+      "alike": {
+       "layer": "inference",
+       "text": "가족이 하던 돌봄을 제도가 맡는 방향이 이어진다.",
+       "ids": [
+        "tq-ltc",
+        "tq-neulbom"
+       ]
+      },
+      "changed": {
+       "layer": "inference",
+       "text": "노인은 보험(돈을 모아 서비스), 아이는 무상(세금)으로 방식이 다르다.",
+       "ids": [
+        "tq-childcare13"
+       ]
+      },
+      "alternatives": [
+       {
+        "layer": "inference",
+        "text": "제도가 넓어졌어도 실제 돌봄은 여전히 가족이 많이 하고 있을 수 있다.",
+        "ids": [
+         "tq-caregap"
+        ]
+       }
+      ],
+      "counter": [
+       {
+        "layer": "fact",
+        "text": "사교육의 25.3%가 돌봄 목적이었다 — 제도가 다 채우지 못한다.",
+        "ids": [
+         "tq-neulbom"
+        ]
+       }
+      ],
+      "at": [
+       "t1",
+       "t3"
+      ]
+     }
+    ],
+    "futures": {
+     "split": {
+      "layer": "inference",
+      "text": "갈라지는 이유는 인구다. 아이는 줄고 노인은 늘어 같은 돌봄 정책이 정반대 문제를 만난다.",
+      "ids": [
+       "tq-infant",
+       "tq-ltc"
+      ]
+     },
+     "items": [
+      {
+       "kind": "결합",
+       "name": "아이·노인 돌봄 시설이 섞인다",
+       "change": {
+        "layer": "inference",
+        "text": "문 닫는 어린이집 공간과 인력을 노인 돌봄이나 시간제 보육으로 바꿔 쓴다.",
+        "ids": [
+         "tq-daycare-close",
+         "tq-caregap"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "어린이집 폐원과 노인 시설 부족이 동시에 나타났다.",
+         "ids": [
+          "tq-daycare-close",
+          "tq-caregap"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "남는 쪽 자원을 모자란 쪽으로 옮기는 것이 빠르다.",
+        "ids": [
+         "tq-daycare-close"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "시설 기준·자격 규정이 바뀌어야 한다.",
+        "ids": [
+         "tq-ltc"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "시설 전환 리모델링, 통합 돌봄 인력.",
+        "ids": [
+         "tq-ltc"
+        ]
+       },
+       "watch": [
+        "어린이집 폐원 수",
+        "노인 시설 정원"
+       ],
+       "against": [
+        "두 영역 규제가 그대로면 결합은 어렵다"
+       ]
+      },
+      {
+       "kind": "계속",
+       "name": "노인 돌봄 수요가 계속 늘어난다",
+       "change": {
+        "layer": "inference",
+        "text": "장기요양인정자와 요양 인력 수요가 계속 늘어난다.",
+        "ids": [
+         "tq-ltc"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "인정자 21만 → 116만 5천여 명.",
+         "ids": [
+          "tq-ltc"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "고령 인구가 늘어나는 한 수요는 커진다.",
+        "ids": [
+         "tq-ltc"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "보험 재정과 인력 확보.",
+        "ids": [
+         "tq-ltc"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "요양 인력, 방문요양, 시니어 주거.",
+        "ids": [
+         "tq-caregap"
+        ]
+       },
+       "watch": [
+        "장기요양인정자 수",
+        "요양보호사 수"
+       ],
+       "against": [
+        "인정 기준이 좁아지면 수치가 덜 늘 수 있다"
+       ]
+      }
+     ]
+    },
+    "conclusion": {
+     "key": {
+      "layer": "inference",
+      "text": "돌봄은 2008년 장기요양보험과 2013년 무상보육으로 가족에서 제도로 옮겨 왔다. 이제 아이 쪽은 시설이 남아 문을 닫고, 노인 쪽은 자리가 모자라는 정반대 문제를 함께 안고 있다.",
+      "ids": [
+       "tq-ltc",
+       "tq-childcare13",
+       "tq-daycare-close",
+       "tq-caregap"
+      ]
+     },
+     "favored": {
+      "layer": "inference",
+      "text": "'돌봄의 총량 부족'보다 '자리와 수요의 어긋남' 해석을 지지한다.",
+      "ids": [
+       "tq-daycare-close",
+       "tq-caregap"
+      ]
+     },
+     "undecided": {
+      "layer": "inference",
+      "text": "노인 돌봄 공백은 민간 지표에 기대고 있어 공식 통계로 확인이 더 필요하다.",
+      "ids": [
+       "tq-caregap"
+      ]
+     },
+     "next": {
+      "layer": "inference",
+      "text": "어린이집 폐원 수와 장기요양인정자 수.",
+      "ids": [
+       "tq-daycare-close",
+       "tq-ltc"
+      ]
+     },
+     "change": {
+      "layer": "inference",
+      "text": "노인 시설 정원이 빠르게 늘면 '부족' 부분을 고친다.",
+      "ids": [
+       "tq-caregap"
       ]
      }
     }
