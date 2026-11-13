@@ -18851,6 +18851,679 @@
    "aiSynthesized": false,
    "period": "2026",
    "independentSources": 1
+  },
+  {
+   "id": "tm-iptv08",
+   "text": "IPTV는 2008년 하반기 실시간 방송을 시작하기 전까지 다시보기(VOD) 중심이었다. 지상파 프로그램은 방영 12시간 뒤 편당 500원에 볼 수 있었고 7일이 지나면 무료였으며, 최신 영화는 3,500원이었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-mt-iptv08"
+   ],
+   "domains": [
+    "culture",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2008",
+   "independentSources": 1
+  },
+  {
+   "id": "tm-iptv09",
+   "text": "2009년 4월 보도에 따르면 VOD 가입자를 포함한 IPTV 가입자는 155만여 명으로 전년(160만 명)보다 줄었고, 무료 서비스를 유료로 바꾸면서 이탈이 늘었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-kuki-iptv09"
+   ],
+   "domains": [
+    "culture",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2008~2009",
+   "independentSources": 1
+  },
+  {
+   "id": "tm-media14",
+   "text": "방송통신위원회 2014년 방송매체 이용행태조사에서 필수매체로 TV를 꼽은 응답은 44.3%, 스마트폰은 43.9%였고, 스마트폰은 1년 새 6.5%포인트 늘었다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-khan-media15"
+   ],
+   "domains": [
+    "culture",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2014",
+   "independentSources": 1
+  },
+  {
+   "id": "tm-media19",
+   "text": "2019년 방송매체 이용행태조사에서 하루 TV 시청은 2시간 42분으로 가장 길었지만 줄어드는 추세였고, 스마트폰 이용은 1시간 39분으로 해마다 늘었다. 주 5일 이상 이용 비율은 스마트폰 87.3%, TV 75.0%였다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-jour-media19"
+   ],
+   "domains": [
+    "culture",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2019",
+   "independentSources": 1
+  },
+  {
+   "id": "tm-nf16",
+   "text": "넷플릭스는 2016년 1월 6일 130개 이상 나라에서 동시에 서비스를 시작했고 한국도 그중 하나였다. 2018년 첫 한국 오리지널 콘텐츠, 2019년 첫 시리즈 '킹덤'을 내놓았다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-herald-nf10"
+   ],
+   "domains": [
+    "culture",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2016~2019",
+   "independentSources": 1
+  },
+  {
+   "id": "tm-nf21",
+   "text": "넷플릭스의 국내 월간 활성 이용자는 2018~2019년 5배 넘게 늘었고 2021년 2월 1,000만 명을 넘었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-wiki-nf"
+   ],
+   "domains": [
+    "culture",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2018~2021",
+   "independentSources": 1
+  },
+  {
+   "id": "tm-ott24",
+   "text": "한국콘텐츠진흥원 '2024 온라인동영상서비스 이용행태 조사'(5천여 명 대면 조사)에서 10명 중 9명이 OTT를 이용했고, 유료 OTT 이용률은 떨어지고 무료 OTT는 올랐으며, 무료 OTT 이용자의 69.6%가 숏폼을 봤다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-kocca-ott24"
+   ],
+   "domains": [
+    "culture",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2024",
+   "independentSources": 1
+  },
+  {
+   "id": "tm-media24",
+   "text": "2024년 방송매체 이용행태조사에서 OTT 하루 이용시간은 2022년 1시간 1분, 2023년 1시간 7분, 2024년 1시간 10분으로 늘었다. 주 5일 이상 TV 이용 비율은 69.1%로 줄었고 스마트폰은 92.2%였으며, 지난 일주일 실시간 방송 시청자는 86.5%로 줄고 다시보기 시청은 45.2%로 늘었다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-seoul-media24"
+   ],
+   "domains": [
+    "culture",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2022~2024",
+   "independentSources": 1
+  },
+  {
+   "id": "tm-terr24",
+   "text": "방송미디어통신위원회 '2024년 방송산업 실태조사'에서 지상파 매출은 3조 5,337억 원으로 5.4% 줄었고, 광고 매출은 2022년 1조 2,091억 원에서 2024년 8,357억 원으로 줄었다. 지상파 매출에서 광고가 차지하는 비중은 2014년 47.4%에서 2024년 23.7%가 됐다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-herald-terr24"
+   ],
+   "domains": [
+    "culture",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2014~2024",
+   "independentSources": 1
+  },
+  {
+   "id": "tm-media25",
+   "text": "2025년 방송매체 이용행태조사에서는 주 5일 이상 TV 이용률이 70.9%로 전년(69.1%)보다 올랐고, 스마트폰으로 OTT를 보는 비율은 91.2%에서 83.6%로 줄어든 반면 TV 화면으로 OTT를 보는 비율은 23.8%에서 36.4%로 늘었다. 가구의 스마트TV 보유율은 68.4%였다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-dailian-media25",
+    "tm-s-jour-tv26"
+   ],
+   "domains": [
+    "culture",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2025",
+   "independentSources": 2
+  },
+  {
+   "id": "tm-arcade",
+   "text": "1982년 '갤러그'가 나온 뒤 전자오락실이 크게 유행해 서울의 전자오락실은 1979년 900여 곳에서 1982년 3,570여 곳, 1983년 6,000여 곳으로 늘었다. 1983년 고려대 앞에만 오락실이 20곳이 넘었고, 사회정화위원회가 단속했지만 줄지 않았다. 신문에는 '전자독버섯' 같은 우려가 실렸다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-khan-galaga"
+   ],
+   "domains": [
+    "culture",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1979~1983",
+   "independentSources": 1
+  },
+  {
+   "id": "tm-anipang",
+   "text": "카카오는 2012년 7월 30일 '카카오 게임하기'를 열었고, 같은 날 나온 '애니팡'은 그해 10월 국내 다운로드 2,000만 건, 일일 사용자 1,000만 명, 일평균 매출 3억 원을 기록했다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-kakao-game",
+    "tm-s-mt-anipang"
+   ],
+   "domains": [
+    "culture",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2012",
+   "independentSources": 2
+  },
+  {
+   "id": "tm-anipang-age",
+   "text": "한 학술 분석은 애니팡이 젊은 층 중심이던 게임 이용을 중장년층까지 넓혀 모바일게임 대중화를 이뤘지만, 단순한 방식과 지인 순위 경쟁의 약화, '하트' 요청 메시지 피로로 인기가 오래가지 못했다고 정리했다.",
+   "claimType": "source",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-kosci-anipang"
+   ],
+   "domains": [
+    "culture",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2012~2014",
+   "independentSources": 1
+  },
+  {
+   "id": "tm-game24",
+   "text": "한국콘텐츠진흥원 '2024 게임이용자 실태조사'에서 게임 이용률은 2022년 74.4%, 2023년 62.9%, 2024년 59.9%였다. 게임 이용자 중 모바일게임 이용률은 91.7%(+7.1%p), 콘솔은 26.7%(+2.6%p)로 올랐고 PC게임은 53.8%(−7.2%p)로 떨어졌다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-deal-game24"
+   ],
+   "domains": [
+    "culture",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2022~2024",
+   "independentSources": 1
+  },
+  {
+   "id": "tm-game25",
+   "text": "'2025 게임이용자 실태조사'(10~69세 1만 명)에서 게임 이용률은 50.2%로, 전체 이용률을 집계하기 시작한 2015년 이래 가장 낮았다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-sbs-game25"
+   ],
+   "domains": [
+    "culture",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2025",
+   "independentSources": 1
+  },
+  {
+   "id": "tm-travel98",
+   "text": "외환위기 직후 1998년 1월 일반여행 지급액은 1년 전보다 71.6% 줄었다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-kn-travel98"
+   ],
+   "domains": [
+    "economy",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1998",
+   "independentSources": 1
+  },
+  {
+   "id": "tm-travel99",
+   "text": "1999년 6월 말 보도는 김포공항 출국장이 해외 관광객과 어학연수 학생으로 붐비고, 8월 중순까지 미국·유럽·동남아 항공편이 매진됐다며 1년여 전과 딴판이라고 전했다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-seoul-travel99"
+   ],
+   "domains": [
+    "economy",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1999",
+   "independentSources": 1
+  },
+  {
+   "id": "tm-travel1619",
+   "text": "e-나라지표에 따르면 국민 해외여행객은 2016년 2,238만 명(+15.9%), 2017년 2,650만 명(+18.4%), 2018년 2,870만 명(+8.3%), 2019년 2,871만 명(+0.1%)이었다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-index-travel"
+   ],
+   "domains": [
+    "economy",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2016~2019",
+   "independentSources": 1
+  },
+  {
+   "id": "tm-travel2022",
+   "text": "국민 해외여행객은 코로나19로 2020년 428만 명(−85.1%), 2021년 122만 명으로 줄었다가 2022년 655만 명으로 다시 늘었다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-index-travel2"
+   ],
+   "domains": [
+    "economy",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2020~2022",
+   "independentSources": 1
+  },
+  {
+   "id": "tm-travel-dest",
+   "text": "KB경영연구소 정리에 따르면 내국인 해외여행객은 2000년 이후 2019년까지 글로벌 금융위기(2008~2009년) 기간을 빼고 가파르게 늘었다. 2019년과 2024년 사이 일본행은 558만 명에서 880만 명으로 늘었고 중국행은 435만 명에서 230만 명, 미국행은 230만 명에서 170만 명으로 줄었다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-kb-travel25"
+   ],
+   "domains": [
+    "economy",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2019~2024",
+   "independentSources": 1
+  },
+  {
+   "id": "tm-travel25",
+   "text": "한국관광공사 집계로 2025년 국민 해외관광객은 2,955만 명으로 2019년(2,871만 명)을 넘어 사상 최대였고, 개별자유여행(FIT) 비중은 전체 여행 시장의 65%까지 늘었다는 업계 발표가 있다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-hk-fit26"
+   ],
+   "domains": [
+    "economy",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2025~2026",
+   "independentSources": 1
+  },
+  {
+   "id": "tm-travel-pkg",
+   "text": "같은 시기 보도는 출국자 수가 2019년 수준을 넘었지만 여행사 수익의 핵심인 패키지여행 수요는 정체되거나 줄었다고 전했다. 하나투어의 개별자유여행 상품 이용객은 2025년 2분기 100만 명에서 2026년 1분기 148만 명으로 늘었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-news1-pkg",
+    "tm-s-hk-fit26b"
+   ],
+   "domains": [
+    "economy",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2025~2026",
+   "independentSources": 2
+  },
+  {
+   "id": "tm-wfh",
+   "text": "한국은행 분석에 따르면 재택근무 이용자는 2019년 9만 5천 명에서 2021년 114만 명으로 약 12배가 됐고, 저연령·고학력, 상용직, 300명 이상 대기업, 정보통신·금융보험에서 비중이 높았으며 숙박음식·보건복지는 가장 낮았다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-dt-wfh"
+   ],
+   "domains": [
+    "society",
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2019~2021",
+   "independentSources": 1
+  },
+  {
+   "id": "tm-flex",
+   "text": "경제활동인구조사 근로형태별 부가조사에서 유연근무제를 쓰는 임금근로자 비율은 2016년 4.17%에서 2020년 14.17%로 늘었고, 재택·원격근무제는 2019년까지 0.5% 미만이다가 2020년 2.46%가 됐다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-kli-wfh"
+   ],
+   "domains": [
+    "society",
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2016~2020",
+   "independentSources": 1
+  },
+  {
+   "id": "tm-platform",
+   "text": "고용노동부·한국고용정보원 추정으로 플랫폼 종사자는 2020년 22만 3천 명(최초 조사)에서 2021년 66만 1천 명, 2022년 79만 5천 명, 2023년 88만 3천 명이 됐고, 전체 취업자 중 비중은 2021년 2.5%에서 2023년 3.3%가 됐다. 주된 선택 이유는 더 많은 수입(36.1%), 일하는 시간·날짜 선택(20.9%)이었다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-aju-platform",
+    "tm-s-etoday-platform",
+    "tm-s-pressian-platform"
+   ],
+   "domains": [
+    "society",
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2020~2023",
+   "independentSources": 3
+  },
+  {
+   "id": "tm-platform-mix",
+   "text": "2023년 조사에서는 배달·배송·운수 같은 모빌리티 부문이 여전히 절반을 넘었지만 엔데믹 뒤 배달 수요 감소로 줄어드는 추세였고, 전문 서비스·컴퓨터 단순 작업·IT 서비스 부문이 빠르게 늘었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-pressian-platform"
+   ],
+   "domains": [
+    "society",
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2023",
+   "independentSources": 1
+  },
+  {
+   "id": "tm-youth24",
+   "text": "2024년 5월 청년층 부가조사에서 첫 직장 평균 근속기간은 1년 7.2개월이었고, 첫 일자리를 그만둔 이유는 보수·근로시간 등 근로여건 불만족이 45.5%로 가장 많았다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-tomato-youth24"
+   ],
+   "domains": [
+    "society",
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2024",
+   "independentSources": 1
+  },
+  {
+   "id": "tm-youth26",
+   "text": "2026년 5월 청년층 부가조사에서 졸업 후 1년 이상 일자리를 구하지 못한 청년은 미취업 청년의 48.6%(60만 5천 명)로 2009년 금융위기 이후 가장 높았고, 데이터처는 경력직 선호와 기업의 신입 채용 축소를 배경으로 들었다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-sbs-youth26"
+   ],
+   "domains": [
+    "society",
+    "economy"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2026",
+   "independentSources": 1
+  },
+  {
+   "id": "tm-fund-wave",
+   "text": "펀드 유행은 1999년 현대증권 '바이 코리아', 2004년 배당주, 2005년 중소형주, 2006년 그룹주·베트남, 2007년 중국 펀드로 옮겨 갔다. 2007년에는 펀드로 실탄을 확보한 국내 기관이 외국인 매도에도 코스피 2000 시대를 열었다는 평가가 나왔다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-mt-fund08"
+   ],
+   "domains": [
+    "economy",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "1999~2007",
+   "independentSources": 1
+  },
+  {
+   "id": "tm-fund-insight",
+   "text": "2005년 미래에셋의 적립식 펀드 출시 뒤 기본 재테크 상품이 은행 적금과 펀드로 나뉘었다는 평가가 있다. 2007년 10월 나온 인사이트 펀드에는 보름 만에 3조 원이 들어왔다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-khan-fund17"
+   ],
+   "domains": [
+    "economy",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2005~2007",
+   "independentSources": 1
+  },
+  {
+   "id": "tm-fund-crash",
+   "text": "코스피는 2007년 11월 2일 2085.45에서 2008년 10월 31일 892.16으로 57.2% 떨어졌고, 2007년에 돈을 많이 모은 주식형 펀드 대다수의 수익률은 지수보다 더 떨어졌다. 한 증권사 분석가는 이 '반토막' 경험이 적립식 펀드 재투자를 막았다고 말했다. 2020년 보도는 2007~2008년 유행한 중국 펀드 투자자 상당수가 손실을 보고 빠져나왔고 손실 회복에 10년이 걸렸다고 전했다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-khan-insight",
+    "tm-s-khan-fund17",
+    "tm-s-hk-cnfund"
+   ],
+   "domains": [
+    "economy",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2007~2017",
+   "independentSources": 2
+  },
+  {
+   "id": "tm-acct",
+   "text": "주식거래 활동계좌는 2007년 7월 1,000만, 2009년 4월 1,500만, 2012년 5월 2,000만, 2020년 3월 3,000만, 2020년 12월 3,500만 계좌를 넘었고 2021년 3월 4,000만 계좌를 돌파했다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-aju-acct"
+   ],
+   "domains": [
+    "economy",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2007~2021",
+   "independentSources": 1
+  },
+  {
+   "id": "tm-ant20",
+   "text": "2020년 개인투자자는 유가증권시장에서 47조 4,892억 원, 코스닥에서 16조 3,172억 원, 합계 63조 8,064억 원을 순매수해 역대 최대였다. 2030 투자자들은 저금리와 넘볼 수 없는 집값, 유튜브·주식 앱을 통한 쉬운 학습을 이유로 들었다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-fn-ant20",
+    "tm-s-nocut-ant20"
+   ],
+   "domains": [
+    "economy",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2020",
+   "independentSources": 2
+  },
+  {
+   "id": "tm-coin25",
+   "text": "금융정보분석원·금융감독원 실태조사에서 국내 가상자산 거래 가능 이용자 계정은 2025년 6월 1,077만 개, 12월 1,113만 개였다. 같은 기간 시가총액은 95조 1천억 원에서 87조 2천억 원으로, 하루 평균 거래액은 6조 4천억 원에서 5조 4천억 원으로 줄었다.",
+   "claimType": "statistical",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-mtn-coin25"
+   ],
+   "domains": [
+    "economy",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2025",
+   "independentSources": 1
+  },
+  {
+   "id": "tm-west25",
+   "text": "국내 거주자의 해외 증권투자 잔액은 2025년 2분기 1조 1,250억 달러로 역대 최대였고, 주요 12개 증권사의 2025년 상반기 외화증권 수탁수수료는 1조 400억 원으로 전년 같은 기간보다 66% 넘게 늘었다. 같은 기간 코스피가 연초보다 20% 넘게 올랐지만 개인은 미국 주식을 사 모았다는 보도다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "tm-s-econ-west25"
+   ],
+   "domains": [
+    "economy",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "period": "2025",
+   "independentSources": 1
   }
  ],
  "sources": [
@@ -27485,6 +28158,366 @@
    "sourceType": "news",
    "accessedDate": "2026-11-12",
    "publishedDate": "2026-09-01"
+  },
+  {
+   "id": "tm-s-mt-iptv08",
+   "title": "IPTV '100배' 즐기기",
+   "publisher": "머니투데이",
+   "url": "https://www.mt.co.kr/stock/2008/07/05/2008070210361223943",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2008-07-05"
+  },
+  {
+   "id": "tm-s-kuki-iptv09",
+   "title": "IPTV 가입자 감소 보도",
+   "publisher": "국민일보(쿠키뉴스)",
+   "url": "https://www.kukinews.com/article/view/kuk200904070076",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2009-04-07"
+  },
+  {
+   "id": "tm-s-khan-media15",
+   "title": "필수매체 TV 44.3%·스마트폰 43.9%(방통위 2014 방송매체 이용행태조사)",
+   "publisher": "경향신문",
+   "url": "https://www.khan.co.kr/article/201502121736391",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2015-02-12"
+  },
+  {
+   "id": "tm-s-jour-media19",
+   "title": "\"TV 보다 스마트폰\"…OTT 이용률도 급증(2019 방송매체 이용행태조사)",
+   "publisher": "기자협회보",
+   "url": "https://www.journalist.or.kr/m/m_article.html?no=47204",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2020-01-30"
+  },
+  {
+   "id": "tm-s-herald-nf10",
+   "title": "'킹덤'부터 '오겜'까지…넷플릭스 한국 진출 10년의 기록",
+   "publisher": "헤럴드경제",
+   "url": "https://www.heraldk.com/article/2026010621572902623",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-01-06"
+  },
+  {
+   "id": "tm-s-wiki-nf",
+   "title": "넷플릭스 2021년 2월 MAU 1,000만 돌파",
+   "publisher": "위키트리",
+   "url": "https://www.wikitree.co.kr/articles/1110087",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12"
+  },
+  {
+   "id": "tm-s-kocca-ott24",
+   "title": "'무료로 더 빠르고 짧게 OTT 즐겼다' 2024 온라인동영상서비스 이용행태 조사",
+   "publisher": "한국콘텐츠진흥원",
+   "url": "https://www.kocca.kr/kocca/koccanews/reportview.do?nttNo=838",
+   "sourceType": "government",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2024-12-20"
+  },
+  {
+   "id": "tm-s-seoul-media24",
+   "title": "방통위 「2024 방송매체 이용행태조사」 결과 발표",
+   "publisher": "서울신문(보도자료)",
+   "url": "https://go.seoul.co.kr/news/prnewsView.php?id=361751",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2024-12-30"
+  },
+  {
+   "id": "tm-s-herald-terr24",
+   "title": "2024년 국내 방송산업 실태조사 — 지상파 매출·광고 감소",
+   "publisher": "헤럴드경제",
+   "url": "https://www.heraldk.com/article/2025123103400362936",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-12-31"
+  },
+  {
+   "id": "tm-s-dailian-media25",
+   "title": "국민 10명 중 8명 OTT 이용…2025 방송매체 이용행태조사",
+   "publisher": "데일리안",
+   "url": "https://www.dailian.co.kr/news/view/1592552/",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-12-30"
+  },
+  {
+   "id": "tm-s-jour-tv26",
+   "title": "TV·뉴스·영화·게임, 그 단어를 다시 들여다보면",
+   "publisher": "기자협회보",
+   "url": "https://www.journalist.or.kr/ezview/article_main.html?no=60373",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-02-24"
+  },
+  {
+   "id": "tm-s-khan-galaga",
+   "title": "[한국 테크노 컬처 연대기](14) 전자오락실 점령한 '갤러그 전성시대'",
+   "publisher": "주간경향(다음뉴스 게재)",
+   "url": "https://v.daum.net/v/20160406101359749",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2016-04-06"
+  },
+  {
+   "id": "tm-s-kakao-game",
+   "title": "뚝딱뚝딱 성장기 2012.07 — 카카오 게임하기",
+   "publisher": "카카오",
+   "url": "https://www.kakaocorp.com/page/detail/9345",
+   "sourceType": "company",
+   "accessedDate": "2026-11-12"
+  },
+  {
+   "id": "tm-s-mt-anipang",
+   "title": "[더벨] 애니팡, '프로세스'의 성공",
+   "publisher": "머니투데이",
+   "url": "https://www.mt.co.kr/article/2012102209219630655",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2012-10-22"
+  },
+  {
+   "id": "tm-s-kosci-anipang",
+   "title": "애니팡의 성공과 쇠퇴 요인 분석",
+   "publisher": "한국콘텐츠학회 학술대회(KoreaScience)",
+   "url": "https://koreascience.kr/article/CFKO201433752814474.pdf",
+   "sourceType": "paper",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2014"
+  },
+  {
+   "id": "tm-s-deal-game24",
+   "title": "게임 이용률이 2년 새 14.5%P↓…PC게임 하락세 주도",
+   "publisher": "딜사이트",
+   "url": "https://dealsite.co.kr/articles/133523",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2024-12-17"
+  },
+  {
+   "id": "tm-s-sbs-game25",
+   "title": "\"게임할 시간없어요\"…게임 이용률 10년 만에 최저",
+   "publisher": "SBS Biz",
+   "url": "https://biz.sbs.co.kr/amp/article/20000280068",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12"
+  },
+  {
+   "id": "tm-s-kn-travel98",
+   "title": "일반여행 지급 68% 감소 — 1998년 1월 이후 최대 감소폭",
+   "publisher": "경남신문",
+   "url": "https://knnews.co.kr/news/articleView.php?idxno=763167",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12"
+  },
+  {
+   "id": "tm-s-seoul-travel99",
+   "title": "해외여행객 급증(1999년 여름 김포공항)",
+   "publisher": "서울신문",
+   "url": "https://www.seoul.co.kr/news/1999/06/30/19990630007001",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "1999-06-30"
+  },
+  {
+   "id": "tm-s-index-travel",
+   "title": "국민 해외여행객 추이(e-나라지표)",
+   "publisher": "국가데이터처 e-나라지표",
+   "url": "https://www.index.go.kr/unity/potal/main/EachDtlPageDetail.do?idx_cd=1655",
+   "sourceType": "government",
+   "accessedDate": "2026-11-12"
+  },
+  {
+   "id": "tm-s-index-travel2",
+   "title": "국민 해외여행객 — 코로나19 시기(e-나라지표)",
+   "publisher": "국가데이터처 e-나라지표",
+   "url": "https://www.index.go.kr/unify/idx-info.do?idxCd=1655",
+   "sourceType": "government",
+   "accessedDate": "2026-11-12"
+  },
+  {
+   "id": "tm-s-kb-travel25",
+   "title": "외국인의 방한여행과 내국인의 해외여행 추이",
+   "publisher": "KB경영연구소(KB Think)",
+   "url": "https://kbthink.com/investment/deepdive/research/250714-2.html",
+   "sourceType": "report",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-07-14"
+  },
+  {
+   "id": "tm-s-hk-fit26",
+   "title": "놀유니버스 사업구조 개편 — FIT 비중 65%",
+   "publisher": "한국경제",
+   "url": "https://www.hankyung.com/article/202606245724g",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-06-24"
+  },
+  {
+   "id": "tm-s-hk-fit26b",
+   "title": "하나투어 1분기 FIT 이용객 148만명",
+   "publisher": "한국경제",
+   "url": "https://www.hankyung.com/article/202605043821g",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-05-04"
+  },
+  {
+   "id": "tm-s-news1-pkg",
+   "title": "\"사람 붐비는데 알맹이 없다\"…여행사, 역대급 호황에도 실적은 '글쎄'",
+   "publisher": "뉴스1",
+   "url": "https://www.news1.kr/amp/industry/hotel-tourism/6046304",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12"
+  },
+  {
+   "id": "tm-s-dt-wfh",
+   "title": "팬데믹이후 재택근무 확산과 경기완충 효과(한국은행 BOK 이슈노트) 보도",
+   "publisher": "디지털타임스",
+   "url": "https://www.dt.co.kr/article/11428521",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12"
+  },
+  {
+   "id": "tm-s-kli-wfh",
+   "title": "코로나19 이후 일하는 방식 변화 및 그에 따른 고용영향 분석",
+   "publisher": "한국노동연구원 고용영향평가브리프",
+   "url": "https://repository.kli.re.kr/bitstream/2021.oak/7157/2/KLI%20%ea%b3%a0%ec%9a%a9%ec%98%81%ed%96%a5%ed%8f%89%ea%b0%80%eb%b8%8c%eb%a6%ac%ed%94%84%202022%eb%85%84%20%ec%a0%9c1%ed%98%b8%28%ed%86%b5%ea%b6%8c%20%ec%a0%9c28%ed%98%b8%29.pdf",
+   "sourceType": "paper",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2022"
+  },
+  {
+   "id": "tm-s-aju-platform",
+   "title": "플랫폼 종사자 직종별 근무실태와 정책과제(한국고용정보원) 보도",
+   "publisher": "아주경제",
+   "url": "https://www.ajunews.com/view/20250126185138750",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-01-26"
+  },
+  {
+   "id": "tm-s-etoday-platform",
+   "title": "플랫폼종사자 11.1% 증가…배달·운전은 감소",
+   "publisher": "이투데이",
+   "url": "https://www.etoday.co.kr/news/view/2387442",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2024-08"
+  },
+  {
+   "id": "tm-s-pressian-platform",
+   "title": "'2023 플랫폼종사자 실태조사'가 보여주는 것",
+   "publisher": "프레시안",
+   "url": "https://pressian.com/pages/articles/2024080617222885438",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2024-08-06"
+  },
+  {
+   "id": "tm-s-tomato-youth24",
+   "title": "졸업부터 취업까지 '역대 최장'(2024년 5월 청년층 부가조사)",
+   "publisher": "뉴스토마토",
+   "url": "https://newstomato.com/ReadNews.aspx?no=1235336",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2024"
+  },
+  {
+   "id": "tm-s-sbs-youth26",
+   "title": "졸업 후 1년 이상 청년 백수 60만명…금융위기 때 이후 최악(2026년 5월 청년층 부가조사)",
+   "publisher": "SBS Biz",
+   "url": "https://biz.sbs.co.kr/amp/article/20000324139",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-07-23"
+  },
+  {
+   "id": "tm-s-mt-fund08",
+   "title": "소문따라 줄 서다 '빛 좋은 펀드' 될라",
+   "publisher": "머니투데이",
+   "url": "https://www.mt.co.kr/article/2008022018105525022",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2008-02-20"
+  },
+  {
+   "id": "tm-s-khan-fund17",
+   "title": "적립식 펀드는 왜 왕따가 되었나",
+   "publisher": "주간경향",
+   "url": "https://weekly.khan.co.kr/article/201708141705511",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2017-08-14"
+  },
+  {
+   "id": "tm-s-khan-insight",
+   "title": "수조원 날린 신뢰 '수백억원 미봉책'",
+   "publisher": "주간경향",
+   "url": "https://weekly.khan.co.kr/article/19835",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12"
+  },
+  {
+   "id": "tm-s-hk-cnfund",
+   "title": "中펀드 트라우마…손실 회복에 10년 걸려",
+   "publisher": "한국경제",
+   "url": "https://www.hankyung.com/amp/2020052684371",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2020-05-26"
+  },
+  {
+   "id": "tm-s-aju-acct",
+   "title": "주식거래 활동계좌 4천만 돌파 보도",
+   "publisher": "아주경제",
+   "url": "https://www.ajunews.com/view/20210705103146300",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2021-07-05"
+  },
+  {
+   "id": "tm-s-fn-ant20",
+   "title": "동학개미 2020년 순매수 63.8조",
+   "publisher": "파이낸셜뉴스",
+   "url": "https://www.fnnews.com/news/202012301704411408",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2020-12-30"
+  },
+  {
+   "id": "tm-s-nocut-ant20",
+   "title": "\"2020년, 이런 개미들은 처음이지?\" 2030 내가 주식하는 이유는",
+   "publisher": "노컷뉴스",
+   "url": "https://www.nocutnews.co.kr/news/5468704",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2020-12"
+  },
+  {
+   "id": "tm-s-mtn-coin25",
+   "title": "거래 식은 가상자산시장…예치금은 8조원대로 늘었다(2025년 하반기 실태조사)",
+   "publisher": "MTN",
+   "url": "https://news.mtn.co.kr/news-detail/2026032510044846574",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2026-03-25"
+  },
+  {
+   "id": "tm-s-econ-west25",
+   "title": "'해외주식 열풍'에 웃은 증권사들…커지는 서학개미 존재감",
+   "publisher": "이코노미스트",
+   "url": "https://economist.co.kr/article/view/ecn202508260072",
+   "sourceType": "news",
+   "accessedDate": "2026-11-12",
+   "publishedDate": "2025-08-26"
   }
  ],
  "events": [
@@ -83944,10 +84977,14 @@
      {
       "kind": "taste",
       "id": "taste-home"
+     },
+     {
+      "kind": "topic",
+      "id": "life-stuff"
      }
     ],
     "planned": [
-     "식기·조명·수납 단독 흐름"
+     "식기·조명 단독 흐름"
     ]
    },
    {
@@ -83979,11 +85016,15 @@
      {
       "kind": "taste",
       "id": "taste-dining"
+     },
+     {
+      "kind": "topic",
+      "id": "life-convenience"
      }
     ],
     "planned": [
      "카페·디저트",
-     "간편식·배달"
+     "간편식(가정간편식·밀키트)"
     ]
    },
    {
@@ -84006,11 +85047,17 @@
      {
       "kind": "flow",
       "id": "flow-music"
+     },
+     {
+      "kind": "topic",
+      "id": "media-screen"
+     },
+     {
+      "kind": "topic",
+      "id": "media-game"
      }
     ],
     "planned": [
-     "영상 보는 방식(TV→OTT→숏폼)",
-     "게임",
      "팬덤 지출"
     ]
    },
@@ -84040,10 +85087,25 @@
      {
       "kind": "flow",
       "id": "flow-time"
+     },
+     {
+      "kind": "topic",
+      "id": "life-health"
+     },
+     {
+      "kind": "topic",
+      "id": "life-nature"
+     },
+     {
+      "kind": "topic",
+      "id": "life-rest"
+     },
+     {
+      "kind": "topic",
+      "id": "media-game"
      }
     ],
     "planned": [
-     "운동 종목과 장비",
      "여가를 보내는 장소(현재 흐름은 여행·노래방·배달이 섞여 있어 나누는 중)"
     ]
    },
@@ -84054,10 +85116,13 @@
      {
       "kind": "topic",
       "id": "city-move"
+     },
+     {
+      "kind": "topic",
+      "id": "travel-abroad"
      }
     ],
     "planned": [
-     "해외여행 방식(패키지→자유여행)",
      "숙소 고르기"
     ]
    },
@@ -84076,11 +85141,18 @@
      {
       "kind": "industry",
       "id": "internet"
+     },
+     {
+      "kind": "topic",
+      "id": "life-record"
+     },
+     {
+      "kind": "topic",
+      "id": "media-screen"
      }
     ],
     "planned": [
-     "집 안 기기 보급(현재 흐름은 TV·휴대폰·메신저·AI가 섞여 있어 나누는 중)",
-     "필기·독서 도구 — 디지털과 아날로그"
+     "집 안 기기 보급(현재 흐름은 TV·휴대폰·메신저·AI가 섞여 있어 나누는 중)"
     ]
    },
    {
@@ -84090,19 +85162,34 @@
      {
       "kind": "flow",
       "id": "flow-family"
+     },
+     {
+      "kind": "topic",
+      "id": "city-home"
+     },
+     {
+      "kind": "topic",
+      "id": "life-alone"
      }
     ],
     "planned": [
-     "사는 집의 형태(현재 흐름은 인구·교통·아파트가 섞여 있어 나누는 중)",
      "돌봄"
     ]
    },
    {
     "id": "work",
     "label": "일·학습·자기계발",
-    "items": [],
+    "items": [
+     {
+      "kind": "topic",
+      "id": "work-style"
+     },
+     {
+      "kind": "flow",
+      "id": "flow-jobs"
+     }
+    ],
     "planned": [
-     "일하는 방식과 고용 형태(현재 흐름은 산업 사건이 섞여 있어 나누는 중)",
      "자격·학습 서비스"
     ]
    },
@@ -84149,6 +85236,24 @@
     ],
     "planned": [
      "기계·전자부품(후속)"
+    ]
+   },
+   {
+    "id": "money",
+    "label": "돈·투자·금융 생활",
+    "items": [
+     {
+      "kind": "topic",
+      "id": "money-invest"
+     },
+     {
+      "kind": "topic",
+      "id": "shop-pay"
+     }
+    ],
+    "planned": [
+     "저축·보험·연금",
+     "대출과 집 마련 자금"
     ]
    },
    {
@@ -84217,6 +85322,26 @@
     "id": "lifestyle",
     "label": "라이프스타일",
     "desc": "시간·공간·관계·몸·주의력을 어떻게 쓰고 관리하는지, 무엇을 좋은 삶으로 여기는지."
+   },
+   {
+    "id": "media",
+    "label": "미디어와 놀이",
+    "desc": "영상을 어떻게 보고, 게임을 어디서 하는지 따로 추적합니다."
+   },
+   {
+    "id": "travel",
+    "label": "여행",
+    "desc": "해외에 어떻게 나가는지 — 허가에서 자유화, 패키지에서 개별 여행으로."
+   },
+   {
+    "id": "work",
+    "label": "일",
+    "desc": "어떤 계약으로, 어디서, 얼마나 오래 일하는지."
+   },
+   {
+    "id": "money",
+    "label": "돈과 투자",
+    "desc": "남는 돈을 어디에 두고 불리는지 — 투자 권유가 아니라 방식의 변화를 봅니다."
    }
   ],
   "topics": [
@@ -95497,6 +96622,3153 @@
       "text": "재택근무가 늘어 통근이 줄면 '광역 교통 수요 증가' 판단을 고친다.",
       "ids": [
        "ts-h-covid-survey"
+      ]
+     }
+    }
+   },
+   {
+    "id": "media-screen",
+    "domain": "media",
+    "label": "영상 보는 방식 — 안방 TV에서 손안의 화면, 다시 큰 화면으로",
+    "tracks": "사람들이 영상(드라마·예능·영화·짧은 영상)을 어떤 기기로, 언제, 돈을 내고 보는지: 컬러TV·비디오 → IPTV 다시보기 → 스마트폰·넷플릭스 → 숏폼 → TV 화면으로 보는 OTT.",
+    "question": "스마트폰이 TV를 밀어낸 줄 알았는데, 2025년에는 TV 화면으로 OTT를 보는 사람이 1년 새 12.6%포인트 늘었다. 사람들이 버린 것은 TV 기기였나, 방송 편성표였나?",
+    "scene": {
+     "layer": "fact",
+     "text": "2025년 TV 화면으로 OTT를 본 비율은 36.4%로 전년보다 12.6%포인트 늘었고, 가구의 68.4%가 스마트TV를 갖고 있었다.",
+     "ids": [
+      "tm-media25"
+     ]
+    },
+    "span": [
+     1980,
+     2025
+    ],
+    "scope": [
+     {
+      "layer": "inference",
+      "text": "이용률·이용시간은 조사마다 표본과 질문이 조금씩 달라 해마다 이어 붙인 숫자는 방향만 본다.",
+      "ids": [
+       "tm-media19",
+       "tm-media24"
+      ]
+     }
+    ],
+    "turns": [
+     {
+      "id": "t1",
+      "years": "1980~1989",
+      "start": 1980,
+      "end": 1980,
+      "title": "안방의 컬러TV와 비디오",
+      "why": {
+       "layer": "fact",
+       "text": "1980년 12월 컬러 방송이 시작됐다.",
+       "ids": [
+        "c80-colortv"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "1979년 흑백TV 보급률은 이미 90% 안팎이었다.",
+        "ids": [
+         "c80-colortv"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "정부는 불황 타개와 가전산업 육성을 목적으로 컬러TV 국내 판매를 허용했다.",
+        "ids": [
+         "c80-colortv"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "1984년 가구의 58%가 컬러TV를 가졌고, 1980년대가 끝날 무렵 그 비율은 80%를 넘었다.",
+        "ids": [
+         "er-lei-tv-theater"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "컬러 방송과 가정용 VTR 보급으로 영화관의 입지가 좁아졌다.",
+        "ids": [
+         "c80-vtr"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "영상은 '방송사가 정한 시간에 거실에서 함께 보는 것'이 기본값이 됐다. 비디오는 그 시간표에서 처음 벗어나는 길이었다.",
+        "ids": [
+         "c80-vtr"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t2",
+      "years": "2008~2009",
+      "start": 2008,
+      "end": 2008,
+      "title": "원하는 시간에 다시 보기 — IPTV",
+      "why": {
+       "layer": "fact",
+       "text": "2008년 IPTV는 다시보기(VOD)를 주력으로 시작해 하반기 실시간 방송을 더했다.",
+       "ids": [
+        "tm-iptv08"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "방송은 편성표대로 보고 놓치면 재방송을 기다려야 했다.",
+        "ids": [
+         "tm-iptv08"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "초고속 인터넷망이 IPTV의 바탕이 됐다.",
+        "ids": [
+         "c90-pcbang"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "지상파 프로그램 다시보기는 방영 12시간 뒤 편당 500원이었다.",
+        "ids": [
+         "tm-iptv08"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "무료를 유료로 바꾸자 가입자가 160만 명에서 155만여 명으로 줄었다.",
+        "ids": [
+         "tm-iptv09"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "'시간을 내가 정한다'는 편리함에는 돈을 낼 만큼의 콘텐츠가 따라와야 한다는 점이 처음 드러났다.",
+        "ids": [
+         "tm-iptv09"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t3",
+      "years": "2014~2021",
+      "start": 2014,
+      "end": 2014,
+      "title": "손안의 화면과 넷플릭스",
+      "why": {
+       "layer": "fact",
+       "text": "2014년 조사에서 필수매체 스마트폰(43.9%)이 TV(44.3%)와 거의 같아졌다.",
+       "ids": [
+        "tm-media14"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "2019년에도 하루 TV 시청(2시간 42분)이 스마트폰(1시간 39분)보다 길었다.",
+        "ids": [
+         "tm-media19"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "넷플릭스가 2016년 1월 한국에서 서비스를 시작했다.",
+        "ids": [
+         "tm-nf16"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "넷플릭스 국내 월간 이용자가 2021년 2월 1,000만 명을 넘었다.",
+        "ids": [
+         "tm-nf21"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "2018년 첫 한국 오리지널, 2019년 첫 시리즈 '킹덤'이 나왔다.",
+        "ids": [
+         "tm-nf16"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "fact",
+        "text": "지상파 매출에서 광고 비중이 2014년 47.4%에서 2024년 23.7%로 줄었다.",
+        "ids": [
+         "tm-terr24"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t4",
+      "years": "2024~2025",
+      "start": 2024,
+      "end": 2024,
+      "title": "무료·짧게 — 숏폼, 그리고 다시 큰 화면",
+      "why": {
+       "layer": "fact",
+       "text": "2024년 무료 OTT 이용자의 69.6%가 숏폼을 봤고 유료 OTT 이용률은 떨어졌다.",
+       "ids": [
+        "tm-ott24"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "2024년 하루 OTT 이용시간은 1시간 10분으로 계속 늘었다.",
+        "ids": [
+         "tm-media24"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "실시간 방송 시청은 줄고 다시보기 시청은 45.2%로 늘었다.",
+        "ids": [
+         "tm-media24"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "TV 화면으로 OTT를 보는 비율이 23.8%에서 36.4%로 늘었다.",
+        "ids": [
+         "tm-media25"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "2025년 주 5일 이상 TV 이용률이 70.9%로 다시 올랐다.",
+        "ids": [
+         "tm-media25"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "TV는 '방송 수신기'에서 '큰 화면'으로 쓰임이 바뀌고 있다. 기기는 돌아왔지만 편성표는 돌아오지 않았다.",
+        "ids": [
+         "tm-media25",
+         "tm-media24"
+        ]
+       }
+      ]
+     }
+    ],
+    "branches": {
+     "intro": "한 줄은 영상을 보는 한 가지 방식입니다.",
+     "lanes": [
+      {
+       "label": "편성표대로 보는 실시간 방송",
+       "start": 1980,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "fact",
+        "text": "최근 일주일 실시간 시청 86.5%로 감소(2024).",
+        "ids": [
+         "tm-media24"
+        ]
+       }
+      },
+      {
+       "label": "빌리거나 골라 보기(비디오·VOD)",
+       "start": 1985,
+       "end": null,
+       "state": "공존",
+       "note": {
+        "layer": "fact",
+        "text": "다시보기 시청 45.2%로 증가(2024).",
+        "ids": [
+         "tm-media24"
+        ]
+       }
+      },
+      {
+       "label": "구독형 OTT",
+       "start": 2016,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "넷플릭스 월간 이용자 1,000만(2021).",
+        "ids": [
+         "tm-nf21"
+        ]
+       }
+      },
+      {
+       "label": "무료 숏폼",
+       "start": 2020,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "무료 OTT 이용자 69.6%가 숏폼 이용(2024).",
+        "ids": [
+         "tm-ott24"
+        ]
+       }
+      }
+     ],
+     "read": {
+      "layer": "inference",
+      "text": "기기는 TV → 스마트폰 → 다시 TV로 돌아왔지만, 보는 방식은 '정해진 시간'에서 '내가 고른 것'으로 한 방향으로 움직였다.",
+      "ids": [
+       "tm-media24",
+       "tm-media25"
+      ]
+     }
+    },
+    "reasons": [
+     {
+      "title": "스마트폰 시대에 왜 TV 화면 이용이 다시 늘었나",
+      "facts": [
+       {
+        "layer": "fact",
+        "text": "TV 화면 OTT 시청 36.4%(+12.6%p), 스마트TV 보유 68.4%.",
+        "ids": [
+         "tm-media25"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "스마트폰 OTT 시청 91.2% → 83.6%.",
+        "ids": [
+         "tm-media25"
+        ]
+       }
+      ],
+      "logic": {
+       "layer": "inference",
+       "text": "스마트TV가 늘면서 셋톱박스 없이도 OTT를 큰 화면으로 볼 수 있게 됐다. 긴 드라마·영화는 큰 화면으로, 짧은 영상은 손안에서 나눠 보는 쪽으로 기기가 역할을 나눴을 수 있다.",
+       "ids": [
+        "tm-media25",
+        "tm-ott24"
+       ]
+      },
+      "proposal": {
+       "layer": "inference",
+       "text": "TV의 귀환은 방송의 귀환이 아니라 '큰 화면'의 귀환이다.",
+       "ids": [
+        "tm-media25",
+        "tm-terr24"
+       ]
+      },
+      "rivals": [
+       {
+        "layer": "inference",
+        "text": "조사 표본 설명 — 한 해 변화라 표본 차이일 수 있다.",
+        "ids": [
+         "tm-media25"
+        ]
+       },
+       {
+        "layer": "inference",
+        "text": "고령층 설명 — 50대 이상 TV 이용이 늘어 평균을 올렸을 수 있다.",
+        "ids": [
+         "tm-media25"
+        ]
+       }
+      ],
+      "scope": {
+       "layer": "inference",
+       "text": "2024~2025년 두 해 조사의 변화다.",
+       "ids": [
+        "tm-media25"
+       ]
+      },
+      "check": [
+       {
+        "layer": "hypothesis",
+        "text": "확인 쪽: 2026년 조사에서도 TV 화면 OTT 비율이 오르는지 — 아직 발표 전이다.",
+        "ids": []
+       }
+      ]
+     }
+    ],
+    "links": [
+     {
+      "kind": "industry",
+      "target": "tv",
+      "at": "1966~",
+      "why": "TV라는 기기를 누가 만들고 어떻게 보급됐는지는 TV 산업 일대기에서 본다."
+     },
+     {
+      "kind": "topic",
+      "target": "media-game",
+      "at": "2012~",
+      "why": "스마트폰 화면을 두고 게임과 짧은 영상이 같은 시간을 나눠 쓴다."
+     },
+     {
+      "kind": "flow",
+      "target": "flow-music",
+      "at": "2010~",
+      "why": "음악도 유튜브로 듣는 방식이 늘었다 — 음악 흐름에서 본다."
+     }
+    ],
+    "repeats": [
+     {
+      "type": "재등장",
+      "title": "거실의 큰 화면",
+      "past": {
+       "layer": "fact",
+       "text": "1980년대 컬러TV는 거실에서 함께 보는 화면이었다.",
+       "ids": [
+        "c80-colortv",
+        "er-lei-tv-theater"
+       ]
+      },
+      "now": {
+       "layer": "fact",
+       "text": "2025년 TV 화면으로 OTT를 보는 비율이 36.4%로 늘었다.",
+       "ids": [
+        "tm-media25"
+       ]
+      },
+      "alike": {
+       "layer": "inference",
+       "text": "큰 화면에서 긴 영상을 보는 습관은 남아 있다.",
+       "ids": [
+        "tm-media25"
+       ]
+      },
+      "changed": {
+       "layer": "inference",
+       "text": "무엇을 볼지는 방송사가 아니라 시청자가 고른다.",
+       "ids": [
+        "tm-media24"
+       ]
+      },
+      "alternatives": [
+       {
+        "layer": "inference",
+        "text": "TV 판매 촉진과 스마트TV 기본 탑재가 만든 수치일 수 있다.",
+        "ids": [
+         "tm-media25"
+        ]
+       }
+      ],
+      "counter": [
+       {
+        "layer": "inference",
+        "text": "20~30대의 TV 중요도는 여전히 한 자릿수라, 세대 전체의 귀환이라고 보기 어렵다.",
+        "ids": [
+         "tm-media25"
+        ]
+       }
+      ],
+      "at": [
+       "t1",
+       "t4"
+      ]
+     }
+    ],
+    "futures": {
+     "split": {
+      "layer": "inference",
+      "text": "갈라지는 이유는 돈이다. 유료 구독료 부담이 커지면 무료 숏폼·광고형 쪽으로, 오리지널 대작이 계속 나오면 큰 화면 구독 쪽으로 기운다.",
+      "ids": [
+       "tm-ott24",
+       "tm-nf16"
+      ]
+     },
+     "items": [
+      {
+       "kind": "분화",
+       "name": "긴 영상은 큰 화면, 짧은 영상은 손안에",
+       "change": {
+        "layer": "inference",
+        "text": "같은 사람이 기기에 따라 보는 길이를 나눈다.",
+        "ids": [
+         "tm-media25",
+         "tm-ott24"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "TV 화면 OTT 증가와 무료 숏폼 이용.",
+         "ids": [
+          "tm-media25",
+          "tm-ott24"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "화면 크기와 보는 시간의 길이가 맞물린다.",
+        "ids": [
+         "tm-media25"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "스마트TV 보급이 계속 늘어야 한다.",
+        "ids": [
+         "tm-media25"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "TV용 OTT 앱, 숏폼 제작, 광고형 요금제.",
+        "ids": [
+         "tm-ott24"
+        ]
+       },
+       "watch": [
+        "TV 화면 OTT 이용 비율",
+        "숏폼 이용 비율"
+       ],
+       "against": [
+        "TV 화면 OTT 비율이 다시 떨어지면 일시적 변화"
+       ]
+      },
+      {
+       "kind": "결합",
+       "name": "방송사와 OTT가 섞인다",
+       "change": {
+        "layer": "inference",
+        "text": "지상파는 광고 대신 OTT 납품·공동 제작으로 수익을 옮긴다.",
+        "ids": [
+         "tm-terr24"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "지상파 광고 매출 1조 2,091억 → 8,357억 원.",
+         "ids": [
+          "tm-terr24"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "광고가 줄면 콘텐츠를 팔 곳을 찾아야 한다.",
+        "ids": [
+         "tm-terr24"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "OTT가 국내 제작 콘텐츠를 계속 사야 한다.",
+        "ids": [
+         "tm-nf16"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "제작사, 콘텐츠 유통.",
+        "ids": [
+         "tm-terr24"
+        ]
+       },
+       "watch": [
+        "지상파 매출 구성",
+        "국내 OTT 오리지널 편수"
+       ],
+       "against": [
+        "지상파 광고 매출이 반등하면 결합 압력이 약해짐"
+       ]
+      }
+     ]
+    },
+    "conclusion": {
+     "key": {
+      "layer": "inference",
+      "text": "영상을 보는 기기는 TV에서 스마트폰으로 갔다가 다시 큰 화면으로 돌아오고 있지만, '정해진 시간에 방송사가 고른 것을 본다'는 방식은 돌아오지 않았다.",
+      "ids": [
+       "tm-media25",
+       "tm-media24",
+       "tm-terr24"
+      ]
+     },
+     "favored": {
+      "layer": "inference",
+      "text": "'TV의 몰락'보다 'TV가 화면으로 남는다' 해석을 지지한다. 근거: 스마트TV 68.4%, TV 화면 OTT 증가.",
+      "ids": [
+       "tm-media25"
+      ]
+     },
+     "undecided": {
+      "layer": "inference",
+      "text": "한 해 변화라 추세인지 판단하려면 다음 조사가 필요하다.",
+      "ids": [
+       "tm-media25"
+      ]
+     },
+     "next": {
+      "layer": "inference",
+      "text": "2026년 방송매체 이용행태조사의 TV 화면 OTT 비율.",
+      "ids": [
+       "tm-media25"
+      ]
+     },
+     "change": {
+      "layer": "inference",
+      "text": "TV 화면 OTT 비율이 떨어지면 '손안의 화면' 결론으로 돌아간다.",
+      "ids": [
+       "tm-media25"
+      ]
+     }
+    }
+   },
+   {
+    "id": "media-game",
+    "domain": "media",
+    "label": "게임 — 오락실에서 PC방, 손안의 게임까지",
+    "tracks": "사람들이 게임을 어디서, 어떤 기기로, 누구와 했는지: 동네 오락실 → PC방과 온라인게임 → 카카오톡 친구와 하는 모바일게임 → 이용률 하락.",
+    "question": "2022년 국민 74%가 하던 게임을 2025년에는 절반만 했다. 게임을 떠난 시간은 어디로 갔을까?",
+    "scene": {
+     "layer": "fact",
+     "text": "게임 이용률은 2022년 74.4%에서 2025년 50.2%로, 집계 시작 이래 가장 낮아졌다.",
+     "ids": [
+      "tm-game24",
+      "tm-game25"
+     ]
+    },
+    "span": [
+     1979,
+     2025
+    ],
+    "scope": [
+     {
+      "layer": "inference",
+      "text": "게임 이용률 집계는 2015년부터라 그 이전은 오락실 수·판매량 같은 간접 자료로 본다.",
+      "ids": [
+       "tm-game25",
+       "tm-arcade"
+      ]
+     }
+    ],
+    "turns": [
+     {
+      "id": "t1",
+      "years": "1979~1983",
+      "start": 1979,
+      "end": 1979,
+      "title": "동네 오락실과 '전자독버섯' 논란",
+      "why": {
+       "layer": "fact",
+       "text": "서울의 전자오락실은 1979년 900여 곳에서 1983년 6,000여 곳으로 늘었다.",
+       "ids": [
+        "tm-arcade"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "놀이는 탁구장·당구장·만화방 같은 곳에서 했다.",
+        "ids": [
+         "tm-arcade"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "1982년 '갤러그'가 나오며 유행이 번졌다.",
+        "ids": [
+         "tm-arcade"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "대학가에도 오락실이 몰려 고려대 앞에만 20곳이 넘었다.",
+        "ids": [
+         "tm-arcade"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "사회정화위원회가 단속했지만 오락실은 줄지 않았다.",
+        "ids": [
+         "tm-arcade"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "게임은 처음부터 '청소년 문제'로 이야기됐고, 이 시선은 이후 PC방·모바일게임에도 따라붙었다.",
+        "ids": [
+         "tm-arcade"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t2",
+      "years": "1998~1999",
+      "start": 1998,
+      "end": 1998,
+      "title": "PC방과 스타크래프트",
+      "why": {
+       "layer": "fact",
+       "text": "PC방은 1998년 초 100여 개에서 1999년 말 15,000개로 늘었다.",
+       "ids": [
+        "c90-pcbang"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "집에서 전화선 모뎀으로 60시간 쓰면 7만 원가량 들었다.",
+        "ids": [
+         "ix-nt-price"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "외환위기 실직자와 초고속 인터넷 보급이 PC방 창업과 맞물렸다.",
+        "ids": [
+         "c90-syn-chain"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "스타크래프트 국내 판매량이 1999년 10월 100만 장을 넘었다.",
+        "ids": [
+         "c90-starcraft"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "PC방은 시간당 1,500~2,000원으로 집 인터넷보다 쌌다.",
+        "ids": [
+         "ix-nt-price"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "게임이 '혼자 하는 오락'에서 '친구와 같은 공간에서 겨루는 놀이'가 됐다.",
+        "ids": [
+         "c90-starcraft"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t3",
+      "years": "2012",
+      "start": 2012,
+      "end": 2012,
+      "title": "카카오톡 친구와 하는 손안의 게임",
+      "why": {
+       "layer": "fact",
+       "text": "2012년 7월 카카오 게임하기와 애니팡이 함께 나왔고 석 달 만에 다운로드 2,000만 건을 넘었다.",
+       "ids": [
+        "tm-anipang"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "게임은 젊은 남성 중심의 PC 온라인게임이 주류였다.",
+        "ids": [
+         "tm-anipang-age"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "스마트폰 보급이 빠르게 늘었다.",
+        "ids": [
+         "c00-kr-iphone"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "애니팡 일일 사용자가 1,000만 명에 이르렀다.",
+        "ids": [
+         "tm-anipang"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "source",
+        "text": "애니팡은 중장년층까지 게임 이용자로 끌어들였다는 분석이 있다.",
+        "ids": [
+         "tm-anipang-age"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "source",
+        "text": "같은 분석은 '하트' 요청 메시지 피로와 지인 경쟁의 약화로 인기가 오래가지 못했다고 봤다.",
+        "ids": [
+         "tm-anipang-age"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t4",
+      "years": "2022~2025",
+      "start": 2022,
+      "end": 2022,
+      "title": "게임을 떠나는 시간",
+      "why": {
+       "layer": "fact",
+       "text": "게임 이용률이 2022년 74.4%에서 3년 만에 50.2%로 떨어졌다.",
+       "ids": [
+        "tm-game24",
+        "tm-game25"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "코로나19 시기 실내 여가로 게임 이용이 늘었다.",
+        "ids": [
+         "tm-game24"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "엔데믹 뒤 외부 활동이 다시 늘면서 PC게임 이용률이 떨어졌다.",
+        "ids": [
+         "tm-game24"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "게임 이용자 안에서는 모바일(91.7%)·콘솔(26.7%)이 오히려 올랐다.",
+        "ids": [
+         "tm-game24"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "2025년 이용률 50.2%는 집계 이래 최저였다.",
+        "ids": [
+         "tm-game25"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "게임은 사라지지 않았지만, 스마트폰 위에서 숏폼·OTT와 같은 시간을 두고 경쟁하게 됐다.",
+        "ids": [
+         "tm-game25",
+         "tm-ott24"
+        ]
+       }
+      ]
+     }
+    ],
+    "branches": {
+     "intro": "한 줄은 게임을 하는 한 가지 장소·기기입니다.",
+     "lanes": [
+      {
+       "label": "오락실",
+       "start": 1979,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "fact",
+        "text": "1983년 서울 6,000여 곳.",
+        "ids": [
+         "tm-arcade"
+        ]
+       }
+      },
+      {
+       "label": "PC방·PC게임",
+       "start": 1998,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "fact",
+        "text": "PC게임 이용률 53.8%(−7.2%p, 2024).",
+        "ids": [
+         "tm-game24"
+        ]
+       }
+      },
+      {
+       "label": "모바일게임",
+       "start": 2012,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "게임 이용자 중 91.7%(2024).",
+        "ids": [
+         "tm-game24"
+        ]
+       }
+      },
+      {
+       "label": "콘솔",
+       "start": 2015,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "26.7%(+2.6%p, 2024).",
+        "ids": [
+         "tm-game24"
+        ]
+       }
+      }
+     ],
+     "read": {
+      "layer": "inference",
+      "text": "게임하는 장소는 '밖(오락실·PC방)'에서 '손안'으로 옮겨 왔고, 최근에는 게임 자체를 하는 사람이 줄었다.",
+      "ids": [
+       "tm-game24",
+       "tm-game25"
+      ]
+     }
+    },
+    "reasons": [
+     {
+      "title": "게임 이용률은 왜 3년 만에 4분의 1이 빠졌나",
+      "facts": [
+       {
+        "layer": "fact",
+        "text": "74.4% → 50.2%.",
+        "ids": [
+         "tm-game24",
+         "tm-game25"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "PC게임 이용률 하락이 감소를 이끌었다.",
+        "ids": [
+         "tm-game24"
+        ]
+       }
+      ],
+      "logic": {
+       "layer": "inference",
+       "text": "코로나19 시기 늘었던 실내 여가가 되돌아갔고, 남은 스마트폰 시간은 숏폼·OTT와 나눠 쓰게 됐다.",
+       "ids": [
+        "tm-game24",
+        "tm-ott24"
+       ]
+      },
+      "proposal": {
+       "layer": "inference",
+       "text": "게임 이용률 하락은 '게임 기피'보다 '시간 경쟁'의 결과로 본다.",
+       "ids": [
+        "tm-game25",
+        "tm-ott24"
+       ]
+      },
+      "rivals": [
+       {
+        "layer": "inference",
+        "text": "표본 설명 — 2024년 조사 표본이 바뀌어 같은 연령대 기준으로는 하락폭이 작았다는 지적이 있다.",
+        "ids": [
+         "tm-game24"
+        ]
+       },
+       {
+        "layer": "inference",
+        "text": "콘텐츠 설명 — 새 흥행작이 부족했을 수 있다.",
+        "ids": [
+         "tm-game25"
+        ]
+       }
+      ],
+      "scope": {
+       "layer": "inference",
+       "text": "2022~2025년 국내 10~69세 조사.",
+       "ids": [
+        "tm-game25"
+       ]
+      },
+      "check": [
+       {
+        "layer": "hypothesis",
+        "text": "확인 쪽: 같은 기간 숏폼 이용시간 증가와 게임 이용률 하락이 같은 사람에게서 나타나는지 — 개인 단위 자료는 연결하지 않았다.",
+        "ids": []
+       }
+      ]
+     }
+    ],
+    "links": [
+     {
+      "kind": "topic",
+      "target": "media-screen",
+      "at": "2016~",
+      "why": "숏폼·OTT가 스마트폰 시간을 두고 게임과 경쟁한다."
+     },
+     {
+      "kind": "industry",
+      "target": "internet",
+      "at": "1998~",
+      "why": "PC방은 초고속 인터넷 보급의 다른 얼굴이었다 — 인터넷 산업 일대기."
+     },
+     {
+      "kind": "flow",
+      "target": "flow-leisure",
+      "at": "1980~",
+      "why": "오락실·PC방은 여가 장소 흐름 안에서도 본다."
+     }
+    ],
+    "repeats": [
+     {
+      "type": "반복되는 긴장",
+      "title": "새 게임이 나올 때마다 붙는 '청소년 문제' 시선",
+      "past": {
+       "layer": "fact",
+       "text": "1980년대 오락실은 '전자독버섯'이라 불리며 단속됐다.",
+       "ids": [
+        "tm-arcade"
+       ]
+      },
+      "now": {
+       "layer": "fact",
+       "text": "2024년 청소년게임제공업소(인형뽑기 등) 신규 개업이 2.4배로 늘었다.",
+       "ids": [
+        "ts-g-claw2024"
+       ]
+      },
+      "alike": {
+       "layer": "inference",
+       "text": "새로운 놀이 공간이 빠르게 늘면 먼저 규제·우려가 따라온다.",
+       "ids": [
+        "tm-arcade"
+       ]
+      },
+      "changed": {
+       "layer": "inference",
+       "text": "오늘날 우려는 공간보다 기기(스마트폰) 사용 시간에 더 쏠린다.",
+       "ids": [
+        "tm-game25"
+       ]
+      },
+      "alternatives": [
+       {
+        "layer": "inference",
+        "text": "사행성 규제의 연장선일 뿐 게임 자체에 대한 시선은 아니었을 수 있다.",
+        "ids": [
+         "tm-arcade"
+        ]
+       }
+      ],
+      "counter": [
+       {
+        "layer": "inference",
+        "text": "모바일게임 대중화 때는 중장년층이 주 이용자가 되며 '청소년 문제' 틀이 약해졌다.",
+        "ids": [
+         "tm-anipang-age"
+        ]
+       }
+      ],
+      "at": [
+       "t1",
+       "t3"
+      ]
+     }
+    ],
+    "futures": {
+     "split": {
+      "layer": "inference",
+      "text": "갈라지는 이유는 스마트폰 시간을 누가 가져가느냐다. 숏폼·AI 서비스가 시간을 더 가져가면 게임 이용률은 더 내려가고, 게임이 짧은 영상처럼 가볍게 바뀌면 다시 오를 수 있다.",
+      "ids": [
+       "tm-game25",
+       "tm-ott24"
+      ]
+     },
+     "items": [
+      {
+       "kind": "계속",
+       "name": "게임 이용률이 더 낮아진다",
+       "change": {
+        "layer": "inference",
+        "text": "가볍게 하던 이용자가 숏폼·OTT로 옮겨 간다.",
+        "ids": [
+         "tm-game25"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "3년 연속 하락.",
+         "ids": [
+          "tm-game24",
+          "tm-game25"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "하루 화면 시간은 한정돼 있다.",
+        "ids": [
+         "tm-media24"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "숏폼 이용이 계속 늘어야 한다.",
+        "ids": [
+         "tm-ott24"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "짧은 영상 플랫폼, 게임 영상 콘텐츠.",
+        "ids": [
+         "tm-ott24"
+        ]
+       },
+       "watch": [
+        "게임 이용률(2026 조사)",
+        "숏폼 이용 비율"
+       ],
+       "against": [
+        "게임 이용률이 반등하면 일시적 조정"
+       ]
+      },
+      {
+       "kind": "분화",
+       "name": "적게 하는 다수와 깊게 하는 소수",
+       "change": {
+        "layer": "inference",
+        "text": "전체 이용률은 줄어도 콘솔·장시간 이용자는 늘어난다.",
+        "ids": [
+         "tm-game24"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "콘솔 이용률과 이용 시간 증가.",
+         "ids": [
+          "tm-game24"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "가볍게 하던 사람이 빠지면 남은 사람의 이용 강도는 높게 보인다.",
+        "ids": [
+         "tm-game24"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "콘솔·PC 대작이 계속 나와야 한다.",
+        "ids": [
+         "tm-game24"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "콘솔 게임, e스포츠 관람.",
+        "ids": [
+         "tm-game24"
+        ]
+       },
+       "watch": [
+        "콘솔 이용률",
+        "1인당 이용시간"
+       ],
+       "against": [
+        "콘솔 이용률도 떨어지면 분화가 아닌 전반적 감소"
+       ]
+      }
+     ]
+    },
+    "conclusion": {
+     "key": {
+      "layer": "inference",
+      "text": "게임은 오락실 → PC방 → 손안으로 장소를 옮기며 커졌지만, 2022년 이후에는 스마트폰 시간을 두고 다른 콘텐츠와 경쟁하며 이용자가 줄었다.",
+      "ids": [
+       "tm-arcade",
+       "c90-pcbang",
+       "tm-anipang",
+       "tm-game25"
+      ]
+     },
+     "favored": {
+      "layer": "inference",
+      "text": "'시간 경쟁' 해석을 조금 더 지지한다. 근거: 감소를 이끈 것이 PC게임이고, 모바일 안에서는 오히려 올랐다.",
+      "ids": [
+       "tm-game24"
+      ]
+     },
+     "undecided": {
+      "layer": "inference",
+      "text": "표본 변화의 영향을 뺀 순수 하락폭은 확인하지 못했다.",
+      "ids": [
+       "tm-game24"
+      ]
+     },
+     "next": {
+      "layer": "inference",
+      "text": "2026년 게임이용자 실태조사.",
+      "ids": [
+       "tm-game25"
+      ]
+     },
+     "change": {
+      "layer": "inference",
+      "text": "이용률이 반등하면 '코로나 뒤 조정'으로 결론을 고친다.",
+      "ids": [
+       "tm-game24"
+      ]
+     }
+    }
+   },
+   {
+    "id": "travel-abroad",
+    "domain": "travel",
+    "label": "해외여행 방식 — 허가받는 여행에서 혼자 짜는 여행으로",
+    "tracks": "사람들이 해외에 어떻게 나갔는지: 1989년 자유화 → 외환위기의 급감과 회복 → 2010년대 폭증 → 코로나 → 패키지에서 개별자유여행으로.",
+    "question": "2025년 한국인 2,955만 명이 해외로 나가 사상 최대를 기록했는데, 여행사는 '알맹이가 없다'고 했다. 사람들은 무엇을 여행사 없이 하게 됐을까?",
+    "scene": {
+     "layer": "fact",
+     "text": "2025년 해외관광객은 2,955만 명으로 사상 최대였고, 개별자유여행 비중은 65%까지 늘었다는 업계 발표가 있다.",
+     "ids": [
+      "tm-travel25"
+     ]
+    },
+    "span": [
+     1983,
+     2026
+    ],
+    "scope": [
+     {
+      "layer": "inference",
+      "text": "출국자 수는 관광·사업·유학을 모두 포함한다. 자유여행 비중은 업계 발표라 공식 통계보다 정밀도가 낮다.",
+      "ids": [
+       "tm-travel25"
+      ]
+     }
+    ],
+    "turns": [
+     {
+      "id": "t1",
+      "years": "1983~1989",
+      "start": 1983,
+      "end": 1983,
+      "title": "허가받는 여행에서 자유화로",
+      "why": {
+       "layer": "fact",
+       "text": "1989년 1월 1일 해외여행이 전면 자유화됐다.",
+       "ids": [
+        "c80-travel"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "1983년에는 50세 이상에게만 제한적으로 허용됐다.",
+        "ids": [
+         "c80-travel"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "source",
+        "text": "신군부는 '자율화'를 내세워 통금 해제·해외여행 규제 완화를 시행했다는 해석이 있다.",
+        "ids": [
+         "er-lei-3s"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "inference",
+        "text": "여권 발급 문턱이 낮아지면서 단체 관광과 어학연수가 빠르게 늘었다.",
+        "ids": [
+         "c80-travel"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "inference",
+        "text": "해외여행이 '특별한 허가'에서 '돈과 시간이 있으면 가는 것'이 됐다.",
+        "ids": [
+         "c80-travel"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "처음 나가는 사람이 많아 언어·일정·안전을 대신 챙겨 주는 패키지여행이 기본 형태가 됐다.",
+        "ids": [
+         "c80-travel"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t2",
+      "years": "1998~1999",
+      "start": 1998,
+      "end": 1998,
+      "title": "외환위기 — 급감과 빠른 회복",
+      "why": {
+       "layer": "fact",
+       "text": "1998년 1월 일반여행 지급액이 1년 전보다 71.6% 줄었다.",
+       "ids": [
+        "tm-travel98"
+       ]
+      },
+      "before": [
+       {
+        "layer": "inference",
+        "text": "1990년대 중반 해외여행과 어학연수가 빠르게 늘었다.",
+        "ids": [
+         "tm-travel99"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "1998년 민간소비가 11.9% 줄고 실업률이 6.8%로 올랐다.",
+        "ids": [
+         "an-c-1998"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "1999년 여름에는 김포공항이 다시 붐비고 항공편이 매진됐다.",
+        "ids": [
+         "tm-travel99"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "inference",
+        "text": "해외여행은 위기에 가장 먼저 줄이지만 경기가 돌아오면 가장 먼저 돌아오는 지출로 드러났다.",
+        "ids": [
+         "tm-travel98",
+         "tm-travel99"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "이 '급감 → 빠른 회복' 모양은 2020~2024년 코로나19 때 다시 나타난다.",
+        "ids": [
+         "tm-travel2022"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t3",
+      "years": "2016~2019",
+      "start": 2016,
+      "end": 2016,
+      "title": "해마다 수백만 명씩 — 대중화의 정점",
+      "why": {
+       "layer": "fact",
+       "text": "국민 해외여행객이 2016년 2,238만 명에서 2018년 2,870만 명으로 늘었다.",
+       "ids": [
+        "tm-travel1619"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "2016년 한 해에만 15.9% 늘었다.",
+        "ids": [
+         "tm-travel1619"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "inference",
+        "text": "가까운 일본·동남아로 짧게 다녀오는 여행이 늘었다.",
+        "ids": [
+         "tm-travel-dest"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "2019년 일본행만 558만 명이었다.",
+        "ids": [
+         "tm-travel-dest"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "2019년 증가율은 0.1%로 멈췄다.",
+        "ids": [
+         "tm-travel1619"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "2019년 정점(2,871만 명)이 이후 회복을 재는 기준선이 됐다.",
+        "ids": [
+         "tm-travel1619"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t4",
+      "years": "2020~2026",
+      "start": 2020,
+      "end": 2020,
+      "title": "코로나 이후 — 더 많이, 그러나 여행사 없이",
+      "why": {
+       "layer": "fact",
+       "text": "2020년 해외여행객이 85.1% 줄어 428만 명이 됐다.",
+       "ids": [
+        "tm-travel2022"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "2019년 2,871만 명.",
+        "ids": [
+         "tm-travel1619"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "2022년 655만 명으로 회복이 시작됐다.",
+        "ids": [
+         "tm-travel2022"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "2019~2024년 일본행은 880만 명으로 늘고 중국·미국행은 줄었다.",
+        "ids": [
+         "tm-travel-dest"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "2025년 2,955만 명으로 사상 최대였지만 패키지 수요는 정체됐다.",
+        "ids": [
+         "tm-travel25",
+         "tm-travel-pkg"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "fact",
+        "text": "여행사도 개별자유여행 상품을 키워 하나투어 이용객이 2026년 1분기 148만 명이 됐다.",
+        "ids": [
+         "tm-travel-pkg"
+        ]
+       }
+      ]
+     }
+    ],
+    "branches": {
+     "intro": "한 줄은 해외에 나가는 한 가지 방식입니다.",
+     "lanes": [
+      {
+       "label": "단체 패키지",
+       "start": 1989,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "fact",
+        "text": "출국자는 늘어도 패키지 수요 정체(2025).",
+        "ids": [
+         "tm-travel-pkg"
+        ]
+       }
+      },
+      {
+       "label": "개별자유여행(FIT)",
+       "start": 2010,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "업계 추산 비중 65%.",
+        "ids": [
+         "tm-travel25"
+        ]
+       }
+      },
+      {
+       "label": "여행사의 자유여행 상품(항공+호텔)",
+       "start": 2024,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "하나투어 FIT 이용객 148만(2026년 1분기).",
+        "ids": [
+         "tm-travel-pkg"
+        ]
+       }
+      },
+      {
+       "label": "단거리 일본 여행",
+       "start": 2015,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "2024년 880만 명.",
+        "ids": [
+         "tm-travel-dest"
+        ]
+       }
+      }
+     ],
+     "read": {
+      "layer": "inference",
+      "text": "나가는 사람의 수는 위기 때마다 급감했다 돌아왔지만, 나가는 방식은 '맡기는 여행'에서 '스스로 짜는 여행'으로 한 방향으로 옮겨 갔다.",
+      "ids": [
+       "tm-travel2022",
+       "tm-travel25"
+      ]
+     }
+    },
+    "reasons": [
+     {
+      "title": "출국자는 사상 최대인데 왜 여행사는 어려운가",
+      "facts": [
+       {
+        "layer": "fact",
+        "text": "2025년 2,955만 명, FIT 비중 65%(업계).",
+        "ids": [
+         "tm-travel25"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "패키지 수요 정체.",
+        "ids": [
+         "tm-travel-pkg"
+        ]
+       }
+      ],
+      "logic": {
+       "layer": "inference",
+       "text": "여행 횟수가 늘면 익숙한 단거리 여행지는 항공·숙소를 직접 예약하게 된다. 일본행이 크게 늘고 장거리(미국)가 준 것도 직접 짜기 쉬운 쪽으로의 이동과 맞는다.",
+       "ids": [
+        "tm-travel-dest",
+        "tm-travel25"
+       ]
+      },
+      "proposal": {
+       "layer": "inference",
+       "text": "해외여행의 대중화가 오히려 여행사 중개를 줄였다.",
+       "ids": [
+        "tm-travel-pkg"
+       ]
+      },
+      "rivals": [
+       {
+        "layer": "inference",
+        "text": "가격 설명 — 고환율·항공권 가격 상승이 패키지 가격을 올렸을 수 있다.",
+        "ids": [
+         "tm-travel-pkg"
+        ]
+       },
+       {
+        "layer": "inference",
+        "text": "사고 설명 — 2024년 말 항공 사고 뒤 단체여행 수요가 줄었을 수 있다.",
+        "ids": [
+         "tm-travel-pkg"
+        ]
+       }
+      ],
+      "scope": {
+       "layer": "inference",
+       "text": "2024~2026년, 업계 발표 포함.",
+       "ids": [
+        "tm-travel25"
+       ]
+      },
+      "check": [
+       {
+        "layer": "hypothesis",
+        "text": "확인 쪽: 공식 통계로 개별여행 비중을 재는 자료 — 아직 연결하지 않았다.",
+        "ids": []
+       }
+      ]
+     }
+    ],
+    "links": [
+     {
+      "kind": "topic",
+      "target": "city-move",
+      "at": "2004~",
+      "why": "국내 이동(고속철·광역교통)은 '어떻게 오가나' 주제에서 본다."
+     },
+     {
+      "kind": "flow",
+      "target": "flow-economy",
+      "at": "1997~",
+      "why": "외환위기·코로나 같은 경제 충격은 경제 흐름에서 본다."
+     },
+     {
+      "kind": "topic",
+      "target": "life-convenience",
+      "at": "2015~",
+      "why": "앱으로 직접 예약하는 습관은 도시 편의 서비스와 같은 뿌리다."
+     }
+    ],
+    "repeats": [
+     {
+      "type": "경제·산업 순환",
+      "title": "충격 때 가장 먼저 줄고 가장 먼저 돌아오는 지출",
+      "past": {
+       "layer": "fact",
+       "text": "1998년 1월 여행 지급액 −71.6%, 1999년 여름 공항 매진.",
+       "ids": [
+        "tm-travel98",
+        "tm-travel99"
+       ]
+      },
+      "now": {
+       "layer": "fact",
+       "text": "2020년 −85.1%, 2025년 사상 최대.",
+       "ids": [
+        "tm-travel2022",
+        "tm-travel25"
+       ]
+      },
+      "alike": {
+       "layer": "inference",
+       "text": "둘 다 짧은 급감 뒤 빠르게 회복했다.",
+       "ids": [
+        "tm-travel98",
+        "tm-travel2022"
+       ]
+      },
+      "changed": {
+       "layer": "inference",
+       "text": "외환위기는 돈 문제, 코로나는 이동 금지였다. 회복 뒤 여행 방식도 바뀌었다(패키지 → 자유여행).",
+       "ids": [
+        "tm-travel25"
+       ]
+      },
+      "alternatives": [
+       {
+        "layer": "inference",
+        "text": "회복 속도는 소득보다 항공 공급(노선·좌석)이 결정했을 수 있다.",
+        "ids": [
+         "tm-travel-dest"
+        ]
+       }
+      ],
+      "counter": [
+       {
+        "layer": "inference",
+        "text": "2008~2009년 금융위기 때도 해외여행은 줄었지만, 그 깊이와 회복 속도가 같은 모양이었는지는 이 자료로 확인하지 못했다.",
+        "ids": [
+         "tm-travel-dest"
+        ]
+       }
+      ],
+      "at": [
+       "t2",
+       "t4"
+      ]
+     }
+    ],
+    "futures": {
+     "split": {
+      "layer": "inference",
+      "text": "갈라지는 이유는 여행 횟수와 목적지다. 단거리를 자주 가면 자유여행이 더 커지고, 장거리·특수 목적 여행이 늘면 기획 상품이 다시 쓸모를 찾는다.",
+      "ids": [
+       "tm-travel-dest",
+       "tm-travel25"
+      ]
+     },
+     "items": [
+      {
+       "kind": "계속",
+       "name": "혼자 짜는 여행이 기본값이 된다",
+       "change": {
+        "layer": "inference",
+        "text": "항공·숙소·현지 투어를 앱으로 따로 조합하는 방식이 더 넓어진다.",
+        "ids": [
+         "tm-travel-pkg"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "FIT 비중 65%(업계), 여행사 FIT 상품 증가.",
+         "ids": [
+          "tm-travel25",
+          "tm-travel-pkg"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "반복 여행자는 직접 예약에 익숙해진다.",
+        "ids": [
+         "tm-travel-dest"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "단거리 노선 공급이 유지돼야 한다.",
+        "ids": [
+         "tm-travel-dest"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "예약 앱, 현지 투어·교통 상품, 여행자 보험.",
+        "ids": [
+         "tm-travel-pkg"
+        ]
+       },
+       "watch": [
+        "여행사 FIT 이용객",
+        "일본·동남아 출국자"
+       ],
+       "against": [
+        "패키지 송객이 다시 크게 늘면 둔화"
+       ]
+      },
+      {
+       "kind": "분화",
+       "name": "패키지는 '테마·프리미엄'으로 남는다",
+       "change": {
+        "layer": "inference",
+        "text": "값싼 단체여행 대신 스포츠 원정·소규모 테마 여행처럼 혼자 짜기 어려운 상품으로 갈라진다.",
+        "ids": [
+         "tm-travel25"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "특수목적 여행 상품 성장 발표.",
+         "ids": [
+          "tm-travel25"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "혼자 할 수 있는 건 맡기지 않고, 혼자 하기 어려운 것만 맡긴다.",
+        "ids": [
+         "tm-travel25"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "고소득층·중장년 수요가 유지돼야 한다.",
+        "ids": [
+         "tm-travel-pkg"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "테마 여행 기획, 원정 응원, 소규모 투어.",
+        "ids": [
+         "tm-travel25"
+        ]
+       },
+       "watch": [
+        "고가 패키지 비중"
+       ],
+       "against": [
+        "저가 패키지가 다시 늘면 분화가 약함"
+       ]
+      }
+     ]
+    },
+    "conclusion": {
+     "key": {
+      "layer": "inference",
+      "text": "해외여행은 1989년 자유화 이후 위기 때마다 급감했다 돌아오며 커졌고, 2025년 사상 최대에 이르렀다. 그 사이 방식은 '여행사에 맡기는 여행'에서 '스스로 짜는 여행'으로 옮겨 갔다.",
+      "ids": [
+       "c80-travel",
+       "tm-travel98",
+       "tm-travel2022",
+       "tm-travel25"
+      ]
+     },
+     "favored": {
+      "layer": "inference",
+      "text": "'여행사 중개 축소' 해석을 지지한다. 근거: 출국자는 최대인데 패키지 수요는 정체.",
+      "ids": [
+       "tm-travel-pkg"
+      ]
+     },
+     "undecided": {
+      "layer": "inference",
+      "text": "자유여행 비중은 업계 추산이라 정확한 크기는 확인하지 못했다.",
+      "ids": [
+       "tm-travel25"
+      ]
+     },
+     "next": {
+      "layer": "inference",
+      "text": "2026년 출국자 수와 여행사 패키지 송객 수.",
+      "ids": [
+       "tm-travel25"
+      ]
+     },
+     "change": {
+      "layer": "inference",
+      "text": "패키지 송객이 출국자보다 빠르게 늘면 결론을 고친다.",
+      "ids": [
+       "tm-travel-pkg"
+      ]
+     }
+    }
+   },
+   {
+    "id": "work-style",
+    "domain": "work",
+    "label": "일하는 방식과 고용 형태 — 평생직장 이후",
+    "tracks": "사람들이 어떤 계약으로, 어디서, 얼마나 오래 일하는지: 외환위기 구조조정과 파견 → 비정규직 → 재택·유연근무 → 플랫폼 노동 → 짧은 첫 직장과 늦어지는 취업.",
+    "question": "청년의 첫 직장 근속은 평균 1년 7개월인데, 졸업 후 1년 넘게 일을 못 구한 청년은 금융위기 이후 가장 많다. 일자리가 '평생'에서 '짧게'로 바뀐 것은 언제, 왜였을까?",
+    "scene": {
+     "layer": "fact",
+     "text": "2026년 5월, 졸업 후 1년 이상 미취업 청년이 미취업자의 48.6%로 2009년 이후 가장 높았다.",
+     "ids": [
+      "tm-youth26"
+     ]
+    },
+    "span": [
+     1987,
+     2026
+    ],
+    "scope": [
+     {
+      "layer": "inference",
+      "text": "고용 형태 통계는 정의가 여러 번 바뀌어(비정규직·플랫폼 종사자) 시기별 숫자를 그대로 이어 붙이지 않는다.",
+      "ids": [
+       "c00-irregular",
+       "tm-platform"
+      ]
+     }
+    ],
+    "turns": [
+     {
+      "id": "t1",
+      "years": "1987~1998",
+      "start": 1987,
+      "end": 1987,
+      "title": "평생직장의 균열 — 정리해고와 파견",
+      "why": {
+       "layer": "fact",
+       "text": "외환위기 직후 정리해고제와 파견근로제가 법제화되고 파견업이 1998년 7월 시행됐다.",
+       "ids": [
+        "c97-dispatch"
+       ]
+      },
+      "before": [
+       {
+        "layer": "source",
+        "text": "1987년 노동자 대투쟁 뒤 임금이 크게 오르자 기업이 정규직 채용을 줄이기 시작했다는 분석이 있다.",
+        "ids": [
+         "fl-jobs-1987-irregular"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "1998년 실업자가 최대 180만 명에 이르렀다.",
+        "ids": [
+         "c97-unemp-cause"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "source",
+        "text": "당시 노동연구원 부원장은 기업들이 정규직을 줄이고 파견으로 대체할 것이라고 봤다.",
+        "ids": [
+         "c97-dispatch"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "비정규직 비중은 2004년 8월 37.0%로 정점을 찍었다.",
+        "ids": [
+         "c00-irregular"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "'한 회사에서 정년까지'라는 기대가 무너지며, 첫 직장을 고르는 기준과 그만두는 이유가 함께 바뀌었다.",
+        "ids": [
+         "c00-irregular",
+         "tm-youth24"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t2",
+      "years": "2020~2021",
+      "start": 2020,
+      "end": 2020,
+      "title": "집에서 일하기 — 재택근무",
+      "why": {
+       "layer": "fact",
+       "text": "재택근무 이용자가 2019년 9만 5천 명에서 2021년 114만 명으로 약 12배가 됐다.",
+       "ids": [
+        "tm-wfh"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "재택·원격근무 활용은 2019년까지 임금근로자의 0.5% 미만이었다.",
+        "ids": [
+         "tm-flex"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "inference",
+        "text": "코로나19 방역으로 출근이 제한됐다.",
+        "ids": [
+         "tm-wfh"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "유연근무제 활용은 2020년 14.17%까지 늘었다.",
+        "ids": [
+         "tm-flex"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "재택근무는 대기업·정보통신·금융에 몰렸고 숙박음식·보건복지는 가장 낮았다.",
+        "ids": [
+         "tm-wfh"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "'어디서 일하나'가 직업 선택 기준이 됐지만, 그 선택지는 일부 업종·대기업에만 열렸다.",
+        "ids": [
+         "tm-wfh"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t3",
+      "years": "2020~2023",
+      "start": 2020,
+      "end": 2020,
+      "title": "앱이 일을 나눠 주는 노동 — 플랫폼 종사자",
+      "why": {
+       "layer": "fact",
+       "text": "플랫폼 종사자가 2020년 22만 3천 명에서 2023년 88만 3천 명이 됐다.",
+       "ids": [
+        "tm-platform"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "배달앱은 음식점과 라이더를 잇는 플랫폼으로 커졌다.",
+        "ids": [
+         "c10-syn-delivery"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "배달 시장이 2021년 25조 원을 넘었다.",
+        "ids": [
+         "c20-delivery"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "선택 이유는 더 많은 수입(36.1%)과 일하는 시간 선택(20.9%)이었다.",
+        "ids": [
+         "tm-platform"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "엔데믹 뒤 배달·운전은 줄고 전문 서비스·IT 플랫폼 일이 빠르게 늘었다.",
+        "ids": [
+         "tm-platform-mix"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "고용계약 없이 일감 단위로 일하는 사람이 취업자 100명 중 3명을 넘었고, 이들을 노동법이 어떻게 보호할지가 과제로 남았다.",
+        "ids": [
+         "tm-platform"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t4",
+      "years": "2024~2026",
+      "start": 2024,
+      "end": 2024,
+      "title": "짧은 첫 직장, 늦어지는 첫 취업",
+      "why": {
+       "layer": "fact",
+       "text": "2024년 첫 직장 평균 근속기간은 1년 7.2개월이었다.",
+       "ids": [
+        "tm-youth24"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "첫 일자리를 그만둔 이유는 근로여건 불만족(45.5%)이 가장 많았다.",
+        "ids": [
+         "tm-youth24"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "기업들이 경력직을 선호하고 신입 채용을 줄였다.",
+        "ids": [
+         "tm-youth26"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "2026년 졸업 후 1년 이상 미취업 청년이 60만 5천 명이었다.",
+        "ids": [
+         "tm-youth26"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "미취업 비중 48.6%는 2009년 이후 최고였다.",
+        "ids": [
+         "tm-youth26"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "짧게 다니고 옮기는 것이 흔해지자, 기업은 '옮겨 다닌 경력'을 원하고 첫 경력을 쌓을 기회는 좁아지는 모순이 생겼다.",
+        "ids": [
+         "tm-youth24",
+         "tm-youth26"
+        ]
+       }
+      ]
+     }
+    ],
+    "branches": {
+     "intro": "한 줄은 일하는 한 가지 형태입니다.",
+     "lanes": [
+      {
+       "label": "정규직 평생직장",
+       "start": 1987,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "fact",
+        "text": "비정규직 2004년 37.0%.",
+        "ids": [
+         "c00-irregular"
+        ]
+       }
+      },
+      {
+       "label": "비정규·파견",
+       "start": 1998,
+       "end": null,
+       "state": "공존",
+       "note": {
+        "layer": "fact",
+        "text": "2004년 정점 뒤 비중 하락.",
+        "ids": [
+         "c00-irregular"
+        ]
+       }
+      },
+      {
+       "label": "재택·유연근무",
+       "start": 2020,
+       "end": null,
+       "state": "공존",
+       "note": {
+        "layer": "fact",
+        "text": "114만 명(2021), 업종 편중.",
+        "ids": [
+         "tm-wfh"
+        ]
+       }
+      },
+      {
+       "label": "플랫폼 노동",
+       "start": 2020,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "88만 3천 명(2023).",
+        "ids": [
+         "tm-platform"
+        ]
+       }
+      }
+     ],
+     "read": {
+      "layer": "inference",
+      "text": "일하는 형태는 하나로 바뀐 것이 아니라 층층이 쌓였다. 정규직·비정규직 위에 재택과 플랫폼이 더해졌다.",
+      "ids": [
+       "c00-irregular",
+       "tm-wfh",
+       "tm-platform"
+      ]
+     }
+    },
+    "reasons": [
+     {
+      "title": "짧게 일하는데 왜 첫 일자리는 더 구하기 어려운가",
+      "facts": [
+       {
+        "layer": "fact",
+        "text": "첫 직장 근속 1년 7.2개월.",
+        "ids": [
+         "tm-youth24"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "1년 이상 미취업 48.6%.",
+        "ids": [
+         "tm-youth26"
+        ]
+       }
+      ],
+      "logic": {
+       "layer": "inference",
+       "text": "이직이 잦아지자 기업은 다른 회사에서 훈련된 경력직을 뽑는 쪽이 싸다고 판단한다. 그러면 처음 경력을 쌓을 신입 자리가 줄어든다.",
+       "ids": [
+        "tm-youth26"
+       ]
+      },
+      "proposal": {
+       "layer": "inference",
+       "text": "평생직장의 해체가 '신입 훈련'의 비용을 누가 질지 모호하게 만들었다.",
+       "ids": [
+        "tm-youth24",
+        "tm-youth26"
+       ]
+      },
+      "rivals": [
+       {
+        "layer": "inference",
+        "text": "경기 설명 — 2026년 상반기 중동 정세 등 경기 요인이 일시적으로 컸을 수 있다.",
+        "ids": [
+         "tm-youth26"
+        ]
+       },
+       {
+        "layer": "inference",
+        "text": "공무원 설명 — 공무원 처우 개선으로 시험 준비가 다시 늘어 미취업 기간이 길어졌을 수 있다.",
+        "ids": [
+         "tm-youth26"
+        ]
+       }
+      ],
+      "scope": {
+       "layer": "inference",
+       "text": "15~29세 청년층 부가조사(매년 5월).",
+       "ids": [
+        "tm-youth26"
+       ]
+      },
+      "check": [
+       {
+        "layer": "hypothesis",
+        "text": "확인 쪽: 기업 신입·경력 채용 비중의 장기 자료 — 아직 연결하지 않았다.",
+        "ids": []
+       }
+      ]
+     }
+    ],
+    "links": [
+     {
+      "kind": "flow",
+      "target": "flow-jobs",
+      "at": "1963~",
+      "why": "어떤 산업에서 일했는지(농업 → 제조 → 서비스)는 일자리 흐름에서 본다."
+     },
+     {
+      "kind": "topic",
+      "target": "life-convenience",
+      "at": "2015~",
+      "why": "배달·무인 매장 같은 편의 서비스 뒤에 플랫폼 노동이 있다."
+     },
+     {
+      "kind": "flow",
+      "target": "flow-economy",
+      "at": "1997~",
+      "why": "외환위기의 경제적 경과는 경제 흐름에서 본다."
+     }
+    ],
+    "repeats": [
+     {
+      "type": "장기 구조 변화",
+      "title": "고용 계약이 짧고 느슨해지는 방향",
+      "past": {
+       "layer": "fact",
+       "text": "1998년 파견업 시행, 2004년 비정규직 37.0%.",
+       "ids": [
+        "c97-dispatch",
+        "c00-irregular"
+       ]
+      },
+      "now": {
+       "layer": "fact",
+       "text": "2023년 플랫폼 종사자 88만 3천 명.",
+       "ids": [
+        "tm-platform"
+       ]
+      },
+      "alike": {
+       "layer": "inference",
+       "text": "기업이 고정 인건비를 줄이려는 압력이 계속된다.",
+       "ids": [
+        "fl-jobs-1987-irregular",
+        "tm-platform"
+       ]
+      },
+      "changed": {
+       "layer": "inference",
+       "text": "계약 상대가 회사(파견업체)에서 앱(플랫폼)으로 바뀌었다.",
+       "ids": [
+        "tm-platform"
+       ]
+      },
+      "alternatives": [
+       {
+        "layer": "inference",
+        "text": "일하는 사람 쪽에서 시간 선택을 원해 늘어난 면도 있다(선택 이유 20.9%).",
+        "ids": [
+         "tm-platform"
+        ]
+       }
+      ],
+      "counter": [
+       {
+        "layer": "inference",
+        "text": "비정규직 비중은 2004년 정점 뒤 낮아졌다 — 한 방향으로만 간 것은 아니다.",
+        "ids": [
+         "c00-irregular"
+        ]
+       }
+      ],
+      "at": [
+       "t1",
+       "t3"
+      ]
+     }
+    ],
+    "futures": {
+     "split": {
+      "layer": "inference",
+      "text": "갈라지는 이유는 플랫폼 노동을 법이 어떻게 다루느냐와 기업의 신입 채용이다.",
+      "ids": [
+       "tm-platform",
+       "tm-youth26"
+      ]
+     },
+     "items": [
+      {
+       "kind": "계속",
+       "name": "일감 단위 노동이 넓어진다",
+       "change": {
+        "layer": "inference",
+        "text": "배달을 넘어 IT·전문 서비스까지 플랫폼으로 일을 받는 사람이 늘어난다.",
+        "ids": [
+         "tm-platform-mix"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "전문 서비스·IT 플랫폼 일의 빠른 증가.",
+         "ids": [
+          "tm-platform-mix"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "기업은 필요한 만큼만 쓰고, 일하는 사람은 시간을 고를 수 있다.",
+        "ids": [
+         "tm-platform"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "최저보수·산재보험 같은 보호 장치의 범위가 정해져야 한다.",
+        "ids": [
+         "tm-platform"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "일감 중개 플랫폼, 프리랜서 보험·세무.",
+        "ids": [
+         "tm-platform"
+        ]
+       },
+       "watch": [
+        "플랫폼 종사자 규모",
+        "플랫폼 노동 보호 입법"
+       ],
+       "against": [
+        "플랫폼 종사자 수가 줄면 엔데믹 효과"
+       ]
+      },
+      {
+       "kind": "반작용",
+       "name": "신입을 다시 길러 쓰는 쪽으로",
+       "change": {
+        "layer": "inference",
+        "text": "경력직만으로 인력을 채우기 어려워지면 기업이 신입 훈련 프로그램을 다시 늘린다.",
+        "ids": [
+         "tm-youth26"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "청년 미취업 장기화와 인구 감소.",
+         "ids": [
+          "tm-youth26"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "경력직 시장도 결국 누군가 길러 낸 사람으로 채워진다.",
+        "ids": [
+         "tm-youth26"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "청년 인구 감소로 인력난이 커져야 한다.",
+        "ids": [
+         "tm-youth26"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "직무 교육, 인턴십, 채용 연계 훈련.",
+        "ids": [
+         "tm-youth26"
+        ]
+       },
+       "watch": [
+        "청년 1년 이상 미취업 비중",
+        "기업 신입 채용 계획"
+       ],
+       "against": [
+        "미취업 비중이 계속 오르면 반작용이 아직 없음"
+       ]
+      }
+     ]
+    },
+    "conclusion": {
+     "key": {
+      "layer": "inference",
+      "text": "평생직장은 외환위기를 계기로 무너졌고, 그 뒤 일하는 형태는 비정규·재택·플랫폼으로 층층이 쌓였다. 지금 청년은 짧게 다니면서도 첫 일자리 자체를 구하기 어려운 상황에 있다.",
+      "ids": [
+       "c97-dispatch",
+       "tm-wfh",
+       "tm-platform",
+       "tm-youth26"
+      ]
+     },
+     "favored": {
+      "layer": "inference",
+      "text": "'고용 계약이 짧고 느슨해지는 장기 변화' 해석을 지지하되, 비정규직 비중이 2004년 뒤 낮아진 반대 증거가 있다.",
+      "ids": [
+       "c00-irregular",
+       "tm-platform"
+      ]
+     },
+     "undecided": {
+      "layer": "inference",
+      "text": "재택근무가 엔데믹 뒤 얼마나 남았는지는 확인하지 못했다.",
+      "ids": [
+       "tm-wfh"
+      ]
+     },
+     "next": {
+      "layer": "inference",
+      "text": "플랫폼 종사자 다음 조사와 청년층 부가조사.",
+      "ids": [
+       "tm-platform",
+       "tm-youth26"
+      ]
+     },
+     "change": {
+      "layer": "inference",
+      "text": "신입 채용이 다시 늘고 미취업 비중이 떨어지면 결론의 마지막 문장을 고친다.",
+      "ids": [
+       "tm-youth26"
+      ]
+     }
+    }
+   },
+   {
+    "id": "money-invest",
+    "domain": "money",
+    "label": "돈을 굴리는 방식 — 적금에서 펀드, 직접 투자, 해외 주식까지",
+    "tracks": "개인이 남는 돈을 어디에 두고 불렸는지: 펀드 유행(1999~2007) → 반토막(2008) → 동학개미(2020) → 가상자산 → 서학개미(해외 주식).",
+    "question": "2020년 개인은 한국 주식을 64조 원어치 사들였는데, 5년 뒤 코스피가 오르는 동안에는 미국 주식을 사 모았다. 개인 투자자의 '믿음'은 어떻게 옮겨 갔나?",
+    "scene": {
+     "layer": "fact",
+     "text": "2025년 2분기 국내 거주자의 해외 증권투자 잔액은 1조 1,250억 달러로 역대 최대였다.",
+     "ids": [
+      "tm-west25"
+     ]
+    },
+    "span": [
+     1999,
+     2025
+    ],
+    "scope": [
+     {
+      "layer": "inference",
+      "text": "이 주제는 개인의 투자 방식 변화를 다룬다. 투자 권유가 아니며, 수익률 비교는 하지 않는다.",
+      "ids": [
+       "tm-ant20"
+      ]
+     }
+    ],
+    "turns": [
+     {
+      "id": "t1",
+      "years": "1999~2007",
+      "start": 1999,
+      "end": 1999,
+      "title": "맡기는 투자 — 펀드 전성시대",
+      "why": {
+       "layer": "fact",
+       "text": "2005년 적립식 펀드 출시 뒤 기본 재테크가 적금과 펀드로 나뉘었다는 평가가 있다.",
+       "ids": [
+        "tm-fund-insight"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "1999년 '바이 코리아' 펀드가 시중 자금을 끌어모았다.",
+        "ids": [
+         "tm-fund-wave"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "펀드 유행이 배당주 → 중소형주 → 베트남 → 중국 펀드로 해마다 옮겨 갔다.",
+        "ids": [
+         "tm-fund-wave"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "2007년 10월 인사이트 펀드에 보름 만에 3조 원이 몰렸다.",
+        "ids": [
+         "tm-fund-insight"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "주식거래 활동계좌가 2007년 7월 1,000만을 넘었다.",
+        "ids": [
+         "tm-acct"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "개인은 직접 고르기보다 '잘 고르는 회사에 맡기는' 방식으로 주식시장에 들어왔다.",
+        "ids": [
+         "tm-fund-insight"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t2",
+      "years": "2007~2008",
+      "start": 2007,
+      "end": 2007,
+      "title": "반토막의 기억",
+      "why": {
+       "layer": "fact",
+       "text": "코스피가 2007년 11월 2085에서 2008년 10월 892로 57.2% 떨어졌다.",
+       "ids": [
+        "tm-fund-crash"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "2007년 많이 모인 주식형 펀드는 지수보다 더 떨어졌다.",
+        "ids": [
+         "tm-fund-crash"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "외국인은 2006~2008년 한국 주식을 약 77조 원 순매도했다.",
+        "ids": [
+         "c08-outflow"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "source",
+        "text": "분석가들은 '반토막 트라우마'가 적립식 펀드 재투자를 막았다고 말했다.",
+        "ids": [
+         "tm-fund-crash"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "활동계좌 증가가 느려져 2,000만 계좌는 2012년 5월에야 넘었다.",
+        "ids": [
+         "tm-acct"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "맡기는 투자에 대한 불신이 쌓여, 다음 투자 붐은 '직접 사는' 방식으로 나타났다.",
+        "ids": [
+         "tm-fund-crash",
+         "tm-ant20"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t3",
+      "years": "2020~2021",
+      "start": 2020,
+      "end": 2020,
+      "title": "직접 산다 — 동학개미",
+      "why": {
+       "layer": "fact",
+       "text": "2020년 개인 순매수가 63조 8,064억 원으로 역대 최대였다.",
+       "ids": [
+        "tm-ant20"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "활동계좌는 2020년 3월 3,000만이었다.",
+        "ids": [
+         "tm-acct"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "2030 투자자는 저금리와 넘볼 수 없는 집값, 주식 앱·유튜브를 이유로 들었다.",
+        "ids": [
+         "tm-ant20"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "활동계좌가 2020년 12월 3,500만, 2021년 3월 4,000만을 넘었다.",
+        "ids": [
+         "tm-acct"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "inference",
+        "text": "펀드 대신 앱으로 종목을 직접 고르는 투자가 주류가 됐다.",
+        "ids": [
+         "tm-ant20"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "fact",
+        "text": "가상자산 거래 계정도 2025년 말 1,113만 개에 이르렀다.",
+        "ids": [
+         "tm-coin25"
+        ]
+       }
+      ]
+     },
+     {
+      "id": "t4",
+      "years": "2025",
+      "start": 2025,
+      "end": 2025,
+      "title": "국경을 넘는 개미 — 서학개미",
+      "why": {
+       "layer": "fact",
+       "text": "2025년 2분기 해외 증권투자 잔액이 1조 1,250억 달러로 역대 최대였다.",
+       "ids": [
+        "tm-west25"
+       ]
+      },
+      "before": [
+       {
+        "layer": "fact",
+        "text": "2020년 동학개미는 한국 주식을 주로 샀다.",
+        "ids": [
+         "tm-ant20"
+        ]
+       }
+      ],
+      "condition": [
+       {
+        "layer": "fact",
+        "text": "코스피가 연초보다 20% 넘게 올랐지만 개인은 미국 주식을 사 모았다.",
+        "ids": [
+         "tm-west25"
+        ]
+       }
+      ],
+      "response": [
+       {
+        "layer": "fact",
+        "text": "주요 증권사 해외주식 수수료가 반년에 1조 400억 원으로 66% 넘게 늘었다.",
+        "ids": [
+         "tm-west25"
+        ]
+       }
+      ],
+      "change": [
+       {
+        "layer": "fact",
+        "text": "같은 해 가상자산 시가총액과 거래액은 줄었다.",
+        "ids": [
+         "tm-coin25"
+        ]
+       }
+      ],
+      "legacy": [
+       {
+        "layer": "inference",
+        "text": "개인 투자의 기준이 '한국 시장'에서 '세계 시장'으로 넓어졌다. 2007년 해외 펀드 열풍과 겉모습은 닮았지만, 이번에는 맡기지 않고 직접 산다.",
+        "ids": [
+         "tm-west25",
+         "tm-fund-wave"
+        ]
+       }
+      ]
+     }
+    ],
+    "branches": {
+     "intro": "한 줄은 돈을 불리는 한 가지 방식입니다.",
+     "lanes": [
+      {
+       "label": "은행 예금·적금",
+       "start": 1999,
+       "end": null,
+       "state": "공존",
+       "note": {
+        "layer": "fact",
+        "text": "2005년 이후 적금과 펀드로 양분.",
+        "ids": [
+         "tm-fund-insight"
+        ]
+       }
+      },
+      {
+       "label": "펀드(맡기는 투자)",
+       "start": 1999,
+       "end": null,
+       "state": "축소",
+       "note": {
+        "layer": "fact",
+        "text": "2008년 반토막 뒤 재투자 위축.",
+        "ids": [
+         "tm-fund-crash"
+        ]
+       }
+      },
+      {
+       "label": "국내 주식 직접 투자",
+       "start": 2020,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "활동계좌 4,000만(2021).",
+        "ids": [
+         "tm-acct"
+        ]
+       }
+      },
+      {
+       "label": "가상자산",
+       "start": 2017,
+       "end": null,
+       "state": "공존",
+       "note": {
+        "layer": "fact",
+        "text": "계정 1,113만, 시가총액 감소(2025).",
+        "ids": [
+         "tm-coin25"
+        ]
+       }
+      },
+      {
+       "label": "해외 주식 직접 투자",
+       "start": 2020,
+       "end": null,
+       "state": "확대",
+       "note": {
+        "layer": "fact",
+        "text": "해외 증권투자 잔액 역대 최대(2025).",
+        "ids": [
+         "tm-west25"
+        ]
+       }
+      }
+     ],
+     "read": {
+      "layer": "inference",
+      "text": "투자 방식은 '맡기기 → 직접 고르기'로, 투자 대상은 '국내 → 해외·가상자산'으로 넓어졌다.",
+      "ids": [
+       "tm-fund-insight",
+       "tm-ant20",
+       "tm-west25"
+      ]
+     }
+    },
+    "reasons": [
+     {
+      "title": "왜 '맡기는 투자'에서 '직접 투자'로 옮겨 갔나",
+      "facts": [
+       {
+        "layer": "fact",
+        "text": "2008년 펀드 반토막.",
+        "ids": [
+         "tm-fund-crash"
+        ]
+       },
+       {
+        "layer": "fact",
+        "text": "2020년 개인 순매수 역대 최대.",
+        "ids": [
+         "tm-ant20"
+        ]
+       }
+      ],
+      "logic": {
+       "layer": "inference",
+       "text": "맡겼다가 크게 잃은 경험이 운용사에 대한 불신을 남겼고, 주식 앱·유튜브가 직접 고르는 비용을 크게 낮췄다.",
+       "ids": [
+        "tm-fund-crash",
+        "tm-ant20"
+       ]
+      },
+      "proposal": {
+       "layer": "inference",
+       "text": "직접 투자 붐은 펀드 실패의 기억과 정보 비용의 하락이 겹친 결과다.",
+       "ids": [
+        "tm-fund-crash",
+        "tm-ant20"
+       ]
+      },
+      "rivals": [
+       {
+        "layer": "inference",
+        "text": "집값 설명 — 집을 살 수 없다는 판단이 투자로 돈을 몰았다는 응답이 있다.",
+        "ids": [
+         "tm-ant20"
+        ]
+       },
+       {
+        "layer": "inference",
+        "text": "저금리 설명 — 예금 금리가 낮아 대안을 찾았을 뿐이다.",
+        "ids": [
+         "tm-ant20"
+        ]
+       }
+      ],
+      "scope": {
+       "layer": "inference",
+       "text": "2007~2025년 개인 투자자.",
+       "ids": [
+        "tm-acct"
+       ]
+      },
+      "check": [
+       {
+        "layer": "hypothesis",
+        "text": "확인 쪽: 펀드 잔고와 개인 직접투자 잔고의 장기 비교 — 아직 연결하지 않았다.",
+        "ids": []
+       }
+      ]
+     }
+    ],
+    "links": [
+     {
+      "kind": "flow",
+      "target": "flow-economy",
+      "at": "2008~",
+      "why": "금융위기·코로나 같은 시장 충격은 경제 흐름에서 본다."
+     },
+     {
+      "kind": "topic",
+      "target": "shop-pay",
+      "at": "2015~",
+      "why": "결제·대출 같은 '쓰는 돈'의 변화는 '무엇으로 값을 치르나' 주제에서 본다."
+     },
+     {
+      "kind": "topic",
+      "target": "city-home",
+      "at": "2020~",
+      "why": "집값이 투자 결정에 미친 영향은 '어디에 사나' 주제와 만난다."
+     }
+    ],
+    "repeats": [
+     {
+      "type": "재등장",
+      "title": "해외 투자 열풍",
+      "past": {
+       "layer": "fact",
+       "text": "2007년 중국 펀드가 시중 자금을 빨아들였다.",
+       "ids": [
+        "tm-fund-wave"
+       ]
+      },
+      "now": {
+       "layer": "fact",
+       "text": "2025년 개인이 미국 주식을 사 모아 해외 증권투자 잔액이 역대 최대가 됐다.",
+       "ids": [
+        "tm-west25"
+       ]
+      },
+      "alike": {
+       "layer": "inference",
+       "text": "국내보다 더 크게 성장할 것 같은 해외 시장에 기대를 건다.",
+       "ids": [
+        "tm-fund-wave",
+        "tm-west25"
+       ]
+      },
+      "changed": {
+       "layer": "inference",
+       "text": "2007년은 운용사에 맡겼고, 2025년은 앱으로 직접 산다. 대상도 신흥국에서 미국 대형주로 바뀌었다.",
+       "ids": [
+        "tm-west25"
+       ]
+      },
+      "alternatives": [
+       {
+        "layer": "inference",
+        "text": "환율·세제 등 제도 요인이 해외 투자를 유리하게 만들었을 수 있다.",
+        "ids": [
+         "tm-west25"
+        ]
+       }
+      ],
+      "counter": [
+       {
+        "layer": "inference",
+        "text": "2007년 해외 펀드는 손실 회복에 10년이 걸렸다는 보도가 있다 — 같은 결말이 될지는 알 수 없다.",
+        "ids": [
+         "tm-fund-crash"
+        ]
+       }
+      ],
+      "at": [
+       "t1",
+       "t4"
+      ]
+     }
+    ],
+    "futures": {
+     "split": {
+      "layer": "inference",
+      "text": "갈라지는 이유는 다음 큰 하락을 개인이 어떻게 겪느냐다. 직접 투자에서 큰 손실을 보면 다시 맡기는 쪽으로, 견디면 직접 투자가 굳어진다.",
+      "ids": [
+       "tm-fund-crash",
+       "tm-ant20"
+      ]
+     },
+     "items": [
+      {
+       "kind": "계속",
+       "name": "직접·해외 투자가 굳어진다",
+       "change": {
+        "layer": "inference",
+        "text": "개인이 앱으로 국내외 주식을 직접 사는 것이 기본 재테크가 된다.",
+        "ids": [
+         "tm-west25",
+         "tm-acct"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "해외 증권투자 잔액 역대 최대, 활동계좌 4,000만.",
+         "ids": [
+          "tm-west25",
+          "tm-acct"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "한번 낮아진 정보·거래 비용은 다시 올라가지 않는다.",
+        "ids": [
+         "tm-ant20"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "큰 손실 없이 시장이 버텨야 한다.",
+        "ids": [
+         "tm-fund-crash"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "해외주식 중개, 투자 정보 서비스, 환전.",
+        "ids": [
+         "tm-west25"
+        ]
+       },
+       "watch": [
+        "해외 증권투자 잔액",
+        "개인 순매수"
+       ],
+       "against": [
+        "큰 하락 뒤 개인 이탈"
+       ]
+      },
+      {
+       "kind": "반작용",
+       "name": "다시 맡기는 쪽으로 — 지수·연금형",
+       "change": {
+        "layer": "inference",
+        "text": "직접 고르기에 지친 개인이 지수 상품·연금 계좌처럼 덜 고르는 방식으로 옮긴다.",
+        "ids": [
+         "tm-fund-crash"
+        ]
+       },
+       "basis": [
+        {
+         "layer": "fact",
+         "text": "2008년 뒤 '맡기는 투자'에서 빠져나온 경험이 거꾸로 일어날 수 있다.",
+         "ids": [
+          "tm-fund-crash"
+         ]
+        }
+       ],
+       "logic": {
+        "layer": "inference",
+        "text": "손실을 겪으면 이전 방식의 반대쪽으로 움직이는 경향이 있었다.",
+        "ids": [
+         "tm-fund-crash",
+         "tm-ant20"
+        ]
+       },
+       "conditions": {
+        "layer": "inference",
+        "text": "직접 투자에서 큰 손실 경험이 쌓여야 한다.",
+        "ids": [
+         "tm-coin25"
+        ]
+       },
+       "demand": {
+        "layer": "inference",
+        "text": "지수형 상품, 연금 계좌, 자산관리 서비스.",
+        "ids": [
+         "tm-fund-insight"
+        ]
+       },
+       "watch": [
+        "가상자산 거래 감소 지속 여부",
+        "지수형 상품 개인 잔고"
+       ],
+       "against": [
+        "개인 직접 순매수가 계속 늘면 반작용 없음"
+       ]
+      }
+     ]
+    },
+    "conclusion": {
+     "key": {
+      "layer": "inference",
+      "text": "개인의 투자는 '펀드에 맡기기'에서 2008년 반토막을 거쳐 '앱으로 직접 사기'로, 대상은 한국에서 세계로 옮겨 갔다.",
+      "ids": [
+       "tm-fund-insight",
+       "tm-fund-crash",
+       "tm-ant20",
+       "tm-west25"
+      ]
+     },
+     "favored": {
+      "layer": "inference",
+      "text": "펀드 실패의 기억과 정보 비용 하락이 겹쳤다는 해석을 지지한다.",
+      "ids": [
+       "tm-fund-crash",
+       "tm-ant20"
+      ]
+     },
+     "undecided": {
+      "layer": "inference",
+      "text": "이 변화가 개인의 실제 자산 수익에 어떤 결과를 냈는지는 다루지 않았다.",
+      "ids": [
+       "tm-west25"
+      ]
+     },
+     "next": {
+      "layer": "inference",
+      "text": "다음 큰 하락 때 개인 투자자의 순매수 방향.",
+      "ids": [
+       "tm-ant20"
+      ]
+     },
+     "change": {
+      "layer": "inference",
+      "text": "개인이 직접 투자에서 대거 빠져나가면 '반작용' 쪽으로 고친다.",
+      "ids": [
+       "tm-ant20"
       ]
      }
     }

@@ -44,7 +44,7 @@ with sync_playwright() as p:
     # 주제 이야기 지도(R-Q16)와 공통 욕구(R-Q17)
     pg.goto(U + '#/topic'); pg.wait_for_timeout(900)
     t = pg.locator('main').inner_text()
-    ok('주제 지도: 분야 섹션 15개, 구매·소유 분야에 이야기 5개', pg.locator('.tp-dom').count() == 15 and pg.locator('#fd-buying .tp-card').count() == 5)
+    ok('주제 지도: 분야 섹션 16개(돈·투자 추가), 구매·소유 분야에 이야기 5개', pg.locator('.tp-dom').count() == 16 and pg.locator('#fd-buying .tp-card').count() == 5)
     ok('주제 지도: 개발 상태 문구 없음(깊게 구현·후보·시대 흐름만)', not any(x in t for x in ('깊게 구현', '후보(조사 전)', '시대 흐름만 있음')))
     ok('주제 지도: 준비 중은 별도 모양', pg.locator('.tp-planned').count() >= 5)
     ok('공통 욕구: 6개, 사례마다 언제·그전·계기·달라진 선택', pg.locator('.tp-need').count() == 6 and pg.locator('.tp-cases tbody tr').count() >= 18 and pg.locator('.tp-needread dt').count() == 24)
@@ -66,6 +66,11 @@ with sync_playwright() as p:
     for tid in ('life-rest', 'life-health', 'life-stuff', 'life-nature', 'life-alone', 'life-convenience'):
         pg.goto(U + f'#/topic/{tid}'); pg.wait_for_timeout(700)
         ok(f'라이프스타일 {tid}: 전환점 3개 이상×5요소, 갈래, 추론 6요소, 미래 2갈래, 결론', pg.locator('.tp-turn').count() >= 3 and pg.locator('.tp-turn').first.locator('.tp-chain > li').count() == 5 and pg.locator('.tp-lanes li').count() >= 4 and pg.locator('.tp-reason h4').count() >= 6 and pg.locator('.tp-fut').count() >= 2 and pg.locator('.tp-end dt').count() == 5)
+    for tid, fd in (('media-screen', 'media'), ('media-game', 'media'), ('travel-abroad', 'travel'), ('work-style', 'work'), ('money-invest', 'money')):
+        pg.goto(U + f'#/topic/{tid}'); pg.wait_for_timeout(700)
+        ok(f'분야 확장 {tid}: 전환점 4개×5요소, 갈래, 추론 6요소, 반복, 미래 2갈래, 결론', pg.locator('.tp-turn').count() == 4 and pg.locator('.tp-turn').first.locator('.tp-chain > li').count() == 5 and pg.locator('.tp-lanes li').count() >= 4 and pg.locator('.tp-reason h4').count() >= 6 and pg.locator('#tp-repeat').count() == 1 and pg.locator('.tp-fut').count() == 2 and pg.locator('.tp-end dt').count() == 5)
+    pg.goto(U + '#/topic'); pg.wait_for_timeout(700)
+    ok('분야 확장: 영상·게임(미디어), 해외여행, 일하는 방식, 돈·투자 분야에 주제 카드', pg.locator('#fd-media .tp-card', has_text='게임').count() >= 1 and pg.locator('#fd-travel .tp-card', has_text='해외여행').count() == 1 and pg.locator('#fd-work .tp-card', has_text='일하는 방식').count() == 1 and pg.locator('#fd-money .tp-card', has_text='돈을 굴리는').count() == 1)
     for tid in ('city-home', 'city-move'):
         pg.goto(U + f'#/topic/{tid}'); pg.wait_for_timeout(700)
         ok(f'도시 주제 {tid}: 거주·교통을 나눠 추적(전환점·갈래·추론·미래·결론)', pg.locator('.tp-turn').count() >= 4 and pg.locator('.tp-lanes li').count() >= 5 and pg.locator('.tp-reason h4').count() >= 6 and pg.locator('.tp-fut').count() >= 2 and pg.locator('.tp-end dt').count() == 5)
@@ -265,7 +270,7 @@ with sync_playwright() as p:
     ok('코로나19: 금리 인상 전환의 원인(집값·가계부채)', '가계부채' in w)
     # 변화 흐름: 질문 → 단계 → 연결의 성격 → 사건 상세 → 흐름으로 돌아가기
     pg.goto(U + '#/flow'); pg.wait_for_timeout(600)
-    ok('옛 흐름 목록 주소 → 주제 지도', pg.locator('.tp-dom').count() == 15)
+    ok('옛 흐름 목록 주소 → 주제 지도', pg.locator('.tp-dom').count() == 16)
     pg.goto(U + '#/flow/flow-time'); pg.wait_for_timeout(600)
     t1 = pg.locator('main').inner_text()
     pg.goto(U + '#/flow/flow-sports'); pg.wait_for_timeout(600)
