@@ -3,6 +3,7 @@ import { D, flowById, type Layer, type TasteFlow, type TR } from '../lib/data';
 import type { Route } from '../lib/route';
 import { Claims } from '../ui/WhyPanel';
 import { ConclusionView, FuturesView, TurnCard } from './TopicView';
+import { LayerLegend } from '../ui/Story';
 
 /**
  * 취향·생활 흐름 — 사람들이 무엇을 좋아하고 사다가, 어떤 조건·불편을 만나 다른 선택으로 옮겨 갔는지.
@@ -159,6 +160,7 @@ function TasteDetail({ f, nav }: { f: TasteFlow; nav: (p: Partial<Route>) => voi
     <div className="view taste">
       <section className="panel hero" id="tz-0">
         <button className="link small" onClick={() => nav({ taste: undefined })}>← 취향·생활 흐름 전체</button>
+        <LayerLegend />
         <p className="tz-field">{T.fields.find((x) => x.id === f.field)?.label} · {f.status} · {f.span[0]}~{f.span[1]}</p>
         <h2 className="st-title">{f.title}</h2>
         <p className="st-sub">{f.subtitle}</p>

@@ -22522,6 +22522,150 @@
    "aiSynthesized": false,
    "period": "2022",
    "independentSources": 2
+  },
+  {
+   "id": "w87-park",
+   "text": "1987년 1월 14일 서울대생 박종철이 치안본부 남영동 대공분실에서 조사를 받다 물고문으로 숨졌다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "w87-seoul-park",
+    "w87-khan-park"
+   ],
+   "domains": [
+    "politics"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "independentSources": 2
+  },
+  {
+   "id": "w87-413",
+   "text": "1987년 4월 13일 전두환 대통령은 개헌 논의를 미루고 기존 헌법(대통령 간선제)대로 정부를 넘기겠다는 '4·13 호헌조치'를 발표했다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "w87-nara-413",
+    "w87-mt-610"
+   ],
+   "domains": [
+    "politics"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "independentSources": 2
+  },
+  {
+   "id": "w87-610",
+   "text": "1987년 6월 10일 '박종철 고문살인 은폐 규탄 및 호헌 철폐 국민대회'가 열렸다. 민주헌법쟁취국민운동본부가 대회를 이끌었고 대회 전날 연세대생 이한열이 최루탄에 맞아 쓰러졌다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "w87-pressian-610",
+    "w87-tomato-610"
+   ],
+   "domains": [
+    "politics"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "independentSources": 2
+  },
+  {
+   "id": "w87-const",
+   "text": "여야 합의로 마련한 제9차 개헌안은 1987년 10월 12일 국회 의결과 10월 27일 국민투표를 거쳐 10월 29일 공포됐다. 대통령 직선제와 5년 단임을 담았고, 12월 16일 직선제 대통령 선거가 치러졌다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "w87-nara-9th",
+    "w87-imaeil-const"
+   ],
+   "domains": [
+    "politics"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "independentSources": 2
+  },
+  {
+   "id": "w87-court",
+   "text": "제9차 개헌 헌법으로 신설된 헌법재판소는 1988년 9월 1일 출범했다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "w87-lawtimes-court"
+   ],
+   "domains": [
+    "politics"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "independentSources": 1
+  },
+  {
+   "id": "w87-split",
+   "text": "1987년 12월 대선에서 김영삼·김대중 두 후보가 단일화에 실패했고, 민정당 노태우 후보가 당선돼 1988년 2월 취임했다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "w87-sgsg-1987"
+   ],
+   "domains": [
+    "politics"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "independentSources": 1
+  },
+  {
+   "id": "w09-wipi",
+   "text": "2005년 4월부터 국내 휴대전화에 의무였던 무선인터넷 플랫폼 위피(WIPI) 탑재가 2009년 4월 1일 폐지돼, 외산 스마트폰을 들여올 길이 열렸다.",
+   "claimType": "fact",
+   "status": "verified",
+   "sourceIds": [
+    "w09-zdnet-wipi",
+    "w09-etoday-wipi",
+    "w09-mt-wipi"
+   ],
+   "domains": [
+    "technology",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "independentSources": 3
+  },
+  {
+   "id": "w09-kt",
+   "text": "아이폰 도입에 나선 것은 이동통신 시장 2위 KT였고, SK텔레콤은 삼성전자와 함께 '옴니아' 시리즈로 맞섰다.",
+   "claimType": "fact",
+   "status": "sourced",
+   "sourceIds": [
+    "w09-inews-shock"
+   ],
+   "domains": [
+    "technology",
+    "consumption"
+   ],
+   "countries": [
+    "KR"
+   ],
+   "aiSynthesized": false,
+   "independentSources": 1
   }
  ],
  "sources": [
@@ -33219,6 +33363,118 @@
    "sourceType": "news",
    "accessedDate": "2026-11-12",
    "publishedDate": "2022-08-14"
+  },
+  {
+   "id": "w87-seoul-park",
+   "title": "5공 정권연장 야욕 꺾은 '民主불씨' — 박종철 고문치사",
+   "publisher": "서울신문",
+   "url": "https://www.seoul.co.kr/news/1998/11/11/19981111021001",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "w87-khan-park",
+   "title": "박종철 — 불법 연행과 고문(2004.12.05)",
+   "publisher": "경향신문",
+   "url": "https://khan.co.kr/article/200412051728471",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "w87-nara-413",
+   "title": "1987년 6월 민주항쟁(이달의 기록)",
+   "publisher": "국가기록원",
+   "url": "https://theme.archives.go.kr/next/monthly/viewMain.do?month=06&year=2007",
+   "sourceType": "government",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "w87-mt-610",
+   "title": "29년 전 오늘… 민주화에 목마른 시민들 거리로(2016.06.10)",
+   "publisher": "머니투데이",
+   "url": "https://www.mt.co.kr/politics/2016/06/10/2016060916481423806",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "w87-pressian-610",
+   "title": "서중석의 현대사 이야기 — 1987년 6월 10일",
+   "publisher": "프레시안",
+   "url": "https://pressian.com/pages/articles/150648",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "w87-tomato-610",
+   "title": "만인보로 읽는 한국사 — 6월 민주항쟁의 기억",
+   "publisher": "뉴스토마토",
+   "url": "https://newstomato.com/ReadNews.aspx?no=662722",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "w87-nara-9th",
+   "title": "제9차 개헌(대통령 직선제) — 정책 해설",
+   "publisher": "국가기록원",
+   "url": "https://theme.archives.go.kr/next/govpo/detail.do?policySeq=106",
+   "sourceType": "government",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "w87-imaeil-const",
+   "title": "역대 개헌 일지(1995.11.30)",
+   "publisher": "매일신문",
+   "url": "https://www.imaeil.com/page/view/1995113022080215147",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "w87-lawtimes-court",
+   "title": "국민이 가장 신뢰하는 국가기관으로 위상 확고히 — 헌법재판소",
+   "publisher": "법률신문",
+   "url": "https://www.lawtimes.co.kr/news/146037",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "w87-sgsg-1987",
+   "title": "펭귄쌤이 전해주는 대한민국 이야기(46) — 6·29선언과 1987년 대선",
+   "publisher": "한국경제 생글생글",
+   "url": "https://sgsg.hankyung.com/article/2017011306941",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "w09-zdnet-wipi",
+   "title": "위피, '천덕꾸러기로 전락하나'…탑재 의무화 해제(2008.12)",
+   "publisher": "지디넷코리아",
+   "url": "https://zdnet.co.kr/view/?no=00000039176156",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "w09-etoday-wipi",
+   "title": "4월 휴대폰 위피탑재 폐지...SK텔레콤 입지 흔들리나(2009.03.31)",
+   "publisher": "이투데이",
+   "url": "https://www.etoday.co.kr/news/view/217909",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "w09-mt-wipi",
+   "title": "방통위 \"우리가 아이폰을 막아?\" 반박(2009.09.15)",
+   "publisher": "머니투데이",
+   "url": "https://www.mt.co.kr/tech/2009/09/15/2009091511482969710",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
+  },
+  {
+   "id": "w09-inews-shock",
+   "title": "[통신돋보기] 아이폰 쇼크, 국내 이통판을 뒤엎다",
+   "publisher": "아이뉴스24",
+   "url": "https://www.inews24.com/view/wrlted/1096847",
+   "sourceType": "news",
+   "accessedDate": "2026-11-11"
   }
  ],
  "events": [
@@ -75754,7 +76010,8 @@
       "at": [
        "m1",
        "m7"
-      ]
+      ],
+      "likeness": "겉모습만 닮음"
      }
     ],
     "conclusion": {
@@ -78457,7 +78714,8 @@
       "at": [
        "x2",
        "x3"
-      ]
+      ],
+      "likeness": "겉모습만 닮음"
      }
     ],
     "conclusion": {
@@ -94505,7 +94763,8 @@
       "at": [
        "t2",
        "t6"
-      ]
+      ],
+      "likeness": "원리도 닮음"
      }
     ],
     "links": [
@@ -95633,7 +95892,8 @@
       "at": [
        "p1",
        "p6"
-      ]
+      ],
+      "likeness": "원리도 닮음"
      }
     ],
     "links": [
@@ -96618,7 +96878,8 @@
       "at": [
        "o2",
        "o5"
-      ]
+      ],
+      "likeness": "겉모습만 닮음"
      },
      {
       "type": "결합·변형",
@@ -96673,7 +96934,8 @@
       "at": [
        "o2",
        "o4"
-      ]
+      ],
+      "likeness": "원리도 닮음"
      }
     ],
     "links": [
@@ -97746,7 +98008,8 @@
       "at": [
        "i2",
        "i6"
-      ]
+      ],
+      "likeness": "겉모습만 닮음"
      },
      {
       "type": "경제·산업 순환",
@@ -97801,7 +98064,8 @@
       "at": [
        "i4",
        "i6"
-      ]
+      ],
+      "likeness": "원리도 닮음"
      }
     ],
     "links": [
@@ -98816,7 +99080,8 @@
        "f3",
        "f4",
        "f6"
-      ]
+      ],
+      "likeness": "원리도 닮음"
      }
     ],
     "links": [
@@ -100007,7 +100272,8 @@
        "t2",
        "t4"
       ],
-      "interval": "약 9년"
+      "interval": "약 9년",
+      "likeness": "겉모습만 닮음"
      },
      {
       "type": "장기 구조 변화",
@@ -100061,7 +100327,8 @@
       ],
       "at": [
        "t4"
-      ]
+      ],
+      "likeness": "반복 아님"
      }
     ],
     "links": [
@@ -102080,7 +102347,8 @@
       ],
       "at": [
        "t4"
-      ]
+      ],
+      "likeness": "겉모습만 닮음"
      }
     ],
     "links": [
@@ -103321,7 +103589,8 @@
       "at": [
        "t1",
        "t4"
-      ]
+      ],
+      "likeness": "원리도 닮음"
      }
     ],
     "futures": {
@@ -104028,7 +104297,8 @@
       "at": [
        "t3",
        "t4"
-      ]
+      ],
+      "likeness": "원리도 닮음"
      }
     ],
     "futures": {
@@ -106152,7 +106422,8 @@
       "at": [
        "t1",
        "t4"
-      ]
+      ],
+      "likeness": "겉모습만 닮음"
      }
     ],
     "futures": {
@@ -106832,7 +107103,8 @@
       "at": [
        "t1",
        "t3"
-      ]
+      ],
+      "likeness": "원리도 닮음"
      }
     ],
     "futures": {
@@ -107499,7 +107771,8 @@
       "at": [
        "t2",
        "t4"
-      ]
+      ],
+      "likeness": "겉모습만 닮음"
      }
     ],
     "futures": {
@@ -108184,7 +108457,8 @@
       "at": [
        "t1",
        "t3"
-      ]
+      ],
+      "likeness": "원리도 닮음"
      }
     ],
     "futures": {
@@ -108851,7 +109125,8 @@
       "at": [
        "t1",
        "t4"
-      ]
+      ],
+      "likeness": "원리도 닮음"
      }
     ],
     "futures": {
@@ -109495,7 +109770,8 @@
       "at": [
        "t1",
        "t4"
-      ]
+      ],
+      "likeness": "원리도 닮음"
      }
     ],
     "futures": {
@@ -110144,7 +110420,8 @@
       "at": [
        "t1",
        "t3"
-      ]
+      ],
+      "likeness": "원리도 닮음"
      }
     ],
     "futures": {
@@ -110756,7 +111033,8 @@
       "at": [
        "t1",
        "t3"
-      ]
+      ],
+      "likeness": "원리도 닮음"
      }
     ],
     "futures": {
@@ -111392,7 +111670,8 @@
       "at": [
        "t1",
        "t3"
-      ]
+      ],
+      "likeness": "원리도 닮음"
      }
     ],
     "futures": {
@@ -111984,7 +112263,8 @@
       "at": [
        "t1",
        "t3"
-      ]
+      ],
+      "likeness": "원리도 닮음"
      }
     ],
     "futures": {
@@ -112646,7 +112926,8 @@
       "at": [
        "t1",
        "t4"
-      ]
+      ],
+      "likeness": "원리도 닮음"
      }
     ],
     "futures": {
@@ -113301,7 +113582,8 @@
       "at": [
        "t2",
        "t4"
-      ]
+      ],
+      "likeness": "겉모습만 닮음"
      }
     ],
     "futures": {
@@ -114004,7 +114286,8 @@
       "at": [
        "t1",
        "t3"
-      ]
+      ],
+      "likeness": "원리도 닮음"
      }
     ],
     "futures": {
@@ -114590,7 +114873,8 @@
       "at": [
        "t1",
        "t3"
-      ]
+      ],
+      "likeness": "겉모습만 닮음"
      }
     ],
     "futures": {
@@ -115174,7 +115458,8 @@
       "at": [
        "t1",
        "t3"
-      ]
+      ],
+      "likeness": "원리도 닮음"
      }
     ],
     "futures": {
@@ -115762,7 +116047,8 @@
       "at": [
        "t1",
        "t3"
-      ]
+      ],
+      "likeness": "원리도 닮음"
      }
     ],
     "futures": {
@@ -116346,7 +116632,8 @@
       "at": [
        "t1",
        "t3"
-      ]
+      ],
+      "likeness": "원리도 닮음"
      }
     ],
     "futures": {
@@ -116924,7 +117211,8 @@
       "at": [
        "t2",
        "t3"
-      ]
+      ],
+      "likeness": "원리도 닮음"
      }
     ],
     "futures": {
@@ -117514,7 +117802,8 @@
       "at": [
        "t2",
        "t3"
-      ]
+      ],
+      "likeness": "원리도 닮음"
      }
     ],
     "futures": {
@@ -118098,7 +118387,8 @@
       "at": [
        "t1",
        "t3"
-      ]
+      ],
+      "likeness": "겉모습만 닮음"
      }
     ],
     "futures": {
@@ -118692,7 +118982,8 @@
       "at": [
        "t2",
        "t3"
-      ]
+      ],
+      "likeness": "원리도 닮음"
      }
     ],
     "futures": {
@@ -119285,7 +119576,8 @@
       "at": [
        "t1",
        "t3"
-      ]
+      ],
+      "likeness": "원리도 닮음"
      }
     ],
     "futures": {
@@ -119870,7 +120162,8 @@
       "at": [
        "t1",
        "t3"
-      ]
+      ],
+      "likeness": "원리도 닮음"
      }
     ],
     "futures": {
@@ -120447,7 +120740,8 @@
       "at": [
        "t1",
        "t3"
-      ]
+      ],
+      "likeness": "원리도 닮음"
      }
     ],
     "futures": {
@@ -121033,7 +121327,8 @@
       "at": [
        "t2",
        "t3"
-      ]
+      ],
+      "likeness": "원리도 닮음"
      }
     ],
     "futures": {
@@ -121615,7 +121910,8 @@
       "at": [
        "t2",
        "t3"
-      ]
+      ],
+      "likeness": "원리도 닮음"
      }
     ],
     "futures": {
@@ -149510,6 +149806,1076 @@
   "filled": 159,
   "missing": []
  },
+ "repeatLikeness": {
+  "filled": 40,
+  "missing": []
+ },
+ "pairScan": {
+  "tested": 708,
+  "indicators": 46,
+  "perm": 400,
+  "found": [
+   {
+    "a": "elec-rnew-kr",
+    "b": "emp-ag-kr",
+    "lag": 0,
+    "r": 0.78,
+    "n": 31,
+    "p": 0.0025,
+    "q": 0.0656,
+    "aTitle": "에너지 — 재생에너지 발전 비중",
+    "bTitle": "농림어업 취업자 비중",
+    "rNoShock": 0.791,
+    "robust": true
+   },
+   {
+    "a": "govc-kr",
+    "b": "va-srv-kr",
+    "lag": 0,
+    "r": 0.771,
+    "n": 65,
+    "p": 0.0025,
+    "q": 0.0656,
+    "aTitle": "정부 소비 지출 비중 (GDP 대비)",
+    "bTitle": "서비스업 생산 비중 (GDP 대비)",
+    "rNoShock": 0.752,
+    "robust": true
+   },
+   {
+    "a": "cons-culture-kr",
+    "b": "emprate-kr",
+    "lag": 0,
+    "r": 0.769,
+    "n": 25,
+    "p": 0.0025,
+    "q": 0.0656,
+    "aTitle": "오락·스포츠·문화 지출 비중",
+    "bTitle": "고용률 (15~64세)",
+    "rNoShock": 0.76,
+    "robust": true
+   },
+   {
+    "a": "fx-kr",
+    "b": "realwage-kr",
+    "lag": 0,
+    "r": -0.769,
+    "n": 32,
+    "p": 0.0025,
+    "q": 0.0656,
+    "aTitle": "원/달러 환율 (연평균)",
+    "bTitle": "제조업 실질 시간당 임금 지수 (2015=100, 계산)",
+    "rNoShock": -0.642,
+    "robust": true
+   },
+   {
+    "a": "emp-mfg-kr",
+    "b": "wage-share-kr",
+    "lag": 0,
+    "r": 0.761,
+    "n": 35,
+    "p": 0.0025,
+    "q": 0.0656,
+    "aTitle": "제조업 취업자 비중",
+    "bTitle": "임금근로자 비중",
+    "rNoShock": 0.753,
+    "robust": true
+   },
+   {
+    "a": "emp-ag-kr",
+    "b": "unpaid-fam-kr",
+    "lag": 0,
+    "r": 0.74,
+    "n": 41,
+    "p": 0.0025,
+    "q": 0.0656,
+    "aTitle": "농림어업 취업자 비중",
+    "bTitle": "무급가족종사자 비중",
+    "rNoShock": 0.556,
+    "robust": true
+   },
+   {
+    "a": "emp-ag-kr",
+    "b": "wage-share-kr",
+    "lag": 0,
+    "r": -0.739,
+    "n": 41,
+    "p": 0.0025,
+    "q": 0.0656,
+    "aTitle": "농림어업 취업자 비중",
+    "bTitle": "임금근로자 비중",
+    "rNoShock": -0.667,
+    "robust": true
+   },
+   {
+    "a": "unemp-kr",
+    "b": "unpaid-fam-kr",
+    "lag": 0,
+    "r": 0.724,
+    "n": 36,
+    "p": 0.0025,
+    "q": 0.0656,
+    "aTitle": "실업률",
+    "bTitle": "무급가족종사자 비중",
+    "rNoShock": 0.172,
+    "robust": false
+   },
+   {
+    "a": "gdppc-kr",
+    "b": "realwage-kr",
+    "lag": 0,
+    "r": 0.712,
+    "n": 32,
+    "p": 0.0025,
+    "q": 0.0656,
+    "aTitle": "1인당 실질 GDP (2015년 달러)",
+    "bTitle": "제조업 실질 시간당 임금 지수 (2015=100, 계산)",
+    "rNoShock": 0.542,
+    "robust": true
+   },
+   {
+    "a": "elec-nucl-kr",
+    "b": "energy-imp-kr",
+    "lag": 0,
+    "r": -0.708,
+    "n": 34,
+    "p": 0.0025,
+    "q": 0.0656,
+    "aTitle": "에너지 — 원자력 발전 비중",
+    "bTitle": "에너지 — 순수입 의존도",
+    "rNoShock": -0.6,
+    "robust": true
+   },
+   {
+    "a": "gdp-growth",
+    "b": "realwage-kr",
+    "lag": 0,
+    "r": 0.705,
+    "n": 32,
+    "p": 0.0025,
+    "q": 0.0656,
+    "aTitle": "실질 경제성장률",
+    "bTitle": "제조업 실질 시간당 임금 지수 (2015=100, 계산)",
+    "rNoShock": 0.589,
+    "robust": true
+   },
+   {
+    "a": "elec-rnew-kr",
+    "b": "wage-share-kr",
+    "lag": 0,
+    "r": -0.699,
+    "n": 31,
+    "p": 0.0025,
+    "q": 0.0656,
+    "aTitle": "에너지 — 재생에너지 발전 비중",
+    "bTitle": "임금근로자 비중",
+    "rNoShock": -0.681,
+    "robust": true
+   },
+   {
+    "a": "gdppc-kr",
+    "b": "wage-kr",
+    "lag": 0,
+    "r": 0.691,
+    "n": 33,
+    "p": 0.0025,
+    "q": 0.0656,
+    "aTitle": "1인당 실질 GDP (2015년 달러)",
+    "bTitle": "제조업 시간당 임금 지수 (명목, 2015=100)",
+    "rNoShock": 0.485,
+    "robust": true
+   },
+   {
+    "a": "gdp-growth",
+    "b": "unemp-kr",
+    "lag": -1,
+    "r": 0.681,
+    "n": 35,
+    "p": 0.0025,
+    "q": 0.0656,
+    "aTitle": "실질 경제성장률",
+    "bTitle": "실업률",
+    "rNoShock": 0.48,
+    "robust": true
+   },
+   {
+    "a": "fx-kr",
+    "b": "gdppc-kr",
+    "lag": 0,
+    "r": -0.674,
+    "n": 65,
+    "p": 0.0025,
+    "q": 0.0656,
+    "aTitle": "원/달러 환율 (연평균)",
+    "bTitle": "1인당 실질 GDP (2015년 달러)",
+    "rNoShock": -0.545,
+    "robust": true
+   },
+   {
+    "a": "gdppc-kr",
+    "b": "unemp-kr",
+    "lag": 0,
+    "r": -0.67,
+    "n": 36,
+    "p": 0.0025,
+    "q": 0.0656,
+    "aTitle": "1인당 실질 GDP (2015년 달러)",
+    "bTitle": "실업률",
+    "rNoShock": -0.476,
+    "robust": true
+   },
+   {
+    "a": "house-kr",
+    "b": "wage-share-kr",
+    "lag": 0,
+    "r": 0.654,
+    "n": 50,
+    "p": 0.0025,
+    "q": 0.0656,
+    "aTitle": "실질 주택가격 지수 (2010=100)",
+    "bTitle": "임금근로자 비중",
+    "rNoShock": 0.595,
+    "robust": true
+   },
+   {
+    "a": "realwage-kr",
+    "b": "tel-kr",
+    "lag": 1,
+    "r": -0.645,
+    "n": 31,
+    "p": 0.0025,
+    "q": 0.0656,
+    "aTitle": "제조업 실질 시간당 임금 지수 (2015=100, 계산)",
+    "bTitle": "유선전화 가입 (100명당)",
+    "rNoShock": -0.126,
+    "robust": false
+   },
+   {
+    "a": "call-kr",
+    "b": "unpaid-fam-kr",
+    "lag": -1,
+    "r": -0.643,
+    "n": 34,
+    "p": 0.0025,
+    "q": 0.0656,
+    "aTitle": "콜금리 (단기 시장금리, 연평균)",
+    "bTitle": "무급가족종사자 비중",
+    "rNoShock": 0.217,
+    "robust": false
+   },
+   {
+    "a": "house-kr",
+    "b": "unpaid-fam-kr",
+    "lag": 0,
+    "r": -0.618,
+    "n": 50,
+    "p": 0.0025,
+    "q": 0.0656,
+    "aTitle": "실질 주택가격 지수 (2010=100)",
+    "bTitle": "무급가족종사자 비중",
+    "rNoShock": -0.536,
+    "robust": true
+   },
+   {
+    "a": "hhcons-kr",
+    "b": "unemp-kr",
+    "lag": 0,
+    "r": -0.611,
+    "n": 36,
+    "p": 0.0025,
+    "q": 0.0656,
+    "aTitle": "가계 소비 비중 (GDP 대비)",
+    "bTitle": "실업률",
+    "rNoShock": -0.568,
+    "robust": true
+   },
+   {
+    "a": "govc-kr",
+    "b": "va-agr-kr",
+    "lag": 0,
+    "r": -0.572,
+    "n": 65,
+    "p": 0.0025,
+    "q": 0.0656,
+    "aTitle": "정부 소비 지출 비중 (GDP 대비)",
+    "bTitle": "농림어업 생산 비중 (GDP 대비)",
+    "rNoShock": -0.554,
+    "robust": true
+   },
+   {
+    "a": "exp-gdp-kr",
+    "b": "va-mfg-kr",
+    "lag": 0,
+    "r": 0.531,
+    "n": 65,
+    "p": 0.0025,
+    "q": 0.0656,
+    "aTitle": "수출 의존도 (GDP 대비 수출)",
+    "bTitle": "제조업 생산 비중 (GDP 대비)",
+    "rNoShock": 0.562,
+    "robust": true
+   },
+   {
+    "a": "fx-kr",
+    "b": "gdp-growth",
+    "lag": 0,
+    "r": -0.515,
+    "n": 64,
+    "p": 0.0025,
+    "q": 0.0656,
+    "aTitle": "원/달러 환율 (연평균)",
+    "bTitle": "실질 경제성장률",
+    "rNoShock": -0.375,
+    "robust": true
+   },
+   {
+    "a": "gdp-growth",
+    "b": "govc-kr",
+    "lag": 0,
+    "r": -0.506,
+    "n": 64,
+    "p": 0.0025,
+    "q": 0.0656,
+    "aTitle": "실질 경제성장률",
+    "bTitle": "정부 소비 지출 비중 (GDP 대비)",
+    "rNoShock": -0.394,
+    "robust": true
+   },
+   {
+    "a": "cpi-kr",
+    "b": "hhcons-kr",
+    "lag": 1,
+    "r": 0.48,
+    "n": 64,
+    "p": 0.0025,
+    "q": 0.0656,
+    "aTitle": "한국 소비자물가 상승률",
+    "bTitle": "가계 소비 비중 (GDP 대비)",
+    "rNoShock": 0.487,
+    "robust": true
+   },
+   {
+    "a": "exports-kr",
+    "b": "gdppc-kr",
+    "lag": 0,
+    "r": 0.48,
+    "n": 65,
+    "p": 0.0025,
+    "q": 0.0656,
+    "aTitle": "상품 수출액",
+    "bTitle": "1인당 실질 GDP (2015년 달러)",
+    "rNoShock": 0.434,
+    "robust": true
+   }
+  ],
+  "near": [
+   {
+    "a": "emp-mfg-kr",
+    "b": "unpaid-fam-kr",
+    "lag": 0,
+    "r": -0.621,
+    "n": 35,
+    "p": 0.005,
+    "q": 0.1142,
+    "aTitle": "제조업 취업자 비중",
+    "bTitle": "무급가족종사자 비중"
+   },
+   {
+    "a": "gdp-growth",
+    "b": "va-srv-kr",
+    "lag": 0,
+    "r": -0.423,
+    "n": 64,
+    "p": 0.005,
+    "q": 0.1142,
+    "aTitle": "실질 경제성장률",
+    "bTitle": "서비스업 생산 비중 (GDP 대비)"
+   },
+   {
+    "a": "realwage-kr",
+    "b": "unpaid-fam-kr",
+    "lag": 0,
+    "r": -0.597,
+    "n": 32,
+    "p": 0.005,
+    "q": 0.1142,
+    "aTitle": "제조업 실질 시간당 임금 지수 (2015=100, 계산)",
+    "bTitle": "무급가족종사자 비중"
+   },
+   {
+    "a": "urban-kr",
+    "b": "va-agr-kr",
+    "lag": -3,
+    "r": -0.363,
+    "n": 62,
+    "p": 0.005,
+    "q": 0.1142,
+    "aTitle": "도시 인구 비율",
+    "bTitle": "농림어업 생산 비중 (GDP 대비)"
+   },
+   {
+    "a": "call-kr",
+    "b": "cpi-kr",
+    "lag": 0,
+    "r": 0.734,
+    "n": 33,
+    "p": 0.0075,
+    "q": 0.1327,
+    "aTitle": "콜금리 (단기 시장금리, 연평균)",
+    "bTitle": "한국 소비자물가 상승률"
+   },
+   {
+    "a": "cons-house-kr",
+    "b": "gdp-growth",
+    "lag": 0,
+    "r": -0.488,
+    "n": 55,
+    "p": 0.0075,
+    "q": 0.1327,
+    "aTitle": "주거·수도·전기·연료 지출 비중",
+    "bTitle": "실질 경제성장률"
+   },
+   {
+    "a": "elec-rnew-kr",
+    "b": "urban-kr",
+    "lag": -1,
+    "r": -0.518,
+    "n": 31,
+    "p": 0.0075,
+    "q": 0.1327,
+    "aTitle": "에너지 — 재생에너지 발전 비중",
+    "bTitle": "도시 인구 비율"
+   },
+   {
+    "a": "emp-svc-kr",
+    "b": "fx-kr",
+    "lag": 0,
+    "r": 0.498,
+    "n": 41,
+    "p": 0.0075,
+    "q": 0.1327,
+    "aTitle": "서비스업 취업자 비중",
+    "bTitle": "원/달러 환율 (연평균)"
+   }
+  ],
+  "method": "전년 대비 변화(직선 추세 제거)끼리 상관, 시차 −3~+3년 중 최대, 3년 묶음 순열 400회(시차 선택 포함), 벤자민-호크버그 q<0.10"
+ },
+ "why8": {
+  "levels": [
+   {
+    "key": "prior",
+    "label": "이전 조건"
+   },
+   {
+    "key": "trigger",
+    "label": "촉발 계기"
+   },
+   {
+    "key": "structure",
+    "label": "구조적 원인"
+   },
+   {
+    "key": "actors",
+    "label": "주체 — 동기·제약·대안"
+   },
+   {
+    "key": "mechanism",
+    "label": "전달 과정"
+   },
+   {
+    "key": "result",
+    "label": "결과"
+   },
+   {
+    "key": "counter",
+    "label": "반대 해석"
+   },
+   {
+    "key": "root",
+    "label": "원인의 원인"
+   }
+  ],
+  "cases": [
+   {
+    "id": "why-1973-hci",
+    "node": "e70-hci",
+    "year": 1973,
+    "title": "왜 1973년에 중화학공업화를 선언했나",
+    "prior": [
+     {
+      "layer": "fact",
+      "text": "1971년 미국이 달러의 금 태환을 멈추며 고정환율 체제가 끝났다.",
+      "ids": [
+       "c70-nixon"
+      ]
+     },
+     {
+      "layer": "fact",
+      "text": "1972년 10월 유신으로 대통령에게 긴급조치권이 주어졌다.",
+      "ids": [
+       "c70-yushin"
+      ]
+     }
+    ],
+    "trigger": [
+     {
+      "layer": "fact",
+      "text": "박정희 대통령은 1973년 1월 12일 연두 기자회견에서 중화학공업화를 선언했다.",
+      "ids": [
+       "c70-kr-hci"
+      ]
+     }
+    ],
+    "structure": [
+     {
+      "layer": "fact",
+      "text": "경공업 중심 수출의 무역적자, 기계·부품의 일본 의존, 데탕트에 따른 안보 위기가 배경으로 꼽힌다.",
+      "ids": [
+       "c70-hci-why"
+      ]
+     }
+    ],
+    "actors": [
+     {
+      "who": "정부",
+      "motive": {
+       "layer": "inference",
+       "text": "수출 구조를 바꾸고 방위산업 기반을 갖추려 했다.",
+       "ids": [
+        "c70-hci-why"
+       ]
+      },
+      "constraint": {
+       "layer": "fact",
+       "text": "돈이 모자라 1973년 12월 국민투자기금법으로 자금을 마련했다.",
+       "ids": [
+        "c70-hci-fund"
+       ]
+      },
+      "alternative": {
+       "layer": "inference",
+       "text": "경공업 수출을 계속 키우는 길이 있었지만, 무역적자와 안보 문제를 풀기 어렵다고 봤다.",
+       "ids": [
+        "c70-hci-why"
+       ]
+      }
+     },
+     {
+      "who": "미국(국제)",
+      "motive": {
+       "layer": "inference",
+       "text": "닉슨 독트린으로 아시아 동맹국의 자체 방위를 요구했다.",
+       "ids": [
+        "c70-hci-why"
+       ]
+      },
+      "constraint": {
+       "layer": "inference",
+       "text": "데탕트로 주한미군 의존을 줄이려 했다.",
+       "ids": [
+        "c70-hci-why"
+       ]
+      },
+      "alternative": {
+       "layer": "hypothesis",
+       "text": "동맹 유지를 위해 원조를 늘리는 선택도 있었다 — 이 앱에서 확인하지 않았다.",
+       "ids": []
+      }
+     },
+     {
+      "who": "국민·반대 세력",
+      "motive": {
+       "layer": "inference",
+       "text": "유신 아래에서 정책 방향에 반대 의견을 내기 어려웠다.",
+       "ids": [
+        "c70-yushin"
+       ]
+      },
+      "constraint": {
+       "layer": "fact",
+       "text": "긴급조치권이 자유와 권리를 정지할 수 있었다.",
+       "ids": [
+        "c70-yushin"
+       ]
+      },
+      "alternative": {
+       "layer": "hypothesis",
+       "text": "공개 토론으로 산업 방향을 정하는 경로는 막혀 있었다.",
+       "ids": [
+        "c70-yushin"
+       ]
+      }
+     }
+    ],
+    "mechanism": [
+     {
+      "layer": "fact",
+      "text": "국민투자기금 대출금의 61%가 중화학공업에 지원됐다.",
+      "ids": [
+       "c70-hci-fund"
+      ]
+     },
+     {
+      "layer": "inference",
+      "text": "정부가 정책 금융으로 자금을 몰아 대형 설비 투자를 빠르게 일으켰다.",
+      "ids": [
+       "c70-hci-fund"
+      ]
+     }
+    ],
+    "result": [
+     {
+      "layer": "fact",
+      "text": "석유 의존도가 높은 중화학 구조로 맞은 2차 석유파동 때 성장률까지 크게 떨어졌다.",
+      "ids": [
+       "c70-kr-structure",
+       "c70-kr-2nd"
+      ]
+     },
+     {
+      "layer": "fact",
+      "text": "1978년 동력자원부가 발족해 에너지 다원화 정책이 본격화했다.",
+      "ids": [
+       "c70-ministry"
+      ]
+     }
+    ],
+    "counter": [
+     {
+      "layer": "inference",
+      "text": "석유파동으로 번 오일머니(중동 건설)가 투자를 받쳤다는 설명은 '위기를 기회로' 본다.",
+      "ids": [
+       "c70-syn-chain"
+      ]
+     },
+     {
+      "layer": "inference",
+      "text": "1차 석유파동 직후의 빠른 투자가 2차 파동 때 충격을 키웠다는 비판적 해석도 있다.",
+      "ids": [
+       "c70-kr-structure"
+      ]
+     }
+    ],
+    "root": [
+     {
+      "layer": "inference",
+      "text": "1960년대 값싼 석유를 전제로 짠 성장 모델과 냉전 안보 구조가 함께 바뀌던 시기였다.",
+      "ids": [
+       "c70-syn-1",
+       "c70-hci-why"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "why-1987-democracy",
+    "node": "e80-629",
+    "year": 1987,
+    "title": "왜 1987년에 대통령 직선제가 되었나",
+    "prior": [
+     {
+      "layer": "fact",
+      "text": "1987년 1월 서울대생 박종철이 고문으로 숨졌다.",
+      "ids": [
+       "w87-park"
+      ]
+     },
+     {
+      "layer": "fact",
+      "text": "4월 13일 정부는 개헌 논의를 미루는 호헌조치를 발표했다.",
+      "ids": [
+       "w87-413"
+      ]
+     }
+    ],
+    "trigger": [
+     {
+      "layer": "fact",
+      "text": "6월 10일 고문 은폐 규탄과 호헌 철폐를 내건 국민대회가 열렸다.",
+      "ids": [
+       "w87-610"
+      ]
+     }
+    ],
+    "structure": [
+     {
+      "layer": "inference",
+      "text": "간선제로 권력을 넘기려는 정부와 직선제를 요구하는 시민·야당이 정면으로 부딪쳤다.",
+      "ids": [
+       "w87-413",
+       "w87-610"
+      ]
+     },
+     {
+      "layer": "inference",
+      "text": "3저 호황으로 경제가 좋던 시기여서 정부가 강경 진압의 비용을 크게 느꼈을 수 있다.",
+      "ids": [
+       "sx-golden"
+      ]
+     }
+    ],
+    "actors": [
+     {
+      "who": "정부·여당",
+      "motive": {
+       "layer": "inference",
+       "text": "현행 간선제로 정권을 넘기려 했다.",
+       "ids": [
+        "w87-413"
+       ]
+      },
+      "constraint": {
+       "layer": "inference",
+       "text": "전국적 시위와 국제 행사(1988 올림픽)를 앞두고 강경 진압의 부담이 컸다.",
+       "ids": [
+        "w87-610"
+       ]
+      },
+      "alternative": {
+       "layer": "fact",
+       "text": "6월 29일 직선제 개헌을 받아들이는 선언을 했다.",
+       "ids": [
+        "c80-629"
+       ]
+      }
+     },
+     {
+      "who": "시민·학생·재야",
+      "motive": {
+       "layer": "inference",
+       "text": "고문 은폐와 호헌에 맞서 직선제를 요구했다.",
+       "ids": [
+        "w87-610"
+       ]
+      },
+      "constraint": {
+       "layer": "fact",
+       "text": "6월 10일 대회 전날 이한열이 최루탄에 맞아 쓰러질 만큼 진압이 거셌다.",
+       "ids": [
+        "w87-610"
+       ]
+      },
+      "alternative": {
+       "layer": "inference",
+       "text": "국민운동본부라는 공동 지도부를 만들어 전국 동시 대회로 대응했다.",
+       "ids": [
+        "w87-610"
+       ]
+      }
+     },
+     {
+      "who": "노동자",
+      "motive": {
+       "layer": "inference",
+       "text": "선언 뒤 열린 공간에서 임금과 노동권을 요구했다.",
+       "ids": [
+        "c80-labor"
+       ]
+      },
+      "constraint": {
+       "layer": "fact",
+       "text": "1987년 노사분규는 3,749건이었지만 법적 쟁의발생신고는 72건뿐이었다.",
+       "ids": [
+        "c80-labor-num"
+       ]
+      },
+      "alternative": {
+       "layer": "fact",
+       "text": "노조를 결성하며 전국 공단으로 투쟁을 넓혔다.",
+       "ids": [
+        "c80-labor"
+       ]
+      }
+     },
+     {
+      "who": "야당 지도자",
+      "motive": {
+       "layer": "inference",
+       "text": "직선제 대선에서 이기려 했다.",
+       "ids": [
+        "w87-split"
+       ]
+      },
+      "constraint": {
+       "layer": "inference",
+       "text": "두 지도자가 각자 지지 기반을 가져 단일화가 어려웠다.",
+       "ids": [
+        "w87-split"
+       ]
+      },
+      "alternative": {
+       "layer": "fact",
+       "text": "단일화하지 못해 여당 후보가 당선됐다.",
+       "ids": [
+        "w87-split"
+       ]
+      }
+     }
+    ],
+    "mechanism": [
+     {
+      "layer": "fact",
+      "text": "6·29선언 → 여야 합의 개헌안 → 10월 27일 국민투표 → 12월 16일 직선제 대선으로 이어졌다.",
+      "ids": [
+       "c80-629",
+       "w87-const"
+      ]
+     },
+     {
+      "layer": "fact",
+      "text": "선언 뒤 7월 5일 울산을 시작으로 노동자 대투쟁이 번졌다.",
+      "ids": [
+       "c80-labor"
+      ]
+     }
+    ],
+    "result": [
+     {
+      "layer": "fact",
+      "text": "헌법재판소가 신설돼 1988년 9월 출범했다.",
+      "ids": [
+       "w87-court"
+      ]
+     },
+     {
+      "layer": "fact",
+      "text": "언론기본법 폐지 뒤 서울 종합일간지는 6개에서 10개로 늘었다.",
+      "ids": [
+       "sx-press"
+      ]
+     },
+     {
+      "layer": "fact",
+      "text": "국회가 여소야대가 되자 5·18 진상조사 청문회가 열렸다.",
+      "ids": [
+       "er-pol-518truth"
+      ]
+     }
+    ],
+    "counter": [
+     {
+      "layer": "inference",
+      "text": "직선제를 얻고도 야권 분열로 여당이 집권해 '절반의 승리'였다는 평가가 있다.",
+      "ids": [
+       "w87-split"
+      ]
+     },
+     {
+      "layer": "inference",
+      "text": "노조와 임금 상승이 기업의 비정규직 선호를 낳았다는 장기 해석도 있다.",
+      "ids": [
+       "fl-jobs-1987-irregular"
+      ]
+     }
+    ],
+    "root": [
+     {
+      "layer": "inference",
+      "text": "1980년 신군부 집권과 5·18 이후 쌓인 정당성 문제, 그리고 성장한 도시 중산층·노동자의 요구가 함께 압력을 만들었다.",
+      "ids": [
+       "er-pol-518truth",
+       "sx-golden"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "why-2009-smartphone",
+    "node": "e00-kr-iphone",
+    "year": 2009,
+    "title": "왜 한국의 스마트폰 전환은 2009년 말에 시작됐나",
+    "prior": [
+     {
+      "layer": "fact",
+      "text": "애플은 2007년 1월 아이폰을 발표했다.",
+      "ids": [
+       "c00-iphone"
+      ]
+     },
+     {
+      "layer": "fact",
+      "text": "국내 휴대전화에는 2005년 4월부터 위피 탑재가 의무였다.",
+      "ids": [
+       "w09-wipi"
+      ]
+     }
+    ],
+    "trigger": [
+     {
+      "layer": "fact",
+      "text": "2009년 4월 1일 위피 의무가 폐지됐고, 11월 28일 아이폰이 KT를 통해 출시됐다.",
+      "ids": [
+       "w09-wipi",
+       "c00-kr-iphone"
+      ]
+     }
+    ],
+    "structure": [
+     {
+      "layer": "inference",
+      "text": "이동통신사가 단말 유통과 콘텐츠 플랫폼을 함께 쥔 구조가 외산 스마트폰의 진입을 늦췄다.",
+      "ids": [
+       "w09-wipi",
+       "w09-kt"
+      ]
+     }
+    ],
+    "actors": [
+     {
+      "who": "정부(방송통신위원회)",
+      "motive": {
+       "layer": "inference",
+       "text": "국내 무선인터넷 업체를 보호하던 위피 의무를 풀어 경쟁을 열었다.",
+       "ids": [
+        "w09-wipi"
+       ]
+      },
+      "constraint": {
+       "layer": "inference",
+       "text": "통상 마찰과 '갈라파고스' 비판이 커졌다.",
+       "ids": [
+        "w09-wipi"
+       ]
+      },
+      "alternative": {
+       "layer": "hypothesis",
+       "text": "의무를 유지하는 선택도 있었지만 외산 단말 도입 요구가 컸다.",
+       "ids": [
+        "w09-wipi"
+       ]
+      }
+     },
+     {
+      "who": "KT(2위 통신사)",
+      "motive": {
+       "layer": "inference",
+       "text": "1위를 따라잡을 무기가 필요해 아이폰을 들였다.",
+       "ids": [
+        "w09-kt"
+       ]
+      },
+      "constraint": {
+       "layer": "fact",
+       "text": "아이폰 도입을 결정한 뒤에도 출시가 늦어졌다.",
+       "ids": [
+        "w09-kt"
+       ]
+      },
+      "alternative": {
+       "layer": "inference",
+       "text": "국산 스마트폰만 파는 길도 있었다.",
+       "ids": [
+        "w09-kt"
+       ]
+      }
+     },
+     {
+      "who": "삼성전자·SK텔레콤",
+      "motive": {
+       "layer": "inference",
+       "text": "국내 시장을 지키려 옴니아로 맞섰다.",
+       "ids": [
+        "w09-kt"
+       ]
+      },
+      "constraint": {
+       "layer": "fact",
+       "text": "2010년 휴대폰 사업부가 아이폰 역풍으로 위기에 몰렸다는 보도가 있다.",
+       "ids": [
+        "ix-ph-2010"
+       ]
+      },
+      "alternative": {
+       "layer": "fact",
+       "text": "2010년 6월 갤럭시S로 반격했다.",
+       "ids": [
+        "ix-ph-gs"
+       ]
+      }
+     },
+     {
+      "who": "소비자",
+      "motive": {
+       "layer": "inference",
+       "text": "앱으로 쓰는 휴대폰을 원했다.",
+       "ids": [
+        "c00-kr-iphone"
+       ]
+      },
+      "constraint": {
+       "layer": "inference",
+       "text": "통신사 요금제와 단말 선택이 묶여 있었다.",
+       "ids": [
+        "w09-kt"
+       ]
+      },
+      "alternative": {
+       "layer": "fact",
+       "text": "가입자가 2009년 말 약 80만 명에서 2010년 말 약 722만 명으로 늘었다.",
+       "ids": [
+        "c00-kr-iphone"
+       ]
+      }
+     }
+    ],
+    "mechanism": [
+     {
+      "layer": "fact",
+      "text": "2010년 3월 카카오톡이 나와 2011년 4월 가입자 1,000만 명을 넘었다.",
+      "ids": [
+       "c10-kakao"
+      ]
+     },
+     {
+      "layer": "inference",
+      "text": "앱 장터가 열리자 메신저·쇼핑·금융이 휴대폰 안으로 옮겨 왔다.",
+      "ids": [
+       "c10-kakao"
+      ]
+     }
+    ],
+    "result": [
+     {
+      "layer": "fact",
+      "text": "갤럭시S는 7개월 만에 1,000만 대가 팔렸다.",
+      "ids": [
+       "ix-ph-gs"
+      ]
+     },
+     {
+      "layer": "fact",
+      "text": "LG전자는 2021년 휴대폰 사업을 접었다.",
+      "ids": [
+       "ix-ph-lg"
+      ]
+     }
+    ],
+    "counter": [
+     {
+      "layer": "inference",
+      "text": "위피가 아니었어도 통신사 중심 유통 때문에 늦어졌을 것이라는 설명이 있다.",
+      "ids": [
+       "w09-kt"
+      ]
+     },
+     {
+      "layer": "hypothesis",
+      "text": "국산 플랫폼 보호가 한때 국내 콘텐츠 업체를 키웠다는 반론도 가능하다 — 근거를 연결하지 않았다.",
+      "ids": []
+     }
+    ],
+    "root": [
+     {
+      "layer": "inference",
+      "text": "통신을 국가가 키운 산업으로 다뤄 온 정책 전통(전전자교환기·CDMA)이 플랫폼까지 국내 표준으로 묶으려 한 배경이 됐다.",
+      "ids": [
+       "er-tech-tdx-cdma",
+       "w09-wipi"
+      ]
+     }
+    ]
+   }
+  ]
+ },
  "eventUses": {
   "e80-curfew": [
    {
@@ -151075,8 +152441,8 @@
      "events": 26
     },
     "counts": {
-     "claims": 146,
-     "verified": 23,
+     "claims": 148,
+     "verified": 24,
      "edges": 31,
      "evidencedEdges": 11,
      "indicators": 3,
@@ -151091,12 +152457,12 @@
      {
       "name": "데이터 확보",
       "ok": true,
-      "basis": "연도별 지표 3개, 관련 근거 문장 146개"
+      "basis": "연도별 지표 3개, 관련 근거 문장 148개"
      },
      {
       "name": "출처 검증",
       "ok": true,
-      "basis": "두 곳 이상 확인 23/146문장(16%) — 15% 이상이면 통과"
+      "basis": "두 곳 이상 확인 24/148문장(16%) — 15% 이상이면 통과"
      },
      {
       "name": "기본 분석 완료",
@@ -151253,8 +152619,8 @@
      "events": 43
     },
     "counts": {
-     "claims": 167,
-     "verified": 50,
+     "claims": 171,
+     "verified": 53,
      "edges": 64,
      "evidencedEdges": 32,
      "indicators": 3,
@@ -151269,12 +152635,12 @@
      {
       "name": "데이터 확보",
       "ok": true,
-      "basis": "연도별 지표 3개, 관련 근거 문장 167개"
+      "basis": "연도별 지표 3개, 관련 근거 문장 171개"
      },
      {
       "name": "출처 검증",
       "ok": true,
-      "basis": "두 곳 이상 확인 50/167문장(30%) — 15% 이상이면 통과"
+      "basis": "두 곳 이상 확인 53/171문장(31%) — 15% 이상이면 통과"
      },
      {
       "name": "기본 분석 완료",

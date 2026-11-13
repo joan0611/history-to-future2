@@ -35,12 +35,15 @@ import verify_numbers as vn  # noqa: E402
 import cycles as cyc  # noqa: E402
 import future_risks as frk  # noqa: E402
 import future_terms as ftm  # noqa: E402
+import repeat_likeness as rlk  # noqa: E402
+import pair_scan as pscan  # noqa: E402
+import why8 as w8  # noqa: E402
 
 ERA_ORDER = ["1960s", "1970s", "1980s", "1990s", "2000s", "2010s", "2020s"]
 
 
 def main():
-    claims = e60.CLAIMS + eo.CLAIMS + e70.CLAIMS + e80.CLAIMS + e90.CLAIMS + e00.CLAIMS + e10.CLAIMS + e20.CLAIMS + d73.CLAIMS + d97.CLAIMS + d08.CLAIMS + d20c.CLAIMS + fy.CLAIMS + cor.CLAIMS + fl.CLAIMS + an.CLAIMS + tz.CLAIMS + sx.CLAIMS + ix.CLAIMS + tp.CLAIMS
+    claims = e60.CLAIMS + eo.CLAIMS + e70.CLAIMS + e80.CLAIMS + e90.CLAIMS + e00.CLAIMS + e10.CLAIMS + e20.CLAIMS + d73.CLAIMS + d97.CLAIMS + d08.CLAIMS + d20c.CLAIMS + fy.CLAIMS + cor.CLAIMS + fl.CLAIMS + an.CLAIMS + tz.CLAIMS + sx.CLAIMS + ix.CLAIMS + tp.CLAIMS + w8.CLAIMS
     cor.apply(claims)
     eras = [e60.ERA, e70.ERA, e80.ERA, e90.ERA, e00.ERA, e10.ERA, e20.ERA] + [e for e in eo.ERAS if e["id"] not in ("1970s", "1980s", "1990s", "2000s", "2010s", "2020s")]
     events = e60.EVENTS + eo.EVENTS + e70.EVENTS + e80.EVENTS + e90.EVENTS + e00.EVENTS + e10.EVENTS + e20.EVENTS + fy.EVENTS
@@ -49,7 +52,7 @@ def main():
         "generatedNote": "실제 출처 기반 시드. 모든 문장은 claims에 있으며 출처·검증 상태를 가진다.",
         "eras": sorted(eras, key=lambda e: ERA_ORDER.index(e["id"])),
         "claims": claims,
-        "sources": SOURCES + e70.SOURCES + e80.SOURCES + e90.SOURCES + e00.SOURCES + e10.SOURCES + e20.SOURCES + ind.SOURCES + d73.SOURCES + d97.SOURCES + d08.SOURCES + d20c.SOURCES + fy.SOURCES + cor.SOURCES + fl.SOURCES + an.SOURCES + tz.SOURCES + sx.SOURCES + ix.SOURCES + tp.SOURCES,
+        "sources": SOURCES + e70.SOURCES + e80.SOURCES + e90.SOURCES + e00.SOURCES + e10.SOURCES + e20.SOURCES + ind.SOURCES + d73.SOURCES + d97.SOURCES + d08.SOURCES + d20c.SOURCES + fy.SOURCES + cor.SOURCES + fl.SOURCES + an.SOURCES + tz.SOURCES + sx.SOURCES + ix.SOURCES + tp.SOURCES + w8.SOURCES,
         "events": events,
         "transitions": eo.TRANSITIONS,
         "caseStudies": [e70.CASE, e90.CASE],
@@ -91,6 +94,9 @@ def main():
     import events_shared as evs
     frk.apply(seed)
     ftm.apply(seed)
+    rlk.apply(seed)
+    seed["pairScan"] = pscan.build(seed)
+    seed["why8"] = w8.build({c["id"]: c for c in seed["claims"]})
     seed["eventShare"] = evs.build(seed)
     import spec_fields as sfx
     seed["specFields"] = sfx.build(seed)

@@ -1,7 +1,8 @@
-import { D, ERA_LABEL, flowById, studyById, type Study } from '../lib/data';
+import { D, ERA_LABEL, studyById, type Study } from '../lib/data';
 import type { Route } from '../lib/route';
 import { StatusChips, StudyDetail } from './StudyView';
 import { SpecCards } from '../ui/SpecStatus';
+import { QSTUDIES, QuickStudy, qById } from './QuickStudy';
 
 /**
  * 지금 판단하기 — 사이트의 출발점.
@@ -11,18 +12,14 @@ import { SpecCards } from '../ui/SpecStatus';
 export function NowView({ r, nav }: { r: Route; nav: (p: Partial<Route>) => void; why: (id: string, from?: string) => void }) {
   const s = r.study ? studyById[r.study] : undefined;
   if (s) return <StudyDetail s={s} nav={nav} />;
+  const q = r.study ? qById[r.study] : undefined;
+  if (q) return <QuickStudy s={q} nav={nav} />;
   return <Landing nav={nav} />;
 }
 
 const STEPS = ['지금 판단하고 싶은 질문', '관련된 과거의 변화 흐름', '변화를 움직인 조건과 연결 근거', '현재와 과거의 비교', '조건별 향후 시나리오', '앞으로 관찰할 지표'];
 
-/** 근거는 있지만 아직 '현재 비교 → 시나리오 → 지표'까지 완성하지 못한 질문. 흐름(과거 부분)만 연결한다. */
-const PENDING: { q: string; flows: string[]; missing: string }[] = [
-  { q: '기술 변화는 산업·직업·고용구조를 어떻게 바꿨고, AI는 어디까지 같은 길을 갈까?', flows: ['flow-jobs', 'flow-tech'], missing: '직업별 고용 시계열과 AI 이후 고용 자료를 아직 연결하지 못했다.' },
-  { q: '유통과 결제 방식의 변화는 소비와 사업 구조를 어떻게 바꿨나?', flows: ['flow-shop'], missing: '업태별 매출 비중의 연속 통계(1993년 이전)와 현재 플랫폼 거래 자료가 부족하다.' },
-  { q: '인구·가구 구성의 변화는 주거와 소비 수요에 어떻게 이어지나?', flows: ['flow-family', 'flow-city'], missing: '가구 구성별 소비 지출 자료를 아직 연결하지 못했다.' },
-  { q: '노동시간과 생활시간의 변화는 여가·서비스 수요와 어떤 관계가 있었나?', flows: ['flow-time', 'flow-leisure'], missing: '여가 시간(생활시간조사)과 여가 지출의 연속 자료가 없다.' },
-];
+
 
 function Landing({ nav }: { nav: (p: Partial<Route>) => void }) {
   return (
@@ -48,15 +45,17 @@ function Landing({ nav }: { nav: (p: Partial<Route>) => void }) {
       <section className="panel">
         <h2>지금 판단하고 싶은 질문</h2>
         {D.studies.map((s) => <StudyCard key={s.id} s={s} nav={nav} />)}
-        <h3 className="pending-h">준비 중인 질문 <span className="muted small">과거 흐름은 있지만 현재 비교·시나리오·지표까지 완성하지 못했습니다</span></h3>
-        <ul className="pending">
-          {PENDING.map((p) => (
-            <li key={p.q}><span className="tag-pending">미완성</span> <b>{p.q}</b>
-              <span className="muted small"> 빠진 것: {p.missing}</span>
-              <span className="pend-flows">과거 흐름만 보기: {p.flows.map((f) => <button key={f} className="chip" onClick={() => nav({ tab: 'flow', flow: f })}>{flowById[f].topic}</button>)}</span>
-            </li>
+        <h3 className="pending-h">근거를 모아 구성한 판단 질문 <span className="muted small">흐름·주제·지표·미래를 6단계 순서로 모았습니다 — 수치는 실제 시계열에서 계산</span></h3>
+        <div className="qs-cards">
+          {QSTUDIES.map((q) => (
+            <button key={q.id} className="studycard qs-card" onClick={() => nav({ tab: 'now', study: q.id })}>
+              <b className="sc-q">{q.q}</b>
+              <span className="sc-find">{q.short}</span>
+              <span className="muted small">흐름 {q.flows.length} · 주제 {q.topics.length} · 지표 {q.inds.length}</span>
+              <span className="fc-go">읽기 →</span>
+            </button>
           ))}
-        </ul>
+        </div>
       </section>
 
       <section className="panel">

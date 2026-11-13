@@ -1,4 +1,5 @@
 import { CAT_KO, D, flowById, studyById, topicById } from '../lib/data';
+import { qById } from '../views/QuickStudy';
 import type { Route } from '../lib/route';
 
 /**
@@ -22,7 +23,7 @@ export function Crumbs({ r, nav }: { r: Route; nav: Nav }) {
   }
   if (r.tab === 'flow' && r.flow) items.push({ label: short(flowById[r.flow]?.topic ?? r.flow) });
   if (r.tab === 'taste' && r.taste) items.push({ label: short(D.tastes.flows.find((f) => f.id === r.taste)?.title ?? r.taste) });
-  if (r.tab === 'now' && r.study) items.push({ label: short((studyById[r.study] as unknown as { question?: string; title?: string })?.question ?? r.study) });
+  if (r.tab === 'now' && r.study) items.push({ label: short(qById[r.study]?.q ?? (studyById[r.study] as unknown as { question?: string; title?: string })?.question ?? r.study) });
   if (r.tab === 'field') {
     items.push({ label: CAT_KO[r.cat], go: () => nav({ ind: undefined }) });
     if (r.ind) items.push({ label: short(D.indicators.find((i) => i.id === r.ind)?.title ?? r.ind) });

@@ -4,6 +4,7 @@ import type { Route } from '../lib/route';
 import { Chart, SourceLine, type Band } from '../ui/Chart';
 import { TYPE_SHORT } from './FieldView';
 import { SLineView } from '../ui/Story';
+import { LikeChip } from './TopicView';
 import type { TLine, TRepeat } from '../lib/data';
 
 /**
@@ -94,11 +95,43 @@ export function CycleView({ r, nav, why }: { r: Route; nav: (p: Partial<Route>) 
         </details>
       </section>
       <CrossStructures why={why} />
+      <PairScan />
     </div>
   );
 }
 
 /** 분야를 넘는 구조(지시서 7장·8-E): 원인 지도 연결에서 빌드 때 계산한 공통 원인·피드백. 새 연결을 만들지 않는다. */
+interface PS { a: string; b: string; aTitle: string; bTitle: string; lag: number; r: number; n: number; p: number; q: number; rNoShock?: number | null; robust?: boolean }
+/** 지표 쌍 자동 탐색(T6-2) — 빌드 때 pair_scan.py가 모든 연도 지표 쌍을 계산. */
+function PairScan() {
+  const S = (D.pairScan as { tested: number; indicators: number; perm: number; found: PS[]; near: PS[]; method: string } | undefined);
+  const [all, setAll] = useState(false);
+  if (!S) return null;
+  const xs = all ? S.found : S.found.slice(0, 10);
+  const lagTxt = (x: PS) => (x.lag === 0 ? '같은 해' : x.lag > 0 ? `${x.bTitle.split(' (')[0]}가 ${x.lag}년 늦게` : `${x.bTitle.split(' (')[0]}가 ${-x.lag}년 먼저`);
+  return (
+    <section className="panel" id="cyc-pairs">
+      <h2>엔진이 찾은 지표 사이 관계 <span className="sub">연도 지표 {S.indicators}개의 쌍 {S.tested}개를 모두 계산</span></h2>
+      <p className="muted small">방법: {S.method}. 사람이 고르지 않고 모든 쌍을 같은 기준으로 계산했습니다. <span className="lyr l-observed">관찰된 관계(계산)</span>이며 인과가 아닙니다 — 경기·인구 같은 공통 원인이 둘을 함께 움직였을 수 있습니다.</p>
+      <div className="tablewrap"><table className="tz-table ps-tab">
+        <thead><tr><th>지표 A</th><th>지표 B</th><th>방향·시차</th><th>변화끼리 상관</th><th>거짓 발견 비율 q</th><th>큰 충격 해 빼면</th><th></th></tr></thead>
+        <tbody>{xs.map((x) => (
+          <tr key={x.a + x.b} className={x.robust ? '' : 'ps-weak'}>
+            <td>{x.aTitle}</td><td>{x.bTitle}</td>
+            <td>{x.r > 0 ? '같은 방향' : '반대 방향'} · {lagTxt(x)}</td>
+            <td>{x.r.toFixed(2)} <span className="muted small">({x.n}개 해)</span></td>
+            <td>{x.q.toFixed(3)}</td>
+            <td>{x.rNoShock == null ? '계산 불가' : `${x.rNoShock.toFixed(2)} ${x.robust ? '— 유지' : '— 약해짐(충격 해에 기댐)'}`}</td>
+            <td><a href={`#/ask?ta=${x.a}&tb=${x.b}`}>직접 검정 →</a></td>
+          </tr>
+        ))}</tbody>
+      </table></div>
+      {S.found.length > 10 && <button className="chip" onClick={() => setAll(!all)}>{all ? '10개만 보기' : `${S.found.length}개 모두 보기`}</button>}
+      {S.near.length > 0 && <p className="small muted">경계에 있는 쌍(0.10 ≤ q &lt; 0.30, 판단 보류): {S.near.map((x) => `${x.aTitle.split(' (')[0]}↔${x.bTitle.split(' (')[0]}`).join(', ')}</p>}
+    </section>
+  );
+}
+
 function CrossStructures({ why }: { why: (id: string) => void }) {
   const G = (D as unknown as { graphX: { commonCauses: { cause: string; label: string; year: number; lanes: string[]; effects: { id: string; label: string; year: number; lane: string }[] }[]; feedbacks: { loop: string[]; labels: string[] }[]; kind7Counts: Record<string, number> } }).graphX;
   if (!G) return null;
@@ -336,6 +369,7 @@ function RepeatIndex({ nav }: { nav: (p: Partial<Route>) => void }) {
     <section className="panel" id="cyc-story">
       <h2>이야기 속에서 찾은 반복 — 여섯 유형</h2>
       <p className="muted">무엇을 보나: 각 주제·산업 이야기를 쓰면서 발견한 되풀이를 유형별로 모았습니다. 사례마다 과거와 지금 <b>누가 왜</b> 골랐는지, 겉모양만 닮았는지 동기까지 같은지, 무엇이 바뀌었는지, '싫증 나서 반대가 유행'이 아닌 다른 설명, 그리고 반례를 함께 둡니다. 구간 버튼을 누르면 그 이야기의 해당 전환점으로 갑니다.</p>
+      <p className="like-sum" id="like-sum">반복의 성격(AI 판단): {(['원리도 닮음', '겉모습만 닮음', '반복 아님'] as const).map((v) => <span key={v}><LikeChip v={v} /> {cases.filter((c) => c.rp.likeness === v).length}건 </span>)}</p>
       {R_TYPES.map(({ type, desc }) => {
         const xs = cases.filter((c) => c.rp.type === type);
         return (
@@ -344,7 +378,7 @@ function RepeatIndex({ nav }: { nav: (p: Partial<Route>) => void }) {
             {xs.length === 0 && <p className="small muted">이 유형으로 비교까지 정리한 사례는 아직 없습니다. 찾은 자료에서 이 유형이 확인되지 않았다는 뜻이며, 없다고 단정하는 것은 아닙니다.</p>}
             {xs.map((c) => (
               <details key={c.whereId + c.rp.title} className="rp-case">
-                <summary><b>{c.rp.title}</b> <span className="muted small">· {c.where}{c.rp.interval ? ` · 간격 ${c.rp.interval}` : ''}</span></summary>
+                <summary><b>{c.rp.title}</b><LikeChip v={c.rp.likeness} /> <span className="muted small">· {c.where}{c.rp.interval ? ` · 간격 ${c.rp.interval}` : ''}</span></summary>
                 <p className="rp-go">{c.rp.at.map((a, i) => <button key={a} className="chip go" onClick={() => go(c, a)}>{c.rp.at.length > 1 ? (i === 0 ? '과거 구간: ' : '지금 구간: ') : '해당 구간: '}{atLabel(c, a)} →</button>)}</p>
                 <table className="tp-cmp"><tbody>
                   <Row h="과거 — 누가 왜" x={c.rp.past} />

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { SpecStatus } from '../ui/SpecStatus';
-import { D, MODE_KO, topicById, type Topic, type TLine, type TTurn, type TWorld, type TFuture } from '../lib/data';
+import { D, MODE_KO, topicById, type Topic, type TLine, type TTurn, type TWorld, type TFuture, type TRepeat } from '../lib/data';
 import type { Route } from '../lib/route';
 import { SLineView, SBadge, LayerLegend, SharedEvents, goTo } from '../ui/Story';
 
@@ -165,7 +165,7 @@ function TopicDetail({ t, nav }: { t: Topic; nav: Nav }) {
           <p className="muted">같은 모양이 다시 나타났다고 같은 이유인지는 따로 따져야 합니다. 과거와 지금을 같은 질문으로 나란히 놓았습니다.</p>
           {t.repeats.map((rp) => (
             <article key={rp.title} className="tp-repeat">
-              <h3><span className="tp-kind">{rp.type}</span> {rp.title}</h3>
+              <h3><span className="tp-kind">{rp.type}</span> {rp.title}<LikeChip v={rp.likeness} /></h3>
               <table className="tp-cmp"><tbody>
                 <tr><th>그때 누가·왜</th><td><SLineView x={rp.past} /></td></tr>
                 <tr><th>지금 누가·왜</th><td><SLineView x={rp.now} /></td></tr>
@@ -180,7 +180,7 @@ function TopicDetail({ t, nav }: { t: Topic; nav: Nav }) {
         </section>
       )}
 
-      <FuturesView id="tp-future" f={t.futures} />
+      <FuturesView id="tp-future" f={t.futures} past={t.repeats} />
       <ConclusionView id="tp-end" c={t.conclusion} />
     </div>
   );
@@ -306,7 +306,7 @@ export function WorldBox({ w, at }: { w: TWorld; at?: string }) {
 }
 
 /** 여러 갈래의 미래 가능성 — 가능성마다 7항목, 확률 없음(R-Q12·R-Q13·R-FU1). */
-export function FuturesView({ id, f, title = '앞으로 가능한 방향' }: { id: string; f: { split: TLine; items: TFuture[] }; title?: string }) {
+export function FuturesView({ id, f, title = '앞으로 가능한 방향', past }: { id: string; f: { split: TLine; items: TFuture[] }; title?: string; past?: TRepeat[] }) {
   return (
     <section className="panel" id={id}>
       <h2>{title}</h2>
@@ -331,9 +331,32 @@ export function FuturesView({ id, f, title = '앞으로 가능한 방향' }: { i
           </article>
         ))}
       </div>
+      <JudgeBox id={id} items={f.items} past={past} />
       <CondCompare id={id} items={f.items} />
     </section>
   );
+}
+
+/** 지금 판단하는 3칸(지시서 10·T8-1): 현재 신호 · 과거 유사 국면 · 판단 수정 조건. 새 문장 없이 미래·반복 항목에서 모은다. */
+function JudgeBox({ id, items, past }: { id: string; items: TFuture[]; past?: TRepeat[] }) {
+  const now = [...new Set(items.flatMap((x) => x.watch))];
+  const rev = items.flatMap((x) => x.against.map((a) => ({ a, n: x.name })));
+  return (
+    <div className="judge3" id={`${id}-judge`}>
+      <div><h3>현재 신호 — 지금 확인할 것</h3><ul>{now.map((w) => <li key={w}>{w}</li>)}</ul>
+        <p className="small muted">근거로 쓴 최근 사실: {items.flatMap((x) => x.basis).slice(0, 2).map((b, k) => <SLineView key={k} x={b} />)}</p></div>
+      <div><h3>과거 유사 국면</h3>{past && past.length ? <ul>{past.map((r) => <li key={r.title}><b>{r.title}</b><LikeChip v={r.likeness} /><SLineView x={r.past} /></li>)}</ul> : <p className="small muted"><SBadge l="unknown" /> 이 이야기에는 비교까지 정리한 과거 국면이 없다. 산업은 단계 중 같은 종류(성장·정체·위기)를, 흐름은 같은 단계를 위에서 비교한다.</p>}</div>
+      <div><h3>판단 수정 조건 — 이게 보이면 고친다</h3><ul>{rev.map((r, k) => <li key={k}>{r.a} <span className="muted small">({r.n})</span></li>)}</ul></div>
+    </div>
+  );
+}
+
+/** 반복의 성격(지시서 8): 겉모습만 닮음 / 원리도 닮음 / 반복 아님 — AI 판단. */
+export function LikeChip({ v }: { v?: string }) {
+  if (!v) return null;
+  const cls = v === '원리도 닮음' ? 'deep' : v === '겉모습만 닮음' ? 'surface' : 'none';
+  const help = v === '원리도 닮음' ? '같은 동기·조건이 같은 방향의 결과를 다시 낳았다(AI 판단)' : v === '겉모습만 닮음' ? '겉모양·숫자는 같지만 그것을 낳은 동기·원인이 다르다(AI 판단)' : '되풀이처럼 보이지만 한 방향으로 가는 변화다(AI 판단)';
+  return <span className={`like-chip ${cls}`} title={help}>{v}</span>;
 }
 
 /** 미래 조건 비교하기(지시서 12-G): '이 신호가 나타났다면'을 켜고 끄며 어느 가능성 쪽 조건이 더 갖춰지는지 본다.

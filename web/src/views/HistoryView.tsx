@@ -1,3 +1,4 @@
+import { why8Cases } from '../ui/Why8';
 import { CATS, CAT_KO, CAT_SHORT, D, MAX_Y, byId, eraEnd, eraOf, inc, isKR, lead, nodesIn, out, pickKey, type Cat } from '../lib/data';
 import type { Route } from '../lib/route';
 import { Chart } from '../ui/Chart';
@@ -18,6 +19,7 @@ export function HistoryView({ r, nav, why }: { r: Route; nav: (p: Partial<Route>
         ))}
       </div>
       <p className="zoom-help">{ZOOM_HELP[r.z]}</p>
+      {why8Cases.length > 0 && <p className="w8-list" id="w8-list"><b>8단계(이전 조건·촉발·구조·주체·전달·결과·반대 해석·원인의 원인)로 정리한 사건</b> {why8Cases.map((c) => <button key={c.id} className="chip" onClick={() => { nav({ y: c.year }); why(c.node); }}>{c.year} {c.title}</button>)}</p>}
       {r.z === 'all' && <Overview r={r} nav={nav} why={why} />}
       {r.z === 'decade' && <Decade r={r} nav={nav} why={why} />}
       {r.z === 'year' && <Year r={r} nav={nav} why={why} />}

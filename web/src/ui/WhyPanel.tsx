@@ -1,5 +1,6 @@
 import { storiesFor } from '../lib/data';
 import { useEffect, useRef, useState } from 'react';
+import { Why8, why8ByNode } from './Why8';
 import { CAT_KO, CLAIM_KO, COUNTRY_KO, D, STATUS_KO, STATUS_SHORT, byId, evidenceCount, flowById, inc, lead, linkKindOf, out, type Edge, type Node, type Rel } from '../lib/data';
 import type { Route } from '../lib/route';
 
@@ -64,6 +65,7 @@ export function WhyPanel({ r, nav }: { r: Route; nav: (p: Partial<Route>) => voi
           <p className="small"><a className="ak-ask" href={`#/ask?q=${encodeURIComponent(`${n.label}${n.year >= 1900 ? ` (${n.year}년)` : ""}은 왜 일어났고 무엇을 바꿨을까?`)}`}>이 사건에 대해 질문 분석하기</a></p>
           <p className="meta">{n.countries.map((c) => COUNTRY_KO[c] ?? c).join(' · ') || '국가 정보 없음'} · 근거 문장 {ev.total}개: {STATUS_SHORT.verified} {ev.verified} · {STATUS_SHORT.sourced} {ev.sourced}{ev.missing ? ` · ${STATUS_SHORT.needs_source} ${ev.missing}` : ''}</p>
           <p className="meta small">문장의 확인 수준과 원인·결과 연결의 성격은 따로 표시합니다. 제목은 요약이며, 근거는 아래 문장 단위로 확인하세요.</p>
+          {why8ByNode[n.id] && <Why8 c={why8ByNode[n.id]} />}
           {stories.length > 0 && (
             <div className="why-flows why-stories">
               <b>이 사건이 들어 있는 이야기 — 같은 주제를 시간 순서로 따라가기</b>

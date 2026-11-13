@@ -3,7 +3,8 @@ import { D, ECON_KO, STATUS_SHORT, byId, evidenceCount, flowById, type Bridge, t
 import type { Route } from '../lib/route';
 import { Chart, SourceLine } from '../ui/Chart';
 import { Claims } from '../ui/WhyPanel';
-import { SBadge, StepNoteView } from '../ui/Story';
+import { SBadge, StepNoteView, LayerLegend } from '../ui/Story';
+import type { TRepeat } from '../lib/data';
 import { ConclusionView, FuturesView, TurnCard } from './TopicView';
 
 /**
@@ -126,6 +127,7 @@ function FlowDetail({ f, r, nav, why }: { f: Flow; r: Route; nav: (p: Partial<Ro
   return (
     <div className="view flow">
       <nav className="crumbline"><button className="link" onClick={() => nav({ flow: undefined })}>← 모든 흐름</button></nav>
+      <LayerLegend />
       <section className="panel hero">
         <div className="eyebrow">{domainLabel(f.domain)} · {f.topic} <span className={`econ e-${f.econ.status}`}>{ECON_KO[f.econ.status]}</span></div>
         <h2>{f.question}</h2>
@@ -194,7 +196,7 @@ function FlowDetail({ f, r, nav, why }: { f: Flow; r: Route; nav: (p: Partial<Ro
         {f.econ.analysis && <p><button className="btn" onClick={() => nav({ tab: 'now', study: f.econ.analysis, flow: undefined })}>이 흐름을 쓰는 분석: {D.studies.find((x) => x.id === f.econ.analysis)?.short} — 현재 비교·시나리오·지표 →</button></p>}
       </section>
 
-      {f.futures && <FuturesView id="fl-future" f={f.futures} />}
+      {f.futures && <FuturesView id="fl-future" f={f.futures} past={(f as unknown as { repeats?: TRepeat[] }).repeats} />}
       {f.conclusion && <ConclusionView id="fl-end" c={f.conclusion} />}
 
       <section className="panel">

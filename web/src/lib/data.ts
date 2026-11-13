@@ -170,6 +170,8 @@ export const D = {
   findings: seed.cycles.findings,
   cycleParams: seed.cycles.params,
   spec: seed.specFields,
+  why8: (seed as unknown as { why8?: unknown }).why8,
+  pairScan: (seed as unknown as { pairScan?: unknown }).pairScan,
   eventUses: seed.eventUses ?? {},
   parallels: seed.patterns.parallels,
   flows: seed.flows.flows,
@@ -260,7 +262,7 @@ export interface TTurn { id: string; years: string; start: number; end: number; 
 export interface TLane { label: string; start: number; end: number | null; state: string; note: TLine }
 export interface TReason { title: string; facts: TLine[]; logic: TLine; proposal: TLine; rivals: TLine[]; scope: TLine; check: TLine[] }
 export interface TFuture { kind: string; name: string; change: TLine; basis: TLine[]; logic: TLine; conditions: TLine; demand: TLine; watch: string[]; against: string[]; horizon?: string; risk?: TLine; term?: string }
-export interface TRepeat { type: string; title: string; past: TLine; now: TLine; alike: TLine; changed: TLine; alternatives: TLine[]; counter: TLine[]; at: string[]; interval?: string }
+export interface TRepeat { type: string; title: string; past: TLine; now: TLine; alike: TLine; changed: TLine; alternatives: TLine[]; counter: TLine[]; at: string[]; interval?: string; likeness?: string; likenessWhy?: string }
 export interface TLink { kind: 'topic' | 'flow' | 'industry'; target: string; at: string; why: string }
 export interface Topic {
   id: string; domain: string; label: string; tracks: string; question: string; scene: TLine; span: [number, number]; scope?: TLine[];
