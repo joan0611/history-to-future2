@@ -12,6 +12,7 @@ import topics_more as tmore
 import topics_more2 as tmore2
 import topics_more3 as tmore3
 import topics_more4 as tmore4
+import topics_more5 as tmore5
 import topics_city as tcity
 from topic_helpers import LAYERS, MODES, FUTURE_KINDS
 
@@ -19,11 +20,11 @@ DOMAINS = [
     {"id": "shop", "label": "소비·쇼핑", "desc": "어디서, 무엇으로, 어떻게 갖고, 무엇에 먼저 쓰고, 무엇을 보고 고르나 — 다섯 가지를 따로 추적합니다."},
     {"id": "city", "label": "도시와 주거", "desc": "어디에 사나와 어떻게 오가나를 따로 추적합니다."},
     {"id": "lifestyle", "label": "라이프스타일", "desc": "시간·공간·관계·몸·주의력을 어떻게 쓰고 관리하는지, 무엇을 좋은 삶으로 여기는지."},
-] + tmore.DOMAINS + tmore2.DOMAINS
+] + tmore.DOMAINS + tmore2.DOMAINS + tmore5.DOMAINS
 
-TOPICS = tshop.TOPICS + trec.TOPICS + tlife.TOPICS + tlife2.TOPICS + tcity.TOPICS + tmore.TOPICS + tmore2.TOPICS + tmore3.TOPICS + tmore4.TOPICS
-SOURCES = tshop.SOURCES + trec.SOURCES + tlife.SOURCES + tlife2.SOURCES + tcity.SOURCES + tmore.SOURCES + tmore2.SOURCES + tmore3.SOURCES + tmore4.SOURCES
-CLAIMS = tshop.CLAIMS + trec.CLAIMS + tlife.CLAIMS + tlife2.CLAIMS + tcity.CLAIMS + tmore.CLAIMS + tmore2.CLAIMS + tmore3.CLAIMS + tmore4.CLAIMS
+TOPICS = tshop.TOPICS + trec.TOPICS + tlife.TOPICS + tlife2.TOPICS + tcity.TOPICS + tmore.TOPICS + tmore2.TOPICS + tmore3.TOPICS + tmore4.TOPICS + tmore5.TOPICS
+SOURCES = tshop.SOURCES + trec.SOURCES + tlife.SOURCES + tlife2.SOURCES + tcity.SOURCES + tmore.SOURCES + tmore2.SOURCES + tmore3.SOURCES + tmore4.SOURCES + tmore5.SOURCES
+CLAIMS = tshop.CLAIMS + trec.CLAIMS + tlife.CLAIMS + tlife2.CLAIMS + tcity.CLAIMS + tmore.CLAIMS + tmore2.CLAIMS + tmore3.CLAIMS + tmore4.CLAIMS + tmore5.CLAIMS
 
 # 아직 쓰지 않은 주제(탐색 화면에서 활성 콘텐츠와 다른 모양으로 표시, R-Q16)
 PLANNED = [
@@ -39,19 +40,19 @@ PLANNED = [
 #   대상이 섞여 있어 나누는 중인 흐름(산업·고용, 기술 보급, 여가 공간, 교통·도시·주거, 유통·결제)은 활성 목록에 넣지 않는다(R-Q3).
 FIELD_MAP = [
     {"id": "buying", "label": "구매·소유·처분", "items": [("topic", "shop-channel"), ("topic", "shop-pay"), ("topic", "shop-own"), ("topic", "shop-items"), ("topic", "shop-info")], "planned": []},
-    {"id": "space", "label": "공간·인테리어·생활용품", "items": [("topic", "city-home"), ("taste", "taste-home"), ("topic", "life-stuff")], "planned": ["식기·조명 단독 흐름"]},
-    {"id": "fashion", "label": "패션·미용·자기표현", "items": [("taste", "taste-pants"), ("flow", "flow-expression"), ("flow", "flow-fashion"), ("topic", "fashion-beauty")], "planned": ["신발", "헤어·화장법 유행"]},
-    {"id": "food", "label": "음식·음료·외식", "items": [("taste", "taste-dining"), ("topic", "life-convenience"), ("topic", "food-cafe"), ("topic", "food-hmr")], "planned": ["디저트"]},
-    {"id": "goods", "label": "상품·굿즈·수집", "items": [("taste", "taste-goods")], "planned": ["피규어·캐릭터 카드"]},
+    {"id": "space", "label": "공간·인테리어·생활용품", "items": [("topic", "city-home"), ("taste", "taste-home"), ("topic", "life-stuff"), ("topic", "space-tableware"), ("topic", "tech-home")], "planned": []},
+    {"id": "fashion", "label": "패션·미용·자기표현", "items": [("taste", "taste-pants"), ("flow", "flow-expression"), ("flow", "flow-fashion"), ("topic", "fashion-beauty"), ("topic", "fashion-shoes"), ("topic", "fashion-hair")], "planned": []},
+    {"id": "food", "label": "음식·음료·외식", "items": [("taste", "taste-dining"), ("topic", "life-convenience"), ("topic", "food-cafe"), ("topic", "food-hmr"), ("topic", "food-dessert")], "planned": []},
+    {"id": "goods", "label": "상품·굿즈·수집", "items": [("taste", "taste-goods"), ("topic", "goods-collect")], "planned": []},
     {"id": "media", "label": "음악·영상·게임·팬덤", "items": [("flow", "flow-music"), ("topic", "media-screen"), ("topic", "media-game"), ("topic", "media-fandom")], "planned": []},
     {"id": "relation", "label": "관계·모임·공동체", "items": [("taste", "taste-gather"), ("flow", "flow-relations")], "planned": []},
-    {"id": "hobby", "label": "취미·운동·여가", "items": [("flow", "flow-sports"), ("flow", "flow-time"), ("topic", "life-health"), ("topic", "life-nature"), ("topic", "life-rest"), ("topic", "media-game")], "planned": ["여가를 보내는 장소(현재 흐름은 여행·노래방·배달이 섞여 있어 나누는 중)"]},
-    {"id": "travel", "label": "여행·숙박·이동", "items": [("topic", "city-move"), ("topic", "travel-abroad")], "planned": ["숙소 고르기"]},
-    {"id": "tech", "label": "기술·기기·디지털 생활", "items": [("industry", "tv"), ("industry", "phone"), ("industry", "internet"), ("topic", "life-record"), ("topic", "media-screen")], "planned": ["집 안 기기 보급(현재 흐름은 TV·휴대폰·메신저·AI가 섞여 있어 나누는 중)"]},
+    {"id": "hobby", "label": "취미·운동·여가", "items": [("flow", "flow-sports"), ("flow", "flow-time"), ("topic", "life-health"), ("topic", "life-nature"), ("topic", "life-rest"), ("topic", "media-game"), ("topic", "hobby-place")], "planned": []},
+    {"id": "travel", "label": "여행·숙박·이동", "items": [("topic", "city-move"), ("topic", "travel-abroad"), ("topic", "travel-stay")], "planned": []},
+    {"id": "tech", "label": "기술·기기·디지털 생활", "items": [("industry", "tv"), ("industry", "phone"), ("industry", "internet"), ("topic", "life-record"), ("topic", "media-screen"), ("topic", "tech-home")], "planned": []},
     {"id": "family", "label": "가족·주거·돌봄", "items": [("flow", "flow-family"), ("topic", "city-home"), ("topic", "life-alone"), ("topic", "family-care")], "planned": []},
-    {"id": "work", "label": "일·학습·자기계발", "items": [("topic", "work-style"), ("topic", "work-learn"), ("flow", "flow-jobs")], "planned": ["성인 자격증·직무 교육"]},
-    {"id": "industry", "label": "산업(한국 경제를 키운 개별 산업)", "items": [("industry", x) for x in ["steel", "shipbuilding", "automobile", "petrochem", "construction", "semiconductor", "textile", "display", "battery"]], "planned": ["기계·전자부품(후속)"]},
-    {"id": "money", "label": "돈·투자·금융 생활", "items": [("topic", "money-invest"), ("topic", "money-save"), ("topic", "money-home"), ("topic", "shop-pay")], "planned": ["보험"]},
+    {"id": "work", "label": "일·학습·자기계발", "items": [("topic", "work-style"), ("topic", "work-learn"), ("flow", "flow-jobs"), ("topic", "work-cert")], "planned": []},
+    {"id": "industry", "label": "산업(한국 경제를 키운 개별 산업)", "items": [("industry", x) for x in ["steel", "shipbuilding", "automobile", "petrochem", "construction", "semiconductor", "textile", "display", "battery", "machinery"]], "planned": []},
+    {"id": "money", "label": "돈·투자·금융 생활", "items": [("topic", "money-invest"), ("topic", "money-save"), ("topic", "money-home"), ("topic", "shop-pay"), ("topic", "money-insure")], "planned": []},
     {"id": "society", "label": "경제 위기·정치", "items": [("flow", "flow-economy"), ("flow", "flow-politics")], "planned": []},
     {"id": "lifestyle", "label": "라이프스타일 — 시간·공간·관계·몸·주의력을 쓰는 방식", "items": [("topic", "life-rest"), ("topic", "life-health"), ("topic", "life-stuff"), ("topic", "life-nature"), ("topic", "life-record"), ("topic", "life-alone"), ("topic", "life-convenience")], "planned": []},
 ]

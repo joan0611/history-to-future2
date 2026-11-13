@@ -46,7 +46,7 @@ with sync_playwright() as p:
     t = pg.locator('main').inner_text()
     ok('주제 지도: 분야 섹션 16개(돈·투자 추가), 구매·소유 분야에 이야기 5개', pg.locator('.tp-dom').count() == 16 and pg.locator('#fd-buying .tp-card').count() == 5)
     ok('주제 지도: 개발 상태 문구 없음(깊게 구현·후보·시대 흐름만)', not any(x in t for x in ('깊게 구현', '후보(조사 전)', '시대 흐름만 있음')))
-    ok('주제 지도: 준비 중은 별도 모양', pg.locator('.tp-planned').count() >= 5)
+    ok('주제 지도: 비어 있던 칸(준비 중) 0개 — 10개 주제로 채움', pg.locator('.tp-planned').count() == 0 and pg.locator('#fd-money .tp-card', has_text='보험').count() == 1 and pg.locator('#fd-goods .tp-card').count() >= 1)
     ok('공통 욕구: 6개, 사례마다 언제·그전·계기·달라진 선택', pg.locator('.tp-need').count() == 6 and pg.locator('.tp-cases tbody tr').count() >= 18 and pg.locator('.tp-needread dt').count() == 24)
     for tid in ('shop-channel', 'shop-pay', 'shop-own', 'shop-items', 'shop-info'):
         pg.goto(U + f'#/topic/{tid}'); pg.wait_for_timeout(700)
@@ -66,7 +66,7 @@ with sync_playwright() as p:
     for tid in ('life-rest', 'life-health', 'life-stuff', 'life-nature', 'life-alone', 'life-convenience'):
         pg.goto(U + f'#/topic/{tid}'); pg.wait_for_timeout(700)
         ok(f'라이프스타일 {tid}: 전환점 3개 이상×5요소, 갈래, 추론 6요소, 미래 2갈래, 결론', pg.locator('.tp-turn').count() >= 3 and pg.locator('.tp-turn').first.locator('.tp-chain > li').count() == 5 and pg.locator('.tp-lanes li').count() >= 4 and pg.locator('.tp-reason h4').count() >= 6 and pg.locator('.tp-fut').count() >= 2 and pg.locator('.tp-end dt').count() == 5)
-    for tid, fd in (('media-fandom', 'media'), ('media-screen', 'media'), ('media-game', 'media'), ('travel-abroad', 'travel'), ('work-style', 'work'), ('money-invest', 'money'), ('food-cafe', 'food'), ('fashion-beauty', 'fashion'), ('family-care', 'family'), ('food-hmr', 'food'), ('work-learn', 'work'), ('money-save', 'money'), ('money-home', 'money')):
+    for tid, fd in (('media-fandom', 'media'), ('media-screen', 'media'), ('media-game', 'media'), ('travel-abroad', 'travel'), ('work-style', 'work'), ('money-invest', 'money'), ('food-cafe', 'food'), ('fashion-beauty', 'fashion'), ('family-care', 'family'), ('food-hmr', 'food'), ('work-learn', 'work'), ('money-save', 'money'), ('money-home', 'money'), ('fashion-shoes', 'fashion'), ('fashion-hair', 'fashion'), ('food-dessert', 'food'), ('goods-collect', 'goods'), ('travel-stay', 'travel'), ('money-insure', 'money'), ('work-cert', 'work'), ('hobby-place', 'leisure'), ('tech-home', 'home'), ('space-tableware', 'home')):
         pg.goto(U + f'#/topic/{tid}'); pg.wait_for_timeout(700)
         ok(f'분야 확장 {tid}: 전환점 3~4개×5요소, 갈래, 추론 6요소, 반복, 미래 2갈래, 결론', pg.locator('.tp-turn').count() in (3, 4) and pg.locator('.tp-turn').first.locator('.tp-chain > li').count() == 5 and pg.locator('.tp-lanes li').count() >= 4 and pg.locator('.tp-reason h4').count() >= 6 and pg.locator('#tp-repeat').count() == 1 and pg.locator('.tp-fut').count() == 2 and pg.locator('.tp-end dt').count() == 5)
     pg.goto(U + '#/topic'); pg.wait_for_timeout(700)
@@ -119,9 +119,9 @@ with sync_playwright() as p:
     ok('연결 → 반도체 산업 일대기로', '64M' in pg.locator('#indlife .il-stages').inner_text())
     # 산업 일대기
     pg.goto(U + '#/field/industry'); pg.wait_for_timeout(1000)
-    ok('산업 일대기: 12개 산업 선택, 철강 단계마다 무엇·왜·앞 단계 연결', pg.locator('#indlife .il-pick .chip').count() == 13 and pg.locator('#indlife .il-st').count() >= 5 and pg.locator('#indlife .il-st').first.locator('.il-from').count() == 1)
+    ok('산업 일대기: 14개 산업 선택(기계·부품 추가), 철강 단계마다 무엇·왜·앞 단계 연결', pg.locator('#indlife .il-pick .chip').count() == 14 and pg.locator('#indlife .il-st').count() >= 5 and pg.locator('#indlife .il-st').first.locator('.il-from').count() == 1)
     ok('산업 일대기: 아홉 항목 표는 접힌 상세(본문 아님)', pg.locator('#indlife .il-profd .il-prof tr').count() == 9 and not pg.locator('#indlife .il-prof').is_visible())
-    ok('산업 선정표: 선정 11·후속·제외와 기준 5개(R-IN1)', pg.locator('#indlife .il-seltab tbody tr.sel-선정').count() == 12 and pg.locator('#indlife .il-seltab tbody tr.sel-후속').count() >= 1 and pg.locator('#indlife .il-seltab tbody tr.sel-제외').count() >= 1 and pg.locator('#indlife .il-seltab thead th').count() == 7)
+    ok('산업 선정표: 선정 13·후속 0·제외와 기준 5개(R-IN1)', pg.locator('#indlife .il-seltab tbody tr.sel-선정').count() == 13 and pg.locator('#indlife .il-seltab tbody tr.sel-후속').count() == 0 and pg.locator('#indlife .il-seltab tbody tr.sel-제외').count() >= 1 and pg.locator('#indlife .il-seltab thead th').count() == 7)
     ok('철강: 세계→경로→대응→결과 2곳 + 밖으로 준 영향(R-IN2·IN3)', pg.locator('#indlife .tp-world').count() == 2 and pg.locator('#indlife .tp-world').first.locator('.tp-wsteps li').count() == 4 and pg.locator('#indlife .il-out .tl').count() >= 1)
     ok('철강: 서로 다른 미래 2개×7항목 + 결론 5요소', pg.locator('#il-future .tp-fut').count() >= 2 and all(pg.locator('#il-future .tp-fut').nth(i).locator('tr').count() >= 7 for i in range(2)) and pg.locator('#il-end dt').count() == 5 and '%' not in ''.join(pg.locator('#il-future .tp-kind').all_inner_texts()))
     pg.locator('#indlife .il-pick .chip', has_text='섬유').click(); pg.wait_for_timeout(300)
@@ -130,6 +130,8 @@ with sync_playwright() as p:
     ok('디스플레이 일대기: 5세대 선제 투자 → 중국 10.5세대 → OLED', '5세대' in pg.locator('#indlife .il-stages').inner_text() and 'OLED' in pg.locator('#indlife .il-stages').inner_text() and pg.locator('#il-end dt').count() == 5)
     pg.locator('#indlife .il-pick .chip', has_text='2차전지').click(); pg.wait_for_timeout(300)
     ok('2차전지 일대기: 1999 양산 → 일본 추격 → 중국 역전, 미래·결론', '1999' in pg.locator('#indlife .il-stages').inner_text() and 'LFP' in pg.locator('#indlife .il-stages').inner_text() and pg.locator('#il-end dt').count() == 5)
+    pg.locator('#indlife .il-pick .chip', has_text='기계').click(); pg.wait_for_timeout(300)
+    ok('기계·부품 일대기: 1974 창원 → 2019 소부장, 세계 연결·미래·결론', '창원' in pg.locator('#indlife .il-stages').inner_text() and '소부장' in pg.locator('#indlife .il-stages').inner_text() and pg.locator('#indlife .tp-world').count() == 2 and pg.locator('#il-end dt').count() == 5)
     pg.locator('#indlife .il-pick .chip', has_text='반도체').click(); pg.wait_for_timeout(300)
     ok('산업 일대기: 반도체를 고르면 반도체만 이어짐', '64M' in pg.locator('#indlife .il-stages').inner_text() and '고로' not in pg.locator('#indlife .il-stages').inner_text())
     pg.locator('#indlife .il-pick .chip', has_text='자동차').click(); pg.wait_for_timeout(300)
@@ -140,7 +142,7 @@ with sync_playwright() as p:
     pg.locator('#indlife .il-pick .chip', has_text='디스플레이').click(); pg.wait_for_timeout(300)
     ok('디스플레이 일대기: 2004 1위 → 2021 역전 → OLED', 'OLED' in pg.locator('#indlife .il-stages').inner_text() and '2021' in pg.locator('#indlife .il-stages').inner_text())
     pg.locator('#indlife .il-pick .chip', has_text='비교').click(); pg.wait_for_timeout(300)
-    ok('산업 일대기: 같은 시간축 비교(산업별 행)', pg.locator('#indlife .il-cmp .il-name').count() == 12)
+    ok('산업 일대기: 같은 시간축 비교(산업별 행)', pg.locator('#indlife .il-cmp .il-name').count() == 13)
     ok('산업: 시대별 사건 모음은 보조로 표시', '보조' in pg.locator('main').inner_text())
     pg.goto(U + '#/taste/taste-goods'); pg.wait_for_timeout(700)
     ok('굿즈: 큰 인형 vs 작은 키링 비교표(6기준)', pg.locator('#tz-5 tbody tr').count() == 6)

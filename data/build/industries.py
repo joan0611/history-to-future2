@@ -332,6 +332,10 @@ import industries_more2 as _im2  # noqa: E402
 SOURCES += _im2.SOURCES
 CLAIMS += _im2.CLAIMS
 INDUSTRIES += _im2.INDUSTRIES
+import industries_more3 as _im3  # noqa: E402
+SOURCES += _im3.SOURCES
+CLAIMS += _im3.CLAIMS
+INDUSTRIES += _im3.INDUSTRIES
 import industries_world as _iwm  # noqa: E402
 SOURCES += _iwm.SOURCES
 CLAIMS += _iwm.CLAIMS
