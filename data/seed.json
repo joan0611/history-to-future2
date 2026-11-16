@@ -150467,6 +150467,239 @@
     ]
    },
    {
+    "id": "why-1973-oil",
+    "node": "e70-oil",
+    "year": 1973,
+    "title": "왜 1973년에 석유값이 네 배가 되었나",
+    "prior": [
+     {
+      "layer": "fact",
+      "text": "1967년 전쟁에서 이스라엘이 시나이반도·골란고원 등을 점령했다.",
+      "ids": [
+       "c60-me-1967"
+      ]
+     },
+     {
+      "layer": "inference",
+      "text": "1960년대에 늘어난 석유 의존, 미국의 생산 여력 상실, 달러 가치 하락이 먼저 쌓였다.",
+      "ids": [
+       "c70-syn-1"
+      ]
+     },
+     {
+      "layer": "fact",
+      "text": "1971년 8월 닉슨 쇼크로 고정환율 체제가 끝났다.",
+      "ids": [
+       "c70-nixon"
+      ]
+     }
+    ],
+    "trigger": [
+     {
+      "layer": "fact",
+      "text": "1973년 10월 6일 이집트·시리아가 이스라엘군을 공격했다.",
+      "ids": [
+       "c70-me-goal"
+      ]
+     },
+     {
+      "layer": "fact",
+      "text": "10월 16일 걸프 산유국들이 공시가격을 배럴당 3.01달러에서 5.12달러로 70% 올렸고, 다음 날 OAPEC이 감산과 미국 금수를 발표했다.",
+      "ids": [
+       "c70-posted-1",
+       "c70-oapec"
+      ]
+     }
+    ],
+    "structure": [
+     {
+      "layer": "fact",
+      "text": "미국 석유업계가 증산으로 대응할 수 없는 상태여서 감산이 곧 가격 상승으로 이어졌다.",
+      "ids": [
+       "c70-price-mech"
+      ]
+     },
+     {
+      "layer": "inference",
+      "text": "미국의 이스라엘 지원이 냉전 전략과 묶여 있어, 석유 금수가 경제 문제와 외교 문제를 한꺼번에 건드렸다.",
+      "ids": [
+       "c70-us-why"
+      ]
+     }
+    ],
+    "actors": [
+     {
+      "who": "아랍 산유국",
+      "motive": {
+       "layer": "inference",
+       "text": "1967년에 잃은 땅을 되찾는 데 강대국이 이스라엘에 압력을 넣게 하려 했다.",
+       "ids": [
+        "c70-me-goal",
+        "c70-me-saudi"
+       ]
+      },
+      "constraint": {
+       "layer": "fact",
+       "text": "사다트의 협상 제안은 1971년 이후 진전되지 못했다.",
+       "ids": [
+        "c70-me-stalemate"
+       ]
+      },
+      "alternative": {
+       "layer": "fact",
+       "text": "이스라엘 지원국에 석유 수출을 끊고 생산을 줄였다.",
+       "ids": [
+        "c70-embargo-goal"
+       ]
+      }
+     },
+     {
+      "who": "미국",
+      "motive": {
+       "layer": "inference",
+       "text": "이스라엘이 지는 것을 원치 않았다.",
+       "ids": [
+        "c70-us-airlift"
+       ]
+      },
+      "constraint": {
+       "layer": "inference",
+       "text": "소련 견제와 국내 경제를 함께 챙겨야 했다.",
+       "ids": [
+        "c70-us-why"
+       ]
+      },
+      "alternative": {
+       "layer": "fact",
+       "text": "10월 14일부터 이스라엘에 무기 공수를 시작했다.",
+       "ids": [
+        "c70-us-airlift"
+       ]
+      }
+     },
+     {
+      "who": "한국 정부",
+      "motive": {
+       "layer": "inference",
+       "text": "석유값 충격을 줄이고 생필품 가격을 붙잡으려 했다.",
+       "ids": [
+        "c70-ch-order",
+        "c70-kr-emergency"
+       ]
+      },
+      "constraint": {
+       "layer": "inference",
+       "text": "석유를 거의 수입에 기대 공급을 늘릴 길이 좁았다.",
+       "ids": [
+        "c70-syn-1"
+       ]
+      },
+      "alternative": {
+       "layer": "fact",
+       "text": "11월 9일 9개 항목 유류절감 명령을 내렸고, 1974년 1월 14일 긴급조치 3호를 시행했다.",
+       "ids": [
+        "c70-ch-order",
+        "c70-kr-emergency"
+       ]
+      }
+     },
+     {
+      "who": "가계(소비자)",
+      "motive": {
+       "layer": "inference",
+       "text": "난방과 생활비를 지키려 했다.",
+       "ids": [
+        "c70-briquette"
+       ]
+      },
+      "constraint": {
+       "layer": "fact",
+       "text": "한국 소비자물가는 1974년 24%, 1975년 25% 올랐다.",
+       "ids": [
+        "c70-kr-cpi"
+       ]
+      },
+      "alternative": {
+       "layer": "fact",
+       "text": "정부 권유로 연탄을 썼지만 1974년 연탄파동을 겪었다.",
+       "ids": [
+        "c70-briquette"
+       ]
+      }
+     }
+    ],
+    "mechanism": [
+     {
+      "layer": "fact",
+      "text": "유가는 배럴당 약 2.90달러에서 1974년 1월 11.65달러로 거의 4배가 되었다.",
+      "ids": [
+       "c70-price-mech"
+      ]
+     },
+     {
+      "layer": "fact",
+      "text": "1974년 1월 18일 석유류 기준가격이 새로 고시됐고, 1월 24일 밀가루 최고판매가격이 60% 올랐다.",
+      "ids": [
+       "c70-price-transmit",
+       "c70-mech-cost"
+      ]
+     }
+    ],
+    "result": [
+     {
+      "layer": "fact",
+      "text": "한국 성장률은 1973년 12.3%에서 1974년 7.4%로 떨어졌다가 1976년 11.2%로 회복했다.",
+      "ids": [
+       "c70-kr-growth"
+      ]
+     },
+     {
+      "layer": "fact",
+      "text": "1974년 11월 18일 국제에너지기구(IEA)가 설립되었다.",
+      "ids": [
+       "c70-iea"
+      ]
+     },
+     {
+      "layer": "fact",
+      "text": "1978년 동력자원부가 발족했고 고리 1호기가 상업운전을 시작했다.",
+      "ids": [
+       "c70-ministry",
+       "c70-kori"
+      ]
+     }
+    ],
+    "counter": [
+     {
+      "layer": "inference",
+      "text": "한국은 오일머니를 번 중동 건설 진출로 위기를 기회로 바꾸려 했다는 해석이 있다.",
+      "ids": [
+       "c70-syn-chain",
+       "c70-kr-mideast"
+      ]
+     },
+     {
+      "layer": "inference",
+      "text": "1차 파동 때는 성장 둔화가 작았지만, 체질 개선이 미흡해 2차 파동 때 더 큰 피해를 입었다는 평가도 있다.",
+      "ids": [
+       "c70-kr-structure",
+       "c70-kr-2nd"
+      ]
+     }
+    ],
+    "root": [
+     {
+      "layer": "inference",
+      "text": "값싼 석유를 전제로 짠 1960년대 성장 모델과 중동의 영토 분쟁이 냉전 구도 안에서 함께 터졌다.",
+      "ids": [
+       "c70-syn-chain",
+       "c60-me-1967",
+       "c70-us-why"
+      ]
+     }
+    ]
+   },
+   {
     "id": "why-1987-democracy",
     "node": "e80-629",
     "year": 1987,
